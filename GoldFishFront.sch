@@ -435,6 +435,41 @@ We've spent an enormous amount of time creating and checking these footprints an
 PCB width: 
 39,3</text>
 </package>
+<package name="MCUBASEBOARD">
+<wire x1="0" y1="99" x2="0" y2="1" width="0" layer="51"/>
+<wire x1="0" y1="1" x2="1" y2="0" width="0" layer="51" curve="90"/>
+<wire x1="1" y1="0" x2="32.65" y2="0" width="0" layer="51"/>
+<wire x1="32.65" y1="0" x2="33.65" y2="1" width="0" layer="51" curve="90"/>
+<wire x1="33.65" y1="1" x2="33.65" y2="99" width="0" layer="51"/>
+<wire x1="33.65" y1="99" x2="32.65" y2="100" width="0" layer="51" curve="90"/>
+<wire x1="32.65" y1="100" x2="1" y2="100" width="0" layer="51"/>
+<wire x1="1" y1="100" x2="0" y2="99" width="0" layer="51" curve="90"/>
+<pad name="OUT_DAC" x="32.07" y="1.27" drill="0.8"/>
+<pad name="GND@5" x="29.53" y="1.27" drill="0.8"/>
+<pad name="OUT_R" x="26.99" y="1.27" drill="0.8"/>
+<pad name="GND@4" x="24.45" y="1.27" drill="0.8"/>
+<pad name="OUT_L" x="21.91" y="1.27" drill="0.8"/>
+<pad name="GND" x="19.37" y="1.27" drill="0.8"/>
+<pad name="-12V" x="16.83" y="1.27" drill="0.8"/>
+<pad name="+12V" x="14.29" y="1.27" drill="0.8"/>
+<pad name="GND@2" x="11.75" y="1.27" drill="0.8"/>
+<pad name="R_IN" x="9.21" y="1.27" drill="0.8"/>
+<pad name="IN_L" x="6.67" y="1.27" drill="0.8"/>
+<pad name="GND@1" x="4.13" y="1.27" drill="0.8" shape="square"/>
+<pad name="P$13" x="1.27" y="5.72" drill="0.8"/>
+<pad name="P$14" x="1.27" y="8.26" drill="0.8"/>
+<pad name="P$15" x="1.27" y="10.8" drill="0.8"/>
+<pad name="P$16" x="1.27" y="13.34" drill="0.8"/>
+<pad name="P$17" x="1.27" y="15.88" drill="0.8"/>
+<pad name="P$18" x="1.27" y="18.42" drill="0.8"/>
+<pad name="P$19" x="1.27" y="20.96" drill="0.8"/>
+<pad name="P$20" x="1.27" y="23.5" drill="0.8"/>
+<pad name="P$21" x="1.27" y="26.04" drill="0.8"/>
+<pad name="P$22" x="1.27" y="28.58" drill="0.8"/>
+<pad name="P$23" x="1.27" y="31.12" drill="0.8"/>
+<pad name="P$24" x="1.27" y="33.66" drill="0.8" shape="square"/>
+<text x="0" y="101" size="1.27" layer="51">MCU BASEBOARD OUTLINE</text>
+</package>
 </packages>
 <symbols>
 <symbol name="EURORACK_PANEL">
@@ -443,6 +478,32 @@ PCB width:
 <wire x1="-2.54" y1="12.7" x2="17.78" y2="12.7" width="0.254" layer="94"/>
 <wire x1="17.78" y1="12.7" x2="17.78" y2="-12.7" width="0.254" layer="94"/>
 <wire x1="17.78" y1="-12.7" x2="-2.54" y2="-12.7" width="0.254" layer="94"/>
+</symbol>
+<symbol name="MCUBOARD">
+<text x="0" y="0" size="2.54" layer="94">K22 based MCU board</text>
+<wire x1="-1.27" y1="2.81" x2="-1.27" y2="-1.27" width="0.254" layer="94"/>
+<wire x1="-1.27" y1="-1.27" x2="37.1" y2="-1.27" width="0.254" layer="94"/>
+<wire x1="37.1" y1="-1.27" x2="38.1" y2="-0.27" width="0.254" layer="94" curve="90"/>
+<wire x1="38.1" y1="-0.27" x2="38.1" y2="3.81" width="0.254" layer="94"/>
+<wire x1="38.1" y1="3.81" x2="-0.27" y2="3.81" width="0.254" layer="94"/>
+<wire x1="-0.27" y1="3.81" x2="-1.27" y2="2.81" width="0.254" layer="94" curve="90"/>
+<pin name="GND@1" x="-5.08" y="-7.62" length="middle"/>
+<pin name="+12V" x="-5.08" y="-5.08" length="middle"/>
+<pin name="-12V" x="-5.08" y="-10.16" length="middle"/>
+<pin name="IN_L" x="-5.08" y="-22.86" length="middle"/>
+<pin name="IN_R" x="-5.08" y="-25.4" length="middle"/>
+<pin name="OUT_L" x="40.64" y="-22.86" length="middle" rot="R180"/>
+<pin name="OUT_R" x="40.64" y="-25.4" length="middle" rot="R180"/>
+<pin name="OUT_DAC" x="40.64" y="-30.48" length="middle" rot="R180"/>
+<wire x1="0" y1="-2.54" x2="0" y2="-33.02" width="0.254" layer="94"/>
+<wire x1="0" y1="-33.02" x2="34.56" y2="-33.02" width="0.254" layer="94"/>
+<wire x1="34.56" y1="-33.02" x2="35.56" y2="-32.02" width="0.254" layer="94" curve="90"/>
+<wire x1="35.56" y1="-32.02" x2="35.56" y2="-2.54" width="0.254" layer="94"/>
+<wire x1="35.56" y1="-2.54" x2="0" y2="-2.54" width="0.254" layer="94"/>
+<pin name="GND@2" x="10.16" y="-38.1" length="middle" rot="R90"/>
+<pin name="GND@3" x="12.7" y="-38.1" length="middle" rot="R90"/>
+<pin name="GND@4" x="15.24" y="-38.1" length="middle" rot="R90"/>
+<pin name="GND@5" x="17.78" y="-38.1" length="middle" rot="R90"/>
 </symbol>
 </symbols>
 <devicesets>
@@ -472,6 +533,32 @@ PCB width:
 </technologies>
 </device>
 <device name="8HPPCB" package="EURORACK8HPTEMPLATE">
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="MCUBOARD">
+<gates>
+<gate name="G$1" symbol="MCUBOARD" x="-17.78" y="0"/>
+</gates>
+<devices>
+<device name="" package="MCUBASEBOARD">
+<connects>
+<connect gate="G$1" pin="+12V" pad="+12V"/>
+<connect gate="G$1" pin="-12V" pad="-12V"/>
+<connect gate="G$1" pin="GND@1" pad="GND"/>
+<connect gate="G$1" pin="GND@2" pad="GND@1"/>
+<connect gate="G$1" pin="GND@3" pad="GND@2"/>
+<connect gate="G$1" pin="GND@4" pad="GND@4"/>
+<connect gate="G$1" pin="GND@5" pad="GND@5"/>
+<connect gate="G$1" pin="IN_L" pad="IN_L"/>
+<connect gate="G$1" pin="IN_R" pad="R_IN"/>
+<connect gate="G$1" pin="OUT_DAC" pad="OUT_DAC"/>
+<connect gate="G$1" pin="OUT_L" pad="OUT_L"/>
+<connect gate="G$1" pin="OUT_R" pad="OUT_R"/>
+</connects>
 <technologies>
 <technology name=""/>
 </technologies>
@@ -621,6 +708,37 @@ PCB width:
 </deviceset>
 </devicesets>
 </library>
+<library name="SparkFun-Aesthetics">
+<description>&lt;h3&gt;SparkFun Electronics' preferred foot prints&lt;/h3&gt;
+In this library you'll find non-functional items- supply symbols, logos, notations, frame blocks, etc.&lt;br&gt;&lt;br&gt;
+We've spent an enormous amount of time creating and checking these footprints and parts, but it is the end user's responsibility to ensure correctness and suitablity for a given componet or application. If you enjoy using this library, please buy one of our products at www.sparkfun.com.
+&lt;br&gt;&lt;br&gt;
+&lt;b&gt;Licensing:&lt;/b&gt; CC v3.0 Share-Alike You are welcome to use this library for commercial purposes. For attribution, we ask that when you begin to sell your device using our footprint, you email us with a link to the product being sold. We want bragging rights that we helped (in a very small part) to create your 8th world wonder. We would like the opportunity to feature your device on our homepage.</description>
+<packages>
+</packages>
+<symbols>
+<symbol name="DGND">
+<wire x1="-1.905" y1="0" x2="1.905" y2="0" width="0.254" layer="94"/>
+<text x="-2.54" y="-2.54" size="1.778" layer="96">&gt;VALUE</text>
+<pin name="GND" x="0" y="2.54" visible="off" length="short" direction="sup" rot="R270"/>
+</symbol>
+</symbols>
+<devicesets>
+<deviceset name="GND" prefix="GND">
+<description>&lt;b&gt;SUPPLY SYMBOL&lt;/b&gt;</description>
+<gates>
+<gate name="1" symbol="DGND" x="0" y="0"/>
+</gates>
+<devices>
+<device name="">
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+</devicesets>
+</library>
 </libraries>
 <attributes>
 </attributes>
@@ -646,6 +764,18 @@ PCB width:
 <part name="I-DEC" library="erthenvar" deviceset="AUDIO-JACK" device="ERTHENVAR"/>
 <part name="U$16" library="EurorackModularParts" deviceset="EURORACK_PANEL" device="12HP" value="EURORACK_PANEL12HP"/>
 <part name="U$17" library="zephod-components" deviceset="SWITCH_W_LED_PB6149L-X-102" device="WHITE"/>
+<part name="U$1" library="EurorackModularParts" deviceset="MCUBOARD" device=""/>
+<part name="GND1" library="SparkFun-Aesthetics" deviceset="GND" device=""/>
+<part name="GND2" library="SparkFun-Aesthetics" deviceset="GND" device=""/>
+<part name="GND3" library="SparkFun-Aesthetics" deviceset="GND" device=""/>
+<part name="GND4" library="SparkFun-Aesthetics" deviceset="GND" device=""/>
+<part name="GND5" library="SparkFun-Aesthetics" deviceset="GND" device=""/>
+<part name="GND6" library="SparkFun-Aesthetics" deviceset="GND" device=""/>
+<part name="GND7" library="SparkFun-Aesthetics" deviceset="GND" device=""/>
+<part name="GND8" library="SparkFun-Aesthetics" deviceset="GND" device=""/>
+<part name="GND9" library="SparkFun-Aesthetics" deviceset="GND" device=""/>
+<part name="GND10" library="SparkFun-Aesthetics" deviceset="GND" device=""/>
+<part name="GND11" library="SparkFun-Aesthetics" deviceset="GND" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -658,19 +788,101 @@ PCB width:
 <instance part="ENVDEC" gate="G$1" x="53.34" y="48.26"/>
 <instance part="TUNE" gate="G$1" x="27.94" y="15.24"/>
 <instance part="CUTOFF" gate="G$1" x="35.56" y="-10.16"/>
-<instance part="SAW" gate="G$1" x="7.62" y="45.72"/>
+<instance part="SAW" gate="G$1" x="203.2" y="-45.72" rot="R180"/>
 <instance part="I-CUTOFF" gate="G$1" x="7.62" y="15.24"/>
 <instance part="CV" gate="G$1" x="83.82" y="76.2"/>
-<instance part="PULSE" gate="G$1" x="83.82" y="48.26"/>
+<instance part="PULSE" gate="G$1" x="200.66" y="-30.48" rot="R180"/>
 <instance part="GATE" gate="G$1" x="12.7" y="-10.16"/>
 <instance part="I-AMT" gate="G$1" x="12.7" y="-35.56"/>
-<instance part="I-DEC" gate="G$1" x="96.52" y="-40.64"/>
+<instance part="I-DEC" gate="G$1" x="22.86" y="-58.42"/>
 <instance part="U$16" gate="G$1" x="121.92" y="20.32"/>
 <instance part="U$17" gate="G$1" x="83.82" y="15.24"/>
+<instance part="U$1" gate="G$1" x="127" y="-7.62"/>
+<instance part="GND1" gate="1" x="190.5" y="-63.5"/>
+<instance part="GND2" gate="1" x="144.78" y="-48.26"/>
+<instance part="GND3" gate="1" x="142.24" y="-48.26"/>
+<instance part="GND4" gate="1" x="139.7" y="-48.26"/>
+<instance part="GND5" gate="1" x="137.16" y="-48.26"/>
+<instance part="GND6" gate="1" x="119.38" y="-15.24" rot="R270"/>
+<instance part="GND7" gate="1" x="33.02" y="-55.88" rot="R90"/>
+<instance part="GND8" gate="1" x="22.86" y="-33.02" rot="R90"/>
+<instance part="GND9" gate="1" x="22.86" y="-7.62" rot="R90"/>
+<instance part="GND10" gate="1" x="17.78" y="17.78" rot="R90"/>
+<instance part="GND11" gate="1" x="93.98" y="78.74" rot="R90"/>
 </instances>
 <busses>
 </busses>
 <nets>
+<net name="N$1" class="0">
+<segment>
+<pinref part="U$1" gate="G$1" pin="OUT_L"/>
+<pinref part="PULSE" gate="G$1" pin="NORM"/>
+<wire x1="167.64" y1="-30.48" x2="193.04" y2="-30.48" width="0.1524" layer="91"/>
+<pinref part="PULSE" gate="G$1" pin="TIP"/>
+<wire x1="193.04" y1="-30.48" x2="193.04" y2="-25.4" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="N$2" class="0">
+<segment>
+<pinref part="U$1" gate="G$1" pin="OUT_R"/>
+<wire x1="167.64" y1="-33.02" x2="187.96" y2="-33.02" width="0.1524" layer="91"/>
+<wire x1="187.96" y1="-33.02" x2="187.96" y2="-45.72" width="0.1524" layer="91"/>
+<pinref part="SAW" gate="G$1" pin="TIP"/>
+<wire x1="187.96" y1="-45.72" x2="195.58" y2="-45.72" width="0.1524" layer="91"/>
+<wire x1="195.58" y1="-45.72" x2="195.58" y2="-40.64" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="GND" class="0">
+<segment>
+<pinref part="PULSE" gate="G$1" pin="RING"/>
+<wire x1="193.04" y1="-33.02" x2="190.5" y2="-33.02" width="0.1524" layer="91"/>
+<wire x1="190.5" y1="-33.02" x2="190.5" y2="-48.26" width="0.1524" layer="91"/>
+<pinref part="SAW" gate="G$1" pin="RING"/>
+<wire x1="190.5" y1="-48.26" x2="190.5" y2="-60.96" width="0.1524" layer="91"/>
+<wire x1="195.58" y1="-48.26" x2="190.5" y2="-48.26" width="0.1524" layer="91"/>
+<pinref part="GND1" gate="1" pin="GND"/>
+</segment>
+<segment>
+<pinref part="U$1" gate="G$1" pin="GND@5"/>
+<pinref part="GND2" gate="1" pin="GND"/>
+</segment>
+<segment>
+<pinref part="U$1" gate="G$1" pin="GND@4"/>
+<pinref part="GND3" gate="1" pin="GND"/>
+</segment>
+<segment>
+<pinref part="U$1" gate="G$1" pin="GND@3"/>
+<pinref part="GND4" gate="1" pin="GND"/>
+</segment>
+<segment>
+<pinref part="U$1" gate="G$1" pin="GND@2"/>
+<pinref part="GND5" gate="1" pin="GND"/>
+</segment>
+<segment>
+<pinref part="U$1" gate="G$1" pin="GND@1"/>
+<pinref part="GND6" gate="1" pin="GND"/>
+</segment>
+<segment>
+<pinref part="I-DEC" gate="G$1" pin="RING"/>
+<pinref part="GND7" gate="1" pin="GND"/>
+</segment>
+<segment>
+<pinref part="I-AMT" gate="G$1" pin="RING"/>
+<pinref part="GND8" gate="1" pin="GND"/>
+</segment>
+<segment>
+<pinref part="GATE" gate="G$1" pin="RING"/>
+<pinref part="GND9" gate="1" pin="GND"/>
+</segment>
+<segment>
+<pinref part="I-CUTOFF" gate="G$1" pin="RING"/>
+<pinref part="GND10" gate="1" pin="GND"/>
+</segment>
+<segment>
+<pinref part="CV" gate="G$1" pin="RING"/>
+<pinref part="GND11" gate="1" pin="GND"/>
+</segment>
+</net>
 </nets>
 </sheet>
 </sheets>

@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="5" unitdist="mm" unit="mm" style="lines" multiple="1" display="yes" altdistance="0.025" altunitdist="inch" altunit="inch"/>
+<grid distance="1" unitdist="mm" unit="mm" style="lines" multiple="1" display="yes" altdistance="0.025" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="2" name="Route2" color="1" fill="3" visible="no" active="no"/>
@@ -58,7 +58,7 @@
 <layer number="48" name="Document" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="49" name="Reference" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="50" name="dxf" color="7" fill="1" visible="no" active="no"/>
-<layer number="51" name="tDocu" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="51" name="tDocu" color="13" fill="1" visible="yes" active="yes"/>
 <layer number="52" name="bDocu" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="53" name="tGND_GNDA" color="7" fill="9" visible="no" active="no"/>
 <layer number="54" name="bGND_GNDA" color="1" fill="9" visible="no" active="no"/>
@@ -201,6 +201,41 @@ We've spent an enormous amount of time creating and checking these footprints an
 <wire x1="60.96" y1="1" x2="59.96" y2="0" width="0" layer="20" curve="-90"/>
 <hole x="53.22" y="3" drill="3.2"/>
 <hole x="53.22" y="125.5" drill="3.2"/>
+</package>
+<package name="MCUBASEBOARD">
+<wire x1="0" y1="99" x2="0" y2="1" width="0" layer="51"/>
+<wire x1="0" y1="1" x2="1" y2="0" width="0" layer="51" curve="90"/>
+<wire x1="1" y1="0" x2="32.65" y2="0" width="0" layer="51"/>
+<wire x1="32.65" y1="0" x2="33.65" y2="1" width="0" layer="51" curve="90"/>
+<wire x1="33.65" y1="1" x2="33.65" y2="99" width="0" layer="51"/>
+<wire x1="33.65" y1="99" x2="32.65" y2="100" width="0" layer="51" curve="90"/>
+<wire x1="32.65" y1="100" x2="1" y2="100" width="0" layer="51"/>
+<wire x1="1" y1="100" x2="0" y2="99" width="0" layer="51" curve="90"/>
+<pad name="OUT_DAC" x="32.07" y="1.27" drill="0.8"/>
+<pad name="GND@5" x="29.53" y="1.27" drill="0.8"/>
+<pad name="OUT_R" x="26.99" y="1.27" drill="0.8"/>
+<pad name="GND@4" x="24.45" y="1.27" drill="0.8"/>
+<pad name="OUT_L" x="21.91" y="1.27" drill="0.8"/>
+<pad name="GND" x="19.37" y="1.27" drill="0.8"/>
+<pad name="-12V" x="16.83" y="1.27" drill="0.8"/>
+<pad name="+12V" x="14.29" y="1.27" drill="0.8"/>
+<pad name="GND@2" x="11.75" y="1.27" drill="0.8"/>
+<pad name="R_IN" x="9.21" y="1.27" drill="0.8"/>
+<pad name="IN_L" x="6.67" y="1.27" drill="0.8"/>
+<pad name="GND@1" x="4.13" y="1.27" drill="0.8" shape="square"/>
+<pad name="P$13" x="1.27" y="5.72" drill="0.8"/>
+<pad name="P$14" x="1.27" y="8.26" drill="0.8"/>
+<pad name="P$15" x="1.27" y="10.8" drill="0.8"/>
+<pad name="P$16" x="1.27" y="13.34" drill="0.8"/>
+<pad name="P$17" x="1.27" y="15.88" drill="0.8"/>
+<pad name="P$18" x="1.27" y="18.42" drill="0.8"/>
+<pad name="P$19" x="1.27" y="20.96" drill="0.8"/>
+<pad name="P$20" x="1.27" y="23.5" drill="0.8"/>
+<pad name="P$21" x="1.27" y="26.04" drill="0.8"/>
+<pad name="P$22" x="1.27" y="28.58" drill="0.8"/>
+<pad name="P$23" x="1.27" y="31.12" drill="0.8"/>
+<pad name="P$24" x="1.27" y="33.66" drill="0.8" shape="square"/>
+<text x="0" y="101" size="1.27" layer="51">MCU BASEBOARD OUTLINE</text>
 </package>
 </packages>
 </library>
@@ -409,23 +444,75 @@ design rules under a new name.</description>
 </pass>
 </autorouter>
 <elements>
-<element name="AMT" library="SparkFun-Electromechanical" package="ALPS_POT" value="" x="30" y="65" rot="R270"/>
+<element name="AMT" library="SparkFun-Electromechanical" package="ALPS_POT" value="" x="30" y="67" rot="R270"/>
 <element name="DRIVE" library="SparkFun-Electromechanical" package="ALPS_POT" value="" x="50" y="90" rot="R270"/>
 <element name="RESONANCE" library="SparkFun-Electromechanical" package="ALPS_POT" value="" x="50" y="110" rot="R270"/>
 <element name="ENVDEC" library="SparkFun-Electromechanical" package="ALPS_POT" value="" x="30" y="90" rot="R270"/>
-<element name="TUNE" library="SparkFun-Electromechanical" package="ALPS_POT" value="" x="30" y="40" rot="R90"/>
+<element name="TUNE" library="SparkFun-Electromechanical" package="ALPS_POT" value="" x="30" y="46" rot="R270"/>
 <element name="CUTOFF" library="SparkFun-Electromechanical" package="ALPS_POT" value="" x="30" y="110" rot="R270"/>
-<element name="SAW" library="erthenvar" package="ERTHENVAR-JACK" value="AUDIO-JACKERTHENVAR" x="50" y="40"/>
+<element name="SAW" library="erthenvar" package="ERTHENVAR-JACK" value="AUDIO-JACKERTHENVAR" x="54" y="21"/>
 <element name="I-CUTOFF" library="erthenvar" package="ERTHENVAR-JACK" value="AUDIO-JACKERTHENVAR" x="10" y="110"/>
-<element name="CV" library="erthenvar" package="ERTHENVAR-JACK" value="AUDIO-JACKERTHENVAR" x="10" y="40"/>
-<element name="PULSE" library="erthenvar" package="ERTHENVAR-JACK" value="AUDIO-JACKERTHENVAR" x="50" y="15"/>
-<element name="GATE" library="erthenvar" package="ERTHENVAR-JACK" value="AUDIO-JACKERTHENVAR" x="10" y="15"/>
-<element name="I-AMT" library="erthenvar" package="ERTHENVAR-JACK" value="AUDIO-JACKERTHENVAR" x="10" y="65"/>
+<element name="CV" library="erthenvar" package="ERTHENVAR-JACK" value="AUDIO-JACKERTHENVAR" x="10" y="45"/>
+<element name="PULSE" library="erthenvar" package="ERTHENVAR-JACK" value="AUDIO-JACKERTHENVAR" x="54" y="34"/>
+<element name="GATE" library="erthenvar" package="ERTHENVAR-JACK" value="AUDIO-JACKERTHENVAR" x="10" y="21"/>
+<element name="I-AMT" library="erthenvar" package="ERTHENVAR-JACK" value="AUDIO-JACKERTHENVAR" x="10" y="68"/>
 <element name="I-DEC" library="erthenvar" package="ERTHENVAR-JACK" value="AUDIO-JACKERTHENVAR" x="10" y="90"/>
 <element name="U$16" library="EurorackModularParts" package="EURORACK12HP" value="EURORACK_PANEL12HP" x="0" y="0"/>
-<element name="U$17" library="zephod-components" package="PB6149L" value="SWITCH_W_LED_PB6149L-X-102WHITE" x="25" y="15"/>
+<element name="U$17" library="zephod-components" package="PB6149L" value="SWITCH_W_LED_PB6149L-X-102WHITE" x="22" y="21"/>
+<element name="U$1" library="EurorackModularParts" package="MCUBASEBOARD" value="MCUBOARD" x="0" y="10"/>
 </elements>
 <signals>
+<signal name="N$1">
+<contactref element="U$1" pad="OUT_L"/>
+<contactref element="PULSE" pad="2"/>
+<contactref element="PULSE" pad="3"/>
+<wire x1="54" y1="30.7" x2="54" y2="38.9" width="0" layer="19" extent="1-1"/>
+<wire x1="21.91" y1="11.27" x2="54" y2="30.7" width="0" layer="19" extent="1-1"/>
+</signal>
+<signal name="N$2">
+<contactref element="U$1" pad="OUT_R"/>
+<contactref element="SAW" pad="3"/>
+<wire x1="26.99" y1="11.27" x2="54" y2="25.9" width="0" layer="19" extent="1-1"/>
+</signal>
+<signal name="GND">
+<contactref element="PULSE" pad="1@2"/>
+<contactref element="PULSE" pad="1@1"/>
+<contactref element="SAW" pad="1@2"/>
+<contactref element="SAW" pad="1@1"/>
+<contactref element="U$1" pad="GND@5"/>
+<contactref element="U$1" pad="GND@4"/>
+<contactref element="U$1" pad="GND@2"/>
+<contactref element="U$1" pad="GND@1"/>
+<contactref element="U$1" pad="GND"/>
+<contactref element="I-DEC" pad="1@2"/>
+<contactref element="I-DEC" pad="1@1"/>
+<contactref element="I-AMT" pad="1@2"/>
+<contactref element="I-AMT" pad="1@1"/>
+<contactref element="GATE" pad="1@2"/>
+<contactref element="GATE" pad="1@1"/>
+<contactref element="I-CUTOFF" pad="1@2"/>
+<contactref element="I-CUTOFF" pad="1@1"/>
+<contactref element="CV" pad="1@2"/>
+<contactref element="CV" pad="1@1"/>
+<wire x1="5.8" y1="110" x2="14.2" y2="110" width="0" layer="19" extent="1-1"/>
+<wire x1="14.2" y1="90" x2="14.2" y2="110" width="0" layer="19" extent="1-1"/>
+<wire x1="5.8" y1="90" x2="14.2" y2="90" width="0" layer="19" extent="1-1"/>
+<wire x1="14.2" y1="68" x2="14.2" y2="90" width="0" layer="19" extent="1-1"/>
+<wire x1="5.8" y1="68" x2="14.2" y2="68" width="0" layer="19" extent="1-1"/>
+<wire x1="14.2" y1="45" x2="14.2" y2="68" width="0" layer="19" extent="1-1"/>
+<wire x1="5.8" y1="45" x2="14.2" y2="45" width="0" layer="19" extent="1-1"/>
+<wire x1="14.2" y1="21" x2="14.2" y2="45" width="0" layer="19" extent="1-1"/>
+<wire x1="5.8" y1="21" x2="14.2" y2="21" width="0" layer="19" extent="1-1"/>
+<wire x1="4.13" y1="11.27" x2="5.8" y2="21" width="0" layer="19" extent="1-1"/>
+<wire x1="11.75" y1="11.27" x2="4.13" y2="11.27" width="0" layer="19" extent="1-1"/>
+<wire x1="19.37" y1="11.27" x2="11.75" y2="11.27" width="0" layer="19" extent="1-1"/>
+<wire x1="24.45" y1="11.27" x2="19.37" y2="11.27" width="0" layer="19" extent="1-1"/>
+<wire x1="29.53" y1="11.27" x2="24.45" y2="11.27" width="0" layer="19" extent="1-1"/>
+<wire x1="49.8" y1="21" x2="29.53" y2="11.27" width="0" layer="19" extent="1-1"/>
+<wire x1="58.2" y1="21" x2="49.8" y2="21" width="0" layer="19" extent="1-1"/>
+<wire x1="58.2" y1="34" x2="58.2" y2="21" width="0" layer="19" extent="1-1"/>
+<wire x1="49.8" y1="34" x2="58.2" y2="34" width="0" layer="19" extent="1-1"/>
+</signal>
 </signals>
 </board>
 </drawing>
