@@ -150,50 +150,10 @@
 <library name="EurorackModularParts">
 <packages>
 <package name="3.5MM-JACK-SWITCH-13MM-INPUT">
-<smd name="TIP" x="0" y="4.9" dx="4.5" dy="2.5" layer="1" roundness="50"/>
-<smd name="SWITCH" x="4.2" y="0" dx="4.5" dy="2.5" layer="1" roundness="50" rot="R90"/>
-<smd name="SECOND" x="0" y="-3.3" dx="4.5" dy="2.5" layer="1" roundness="50" rot="R180"/>
-<smd name="RING" x="-4.2" y="0" dx="4.5" dy="2.5" layer="1" roundness="50" rot="R270"/>
-<polygon width="0.127" layer="16">
-<vertex x="-5.45" y="-1.65"/>
-<vertex x="-5.45" y="1.65" curve="-90"/>
-<vertex x="-4.9" y="2.25"/>
-<vertex x="-3.55" y="2.25" curve="-90"/>
-<vertex x="-2.95" y="1.65"/>
-<vertex x="-2.95" y="-1.65" curve="-90"/>
-<vertex x="-3.55" y="-2.25"/>
-<vertex x="-4.85" y="-2.25" curve="-90"/>
-</polygon>
-<polygon width="0.127" layer="16">
-<vertex x="1.65" y="3.65"/>
-<vertex x="-1.65" y="3.65" curve="-90"/>
-<vertex x="-2.25" y="4.2"/>
-<vertex x="-2.25" y="5.55" curve="-90"/>
-<vertex x="-1.65" y="6.15"/>
-<vertex x="1.65" y="6.15" curve="-90"/>
-<vertex x="2.25" y="5.55"/>
-<vertex x="2.25" y="4.25" curve="-90"/>
-</polygon>
-<polygon width="0.127" layer="16">
-<vertex x="2.95" y="-1.65"/>
-<vertex x="2.95" y="1.65" curve="-90"/>
-<vertex x="3.5" y="2.25"/>
-<vertex x="4.85" y="2.25" curve="-90"/>
-<vertex x="5.45" y="1.65"/>
-<vertex x="5.45" y="-1.65" curve="-90"/>
-<vertex x="4.85" y="-2.25"/>
-<vertex x="3.55" y="-2.25" curve="-90"/>
-</polygon>
-<polygon width="0.127" layer="16">
-<vertex x="1.65" y="-4.55"/>
-<vertex x="-1.65" y="-4.55" curve="-90"/>
-<vertex x="-2.25" y="-4"/>
-<vertex x="-2.25" y="-2.65" curve="-90"/>
-<vertex x="-1.65" y="-2.05"/>
-<vertex x="1.65" y="-2.05" curve="-90"/>
-<vertex x="2.25" y="-2.65"/>
-<vertex x="2.25" y="-3.95" curve="-90"/>
-</polygon>
+<smd name="TIP@1" x="0" y="4.9" dx="4.5" dy="2.5" layer="1" roundness="50"/>
+<smd name="SWITCH@1" x="4.2" y="0" dx="4.5" dy="2.5" layer="1" roundness="50" rot="R90"/>
+<smd name="SECOND@1" x="0" y="-3.3" dx="4.5" dy="2.5" layer="1" roundness="50" rot="R180"/>
+<smd name="RING@1" x="-4.2" y="0" dx="4.5" dy="2.5" layer="1" roundness="50" rot="R270"/>
 <wire x1="-4.7" y1="-1.5" x2="-3.7" y2="-1.5" width="0" layer="46"/>
 <wire x1="-3.7" y1="-1.5" x2="-3.7" y2="1.5" width="0" layer="46"/>
 <wire x1="-3.7" y1="1.5" x2="-4.7" y2="1.5" width="0" layer="46"/>
@@ -219,52 +179,16 @@
 <circle x="0" y="0" radius="6" width="0.1" layer="21"/>
 <circle x="0" y="0" radius="3" width="1.2" layer="21"/>
 <circle x="0" y="0" radius="1.5" width="2" layer="21"/>
+<smd name="TIP@2" x="0" y="4.9" dx="4.5" dy="2.5" layer="16" roundness="50" rot="R180"/>
+<smd name="SWITCH@2" x="4.2" y="0" dx="4.5" dy="2.5" layer="16" roundness="50" rot="R90"/>
+<smd name="SECOND@2" x="0" y="-3.3" dx="4.5" dy="2.5" layer="16" roundness="50"/>
+<smd name="RING@2" x="-4.2" y="0" dx="4.5" dy="2.5" layer="16" roundness="50" rot="R270"/>
 </package>
 <package name="3.5MM-JACK-SWITCH-13MM-OUTPUT">
-<smd name="TIP" x="0" y="4.9" dx="4.5" dy="2.5" layer="1" roundness="50"/>
-<smd name="SWITCH" x="4.2" y="0" dx="4.5" dy="2.5" layer="1" roundness="50" rot="R90"/>
-<smd name="SECOND" x="0" y="-3.3" dx="4.5" dy="2.5" layer="1" roundness="50" rot="R180"/>
-<smd name="RING" x="-4.2" y="0" dx="4.5" dy="2.5" layer="1" roundness="50" rot="R270"/>
-<polygon width="0" layer="16">
-<vertex x="-5.45" y="-1.65"/>
-<vertex x="-5.45" y="1.65" curve="-90"/>
-<vertex x="-4.9" y="2.25"/>
-<vertex x="-3.55" y="2.25" curve="-90"/>
-<vertex x="-2.95" y="1.65"/>
-<vertex x="-2.95" y="-1.65" curve="-90"/>
-<vertex x="-3.55" y="-2.25"/>
-<vertex x="-4.85" y="-2.25" curve="-90"/>
-</polygon>
-<polygon width="0" layer="16">
-<vertex x="1.65" y="3.65"/>
-<vertex x="-1.65" y="3.65" curve="-90"/>
-<vertex x="-2.25" y="4.2"/>
-<vertex x="-2.25" y="5.55" curve="-90"/>
-<vertex x="-1.65" y="6.15"/>
-<vertex x="1.65" y="6.15" curve="-90"/>
-<vertex x="2.25" y="5.55"/>
-<vertex x="2.25" y="4.25" curve="-90"/>
-</polygon>
-<polygon width="0" layer="16">
-<vertex x="2.95" y="-1.65"/>
-<vertex x="2.95" y="1.65" curve="-90"/>
-<vertex x="3.5" y="2.25"/>
-<vertex x="4.85" y="2.25" curve="-90"/>
-<vertex x="5.45" y="1.65"/>
-<vertex x="5.45" y="-1.65" curve="-90"/>
-<vertex x="4.85" y="-2.25"/>
-<vertex x="3.55" y="-2.25" curve="-90"/>
-</polygon>
-<polygon width="0" layer="16">
-<vertex x="1.65" y="-4.55"/>
-<vertex x="-1.65" y="-4.55" curve="-90"/>
-<vertex x="-2.25" y="-4"/>
-<vertex x="-2.25" y="-2.65" curve="-90"/>
-<vertex x="-1.65" y="-2.05"/>
-<vertex x="1.65" y="-2.05" curve="-90"/>
-<vertex x="2.25" y="-2.65"/>
-<vertex x="2.25" y="-3.95" curve="-90"/>
-</polygon>
+<smd name="TIP@1" x="0" y="4.9" dx="4.5" dy="2.5" layer="1" roundness="50"/>
+<smd name="SWITCH@1" x="4.2" y="0" dx="4.5" dy="2.5" layer="1" roundness="50" rot="R90"/>
+<smd name="SECOND@1" x="0" y="-3.3" dx="4.5" dy="2.5" layer="1" roundness="50" rot="R180"/>
+<smd name="RING@1" x="-4.2" y="0" dx="4.5" dy="2.5" layer="1" roundness="50" rot="R270"/>
 <wire x1="-4.7" y1="-1.5" x2="-3.7" y2="-1.5" width="0" layer="46"/>
 <wire x1="-3.7" y1="-1.5" x2="-3.7" y2="1.5" width="0" layer="46"/>
 <wire x1="-3.7" y1="1.5" x2="-4.7" y2="1.5" width="0" layer="46"/>
@@ -291,6 +215,10 @@
 <circle x="0" y="0" radius="2.9" width="0.1" layer="21"/>
 <circle x="0" y="0" radius="2" width="0.1" layer="21"/>
 <circle x="0" y="0" radius="1" width="0.1" layer="21"/>
+<smd name="TIP@2" x="0" y="4.9" dx="4.5" dy="2.5" layer="16" roundness="50" rot="R180"/>
+<smd name="SWITCH@2" x="4.2" y="0" dx="4.5" dy="2.5" layer="16" roundness="50" rot="R90"/>
+<smd name="SECOND@2" x="0" y="-3.3" dx="4.5" dy="2.5" layer="16" roundness="50"/>
+<smd name="RING@2" x="-4.2" y="0" dx="4.5" dy="2.5" layer="16" roundness="50" rot="R270"/>
 </package>
 <package name="OG-POTS_ALPS_POT_VERTICAL">
 <circle x="0" y="0" radius="2.54" width="0.2032" layer="51"/>
@@ -307,28 +235,6 @@
 <pad name="P$5" x="-4.4" y="0" drill="2.2" diameter="3.175" rot="R90"/>
 <text x="-3.81" y="3.81" size="1.27" layer="25">&gt;NAME</text>
 <text x="-3.81" y="2.286" size="1.27" layer="27">&gt;VALUE</text>
-<wire x1="0" y1="0" x2="-5" y2="-5" width="0.127" layer="21"/>
-<wire x1="-5" y1="-5" x2="-7" y2="-7" width="0.127" layer="21"/>
-<wire x1="0" y1="0" x2="6" y2="-6" width="0.127" layer="21"/>
-<wire x1="6" y1="-6" x2="7" y2="-7" width="0.127" layer="21"/>
-<wire x1="7" y1="-7" x2="9" y2="-5" width="0.127" layer="21"/>
-<wire x1="9" y1="-5" x2="8" y2="-4" width="0.127" layer="21"/>
-<wire x1="8" y1="-4" x2="6" y2="-6" width="0.127" layer="21"/>
-<wire x1="-7" y1="-7" x2="-8" y2="-6" width="0.127" layer="21"/>
-<wire x1="-8" y1="-6" x2="-6" y2="-4" width="0.127" layer="21"/>
-<wire x1="-6" y1="-4" x2="-5" y2="-5" width="0.127" layer="21"/>
-<polygon width="0.127" layer="21">
-<vertex x="-6" y="-4"/>
-<vertex x="-5" y="-5"/>
-<vertex x="-7" y="-7"/>
-<vertex x="-8" y="-6"/>
-</polygon>
-<polygon width="0.127" layer="21">
-<vertex x="8" y="-4"/>
-<vertex x="9" y="-5"/>
-<vertex x="7" y="-7"/>
-<vertex x="6" y="-6"/>
-</polygon>
 </package>
 <package name="EURORACK12HPPCB">
 <wire x1="0" y1="105.5" x2="0" y2="1" width="0.127" layer="20"/>
@@ -3879,15 +3785,15 @@ design rules under a new name.</description>
 </elements>
 <signals>
 <signal name="GND">
-<contactref element="I-CUTOFF" pad="RING"/>
-<contactref element="I-GATE" pad="RING"/>
-<contactref element="I-ENVAMT" pad="SWITCH"/>
-<contactref element="I-ENVAMT" pad="RING"/>
-<contactref element="I-ENVDEC" pad="RING"/>
-<contactref element="I-ENVDEC" pad="SWITCH"/>
-<contactref element="I-CV" pad="RING"/>
-<contactref element="O-SAW" pad="RING"/>
-<contactref element="O-PULSE" pad="RING"/>
+<contactref element="I-CUTOFF" pad="RING@1"/>
+<contactref element="I-GATE" pad="RING@1"/>
+<contactref element="I-ENVAMT" pad="SWITCH@1"/>
+<contactref element="I-ENVAMT" pad="RING@1"/>
+<contactref element="I-ENVDEC" pad="RING@1"/>
+<contactref element="I-ENVDEC" pad="SWITCH@1"/>
+<contactref element="I-CV" pad="RING@1"/>
+<contactref element="O-SAW" pad="RING@1"/>
+<contactref element="O-PULSE" pad="RING@1"/>
 <contactref element="AMT" pad="P$3"/>
 <contactref element="DRIVE" pad="P$3"/>
 <contactref element="ENVDEC" pad="P$3"/>
@@ -3912,7 +3818,7 @@ design rules under a new name.</description>
 </polygon>
 <contactref element="U$17" pad="4"/>
 <contactref element="U$17" pad="3"/>
-<contactref element="I-CUTOFF" pad="SWITCH"/>
+<contactref element="I-CUTOFF" pad="SWITCH@1"/>
 <contactref element="C4" pad="2"/>
 <contactref element="IC5" pad="1"/>
 <contactref element="IC1" pad="4"/>
@@ -3950,24 +3856,28 @@ design rules under a new name.</description>
 <wire x1="-28.54" y1="21.59" x2="-24.52" y2="17.78" width="0" layer="19" extent="1-1"/>
 <wire x1="2.58" y1="36.48" x2="-1.016" y2="53.213" width="0" layer="19" extent="16-16"/>
 <wire x1="22.9" y1="36.48" x2="16.12" y2="17.78" width="0" layer="19" extent="1-1"/>
+<contactref element="O-PULSE" pad="RING@2"/>
+<contactref element="O-SAW" pad="RING@2"/>
 </signal>
 <signal name="N$1">
-<contactref element="O-PULSE" pad="TIP"/>
+<contactref element="O-PULSE" pad="TIP@1"/>
 <contactref element="U$1" pad="OUT_L"/>
 <wire x1="-7.9" y1="1.27" x2="20.32" y2="22.68" width="0" layer="19" extent="1-1"/>
+<contactref element="O-PULSE" pad="TIP@2"/>
 </signal>
 <signal name="N$2">
-<contactref element="O-SAW" pad="TIP"/>
+<contactref element="O-SAW" pad="TIP@1"/>
 <contactref element="U$1" pad="OUT_R"/>
 <wire x1="-2.82" y1="1.27" x2="10.16" y2="15.06" width="0" layer="19" extent="1-1"/>
+<contactref element="O-SAW" pad="TIP@2"/>
 </signal>
 <signal name="GATE">
-<contactref element="I-GATE" pad="SWITCH"/>
+<contactref element="I-GATE" pad="SWITCH@1"/>
 <contactref element="U$1" pad="GATE_BUS"/>
 <wire x1="-5.96" y1="10.16" x2="-28.54" y2="49.53" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="CV">
-<contactref element="I-CV" pad="SWITCH"/>
+<contactref element="I-CV" pad="SWITCH@1"/>
 <contactref element="U$1" pad="CVBUS"/>
 <wire x1="-16.12" y1="17.78" x2="-28.54" y2="80.01" width="0" layer="19" extent="1-1"/>
 </signal>
@@ -4026,12 +3936,12 @@ design rules under a new name.</description>
 <wire x1="-13.184996875" y1="-4.624996875" x2="-13.184996875" y2="-4.4704" width="0.1524" layer="1"/>
 </signal>
 <signal name="CV_MIX1">
-<contactref element="I-CV" pad="TIP"/>
+<contactref element="I-CV" pad="TIP@1"/>
 <contactref element="U$1" pad="CV_MIX1"/>
 <wire x1="-20.32" y1="22.68" x2="-28.54" y2="77.47" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="GATE_IN">
-<contactref element="I-GATE" pad="TIP"/>
+<contactref element="I-GATE" pad="TIP@1"/>
 <contactref element="U$1" pad="GATE_IN"/>
 <wire x1="-10.16" y1="15.06" x2="-28.54" y2="46.99" width="0" layer="19" extent="1-1"/>
 </signal>
@@ -4059,11 +3969,11 @@ design rules under a new name.</description>
 </signal>
 <signal name="IN_AMT">
 <contactref element="U$1" pad="IN_R"/>
-<contactref element="I-ENVAMT" pad="TIP"/>
+<contactref element="I-ENVAMT" pad="TIP@1"/>
 <wire x1="-20.6" y1="1.27" x2="-20.32" y2="76.02" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="IN_CUTOFF">
-<contactref element="I-CUTOFF" pad="TIP"/>
+<contactref element="I-CUTOFF" pad="TIP@1"/>
 <contactref element="U$1" pad="IN_L"/>
 <wire x1="-23.14" y1="1.27" x2="-20.32" y2="103.96" width="0" layer="19" extent="1-1"/>
 </signal>
@@ -4111,7 +4021,7 @@ design rules under a new name.</description>
 <wire x1="-12.98" y1="1.27" x2="-20.574" y2="62.23" width="0" layer="19" extent="16-16"/>
 </signal>
 <signal name="IN_DEC_PRE">
-<contactref element="I-ENVDEC" pad="TIP"/>
+<contactref element="I-ENVDEC" pad="TIP@1"/>
 <contactref element="R16" pad="2"/>
 <wire x1="-20.32" y1="48.08" x2="6.604" y2="51.943" width="0" layer="19" extent="1-16"/>
 </signal>

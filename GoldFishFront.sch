@@ -6,36 +6,36 @@
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.05" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
+<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
 <layers>
-<layer number="1" name="Top" color="4" fill="1" visible="yes" active="no"/>
-<layer number="2" name="Route2" color="1" fill="3" visible="yes" active="no"/>
-<layer number="3" name="Route3" color="4" fill="3" visible="yes" active="no"/>
-<layer number="4" name="Route4" color="1" fill="4" visible="yes" active="no"/>
-<layer number="5" name="Route5" color="4" fill="4" visible="yes" active="no"/>
-<layer number="6" name="Route6" color="1" fill="8" visible="yes" active="no"/>
-<layer number="7" name="Route7" color="4" fill="8" visible="yes" active="no"/>
-<layer number="8" name="Route8" color="1" fill="2" visible="yes" active="no"/>
-<layer number="9" name="Route9" color="4" fill="2" visible="yes" active="no"/>
-<layer number="10" name="Route10" color="1" fill="7" visible="yes" active="no"/>
-<layer number="11" name="Route11" color="4" fill="7" visible="yes" active="no"/>
-<layer number="12" name="Route12" color="1" fill="5" visible="yes" active="no"/>
-<layer number="13" name="Route13" color="4" fill="5" visible="yes" active="no"/>
-<layer number="14" name="Route14" color="1" fill="6" visible="yes" active="no"/>
-<layer number="15" name="Route15" color="4" fill="6" visible="yes" active="no"/>
-<layer number="16" name="Bottom" color="1" fill="1" visible="yes" active="no"/>
-<layer number="17" name="Pads" color="2" fill="1" visible="yes" active="no"/>
-<layer number="18" name="Vias" color="2" fill="1" visible="yes" active="no"/>
-<layer number="19" name="Unrouted" color="6" fill="1" visible="yes" active="no"/>
-<layer number="20" name="Dimension" color="15" fill="1" visible="yes" active="no"/>
-<layer number="21" name="tPlace" color="7" fill="1" visible="yes" active="no"/>
-<layer number="22" name="bPlace" color="7" fill="1" visible="yes" active="no"/>
-<layer number="23" name="tOrigins" color="15" fill="1" visible="yes" active="no"/>
-<layer number="24" name="bOrigins" color="15" fill="1" visible="yes" active="no"/>
-<layer number="25" name="tNames" color="7" fill="1" visible="yes" active="no"/>
-<layer number="26" name="bNames" color="7" fill="1" visible="yes" active="no"/>
-<layer number="27" name="tValues" color="7" fill="1" visible="yes" active="no"/>
-<layer number="28" name="bValues" color="7" fill="1" visible="yes" active="no"/>
+<layer number="1" name="Top" color="4" fill="1" visible="no" active="no"/>
+<layer number="2" name="Route2" color="1" fill="3" visible="no" active="no"/>
+<layer number="3" name="Route3" color="4" fill="3" visible="no" active="no"/>
+<layer number="4" name="Route4" color="1" fill="4" visible="no" active="no"/>
+<layer number="5" name="Route5" color="4" fill="4" visible="no" active="no"/>
+<layer number="6" name="Route6" color="1" fill="8" visible="no" active="no"/>
+<layer number="7" name="Route7" color="4" fill="8" visible="no" active="no"/>
+<layer number="8" name="Route8" color="1" fill="2" visible="no" active="no"/>
+<layer number="9" name="Route9" color="4" fill="2" visible="no" active="no"/>
+<layer number="10" name="Route10" color="1" fill="7" visible="no" active="no"/>
+<layer number="11" name="Route11" color="4" fill="7" visible="no" active="no"/>
+<layer number="12" name="Route12" color="1" fill="5" visible="no" active="no"/>
+<layer number="13" name="Route13" color="4" fill="5" visible="no" active="no"/>
+<layer number="14" name="Route14" color="1" fill="6" visible="no" active="no"/>
+<layer number="15" name="Route15" color="4" fill="6" visible="no" active="no"/>
+<layer number="16" name="Bottom" color="1" fill="1" visible="no" active="no"/>
+<layer number="17" name="Pads" color="2" fill="1" visible="no" active="no"/>
+<layer number="18" name="Vias" color="2" fill="1" visible="no" active="no"/>
+<layer number="19" name="Unrouted" color="6" fill="1" visible="no" active="no"/>
+<layer number="20" name="Dimension" color="15" fill="1" visible="no" active="no"/>
+<layer number="21" name="tPlace" color="7" fill="1" visible="no" active="no"/>
+<layer number="22" name="bPlace" color="7" fill="1" visible="no" active="no"/>
+<layer number="23" name="tOrigins" color="15" fill="1" visible="no" active="no"/>
+<layer number="24" name="bOrigins" color="15" fill="1" visible="no" active="no"/>
+<layer number="25" name="tNames" color="7" fill="1" visible="no" active="no"/>
+<layer number="26" name="bNames" color="7" fill="1" visible="no" active="no"/>
+<layer number="27" name="tValues" color="7" fill="1" visible="no" active="no"/>
+<layer number="28" name="bValues" color="7" fill="1" visible="no" active="no"/>
 <layer number="29" name="tStop" color="7" fill="3" visible="no" active="no"/>
 <layer number="30" name="bStop" color="7" fill="6" visible="no" active="no"/>
 <layer number="31" name="tCream" color="7" fill="4" visible="no" active="no"/>
@@ -44,8 +44,8 @@
 <layer number="34" name="bFinish" color="6" fill="6" visible="no" active="no"/>
 <layer number="35" name="tGlue" color="7" fill="4" visible="no" active="no"/>
 <layer number="36" name="bGlue" color="7" fill="5" visible="no" active="no"/>
-<layer number="37" name="tTest" color="7" fill="1" visible="yes" active="no"/>
-<layer number="38" name="bTest" color="7" fill="1" visible="yes" active="no"/>
+<layer number="37" name="tTest" color="7" fill="1" visible="no" active="no"/>
+<layer number="38" name="bTest" color="7" fill="1" visible="no" active="no"/>
 <layer number="39" name="tKeepout" color="4" fill="11" visible="no" active="no"/>
 <layer number="40" name="bKeepout" color="1" fill="11" visible="no" active="no"/>
 <layer number="41" name="tRestrict" color="4" fill="10" visible="no" active="no"/>
@@ -53,17 +53,17 @@
 <layer number="43" name="vRestrict" color="2" fill="10" visible="no" active="no"/>
 <layer number="44" name="Drills" color="7" fill="1" visible="no" active="no"/>
 <layer number="45" name="Holes" color="7" fill="1" visible="no" active="no"/>
-<layer number="46" name="Milling" color="3" fill="1" visible="yes" active="no"/>
-<layer number="47" name="Measures" color="7" fill="1" visible="yes" active="no"/>
-<layer number="48" name="Document" color="7" fill="1" visible="yes" active="no"/>
-<layer number="49" name="Reference" color="7" fill="1" visible="yes" active="no"/>
-<layer number="50" name="dxf" color="7" fill="1" visible="yes" active="no"/>
-<layer number="51" name="tDocu" color="12" fill="1" visible="yes" active="no"/>
-<layer number="52" name="bDocu" color="7" fill="1" visible="yes" active="no"/>
-<layer number="53" name="tGND_GNDA" color="7" fill="9" visible="yes" active="no"/>
-<layer number="54" name="bGND_GNDA" color="1" fill="9" visible="yes" active="no"/>
-<layer number="56" name="wert" color="7" fill="1" visible="yes" active="no"/>
-<layer number="57" name="tCAD" color="7" fill="1" visible="yes" active="no"/>
+<layer number="46" name="Milling" color="3" fill="1" visible="no" active="no"/>
+<layer number="47" name="Measures" color="7" fill="1" visible="no" active="no"/>
+<layer number="48" name="Document" color="7" fill="1" visible="no" active="no"/>
+<layer number="49" name="Reference" color="7" fill="1" visible="no" active="no"/>
+<layer number="50" name="dxf" color="7" fill="1" visible="no" active="no"/>
+<layer number="51" name="tDocu" color="12" fill="1" visible="no" active="no"/>
+<layer number="52" name="bDocu" color="7" fill="1" visible="no" active="no"/>
+<layer number="53" name="tGND_GNDA" color="7" fill="9" visible="no" active="no"/>
+<layer number="54" name="bGND_GNDA" color="1" fill="9" visible="no" active="no"/>
+<layer number="56" name="wert" color="7" fill="1" visible="no" active="no"/>
+<layer number="57" name="tCAD" color="7" fill="1" visible="no" active="no"/>
 <layer number="91" name="Nets" color="2" fill="1" visible="yes" active="yes"/>
 <layer number="92" name="Busses" color="1" fill="1" visible="yes" active="yes"/>
 <layer number="93" name="Pins" color="2" fill="1" visible="no" active="yes"/>
@@ -148,50 +148,10 @@
 <library name="EurorackModularParts">
 <packages>
 <package name="3.5MM-JACK-SWITCH-13MM-OUTPUT">
-<smd name="TIP" x="0" y="4.9" dx="4.5" dy="2.5" layer="1" roundness="50"/>
-<smd name="SWITCH" x="4.2" y="0" dx="4.5" dy="2.5" layer="1" roundness="50" rot="R90"/>
-<smd name="SECOND" x="0" y="-3.3" dx="4.5" dy="2.5" layer="1" roundness="50" rot="R180"/>
-<smd name="RING" x="-4.2" y="0" dx="4.5" dy="2.5" layer="1" roundness="50" rot="R270"/>
-<polygon width="0" layer="16">
-<vertex x="-5.45" y="-1.65"/>
-<vertex x="-5.45" y="1.65" curve="-90"/>
-<vertex x="-4.9" y="2.25"/>
-<vertex x="-3.55" y="2.25" curve="-90"/>
-<vertex x="-2.95" y="1.65"/>
-<vertex x="-2.95" y="-1.65" curve="-90"/>
-<vertex x="-3.55" y="-2.25"/>
-<vertex x="-4.85" y="-2.25" curve="-90"/>
-</polygon>
-<polygon width="0" layer="16">
-<vertex x="1.65" y="3.65"/>
-<vertex x="-1.65" y="3.65" curve="-90"/>
-<vertex x="-2.25" y="4.2"/>
-<vertex x="-2.25" y="5.55" curve="-90"/>
-<vertex x="-1.65" y="6.15"/>
-<vertex x="1.65" y="6.15" curve="-90"/>
-<vertex x="2.25" y="5.55"/>
-<vertex x="2.25" y="4.25" curve="-90"/>
-</polygon>
-<polygon width="0" layer="16">
-<vertex x="2.95" y="-1.65"/>
-<vertex x="2.95" y="1.65" curve="-90"/>
-<vertex x="3.5" y="2.25"/>
-<vertex x="4.85" y="2.25" curve="-90"/>
-<vertex x="5.45" y="1.65"/>
-<vertex x="5.45" y="-1.65" curve="-90"/>
-<vertex x="4.85" y="-2.25"/>
-<vertex x="3.55" y="-2.25" curve="-90"/>
-</polygon>
-<polygon width="0" layer="16">
-<vertex x="1.65" y="-4.55"/>
-<vertex x="-1.65" y="-4.55" curve="-90"/>
-<vertex x="-2.25" y="-4"/>
-<vertex x="-2.25" y="-2.65" curve="-90"/>
-<vertex x="-1.65" y="-2.05"/>
-<vertex x="1.65" y="-2.05" curve="-90"/>
-<vertex x="2.25" y="-2.65"/>
-<vertex x="2.25" y="-3.95" curve="-90"/>
-</polygon>
+<smd name="TIP@1" x="0" y="4.9" dx="4.5" dy="2.5" layer="1" roundness="50"/>
+<smd name="SWITCH@1" x="4.2" y="0" dx="4.5" dy="2.5" layer="1" roundness="50" rot="R90"/>
+<smd name="SECOND@1" x="0" y="-3.3" dx="4.5" dy="2.5" layer="1" roundness="50" rot="R180"/>
+<smd name="RING@1" x="-4.2" y="0" dx="4.5" dy="2.5" layer="1" roundness="50" rot="R270"/>
 <wire x1="-4.7" y1="-1.5" x2="-3.7" y2="-1.5" width="0" layer="46"/>
 <wire x1="-3.7" y1="-1.5" x2="-3.7" y2="1.5" width="0" layer="46"/>
 <wire x1="-3.7" y1="1.5" x2="-4.7" y2="1.5" width="0" layer="46"/>
@@ -218,52 +178,16 @@
 <circle x="0" y="0" radius="2.9" width="0.1" layer="21"/>
 <circle x="0" y="0" radius="2" width="0.1" layer="21"/>
 <circle x="0" y="0" radius="1" width="0.1" layer="21"/>
+<smd name="TIP@2" x="0" y="4.9" dx="4.5" dy="2.5" layer="16" roundness="50" rot="R180"/>
+<smd name="SWITCH@2" x="4.2" y="0" dx="4.5" dy="2.5" layer="16" roundness="50" rot="R90"/>
+<smd name="SECOND@2" x="0" y="-3.3" dx="4.5" dy="2.5" layer="16" roundness="50"/>
+<smd name="RING@2" x="-4.2" y="0" dx="4.5" dy="2.5" layer="16" roundness="50" rot="R270"/>
 </package>
 <package name="3.5MM-JACK-SWITCH-13MM-INPUT">
-<smd name="TIP" x="0" y="4.9" dx="4.5" dy="2.5" layer="1" roundness="50"/>
-<smd name="SWITCH" x="4.2" y="0" dx="4.5" dy="2.5" layer="1" roundness="50" rot="R90"/>
-<smd name="SECOND" x="0" y="-3.3" dx="4.5" dy="2.5" layer="1" roundness="50" rot="R180"/>
-<smd name="RING" x="-4.2" y="0" dx="4.5" dy="2.5" layer="1" roundness="50" rot="R270"/>
-<polygon width="0.127" layer="16">
-<vertex x="-5.45" y="-1.65"/>
-<vertex x="-5.45" y="1.65" curve="-90"/>
-<vertex x="-4.9" y="2.25"/>
-<vertex x="-3.55" y="2.25" curve="-90"/>
-<vertex x="-2.95" y="1.65"/>
-<vertex x="-2.95" y="-1.65" curve="-90"/>
-<vertex x="-3.55" y="-2.25"/>
-<vertex x="-4.85" y="-2.25" curve="-90"/>
-</polygon>
-<polygon width="0.127" layer="16">
-<vertex x="1.65" y="3.65"/>
-<vertex x="-1.65" y="3.65" curve="-90"/>
-<vertex x="-2.25" y="4.2"/>
-<vertex x="-2.25" y="5.55" curve="-90"/>
-<vertex x="-1.65" y="6.15"/>
-<vertex x="1.65" y="6.15" curve="-90"/>
-<vertex x="2.25" y="5.55"/>
-<vertex x="2.25" y="4.25" curve="-90"/>
-</polygon>
-<polygon width="0.127" layer="16">
-<vertex x="2.95" y="-1.65"/>
-<vertex x="2.95" y="1.65" curve="-90"/>
-<vertex x="3.5" y="2.25"/>
-<vertex x="4.85" y="2.25" curve="-90"/>
-<vertex x="5.45" y="1.65"/>
-<vertex x="5.45" y="-1.65" curve="-90"/>
-<vertex x="4.85" y="-2.25"/>
-<vertex x="3.55" y="-2.25" curve="-90"/>
-</polygon>
-<polygon width="0.127" layer="16">
-<vertex x="1.65" y="-4.55"/>
-<vertex x="-1.65" y="-4.55" curve="-90"/>
-<vertex x="-2.25" y="-4"/>
-<vertex x="-2.25" y="-2.65" curve="-90"/>
-<vertex x="-1.65" y="-2.05"/>
-<vertex x="1.65" y="-2.05" curve="-90"/>
-<vertex x="2.25" y="-2.65"/>
-<vertex x="2.25" y="-3.95" curve="-90"/>
-</polygon>
+<smd name="TIP@1" x="0" y="4.9" dx="4.5" dy="2.5" layer="1" roundness="50"/>
+<smd name="SWITCH@1" x="4.2" y="0" dx="4.5" dy="2.5" layer="1" roundness="50" rot="R90"/>
+<smd name="SECOND@1" x="0" y="-3.3" dx="4.5" dy="2.5" layer="1" roundness="50" rot="R180"/>
+<smd name="RING@1" x="-4.2" y="0" dx="4.5" dy="2.5" layer="1" roundness="50" rot="R270"/>
 <wire x1="-4.7" y1="-1.5" x2="-3.7" y2="-1.5" width="0" layer="46"/>
 <wire x1="-3.7" y1="-1.5" x2="-3.7" y2="1.5" width="0" layer="46"/>
 <wire x1="-3.7" y1="1.5" x2="-4.7" y2="1.5" width="0" layer="46"/>
@@ -289,6 +213,10 @@
 <circle x="0" y="0" radius="6" width="0.1" layer="21"/>
 <circle x="0" y="0" radius="3" width="1.2" layer="21"/>
 <circle x="0" y="0" radius="1.5" width="2" layer="21"/>
+<smd name="TIP@2" x="0" y="4.9" dx="4.5" dy="2.5" layer="16" roundness="50" rot="R180"/>
+<smd name="SWITCH@2" x="4.2" y="0" dx="4.5" dy="2.5" layer="16" roundness="50" rot="R90"/>
+<smd name="SECOND@2" x="0" y="-3.3" dx="4.5" dy="2.5" layer="16" roundness="50"/>
+<smd name="RING@2" x="-4.2" y="0" dx="4.5" dy="2.5" layer="16" roundness="50" rot="R270"/>
 </package>
 <package name="ALPS_POT">
 <wire x1="6.73" y1="4.93" x2="6.73" y2="-4.93" width="0.2032" layer="51"/>
@@ -360,59 +288,6 @@
 <pad name="P$5" x="-4.4" y="0" drill="2.2" diameter="3.175" rot="R90"/>
 <text x="-3.81" y="3.81" size="1.27" layer="25">&gt;NAME</text>
 <text x="-3.81" y="2.286" size="1.27" layer="27">&gt;VALUE</text>
-<wire x1="0" y1="0" x2="-5" y2="-5" width="0.127" layer="21"/>
-<wire x1="-5" y1="-5" x2="-7" y2="-7" width="0.127" layer="21"/>
-<wire x1="0" y1="0" x2="6" y2="-6" width="0.127" layer="21"/>
-<wire x1="6" y1="-6" x2="7" y2="-7" width="0.127" layer="21"/>
-<wire x1="7" y1="-7" x2="9" y2="-5" width="0.127" layer="21"/>
-<wire x1="9" y1="-5" x2="8" y2="-4" width="0.127" layer="21"/>
-<wire x1="8" y1="-4" x2="6" y2="-6" width="0.127" layer="21"/>
-<wire x1="-7" y1="-7" x2="-8" y2="-6" width="0.127" layer="21"/>
-<wire x1="-8" y1="-6" x2="-6" y2="-4" width="0.127" layer="21"/>
-<wire x1="-6" y1="-4" x2="-5" y2="-5" width="0.127" layer="21"/>
-<polygon width="0.127" layer="21">
-<vertex x="-6" y="-4"/>
-<vertex x="-5" y="-5"/>
-<vertex x="-7" y="-7"/>
-<vertex x="-8" y="-6"/>
-</polygon>
-<polygon width="0.127" layer="21">
-<vertex x="8" y="-4"/>
-<vertex x="9" y="-5"/>
-<vertex x="7" y="-7"/>
-<vertex x="6" y="-6"/>
-</polygon>
-</package>
-<package name="EURORACK8HPPCB">
-<wire x1="0" y1="105.5" x2="0" y2="1" width="0.127" layer="20"/>
-<wire x1="0" y1="1" x2="1" y2="0" width="0.127" layer="20" curve="90"/>
-<wire x1="1" y1="0" x2="38.3" y2="0" width="0.127" layer="20"/>
-<wire x1="38.3" y1="0" x2="39.3" y2="1" width="0.127" layer="20" curve="90"/>
-<wire x1="39.3" y1="1" x2="39.3" y2="105.5" width="0.127" layer="20"/>
-<wire x1="39.3" y1="105.5" x2="38.3" y2="106.5" width="0.127" layer="20" curve="90"/>
-<wire x1="38.3" y1="106.5" x2="1" y2="106.5" width="0.127" layer="20"/>
-<wire x1="1" y1="106.5" x2="0" y2="105.5" width="0.127" layer="20" curve="90"/>
-<wire x1="-0.5" y1="-11" x2="39.8" y2="-11" width="0" layer="51"/>
-<wire x1="39.8" y1="-11" x2="39.8" y2="117.5" width="0" layer="51"/>
-<wire x1="39.8" y1="117.5" x2="-0.5" y2="117.5" width="0" layer="51"/>
-<wire x1="-0.5" y1="117.5" x2="-0.5" y2="-11" width="0" layer="51"/>
-<text x="0" y="115" size="1.27" layer="51">8HP front template</text>
-<wire x1="9.575" y1="130" x2="9.575" y2="-20" width="0" layer="51"/>
-<wire x1="29.725" y1="130" x2="29.725" y2="-20" width="0" layer="51"/>
-<wire x1="12.933" y1="130" x2="12.933" y2="-20" width="0" layer="51"/>
-<wire x1="19.65" y1="130" x2="19.65" y2="-20" width="0" layer="51"/>
-<wire x1="26.37" y1="130" x2="26.37" y2="-20" width="0" layer="51"/>
-<text x="41" y="85" size="1.27" layer="51">2 columns:
-12,933
-26,37
-
-3 columns:
-9,575  
-19,65
-29,725
-
-PCB width: 
-39,3</text>
 </package>
 <package name="EURORACK12HPPCB">
 <wire x1="0" y1="105.5" x2="0" y2="1" width="0.127" layer="20"/>
@@ -513,6 +388,39 @@ PCB width:
 <pad name="P$1" x="-7.94521875" y="-17.0386" drill="2.1"/>
 <pad name="P$2" x="0" y="-18.8" drill="2.1"/>
 <pad name="P$3" x="7.94521875" y="-17.0386" drill="2.1"/>
+</package>
+<package name="EURORACK8HPPCB">
+<wire x1="0.5" y1="105.5" x2="0.5" y2="1" width="0.127" layer="20"/>
+<wire x1="0.5" y1="1" x2="1.5" y2="0" width="0.127" layer="20" curve="90"/>
+<wire x1="1.5" y1="0" x2="38.8" y2="0" width="0.127" layer="20"/>
+<wire x1="38.8" y1="0" x2="39.8" y2="1" width="0.127" layer="20" curve="90"/>
+<wire x1="39.8" y1="1" x2="39.8" y2="105.5" width="0.127" layer="20"/>
+<wire x1="39.8" y1="105.5" x2="38.8" y2="106.5" width="0.127" layer="20" curve="90"/>
+<wire x1="38.8" y1="106.5" x2="1.5" y2="106.5" width="0.127" layer="20"/>
+<wire x1="1.5" y1="106.5" x2="0.5" y2="105.5" width="0.127" layer="20" curve="90"/>
+<wire x1="0" y1="-11" x2="40.3" y2="-11" width="0" layer="51"/>
+<wire x1="40.3" y1="-11" x2="40.3" y2="117.5" width="0" layer="51"/>
+<wire x1="40.3" y1="117.5" x2="0" y2="117.5" width="0" layer="51"/>
+<wire x1="0" y1="117.5" x2="0" y2="-11" width="0" layer="51"/>
+<text x="0.5" y="115" size="1.27" layer="51">8HP front template</text>
+<wire x1="10.075" y1="130" x2="10.075" y2="-20" width="0" layer="51"/>
+<wire x1="30.225" y1="130" x2="30.225" y2="-20" width="0" layer="51"/>
+<wire x1="13.433" y1="130" x2="13.433" y2="-20" width="0" layer="51"/>
+<wire x1="20.15" y1="130" x2="20.15" y2="-20" width="0" layer="51"/>
+<wire x1="26.87" y1="130" x2="26.87" y2="-20" width="0" layer="51"/>
+<text x="41.5" y="85" size="1.27" layer="51">2 columns:
+12,933
+26,37
+
+3 columns:
+9,575  
+19,65
+29,725
+
+PCB width: 
+39,3</text>
+<text x="48" y="101" size="1.27" layer="51">+0.5</text>
+<text x="50" y="92" size="1.27" layer="51">+0.5</text>
 </package>
 </packages>
 <symbols>
@@ -645,10 +553,10 @@ PCB width:
 <devices>
 <device name="OUTPUT" package="3.5MM-JACK-SWITCH-13MM-OUTPUT">
 <connects>
-<connect gate="G$1" pin="RING" pad="RING"/>
-<connect gate="G$1" pin="SECOND" pad="SECOND"/>
-<connect gate="G$1" pin="SWITCH" pad="SWITCH"/>
-<connect gate="G$1" pin="TIP" pad="TIP"/>
+<connect gate="G$1" pin="RING" pad="RING@1 RING@2"/>
+<connect gate="G$1" pin="SECOND" pad="SECOND@1 SECOND@2"/>
+<connect gate="G$1" pin="SWITCH" pad="SWITCH@1 SWITCH@2"/>
+<connect gate="G$1" pin="TIP" pad="TIP@1 TIP@2"/>
 </connects>
 <technologies>
 <technology name=""/>
@@ -656,10 +564,10 @@ PCB width:
 </device>
 <device name="INPUT" package="3.5MM-JACK-SWITCH-13MM-INPUT">
 <connects>
-<connect gate="G$1" pin="RING" pad="RING"/>
-<connect gate="G$1" pin="SECOND" pad="SECOND"/>
-<connect gate="G$1" pin="SWITCH" pad="SWITCH"/>
-<connect gate="G$1" pin="TIP" pad="TIP"/>
+<connect gate="G$1" pin="RING" pad="RING@1"/>
+<connect gate="G$1" pin="SECOND" pad="SECOND@1"/>
+<connect gate="G$1" pin="SWITCH" pad="SWITCH@1"/>
+<connect gate="G$1" pin="TIP" pad="TIP@1"/>
 </connects>
 <technologies>
 <technology name=""/>

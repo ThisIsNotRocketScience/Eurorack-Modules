@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.05" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
+<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="no" active="no"/>
 <layer number="2" name="Route2" color="1" fill="3" visible="no" active="no"/>
@@ -7657,224 +7657,6 @@ Source: http://focus.ti.com/lit/ds/slcs146e/slcs146e.pdf</description>
 </deviceset>
 </devicesets>
 </library>
-<library name="og-pots">
-<packages>
-<package name="CABLE_POT_6MM">
-<wire x1="-3.81" y1="1.27" x2="3.81" y2="1.27" width="0.2032" layer="21"/>
-<wire x1="-3.81" y1="1.27" x2="-3.81" y2="-1.27" width="0.2032" layer="21"/>
-<wire x1="3.81" y1="-1.27" x2="3.81" y2="1.27" width="0.2032" layer="21"/>
-<wire x1="-3.81" y1="-1.27" x2="3.81" y2="-1.27" width="0.2032" layer="21"/>
-<pad name="A" x="-2.5" y="0" drill="1" diameter="1.8796" shape="square" rot="R270"/>
-<pad name="S" x="0" y="0" drill="1" diameter="1.8796" shape="square" rot="R270"/>
-<pad name="E" x="2.5" y="0" drill="1" diameter="1.8796" shape="square" rot="R270"/>
-<text x="-3.81" y="1.905" size="1.016" layer="25">&gt;NAME</text>
-<text x="0.635" y="1.905" size="1.016" layer="27">&gt;VALUE</text>
-</package>
-<package name="ALPS_POT_VERTICAL">
-<wire x1="4.295" y1="-5.46" x2="-4.295" y2="-5.46" width="0.127" layer="21"/>
-<wire x1="-4.295" y1="-5.46" x2="-4.295" y2="4.33" width="0.127" layer="21"/>
-<wire x1="-4.295" y1="4.33" x2="4.295" y2="4.33" width="0.127" layer="21"/>
-<wire x1="4.295" y1="4.33" x2="4.295" y2="-5.46" width="0.127" layer="21"/>
-<wire x1="-1.1" y1="0.625" x2="1.1" y2="0.625" width="0.2032" layer="21" curve="239.208901"/>
-<wire x1="-1.1" y1="0.625" x2="1.1" y2="0.625" width="0.2032" layer="21"/>
-<wire x1="-2.45" y1="0.625" x2="2.425" y2="0.625" width="0.2032" layer="21"/>
-<circle x="0" y="0" radius="2.54" width="0.2032" layer="21"/>
-<pad name="P$1" x="-2.5" y="6.7" drill="1" diameter="1.8796" shape="square" rot="R270"/>
-<pad name="P$2" x="0" y="6.7" drill="1" diameter="1.8796" shape="square" rot="R270"/>
-<pad name="P$3" x="2.5" y="6.7" drill="1" diameter="1.8796" shape="square" rot="R270"/>
-<pad name="P$4" x="-4.4" y="0" drill="2.2" diameter="3.175" shape="octagon" rot="R270"/>
-<pad name="P$5" x="4.4" y="0" drill="2.2" diameter="3.175" shape="octagon" rot="R270"/>
-<text x="3.81" y="-3.81" size="1.27" layer="25" rot="R180">&gt;NAME</text>
-<text x="3.81" y="-2.286" size="1.27" layer="27" rot="R180">&gt;VALUE</text>
-</package>
-<package name="ALPS_POT_HORIZONTAL">
-<wire x1="-4.295" y1="1.05" x2="-4.295" y2="5.6" width="0.127" layer="21"/>
-<wire x1="-4.295" y1="5.6" x2="-2" y2="5.6" width="0.127" layer="21"/>
-<wire x1="-2" y1="5.6" x2="2" y2="5.6" width="0.127" layer="21"/>
-<wire x1="2" y1="5.6" x2="4.295" y2="5.6" width="0.127" layer="21"/>
-<wire x1="4.295" y1="5.6" x2="4.295" y2="1.05" width="0.127" layer="21"/>
-<wire x1="-4.3" y1="1" x2="4.3" y2="1" width="0.127" layer="21"/>
-<pad name="P$1" x="-2.5" y="3.3" drill="1" diameter="1.8796" shape="square" rot="R270"/>
-<pad name="P$2" x="0" y="3.3" drill="1" diameter="1.8796" shape="square" rot="R270"/>
-<pad name="P$3" x="2.5" y="3.3" drill="1" diameter="1.8796" shape="square" rot="R270"/>
-<pad name="P$4" x="-4.4" y="0" drill="2" shape="octagon" rot="R270"/>
-<pad name="P$5" x="4.4" y="0" drill="2" shape="octagon" rot="R270"/>
-</package>
-<package name="ALPS_POT_VERTICAL_PS">
-<wire x1="4.295" y1="-5.46" x2="-4.295" y2="-5.46" width="0.127" layer="21"/>
-<wire x1="-4.295" y1="-5.46" x2="-4.295" y2="4.33" width="0.127" layer="21"/>
-<wire x1="-4.295" y1="4.33" x2="4.295" y2="4.33" width="0.127" layer="21"/>
-<wire x1="4.295" y1="4.33" x2="4.295" y2="-5.46" width="0.127" layer="21"/>
-<wire x1="-1.1" y1="0.625" x2="1.1" y2="0.625" width="0.2032" layer="21" curve="239.208901"/>
-<wire x1="-1.1" y1="0.625" x2="1.1" y2="0.625" width="0.2032" layer="21"/>
-<wire x1="-2.45" y1="0.625" x2="2.425" y2="0.625" width="0.2032" layer="21"/>
-<circle x="0" y="0" radius="2.54" width="0.2032" layer="21"/>
-<pad name="P$1" x="-2.5" y="7" drill="1" diameter="1.8796" shape="square" rot="R270"/>
-<pad name="P$2" x="0" y="7" drill="1" diameter="1.8796" shape="square" rot="R270"/>
-<pad name="P$3" x="2.5" y="7" drill="1" diameter="1.8796" shape="square" rot="R270"/>
-<pad name="P$4" x="-4.7" y="0" drill="1.5" diameter="2.54" shape="octagon" rot="R270"/>
-<pad name="P$5" x="4.7" y="0" drill="1.5" diameter="2.54" shape="octagon" rot="R270"/>
-<text x="3.81" y="-3.81" size="1.27" layer="25" rot="R180">&gt;NAME</text>
-<text x="3.81" y="-2.286" size="1.27" layer="27" rot="R180">&gt;VALUE</text>
-</package>
-<package name="ALPS_POT_VERTICAL_PS2">
-<wire x1="4.295" y1="-5.46" x2="-4.295" y2="-5.46" width="0.127" layer="21"/>
-<wire x1="-4.295" y1="-5.46" x2="-4.295" y2="4.33" width="0.127" layer="21"/>
-<wire x1="-4.295" y1="4.33" x2="4.295" y2="4.33" width="0.127" layer="21"/>
-<wire x1="4.295" y1="4.33" x2="4.295" y2="-5.46" width="0.127" layer="21"/>
-<wire x1="-1.1" y1="0.625" x2="1.1" y2="0.625" width="0.2032" layer="21" curve="239.208901"/>
-<wire x1="-1.1" y1="0.625" x2="1.1" y2="0.625" width="0.2032" layer="21"/>
-<wire x1="-2.45" y1="0.625" x2="2.425" y2="0.625" width="0.2032" layer="21"/>
-<circle x="0" y="0" radius="2.54" width="0.2032" layer="21"/>
-<pad name="P$1" x="-2.5" y="7" drill="1" diameter="1.8796" shape="square" rot="R270"/>
-<pad name="P$2" x="0" y="7" drill="1" diameter="1.8796" shape="square" rot="R270"/>
-<pad name="P$3" x="2.5" y="7" drill="1" diameter="1.8796" shape="square" rot="R270"/>
-<pad name="P$4" x="-4.7" y="0" drill="1.1" diameter="1.778" shape="octagon" rot="R270"/>
-<pad name="P$5" x="4.7" y="0" drill="1.1" diameter="1.778" shape="octagon" rot="R270"/>
-<text x="3.81" y="-3.81" size="1.27" layer="21" rot="R180">&gt;NAME</text>
-<text x="3.81" y="-2.286" size="1.27" layer="21" rot="R180">&gt;VALUE</text>
-</package>
-<package name="ALPS_POT_VERTICAL_PS3">
-<wire x1="4.295" y1="-5.46" x2="-4.295" y2="-5.46" width="0.127" layer="21"/>
-<wire x1="-4.295" y1="-5.46" x2="-4.295" y2="4.33" width="0.127" layer="21"/>
-<wire x1="-4.295" y1="4.33" x2="4.295" y2="4.33" width="0.127" layer="21"/>
-<wire x1="4.295" y1="4.33" x2="4.295" y2="-5.46" width="0.127" layer="21"/>
-<wire x1="-1.1" y1="0.625" x2="1.1" y2="0.625" width="0.2032" layer="21" curve="239.208901"/>
-<wire x1="-1.1" y1="0.625" x2="1.1" y2="0.625" width="0.2032" layer="21"/>
-<wire x1="-2.45" y1="0.625" x2="2.425" y2="0.625" width="0.2032" layer="21"/>
-<circle x="0" y="0" radius="2.54" width="0.2032" layer="21"/>
-<pad name="P$1" x="-2.5" y="7" drill="1" diameter="1.8796" shape="square" rot="R270"/>
-<pad name="P$2" x="0" y="7" drill="1" diameter="1.8796" shape="square" rot="R270"/>
-<pad name="P$3" x="2.5" y="7" drill="1" diameter="1.8796" shape="square" rot="R270"/>
-<pad name="P$4" x="-4.7" y="0" drill="1.5" diameter="2.1844" shape="square" rot="R270"/>
-<pad name="P$5" x="4.7" y="0" drill="1.5" diameter="2.1844" shape="square" rot="R270"/>
-<text x="3.81" y="-3.81" size="1.27" layer="21" rot="R180">&gt;NAME</text>
-<text x="3.81" y="-2.286" size="1.27" layer="21" rot="R180">&gt;VALUE</text>
-</package>
-<package name="ALPS_POT_VERTICAL_PS4">
-<wire x1="4.295" y1="-5.46" x2="-4.295" y2="-5.46" width="0.127" layer="21"/>
-<wire x1="-4.295" y1="-5.46" x2="-4.295" y2="4.33" width="0.127" layer="21"/>
-<wire x1="-4.295" y1="4.33" x2="4.295" y2="4.33" width="0.127" layer="21"/>
-<wire x1="4.295" y1="4.33" x2="4.295" y2="-5.46" width="0.127" layer="21"/>
-<wire x1="-1.1" y1="0.625" x2="1.1" y2="0.625" width="0.2032" layer="21" curve="239.208901"/>
-<wire x1="-1.1" y1="0.625" x2="1.1" y2="0.625" width="0.2032" layer="21"/>
-<wire x1="-2.45" y1="0.625" x2="2.425" y2="0.625" width="0.2032" layer="21"/>
-<circle x="0" y="0" radius="2.54" width="0.2032" layer="21"/>
-<pad name="P$1" x="-2.5" y="7.1" drill="1" diameter="1.8796" shape="square" rot="R270"/>
-<pad name="P$2" x="0" y="7.1" drill="1" diameter="1.8796" shape="square" rot="R270"/>
-<pad name="P$3" x="2.5" y="7.1" drill="1" diameter="1.8796" shape="square" rot="R270"/>
-<pad name="P$4" x="-4.4" y="0" drill="1.6" diameter="2.54" shape="octagon" rot="R270"/>
-<pad name="P$5" x="4.4" y="0" drill="1.6" diameter="2.54" shape="octagon" rot="R270"/>
-<text x="3.81" y="-3.81" size="1.27" layer="21" rot="R180">&gt;NAME</text>
-<text x="3.81" y="-2.286" size="1.27" layer="21" rot="R180">&gt;VALUE</text>
-</package>
-</packages>
-<symbols>
-<symbol name="POT_US-">
-<wire x1="0" y1="-5.08" x2="0" y2="-4.572" width="0.1524" layer="94"/>
-<wire x1="0" y1="-4.572" x2="-1.016" y2="-3.81" width="0.254" layer="94"/>
-<wire x1="-1.016" y1="-3.81" x2="1.27" y2="-2.54" width="0.254" layer="94"/>
-<wire x1="1.27" y1="-2.54" x2="-1.016" y2="-1.27" width="0.254" layer="94"/>
-<wire x1="-1.016" y1="-1.27" x2="1.27" y2="0" width="0.254" layer="94"/>
-<wire x1="1.27" y1="0" x2="-1.016" y2="1.27" width="0.254" layer="94"/>
-<wire x1="-1.016" y1="1.27" x2="1.27" y2="2.54" width="0.254" layer="94"/>
-<wire x1="1.27" y1="2.54" x2="-1.016" y2="3.81" width="0.254" layer="94"/>
-<wire x1="-1.016" y1="3.81" x2="0" y2="4.572" width="0.254" layer="94"/>
-<wire x1="0" y1="4.572" x2="0" y2="5.08" width="0.1524" layer="94"/>
-<wire x1="1.27" y1="0" x2="2.54" y2="1.27" width="0.2032" layer="94"/>
-<wire x1="2.54" y1="-1.27" x2="1.27" y2="0" width="0.2032" layer="94"/>
-<wire x1="2.54" y1="1.27" x2="2.54" y2="-1.27" width="0.2032" layer="94"/>
-<wire x1="2.032" y1="-4.699" x2="2.032" y2="-2.159" width="0.1524" layer="94"/>
-<wire x1="2.032" y1="-2.159" x2="2.667" y2="-3.429" width="0.1524" layer="94"/>
-<wire x1="2.667" y1="-3.429" x2="1.397" y2="-3.429" width="0.1524" layer="94"/>
-<wire x1="1.397" y1="-3.429" x2="2.032" y2="-2.159" width="0.1524" layer="94"/>
-<text x="-5.08" y="-2.54" size="1.778" layer="95" rot="R90">&gt;NAME</text>
-<text x="-2.54" y="-2.54" size="1.778" layer="96" rot="R90">&gt;VALUE</text>
-<pin name="A" x="0" y="-7.62" visible="off" length="short" direction="pas" rot="R90"/>
-<pin name="E" x="0" y="7.62" visible="off" length="short" direction="pas" rot="R270"/>
-<pin name="S" x="5.08" y="0" visible="off" length="short" direction="pas" rot="R180"/>
-</symbol>
-</symbols>
-<devicesets>
-<deviceset name="POT_US" prefix="R" uservalue="yes">
-<gates>
-<gate name="G$1" symbol="POT_US-" x="0" y="0"/>
-</gates>
-<devices>
-<device name="CABLED" package="CABLE_POT_6MM">
-<connects>
-<connect gate="G$1" pin="A" pad="A"/>
-<connect gate="G$1" pin="E" pad="E"/>
-<connect gate="G$1" pin="S" pad="S"/>
-</connects>
-<technologies>
-<technology name=""/>
-</technologies>
-</device>
-<device name="VERTICAL" package="ALPS_POT_VERTICAL">
-<connects>
-<connect gate="G$1" pin="A" pad="P$3"/>
-<connect gate="G$1" pin="E" pad="P$1"/>
-<connect gate="G$1" pin="S" pad="P$2"/>
-</connects>
-<technologies>
-<technology name=""/>
-</technologies>
-</device>
-<device name="HORIZONTAL" package="ALPS_POT_HORIZONTAL">
-<connects>
-<connect gate="G$1" pin="A" pad="P$3"/>
-<connect gate="G$1" pin="E" pad="P$1"/>
-<connect gate="G$1" pin="S" pad="P$2"/>
-</connects>
-<technologies>
-<technology name=""/>
-</technologies>
-</device>
-<device name="VERTICAL_PS" package="ALPS_POT_VERTICAL_PS">
-<connects>
-<connect gate="G$1" pin="A" pad="P$3"/>
-<connect gate="G$1" pin="E" pad="P$1"/>
-<connect gate="G$1" pin="S" pad="P$2"/>
-</connects>
-<technologies>
-<technology name=""/>
-</technologies>
-</device>
-<device name="VERTICAL_PS2" package="ALPS_POT_VERTICAL_PS2">
-<connects>
-<connect gate="G$1" pin="A" pad="P$3"/>
-<connect gate="G$1" pin="E" pad="P$1"/>
-<connect gate="G$1" pin="S" pad="P$2"/>
-</connects>
-<technologies>
-<technology name=""/>
-</technologies>
-</device>
-<device name="VERTICAL_PS3" package="ALPS_POT_VERTICAL_PS3">
-<connects>
-<connect gate="G$1" pin="A" pad="P$3"/>
-<connect gate="G$1" pin="E" pad="P$1"/>
-<connect gate="G$1" pin="S" pad="P$2"/>
-</connects>
-<technologies>
-<technology name=""/>
-</technologies>
-</device>
-<device name="VERTICAL_PS4" package="ALPS_POT_VERTICAL_PS4">
-<connects>
-<connect gate="G$1" pin="A" pad="P$3"/>
-<connect gate="G$1" pin="E" pad="P$1"/>
-<connect gate="G$1" pin="S" pad="P$2"/>
-</connects>
-<technologies>
-<technology name=""/>
-</technologies>
-</device>
-</devices>
-</deviceset>
-</devicesets>
-</library>
 <library name="diode">
 <packages>
 <package name="DO41-10">
@@ -9928,50 +9710,10 @@ Source: http://www.diodes.com/datasheets/ds23001.pdf</description>
 <library name="EurorackModularParts">
 <packages>
 <package name="3.5MM-JACK-SWITCH-13MM-OUTPUT">
-<smd name="TIP" x="0" y="4.9" dx="4.5" dy="2.5" layer="1" roundness="50"/>
-<smd name="SWITCH" x="4.2" y="0" dx="4.5" dy="2.5" layer="1" roundness="50" rot="R90"/>
-<smd name="SECOND" x="0" y="-3.3" dx="4.5" dy="2.5" layer="1" roundness="50" rot="R180"/>
-<smd name="RING" x="-4.2" y="0" dx="4.5" dy="2.5" layer="1" roundness="50" rot="R270"/>
-<polygon width="0" layer="16">
-<vertex x="-5.45" y="-1.65"/>
-<vertex x="-5.45" y="1.65" curve="-90"/>
-<vertex x="-4.9" y="2.25"/>
-<vertex x="-3.55" y="2.25" curve="-90"/>
-<vertex x="-2.95" y="1.65"/>
-<vertex x="-2.95" y="-1.65" curve="-90"/>
-<vertex x="-3.55" y="-2.25"/>
-<vertex x="-4.85" y="-2.25" curve="-90"/>
-</polygon>
-<polygon width="0" layer="16">
-<vertex x="1.65" y="3.65"/>
-<vertex x="-1.65" y="3.65" curve="-90"/>
-<vertex x="-2.25" y="4.2"/>
-<vertex x="-2.25" y="5.55" curve="-90"/>
-<vertex x="-1.65" y="6.15"/>
-<vertex x="1.65" y="6.15" curve="-90"/>
-<vertex x="2.25" y="5.55"/>
-<vertex x="2.25" y="4.25" curve="-90"/>
-</polygon>
-<polygon width="0" layer="16">
-<vertex x="2.95" y="-1.65"/>
-<vertex x="2.95" y="1.65" curve="-90"/>
-<vertex x="3.5" y="2.25"/>
-<vertex x="4.85" y="2.25" curve="-90"/>
-<vertex x="5.45" y="1.65"/>
-<vertex x="5.45" y="-1.65" curve="-90"/>
-<vertex x="4.85" y="-2.25"/>
-<vertex x="3.55" y="-2.25" curve="-90"/>
-</polygon>
-<polygon width="0" layer="16">
-<vertex x="1.65" y="-4.55"/>
-<vertex x="-1.65" y="-4.55" curve="-90"/>
-<vertex x="-2.25" y="-4"/>
-<vertex x="-2.25" y="-2.65" curve="-90"/>
-<vertex x="-1.65" y="-2.05"/>
-<vertex x="1.65" y="-2.05" curve="-90"/>
-<vertex x="2.25" y="-2.65"/>
-<vertex x="2.25" y="-3.95" curve="-90"/>
-</polygon>
+<smd name="TIP@1" x="0" y="4.9" dx="4.5" dy="2.5" layer="1" roundness="50"/>
+<smd name="SWITCH@1" x="4.2" y="0" dx="4.5" dy="2.5" layer="1" roundness="50" rot="R90"/>
+<smd name="SECOND@1" x="0" y="-3.3" dx="4.5" dy="2.5" layer="1" roundness="50" rot="R180"/>
+<smd name="RING@1" x="-4.2" y="0" dx="4.5" dy="2.5" layer="1" roundness="50" rot="R270"/>
 <wire x1="-4.7" y1="-1.5" x2="-3.7" y2="-1.5" width="0" layer="46"/>
 <wire x1="-3.7" y1="-1.5" x2="-3.7" y2="1.5" width="0" layer="46"/>
 <wire x1="-3.7" y1="1.5" x2="-4.7" y2="1.5" width="0" layer="46"/>
@@ -9998,52 +9740,16 @@ Source: http://www.diodes.com/datasheets/ds23001.pdf</description>
 <circle x="0" y="0" radius="2.9" width="0.1" layer="21"/>
 <circle x="0" y="0" radius="2" width="0.1" layer="21"/>
 <circle x="0" y="0" radius="1" width="0.1" layer="21"/>
+<smd name="TIP@2" x="0" y="4.9" dx="4.5" dy="2.5" layer="16" roundness="50" rot="R180"/>
+<smd name="SWITCH@2" x="4.2" y="0" dx="4.5" dy="2.5" layer="16" roundness="50" rot="R90"/>
+<smd name="SECOND@2" x="0" y="-3.3" dx="4.5" dy="2.5" layer="16" roundness="50"/>
+<smd name="RING@2" x="-4.2" y="0" dx="4.5" dy="2.5" layer="16" roundness="50" rot="R270"/>
 </package>
 <package name="3.5MM-JACK-SWITCH-13MM-INPUT">
-<smd name="TIP" x="0" y="4.9" dx="4.5" dy="2.5" layer="1" roundness="50"/>
-<smd name="SWITCH" x="4.2" y="0" dx="4.5" dy="2.5" layer="1" roundness="50" rot="R90"/>
-<smd name="SECOND" x="0" y="-3.3" dx="4.5" dy="2.5" layer="1" roundness="50" rot="R180"/>
-<smd name="RING" x="-4.2" y="0" dx="4.5" dy="2.5" layer="1" roundness="50" rot="R270"/>
-<polygon width="0" layer="16">
-<vertex x="-5.45" y="-1.65"/>
-<vertex x="-5.45" y="1.65" curve="-90"/>
-<vertex x="-4.9" y="2.25"/>
-<vertex x="-3.55" y="2.25" curve="-90"/>
-<vertex x="-2.95" y="1.65"/>
-<vertex x="-2.95" y="-1.65" curve="-90"/>
-<vertex x="-3.55" y="-2.25"/>
-<vertex x="-4.85" y="-2.25" curve="-90"/>
-</polygon>
-<polygon width="0" layer="16">
-<vertex x="1.65" y="3.65"/>
-<vertex x="-1.65" y="3.65" curve="-90"/>
-<vertex x="-2.25" y="4.2"/>
-<vertex x="-2.25" y="5.55" curve="-90"/>
-<vertex x="-1.65" y="6.15"/>
-<vertex x="1.65" y="6.15" curve="-90"/>
-<vertex x="2.25" y="5.55"/>
-<vertex x="2.25" y="4.25" curve="-90"/>
-</polygon>
-<polygon width="0" layer="16">
-<vertex x="2.95" y="-1.65"/>
-<vertex x="2.95" y="1.65" curve="-90"/>
-<vertex x="3.5" y="2.25"/>
-<vertex x="4.85" y="2.25" curve="-90"/>
-<vertex x="5.45" y="1.65"/>
-<vertex x="5.45" y="-1.65" curve="-90"/>
-<vertex x="4.85" y="-2.25"/>
-<vertex x="3.55" y="-2.25" curve="-90"/>
-</polygon>
-<polygon width="0" layer="16">
-<vertex x="1.65" y="-4.55"/>
-<vertex x="-1.65" y="-4.55" curve="-90"/>
-<vertex x="-2.25" y="-4"/>
-<vertex x="-2.25" y="-2.65" curve="-90"/>
-<vertex x="-1.65" y="-2.05"/>
-<vertex x="1.65" y="-2.05" curve="-90"/>
-<vertex x="2.25" y="-2.65"/>
-<vertex x="2.25" y="-3.95" curve="-90"/>
-</polygon>
+<smd name="TIP@1" x="0" y="4.9" dx="4.5" dy="2.5" layer="1" roundness="50"/>
+<smd name="SWITCH@1" x="4.2" y="0" dx="4.5" dy="2.5" layer="1" roundness="50" rot="R90"/>
+<smd name="SECOND@1" x="0" y="-3.3" dx="4.5" dy="2.5" layer="1" roundness="50" rot="R180"/>
+<smd name="RING@1" x="-4.2" y="0" dx="4.5" dy="2.5" layer="1" roundness="50" rot="R270"/>
 <wire x1="-4.7" y1="-1.5" x2="-3.7" y2="-1.5" width="0" layer="46"/>
 <wire x1="-3.7" y1="-1.5" x2="-3.7" y2="1.5" width="0" layer="46"/>
 <wire x1="-3.7" y1="1.5" x2="-4.7" y2="1.5" width="0" layer="46"/>
@@ -10060,36 +9766,40 @@ Source: http://www.diodes.com/datasheets/ds23001.pdf</description>
 <wire x1="1.5" y1="-2.8" x2="-1.5" y2="-2.8" width="0" layer="46"/>
 <wire x1="-1.5" y1="-2.8" x2="-1.5" y2="-3.8" width="0" layer="46"/>
 <wire x1="-1.5" y1="-3.8" x2="1.5" y2="-3.8" width="0" layer="46"/>
-<circle x="0" y="0" radius="5.08" width="0.1" layer="51"/>
-<circle x="0" y="0" radius="6.35" width="0.1" layer="51"/>
-<circle x="0" y="0" radius="7.62" width="0.1" layer="51"/>
+<circle x="0" y="0" radius="5.08" width="0.127" layer="51"/>
+<circle x="0" y="0" radius="6.35" width="0.127" layer="51"/>
+<circle x="0" y="0" radius="7.62" width="0.127" layer="51"/>
 <circle x="0" y="0" radius="4.2" width="0.6" layer="21"/>
 <circle x="0" y="0" radius="5" width="0.4" layer="21"/>
 <circle x="0" y="0" radius="5.6" width="0.2" layer="21"/>
 <circle x="0" y="0" radius="6" width="0.1" layer="21"/>
 <circle x="0" y="0" radius="3" width="1.2" layer="21"/>
 <circle x="0" y="0" radius="1.5" width="2" layer="21"/>
+<smd name="TIP@2" x="0" y="4.9" dx="4.5" dy="2.5" layer="16" roundness="50" rot="R180"/>
+<smd name="SWITCH@2" x="4.2" y="0" dx="4.5" dy="2.5" layer="16" roundness="50" rot="R90"/>
+<smd name="SECOND@2" x="0" y="-3.3" dx="4.5" dy="2.5" layer="16" roundness="50"/>
+<smd name="RING@2" x="-4.2" y="0" dx="4.5" dy="2.5" layer="16" roundness="50" rot="R270"/>
 </package>
 <package name="EURORACK8HPPCB">
-<wire x1="0" y1="105.5" x2="0" y2="1" width="0.127" layer="20"/>
-<wire x1="0" y1="1" x2="1" y2="0" width="0.127" layer="20" curve="90"/>
-<wire x1="1" y1="0" x2="38.3" y2="0" width="0.127" layer="20"/>
-<wire x1="38.3" y1="0" x2="39.3" y2="1" width="0.127" layer="20" curve="90"/>
-<wire x1="39.3" y1="1" x2="39.3" y2="105.5" width="0.127" layer="20"/>
-<wire x1="39.3" y1="105.5" x2="38.3" y2="106.5" width="0.127" layer="20" curve="90"/>
-<wire x1="38.3" y1="106.5" x2="1" y2="106.5" width="0.127" layer="20"/>
-<wire x1="1" y1="106.5" x2="0" y2="105.5" width="0.127" layer="20" curve="90"/>
-<wire x1="-0.5" y1="-11" x2="39.8" y2="-11" width="0" layer="51"/>
-<wire x1="39.8" y1="-11" x2="39.8" y2="117.5" width="0" layer="51"/>
-<wire x1="39.8" y1="117.5" x2="-0.5" y2="117.5" width="0" layer="51"/>
-<wire x1="-0.5" y1="117.5" x2="-0.5" y2="-11" width="0" layer="51"/>
-<text x="0" y="115" size="1.27" layer="51">8HP front template</text>
-<wire x1="9.575" y1="130" x2="9.575" y2="-20" width="0" layer="51"/>
-<wire x1="29.725" y1="130" x2="29.725" y2="-20" width="0" layer="51"/>
-<wire x1="12.933" y1="130" x2="12.933" y2="-20" width="0" layer="51"/>
-<wire x1="19.65" y1="130" x2="19.65" y2="-20" width="0" layer="51"/>
-<wire x1="26.37" y1="130" x2="26.37" y2="-20" width="0" layer="51"/>
-<text x="41" y="85" size="1.27" layer="51">2 columns:
+<wire x1="0.5" y1="105.5" x2="0.5" y2="1" width="0.127" layer="20"/>
+<wire x1="0.5" y1="1" x2="1.5" y2="0" width="0.127" layer="20" curve="90"/>
+<wire x1="1.5" y1="0" x2="38.8" y2="0" width="0.127" layer="20"/>
+<wire x1="38.8" y1="0" x2="39.8" y2="1" width="0.127" layer="20" curve="90"/>
+<wire x1="39.8" y1="1" x2="39.8" y2="105.5" width="0.127" layer="20"/>
+<wire x1="39.8" y1="105.5" x2="38.8" y2="106.5" width="0.127" layer="20" curve="90"/>
+<wire x1="38.8" y1="106.5" x2="1.5" y2="106.5" width="0.127" layer="20"/>
+<wire x1="1.5" y1="106.5" x2="0.5" y2="105.5" width="0.127" layer="20" curve="90"/>
+<wire x1="0" y1="-11" x2="40.3" y2="-11" width="0" layer="51"/>
+<wire x1="40.3" y1="-11" x2="40.3" y2="117.5" width="0" layer="51"/>
+<wire x1="40.3" y1="117.5" x2="0" y2="117.5" width="0" layer="51"/>
+<wire x1="0" y1="117.5" x2="0" y2="-11" width="0" layer="51"/>
+<text x="0.5" y="115" size="1.27" layer="51">8HP front template</text>
+<wire x1="10.075" y1="130" x2="10.075" y2="-20" width="0" layer="51"/>
+<wire x1="30.225" y1="130" x2="30.225" y2="-20" width="0" layer="51"/>
+<wire x1="13.433" y1="130" x2="13.433" y2="-20" width="0" layer="51"/>
+<wire x1="20.15" y1="130" x2="20.15" y2="-20" width="0" layer="51"/>
+<wire x1="26.87" y1="130" x2="26.87" y2="-20" width="0" layer="51"/>
+<text x="41.5" y="85" size="1.27" layer="51">2 columns:
 12,933
 26,37
 
@@ -10100,6 +9810,105 @@ Source: http://www.diodes.com/datasheets/ds23001.pdf</description>
 
 PCB width: 
 39,3</text>
+<text x="48" y="101" size="1.27" layer="51">+0.5</text>
+<text x="50" y="92" size="1.27" layer="51">+0.5</text>
+</package>
+<package name="EURORACK12HPPCB">
+<wire x1="0" y1="105.5" x2="0" y2="1" width="0.127" layer="20"/>
+<wire x1="0" y1="1" x2="1" y2="0" width="0.127" layer="20" curve="90"/>
+<wire x1="1" y1="0" x2="58.62" y2="0" width="0.127" layer="20"/>
+<wire x1="58.62" y1="0" x2="59.62" y2="1" width="0.127" layer="20" curve="90"/>
+<wire x1="59.62" y1="1" x2="59.62" y2="105.5" width="0.127" layer="20"/>
+<wire x1="59.62" y1="105.5" x2="58.62" y2="106.5" width="0.127" layer="20" curve="90"/>
+<wire x1="58.62" y1="106.5" x2="1" y2="106.5" width="0.127" layer="20"/>
+<wire x1="1" y1="106.5" x2="0" y2="105.5" width="0.127" layer="20" curve="90"/>
+<wire x1="-0.5" y1="-11" x2="29.81" y2="-11" width="0" layer="51"/>
+<wire x1="29.81" y1="-11" x2="60.12" y2="-11" width="0" layer="51"/>
+<wire x1="60.12" y1="-11" x2="60.12" y2="117.5" width="0" layer="51"/>
+<wire x1="60.12" y1="117.5" x2="-0.5" y2="117.5" width="0" layer="51"/>
+<wire x1="-0.5" y1="117.5" x2="-0.5" y2="-11" width="0" layer="51"/>
+<text x="1" y="113" size="1.27" layer="51">12HP eurorack pcb template</text>
+<text x="28" y="111" size="1.27" layer="51">PCB width: 
+59.62</text>
+<text x="28" y="108" size="1.27" layer="51">halve = 29,81</text>
+<wire x1="29.81" y1="107" x2="29.81" y2="-11" width="0.127" layer="51"/>
+</package>
+<package name="OG-POTS_ALPS_POT_VERTICAL">
+<circle x="0" y="0" radius="2.54" width="0.2032" layer="51"/>
+<wire x1="-4.295" y1="5.46" x2="4.295" y2="5.46" width="0.127" layer="51"/>
+<wire x1="4.295" y1="5.46" x2="4.295" y2="-4.33" width="0.127" layer="51"/>
+<wire x1="4.295" y1="-4.33" x2="-4.295" y2="-4.33" width="0.127" layer="51"/>
+<wire x1="-4.295" y1="-4.33" x2="-4.295" y2="5.46" width="0.127" layer="51"/>
+<wire x1="1.1" y1="-0.625" x2="-1.1" y2="-0.625" width="0.2032" layer="51" curve="239.208901"/>
+<wire x1="2.45" y1="-0.625" x2="-2.425" y2="-0.625" width="0.2032" layer="51"/>
+<pad name="P$1" x="-2.58" y="-6.7" drill="1" diameter="1.8796" rot="R90"/>
+<pad name="P$2" x="0" y="-6.7" drill="1" diameter="1.8796" rot="R90"/>
+<pad name="P$3" x="2.58" y="-6.7" drill="1" diameter="1.8796" rot="R90"/>
+<pad name="P$4" x="4.4" y="0" drill="2.2" diameter="3.175" rot="R90"/>
+<pad name="P$5" x="-4.4" y="0" drill="2.2" diameter="3.175" rot="R90"/>
+<text x="-3.81" y="3.81" size="1.27" layer="25">&gt;NAME</text>
+<text x="-3.81" y="2.286" size="1.27" layer="27">&gt;VALUE</text>
+</package>
+<package name="ALPS_POT">
+<wire x1="6.73" y1="4.93" x2="6.73" y2="-4.93" width="0.2032" layer="51"/>
+<wire x1="6.73" y1="-4.93" x2="-5.346" y2="-4.93" width="0.2032" layer="51"/>
+<wire x1="-5.346" y1="-4.93" x2="-5.346" y2="4.93" width="0.2032" layer="51"/>
+<wire x1="-5.346" y1="4.93" x2="6.73" y2="4.93" width="0.2032" layer="51"/>
+<pad name="P$1" x="7" y="-2.5" drill="1" diameter="1.8796" shape="square"/>
+<pad name="P$2" x="7" y="0" drill="1" diameter="1.8796" shape="square"/>
+<pad name="P$3" x="7" y="2.5" drill="1" diameter="1.8796" shape="square"/>
+<pad name="P$4" x="0" y="-4.4" drill="2" shape="octagon"/>
+<pad name="P$5" x="0" y="4.4" drill="2" shape="octagon"/>
+<text x="-2.54" y="0" size="1.27" layer="21" align="center-left">&gt;NAME</text>
+</package>
+<package name="POT_ALPHA_RV16AF-20">
+<description>Package for Alpha RV16AF-20 potentiometer</description>
+<wire x1="-8.5" y1="0" x2="-8.5" y2="5.3" width="0.2032" layer="21"/>
+<wire x1="-8.5" y1="5.3" x2="8.5" y2="5.3" width="0.2032" layer="21"/>
+<wire x1="8.5" y1="5.3" x2="8.5" y2="0" width="0.2032" layer="21"/>
+<wire x1="-8.5" y1="0" x2="-6.5" y2="0" width="0.2032" layer="21"/>
+<wire x1="6.5" y1="0" x2="8.5" y2="0" width="0.2032" layer="21"/>
+<wire x1="-3" y1="0" x2="-3" y2="-17" width="0.127" layer="51"/>
+<wire x1="-3" y1="-17" x2="3" y2="-17" width="0.127" layer="51"/>
+<wire x1="3" y1="-17" x2="3" y2="0" width="0.127" layer="51"/>
+<wire x1="-3.5" y1="0" x2="-1.5" y2="0" width="0.2032" layer="21"/>
+<wire x1="1.5" y1="0" x2="3.5" y2="0" width="0.2032" layer="21"/>
+<pad name="1" x="-5" y="0" drill="1.5" diameter="2.54"/>
+<pad name="2" x="0" y="0" drill="1.5" diameter="2.54"/>
+<pad name="3" x="5" y="0" drill="1.5" diameter="2.54"/>
+<text x="-3" y="2.5" size="1.27" layer="21">&gt;Value</text>
+<text x="-8.4" y="5.6" size="1.27" layer="25">&gt;Name</text>
+</package>
+<package name="3362U">
+<wire x1="-1.27" y1="-1.016" x2="6.35" y2="-1.016" width="0.127" layer="21"/>
+<wire x1="6.35" y1="-1.016" x2="6.35" y2="6.096" width="0.127" layer="21"/>
+<wire x1="6.35" y1="6.096" x2="-1.27" y2="6.096" width="0.127" layer="21"/>
+<wire x1="-1.27" y1="6.096" x2="-1.27" y2="-1.016" width="0.127" layer="21"/>
+<wire x1="-1.27" y1="-1.27" x2="6.35" y2="-1.27" width="0.127" layer="21"/>
+<pad name="P$1" x="0" y="2.54" drill="1.016" diameter="1.8796" shape="square"/>
+<pad name="P$2" x="2.54" y="2.54" drill="1.016" diameter="1.8796"/>
+<pad name="P$3" x="5.08" y="2.54" drill="1.016" diameter="1.8796"/>
+</package>
+<package name="POT_MAMMOTH">
+<circle x="0" y="16.03" radius="8.293" width="0.127" layer="51"/>
+<circle x="0" y="16.3" radius="3.4" width="0.127" layer="51"/>
+<wire x1="-7.62" y1="0" x2="7.62" y2="0" width="0.127" layer="51"/>
+<wire x1="-7.62" y1="0.03" x2="-7.62" y2="12.75" width="0.127" layer="51"/>
+<wire x1="7.62" y1="0.03" x2="7.62" y2="12.75" width="0.127" layer="51"/>
+<pad name="P$1" x="-4.73" y="-0.02" drill="1.1"/>
+<pad name="P$2" x="0" y="-0.02" drill="1.1"/>
+<pad name="P$3" x="4.67" y="-0.01" drill="1.1"/>
+</package>
+<package name="TRIM_POT">
+<pad name="1" x="5.08" y="0" drill="1" diameter="1.8796"/>
+<pad name="2" x="0" y="2.54" drill="1" diameter="1.8796"/>
+<pad name="3" x="0" y="-2.54" drill="1" diameter="1.8796"/>
+</package>
+<package name="ALPHAPOT-24MM">
+<circle x="0" y="0" radius="12" width="0.127" layer="51"/>
+<pad name="P$1" x="-7.94521875" y="-17.0386" drill="2.1"/>
+<pad name="P$2" x="0" y="-18.8" drill="2.1"/>
+<pad name="P$3" x="7.94521875" y="-17.0386" drill="2.1"/>
 </package>
 </packages>
 <symbols>
@@ -10137,6 +9946,30 @@ PCB width:
 <wire x1="0" y1="3.81" x2="-1.27" y2="2.54" width="0.254" layer="94" curve="90"/>
 <wire x1="-1.27" y1="2.54" x2="-1.27" y2="-1.27" width="0.254" layer="94"/>
 </symbol>
+<symbol name="POT">
+<wire x1="0" y1="-5.08" x2="0" y2="-4.572" width="0.1524" layer="94"/>
+<wire x1="0" y1="-4.572" x2="-1.016" y2="-3.81" width="0.254" layer="94"/>
+<wire x1="-1.016" y1="-3.81" x2="1.27" y2="-2.54" width="0.254" layer="94"/>
+<wire x1="1.27" y1="-2.54" x2="-1.016" y2="-1.27" width="0.254" layer="94"/>
+<wire x1="-1.016" y1="-1.27" x2="1.27" y2="0" width="0.254" layer="94"/>
+<wire x1="1.27" y1="0" x2="-1.016" y2="1.27" width="0.254" layer="94"/>
+<wire x1="-1.016" y1="1.27" x2="1.27" y2="2.54" width="0.254" layer="94"/>
+<wire x1="1.27" y1="2.54" x2="-1.016" y2="3.81" width="0.254" layer="94"/>
+<wire x1="-1.016" y1="3.81" x2="0" y2="4.572" width="0.254" layer="94"/>
+<wire x1="0" y1="4.572" x2="0" y2="5.08" width="0.1524" layer="94"/>
+<wire x1="1.27" y1="0" x2="2.54" y2="1.27" width="0.2032" layer="94"/>
+<wire x1="2.54" y1="-1.27" x2="1.27" y2="0" width="0.2032" layer="94"/>
+<wire x1="2.54" y1="1.27" x2="2.54" y2="-1.27" width="0.2032" layer="94"/>
+<wire x1="2.032" y1="-4.699" x2="2.032" y2="-2.159" width="0.1524" layer="94"/>
+<wire x1="2.032" y1="-2.159" x2="2.667" y2="-3.429" width="0.1524" layer="94"/>
+<wire x1="2.667" y1="-3.429" x2="1.397" y2="-3.429" width="0.1524" layer="94"/>
+<wire x1="1.397" y1="-3.429" x2="2.032" y2="-2.159" width="0.1524" layer="94"/>
+<pin name="A" x="0" y="-7.62" visible="off" length="short" direction="pas" rot="R90"/>
+<pin name="E" x="0" y="7.62" visible="off" length="short" direction="pas" rot="R270"/>
+<pin name="S" x="5.08" y="0" visible="off" length="short" direction="pas" rot="R180"/>
+<text x="5.08" y="-10.16" size="1.778" layer="95" rot="R90">&gt;NAME</text>
+<text x="-2.54" y="-10.16" size="1.778" layer="95" rot="R90">&gt;Value</text>
+</symbol>
 </symbols>
 <devicesets>
 <deviceset name="AUDIO-JACK">
@@ -10147,10 +9980,10 @@ PCB width:
 <devices>
 <device name="OUTPUT" package="3.5MM-JACK-SWITCH-13MM-OUTPUT">
 <connects>
-<connect gate="G$1" pin="RING" pad="RING"/>
-<connect gate="G$1" pin="SECOND" pad="SECOND"/>
-<connect gate="G$1" pin="SWITCH" pad="SWITCH"/>
-<connect gate="G$1" pin="TIP" pad="TIP"/>
+<connect gate="G$1" pin="RING" pad="RING@1 RING@2"/>
+<connect gate="G$1" pin="SECOND" pad="SECOND@1 SECOND@2"/>
+<connect gate="G$1" pin="SWITCH" pad="SWITCH@1 SWITCH@2"/>
+<connect gate="G$1" pin="TIP" pad="TIP@1 TIP@2"/>
 </connects>
 <technologies>
 <technology name=""/>
@@ -10158,10 +9991,10 @@ PCB width:
 </device>
 <device name="INPUT" package="3.5MM-JACK-SWITCH-13MM-INPUT">
 <connects>
-<connect gate="G$1" pin="RING" pad="RING"/>
-<connect gate="G$1" pin="SECOND" pad="SECOND"/>
-<connect gate="G$1" pin="SWITCH" pad="SWITCH"/>
-<connect gate="G$1" pin="TIP" pad="TIP"/>
+<connect gate="G$1" pin="RING" pad="RING@1"/>
+<connect gate="G$1" pin="SECOND" pad="SECOND@1"/>
+<connect gate="G$1" pin="SWITCH" pad="SWITCH@1"/>
+<connect gate="G$1" pin="TIP" pad="TIP@1"/>
 </connects>
 <technologies>
 <technology name=""/>
@@ -10174,7 +10007,89 @@ PCB width:
 <gate name="G$1" symbol="EURORACK_PCB" x="0" y="0"/>
 </gates>
 <devices>
-<device name="" package="EURORACK8HPPCB">
+<device name="8HP" package="EURORACK8HPPCB">
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="12HP" package="EURORACK12HPPCB">
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="POT" uservalue="yes">
+<gates>
+<gate name="G$1" symbol="POT" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="ALPS_POT">
+<connects>
+<connect gate="G$1" pin="A" pad="P$3"/>
+<connect gate="G$1" pin="E" pad="P$1"/>
+<connect gate="G$1" pin="S" pad="P$2"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="-RV16AF-20" package="POT_ALPHA_RV16AF-20">
+<connects>
+<connect gate="G$1" pin="A" pad="1"/>
+<connect gate="G$1" pin="E" pad="3"/>
+<connect gate="G$1" pin="S" pad="2"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="100K_3362U" package="3362U">
+<connects>
+<connect gate="G$1" pin="A" pad="P$3"/>
+<connect gate="G$1" pin="E" pad="P$1"/>
+<connect gate="G$1" pin="S" pad="P$2"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="MAM" package="POT_MAMMOTH">
+<connects>
+<connect gate="G$1" pin="A" pad="P$2"/>
+<connect gate="G$1" pin="E" pad="P$3"/>
+<connect gate="G$1" pin="S" pad="P$1"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="TRIM" package="TRIM_POT">
+<connects>
+<connect gate="G$1" pin="A" pad="3"/>
+<connect gate="G$1" pin="E" pad="2"/>
+<connect gate="G$1" pin="S" pad="1"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="ZEPHPOT" package="OG-POTS_ALPS_POT_VERTICAL">
+<connects>
+<connect gate="G$1" pin="A" pad="P$3"/>
+<connect gate="G$1" pin="E" pad="P$1"/>
+<connect gate="G$1" pin="S" pad="P$2"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="_ALPHA24" package="ALPHAPOT-24MM">
+<connects>
+<connect gate="G$1" pin="A" pad="P$3"/>
+<connect gate="G$1" pin="E" pad="P$1"/>
+<connect gate="G$1" pin="S" pad="P$2"/>
+</connects>
 <technologies>
 <technology name=""/>
 </technologies>
@@ -11126,13 +11041,13 @@ Standard 3-pin 0.1" header. Use with straight break away headers (SKU : PRT-0011
 <part name="IC3" library="ld-components" deviceset="LD1117A?*" device="S" technology="33TR"/>
 <part name="GND20" library="SparkFun-Aesthetics" deviceset="GND" device=""/>
 <part name="C7" library="OPL" deviceset="C*" device="-0603" value="100nF"/>
-<part name="R90" library="og-pots" deviceset="POT_US" device="VERTICAL" value="10kB"/>
+<part name="R90" library="EurorackModularParts" deviceset="POT" device="ZEPHPOT" value="10kB"/>
 <part name="GND21" library="SparkFun" deviceset="GND" device=""/>
-<part name="R13" library="og-pots" deviceset="POT_US" device="VERTICAL" value="10kB"/>
+<part name="R13" library="EurorackModularParts" deviceset="POT" device="ZEPHPOT" value="10kB"/>
 <part name="GND22" library="SparkFun" deviceset="GND" device=""/>
-<part name="R14" library="og-pots" deviceset="POT_US" device="VERTICAL" value="10kB"/>
+<part name="R14" library="EurorackModularParts" deviceset="POT" device="ZEPHPOT" value="10kB"/>
 <part name="GND23" library="SparkFun" deviceset="GND" device=""/>
-<part name="R17" library="og-pots" deviceset="POT_US" device="VERTICAL" value="10kB"/>
+<part name="R17" library="EurorackModularParts" deviceset="POT" device="ZEPHPOT" value="10kB"/>
 <part name="GND24" library="SparkFun" deviceset="GND" device=""/>
 <part name="SUPPLY2" library="supply2" deviceset="VEE" device=""/>
 <part name="D2" library="diode" deviceset="DIODE-" device="SOD123" value="1N5819HW"/>
@@ -11164,7 +11079,7 @@ Standard 3-pin 0.1" header. Use with straight break away headers (SKU : PRT-0011
 <part name="U$8" library="EurorackModularParts" deviceset="AUDIO-JACK" device="OUTPUT"/>
 <part name="GND32" library="SparkFun" deviceset="GND" device=""/>
 <part name="GND34" library="SparkFun" deviceset="GND" device=""/>
-<part name="U$2" library="EurorackModularParts" deviceset="EURORACK_PCB" device=""/>
+<part name="U$2" library="EurorackModularParts" deviceset="EURORACK_PCB" device="8HP"/>
 <part name="GND35" library="SparkFun" deviceset="GND" device=""/>
 <part name="GND36" library="SparkFun" deviceset="GND" device=""/>
 <part name="GND39" library="SparkFun" deviceset="GND" device=""/>
