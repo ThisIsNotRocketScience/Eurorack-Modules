@@ -8747,6 +8747,18 @@ Based on the following sources:
 <part name="R8" library="OPL" deviceset="R-4R*" device="" value="10k"/>
 <part name="R9" library="OPL" deviceset="R-4R*" device="" value="10k"/>
 <part name="SUPPLY2" library="SparkFun-Aesthetics" deviceset="3.3V" device=""/>
+<part name="GND20" library="SparkFun" deviceset="GND" device=""/>
+<part name="SUPPLY4" library="SparkFun-Aesthetics" deviceset="3.3V" device=""/>
+<part name="SUPPLY5" library="SparkFun-Aesthetics" deviceset="3.3V" device=""/>
+<part name="SUPPLY7" library="SparkFun-Aesthetics" deviceset="3.3V" device=""/>
+<part name="GND34" library="SparkFun" deviceset="GND" device=""/>
+<part name="GND37" library="SparkFun" deviceset="GND" device=""/>
+<part name="C1" library="OPL" deviceset="C*" device="-0603" value="100Nf"/>
+<part name="C2" library="OPL" deviceset="C*" device="-0603" value="100Nf"/>
+<part name="SUPPLY8" library="SparkFun-Aesthetics" deviceset="3.3V" device=""/>
+<part name="SUPPLY10" library="SparkFun-Aesthetics" deviceset="3.3V" device=""/>
+<part name="GND40" library="SparkFun" deviceset="GND" device=""/>
+<part name="GND47" library="SparkFun" deviceset="GND" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -8866,6 +8878,20 @@ Based on the following sources:
 <instance part="R9" gate="C" x="199.39" y="-76.2"/>
 <instance part="R9" gate="D" x="199.39" y="-80.01"/>
 <instance part="SUPPLY2" gate="G$1" x="195.58" y="-45.72"/>
+<instance part="GND20" gate="1" x="104.14" y="-67.31" rot="R270"/>
+<instance part="SUPPLY4" gate="G$1" x="106.68" y="-64.77"/>
+<instance part="IC3" gate="P" x="167.64" y="-106.68"/>
+<instance part="IC2" gate="SUP" x="177.8" y="-106.68"/>
+<instance part="SUPPLY5" gate="G$1" x="167.64" y="-93.98"/>
+<instance part="SUPPLY7" gate="G$1" x="177.8" y="-93.98"/>
+<instance part="GND34" gate="1" x="167.64" y="-123.19"/>
+<instance part="GND37" gate="1" x="177.8" y="-123.19"/>
+<instance part="C1" gate="C" x="186.69" y="-106.68" rot="R90"/>
+<instance part="C2" gate="C" x="191.77" y="-106.68" rot="R90"/>
+<instance part="SUPPLY8" gate="G$1" x="191.77" y="-102.87"/>
+<instance part="SUPPLY10" gate="G$1" x="186.69" y="-102.87"/>
+<instance part="GND40" gate="1" x="186.69" y="-113.03"/>
+<instance part="GND47" gate="1" x="191.77" y="-113.03"/>
 </instances>
 <busses>
 </busses>
@@ -9093,6 +9119,28 @@ Based on the following sources:
 <pinref part="GND19" gate="1" pin="GND"/>
 <wire x1="104.14" y1="-111.76" x2="106.68" y2="-111.76" width="0.1524" layer="91"/>
 </segment>
+<segment>
+<pinref part="IC2" gate="IC" pin="!OE"/>
+<pinref part="GND20" gate="1" pin="GND"/>
+</segment>
+<segment>
+<pinref part="IC2" gate="SUP" pin="GND"/>
+<pinref part="GND37" gate="1" pin="GND"/>
+<wire x1="177.8" y1="-120.65" x2="177.8" y2="-119.38" width="0.1524" layer="91"/>
+</segment>
+<segment>
+<pinref part="IC3" gate="P" pin="GND"/>
+<pinref part="GND34" gate="1" pin="GND"/>
+<wire x1="167.64" y1="-120.65" x2="167.64" y2="-114.3" width="0.1524" layer="91"/>
+</segment>
+<segment>
+<pinref part="C1" gate="C" pin="1"/>
+<pinref part="GND40" gate="1" pin="GND"/>
+</segment>
+<segment>
+<pinref part="C2" gate="C" pin="1"/>
+<pinref part="GND47" gate="1" pin="GND"/>
+</segment>
 </net>
 <net name="3.3V" class="0">
 <segment>
@@ -9165,6 +9213,27 @@ Based on the following sources:
 <wire x1="350.52" y1="-114.3" x2="350.52" y2="-111.76" width="0.1524" layer="91"/>
 <label x="350.52" y="-111.76" size="1.778" layer="95" rot="R90"/>
 <pinref part="R3" gate="G$1" pin="2"/>
+</segment>
+<segment>
+<pinref part="IC2" gate="IC" pin="!RST"/>
+<pinref part="SUPPLY4" gate="G$1" pin="3.3V"/>
+</segment>
+<segment>
+<pinref part="IC3" gate="P" pin="VCC"/>
+<pinref part="SUPPLY5" gate="G$1" pin="3.3V"/>
+<wire x1="167.64" y1="-93.98" x2="167.64" y2="-99.06" width="0.1524" layer="91"/>
+</segment>
+<segment>
+<pinref part="IC2" gate="SUP" pin="V+"/>
+<pinref part="SUPPLY7" gate="G$1" pin="3.3V"/>
+</segment>
+<segment>
+<pinref part="C2" gate="C" pin="2"/>
+<pinref part="SUPPLY8" gate="G$1" pin="3.3V"/>
+</segment>
+<segment>
+<pinref part="C1" gate="C" pin="2"/>
+<pinref part="SUPPLY10" gate="G$1" pin="3.3V"/>
 </segment>
 </net>
 <net name="N$1" class="0">
