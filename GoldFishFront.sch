@@ -288,6 +288,7 @@
 <pad name="P$5" x="-4.4" y="0" drill="2.2" diameter="3.175" rot="R90"/>
 <text x="-3.81" y="3.81" size="1.27" layer="25">&gt;NAME</text>
 <text x="-3.81" y="2.286" size="1.27" layer="27">&gt;VALUE</text>
+<circle x="0" y="0" radius="6" width="1" layer="21"/>
 </package>
 <package name="EURORACK12HPPCB">
 <wire x1="0" y1="105.5" x2="0" y2="1" width="0.127" layer="20"/>
@@ -601,10 +602,10 @@ PCB width:
 </device>
 <device name="INPUT" package="3.5MM-JACK-SWITCH-13MM-INPUT">
 <connects>
-<connect gate="G$1" pin="RING" pad="RING@1"/>
-<connect gate="G$1" pin="SECOND" pad="SECOND@1"/>
-<connect gate="G$1" pin="SWITCH" pad="SWITCH@1"/>
-<connect gate="G$1" pin="TIP" pad="TIP@1"/>
+<connect gate="G$1" pin="RING" pad="RING@1 RING@2"/>
+<connect gate="G$1" pin="SECOND" pad="SECOND@1 SECOND@2"/>
+<connect gate="G$1" pin="SWITCH" pad="SWITCH@1 SWITCH@2"/>
+<connect gate="G$1" pin="TIP" pad="TIP@1 TIP@2"/>
 </connects>
 <technologies>
 <technology name=""/>
@@ -7485,7 +7486,7 @@ Source: http://focus.ti.com/lit/ds/slcs146e/slcs146e.pdf</description>
 <variantdefs>
 </variantdefs>
 <classes>
-<class number="0" name="default" width="0.381" drill="0">
+<class number="0" name="default" width="0.254" drill="0">
 </class>
 <class number="1" name="small" width="0.254" drill="0">
 </class>
