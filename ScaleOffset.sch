@@ -184,7 +184,7 @@
 <smd name="SECOND@2" x="0" y="-3.3" dx="4.5" dy="2.5" layer="16" roundness="50"/>
 <smd name="RING@2" x="-4.2" y="0" dx="4.5" dy="2.5" layer="16" roundness="50" rot="R270"/>
 <circle x="0" y="0" radius="4" width="0.0254" layer="255"/>
-<text x="0" y="5.08" size="1.778" layer="255" align="bottom-center">&gt;VALUE</text>
+<text x="0" y="6.35" size="1.778" layer="255" align="bottom-center">&gt;VALUE</text>
 </package>
 <package name="3.5MM-JACK-SWITCH-13MM-INPUT">
 <smd name="TIP@1" x="0" y="4.9" dx="4.5" dy="2.5" layer="1" roundness="50"/>
@@ -368,39 +368,6 @@
 <pad name="P$2" x="0" y="-18.8" drill="2.1"/>
 <pad name="P$3" x="7.94521875" y="-17.0386" drill="2.1"/>
 </package>
-<package name="EURORACK8HPPCB">
-<wire x1="0.5" y1="105.5" x2="0.5" y2="1" width="0.127" layer="20"/>
-<wire x1="0.5" y1="1" x2="1.5" y2="0" width="0.127" layer="20" curve="90"/>
-<wire x1="1.5" y1="0" x2="38.8" y2="0" width="0.127" layer="20"/>
-<wire x1="38.8" y1="0" x2="39.8" y2="1" width="0.127" layer="20" curve="90"/>
-<wire x1="39.8" y1="1" x2="39.8" y2="105.5" width="0.127" layer="20"/>
-<wire x1="39.8" y1="105.5" x2="38.8" y2="106.5" width="0.127" layer="20" curve="90"/>
-<wire x1="38.8" y1="106.5" x2="1.5" y2="106.5" width="0.127" layer="20"/>
-<wire x1="1.5" y1="106.5" x2="0.5" y2="105.5" width="0.127" layer="20" curve="90"/>
-<wire x1="0" y1="-11" x2="40.3" y2="-11" width="0" layer="51"/>
-<wire x1="40.3" y1="-11" x2="40.3" y2="117.5" width="0" layer="51"/>
-<wire x1="40.3" y1="117.5" x2="0" y2="117.5" width="0" layer="51"/>
-<wire x1="0" y1="117.5" x2="0" y2="-11" width="0" layer="51"/>
-<text x="0.5" y="115" size="1.27" layer="51">8HP front template</text>
-<wire x1="10.075" y1="130" x2="10.075" y2="-20" width="0" layer="51"/>
-<wire x1="30.225" y1="130" x2="30.225" y2="-20" width="0" layer="51"/>
-<wire x1="13.433" y1="130" x2="13.433" y2="-20" width="0" layer="51"/>
-<wire x1="20.15" y1="130" x2="20.15" y2="-20" width="0" layer="51"/>
-<wire x1="26.87" y1="130" x2="26.87" y2="-20" width="0" layer="51"/>
-<text x="41.5" y="85" size="1.27" layer="51">2 columns:
-12,933
-26,37
-
-3 columns:
-9,575  
-19,65
-29,725
-
-PCB width: 
-39,3</text>
-<text x="48" y="101" size="1.27" layer="51">+0.5</text>
-<text x="50" y="92" size="1.27" layer="51">+0.5</text>
-</package>
 <package name="DIL14">
 <description>&lt;b&gt;Dual In Line Package&lt;/b&gt;</description>
 <wire x1="8.89" y1="2.921" x2="-8.89" y2="2.921" width="0.1524" layer="21"/>
@@ -475,10 +442,10 @@ PCB width:
 <wire x1="29.64" y1="105.5" x2="28.64" y2="106.5" width="0.127" layer="20" curve="90"/>
 <wire x1="28.64" y1="106.5" x2="1.5" y2="106.5" width="0.127" layer="20"/>
 <wire x1="1.5" y1="106.5" x2="0.5" y2="105.5" width="0.127" layer="20" curve="90"/>
-<wire x1="0" y1="-11" x2="30.14" y2="-11" width="0" layer="51"/>
-<wire x1="30.14" y1="-11" x2="30.14" y2="117.5" width="0" layer="51"/>
-<wire x1="30.14" y1="117.5" x2="0" y2="117.5" width="0" layer="51"/>
-<wire x1="0" y1="117.5" x2="0" y2="-11" width="0" layer="51"/>
+<wire x1="0" y1="-11" x2="30.14" y2="-11" width="0" layer="255"/>
+<wire x1="30.14" y1="-11" x2="30.14" y2="117.5" width="0" layer="255"/>
+<wire x1="30.14" y1="117.5" x2="0" y2="117.5" width="0" layer="255"/>
+<wire x1="0" y1="117.5" x2="0" y2="-11" width="0" layer="255"/>
 <text x="0.5" y="115" size="1.27" layer="51">6HP front template</text>
 <wire x1="10.075" y1="130" x2="10.075" y2="-20" width="0" layer="51"/>
 <wire x1="20.15" y1="130" x2="20.15" y2="-20" width="0" layer="51"/>
@@ -502,6 +469,39 @@ PCB width:
 59.62</text>
 <text x="28" y="108" size="1.27" layer="51">halve = 29,81</text>
 <wire x1="29.81" y1="107" x2="29.81" y2="-11" width="0.127" layer="51"/>
+</package>
+<package name="EURORACK8HPPCB">
+<wire x1="0.5" y1="105.5" x2="0.5" y2="1" width="0.127" layer="20"/>
+<wire x1="0.5" y1="1" x2="1.5" y2="0" width="0.127" layer="20" curve="90"/>
+<wire x1="1.5" y1="0" x2="38.8" y2="0" width="0.127" layer="20"/>
+<wire x1="38.8" y1="0" x2="39.8" y2="1" width="0.127" layer="20" curve="90"/>
+<wire x1="39.8" y1="1" x2="39.8" y2="105.5" width="0.127" layer="20"/>
+<wire x1="39.8" y1="105.5" x2="38.8" y2="106.5" width="0.127" layer="20" curve="90"/>
+<wire x1="38.8" y1="106.5" x2="1.5" y2="106.5" width="0.127" layer="20"/>
+<wire x1="1.5" y1="106.5" x2="0.5" y2="105.5" width="0.127" layer="20" curve="90"/>
+<wire x1="0" y1="-11" x2="40.3" y2="-11" width="0" layer="255"/>
+<wire x1="40.3" y1="-11" x2="40.3" y2="117.5" width="0" layer="255"/>
+<wire x1="40.3" y1="117.5" x2="0" y2="117.5" width="0" layer="255"/>
+<wire x1="0" y1="117.5" x2="0" y2="-11" width="0" layer="255"/>
+<text x="0.5" y="115" size="1.27" layer="51">8HP front template</text>
+<wire x1="10.075" y1="130" x2="10.075" y2="-20" width="0" layer="51"/>
+<wire x1="30.225" y1="130" x2="30.225" y2="-20" width="0" layer="51"/>
+<wire x1="13.433" y1="130" x2="13.433" y2="-20" width="0" layer="51"/>
+<wire x1="20.15" y1="130" x2="20.15" y2="-20" width="0" layer="51"/>
+<wire x1="26.87" y1="130" x2="26.87" y2="-20" width="0" layer="51"/>
+<text x="41.5" y="85" size="1.27" layer="51">2 columns:
+12,933
+26,37
+
+3 columns:
+9,575  
+19,65
+29,725
+
+PCB width: 
+39,3</text>
+<text x="48" y="101" size="1.27" layer="51">+0.5</text>
+<text x="50" y="92" size="1.27" layer="51">+0.5</text>
 </package>
 </packages>
 <symbols>

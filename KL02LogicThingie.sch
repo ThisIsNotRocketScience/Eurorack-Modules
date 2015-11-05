@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.05" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
+<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="no" active="no"/>
 <layer number="2" name="Route2" color="1" fill="3" visible="no" active="no"/>
@@ -142,6 +142,7 @@
 <layer number="250" name="Descript" color="3" fill="1" visible="no" active="no"/>
 <layer number="251" name="SMDround" color="12" fill="11" visible="no" active="no"/>
 <layer number="254" name="OrgLBR" color="13" fill="1" visible="no" active="no"/>
+<layer number="255" name="Panel" color="14" fill="1" visible="yes" active="yes"/>
 </layers>
 <schematic xreflabel="%F%N/%S.%C%R" xrefpart="/%S.%C%R">
 <libraries>
@@ -1024,6 +1025,7 @@ Source: http://www.st.com/stonline/products/literature/ds/7194/ld1117axx.pdf</de
 <wire x1="-3.1" y1="-3.1" x2="-3.1" y2="3.1" width="0.127" layer="51"/>
 <circle x="0" y="0" radius="3.556" width="1" layer="21"/>
 <circle x="0" y="0" radius="4.3942" width="0.254" layer="21"/>
+<circle x="0" y="0" radius="3" width="0.0254" layer="255"/>
 </package>
 </packages>
 <symbols>
@@ -9746,6 +9748,8 @@ Source: http://www.diodes.com/datasheets/ds23001.pdf</description>
 <smd name="SWITCH@2" x="4.2" y="0" dx="4.5" dy="2.5" layer="16" roundness="50" rot="R90"/>
 <smd name="SECOND@2" x="0" y="-3.3" dx="4.5" dy="2.5" layer="16" roundness="50"/>
 <smd name="RING@2" x="-4.2" y="0" dx="4.5" dy="2.5" layer="16" roundness="50" rot="R270"/>
+<circle x="0" y="0" radius="4" width="0.0254" layer="255"/>
+<text x="0" y="6.35" size="1.778" layer="255" align="bottom-center">&gt;VALUE</text>
 </package>
 <package name="3.5MM-JACK-SWITCH-13MM-INPUT">
 <smd name="TIP@1" x="0" y="4.9" dx="4.5" dy="2.5" layer="1" roundness="50"/>
@@ -9781,6 +9785,8 @@ Source: http://www.diodes.com/datasheets/ds23001.pdf</description>
 <smd name="SWITCH@2" x="4.2" y="0" dx="4.5" dy="2.5" layer="16" roundness="50" rot="R90"/>
 <smd name="SECOND@2" x="0" y="-3.3" dx="4.5" dy="2.5" layer="16" roundness="50"/>
 <smd name="RING@2" x="-4.2" y="0" dx="4.5" dy="2.5" layer="16" roundness="50" rot="R270"/>
+<circle x="0" y="0" radius="4" width="0.0254" layer="255"/>
+<text x="0" y="6.35" size="1.778" layer="255" align="bottom-center">&gt;VALUE</text>
 </package>
 <package name="EURORACK8HPPCB">
 <wire x1="0.5" y1="105.5" x2="0.5" y2="1" width="0.127" layer="20"/>
@@ -9791,10 +9797,10 @@ Source: http://www.diodes.com/datasheets/ds23001.pdf</description>
 <wire x1="39.8" y1="105.5" x2="38.8" y2="106.5" width="0.127" layer="20" curve="90"/>
 <wire x1="38.8" y1="106.5" x2="1.5" y2="106.5" width="0.127" layer="20"/>
 <wire x1="1.5" y1="106.5" x2="0.5" y2="105.5" width="0.127" layer="20" curve="90"/>
-<wire x1="0" y1="-11" x2="40.3" y2="-11" width="0" layer="51"/>
-<wire x1="40.3" y1="-11" x2="40.3" y2="117.5" width="0" layer="51"/>
-<wire x1="40.3" y1="117.5" x2="0" y2="117.5" width="0" layer="51"/>
-<wire x1="0" y1="117.5" x2="0" y2="-11" width="0" layer="51"/>
+<wire x1="0" y1="-11" x2="40.3" y2="-11" width="0" layer="255"/>
+<wire x1="40.3" y1="-11" x2="40.3" y2="117.5" width="0" layer="255"/>
+<wire x1="40.3" y1="117.5" x2="0" y2="117.5" width="0" layer="255"/>
+<wire x1="0" y1="117.5" x2="0" y2="-11" width="0" layer="255"/>
 <text x="0.5" y="115" size="1.27" layer="51">8HP front template</text>
 <wire x1="10.075" y1="130" x2="10.075" y2="-20" width="0" layer="51"/>
 <wire x1="30.225" y1="130" x2="30.225" y2="-20" width="0" layer="51"/>
@@ -9815,26 +9821,6 @@ PCB width:
 <text x="48" y="101" size="1.27" layer="51">+0.5</text>
 <text x="50" y="92" size="1.27" layer="51">+0.5</text>
 </package>
-<package name="EURORACK12HPPCB">
-<wire x1="0" y1="105.5" x2="0" y2="1" width="0.127" layer="20"/>
-<wire x1="0" y1="1" x2="1" y2="0" width="0.127" layer="20" curve="90"/>
-<wire x1="1" y1="0" x2="58.62" y2="0" width="0.127" layer="20"/>
-<wire x1="58.62" y1="0" x2="59.62" y2="1" width="0.127" layer="20" curve="90"/>
-<wire x1="59.62" y1="1" x2="59.62" y2="105.5" width="0.127" layer="20"/>
-<wire x1="59.62" y1="105.5" x2="58.62" y2="106.5" width="0.127" layer="20" curve="90"/>
-<wire x1="58.62" y1="106.5" x2="1" y2="106.5" width="0.127" layer="20"/>
-<wire x1="1" y1="106.5" x2="0" y2="105.5" width="0.127" layer="20" curve="90"/>
-<wire x1="-0.5" y1="-11" x2="29.81" y2="-11" width="0" layer="51"/>
-<wire x1="29.81" y1="-11" x2="60.12" y2="-11" width="0" layer="51"/>
-<wire x1="60.12" y1="-11" x2="60.12" y2="117.5" width="0" layer="51"/>
-<wire x1="60.12" y1="117.5" x2="-0.5" y2="117.5" width="0" layer="51"/>
-<wire x1="-0.5" y1="117.5" x2="-0.5" y2="-11" width="0" layer="51"/>
-<text x="1" y="113" size="1.27" layer="51">12HP eurorack pcb template</text>
-<text x="28" y="111" size="1.27" layer="51">PCB width: 
-59.62</text>
-<text x="28" y="108" size="1.27" layer="51">halve = 29,81</text>
-<wire x1="29.81" y1="107" x2="29.81" y2="-11" width="0.127" layer="51"/>
-</package>
 <package name="OG-POTS_ALPS_POT_VERTICAL">
 <circle x="0" y="0" radius="2.54" width="0.2032" layer="51"/>
 <wire x1="-4.295" y1="5.46" x2="4.295" y2="5.46" width="0.127" layer="51"/>
@@ -9848,9 +9834,10 @@ PCB width:
 <pad name="P$3" x="2.58" y="-6.7" drill="1" diameter="1.8796" rot="R90"/>
 <pad name="P$4" x="4.4" y="0" drill="2.2" diameter="3.175" rot="R90"/>
 <pad name="P$5" x="-4.4" y="0" drill="2.2" diameter="3.175" rot="R90"/>
-<text x="0" y="6.985" size="1.778" layer="25" align="bottom-center">&gt;NAME</text>
 <text x="0" y="-1.905" size="1.27" layer="27" align="top-center">&gt;VALUE</text>
 <circle x="0" y="0" radius="6" width="1" layer="21"/>
+<circle x="0" y="0" radius="4.5" width="0.002540625" layer="255"/>
+<text x="0" y="7.62" size="1.778" layer="255" align="bottom-center">&gt;VALUE</text>
 </package>
 <package name="ALPS_POT">
 <wire x1="6.73" y1="4.93" x2="6.73" y2="-4.93" width="0.2032" layer="51"/>
@@ -9913,6 +9900,26 @@ PCB width:
 <pad name="P$2" x="0" y="-18.8" drill="2.1"/>
 <pad name="P$3" x="7.94521875" y="-17.0386" drill="2.1"/>
 </package>
+<package name="EURORACK12HPPCB">
+<wire x1="0" y1="105.5" x2="0" y2="1" width="0.127" layer="20"/>
+<wire x1="0" y1="1" x2="1" y2="0" width="0.127" layer="20" curve="90"/>
+<wire x1="1" y1="0" x2="58.62" y2="0" width="0.127" layer="20"/>
+<wire x1="58.62" y1="0" x2="59.62" y2="1" width="0.127" layer="20" curve="90"/>
+<wire x1="59.62" y1="1" x2="59.62" y2="105.5" width="0.127" layer="20"/>
+<wire x1="59.62" y1="105.5" x2="58.62" y2="106.5" width="0.127" layer="20" curve="90"/>
+<wire x1="58.62" y1="106.5" x2="1" y2="106.5" width="0.127" layer="20"/>
+<wire x1="1" y1="106.5" x2="0" y2="105.5" width="0.127" layer="20" curve="90"/>
+<wire x1="-0.5" y1="-11" x2="29.81" y2="-11" width="0" layer="255"/>
+<wire x1="29.81" y1="-11" x2="60.12" y2="-11" width="0" layer="255"/>
+<wire x1="60.12" y1="-11" x2="60.12" y2="117.5" width="0" layer="255"/>
+<wire x1="60.12" y1="117.5" x2="-0.5" y2="117.5" width="0" layer="255"/>
+<wire x1="-0.5" y1="117.5" x2="-0.5" y2="-11" width="0" layer="255"/>
+<text x="1" y="113" size="1.27" layer="51">12HP eurorack pcb template</text>
+<text x="28" y="111" size="1.27" layer="51">PCB width: 
+59.62</text>
+<text x="28" y="108" size="1.27" layer="51">halve = 29,81</text>
+<wire x1="29.81" y1="107" x2="29.81" y2="-11" width="0.127" layer="51"/>
+</package>
 <package name="EURORACK6HPPCB">
 <wire x1="0.5" y1="105.5" x2="0.5" y2="1" width="0.127" layer="20"/>
 <wire x1="0.5" y1="1" x2="1.5" y2="0" width="0.127" layer="20" curve="90"/>
@@ -9922,10 +9929,10 @@ PCB width:
 <wire x1="29.64" y1="105.5" x2="28.64" y2="106.5" width="0.127" layer="20" curve="90"/>
 <wire x1="28.64" y1="106.5" x2="1.5" y2="106.5" width="0.127" layer="20"/>
 <wire x1="1.5" y1="106.5" x2="0.5" y2="105.5" width="0.127" layer="20" curve="90"/>
-<wire x1="0" y1="-11" x2="30.14" y2="-11" width="0" layer="51"/>
-<wire x1="30.14" y1="-11" x2="30.14" y2="117.5" width="0" layer="51"/>
-<wire x1="30.14" y1="117.5" x2="0" y2="117.5" width="0" layer="51"/>
-<wire x1="0" y1="117.5" x2="0" y2="-11" width="0" layer="51"/>
+<wire x1="0" y1="-11" x2="30.14" y2="-11" width="0" layer="255"/>
+<wire x1="30.14" y1="-11" x2="30.14" y2="117.5" width="0" layer="255"/>
+<wire x1="30.14" y1="117.5" x2="0" y2="117.5" width="0" layer="255"/>
+<wire x1="0" y1="117.5" x2="0" y2="-11" width="0" layer="255"/>
 <text x="0.5" y="115" size="1.27" layer="51">6HP front template</text>
 <wire x1="10.075" y1="130" x2="10.075" y2="-20" width="0" layer="51"/>
 <wire x1="20.15" y1="130" x2="20.15" y2="-20" width="0" layer="51"/>
@@ -10163,6 +10170,7 @@ We've spent an enormous amount of time creating and checking these footprints an
 <pad name="K" x="1.27" y="0" drill="0.8128" diameter="1.8796"/>
 <text x="1.905" y="0.381" size="1.27" layer="25" ratio="10">&gt;NAME</text>
 <text x="1.905" y="-1.651" size="1.27" layer="27" ratio="10">&gt;VALUE</text>
+<circle x="0" y="0" radius="1.5" width="0.0254" layer="255"/>
 </package>
 <package name="LED-1206">
 <wire x1="-1" y1="1" x2="-2.4" y2="1" width="0.2032" layer="21"/>
@@ -10512,13 +10520,13 @@ Standard schematic elements and footprints for 5mm, 3mm, 1206, and 0603 sized LE
 <part name="IC3" library="ld-components" deviceset="LD1117A?*" device="S" technology="33TR"/>
 <part name="GND20" library="SparkFun-Aesthetics" deviceset="GND" device=""/>
 <part name="C7" library="OPL" deviceset="C*" device="-0603" value="100nF"/>
-<part name="R90" library="EurorackModularParts" deviceset="POT" device="ZEPHPOT" value="10kB"/>
+<part name="R90" library="EurorackModularParts" deviceset="POT" device="ZEPHPOT" value="C"/>
 <part name="GND21" library="SparkFun" deviceset="GND" device=""/>
-<part name="R13" library="EurorackModularParts" deviceset="POT" device="ZEPHPOT" value="10kB"/>
+<part name="R13" library="EurorackModularParts" deviceset="POT" device="ZEPHPOT" value="A"/>
 <part name="GND22" library="SparkFun" deviceset="GND" device=""/>
-<part name="R14" library="EurorackModularParts" deviceset="POT" device="ZEPHPOT" value="10kB"/>
+<part name="R14" library="EurorackModularParts" deviceset="POT" device="ZEPHPOT" value="D"/>
 <part name="GND23" library="SparkFun" deviceset="GND" device=""/>
-<part name="R17" library="EurorackModularParts" deviceset="POT" device="ZEPHPOT" value="10kB"/>
+<part name="R17" library="EurorackModularParts" deviceset="POT" device="ZEPHPOT" value="B"/>
 <part name="GND24" library="SparkFun" deviceset="GND" device=""/>
 <part name="SUPPLY2" library="supply2" deviceset="VEE" device=""/>
 <part name="D2" library="diode" deviceset="DIODE-" device="SOD123" value="1N5819HW"/>
@@ -10541,11 +10549,11 @@ Standard schematic elements and footprints for 5mm, 3mm, 1206, and 0603 sized LE
 <part name="GND13" library="SparkFun-Aesthetics" deviceset="GND" device=""/>
 <part name="GND25" library="SparkFun-Aesthetics" deviceset="GND" device=""/>
 <part name="GND30" library="SparkFun-Aesthetics" deviceset="GND" device=""/>
-<part name="GATE" library="EurorackModularParts" deviceset="AUDIO-JACK" device="INPUT"/>
-<part name="IN1" library="EurorackModularParts" deviceset="AUDIO-JACK" device="INPUT"/>
-<part name="IN2" library="EurorackModularParts" deviceset="AUDIO-JACK" device="INPUT"/>
-<part name="U$7" library="EurorackModularParts" deviceset="AUDIO-JACK" device="OUTPUT"/>
-<part name="U$8" library="EurorackModularParts" deviceset="AUDIO-JACK" device="OUTPUT"/>
+<part name="GATE" library="EurorackModularParts" deviceset="AUDIO-JACK" device="INPUT" value="Gate"/>
+<part name="IN1" library="EurorackModularParts" deviceset="AUDIO-JACK" device="INPUT" value="In 2"/>
+<part name="IN2" library="EurorackModularParts" deviceset="AUDIO-JACK" device="INPUT" value="In 1"/>
+<part name="U$7" library="EurorackModularParts" deviceset="AUDIO-JACK" device="OUTPUT" value="Out 2"/>
+<part name="U$8" library="EurorackModularParts" deviceset="AUDIO-JACK" device="OUTPUT" value="Out 1"/>
 <part name="GND32" library="SparkFun" deviceset="GND" device=""/>
 <part name="GND34" library="SparkFun" deviceset="GND" device=""/>
 <part name="U$2" library="EurorackModularParts" deviceset="EURORACK_PCB" device="8HP"/>

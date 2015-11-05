@@ -649,7 +649,7 @@ Source: http://www.onsemi.co.jp .. LM137M-D.PDF</description>
 <smd name="SECOND@2" x="0" y="-3.3" dx="4.5" dy="2.5" layer="16" roundness="50"/>
 <smd name="RING@2" x="-4.2" y="0" dx="4.5" dy="2.5" layer="16" roundness="50" rot="R270"/>
 <circle x="0" y="0" radius="4" width="0.0254" layer="255"/>
-<text x="0" y="5.08" size="1.778" layer="255" align="bottom-center">&gt;VALUE</text>
+<text x="0" y="6.35" size="1.778" layer="255" align="bottom-center">&gt;VALUE</text>
 </package>
 <package name="EURORACK6HPPCB">
 <wire x1="0.5" y1="105.5" x2="0.5" y2="1" width="0.127" layer="20"/>
