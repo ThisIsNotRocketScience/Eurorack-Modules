@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="6.5.0">
+<eagle version="6.2">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
+<grid distance="0.05" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="no" active="no"/>
 <layer number="2" name="Route2" color="1" fill="3" visible="no" active="no"/>
@@ -142,7 +142,6 @@
 <layer number="250" name="Descript" color="3" fill="1" visible="no" active="no"/>
 <layer number="251" name="SMDround" color="12" fill="11" visible="no" active="no"/>
 <layer number="254" name="cooling" color="7" fill="1" visible="yes" active="yes"/>
-<layer number="255" name="Panel" color="14" fill="1" visible="yes" active="yes"/>
 </layers>
 <schematic xreflabel="%F%N/%S.%C%R" xrefpart="/%S.%C%R">
 <libraries>
@@ -183,8 +182,6 @@
 <smd name="SWITCH@2" x="4.2" y="0" dx="4.5" dy="2.5" layer="16" roundness="50" rot="R90"/>
 <smd name="SECOND@2" x="0" y="-3.3" dx="4.5" dy="2.5" layer="16" roundness="50"/>
 <smd name="RING@2" x="-4.2" y="0" dx="4.5" dy="2.5" layer="16" roundness="50" rot="R270"/>
-<circle x="0" y="0" radius="4" width="0.0254" layer="255"/>
-<text x="0" y="5.08" size="1.778" layer="255" align="bottom-center">&gt;VALUE</text>
 </package>
 <package name="3.5MM-JACK-SWITCH-13MM-INPUT">
 <smd name="TIP@1" x="0" y="4.9" dx="4.5" dy="2.5" layer="1" roundness="50"/>
@@ -220,8 +217,6 @@
 <smd name="SWITCH@2" x="4.2" y="0" dx="4.5" dy="2.5" layer="16" roundness="50" rot="R90"/>
 <smd name="SECOND@2" x="0" y="-3.3" dx="4.5" dy="2.5" layer="16" roundness="50"/>
 <smd name="RING@2" x="-4.2" y="0" dx="4.5" dy="2.5" layer="16" roundness="50" rot="R270"/>
-<circle x="0" y="0" radius="4" width="0.0254" layer="255"/>
-<text x="0" y="6.35" size="1.778" layer="255" align="bottom-center">&gt;VALUE</text>
 </package>
 <package name="ALPS_POT">
 <wire x1="6.73" y1="4.93" x2="6.73" y2="-4.93" width="0.2032" layer="51"/>
@@ -291,10 +286,9 @@
 <pad name="P$3" x="2.58" y="-6.7" drill="1" diameter="1.8796" rot="R90"/>
 <pad name="P$4" x="4.4" y="0" drill="2.2" diameter="3.175" rot="R90"/>
 <pad name="P$5" x="-4.4" y="0" drill="2.2" diameter="3.175" rot="R90"/>
+<text x="0" y="6.985" size="1.778" layer="25" align="bottom-center">&gt;NAME</text>
 <text x="0" y="-1.905" size="1.27" layer="27" align="top-center">&gt;VALUE</text>
 <circle x="0" y="0" radius="6" width="1" layer="21"/>
-<circle x="0" y="0" radius="4.5" width="0.002540625" layer="255"/>
-<text x="0" y="7.62" size="1.778" layer="255" align="bottom-center">&gt;VALUE</text>
 </package>
 <package name="EURORACK12HPPCB">
 <wire x1="0" y1="105.5" x2="0" y2="1" width="0.127" layer="20"/>
@@ -305,11 +299,11 @@
 <wire x1="59.62" y1="105.5" x2="58.62" y2="106.5" width="0.127" layer="20" curve="90"/>
 <wire x1="58.62" y1="106.5" x2="1" y2="106.5" width="0.127" layer="20"/>
 <wire x1="1" y1="106.5" x2="0" y2="105.5" width="0.127" layer="20" curve="90"/>
-<wire x1="-0.5" y1="-11" x2="29.81" y2="-11" width="0" layer="255"/>
-<wire x1="29.81" y1="-11" x2="60.12" y2="-11" width="0" layer="255"/>
-<wire x1="60.12" y1="-11" x2="60.12" y2="117.5" width="0" layer="255"/>
-<wire x1="60.12" y1="117.5" x2="-0.5" y2="117.5" width="0" layer="255"/>
-<wire x1="-0.5" y1="117.5" x2="-0.5" y2="-11" width="0" layer="255"/>
+<wire x1="-0.5" y1="-11" x2="29.81" y2="-11" width="0" layer="51"/>
+<wire x1="29.81" y1="-11" x2="60.12" y2="-11" width="0" layer="51"/>
+<wire x1="60.12" y1="-11" x2="60.12" y2="117.5" width="0" layer="51"/>
+<wire x1="60.12" y1="117.5" x2="-0.5" y2="117.5" width="0" layer="51"/>
+<wire x1="-0.5" y1="117.5" x2="-0.5" y2="-11" width="0" layer="51"/>
 <text x="1" y="113" size="1.27" layer="51">12HP eurorack pcb template</text>
 <text x="28" y="111" size="1.27" layer="51">PCB width: 
 59.62</text>
@@ -843,13 +837,10 @@ PCB width:
 <hole x="-2.54" y="0" drill="1"/>
 <circle x="0" y="0" radius="2.8" width="0.127" layer="21"/>
 <circle x="0" y="0" radius="2.1" width="0.127" layer="21"/>
-<wire x1="-3.1" y1="3.1" x2="3.1" y2="3.1" width="0.127" layer="51"/>
-<wire x1="3.1" y1="3.1" x2="3.1" y2="-3.1" width="0.127" layer="51"/>
-<wire x1="3.1" y1="-3.1" x2="-3.1" y2="-3.1" width="0.127" layer="51"/>
-<wire x1="-3.1" y1="-3.1" x2="-3.1" y2="3.1" width="0.127" layer="51"/>
-<circle x="0" y="0" radius="3.556" width="1" layer="21"/>
-<circle x="0" y="0" radius="4.3942" width="0.254" layer="21"/>
-<circle x="0" y="0" radius="3" width="0.0254" layer="255"/>
+<wire x1="-3.1" y1="3.1" x2="3.1" y2="3.1" width="0.127" layer="21"/>
+<wire x1="3.1" y1="3.1" x2="3.1" y2="-3.1" width="0.127" layer="21"/>
+<wire x1="3.1" y1="-3.1" x2="-3.1" y2="-3.1" width="0.127" layer="21"/>
+<wire x1="-3.1" y1="-3.1" x2="-3.1" y2="3.1" width="0.127" layer="21"/>
 </package>
 <package name="FISH">
 <polygon width="0.3" layer="1">
@@ -7607,16 +7598,16 @@ General-purpose diode for high-speed switching</description>
 </class>
 </classes>
 <parts>
-<part name="DRIVE" library="EurorackModularParts" deviceset="POT" device="ZEPHPOT" value="Drive"/>
-<part name="RESONANCE" library="EurorackModularParts" deviceset="POT" device="ZEPHPOT" value="Resonance"/>
-<part name="ENVDEC" library="EurorackModularParts" deviceset="POT" device="ZEPHPOT" value="Decay"/>
-<part name="TUNE" library="EurorackModularParts" deviceset="POT" device="ZEPHPOT" value="Tune"/>
+<part name="DRIVE" library="EurorackModularParts" deviceset="POT" device="ZEPHPOT"/>
+<part name="RESONANCE" library="EurorackModularParts" deviceset="POT" device="ZEPHPOT"/>
+<part name="ENVDEC" library="EurorackModularParts" deviceset="POT" device="ZEPHPOT"/>
+<part name="TUNE" library="EurorackModularParts" deviceset="POT" device="ZEPHPOT"/>
 <part name="U$17" library="zephod-components" deviceset="SWITCH_W_LED_PB6149L-X-102" device="WHITE"/>
-<part name="I-GATE" library="EurorackModularParts" deviceset="AUDIO-JACK" device="INPUT" value="Gate"/>
-<part name="I-ENVDEC" library="EurorackModularParts" deviceset="AUDIO-JACK" device="INPUT" value="Decay"/>
-<part name="I-CV" library="EurorackModularParts" deviceset="AUDIO-JACK" device="INPUT" value="CV"/>
-<part name="PULSE" library="EurorackModularParts" deviceset="AUDIO-JACK" device="OUTPUT" value="Pulse"/>
-<part name="SAW" library="EurorackModularParts" deviceset="AUDIO-JACK" device="OUTPUT" value="Saw"/>
+<part name="I-GATE" library="EurorackModularParts" deviceset="AUDIO-JACK" device="INPUT"/>
+<part name="I-ENVDEC" library="EurorackModularParts" deviceset="AUDIO-JACK" device="INPUT"/>
+<part name="I-CV" library="EurorackModularParts" deviceset="AUDIO-JACK" device="INPUT"/>
+<part name="O-PULSE" library="EurorackModularParts" deviceset="AUDIO-JACK" device="OUTPUT"/>
+<part name="O-SAW" library="EurorackModularParts" deviceset="AUDIO-JACK" device="OUTPUT"/>
 <part name="GND7" library="SparkFun-Aesthetics" deviceset="GND" device=""/>
 <part name="GND10" library="SparkFun-Aesthetics" deviceset="GND" device=""/>
 <part name="GND11" library="SparkFun-Aesthetics" deviceset="GND" device=""/>
@@ -7651,7 +7642,7 @@ General-purpose diode for high-speed switching</description>
 <part name="R3" library="OPL" deviceset="R*" device="-0603"/>
 <part name="R4" library="OPL" deviceset="R*" device="-0603"/>
 <part name="SUPPLY10" library="SparkFun-Aesthetics" deviceset="3.3V" device=""/>
-<part name="I-CV1" library="EurorackModularParts" deviceset="AUDIO-JACK" device="INPUT" value="External"/>
+<part name="I-CV1" library="EurorackModularParts" deviceset="AUDIO-JACK" device="INPUT"/>
 <part name="GND26" library="SparkFun-Aesthetics" deviceset="GND" device=""/>
 <part name="GND27" library="SparkFun-Aesthetics" deviceset="GND" device=""/>
 <part name="SUPPLY6" library="SparkFun-Aesthetics" deviceset="3.3V" device=""/>
@@ -7670,8 +7661,8 @@ General-purpose diode for high-speed switching</description>
 <part name="C3" library="OPL" deviceset="C*" device="-0603" value="3.3n"/>
 <part name="R20" library="OPL" deviceset="R*" device="-0603" value="100k"/>
 <part name="GND18" library="SparkFun" deviceset="GND" device=""/>
-<part name="CUTOFF" library="EurorackModularParts" deviceset="POT" device="ZEPHPOT" value="Cutoff"/>
-<part name="I-CUTOFF" library="EurorackModularParts" deviceset="AUDIO-JACK" device="INPUT" value="Cutoff"/>
+<part name="CUTOFF" library="EurorackModularParts" deviceset="POT" device="ZEPHPOT"/>
+<part name="I-CUTOFF" library="EurorackModularParts" deviceset="AUDIO-JACK" device="INPUT"/>
 <part name="GND1" library="SparkFun-Aesthetics" deviceset="GND" device=""/>
 <part name="GND4" library="SparkFun-Aesthetics" deviceset="GND" device=""/>
 <part name="R5" library="OPL" deviceset="R*" device="-0603" value="2k"/>
@@ -7684,8 +7675,8 @@ General-purpose diode for high-speed switching</description>
 <part name="C6" library="OPL" deviceset="C*" device="-0603" value="3.3n"/>
 <part name="R22" library="OPL" deviceset="R*" device="-0603" value="100k"/>
 <part name="GND8" library="SparkFun" deviceset="GND" device=""/>
-<part name="ENVAMT" library="EurorackModularParts" deviceset="POT" device="ZEPHPOT" value="Amount"/>
-<part name="I-ENVAMT" library="EurorackModularParts" deviceset="AUDIO-JACK" device="INPUT" value="Amount"/>
+<part name="ENVAMT" library="EurorackModularParts" deviceset="POT" device="ZEPHPOT"/>
+<part name="I-ENVAMT" library="EurorackModularParts" deviceset="AUDIO-JACK" device="INPUT"/>
 <part name="GND9" library="SparkFun-Aesthetics" deviceset="GND" device=""/>
 <part name="GND19" library="SparkFun-Aesthetics" deviceset="GND" device=""/>
 <part name="R23" library="OPL" deviceset="R*" device="-0603" value="2k"/>
@@ -7733,8 +7724,8 @@ General-purpose diode for high-speed switching</description>
 <instance part="I-GATE" gate="G$1" x="120.65" y="97.79"/>
 <instance part="I-ENVDEC" gate="G$1" x="-80.01" y="-58.42"/>
 <instance part="I-CV" gate="G$1" x="119.38" y="78.74"/>
-<instance part="PULSE" gate="G$1" x="200.66" y="-17.78" rot="R180"/>
-<instance part="SAW" gate="G$1" x="200.66" y="-39.37" rot="R180"/>
+<instance part="O-PULSE" gate="G$1" x="200.66" y="-17.78" rot="R180"/>
+<instance part="O-SAW" gate="G$1" x="200.66" y="-39.37" rot="R180"/>
 <instance part="GND7" gate="1" x="130.81" y="100.33" rot="R90"/>
 <instance part="GND10" gate="1" x="-69.85" y="-55.88" rot="R90"/>
 <instance part="GND11" gate="1" x="-64.77" y="-58.42" rot="R90"/>
@@ -7867,12 +7858,12 @@ General-purpose diode for high-speed switching</description>
 <pinref part="GND12" gate="1" pin="GND"/>
 </segment>
 <segment>
-<pinref part="SAW" gate="G$1" pin="RING"/>
+<pinref part="O-SAW" gate="G$1" pin="RING"/>
 <pinref part="GND13" gate="1" pin="GND"/>
 <wire x1="190.5" y1="-41.91" x2="193.04" y2="-41.91" width="0.1524" layer="91"/>
 </segment>
 <segment>
-<pinref part="PULSE" gate="G$1" pin="RING"/>
+<pinref part="O-PULSE" gate="G$1" pin="RING"/>
 <pinref part="GND14" gate="1" pin="GND"/>
 <wire x1="193.04" y1="-20.32" x2="190.5" y2="-20.32" width="0.1524" layer="91"/>
 </segment>
@@ -8021,7 +8012,7 @@ General-purpose diode for high-speed switching</description>
 </net>
 <net name="N$1" class="0">
 <segment>
-<pinref part="PULSE" gate="G$1" pin="TIP"/>
+<pinref part="O-PULSE" gate="G$1" pin="TIP"/>
 <wire x1="193.04" y1="-12.7" x2="170.18" y2="-12.7" width="0.1524" layer="91"/>
 <pinref part="U$1" gate="G$1" pin="OUT_L"/>
 </segment>
@@ -8030,7 +8021,7 @@ General-purpose diode for high-speed switching</description>
 <segment>
 <wire x1="170.18" y1="-15.24" x2="182.88" y2="-15.24" width="0.1524" layer="91"/>
 <wire x1="182.88" y1="-15.24" x2="182.88" y2="-34.29" width="0.1524" layer="91"/>
-<pinref part="SAW" gate="G$1" pin="TIP"/>
+<pinref part="O-SAW" gate="G$1" pin="TIP"/>
 <wire x1="182.88" y1="-34.29" x2="193.04" y2="-34.29" width="0.1524" layer="91"/>
 <pinref part="U$1" gate="G$1" pin="OUT_R"/>
 </segment>
@@ -8645,10 +8636,4 @@ General-purpose diode for high-speed switching</description>
 </sheets>
 </schematic>
 </drawing>
-<compatibility>
-<note version="6.3" minversion="6.2.2" severity="warning">
-Since Version 6.2.2 text objects can contain more than one line,
-which will not be processed correctly with this version.
-</note>
-</compatibility>
 </eagle>

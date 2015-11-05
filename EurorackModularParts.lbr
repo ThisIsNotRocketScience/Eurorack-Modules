@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.025" unitdist="inch" unit="inch" style="lines" multiple="1" display="yes" altdistance="0.025" altunitdist="inch" altunit="inch"/>
+<grid distance="0.05" unitdist="inch" unit="inch" style="lines" multiple="1" display="yes" altdistance="0.025" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="2" name="Route2" color="1" fill="3" visible="yes" active="yes"/>
@@ -142,6 +142,7 @@
 <layer number="250" name="Descript" color="3" fill="1" visible="no" active="no"/>
 <layer number="251" name="SMDround" color="12" fill="11" visible="no" active="no"/>
 <layer number="254" name="cooling" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="255" name="Panel" color="14" fill="1" visible="yes" active="yes"/>
 </layers>
 <library>
 <packages>
@@ -440,6 +441,8 @@ PCB width:
 <smd name="SWITCH@2" x="4.2" y="0" dx="4.5" dy="2.5" layer="16" roundness="50" rot="R90"/>
 <smd name="SECOND@2" x="0" y="-3.3" dx="4.5" dy="2.5" layer="16" roundness="50"/>
 <smd name="RING@2" x="-4.2" y="0" dx="4.5" dy="2.5" layer="16" roundness="50" rot="R270"/>
+<circle x="0" y="0" radius="4" width="0.0254" layer="255"/>
+<text x="0" y="5.08" size="1.778" layer="255" align="bottom-center">&gt;VALUE</text>
 </package>
 <package name="3.5MM-JACK-SWITCH-13MM-INPUT">
 <smd name="TIP@1" x="0" y="4.9" dx="4.5" dy="2.5" layer="1" roundness="50"/>
@@ -475,6 +478,8 @@ PCB width:
 <smd name="SWITCH@2" x="4.2" y="0" dx="4.5" dy="2.5" layer="16" roundness="50" rot="R90"/>
 <smd name="SECOND@2" x="0" y="-3.3" dx="4.5" dy="2.5" layer="16" roundness="50"/>
 <smd name="RING@2" x="-4.2" y="0" dx="4.5" dy="2.5" layer="16" roundness="50" rot="R270"/>
+<circle x="0" y="0" radius="4" width="0.0254" layer="255"/>
+<text x="0" y="6.35" size="1.778" layer="255" align="bottom-center">&gt;VALUE</text>
 </package>
 <package name="OG-POTS_ALPS_POT_VERTICAL">
 <circle x="0" y="0" radius="2.54" width="0.2032" layer="51"/>
@@ -489,9 +494,10 @@ PCB width:
 <pad name="P$3" x="2.58" y="-6.7" drill="1" diameter="1.8796" rot="R90"/>
 <pad name="P$4" x="4.4" y="0" drill="2.2" diameter="3.175" rot="R90"/>
 <pad name="P$5" x="-4.4" y="0" drill="2.2" diameter="3.175" rot="R90"/>
-<text x="0" y="6.985" size="1.778" layer="25" align="bottom-center">&gt;NAME</text>
 <text x="0" y="-1.905" size="1.27" layer="27" align="top-center">&gt;VALUE</text>
 <circle x="0" y="0" radius="6" width="1" layer="21"/>
+<circle x="0" y="0" radius="4.5" width="0.002540625" layer="255"/>
+<text x="0" y="7.62" size="1.778" layer="255" align="bottom-center">&gt;VALUE</text>
 </package>
 <package name="ALPS_POT">
 <wire x1="6.73" y1="4.93" x2="6.73" y2="-4.93" width="0.2032" layer="51"/>
@@ -557,11 +563,11 @@ PCB width:
 <wire x1="59.62" y1="105.5" x2="58.62" y2="106.5" width="0.127" layer="20" curve="90"/>
 <wire x1="58.62" y1="106.5" x2="1" y2="106.5" width="0.127" layer="20"/>
 <wire x1="1" y1="106.5" x2="0" y2="105.5" width="0.127" layer="20" curve="90"/>
-<wire x1="-0.5" y1="-11" x2="29.81" y2="-11" width="0" layer="51"/>
-<wire x1="29.81" y1="-11" x2="60.12" y2="-11" width="0" layer="51"/>
-<wire x1="60.12" y1="-11" x2="60.12" y2="117.5" width="0" layer="51"/>
-<wire x1="60.12" y1="117.5" x2="-0.5" y2="117.5" width="0" layer="51"/>
-<wire x1="-0.5" y1="117.5" x2="-0.5" y2="-11" width="0" layer="51"/>
+<wire x1="-0.5" y1="-11" x2="29.81" y2="-11" width="0" layer="255"/>
+<wire x1="29.81" y1="-11" x2="60.12" y2="-11" width="0" layer="255"/>
+<wire x1="60.12" y1="-11" x2="60.12" y2="117.5" width="0" layer="255"/>
+<wire x1="60.12" y1="117.5" x2="-0.5" y2="117.5" width="0" layer="255"/>
+<wire x1="-0.5" y1="117.5" x2="-0.5" y2="-11" width="0" layer="255"/>
 <text x="1" y="113" size="1.27" layer="51">12HP eurorack pcb template</text>
 <text x="28" y="111" size="1.27" layer="51">PCB width: 
 59.62</text>
@@ -780,10 +786,10 @@ NS Package M08A</description>
 <wire x1="29.64" y1="105.5" x2="28.64" y2="106.5" width="0.127" layer="20" curve="90"/>
 <wire x1="28.64" y1="106.5" x2="1.5" y2="106.5" width="0.127" layer="20"/>
 <wire x1="1.5" y1="106.5" x2="0.5" y2="105.5" width="0.127" layer="20" curve="90"/>
-<wire x1="0" y1="-11" x2="30.14" y2="-11" width="0" layer="51"/>
-<wire x1="30.14" y1="-11" x2="30.14" y2="117.5" width="0" layer="51"/>
-<wire x1="30.14" y1="117.5" x2="0" y2="117.5" width="0" layer="51"/>
-<wire x1="0" y1="117.5" x2="0" y2="-11" width="0" layer="51"/>
+<wire x1="0" y1="-11" x2="30.14" y2="-11" width="0" layer="255"/>
+<wire x1="30.14" y1="-11" x2="30.14" y2="117.5" width="0" layer="255"/>
+<wire x1="30.14" y1="117.5" x2="0" y2="117.5" width="0" layer="255"/>
+<wire x1="0" y1="117.5" x2="0" y2="-11" width="0" layer="255"/>
 <text x="0.5" y="115" size="1.27" layer="51">6HP front template</text>
 <wire x1="10.075" y1="130" x2="10.075" y2="-20" width="0" layer="51"/>
 <wire x1="20.15" y1="130" x2="20.15" y2="-20" width="0" layer="51"/>
