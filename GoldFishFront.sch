@@ -325,17 +325,17 @@
 <wire x1="33.65" y1="99" x2="32.65" y2="100" width="0" layer="51" curve="90"/>
 <wire x1="32.65" y1="100" x2="1" y2="100" width="0" layer="51"/>
 <wire x1="1" y1="100" x2="0" y2="99" width="0" layer="51" curve="90"/>
-<pad name="OUT_DAC" x="32.07" y="1.27" drill="0.8"/>
-<pad name="GND@5" x="29.53" y="1.27" drill="0.8"/>
-<pad name="OUT_R" x="26.99" y="1.27" drill="0.8"/>
-<pad name="GND@4" x="24.45" y="1.27" drill="0.8"/>
-<pad name="OUT_L" x="21.91" y="1.27" drill="0.8"/>
-<pad name="GND@9" x="19.37" y="1.27" drill="0.8"/>
-<pad name="-12V@1" x="16.83" y="1.27" drill="0.8"/>
-<pad name="+12V@1" x="14.29" y="1.27" drill="0.8"/>
-<pad name="GND@2" x="11.75" y="1.27" drill="0.8"/>
-<pad name="IN_R" x="9.21" y="1.27" drill="0.8"/>
-<pad name="IN_L" x="6.67" y="1.27" drill="0.8"/>
+<pad name="OUT_DAC" x="31.75" y="1.27" drill="0.8"/>
+<pad name="GND@5" x="29.21" y="1.27" drill="0.8"/>
+<pad name="OUT_R" x="26.67" y="1.27" drill="0.8"/>
+<pad name="GND@4" x="24.13" y="1.27" drill="0.8"/>
+<pad name="OUT_L" x="21.59" y="1.27" drill="0.8"/>
+<pad name="GND@9" x="19.05" y="1.27" drill="0.8"/>
+<pad name="-12V@1" x="16.51" y="1.27" drill="0.8"/>
+<pad name="+12V@1" x="13.97" y="1.27" drill="0.8"/>
+<pad name="GND@2" x="11.43" y="1.27" drill="0.8"/>
+<pad name="IN_R" x="8.89" y="1.27" drill="0.8"/>
+<pad name="IN_L" x="6.35" y="1.27" drill="0.8"/>
 <pad name="GND@1" x="3.81" y="1.27" drill="0.8" shape="square"/>
 <pad name="GND@8" x="1.27" y="21.59" drill="0.8"/>
 <pad name="ADC4" x="1.27" y="24.13" drill="0.8"/>
