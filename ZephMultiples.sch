@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.05" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
+<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="no" active="no"/>
 <layer number="2" name="Route2" color="1" fill="3" visible="no" active="no"/>
@@ -414,6 +414,30 @@
 <rectangle x1="3.565" y1="2" x2="4.055" y2="3.1" layer="51"/>
 <rectangle x1="2.295" y1="2" x2="2.785" y2="3.1" layer="51"/>
 <rectangle x1="1.025" y1="2" x2="1.515" y2="3.1" layer="51"/>
+<wire x1="-4.445" y1="4.445" x2="-4.445" y2="1.905" width="0.127" layer="21"/>
+<wire x1="-4.445" y1="1.905" x2="-4.445" y2="0" width="0.127" layer="21"/>
+<wire x1="-4.445" y1="0" x2="-4.445" y2="-1.27" width="0.127" layer="21"/>
+<wire x1="-4.445" y1="-1.905" x2="-4.445" y2="-4.445" width="0.127" layer="21"/>
+<wire x1="-4.445" y1="-4.445" x2="4.445" y2="-4.445" width="0.127" layer="21"/>
+<wire x1="4.445" y1="-4.445" x2="4.445" y2="-1.905" width="0.127" layer="21"/>
+<wire x1="4.445" y1="-1.905" x2="4.445" y2="-1.27" width="0.127" layer="21"/>
+<wire x1="4.445" y1="-1.27" x2="4.445" y2="1.905" width="0.127" layer="21"/>
+<wire x1="4.445" y1="1.905" x2="4.445" y2="4.445" width="0.127" layer="21"/>
+<wire x1="4.445" y1="4.445" x2="-4.445" y2="4.445" width="0.127" layer="21"/>
+<wire x1="-4.445" y1="0" x2="-3.175" y2="0" width="0.127" layer="21"/>
+<wire x1="-3.175" y1="0" x2="-3.175" y2="-5.715" width="0.127" layer="21"/>
+<wire x1="-3.175" y1="-5.715" x2="-4.445" y2="-5.715" width="0.127" layer="21"/>
+<wire x1="-4.445" y1="-5.715" x2="-4.445" y2="-4.445" width="0.127" layer="21"/>
+<polygon width="0.127" layer="21">
+<vertex x="-4.445" y="0"/>
+<vertex x="-3.175" y="0"/>
+<vertex x="-3.175" y="-5.715"/>
+<vertex x="-4.445" y="-5.715"/>
+</polygon>
+<wire x1="-4.445" y1="1.905" x2="4.445" y2="1.905" width="0.127" layer="21"/>
+<wire x1="4.445" y1="-1.905" x2="-4.445" y2="-1.905" width="0.127" layer="21"/>
+<wire x1="-4.445" y1="-1.905" x2="-4.445" y2="-1.27" width="0.127" layer="21"/>
+<wire x1="-4.445" y1="-1.27" x2="4.445" y2="-1.27" width="0.127" layer="21"/>
 </package>
 <package name="SO08">
 <description>&lt;b&gt;Small Outline Package 8&lt;/b&gt;&lt;br&gt;
@@ -522,30 +546,6 @@ PCB width:
 <circle x="7.5" y="114.5" radius="1.5" width="0.0254" layer="255"/>
 <wire x1="0" y1="0" x2="4" y2="4" width="0.127" layer="51"/>
 </package>
-<package name="EURORACK12HPPCB">
-<wire x1="0.5" y1="105.5" x2="0.5" y2="1" width="0.127" layer="20"/>
-<wire x1="0.5" y1="1" x2="1.5" y2="0" width="0.127" layer="20" curve="90"/>
-<wire x1="1.5" y1="0" x2="59.12" y2="0" width="0.127" layer="20"/>
-<wire x1="59.12" y1="0" x2="60.12" y2="1" width="0.127" layer="20" curve="90"/>
-<wire x1="60.12" y1="1" x2="60.12" y2="105.5" width="0.127" layer="20"/>
-<wire x1="60.12" y1="105.5" x2="59.12" y2="106.5" width="0.127" layer="20" curve="90"/>
-<wire x1="59.12" y1="106.5" x2="1.5" y2="106.5" width="0.127" layer="20"/>
-<wire x1="1.5" y1="106.5" x2="0.5" y2="105.5" width="0.127" layer="20" curve="90"/>
-<wire x1="0" y1="-11" x2="60.62" y2="-11" width="0" layer="255"/>
-<wire x1="60.62" y1="-11" x2="60.62" y2="117.5" width="0" layer="255"/>
-<wire x1="60.62" y1="117.5" x2="0" y2="117.5" width="0" layer="255"/>
-<wire x1="0" y1="117.5" x2="0" y2="-11" width="0" layer="255"/>
-<text x="1.5" y="113" size="1.27" layer="51">12HP eurorack pcb template</text>
-<text x="28.5" y="111" size="1.27" layer="51">PCB width: 
-59.62</text>
-<text x="28.5" y="108" size="1.27" layer="51">halve = 29,81</text>
-<wire x1="30.31" y1="107" x2="30.31" y2="-11" width="0.127" layer="51"/>
-<circle x="7.5" y="-8" radius="1.5" width="0.0254" layer="255"/>
-<circle x="7.5" y="114.5" radius="1.5" width="0.0254" layer="255"/>
-<wire x1="0" y1="0" x2="4" y2="4" width="0.127" layer="51"/>
-<circle x="48.14" y="-8" radius="1.5" width="0.0254" layer="255"/>
-<circle x="48.14" y="114.5" radius="1.5" width="0.0254" layer="255"/>
-</package>
 <package name="EURORACK6HPPCB">
 <wire x1="0.5" y1="105.5" x2="0.5" y2="1" width="0.127" layer="20"/>
 <wire x1="0.5" y1="1" x2="1.5" y2="0" width="0.127" layer="20" curve="90"/>
@@ -583,6 +583,30 @@ PCB width:
 <circle x="7.5" y="-8" radius="1.5" width="0.0254" layer="255"/>
 <circle x="7.5" y="114.5" radius="1.5" width="0.0254" layer="255"/>
 <wire x1="0" y1="0" x2="4" y2="4" width="0.127" layer="51"/>
+</package>
+<package name="EURORACK12HPPCB">
+<wire x1="0.5" y1="105.5" x2="0.5" y2="1" width="0.127" layer="20"/>
+<wire x1="0.5" y1="1" x2="1.5" y2="0" width="0.127" layer="20" curve="90"/>
+<wire x1="1.5" y1="0" x2="59.12" y2="0" width="0.127" layer="20"/>
+<wire x1="59.12" y1="0" x2="60.12" y2="1" width="0.127" layer="20" curve="90"/>
+<wire x1="60.12" y1="1" x2="60.12" y2="105.5" width="0.127" layer="20"/>
+<wire x1="60.12" y1="105.5" x2="59.12" y2="106.5" width="0.127" layer="20" curve="90"/>
+<wire x1="59.12" y1="106.5" x2="1.5" y2="106.5" width="0.127" layer="20"/>
+<wire x1="1.5" y1="106.5" x2="0.5" y2="105.5" width="0.127" layer="20" curve="90"/>
+<wire x1="0" y1="-11" x2="60.62" y2="-11" width="0" layer="255"/>
+<wire x1="60.62" y1="-11" x2="60.62" y2="117.5" width="0" layer="255"/>
+<wire x1="60.62" y1="117.5" x2="0" y2="117.5" width="0" layer="255"/>
+<wire x1="0" y1="117.5" x2="0" y2="-11" width="0" layer="255"/>
+<text x="1.5" y="113" size="1.27" layer="51">12HP eurorack pcb template</text>
+<text x="28.5" y="111" size="1.27" layer="51">PCB width: 
+59.62</text>
+<text x="28.5" y="108" size="1.27" layer="51">halve = 29,81</text>
+<wire x1="30.31" y1="107" x2="30.31" y2="-11" width="0.127" layer="51"/>
+<circle x="7.5" y="-8" radius="1.5" width="0.0254" layer="255"/>
+<circle x="7.5" y="114.5" radius="1.5" width="0.0254" layer="255"/>
+<wire x1="0" y1="0" x2="4" y2="4" width="0.127" layer="51"/>
+<circle x="53.22" y="-8" radius="1.5" width="0.0254" layer="255"/>
+<circle x="53.22" y="114.5" radius="1.5" width="0.0254" layer="255"/>
 </package>
 </packages>
 <symbols>
