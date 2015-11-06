@@ -2373,13 +2373,6 @@ design rules under a new name.</description>
 <via x="-0.5" y="84.5" extent="1-16" drill="0.3048"/>
 <via x="4.75" y="89.75" extent="1-16" drill="0.3048"/>
 </signal>
-<signal name="RACK_CV">
-<contactref element="U$1" pad="14"/>
-<contactref element="U$1" pad="13"/>
-<wire x1="-14.5" y1="87.125" x2="-16.875" y2="87.125" width="0.1524" layer="1"/>
-<wire x1="-16.875" y1="87.125" x2="-16.92" y2="87.11" width="0.1524" layer="1"/>
-<wire x1="-14.5" y1="87.125" x2="-14.38" y2="87.11" width="0.1524" layer="1"/>
-</signal>
 <signal name="RACK_GATE">
 <contactref element="U$1" pad="16"/>
 <contactref element="U$1" pad="15"/>

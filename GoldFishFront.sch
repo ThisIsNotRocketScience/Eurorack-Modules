@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
+<grid distance="0.05" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="no" active="no"/>
 <layer number="2" name="Route2" color="1" fill="3" visible="no" active="no"/>
@@ -7631,8 +7631,8 @@ General-purpose diode for high-speed switching</description>
 <part name="SUPPLY2" library="SparkFun-Aesthetics" deviceset="3.3V" device=""/>
 <part name="GND2" library="SparkFun-Aesthetics" deviceset="GND" device=""/>
 <part name="GND3" library="SparkFun-Aesthetics" deviceset="GND" device=""/>
-<part name="R1" library="OPL" deviceset="R*" device="-0603"/>
-<part name="R2" library="OPL" deviceset="R*" device="-0603"/>
+<part name="R1" library="OPL" deviceset="R*" device="-0603" value="220"/>
+<part name="R2" library="OPL" deviceset="R*" device="-0603" value="10k"/>
 <part name="SUPPLY3" library="SparkFun-Aesthetics" deviceset="3.3V" device=""/>
 <part name="IC5" library="texas" deviceset="LM4041" device="DBZ" technology="B12" value="LM4040B10"/>
 <part name="R10" library="OPL" deviceset="R*" device="-0603" value="1.0k"/>
@@ -7648,8 +7648,8 @@ General-purpose diode for high-speed switching</description>
 <part name="GND20" library="SparkFun-Aesthetics" deviceset="GND" device=""/>
 <part name="GND24" library="SparkFun-Aesthetics" deviceset="GND" device=""/>
 <part name="GND25" library="SparkFun-Aesthetics" deviceset="GND" device=""/>
-<part name="R3" library="OPL" deviceset="R*" device="-0603"/>
-<part name="R4" library="OPL" deviceset="R*" device="-0603"/>
+<part name="R3" library="OPL" deviceset="R*" device="-0603" value="220"/>
+<part name="R4" library="OPL" deviceset="R*" device="-0603" value="10k"/>
 <part name="SUPPLY10" library="SparkFun-Aesthetics" deviceset="3.3V" device=""/>
 <part name="I-CV1" library="EurorackModularParts" deviceset="AUDIO-JACK" device="INPUT" value="External"/>
 <part name="GND26" library="SparkFun-Aesthetics" deviceset="GND" device=""/>
@@ -8322,7 +8322,7 @@ General-purpose diode for high-speed switching</description>
 <segment>
 <pinref part="R3" gate="R" pin="1"/>
 <wire x1="58.42" y1="-30.48" x2="58.42" y2="-38.1" width="0.1524" layer="91"/>
-<label x="59.69" y="-38.1" size="1.778" layer="95"/>
+<label x="55.88" y="-33.02" size="1.778" layer="95" rot="R270"/>
 </segment>
 <segment>
 <pinref part="U$1" gate="G$1" pin="ADC4/C2"/>
@@ -8340,7 +8340,7 @@ General-purpose diode for high-speed switching</description>
 <pinref part="U$6" gate="G$1" pin="1"/>
 <wire x1="58.42" y1="-25.4" x2="58.42" y2="-24.13" width="0.1524" layer="91"/>
 <junction x="58.42" y="-25.4"/>
-<label x="59.69" y="-40.64" size="1.778" layer="95"/>
+<label x="52.07" y="-33.02" size="1.778" layer="95" rot="R270"/>
 </segment>
 <segment>
 <pinref part="U$1" gate="G$1" pin="ADC7/RX/D6"/>
@@ -8526,6 +8526,7 @@ General-purpose diode for high-speed switching</description>
 <wire x1="-5.08" y1="-20.32" x2="-5.08" y2="-17.78" width="0.1524" layer="91"/>
 <junction x="-5.08" y="-20.32"/>
 <pinref part="OP3.3" gate="B" pin="-IN"/>
+<junction x="-10.16" y="-26.67"/>
 </segment>
 </net>
 <net name="N$22" class="0">
@@ -8587,6 +8588,7 @@ General-purpose diode for high-speed switching</description>
 <wire x1="-7.62" y1="41.91" x2="-7.62" y2="44.45" width="0.1524" layer="91"/>
 <junction x="-7.62" y="41.91"/>
 <pinref part="OP3.3" gate="C" pin="-IN"/>
+<junction x="-12.7" y="35.56"/>
 </segment>
 </net>
 <net name="IN_ENVAMT_PRE" class="0">
@@ -8603,12 +8605,6 @@ General-purpose diode for high-speed switching</description>
 <wire x1="-77.47" y1="-6.35" x2="-49.53" y2="-6.35" width="0.1524" layer="91"/>
 <label x="-71.12" y="-6.35" size="1.778" layer="95"/>
 <pinref part="R12" gate="R" pin="2"/>
-</segment>
-</net>
-<net name="N$11" class="0">
-<segment>
-<pinref part="U$1" gate="G$1" pin="TX/D7"/>
-<wire x1="124.46" y1="-7.62" x2="111.76" y2="-7.62" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$6" class="0">
@@ -8643,6 +8639,12 @@ General-purpose diode for high-speed switching</description>
 </nets>
 </sheet>
 </sheets>
+<errors>
+<approved hash="104,1,-36.83,-123.19,OP12P,V+,12V,,,"/>
+<approved hash="104,1,-36.83,-138.43,OP12P,V-,-12V,,,"/>
+<approved hash="104,1,22.86,-125.73,OP3.3P,V+,3.3V,,,"/>
+<approved hash="104,1,22.86,-140.97,OP3.3P,V-,GND,,,"/>
+</errors>
 </schematic>
 </drawing>
 <compatibility>

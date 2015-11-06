@@ -11529,13 +11529,7 @@ Standard schematic elements and footprints for 5mm, 3mm, 1206, and 0603 sized LE
 <segment>
 <pinref part="R22" gate="G$1" pin="2"/>
 <wire x1="332.74" y1="52.07" x2="332.74" y2="45.72" width="0.1524" layer="91"/>
-</segment>
-</net>
-<net name="RACK_CV" class="0">
-<segment>
-<pinref part="U$1" gate="G$1" pin="CV"/>
-<wire x1="154.94" y1="-10.16" x2="175.26" y2="-10.16" width="0.1524" layer="91"/>
-<label x="162.56" y="-10.16" size="1.778" layer="95"/>
+<label x="332.74" y="45.72" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="RACK_GATE" class="0">
@@ -11562,6 +11556,16 @@ Standard schematic elements and footprints for 5mm, 3mm, 1206, and 0603 sized LE
 </nets>
 </sheet>
 </sheets>
+<errors>
+<approved hash="104,1,157.48,93.98,U1,VDD_VREFH,3.3V,,,"/>
+<approved hash="104,1,246.38,-30.48,IC2P,V+,3.3V_A,,,"/>
+<approved hash="104,1,246.38,-45.72,IC2P,V-,GND,,,"/>
+<approved hash="104,1,162.56,-165.1,U$10,VDD,3.3V_A,,,"/>
+<approved hash="104,1,162.56,-190.5,U$10,VSS,GND,,,"/>
+<approved hash="113,1,246.702,25.4,LED1,,,,,"/>
+<approved hash="113,1,258.132,25.4,LED2,,,,,"/>
+<approved hash="113,1,272.102,25.4,LED3,,,,,"/>
+</errors>
 </schematic>
 </drawing>
 <compatibility>

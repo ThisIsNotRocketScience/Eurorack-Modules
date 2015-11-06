@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
+<grid distance="0.05" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="no" active="no"/>
 <layer number="2" name="Route2" color="1" fill="3" visible="no" active="no"/>
@@ -9343,13 +9343,6 @@ Based on the following sources:
 <pinref part="CLOCK" gate="G$1" pin="TIP"/>
 </segment>
 </net>
-<net name="KNOB_D" class="0">
-<segment>
-<pinref part="U1" gate="A" pin="PTB13"/>
-<wire x1="269.24" y1="68.58" x2="281.94" y2="68.58" width="0.1524" layer="91"/>
-<label x="270.51" y="68.58" size="1.778" layer="95"/>
-</segment>
-</net>
 <net name="BUTTONCLOCK" class="0">
 <segment>
 <pinref part="U1" gate="A" pin="PTB5/IRQ_12/NMI_B"/>
@@ -9369,11 +9362,6 @@ Based on the following sources:
 <wire x1="154.94" y1="0" x2="175.26" y2="0" width="0.1524" layer="91"/>
 </segment>
 </net>
-<net name="SW1" class="0">
-<segment>
-<label x="396.24" y="22.86" size="1.778" layer="95"/>
-</segment>
-</net>
 <net name="LEDCLOCK" class="0">
 <segment>
 <pinref part="U1" gate="A" pin="PTB0/IRQ_5/SPI0_SCK"/>
@@ -9383,6 +9371,7 @@ Based on the following sources:
 <segment>
 <pinref part="IC2" gate="IC" pin="SCLK"/>
 <wire x1="106.68" y1="-46.99" x2="96.52" y2="-46.99" width="0.1524" layer="91"/>
+<label x="91.44" y="-46.99" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="MODELED3" class="0">
@@ -9440,20 +9429,6 @@ Based on the following sources:
 <wire x1="306.07" y1="83.82" x2="299.72" y2="83.82" width="0.1524" layer="91"/>
 <junction x="306.07" y="83.82"/>
 <label x="299.72" y="83.82" size="1.778" layer="95"/>
-</segment>
-</net>
-<net name="RACK_CV" class="0">
-<segment>
-<pinref part="U$1" gate="G$1" pin="CV"/>
-<wire x1="154.94" y1="-10.16" x2="175.26" y2="-10.16" width="0.1524" layer="91"/>
-<label x="162.56" y="-10.16" size="1.778" layer="95"/>
-</segment>
-</net>
-<net name="RACK_GATE" class="0">
-<segment>
-<pinref part="U$1" gate="G$1" pin="GATE"/>
-<wire x1="154.94" y1="-12.7" x2="175.26" y2="-12.7" width="0.1524" layer="91"/>
-<label x="162.56" y="-12.7" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="N$3" class="0">
@@ -9686,7 +9661,8 @@ Based on the following sources:
 </segment>
 <segment>
 <pinref part="IC2" gate="IC" pin="LATCH"/>
-<wire x1="106.68" y1="-49.53" x2="99.06" y2="-49.53" width="0.1524" layer="91"/>
+<wire x1="106.68" y1="-49.53" x2="96.52" y2="-49.53" width="0.1524" layer="91"/>
+<label x="91.44" y="-49.53" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="LEDDAT" class="0">
@@ -9694,6 +9670,11 @@ Based on the following sources:
 <pinref part="U1" gate="A" pin="PTB2/IRQ_7/UART0_TX/UART0_RX"/>
 <wire x1="281.94" y1="88.9" x2="269.24" y2="88.9" width="0.1524" layer="91"/>
 <label x="270.51" y="88.9" size="1.778" layer="95"/>
+</segment>
+<segment>
+<pinref part="IC2" gate="IC" pin="SDA"/>
+<wire x1="106.68" y1="-54.61" x2="96.52" y2="-54.61" width="0.1524" layer="91"/>
+<label x="91.44" y="-54.61" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="BUTTONLATCH" class="0">
@@ -9930,6 +9911,16 @@ Based on the following sources:
 </nets>
 </sheet>
 </sheets>
+<errors>
+<approved hash="102,1,177.8,-93.98,V+,3.3V,,,,"/>
+<approved hash="104,1,157.48,93.98,U1,VDD_VREFH,3.3V,,,"/>
+<approved hash="104,1,167.64,-99.06,IC3P,VCC,3.3V,,,"/>
+<approved hash="113,1,246.702,27.2961,MODELED1,,,,,"/>
+<approved hash="113,1,258.132,27.2961,MODELED3,,,,,"/>
+<approved hash="113,1,272.102,27.2961,MODELED2,,,,,"/>
+<approved hash="113,1,309.287,82.3553,SERIAL,,,,,"/>
+<approved hash="113,1,284.802,26.1402,GATELED,,,,,"/>
+</errors>
 </schematic>
 </drawing>
 <compatibility>
