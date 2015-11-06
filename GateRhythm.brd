@@ -667,6 +667,9 @@ Source: http://www.onsemi.co.jp .. LM137M-D.PDF</description>
 <text x="0.5" y="115" size="1.27" layer="51">6HP front template</text>
 <wire x1="10.075" y1="130" x2="10.075" y2="-20" width="0" layer="51"/>
 <wire x1="20.15" y1="130" x2="20.15" y2="-20" width="0" layer="51"/>
+<circle x="7.5" y="-8" radius="1.5" width="0.0254" layer="255"/>
+<circle x="7.5" y="114.5" radius="1.5" width="0.0254" layer="255"/>
+<wire x1="0" y1="0" x2="4" y2="4" width="0.127" layer="51"/>
 </package>
 </packages>
 </library>

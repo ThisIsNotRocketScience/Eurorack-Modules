@@ -331,91 +331,6 @@
 <circle x="0" y="0" radius="4" width="0.0254" layer="255"/>
 <text x="0" y="6.35" size="1.778" layer="255" align="bottom-center">&gt;VALUE</text>
 </package>
-<package name="EURORACK8HPPCB">
-<wire x1="0.5" y1="105.5" x2="0.5" y2="1" width="0.127" layer="20"/>
-<wire x1="0.5" y1="1" x2="1.5" y2="0" width="0.127" layer="20" curve="90"/>
-<wire x1="1.5" y1="0" x2="38.8" y2="0" width="0.127" layer="20"/>
-<wire x1="38.8" y1="0" x2="39.8" y2="1" width="0.127" layer="20" curve="90"/>
-<wire x1="39.8" y1="1" x2="39.8" y2="105.5" width="0.127" layer="20"/>
-<wire x1="39.8" y1="105.5" x2="38.8" y2="106.5" width="0.127" layer="20" curve="90"/>
-<wire x1="38.8" y1="106.5" x2="1.5" y2="106.5" width="0.127" layer="20"/>
-<wire x1="1.5" y1="106.5" x2="0.5" y2="105.5" width="0.127" layer="20" curve="90"/>
-<wire x1="0" y1="-11" x2="40.3" y2="-11" width="0" layer="255"/>
-<wire x1="40.3" y1="-11" x2="40.3" y2="117.5" width="0" layer="255"/>
-<wire x1="40.3" y1="117.5" x2="0" y2="117.5" width="0" layer="255"/>
-<wire x1="0" y1="117.5" x2="0" y2="-11" width="0" layer="255"/>
-<text x="0.5" y="115" size="1.27" layer="51">8HP front template</text>
-<wire x1="10.075" y1="130" x2="10.075" y2="-20" width="0" layer="51"/>
-<wire x1="30.225" y1="130" x2="30.225" y2="-20" width="0" layer="51"/>
-<wire x1="13.433" y1="130" x2="13.433" y2="-20" width="0" layer="51"/>
-<wire x1="20.15" y1="130" x2="20.15" y2="-20" width="0" layer="51"/>
-<wire x1="26.87" y1="130" x2="26.87" y2="-20" width="0" layer="51"/>
-<text x="41.5" y="85" size="1.27" layer="51">2 columns:
-12,933
-26,37
-
-3 columns:
-9,575  
-19,65
-29,725
-
-PCB width: 
-39,3</text>
-<text x="48" y="101" size="1.27" layer="51">+0.5</text>
-<text x="50" y="92" size="1.27" layer="51">+0.5</text>
-</package>
-<package name="EURORACK12HPPCB">
-<wire x1="0" y1="105.5" x2="0" y2="1" width="0.127" layer="20"/>
-<wire x1="0" y1="1" x2="1" y2="0" width="0.127" layer="20" curve="90"/>
-<wire x1="1" y1="0" x2="58.62" y2="0" width="0.127" layer="20"/>
-<wire x1="58.62" y1="0" x2="59.62" y2="1" width="0.127" layer="20" curve="90"/>
-<wire x1="59.62" y1="1" x2="59.62" y2="105.5" width="0.127" layer="20"/>
-<wire x1="59.62" y1="105.5" x2="58.62" y2="106.5" width="0.127" layer="20" curve="90"/>
-<wire x1="58.62" y1="106.5" x2="1" y2="106.5" width="0.127" layer="20"/>
-<wire x1="1" y1="106.5" x2="0" y2="105.5" width="0.127" layer="20" curve="90"/>
-<wire x1="-0.5" y1="-11" x2="29.81" y2="-11" width="0" layer="255"/>
-<wire x1="29.81" y1="-11" x2="60.12" y2="-11" width="0" layer="255"/>
-<wire x1="60.12" y1="-11" x2="60.12" y2="117.5" width="0" layer="255"/>
-<wire x1="60.12" y1="117.5" x2="-0.5" y2="117.5" width="0" layer="255"/>
-<wire x1="-0.5" y1="117.5" x2="-0.5" y2="-11" width="0" layer="255"/>
-<text x="1" y="113" size="1.27" layer="51">12HP eurorack pcb template</text>
-<text x="28" y="111" size="1.27" layer="51">PCB width: 
-59.62</text>
-<text x="28" y="108" size="1.27" layer="51">halve = 29,81</text>
-<wire x1="29.81" y1="107" x2="29.81" y2="-11" width="0.127" layer="51"/>
-</package>
-<package name="EURORACK6HPPCB">
-<wire x1="0.5" y1="105.5" x2="0.5" y2="1" width="0.127" layer="20"/>
-<wire x1="0.5" y1="1" x2="1.5" y2="0" width="0.127" layer="20" curve="90"/>
-<wire x1="1.5" y1="0" x2="28.64" y2="0" width="0.127" layer="20"/>
-<wire x1="28.64" y1="0" x2="29.64" y2="1" width="0.127" layer="20" curve="90"/>
-<wire x1="29.64" y1="1" x2="29.64" y2="105.5" width="0.127" layer="20"/>
-<wire x1="29.64" y1="105.5" x2="28.64" y2="106.5" width="0.127" layer="20" curve="90"/>
-<wire x1="28.64" y1="106.5" x2="1.5" y2="106.5" width="0.127" layer="20"/>
-<wire x1="1.5" y1="106.5" x2="0.5" y2="105.5" width="0.127" layer="20" curve="90"/>
-<wire x1="0" y1="-11" x2="30.14" y2="-11" width="0" layer="255"/>
-<wire x1="30.14" y1="-11" x2="30.14" y2="117.5" width="0" layer="255"/>
-<wire x1="30.14" y1="117.5" x2="0" y2="117.5" width="0" layer="255"/>
-<wire x1="0" y1="117.5" x2="0" y2="-11" width="0" layer="255"/>
-<text x="0.5" y="115" size="1.27" layer="51">6HP front template</text>
-<wire x1="10.075" y1="130" x2="10.075" y2="-20" width="0" layer="51"/>
-<wire x1="20.15" y1="130" x2="20.15" y2="-20" width="0" layer="51"/>
-</package>
-<package name="EURORACK2HPPCB">
-<wire x1="0.5" y1="105.5" x2="0.5" y2="1" width="0.127" layer="20"/>
-<wire x1="0.5" y1="1" x2="1.5" y2="0" width="0.127" layer="20" curve="90"/>
-<wire x1="1.5" y1="0" x2="8.32" y2="0" width="0.127" layer="20"/>
-<wire x1="8.32" y1="0" x2="9.32" y2="1" width="0.127" layer="20" curve="90"/>
-<wire x1="9.32" y1="1" x2="9.32" y2="105.5" width="0.127" layer="20"/>
-<wire x1="9.32" y1="105.5" x2="8.32" y2="106.5" width="0.127" layer="20" curve="90"/>
-<wire x1="8.32" y1="106.5" x2="1.5" y2="106.5" width="0.127" layer="20"/>
-<wire x1="1.5" y1="106.5" x2="0.5" y2="105.5" width="0.127" layer="20" curve="90"/>
-<wire x1="0" y1="-11" x2="9.82" y2="-11" width="0" layer="255"/>
-<wire x1="9.82" y1="-11" x2="9.82" y2="117.5" width="0" layer="255"/>
-<wire x1="9.82" y1="117.5" x2="0" y2="117.5" width="0" layer="255"/>
-<wire x1="0" y1="117.5" x2="0" y2="-11" width="0" layer="255"/>
-<text x="0.5" y="115" size="1.27" layer="51">2HP front template</text>
-</package>
 <package name="EURORACK4HPPCB">
 <wire x1="0.5" y1="105.5" x2="0.5" y2="1" width="0.127" layer="20"/>
 <wire x1="0.5" y1="1" x2="1.5" y2="0" width="0.127" layer="20" curve="90"/>
@@ -431,6 +346,9 @@ PCB width:
 <wire x1="0" y1="117.5" x2="0" y2="-11" width="0" layer="255"/>
 <text x="0.5" y="115" size="1.27" layer="51">4HP front template</text>
 <wire x1="10.075" y1="130" x2="10.075" y2="-20" width="0" layer="51"/>
+<circle x="7.5" y="-8" radius="1.5" width="0.0254" layer="255"/>
+<circle x="7.5" y="114.5" radius="1.5" width="0.0254" layer="255"/>
+<wire x1="0" y1="0" x2="4" y2="4" width="0.127" layer="51"/>
 </package>
 <package name="DIL14">
 <description>&lt;b&gt;Dual In Line Package&lt;/b&gt;</description>
@@ -567,6 +485,104 @@ NS Package M08A</description>
 <wire x1="3.81" y1="-2.54" x2="3.81" y2="6.985" width="0.127" layer="21"/>
 <wire x1="-6.35" y1="6.985" x2="5.35" y2="6.985" width="0.127" layer="21"/>
 <wire x1="5.35" y1="6.985" x2="6.35" y2="5.985" width="0.127" layer="21" curve="-90"/>
+</package>
+<package name="EURORACK8HPPCB">
+<wire x1="0.5" y1="105.5" x2="0.5" y2="1" width="0.127" layer="20"/>
+<wire x1="0.5" y1="1" x2="1.5" y2="0" width="0.127" layer="20" curve="90"/>
+<wire x1="1.5" y1="0" x2="38.8" y2="0" width="0.127" layer="20"/>
+<wire x1="38.8" y1="0" x2="39.8" y2="1" width="0.127" layer="20" curve="90"/>
+<wire x1="39.8" y1="1" x2="39.8" y2="105.5" width="0.127" layer="20"/>
+<wire x1="39.8" y1="105.5" x2="38.8" y2="106.5" width="0.127" layer="20" curve="90"/>
+<wire x1="38.8" y1="106.5" x2="1.5" y2="106.5" width="0.127" layer="20"/>
+<wire x1="1.5" y1="106.5" x2="0.5" y2="105.5" width="0.127" layer="20" curve="90"/>
+<wire x1="0" y1="-11" x2="40.3" y2="-11" width="0" layer="255"/>
+<wire x1="40.3" y1="-11" x2="40.3" y2="117.5" width="0" layer="255"/>
+<wire x1="40.3" y1="117.5" x2="0" y2="117.5" width="0" layer="255"/>
+<wire x1="0" y1="117.5" x2="0" y2="-11" width="0" layer="255"/>
+<text x="0.5" y="115" size="1.27" layer="51">8HP front template</text>
+<wire x1="10.075" y1="130" x2="10.075" y2="-20" width="0" layer="51"/>
+<wire x1="30.225" y1="130" x2="30.225" y2="-20" width="0" layer="51"/>
+<wire x1="13.433" y1="130" x2="13.433" y2="-20" width="0" layer="51"/>
+<wire x1="20.15" y1="130" x2="20.15" y2="-20" width="0" layer="51"/>
+<wire x1="26.87" y1="130" x2="26.87" y2="-20" width="0" layer="51"/>
+<text x="41.5" y="85" size="1.27" layer="51">2 columns:
+12,933
+26,37
+
+3 columns:
+9,575  
+19,65
+29,725
+
+PCB width: 
+39,3</text>
+<text x="48" y="101" size="1.27" layer="51">+0.5</text>
+<text x="50" y="92" size="1.27" layer="51">+0.5</text>
+<circle x="7.5" y="-8" radius="1.5" width="0.0254" layer="255"/>
+<circle x="7.5" y="114.5" radius="1.5" width="0.0254" layer="255"/>
+<wire x1="0" y1="0" x2="4" y2="4" width="0.127" layer="51"/>
+</package>
+<package name="EURORACK12HPPCB">
+<wire x1="0.5" y1="105.5" x2="0.5" y2="1" width="0.127" layer="20"/>
+<wire x1="0.5" y1="1" x2="1.5" y2="0" width="0.127" layer="20" curve="90"/>
+<wire x1="1.5" y1="0" x2="59.12" y2="0" width="0.127" layer="20"/>
+<wire x1="59.12" y1="0" x2="60.12" y2="1" width="0.127" layer="20" curve="90"/>
+<wire x1="60.12" y1="1" x2="60.12" y2="105.5" width="0.127" layer="20"/>
+<wire x1="60.12" y1="105.5" x2="59.12" y2="106.5" width="0.127" layer="20" curve="90"/>
+<wire x1="59.12" y1="106.5" x2="1.5" y2="106.5" width="0.127" layer="20"/>
+<wire x1="1.5" y1="106.5" x2="0.5" y2="105.5" width="0.127" layer="20" curve="90"/>
+<wire x1="0" y1="-11" x2="60.62" y2="-11" width="0" layer="255"/>
+<wire x1="60.62" y1="-11" x2="60.62" y2="117.5" width="0" layer="255"/>
+<wire x1="60.62" y1="117.5" x2="0" y2="117.5" width="0" layer="255"/>
+<wire x1="0" y1="117.5" x2="0" y2="-11" width="0" layer="255"/>
+<text x="1.5" y="113" size="1.27" layer="51">12HP eurorack pcb template</text>
+<text x="28.5" y="111" size="1.27" layer="51">PCB width: 
+59.62</text>
+<text x="28.5" y="108" size="1.27" layer="51">halve = 29,81</text>
+<wire x1="30.31" y1="107" x2="30.31" y2="-11" width="0.127" layer="51"/>
+<circle x="7.5" y="-8" radius="1.5" width="0.0254" layer="255"/>
+<circle x="7.5" y="114.5" radius="1.5" width="0.0254" layer="255"/>
+<wire x1="0" y1="0" x2="4" y2="4" width="0.127" layer="51"/>
+<circle x="48.14" y="-8" radius="1.5" width="0.0254" layer="255"/>
+<circle x="48.14" y="114.5" radius="1.5" width="0.0254" layer="255"/>
+</package>
+<package name="EURORACK6HPPCB">
+<wire x1="0.5" y1="105.5" x2="0.5" y2="1" width="0.127" layer="20"/>
+<wire x1="0.5" y1="1" x2="1.5" y2="0" width="0.127" layer="20" curve="90"/>
+<wire x1="1.5" y1="0" x2="28.64" y2="0" width="0.127" layer="20"/>
+<wire x1="28.64" y1="0" x2="29.64" y2="1" width="0.127" layer="20" curve="90"/>
+<wire x1="29.64" y1="1" x2="29.64" y2="105.5" width="0.127" layer="20"/>
+<wire x1="29.64" y1="105.5" x2="28.64" y2="106.5" width="0.127" layer="20" curve="90"/>
+<wire x1="28.64" y1="106.5" x2="1.5" y2="106.5" width="0.127" layer="20"/>
+<wire x1="1.5" y1="106.5" x2="0.5" y2="105.5" width="0.127" layer="20" curve="90"/>
+<wire x1="0" y1="-11" x2="30.14" y2="-11" width="0" layer="255"/>
+<wire x1="30.14" y1="-11" x2="30.14" y2="117.5" width="0" layer="255"/>
+<wire x1="30.14" y1="117.5" x2="0" y2="117.5" width="0" layer="255"/>
+<wire x1="0" y1="117.5" x2="0" y2="-11" width="0" layer="255"/>
+<text x="0.5" y="115" size="1.27" layer="51">6HP front template</text>
+<wire x1="10.075" y1="130" x2="10.075" y2="-20" width="0" layer="51"/>
+<wire x1="20.15" y1="130" x2="20.15" y2="-20" width="0" layer="51"/>
+<circle x="7.5" y="-8" radius="1.5" width="0.0254" layer="255"/>
+<circle x="7.5" y="114.5" radius="1.5" width="0.0254" layer="255"/>
+<wire x1="0" y1="0" x2="4" y2="4" width="0.127" layer="51"/>
+</package>
+<package name="EURORACK2HPPCB">
+<wire x1="0.5" y1="105.5" x2="0.5" y2="1" width="0.127" layer="20"/>
+<wire x1="0.5" y1="1" x2="1.5" y2="0" width="0.127" layer="20" curve="90"/>
+<wire x1="1.5" y1="0" x2="8.32" y2="0" width="0.127" layer="20"/>
+<wire x1="8.32" y1="0" x2="9.32" y2="1" width="0.127" layer="20" curve="90"/>
+<wire x1="9.32" y1="1" x2="9.32" y2="105.5" width="0.127" layer="20"/>
+<wire x1="9.32" y1="105.5" x2="8.32" y2="106.5" width="0.127" layer="20" curve="90"/>
+<wire x1="8.32" y1="106.5" x2="1.5" y2="106.5" width="0.127" layer="20"/>
+<wire x1="1.5" y1="106.5" x2="0.5" y2="105.5" width="0.127" layer="20" curve="90"/>
+<wire x1="0" y1="-11" x2="9.82" y2="-11" width="0" layer="255"/>
+<wire x1="9.82" y1="-11" x2="9.82" y2="117.5" width="0" layer="255"/>
+<wire x1="9.82" y1="117.5" x2="0" y2="117.5" width="0" layer="255"/>
+<wire x1="0" y1="117.5" x2="0" y2="-11" width="0" layer="255"/>
+<text x="0.5" y="115" size="1.27" layer="51">2HP front template</text>
+<circle x="7.5" y="-8" radius="1.5" width="0.0254" layer="255"/>
+<circle x="7.5" y="114.5" radius="1.5" width="0.0254" layer="255"/>
+<wire x1="0" y1="0" x2="4" y2="4" width="0.127" layer="51"/>
 </package>
 </packages>
 <symbols>

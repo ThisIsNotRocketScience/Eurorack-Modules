@@ -796,6 +796,9 @@ PCB width:
 39,3</text>
 <text x="48" y="101" size="1.27" layer="51">+0.5</text>
 <text x="50" y="92" size="1.27" layer="51">+0.5</text>
+<circle x="7.5" y="-8" radius="1.5" width="0.0254" layer="255"/>
+<circle x="7.5" y="114.5" radius="1.5" width="0.0254" layer="255"/>
+<wire x1="0" y1="0" x2="4" y2="4" width="0.127" layer="51"/>
 </package>
 <package name="OG-POTS_ALPS_POT_VERTICAL">
 <circle x="0" y="0" radius="2.54" width="0.2032" layer="51"/>
