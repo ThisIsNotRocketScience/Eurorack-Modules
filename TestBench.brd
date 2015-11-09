@@ -819,7 +819,7 @@ design rules under a new name.</description>
 <element name="U$1" library="EurorackModularParts" package="POWER_16" value="POWER" x="114.3" y="115.57" rot="MR270"/>
 <element name="U$2" library="EurorackModularParts" package="POWER_16" value="POWER" x="125.73" y="115.57" rot="R270"/>
 <element name="J1" library="dp_devices" package="DC_BARREL_JACK_PTH_2MM" value="" x="129" y="135" rot="R180"/>
-<element name="U$3" library="zephod-components" package="PROTO_10_24" value="PROTOAREA" x="171" y="91"/>
+<element name="U$3" library="zephod-components" package="PROTO_10_24" value="PROTOAREA" x="161" y="171"/>
 <element name="U$4" library="EurorackModularParts" package="OG-POTS_ALPS_POT_VERTICAL" value="" x="130" y="15"/>
 <element name="U$5" library="EurorackModularParts" package="OG-POTS_ALPS_POT_VERTICAL" value="" x="130" y="35"/>
 <element name="U$6" library="EurorackModularParts" package="OG-POTS_ALPS_POT_VERTICAL" value="" x="130" y="55"/>

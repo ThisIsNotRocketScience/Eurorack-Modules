@@ -50,3 +50,6 @@ eagle.epf
 *.scr
 *.pro
 *.pro
+*.eup
+eagleUp/ZephMultiples.log
+*.pnl
