@@ -931,6 +931,20 @@ NS Package M08A</description>
 <wire x1="1.25" y1="0" x2="2" y2="0" width="0.127" layer="21"/>
 <text x="0" y="0.75" size="0.5" layer="21" align="bottom-center">&gt;VALUE</text>
 </package>
+<package name="MULTICOMP1MS-ONOFFON">
+<hole x="-7.875" y="1.59" drill="1.85"/>
+<hole x="-7.875" y="-1.59" drill="1.85"/>
+<hole x="7.875" y="1.59" drill="1.85"/>
+<hole x="7.875" y="-1.59" drill="1.85"/>
+<pad name="1" x="-4.7" y="0" drill="1.85"/>
+<pad name="2" x="0" y="0" drill="1.85"/>
+<pad name="3" x="4.7" y="0" drill="1.85"/>
+<wire x1="-7.875" y1="4.065" x2="7.875" y2="4.065" width="0.127" layer="21"/>
+<wire x1="7.875" y1="4.065" x2="7.875" y2="-4.065" width="0.127" layer="21"/>
+<wire x1="7.875" y1="-4.065" x2="-7.875" y2="-4.065" width="0.127" layer="21"/>
+<wire x1="-7.875" y1="-4.065" x2="-7.875" y2="4.065" width="0.127" layer="21"/>
+<circle x="0" y="0" radius="4" width="0.001" layer="255"/>
+</package>
 </packages>
 <symbols>
 <symbol name="EURORACK_PANEL">
@@ -1167,6 +1181,27 @@ NS Package M08A</description>
 </symbol>
 <symbol name="SYMBOLS">
 <text x="0" y="0" size="1.27" layer="94">SYMBOLS - SEE BOARD</text>
+</symbol>
+<symbol name="ONOFFON">
+<pin name="ON1" x="-5.08" y="-5.08" visible="pin" length="middle" rot="R90"/>
+<pin name="CENTER" x="0" y="-5.08" visible="pin" length="middle" rot="R90"/>
+<pin name="ON2" x="5.08" y="-5.08" visible="pin" length="middle" rot="R90"/>
+<wire x1="-7.62" y1="0" x2="7.62" y2="0" width="0.254" layer="94"/>
+<wire x1="7.62" y1="0" x2="7.62" y2="12.7" width="0.254" layer="94"/>
+<wire x1="7.62" y1="12.7" x2="2.54" y2="12.7" width="0.254" layer="94"/>
+<wire x1="2.54" y1="12.7" x2="-2.54" y2="12.7" width="0.254" layer="94"/>
+<wire x1="-2.54" y1="12.7" x2="-7.62" y2="12.7" width="0.254" layer="94"/>
+<wire x1="-7.62" y1="12.7" x2="-7.62" y2="0" width="0.254" layer="94"/>
+<wire x1="-2.54" y1="12.7" x2="-2.54" y2="15.24" width="0.254" layer="94"/>
+<wire x1="-2.54" y1="15.24" x2="-0.27" y2="15.24" width="0.254" layer="94"/>
+<wire x1="0.27" y1="15.24" x2="2.54" y2="15.24" width="0.254" layer="94"/>
+<wire x1="2.54" y1="15.24" x2="2.54" y2="12.7" width="0.254" layer="94"/>
+<wire x1="-0.27" y1="15.24" x2="-1.27" y2="16.24" width="0.254" layer="94"/>
+<wire x1="-1.27" y1="16.24" x2="-1.27" y2="24.13" width="0.254" layer="94"/>
+<wire x1="-0.27" y1="15.24" x2="0.27" y2="15.24" width="0.254" layer="94"/>
+<wire x1="0.27" y1="15.24" x2="1.27" y2="16.24" width="0.254" layer="94"/>
+<wire x1="1.27" y1="16.24" x2="1.27" y2="24.13" width="0.254" layer="94"/>
+<wire x1="1.27" y1="24.13" x2="-1.27" y2="24.13" width="0.254" layer="94"/>
 </symbol>
 </symbols>
 <devicesets>
@@ -1663,6 +1698,23 @@ NS Package M08A</description>
 </technologies>
 </device>
 <device name="RESISTOR" package="RESISTOR">
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="ONOFFON">
+<gates>
+<gate name="G$1" symbol="ONOFFON" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="MULTICOMP1MS-ONOFFON">
+<connects>
+<connect gate="G$1" pin="CENTER" pad="2"/>
+<connect gate="G$1" pin="ON1" pad="1"/>
+<connect gate="G$1" pin="ON2" pad="3"/>
+</connects>
 <technologies>
 <technology name=""/>
 </technologies>
