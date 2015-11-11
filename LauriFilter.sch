@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.05" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
+<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="no" active="no"/>
 <layer number="2" name="Route2" color="1" fill="3" visible="no" active="no"/>
@@ -1603,6 +1603,7 @@ http://dangerousprototypes.com</description>
 <part name="GND21" library="SparkFun" deviceset="GND" device=""/>
 <part name="SUPPLY2" library="SparkFun-Aesthetics" deviceset="3.3V" device=""/>
 <part name="SUPPLY5" library="SparkFun-Aesthetics" deviceset="3.3V" device=""/>
+<part name="R13" library="OPL" deviceset="R*" device="-0603" value="100k"/>
 </parts>
 <sheets>
 <sheet>
@@ -1612,7 +1613,7 @@ http://dangerousprototypes.com</description>
 <instance part="U$1" gate="G$1" x="22.86" y="81.28"/>
 <instance part="U$2" gate="G$1" x="27.94" y="91.44"/>
 <instance part="U$3" gate="G$1" x="-36.83" y="73.66"/>
-<instance part="U$4" gate="G$1" x="-43.18" y="40.64"/>
+<instance part="U$4" gate="G$1" x="-58.42" y="40.64"/>
 <instance part="U$5" gate="G$1" x="-43.18" y="10.16"/>
 <instance part="U$6" gate="G$1" x="-43.18" y="-22.86"/>
 <instance part="U$7" gate="G$1" x="152.4" y="35.56" rot="R180"/>
@@ -1672,6 +1673,7 @@ http://dangerousprototypes.com</description>
 <instance part="GND21" gate="1" x="-27.94" y="114.3"/>
 <instance part="SUPPLY2" gate="G$1" x="-27.94" y="142.24"/>
 <instance part="SUPPLY5" gate="G$1" x="-35.56" y="133.35"/>
+<instance part="R13" gate="R" x="-39.37" y="35.56"/>
 </instances>
 <busses>
 </busses>
@@ -1690,10 +1692,12 @@ http://dangerousprototypes.com</description>
 <segment>
 <pinref part="U$4" gate="G$1" pin="SWITCH"/>
 <pinref part="GND3" gate="1" pin="GND"/>
+<wire x1="-50.8" y1="40.64" x2="-35.56" y2="40.64" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <pinref part="U$4" gate="G$1" pin="RING"/>
 <pinref part="GND4" gate="1" pin="GND"/>
+<wire x1="-50.8" y1="43.18" x2="-35.56" y2="43.18" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <pinref part="U$5" gate="G$1" pin="SWITCH"/>
@@ -1992,8 +1996,8 @@ http://dangerousprototypes.com</description>
 <net name="N$7" class="0">
 <segment>
 <pinref part="U$4" gate="G$1" pin="TIP"/>
-<pinref part="U$14" gate="G$1" pin="A"/>
-<wire x1="-27.94" y1="35.56" x2="-35.56" y2="35.56" width="0.1524" layer="91"/>
+<pinref part="R13" gate="R" pin="1"/>
+<wire x1="-43.18" y1="35.56" x2="-50.8" y2="35.56" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="MODE2_A" class="0">
@@ -2174,6 +2178,13 @@ http://dangerousprototypes.com</description>
 <label x="-36.83" y="106.68" size="1.778" layer="95"/>
 <pinref part="R11" gate="R" pin="1"/>
 <junction x="-27.94" y="106.68"/>
+</segment>
+</net>
+<net name="N$10" class="0">
+<segment>
+<pinref part="U$14" gate="G$1" pin="A"/>
+<wire x1="-27.94" y1="35.56" x2="-35.56" y2="35.56" width="0.1524" layer="91"/>
+<pinref part="R13" gate="R" pin="2"/>
 </segment>
 </net>
 </nets>
