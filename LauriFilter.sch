@@ -1181,6 +1181,30 @@ Standard schematic elements and footprints for 5mm, 3mm, 1206, and 0603 sized LE
 <text x="-1.397" y="-1.3175" size="0.508" layer="27" ratio="10">&gt;VALUE</text>
 <rectangle x1="-1.397" y1="-0.635" x2="1.397" y2="0.635" layer="39"/>
 </package>
+<package name="C0603">
+<description>&lt;b&gt;0603&lt;b&gt;&lt;p&gt;</description>
+<wire x1="-1.397" y1="0.635" x2="1.397" y2="0.635" width="0.127" layer="21"/>
+<wire x1="1.397" y1="0.635" x2="1.397" y2="-0.635" width="0.127" layer="21"/>
+<wire x1="1.397" y1="-0.635" x2="-1.397" y2="-0.635" width="0.127" layer="21"/>
+<wire x1="-1.397" y1="-0.635" x2="-1.397" y2="0.635" width="0.127" layer="21"/>
+<smd name="1" x="-0.762" y="0" dx="0.889" dy="0.889" layer="1" roundness="25"/>
+<smd name="2" x="0.762" y="0" dx="0.889" dy="0.889" layer="1" roundness="25"/>
+<text x="0" y="0.889" size="0.889" layer="25" ratio="11" align="bottom-center">&gt;NAME</text>
+<text x="0" y="-0.9525" size="0.508" layer="27" ratio="10" align="top-center">&gt;VALUE</text>
+<rectangle x1="-1.397" y1="-0.635" x2="1.397" y2="0.635" layer="39"/>
+</package>
+<package name="C0805">
+<description>&lt;b&gt;0805&lt;b&gt;&lt;p&gt;</description>
+<wire x1="1.651" y1="0.889" x2="1.651" y2="-0.889" width="0.127" layer="21"/>
+<wire x1="1.651" y1="-0.889" x2="-1.651" y2="-0.889" width="0.127" layer="21"/>
+<wire x1="-1.651" y1="-0.889" x2="-1.651" y2="0.889" width="0.127" layer="21"/>
+<wire x1="-1.651" y1="0.889" x2="1.651" y2="0.889" width="0.127" layer="21"/>
+<smd name="1" x="-0.889" y="0" dx="1.016" dy="1.397" layer="1" roundness="25"/>
+<smd name="2" x="0.889" y="0" dx="1.016" dy="1.397" layer="1" roundness="25"/>
+<text x="-1.905" y="1.27" size="0.889" layer="25" font="vector" ratio="11">&gt;NAME</text>
+<text x="-1.651" y="-0.254" size="0.635" layer="27" ratio="10">&gt;VALUE</text>
+<rectangle x1="-1.651" y1="-0.889" x2="1.651" y2="0.889" layer="39"/>
+</package>
 </packages>
 <symbols>
 <symbol name="R">
@@ -1197,6 +1221,18 @@ Standard schematic elements and footprints for 5mm, 3mm, 1206, and 0603 sized LE
 <text x="0" y="1.27" size="1.27" layer="95" font="vector" ratio="10" align="bottom-center">&gt;NAME</text>
 <text x="0" y="-1.27" size="1.27" layer="96" font="vector" ratio="10" align="top-center">&gt;VALUE</text>
 </symbol>
+<symbol name="C">
+<wire x1="-0.635" y1="1.016" x2="-0.635" y2="0" width="0.4064" layer="94"/>
+<wire x1="-0.635" y1="0" x2="-0.635" y2="-1.016" width="0.4064" layer="94"/>
+<wire x1="0.635" y1="1.016" x2="0.635" y2="0" width="0.4064" layer="94"/>
+<wire x1="0.635" y1="0" x2="0.635" y2="-1.016" width="0.4064" layer="94"/>
+<wire x1="-0.635" y1="0" x2="-1.27" y2="0" width="0.1524" layer="94"/>
+<wire x1="1.27" y1="0" x2="0.635" y2="0" width="0.1524" layer="94"/>
+<pin name="1" x="-3.81" y="0" visible="off" length="short"/>
+<pin name="2" x="3.81" y="0" visible="off" length="short" rot="R180"/>
+<text x="0" y="1.27" size="1.27" layer="95" ratio="10" align="bottom-center">&gt;NAME</text>
+<text x="0" y="-1.27" size="1.27" layer="96" font="vector" ratio="10" align="top-center">&gt;VALUE</text>
+</symbol>
 </symbols>
 <devicesets>
 <deviceset name="R*" prefix="R" uservalue="yes">
@@ -1208,6 +1244,31 @@ Standard schematic elements and footprints for 5mm, 3mm, 1206, and 0603 sized LE
 <connects>
 <connect gate="R" pin="1" pad="1"/>
 <connect gate="R" pin="2" pad="2"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="C*" prefix="C" uservalue="yes">
+<gates>
+<gate name="C" symbol="C" x="0" y="0"/>
+</gates>
+<devices>
+<device name="-0603" package="C0603">
+<connects>
+<connect gate="C" pin="1" pad="1"/>
+<connect gate="C" pin="2" pad="2"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="-0805" package="C0805">
+<connects>
+<connect gate="C" pin="1" pad="1"/>
+<connect gate="C" pin="2" pad="2"/>
 </connects>
 <technologies>
 <technology name=""/>
@@ -1505,18 +1566,18 @@ http://dangerousprototypes.com</description>
 <part name="GND12" library="SparkFun-Aesthetics" deviceset="GND" device=""/>
 <part name="GND13" library="SparkFun-Aesthetics" deviceset="GND" device=""/>
 <part name="GND14" library="SparkFun-Aesthetics" deviceset="GND" device=""/>
-<part name="LED1" library="SparkFun-LED" deviceset="LED" device="3MM"/>
-<part name="LED2" library="SparkFun-LED" deviceset="LED" device="3MM"/>
-<part name="LED3" library="SparkFun-LED" deviceset="LED" device="3MM"/>
-<part name="LED4" library="SparkFun-LED" deviceset="LED" device="3MM"/>
-<part name="LED5" library="SparkFun-LED" deviceset="LED" device="3MM"/>
-<part name="LED6" library="SparkFun-LED" deviceset="LED" device="3MM"/>
-<part name="R1" library="OPL" deviceset="R*" device="-0603"/>
-<part name="R2" library="OPL" deviceset="R*" device="-0603"/>
-<part name="R3" library="OPL" deviceset="R*" device="-0603"/>
-<part name="R4" library="OPL" deviceset="R*" device="-0603"/>
-<part name="R5" library="OPL" deviceset="R*" device="-0603"/>
-<part name="R6" library="OPL" deviceset="R*" device="-0603"/>
+<part name="LED1" library="SparkFun-LED" deviceset="LED" device="3MM" value="WHITE"/>
+<part name="LED2" library="SparkFun-LED" deviceset="LED" device="3MM" value="WHITE"/>
+<part name="LED3" library="SparkFun-LED" deviceset="LED" device="3MM" value="WHITE"/>
+<part name="LED4" library="SparkFun-LED" deviceset="LED" device="3MM" value="WHITE"/>
+<part name="LED5" library="SparkFun-LED" deviceset="LED" device="3MM" value="WHITE"/>
+<part name="LED6" library="SparkFun-LED" deviceset="LED" device="3MM" value="WHITE"/>
+<part name="R1" library="OPL" deviceset="R*" device="-0603" value="50"/>
+<part name="R2" library="OPL" deviceset="R*" device="-0603" value="50"/>
+<part name="R3" library="OPL" deviceset="R*" device="-0603" value="50"/>
+<part name="R4" library="OPL" deviceset="R*" device="-0603" value="50"/>
+<part name="R5" library="OPL" deviceset="R*" device="-0603" value="50"/>
+<part name="R6" library="OPL" deviceset="R*" device="-0603" value="50"/>
 <part name="SUPPLY3" library="SparkFun-Aesthetics" deviceset="3.3V" device=""/>
 <part name="U$12" library="EurorackModularParts" deviceset="ONOFFON" device=""/>
 <part name="U$13" library="EurorackModularParts" deviceset="ONOFFON" device=""/>
@@ -1524,19 +1585,24 @@ http://dangerousprototypes.com</description>
 <part name="GND16" library="SparkFun-Aesthetics" deviceset="GND" device=""/>
 <part name="GND17" library="SparkFun-Aesthetics" deviceset="GND" device=""/>
 <part name="GND18" library="SparkFun-Aesthetics" deviceset="GND" device=""/>
-<part name="R7" library="OPL" deviceset="R*" device="-0603"/>
-<part name="R8" library="OPL" deviceset="R*" device="-0603"/>
-<part name="R9" library="OPL" deviceset="R*" device="-0603"/>
-<part name="R10" library="OPL" deviceset="R*" device="-0603"/>
+<part name="R7" library="OPL" deviceset="R*" device="-0603" value="10k"/>
+<part name="R8" library="OPL" deviceset="R*" device="-0603" value="10k"/>
+<part name="R9" library="OPL" deviceset="R*" device="-0603" value="10k"/>
+<part name="R10" library="OPL" deviceset="R*" device="-0603" value="10k"/>
 <part name="SUPPLY1" library="SparkFun-Aesthetics" deviceset="3.3V" device=""/>
-<part name="LED7" library="SparkFun-LED" deviceset="LED" device="3MM"/>
-<part name="LED8" library="SparkFun-LED" deviceset="LED" device="3MM"/>
-<part name="R11" library="OPL" deviceset="R*" device="-0603"/>
-<part name="R12" library="OPL" deviceset="R*" device="-0603"/>
+<part name="LED7" library="SparkFun-LED" deviceset="LED" device="3MM" value="WHITE"/>
+<part name="LED8" library="SparkFun-LED" deviceset="LED" device="3MM" value="WHITE"/>
+<part name="R11" library="OPL" deviceset="R*" device="-0603" value="50"/>
+<part name="R12" library="OPL" deviceset="R*" device="-0603" value="50"/>
 <part name="IC2" library="dp_devices" deviceset="IC_74HC595" device="-SOIC-16"/>
 <part name="GND20" library="SparkFun" deviceset="GND" device=""/>
 <part name="SUPPLY4" library="SparkFun-Aesthetics" deviceset="3.3V" device=""/>
 <part name="GND15" library="SparkFun-Aesthetics" deviceset="GND" device=""/>
+<part name="C1" library="OPL" deviceset="C*" device="-0603" value="100nF"/>
+<part name="GND19" library="SparkFun" deviceset="GND" device=""/>
+<part name="GND21" library="SparkFun" deviceset="GND" device=""/>
+<part name="SUPPLY2" library="SparkFun-Aesthetics" deviceset="3.3V" device=""/>
+<part name="SUPPLY5" library="SparkFun-Aesthetics" deviceset="3.3V" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -1600,6 +1666,12 @@ http://dangerousprototypes.com</description>
 <instance part="GND20" gate="1" x="-7.62" y="133.35" rot="R270"/>
 <instance part="SUPPLY4" gate="G$1" x="-5.08" y="135.89"/>
 <instance part="GND15" gate="1" x="-7.62" y="86.36"/>
+<instance part="C1" gate="C" x="-35.56" y="129.54" rot="R90"/>
+<instance part="IC2" gate="SUP" x="-27.94" y="129.54"/>
+<instance part="GND19" gate="1" x="-35.56" y="123.19"/>
+<instance part="GND21" gate="1" x="-27.94" y="114.3"/>
+<instance part="SUPPLY2" gate="G$1" x="-27.94" y="142.24"/>
+<instance part="SUPPLY5" gate="G$1" x="-35.56" y="133.35"/>
 </instances>
 <busses>
 </busses>
@@ -1707,6 +1779,14 @@ http://dangerousprototypes.com</description>
 <junction x="-7.62" y="101.6"/>
 <junction x="-7.62" y="104.14"/>
 </segment>
+<segment>
+<pinref part="C1" gate="C" pin="1"/>
+<pinref part="GND19" gate="1" pin="GND"/>
+</segment>
+<segment>
+<pinref part="IC2" gate="SUP" pin="GND"/>
+<pinref part="GND21" gate="1" pin="GND"/>
+</segment>
 </net>
 <net name="N$1" class="0">
 <segment>
@@ -1738,6 +1818,8 @@ http://dangerousprototypes.com</description>
 <pinref part="U$1" gate="G$1" pin="CV_MIX2"/>
 <wire x1="17.78" y1="66.04" x2="-20.32" y2="66.04" width="0.1524" layer="91"/>
 <wire x1="-20.32" y1="66.04" x2="-20.32" y2="40.64" width="0.1524" layer="91"/>
+<pinref part="U$14" gate="G$1" pin="S"/>
+<junction x="-20.32" y="40.64"/>
 </segment>
 </net>
 <net name="N$5" class="0">
@@ -1849,6 +1931,9 @@ http://dangerousprototypes.com</description>
 <junction x="60.96" y="-17.78"/>
 <pinref part="SUPPLY3" gate="G$1" pin="3.3V"/>
 <junction x="54.61" y="-17.78"/>
+<junction x="38.1" y="-17.78"/>
+<pinref part="U$1" gate="G$1" pin="3.3V"/>
+<junction x="50.8" y="-5.08"/>
 </segment>
 <segment>
 <pinref part="R10" gate="R" pin="1"/>
@@ -1868,6 +1953,14 @@ http://dangerousprototypes.com</description>
 <segment>
 <pinref part="IC2" gate="IC" pin="!RST"/>
 <pinref part="SUPPLY4" gate="G$1" pin="3.3V"/>
+</segment>
+<segment>
+<pinref part="IC2" gate="SUP" pin="V+"/>
+<pinref part="SUPPLY2" gate="G$1" pin="3.3V"/>
+</segment>
+<segment>
+<pinref part="C1" gate="C" pin="2"/>
+<pinref part="SUPPLY5" gate="G$1" pin="3.3V"/>
 </segment>
 </net>
 <net name="MODE1_A" class="0">
@@ -1965,12 +2058,6 @@ http://dangerousprototypes.com</description>
 <label x="-20.32" y="151.13" size="1.778" layer="95"/>
 </segment>
 </net>
-<net name="N$13" class="0">
-<segment>
-<pinref part="U$1" gate="G$1" pin="ADC6/D5"/>
-<wire x1="17.78" y1="22.86" x2="10.16" y2="22.86" width="0.1524" layer="91"/>
-</segment>
-</net>
 <net name="N$8" class="0">
 <segment>
 <pinref part="LED8" gate="G$1" pin="C"/>
@@ -1994,6 +2081,8 @@ http://dangerousprototypes.com</description>
 <segment>
 <wire x1="-41.91" y1="88.9" x2="-27.94" y2="88.9" width="0.1524" layer="91"/>
 <label x="-36.83" y="88.9" size="1.778" layer="95"/>
+<pinref part="R6" gate="R" pin="1"/>
+<junction x="-27.94" y="88.9"/>
 </segment>
 </net>
 <net name="LEDB2" class="0">
@@ -2005,6 +2094,8 @@ http://dangerousprototypes.com</description>
 <segment>
 <wire x1="-41.91" y1="91.44" x2="-27.94" y2="91.44" width="0.1524" layer="91"/>
 <label x="-36.83" y="91.44" size="1.778" layer="95"/>
+<pinref part="R5" gate="R" pin="1"/>
+<junction x="-27.94" y="91.44"/>
 </segment>
 </net>
 <net name="LEDB3" class="0">
@@ -2016,6 +2107,8 @@ http://dangerousprototypes.com</description>
 <segment>
 <wire x1="-41.91" y1="93.98" x2="-27.94" y2="93.98" width="0.1524" layer="91"/>
 <label x="-36.83" y="93.98" size="1.778" layer="95"/>
+<pinref part="R4" gate="R" pin="1"/>
+<junction x="-27.94" y="93.98"/>
 </segment>
 </net>
 <net name="LEDB4" class="0">
@@ -2027,6 +2120,8 @@ http://dangerousprototypes.com</description>
 <segment>
 <wire x1="-41.91" y1="96.52" x2="-27.94" y2="96.52" width="0.1524" layer="91"/>
 <label x="-36.83" y="96.52" size="1.778" layer="95"/>
+<pinref part="R3" gate="R" pin="1"/>
+<junction x="-27.94" y="96.52"/>
 </segment>
 </net>
 <net name="LEDB5" class="0">
@@ -2038,6 +2133,8 @@ http://dangerousprototypes.com</description>
 <segment>
 <wire x1="-41.91" y1="99.06" x2="-27.94" y2="99.06" width="0.1524" layer="91"/>
 <label x="-36.83" y="99.06" size="1.778" layer="95"/>
+<pinref part="R2" gate="R" pin="1"/>
+<junction x="-27.94" y="99.06"/>
 </segment>
 </net>
 <net name="LEDB6" class="0">
@@ -2049,6 +2146,8 @@ http://dangerousprototypes.com</description>
 <segment>
 <wire x1="-41.91" y1="101.6" x2="-27.94" y2="101.6" width="0.1524" layer="91"/>
 <label x="-36.83" y="101.6" size="1.778" layer="95"/>
+<pinref part="R1" gate="R" pin="1"/>
+<junction x="-27.94" y="101.6"/>
 </segment>
 </net>
 <net name="LEDB7" class="0">
@@ -2060,6 +2159,8 @@ http://dangerousprototypes.com</description>
 <segment>
 <wire x1="-41.91" y1="104.14" x2="-27.94" y2="104.14" width="0.1524" layer="91"/>
 <label x="-36.83" y="104.14" size="1.778" layer="95"/>
+<pinref part="R12" gate="R" pin="1"/>
+<junction x="-27.94" y="104.14"/>
 </segment>
 </net>
 <net name="LEDB8" class="0">
@@ -2071,11 +2172,16 @@ http://dangerousprototypes.com</description>
 <segment>
 <wire x1="-41.91" y1="106.68" x2="-27.94" y2="106.68" width="0.1524" layer="91"/>
 <label x="-36.83" y="106.68" size="1.778" layer="95"/>
+<pinref part="R11" gate="R" pin="1"/>
+<junction x="-27.94" y="106.68"/>
 </segment>
 </net>
 </nets>
 </sheet>
 </sheets>
+<errors>
+<approved hash="102,1,-27.94,142.24,V+,3.3V,,,,"/>
+</errors>
 </schematic>
 </drawing>
 <compatibility>
