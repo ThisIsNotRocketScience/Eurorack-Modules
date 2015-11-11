@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="25" unitdist="mil" unit="mm" style="lines" multiple="1" display="yes" altdistance="0.025" altunitdist="inch" altunit="inch"/>
+<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="2" name="Route2" color="1" fill="3" visible="yes" active="yes"/>
@@ -906,6 +906,31 @@ NS Package M08A</description>
 <wire x1="-6.35" y1="6.985" x2="5.35" y2="6.985" width="0.127" layer="21"/>
 <wire x1="5.35" y1="6.985" x2="6.35" y2="5.985" width="0.127" layer="21" curve="-90"/>
 </package>
+<package name="SYMB_OPAMP">
+<wire x1="0" y1="-2" x2="0" y2="-1" width="0.127" layer="21"/>
+<wire x1="0" y1="-1" x2="0" y2="1" width="0.127" layer="21"/>
+<wire x1="0" y1="1" x2="0" y2="2" width="0.127" layer="21"/>
+<wire x1="0" y1="2" x2="4" y2="0" width="0.127" layer="21"/>
+<wire x1="4" y1="0" x2="0" y2="-2" width="0.127" layer="21"/>
+<wire x1="4" y1="0" x2="5" y2="0" width="0.127" layer="21"/>
+<wire x1="0" y1="1" x2="-1" y2="1" width="0.127" layer="21"/>
+<wire x1="0" y1="-1" x2="-1" y2="-1" width="0.127" layer="21"/>
+<wire x1="0.25" y1="1" x2="0.75" y2="1" width="0.127" layer="21"/>
+<wire x1="0.25" y1="-1" x2="0.75" y2="-1" width="0.127" layer="21"/>
+<wire x1="0.5" y1="-1.25" x2="0.5" y2="-0.75" width="0.127" layer="21"/>
+</package>
+<package name="RESISTOR">
+<wire x1="-2" y1="0" x2="-1.25" y2="0" width="0.127" layer="21"/>
+<wire x1="-1.25" y1="0" x2="-1.25" y2="0.5" width="0.127" layer="21"/>
+<wire x1="-1.25" y1="0.5" x2="-0.75" y2="-0.5" width="0.127" layer="21"/>
+<wire x1="-0.75" y1="-0.5" x2="-0.25" y2="0.5" width="0.127" layer="21"/>
+<wire x1="-0.25" y1="0.5" x2="0.25" y2="-0.5" width="0.127" layer="21"/>
+<wire x1="0.25" y1="-0.5" x2="0.75" y2="0.5" width="0.127" layer="21"/>
+<wire x1="0.75" y1="0.5" x2="1.25" y2="-0.5" width="0.127" layer="21"/>
+<wire x1="1.25" y1="-0.5" x2="1.25" y2="0" width="0.127" layer="21"/>
+<wire x1="1.25" y1="0" x2="2" y2="0" width="0.127" layer="21"/>
+<text x="0" y="0.75" size="0.5" layer="21" align="bottom-center">&gt;VALUE</text>
+</package>
 </packages>
 <symbols>
 <symbol name="EURORACK_PANEL">
@@ -1139,6 +1164,9 @@ NS Package M08A</description>
 <text x="1.27" y="-4.445" size="0.8128" layer="93" rot="R90">V-</text>
 <pin name="V+" x="0" y="7.62" visible="pad" length="middle" direction="pwr" rot="R270"/>
 <pin name="V-" x="0" y="-7.62" visible="pad" length="middle" direction="pwr" rot="R90"/>
+</symbol>
+<symbol name="SYMBOLS">
+<text x="0" y="0" size="1.27" layer="94">SYMBOLS - SEE BOARD</text>
 </symbol>
 </symbols>
 <devicesets>
@@ -1618,6 +1646,23 @@ NS Package M08A</description>
 <connect gate="P" pin="V+" pad="4"/>
 <connect gate="P" pin="V-" pad="11"/>
 </connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="SYMBOLS">
+<gates>
+<gate name="G$1" symbol="SYMBOLS" x="0" y="0"/>
+</gates>
+<devices>
+<device name="OPAMP" package="SYMB_OPAMP">
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="RESISTOR" package="RESISTOR">
 <technologies>
 <technology name=""/>
 </technologies>

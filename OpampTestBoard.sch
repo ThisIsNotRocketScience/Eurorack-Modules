@@ -197,6 +197,31 @@ NS Package M08A</description>
 <vertex x="-2.54" y="-5.715"/>
 </polygon>
 </package>
+<package name="SYMB_OPAMP">
+<wire x1="0" y1="-2" x2="0" y2="-1" width="0.127" layer="21"/>
+<wire x1="0" y1="-1" x2="0" y2="1" width="0.127" layer="21"/>
+<wire x1="0" y1="1" x2="0" y2="2" width="0.127" layer="21"/>
+<wire x1="0" y1="2" x2="4" y2="0" width="0.127" layer="21"/>
+<wire x1="4" y1="0" x2="0" y2="-2" width="0.127" layer="21"/>
+<wire x1="4" y1="0" x2="5" y2="0" width="0.127" layer="21"/>
+<wire x1="0" y1="1" x2="-1" y2="1" width="0.127" layer="21"/>
+<wire x1="0" y1="-1" x2="-1" y2="-1" width="0.127" layer="21"/>
+<wire x1="0.25" y1="1" x2="0.75" y2="1" width="0.127" layer="21"/>
+<wire x1="0.25" y1="-1" x2="0.75" y2="-1" width="0.127" layer="21"/>
+<wire x1="0.5" y1="-1.25" x2="0.5" y2="-0.75" width="0.127" layer="21"/>
+</package>
+<package name="RESISTOR">
+<wire x1="-2" y1="0" x2="-1.25" y2="0" width="0.127" layer="21"/>
+<wire x1="-1.25" y1="0" x2="-1.25" y2="0.5" width="0.127" layer="21"/>
+<wire x1="-1.25" y1="0.5" x2="-0.75" y2="-0.5" width="0.127" layer="21"/>
+<wire x1="-0.75" y1="-0.5" x2="-0.25" y2="0.5" width="0.127" layer="21"/>
+<wire x1="-0.25" y1="0.5" x2="0.25" y2="-0.5" width="0.127" layer="21"/>
+<wire x1="0.25" y1="-0.5" x2="0.75" y2="0.5" width="0.127" layer="21"/>
+<wire x1="0.75" y1="0.5" x2="1.25" y2="-0.5" width="0.127" layer="21"/>
+<wire x1="1.25" y1="-0.5" x2="1.25" y2="0" width="0.127" layer="21"/>
+<wire x1="1.25" y1="0" x2="2" y2="0" width="0.127" layer="21"/>
+<text x="0" y="0.75" size="0.5" layer="21" align="bottom-center">&gt;VALUE</text>
+</package>
 </packages>
 <symbols>
 <symbol name="OPAMP">
@@ -218,6 +243,9 @@ NS Package M08A</description>
 <text x="1.27" y="3.175" size="0.8128" layer="93" rot="R90">V+</text>
 <text x="1.27" y="-4.445" size="0.8128" layer="93" rot="R90">V-</text>
 </symbol>
+<symbol name="SYMBOLS">
+<text x="0" y="0" size="1.27" layer="94">SYMBOLS - SEE BOARD</text>
+</symbol>
 </symbols>
 <devicesets>
 <deviceset name="TL072">
@@ -238,6 +266,23 @@ NS Package M08A</description>
 <connect gate="VR3" pin="V+" pad="8"/>
 <connect gate="VR3" pin="V-" pad="4"/>
 </connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="SYMBOLS">
+<gates>
+<gate name="G$1" symbol="SYMBOLS" x="0" y="0"/>
+</gates>
+<devices>
+<device name="OPAMP" package="SYMB_OPAMP">
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="RESISTOR" package="RESISTOR">
 <technologies>
 <technology name=""/>
 </technologies>
@@ -1221,6 +1266,9 @@ Standard 3-pin 0.1" header. Use with straight break away headers (SKU : PRT-0011
 <part name="OP1POSGND2" library="SparkFun-Passives" deviceset="SOLDERJUMPER" device="NC"/>
 <part name="OP1POSGND3" library="SparkFun-Passives" deviceset="SOLDERJUMPER" device="NC"/>
 <part name="OP1POSGND4" library="SparkFun-Passives" deviceset="SOLDERJUMPER" device="NC"/>
+<part name="U$1" library="EurorackModularParts" deviceset="SYMBOLS" device="OPAMP"/>
+<part name="U$2" library="EurorackModularParts" deviceset="SYMBOLS" device="RESISTOR" value="R2"/>
+<part name="U$3" library="EurorackModularParts" deviceset="SYMBOLS" device="RESISTOR" value="R1"/>
 </parts>
 <sheets>
 <sheet>
@@ -1290,6 +1338,9 @@ Standard 3-pin 0.1" header. Use with straight break away headers (SKU : PRT-0011
 <instance part="OP1POSGND2" gate="1" x="41.91" y="7.62"/>
 <instance part="OP1POSGND3" gate="1" x="48.26" y="-11.43"/>
 <instance part="OP1POSGND4" gate="1" x="48.26" y="-30.48"/>
+<instance part="U$1" gate="G$1" x="119.38" y="-30.48"/>
+<instance part="U$2" gate="G$1" x="121.92" y="-38.1"/>
+<instance part="U$3" gate="G$1" x="127" y="-22.86"/>
 </instances>
 <busses>
 </busses>
@@ -1575,7 +1626,7 @@ Standard 3-pin 0.1" header. Use with straight break away headers (SKU : PRT-0011
 <pinref part="GND12" gate="1" pin="GND"/>
 </segment>
 </net>
-<net name="N$5" class="0">
+<net name="VNEG" class="0">
 <segment>
 <pinref part="POWER" gate="G$1" pin="3"/>
 <pinref part="C8" gate="C" pin="2"/>
@@ -1592,7 +1643,7 @@ Standard 3-pin 0.1" header. Use with straight break away headers (SKU : PRT-0011
 <junction x="116.84" y="15.24"/>
 </segment>
 </net>
-<net name="N$6" class="0">
+<net name="VPOS" class="0">
 <segment>
 <pinref part="POWER" gate="G$1" pin="1"/>
 <pinref part="C7" gate="C" pin="1"/>
