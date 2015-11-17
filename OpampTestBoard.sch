@@ -1387,10 +1387,12 @@ Standard 3-pin 0.1" header. Use with straight break away headers (SKU : PRT-0011
 <junction x="53.34" y="-11.43"/>
 <pinref part="OP1POSGND4" gate="1" pin="2"/>
 <junction x="53.34" y="-30.48"/>
+<label x="50.8" y="-20.32" size="1.778" layer="95" rot="R270"/>
 </segment>
 <segment>
 <pinref part="OP2TEST" gate="G$1" pin="2"/>
 <wire x1="50.8" y1="-54.61" x2="50.8" y2="-48.26" width="0.1524" layer="91"/>
+<label x="48.26" y="-43.18" size="1.778" layer="95" rot="R270"/>
 </segment>
 </net>
 <net name="N$4" class="0">
@@ -1424,10 +1426,12 @@ Standard 3-pin 0.1" header. Use with straight break away headers (SKU : PRT-0011
 <pinref part="OP1POSGND1" gate="1" pin="2"/>
 <wire x1="46.99" y1="30.48" x2="46.99" y2="34.29" width="0.1524" layer="91"/>
 <junction x="46.99" y="34.29"/>
+<label x="53.34" y="17.78" size="1.778" layer="95" rot="R270"/>
 </segment>
 <segment>
 <pinref part="OP1TEST" gate="G$1" pin="3"/>
 <wire x1="49.53" y1="48.26" x2="49.53" y2="40.64" width="0.1524" layer="91"/>
+<label x="48.26" y="45.72" size="1.778" layer="95" rot="R270"/>
 </segment>
 </net>
 <net name="OP1POS" class="0">
@@ -1457,10 +1461,12 @@ Standard 3-pin 0.1" header. Use with straight break away headers (SKU : PRT-0011
 <pinref part="R19" gate="R" pin="1"/>
 <pinref part="OP1POSGND1" gate="1" pin="1"/>
 <junction x="36.83" y="30.48"/>
+<label x="35.56" y="45.72" size="1.778" layer="95" rot="R270"/>
 </segment>
 <segment>
 <pinref part="OP1TEST" gate="G$1" pin="2"/>
 <wire x1="46.99" y1="48.26" x2="46.99" y2="40.64" width="0.1524" layer="91"/>
+<label x="45.72" y="45.72" size="1.778" layer="95" rot="R270"/>
 </segment>
 </net>
 <net name="OP1NEG" class="0">
@@ -1488,10 +1494,12 @@ Standard 3-pin 0.1" header. Use with straight break away headers (SKU : PRT-0011
 <pinref part="R20" gate="R" pin="1"/>
 <pinref part="OP1POSGND2" gate="1" pin="1"/>
 <junction x="36.83" y="7.62"/>
+<label x="35.56" y="7.62" size="1.778" layer="95" rot="R270"/>
 </segment>
 <segment>
 <pinref part="OP1TEST" gate="G$1" pin="1"/>
 <wire x1="44.45" y1="48.26" x2="44.45" y2="40.64" width="0.1524" layer="91"/>
+<label x="43.18" y="45.72" size="1.778" layer="95" rot="R270"/>
 </segment>
 </net>
 <net name="OP2POS" class="0">
@@ -1525,10 +1533,12 @@ Standard 3-pin 0.1" header. Use with straight break away headers (SKU : PRT-0011
 <pinref part="R21" gate="R" pin="1"/>
 <pinref part="OP1POSGND3" gate="1" pin="1"/>
 <wire x1="43.18" y1="-13.97" x2="43.18" y2="-11.43" width="0.1524" layer="91"/>
+<label x="71.12" y="-12.7" size="1.778" layer="95" rot="R180"/>
 </segment>
 <segment>
 <pinref part="OP2TEST" gate="G$1" pin="1"/>
 <wire x1="53.34" y1="-54.61" x2="53.34" y2="-48.26" width="0.1524" layer="91"/>
+<label x="50.8" y="-43.18" size="1.778" layer="95" rot="R270"/>
 </segment>
 </net>
 <net name="OP2NEG" class="0">
@@ -1563,10 +1573,12 @@ Standard 3-pin 0.1" header. Use with straight break away headers (SKU : PRT-0011
 <pinref part="R22" gate="R" pin="1"/>
 <pinref part="OP1POSGND4" gate="1" pin="1"/>
 <wire x1="43.18" y1="-30.48" x2="43.18" y2="-34.29" width="0.1524" layer="91"/>
+<label x="50.8" y="-2.54" size="1.778" layer="95" rot="R180"/>
 </segment>
 <segment>
 <pinref part="OP2TEST" gate="G$1" pin="3"/>
 <wire x1="48.26" y1="-54.61" x2="48.26" y2="-48.26" width="0.1524" layer="91"/>
+<label x="45.72" y="-43.18" size="1.778" layer="95" rot="R270"/>
 </segment>
 </net>
 <net name="GND" class="0">
@@ -1747,6 +1759,50 @@ Standard 3-pin 0.1" header. Use with straight break away headers (SKU : PRT-0011
 </nets>
 </sheet>
 </sheets>
+<errors>
+<approved hash="104,1,111.76,33.02,IC1VR3,V+,VPOS,,,"/>
+<approved hash="104,1,111.76,17.78,IC1VR3,V-,VNEG,,,"/>
+<approved hash="113,1,46.99,-13.4281,C1,,,,,"/>
+<approved hash="113,1,46.99,-33.7481,C2,,,,,"/>
+<approved hash="113,1,43.18,10.7019,C3,,,,,"/>
+<approved hash="113,1,43.18,27.2119,C4,,,,,"/>
+<approved hash="113,1,103.598,31.75,C5,,,,,"/>
+<approved hash="113,1,103.598,19.05,C6,,,,,"/>
+<approved hash="113,1,43.18,33.7481,R1,,,,,"/>
+<approved hash="113,1,43.18,4.53813,R2,,,,,"/>
+<approved hash="113,1,46.99,-8.16187,R3,,,,,"/>
+<approved hash="113,1,46.99,-37.3719,R4,,,,,"/>
+<approved hash="113,1,57.15,-25.9419,R5,,,,,"/>
+<approved hash="113,1,59.69,19.7781,R6,,,,,"/>
+<approved hash="113,1,20.32,22.3181,R7,,,,,"/>
+<approved hash="113,1,20.32,29.9381,R8,,,,,"/>
+<approved hash="113,1,20.32,37.5581,R9,,,,,"/>
+<approved hash="113,1,20.32,4.53813,R10,,,,,"/>
+<approved hash="113,1,20.32,-3.08187,R11,,,,,"/>
+<approved hash="113,1,20.32,-10.7019,R12,,,,,"/>
+<approved hash="113,1,20.32,-22.3181,R13,,,,,"/>
+<approved hash="113,1,20.32,-27.3981,R14,,,,,"/>
+<approved hash="113,1,20.32,-32.4781,R15,,,,,"/>
+<approved hash="113,1,20.32,-42.6381,R16,,,,,"/>
+<approved hash="113,1,20.32,-47.7181,R17,,,,,"/>
+<approved hash="113,1,20.32,-52.7981,R18,,,,,"/>
+<approved hash="113,1,60.2319,0,OP1TOOP2POS,,,,,"/>
+<approved hash="113,1,55.1519,0,OP1TOOP2NEG,,,,,"/>
+<approved hash="113,1,9.48267,33.2147,OP1POS,,,,,"/>
+<approved hash="113,1,6.94267,-1.07527,OP1NEG,,,,,"/>
+<approved hash="113,1,6.94267,-25.2053,OP2POS,,,,,"/>
+<approved hash="113,1,5.67267,-48.0653,OP2NEG,,,,,"/>
+<approved hash="113,1,49.3353,-57.8273,OP2TEST,,,,,"/>
+<approved hash="113,1,48.4547,51.4773,OP1TEST,,,,,"/>
+<approved hash="113,1,135.297,20.1253,POWER,,,,,"/>
+<approved hash="113,1,97.1973,-4.00473,OUTPUTS,,,,,"/>
+<approved hash="113,1,118.22,30.48,C7,,,,,"/>
+<approved hash="113,1,118.22,20.32,C8,,,,,"/>
+<approved hash="113,1,23.5881,41.91,R19,,,,,"/>
+<approved hash="113,1,23.5881,8.89,R20,,,,,"/>
+<approved hash="113,1,23.5881,-19.05,R21,,,,,"/>
+<approved hash="113,1,23.5881,-39.37,R22,,,,,"/>
+</errors>
 </schematic>
 </drawing>
 </eagle>

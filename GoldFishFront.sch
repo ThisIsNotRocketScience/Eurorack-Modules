@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.05" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
+<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="no" active="no"/>
 <layer number="2" name="Route2" color="1" fill="3" visible="no" active="no"/>
@@ -7354,6 +7354,15 @@ We've spent an enormous amount of time creating and checking these footprints an
 <technology name=""/>
 </technologies>
 </device>
+<device name="" package="C0805">
+<connects>
+<connect gate="R" pin="1" pad="1"/>
+<connect gate="R" pin="2" pad="2"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
 </devices>
 </deviceset>
 <deviceset name="C*" prefix="C" uservalue="yes">
@@ -7640,10 +7649,12 @@ General-purpose diode for high-speed switching</description>
 <part name="C1" library="OPL" deviceset="C*" device="-0603" value="100n"/>
 <part name="C9" library="OPL" deviceset="C*" device="-0603" value="100n"/>
 <part name="GND5" library="SparkFun" deviceset="GND" device=""/>
-<part name="C10" library="OPL" deviceset="C-POLAR*" device="-A"/>
+<part name="C10" library="OPL" deviceset="C-POLAR*" device="-A" value="10uF"/>
 <part name="GND23" library="SparkFun-Aesthetics" deviceset="GND" device=""/>
 <part name="SUPPLY4" library="SparkFun-Aesthetics" deviceset="3.3V" device=""/>
 <part name="GND38" library="SparkFun-Aesthetics" deviceset="GND" device=""/>
+<part name="R6" library="OPL" deviceset="R*" device="" value="300"/>
+<part name="R8" library="OPL" deviceset="R*" device="" value="300"/>
 </parts>
 <sheets>
 <sheet>
@@ -7763,6 +7774,8 @@ General-purpose diode for high-speed switching</description>
 <instance part="GND23" gate="1" x="162.56" y="-66.04"/>
 <instance part="SUPPLY4" gate="G$1" x="50.8" y="116.84"/>
 <instance part="GND38" gate="1" x="50.8" y="99.06"/>
+<instance part="R6" gate="R" x="177.8" y="-12.7"/>
+<instance part="R8" gate="R" x="177.8" y="-15.24"/>
 </instances>
 <busses>
 </busses>
@@ -7942,17 +7955,17 @@ General-purpose diode for high-speed switching</description>
 <net name="N$1" class="0">
 <segment>
 <pinref part="PULSE" gate="G$1" pin="TIP"/>
-<wire x1="193.04" y1="-12.7" x2="170.18" y2="-12.7" width="0.1524" layer="91"/>
-<pinref part="U$1" gate="G$1" pin="OUT_L"/>
+<wire x1="193.04" y1="-12.7" x2="181.61" y2="-12.7" width="0.1524" layer="91"/>
+<pinref part="R6" gate="R" pin="2"/>
 </segment>
 </net>
 <net name="N$2" class="0">
 <segment>
-<wire x1="170.18" y1="-15.24" x2="182.88" y2="-15.24" width="0.1524" layer="91"/>
+<wire x1="181.61" y1="-15.24" x2="182.88" y2="-15.24" width="0.1524" layer="91"/>
 <wire x1="182.88" y1="-15.24" x2="182.88" y2="-34.29" width="0.1524" layer="91"/>
 <pinref part="SAW" gate="G$1" pin="TIP"/>
 <wire x1="182.88" y1="-34.29" x2="193.04" y2="-34.29" width="0.1524" layer="91"/>
-<pinref part="U$1" gate="G$1" pin="OUT_R"/>
+<pinref part="R8" gate="R" pin="2"/>
 </segment>
 </net>
 <net name="GATE" class="0">
@@ -8511,14 +8524,28 @@ General-purpose diode for high-speed switching</description>
 <wire x1="22.86" y1="67.31" x2="17.78" y2="67.31" width="0.1524" layer="91"/>
 </segment>
 </net>
+<net name="N$3" class="0">
+<segment>
+<pinref part="U$1" gate="G$1" pin="OUT_L"/>
+<pinref part="R6" gate="R" pin="1"/>
+<wire x1="173.99" y1="-12.7" x2="170.18" y2="-12.7" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="N$6" class="0">
+<segment>
+<pinref part="R8" gate="R" pin="1"/>
+<wire x1="170.18" y1="-15.24" x2="173.99" y2="-15.24" width="0.1524" layer="91"/>
+<pinref part="U$1" gate="G$1" pin="OUT_R"/>
+</segment>
+</net>
 </nets>
 </sheet>
 </sheets>
 <errors>
 <approved hash="104,1,-36.83,-123.19,OP12P,V+,12V,,,"/>
 <approved hash="104,1,-36.83,-138.43,OP12P,V-,-12V,,,"/>
-<approved hash="104,1,22.86,-125.73,OP3.3P,V+,3.3V,,,"/>
-<approved hash="104,1,22.86,-140.97,OP3.3P,V-,GND,,,"/>
+<approved hash="104,1,-25.4,-123.19,OP3.3P,V+,12V,,,"/>
+<approved hash="104,1,-25.4,-138.43,OP3.3P,V-,-12V,,,"/>
 </errors>
 </schematic>
 </drawing>

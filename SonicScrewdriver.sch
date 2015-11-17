@@ -6070,7 +6070,7 @@ Operational amplifiers,  comparators, voltage regulators, ADCs, DACs, etc.&lt;p&
 <part name="GND31" library="SparkFun" deviceset="GND" device=""/>
 <part name="R24" library="OPL" deviceset="R*" device="-0603" value="51"/>
 <part name="R25" library="OPL" deviceset="R*" device="-0603" value="51"/>
-<part name="IC4" library="linear" deviceset="79*" device="T" technology="05"/>
+<part name="IC4" library="linear" deviceset="79*" device="T" technology="05" value="7905"/>
 <part name="GND38" library="SparkFun-Aesthetics" deviceset="GND" device=""/>
 <part name="SUPPLY1" library="supply2" deviceset="VEE" device=""/>
 <part name="C4" library="OPL" deviceset="C-POLAR*" device="-A" value="10uF"/>
@@ -7041,6 +7041,7 @@ Operational amplifiers,  comparators, voltage regulators, ADCs, DACs, etc.&lt;p&
 <wire x1="322.58" y1="72.39" x2="322.58" y2="77.47" width="0.1524" layer="91"/>
 <wire x1="314.96" y1="72.39" x2="322.58" y2="72.39" width="0.1524" layer="91"/>
 <wire x1="322.58" y1="72.39" x2="322.58" y2="71.12" width="0.1524" layer="91"/>
+<junction x="322.58" y="72.39"/>
 </segment>
 </net>
 <net name="SW2LED" class="0">

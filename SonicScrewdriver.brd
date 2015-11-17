@@ -1126,7 +1126,7 @@ design rules under a new name.</description>
 <element name="D4" library="diode" package="SOT23" value="BAS70-04" x="0.3" y="61.4" rot="R90"/>
 <element name="R24" library="OPL" package="R0603" value="51" x="3.4" y="22" rot="R90"/>
 <element name="R25" library="OPL" package="R0603" value="51" x="9.6" y="34.3" rot="R90"/>
-<element name="IC4" library="linear" package="TO220H" value="" x="-14.1" y="73.4"/>
+<element name="IC4" library="linear" package="TO220H" value="7905" x="-14.1" y="73.4"/>
 <element name="C4" library="OPL" package="AVX-A" value="10uF" x="-15.6" y="58"/>
 <element name="C14" library="OPL" package="AVX-A" value="10uF" x="-10.9" y="58.4" rot="R180"/>
 <element name="C16" library="OPL" package="C0603" value="100nF" x="-12.4" y="60.1" rot="R180"/>
