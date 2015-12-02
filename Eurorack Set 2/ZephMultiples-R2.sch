@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
+<grid distance="0.05" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="no" active="no"/>
 <layer number="2" name="Route2" color="1" fill="3" visible="no" active="no"/>
@@ -2390,6 +2390,7 @@ Standard schematic elements and footprints for 5mm, 3mm, 1206, and 0603 sized LE
 <sheets>
 <sheet>
 <plain>
+<text x="236.22" y="-88.9" size="1.778" layer="91">NOTE!!! INVERTING!!</text>
 </plain>
 <instances>
 <instance part="U$16" gate="G$1" x="321.31" y="-87.63"/>
@@ -2403,7 +2404,7 @@ Standard schematic elements and footprints for 5mm, 3mm, 1206, and 0603 sized LE
 <instance part="O2-3" gate="G$1" x="374.65" y="-54.61" rot="MR0"/>
 <instance part="U$15" gate="G$1" x="256.54" y="-69.85"/>
 <instance part="I2" gate="G$1" x="273.05" y="-7.62"/>
-<instance part="LED2" gate="G$1" x="224.79" y="-68.58" rot="R90"/>
+<instance part="LED2" gate="G$1" x="344.17" y="7.62" rot="R90"/>
 <instance part="GND2" gate="1" x="285.75" y="-5.08" rot="R90"/>
 <instance part="GND3" gate="1" x="134.62" y="15.24" rot="R90"/>
 <instance part="GND4" gate="1" x="214.63" y="10.16" rot="R270"/>
@@ -2431,7 +2432,7 @@ Standard schematic elements and footprints for 5mm, 3mm, 1206, and 0603 sized LE
 <instance part="R10" gate="R" x="198.12" y="-35.56"/>
 <instance part="R11" gate="R" x="214.63" y="-41.91"/>
 <instance part="R13" gate="R" x="287.02" y="-12.7"/>
-<instance part="LED3" gate="G$1" x="347.98" y="7.62" rot="R90"/>
+<instance part="LED3" gate="G$1" x="223.52" y="-68.58" rot="R90"/>
 <instance part="GND11" gate="1" x="359.41" y="-7.62" rot="R270"/>
 <instance part="GND16" gate="1" x="359.41" y="-29.21" rot="R270"/>
 <instance part="GND17" gate="1" x="358.14" y="-52.07" rot="R270"/>
@@ -2454,8 +2455,8 @@ Standard schematic elements and footprints for 5mm, 3mm, 1206, and 0603 sized LE
 <instance part="R23" gate="R" x="342.9" y="-53.34"/>
 <instance part="R24" gate="R" x="359.41" y="-59.69"/>
 <instance part="IC2" gate="P" x="349.25" y="-87.63"/>
-<instance part="GND7" gate="1" x="236.22" y="-68.58" rot="R90"/>
-<instance part="GND9" gate="1" x="361.95" y="7.62" rot="R90"/>
+<instance part="GND7" gate="1" x="355.6" y="7.62" rot="R90"/>
+<instance part="GND9" gate="1" x="237.49" y="-68.58" rot="R90"/>
 <instance part="C1" gate="C" x="353.06" y="-83.82" rot="R90"/>
 <instance part="C2" gate="C" x="353.06" y="-91.44" rot="R90"/>
 <instance part="GND22" gate="1" x="355.6" y="-87.63" rot="R90"/>
@@ -2567,12 +2568,12 @@ Standard schematic elements and footprints for 5mm, 3mm, 1206, and 0603 sized LE
 <segment>
 <pinref part="LED2" gate="G$1" pin="C"/>
 <pinref part="GND7" gate="1" pin="GND"/>
-<wire x1="229.87" y1="-68.58" x2="233.68" y2="-68.58" width="0.1524" layer="91"/>
+<wire x1="349.25" y1="7.62" x2="353.06" y2="7.62" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <pinref part="LED3" gate="G$1" pin="C"/>
 <pinref part="GND9" gate="1" pin="GND"/>
-<wire x1="353.06" y1="7.62" x2="359.41" y2="7.62" width="0.1524" layer="91"/>
+<wire x1="228.6" y1="-68.58" x2="234.95" y2="-68.58" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <pinref part="C1" gate="C" pin="1"/>
@@ -2929,18 +2930,18 @@ Standard schematic elements and footprints for 5mm, 3mm, 1206, and 0603 sized LE
 <junction x="332.74" y="7.62"/>
 </segment>
 </net>
-<net name="N$29" class="0">
+<net name="N$10" class="0">
 <segment>
 <pinref part="R14" gate="R" pin="2"/>
-<pinref part="LED2" gate="G$1" pin="A"/>
-<wire x1="222.25" y1="-68.58" x2="218.44" y2="-68.58" width="0.1524" layer="91"/>
+<pinref part="LED3" gate="G$1" pin="A"/>
+<wire x1="218.44" y1="-68.58" x2="220.98" y2="-68.58" width="0.1524" layer="91"/>
 </segment>
 </net>
-<net name="N$30" class="0">
+<net name="N$23" class="0">
 <segment>
 <pinref part="R26" gate="R" pin="2"/>
-<pinref part="LED3" gate="G$1" pin="A"/>
-<wire x1="345.44" y1="7.62" x2="340.36" y2="7.62" width="0.1524" layer="91"/>
+<pinref part="LED2" gate="G$1" pin="A"/>
+<wire x1="340.36" y1="7.62" x2="341.63" y2="7.62" width="0.1524" layer="91"/>
 </segment>
 </net>
 </nets>
