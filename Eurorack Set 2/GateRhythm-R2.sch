@@ -983,7 +983,7 @@ Source: http://www.st.com/stonline/products/literature/ds/7194/ld1117axx.pdf</de
 <pad name="4" x="-2.54" y="-2.54" drill="1"/>
 <pad name="LEDPOS" x="0" y="2.7" drill="1"/>
 <pad name="LEDNEG" x="0" y="-2.7" drill="1"/>
-<hole x="-2.54" y="0" drill="1"/>
+<hole x="2.54" y="0" drill="1"/>
 <circle x="0" y="0" radius="2.8" width="0.127" layer="21"/>
 <circle x="0" y="0" radius="2.1" width="0.127" layer="21"/>
 <wire x1="-3.1" y1="3.1" x2="3.1" y2="3.1" width="0.127" layer="51"/>
