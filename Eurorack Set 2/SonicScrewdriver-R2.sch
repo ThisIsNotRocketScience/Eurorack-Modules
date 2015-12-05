@@ -6090,6 +6090,8 @@ Operational amplifiers,  comparators, voltage regulators, ADCs, DACs, etc.&lt;p&
 <part name="GND43" library="SparkFun-Aesthetics" deviceset="GND" device=""/>
 <part name="GND44" library="SparkFun-Aesthetics" deviceset="GND" device=""/>
 <part name="GND45" library="SparkFun-Aesthetics" deviceset="GND" device=""/>
+<part name="R10" library="OPL" deviceset="R*" device="-0603" value="100"/>
+<part name="R11" library="OPL" deviceset="R*" device="-0603" value="100"/>
 </parts>
 <sheets>
 <sheet>
@@ -6227,6 +6229,8 @@ Operational amplifiers,  comparators, voltage regulators, ADCs, DACs, etc.&lt;p&
 <instance part="GND43" gate="1" x="87.63" y="-16.51" rot="R180"/>
 <instance part="GND44" gate="1" x="113.03" y="-19.05" rot="R180"/>
 <instance part="GND45" gate="1" x="127" y="-16.51" rot="R180"/>
+<instance part="R10" gate="R" x="195.58" y="-71.12" rot="R180"/>
+<instance part="R11" gate="R" x="190.5" y="-119.38" rot="R180"/>
 </instances>
 <busses>
 </busses>
@@ -6620,9 +6624,8 @@ Operational amplifiers,  comparators, voltage regulators, ADCs, DACs, etc.&lt;p&
 <pinref part="R2" gate="R" pin="1"/>
 <pinref part="IC2" gate="C" pin="OUT"/>
 <pinref part="C1" gate="C" pin="2"/>
-<label x="210.82" y="-116.84" size="1.778" layer="95" rot="R180"/>
-<pinref part="D4" gate="G$1" pin="C1A2"/>
-<wire x1="172.72" y1="-119.38" x2="212.09" y2="-119.38" width="0.1524" layer="91"/>
+<wire x1="172.72" y1="-119.38" x2="186.69" y2="-119.38" width="0.1524" layer="91"/>
+<pinref part="R11" gate="R" pin="2"/>
 </segment>
 <segment>
 <pinref part="U1" gate="A" pin="PTA9/I2C1_SDA"/>
@@ -6995,9 +6998,8 @@ Operational amplifiers,  comparators, voltage regulators, ADCs, DACs, etc.&lt;p&
 <pinref part="R12" gate="R" pin="1"/>
 <pinref part="C15" gate="C" pin="2"/>
 <pinref part="IC2" gate="A" pin="OUT"/>
-<label x="213.36" y="-68.58" size="1.778" layer="95" rot="R180"/>
-<pinref part="D3" gate="G$1" pin="C1A2"/>
-<wire x1="175.26" y1="-71.12" x2="214.63" y2="-71.12" width="0.1524" layer="91"/>
+<wire x1="175.26" y1="-71.12" x2="191.77" y2="-71.12" width="0.1524" layer="91"/>
+<pinref part="R10" gate="R" pin="2"/>
 </segment>
 <segment>
 <pinref part="U1" gate="A" pin="PTA8/I2C1_SCL"/>
@@ -7136,6 +7138,22 @@ Operational amplifiers,  comparators, voltage regulators, ADCs, DACs, etc.&lt;p&
 <pinref part="R6" gate="R" pin="2"/>
 <wire x1="200.66" y1="-182.88" x2="200.66" y2="-194.31" width="0.1524" layer="91"/>
 <label x="199.39" y="-194.31" size="1.778" layer="95" rot="R90"/>
+</segment>
+</net>
+<net name="N$22" class="0">
+<segment>
+<pinref part="D3" gate="G$1" pin="C1A2"/>
+<pinref part="R10" gate="R" pin="1"/>
+<wire x1="199.39" y1="-71.12" x2="214.63" y2="-71.12" width="0.1524" layer="91"/>
+<label x="213.36" y="-68.58" size="1.778" layer="95" rot="R180"/>
+</segment>
+</net>
+<net name="N$23" class="0">
+<segment>
+<pinref part="D4" gate="G$1" pin="C1A2"/>
+<pinref part="R11" gate="R" pin="1"/>
+<wire x1="194.31" y1="-119.38" x2="212.09" y2="-119.38" width="0.1524" layer="91"/>
+<label x="210.82" y="-116.84" size="1.778" layer="95" rot="R180"/>
 </segment>
 </net>
 </nets>
