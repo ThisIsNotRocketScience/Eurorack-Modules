@@ -478,7 +478,7 @@ PCB width:
 <pad name="P$5" x="-4.4" y="0" drill="2.2" diameter="3.175" rot="R90"/>
 <text x="0" y="-1.905" size="1.27" layer="27" align="top-center">&gt;VALUE</text>
 <circle x="0" y="0" radius="6" width="1" layer="21"/>
-<circle x="0" y="0" radius="4.5" width="0.002540625" layer="255"/>
+<circle x="0" y="0" radius="4.75" width="0.002540625" layer="255"/>
 <text x="0" y="7.62" size="1.778" layer="255" align="bottom-center">&gt;VALUE</text>
 </package>
 <package name="ALPS_POT">
