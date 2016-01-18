@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="25" unitdist="mil" unit="mil" style="lines" multiple="1" display="yes" altdistance="0.025" altunitdist="inch" altunit="inch"/>
+<grid distance="50" unitdist="mil" unit="mil" style="lines" multiple="1" display="yes" altdistance="0.025" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="2" name="Route2" color="1" fill="3" visible="no" active="no"/>
@@ -521,6 +521,25 @@ Based on the following sources:
 </package>
 </packages>
 </library>
+<library name="adafruit">
+<packages>
+<package name="FIDUCIAL_1MM">
+<smd name="1" x="0" y="0" dx="1" dy="1" layer="1" roundness="100" stop="no" cream="no"/>
+<polygon width="0.127" layer="29">
+<vertex x="-1" y="0" curve="90"/>
+<vertex x="0" y="-1" curve="90"/>
+<vertex x="1" y="0" curve="90"/>
+<vertex x="0" y="1" curve="90"/>
+</polygon>
+<polygon width="0.127" layer="41">
+<vertex x="-1" y="0" curve="90"/>
+<vertex x="0" y="-1" curve="90"/>
+<vertex x="1" y="0" curve="90"/>
+<vertex x="0" y="1" curve="90"/>
+</polygon>
+</package>
+</packages>
+</library>
 </libraries>
 <attributes>
 </attributes>
@@ -758,6 +777,10 @@ design rules under a new name.</description>
 <element name="JP1" library="SparkFun-Connectors" package="1X02" value="M02PTH" x="37.465" y="36.195" rot="R270"/>
 <element name="D1" library="diode" package="SOT23" value="BAS70-04" x="36.322" y="26.543" rot="MR90"/>
 <element name="R16" library="OPL" package="R0603" value="300" x="37.465" y="30.48" rot="MR270"/>
+<element name="U$15" library="adafruit" package="FIDUCIAL_1MM" value="FIDUCIAL" x="2.54" y="104.14"/>
+<element name="U$16" library="adafruit" package="FIDUCIAL_1MM" value="FIDUCIAL" x="36.83" y="104.14"/>
+<element name="U$17" library="adafruit" package="FIDUCIAL_1MM" value="FIDUCIAL" x="2.54" y="3.81"/>
+<element name="U$18" library="adafruit" package="FIDUCIAL_1MM" value="FIDUCIAL" x="37.465" y="3.81"/>
 </elements>
 <signals>
 <signal name="GND">

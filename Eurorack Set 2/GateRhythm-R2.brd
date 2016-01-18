@@ -849,6 +849,25 @@ Based on the following sources:
 </package>
 </packages>
 </library>
+<library name="adafruit">
+<packages>
+<package name="FIDUCIAL_1MM">
+<smd name="1" x="0" y="0" dx="1" dy="1" layer="1" roundness="100" stop="no" cream="no"/>
+<polygon width="0.127" layer="29">
+<vertex x="-1" y="0" curve="90"/>
+<vertex x="0" y="-1" curve="90"/>
+<vertex x="1" y="0" curve="90"/>
+<vertex x="0" y="1" curve="90"/>
+</polygon>
+<polygon width="0.127" layer="41">
+<vertex x="-1" y="0" curve="90"/>
+<vertex x="0" y="-1" curve="90"/>
+<vertex x="1" y="0" curve="90"/>
+<vertex x="0" y="1" curve="90"/>
+</polygon>
+</package>
+</packages>
+</library>
 </libraries>
 <attributes>
 </attributes>
@@ -1102,6 +1121,9 @@ design rules under a new name.</description>
 <element name="R9" library="OPL" package="R1206-8" value="10k" x="17.145" y="56.515" rot="R270"/>
 <element name="C1" library="OPL" package="C0603" value="100Nf" x="16.51" y="71.12" rot="R180"/>
 <element name="C2" library="OPL" package="C0603" value="100Nf" x="28.575" y="31.75" rot="R270"/>
+<element name="U$3" library="adafruit" package="FIDUCIAL_1MM" value="FIDUCIAL" x="15.24" y="5.08"/>
+<element name="U$4" library="adafruit" package="FIDUCIAL_1MM" value="FIDUCIAL" x="2.54" y="104.14"/>
+<element name="U$5" library="adafruit" package="FIDUCIAL_1MM" value="FIDUCIAL" x="27.94" y="104.14"/>
 </elements>
 <signals>
 <signal name="GND">

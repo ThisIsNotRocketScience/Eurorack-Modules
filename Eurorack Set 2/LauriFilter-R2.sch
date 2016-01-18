@@ -2239,6 +2239,46 @@ General-purpose diode for high-speed switching</description>
 </deviceset>
 </devicesets>
 </library>
+<library name="adafruit">
+<packages>
+<package name="FIDUCIAL_1MM">
+<smd name="1" x="0" y="0" dx="1" dy="1" layer="1" roundness="100" stop="no" cream="no"/>
+<polygon width="0.127" layer="29">
+<vertex x="-1" y="0" curve="90"/>
+<vertex x="0" y="-1" curve="90"/>
+<vertex x="1" y="0" curve="90"/>
+<vertex x="0" y="1" curve="90"/>
+</polygon>
+<polygon width="0.127" layer="41">
+<vertex x="-1" y="0" curve="90"/>
+<vertex x="0" y="-1" curve="90"/>
+<vertex x="1" y="0" curve="90"/>
+<vertex x="0" y="1" curve="90"/>
+</polygon>
+</package>
+</packages>
+<symbols>
+<symbol name="DOT">
+<circle x="0" y="0" radius="2.54" width="0.254" layer="94"/>
+</symbol>
+</symbols>
+<devicesets>
+<deviceset name="FIDUCIAL">
+<description>For use by pick and place machines to calibrate the vision/machine, 1mm
+&lt;p&gt;By microbuilder.eu&lt;/p&gt;</description>
+<gates>
+<gate name="G$1" symbol="DOT" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="FIDUCIAL_1MM">
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+</devicesets>
+</library>
 </libraries>
 <attributes>
 </attributes>
@@ -2320,6 +2360,10 @@ General-purpose diode for high-speed switching</description>
 <part name="SUPPLY6" library="SparkFun-Aesthetics" deviceset="3.3V" device=""/>
 <part name="R16" library="OPL" deviceset="R*" device="-0603" value="300"/>
 <part name="GND23" library="SparkFun-Aesthetics" deviceset="GND" device=""/>
+<part name="U$15" library="adafruit" deviceset="FIDUCIAL" device=""/>
+<part name="U$16" library="adafruit" deviceset="FIDUCIAL" device=""/>
+<part name="U$17" library="adafruit" deviceset="FIDUCIAL" device=""/>
+<part name="U$18" library="adafruit" deviceset="FIDUCIAL" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -2398,6 +2442,10 @@ General-purpose diode for high-speed switching</description>
 <instance part="SUPPLY6" gate="G$1" x="101.6" y="-10.16" rot="R180"/>
 <instance part="R16" gate="R" x="115.57" y="-2.54" rot="R180"/>
 <instance part="GND23" gate="1" x="-7.62" y="86.36" rot="MR0"/>
+<instance part="U$15" gate="G$1" x="-81.28" y="132.08"/>
+<instance part="U$16" gate="G$1" x="-81.28" y="119.38"/>
+<instance part="U$17" gate="G$1" x="-73.66" y="132.08"/>
+<instance part="U$18" gate="G$1" x="-73.66" y="119.38"/>
 </instances>
 <busses>
 </busses>
