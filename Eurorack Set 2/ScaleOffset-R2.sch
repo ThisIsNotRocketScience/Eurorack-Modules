@@ -149,26 +149,26 @@
 <library name="EurorackModularParts">
 <packages>
 <package name="3.5MM-JACK-SWITCH-13MM-OUTPUT">
-<smd name="TIP@1" x="0" y="4.9" dx="4.5" dy="2.5" layer="1" roundness="50"/>
-<smd name="SWITCH@1" x="4.2" y="0" dx="4.5" dy="2.5" layer="1" roundness="50" rot="R90"/>
-<smd name="SECOND@1" x="0" y="-3.3" dx="4.5" dy="2.5" layer="1" roundness="50" rot="R180"/>
-<smd name="RING@1" x="-4.2" y="0" dx="4.5" dy="2.5" layer="1" roundness="50" rot="R270"/>
-<wire x1="-4.7" y1="-1.5" x2="-3.7" y2="-1.5" width="0" layer="46"/>
-<wire x1="-3.7" y1="-1.5" x2="-3.7" y2="1.5" width="0" layer="46"/>
-<wire x1="-3.7" y1="1.5" x2="-4.7" y2="1.5" width="0" layer="46"/>
-<wire x1="-4.7" y1="1.5" x2="-4.7" y2="-1.5" width="0" layer="46"/>
-<wire x1="3.7" y1="-1.5" x2="4.7" y2="-1.5" width="0" layer="46"/>
-<wire x1="4.7" y1="-1.5" x2="4.7" y2="1.5" width="0" layer="46"/>
-<wire x1="4.7" y1="1.5" x2="3.7" y2="1.5" width="0" layer="46"/>
-<wire x1="3.7" y1="1.5" x2="3.7" y2="-1.5" width="0" layer="46"/>
-<wire x1="1.5" y1="4.4" x2="1.5" y2="5.4" width="0" layer="46"/>
-<wire x1="1.5" y1="5.4" x2="-1.5" y2="5.4" width="0" layer="46"/>
-<wire x1="-1.5" y1="5.4" x2="-1.5" y2="4.4" width="0" layer="46"/>
-<wire x1="-1.5" y1="4.4" x2="1.5" y2="4.4" width="0" layer="46"/>
-<wire x1="1.5" y1="-3.8" x2="1.5" y2="-2.8" width="0" layer="46"/>
-<wire x1="1.5" y1="-2.8" x2="-1.5" y2="-2.8" width="0" layer="46"/>
-<wire x1="-1.5" y1="-2.8" x2="-1.5" y2="-3.8" width="0" layer="46"/>
-<wire x1="-1.5" y1="-3.8" x2="1.5" y2="-3.8" width="0" layer="46"/>
+<smd name="TIP@1" x="0" y="4.5" dx="4" dy="2" layer="1" roundness="50"/>
+<smd name="SWITCH@1" x="3.7" y="0" dx="4" dy="2" layer="1" roundness="50" rot="R90"/>
+<smd name="SECOND@1" x="0" y="-3.5" dx="4" dy="2" layer="1" roundness="50" rot="R180"/>
+<smd name="RING@1" x="-3.7" y="0" dx="4" dy="2" layer="1" roundness="50" rot="R270"/>
+<wire x1="-4.2" y1="-1.5" x2="-3.2" y2="-1.5" width="0" layer="46"/>
+<wire x1="-3.2" y1="-1.5" x2="-3.2" y2="1.5" width="0" layer="46"/>
+<wire x1="-3.2" y1="1.5" x2="-4.2" y2="1.5" width="0" layer="46"/>
+<wire x1="-4.2" y1="1.5" x2="-4.2" y2="-1.5" width="0" layer="46"/>
+<wire x1="3.2" y1="-1.5" x2="4.2" y2="-1.5" width="0" layer="46"/>
+<wire x1="4.2" y1="-1.5" x2="4.2" y2="1.5" width="0" layer="46"/>
+<wire x1="4.2" y1="1.5" x2="3.2" y2="1.5" width="0" layer="46"/>
+<wire x1="3.2" y1="1.5" x2="3.2" y2="-1.5" width="0" layer="46"/>
+<wire x1="1.5" y1="4" x2="1.5" y2="5" width="0" layer="46"/>
+<wire x1="1.5" y1="5" x2="-1.5" y2="5" width="0" layer="46"/>
+<wire x1="-1.5" y1="5" x2="-1.5" y2="4" width="0" layer="46"/>
+<wire x1="-1.5" y1="4" x2="1.5" y2="4" width="0" layer="46"/>
+<wire x1="1.5" y1="-4" x2="1.5" y2="-3" width="0" layer="46"/>
+<wire x1="1.5" y1="-3" x2="-1.5" y2="-3" width="0" layer="46"/>
+<wire x1="-1.5" y1="-3" x2="-1.5" y2="-4" width="0" layer="46"/>
+<wire x1="-1.5" y1="-4" x2="1.5" y2="-4" width="0" layer="46"/>
 <circle x="0" y="0" radius="5.08" width="0.1" layer="51"/>
 <circle x="0" y="0" radius="6.35" width="0.1" layer="51"/>
 <circle x="0" y="0" radius="7.62" width="0.1" layer="51"/>
@@ -179,34 +179,34 @@
 <circle x="0" y="0" radius="2.9" width="0.1" layer="21"/>
 <circle x="0" y="0" radius="2" width="0.1" layer="21"/>
 <circle x="0" y="0" radius="1" width="0.1" layer="21"/>
-<smd name="TIP@2" x="0" y="4.9" dx="4.5" dy="2.5" layer="16" roundness="50" rot="R180"/>
-<smd name="SWITCH@2" x="4.2" y="0" dx="4.5" dy="2.5" layer="16" roundness="50" rot="R90"/>
-<smd name="SECOND@2" x="0" y="-3.3" dx="4.5" dy="2.5" layer="16" roundness="50"/>
-<smd name="RING@2" x="-4.2" y="0" dx="4.5" dy="2.5" layer="16" roundness="50" rot="R270"/>
+<smd name="TIP@2" x="0" y="4.5" dx="4" dy="2" layer="16" roundness="50" rot="R180"/>
+<smd name="SWITCH@2" x="3.7" y="0" dx="4" dy="2" layer="16" roundness="50" rot="R90"/>
+<smd name="SECOND@2" x="0" y="-3.5" dx="4" dy="2" layer="16" roundness="50"/>
+<smd name="RING@2" x="-3.7" y="0" dx="4" dy="2" layer="16" roundness="50" rot="R270"/>
 <circle x="0" y="0" radius="4" width="0.0254" layer="255"/>
 <text x="0" y="6.35" size="1.778" layer="255" align="bottom-center">&gt;VALUE</text>
 </package>
 <package name="3.5MM-JACK-SWITCH-13MM-INPUT">
-<smd name="TIP@1" x="0" y="4.9" dx="4.5" dy="2.5" layer="1" roundness="50"/>
-<smd name="SWITCH@1" x="4.2" y="0" dx="4.5" dy="2.5" layer="1" roundness="50" rot="R90"/>
-<smd name="SECOND@1" x="0" y="-3.3" dx="4.5" dy="2.5" layer="1" roundness="50" rot="R180"/>
-<smd name="RING@1" x="-4.2" y="0" dx="4.5" dy="2.5" layer="1" roundness="50" rot="R270"/>
-<wire x1="-4.7" y1="-1.5" x2="-3.7" y2="-1.5" width="0" layer="46"/>
-<wire x1="-3.7" y1="-1.5" x2="-3.7" y2="1.5" width="0" layer="46"/>
-<wire x1="-3.7" y1="1.5" x2="-4.7" y2="1.5" width="0" layer="46"/>
-<wire x1="-4.7" y1="1.5" x2="-4.7" y2="-1.5" width="0" layer="46"/>
-<wire x1="3.7" y1="-1.5" x2="4.7" y2="-1.5" width="0" layer="46"/>
-<wire x1="4.7" y1="-1.5" x2="4.7" y2="1.5" width="0" layer="46"/>
-<wire x1="4.7" y1="1.5" x2="3.7" y2="1.5" width="0" layer="46"/>
-<wire x1="3.7" y1="1.5" x2="3.7" y2="-1.5" width="0" layer="46"/>
-<wire x1="1.5" y1="4.4" x2="1.5" y2="5.4" width="0" layer="46"/>
-<wire x1="1.5" y1="5.4" x2="-1.5" y2="5.4" width="0" layer="46"/>
-<wire x1="-1.5" y1="5.4" x2="-1.5" y2="4.4" width="0" layer="46"/>
-<wire x1="-1.5" y1="4.4" x2="1.5" y2="4.4" width="0" layer="46"/>
-<wire x1="1.5" y1="-3.8" x2="1.5" y2="-2.8" width="0" layer="46"/>
-<wire x1="1.5" y1="-2.8" x2="-1.5" y2="-2.8" width="0" layer="46"/>
-<wire x1="-1.5" y1="-2.8" x2="-1.5" y2="-3.8" width="0" layer="46"/>
-<wire x1="-1.5" y1="-3.8" x2="1.5" y2="-3.8" width="0" layer="46"/>
+<smd name="TIP@1" x="0" y="4.5" dx="4" dy="2" layer="1" roundness="50"/>
+<smd name="SWITCH@1" x="3.7" y="0" dx="4" dy="2" layer="1" roundness="50" rot="R90"/>
+<smd name="SECOND@1" x="0" y="-3.5" dx="4" dy="2" layer="1" roundness="50" rot="R180"/>
+<smd name="RING@1" x="-3.7" y="0" dx="4" dy="2" layer="1" roundness="50" rot="R270"/>
+<wire x1="-4.2" y1="-1.5" x2="-3.2" y2="-1.5" width="0" layer="46"/>
+<wire x1="-3.2" y1="-1.5" x2="-3.2" y2="1.5" width="0" layer="46"/>
+<wire x1="-3.2" y1="1.5" x2="-4.2" y2="1.5" width="0" layer="46"/>
+<wire x1="-4.2" y1="1.5" x2="-4.2" y2="-1.5" width="0" layer="46"/>
+<wire x1="3.2" y1="-1.5" x2="4.2" y2="-1.5" width="0" layer="46"/>
+<wire x1="4.2" y1="-1.5" x2="4.2" y2="1.5" width="0" layer="46"/>
+<wire x1="4.2" y1="1.5" x2="3.2" y2="1.5" width="0" layer="46"/>
+<wire x1="3.2" y1="1.5" x2="3.2" y2="-1.5" width="0" layer="46"/>
+<wire x1="1.5" y1="4" x2="1.5" y2="5" width="0" layer="46"/>
+<wire x1="1.5" y1="5" x2="-1.5" y2="5" width="0" layer="46"/>
+<wire x1="-1.5" y1="5" x2="-1.5" y2="4" width="0" layer="46"/>
+<wire x1="-1.5" y1="4" x2="1.5" y2="4" width="0" layer="46"/>
+<wire x1="1.5" y1="-4" x2="1.5" y2="-3" width="0" layer="46"/>
+<wire x1="1.5" y1="-3" x2="-1.5" y2="-3" width="0" layer="46"/>
+<wire x1="-1.5" y1="-3" x2="-1.5" y2="-4" width="0" layer="46"/>
+<wire x1="-1.5" y1="-4" x2="1.5" y2="-4" width="0" layer="46"/>
 <circle x="0" y="0" radius="5.08" width="0.127" layer="51"/>
 <circle x="0" y="0" radius="6.35" width="0.127" layer="51"/>
 <circle x="0" y="0" radius="7.62" width="0.127" layer="51"/>
@@ -216,10 +216,10 @@
 <circle x="0" y="0" radius="6" width="0.1" layer="21"/>
 <circle x="0" y="0" radius="3" width="1.2" layer="21"/>
 <circle x="0" y="0" radius="1.5" width="2" layer="21"/>
-<smd name="TIP@2" x="0" y="4.9" dx="4.5" dy="2.5" layer="16" roundness="50" rot="R180"/>
-<smd name="SWITCH@2" x="4.2" y="0" dx="4.5" dy="2.5" layer="16" roundness="50" rot="R90"/>
-<smd name="SECOND@2" x="0" y="-3.3" dx="4.5" dy="2.5" layer="16" roundness="50"/>
-<smd name="RING@2" x="-4.2" y="0" dx="4.5" dy="2.5" layer="16" roundness="50" rot="R270"/>
+<smd name="TIP@2" x="0" y="4.5" dx="4" dy="2" layer="16" roundness="50" rot="R180"/>
+<smd name="SWITCH@2" x="3.7" y="0" dx="4" dy="2" layer="16" roundness="50" rot="R90"/>
+<smd name="SECOND@2" x="0" y="-3.5" dx="4" dy="2" layer="16" roundness="50"/>
+<smd name="RING@2" x="-3.7" y="0" dx="4" dy="2" layer="16" roundness="50" rot="R270"/>
 <circle x="0" y="0" radius="4" width="0.0254" layer="255"/>
 <text x="0" y="6.35" size="1.778" layer="255" align="bottom-center">&gt;VALUE</text>
 </package>
@@ -359,7 +359,7 @@
 <pad name="P$5" x="-4.4" y="0" drill="2.2" diameter="3.175" rot="R90"/>
 <text x="0" y="-1.905" size="1.27" layer="27" align="top-center">&gt;VALUE</text>
 <circle x="0" y="0" radius="6" width="1" layer="21"/>
-<circle x="0" y="0" radius="4.5" width="0.002540625" layer="255"/>
+<circle x="0" y="0" radius="4.75" width="0.002540625" layer="255"/>
 <text x="0" y="7.62" size="1.778" layer="255" align="bottom-center">&gt;VALUE</text>
 </package>
 <package name="ALPHAPOT-24MM">
@@ -432,6 +432,30 @@
 <rectangle x1="3.565" y1="2" x2="4.055" y2="3.1" layer="51"/>
 <rectangle x1="2.295" y1="2" x2="2.785" y2="3.1" layer="51"/>
 <rectangle x1="1.025" y1="2" x2="1.515" y2="3.1" layer="51"/>
+<wire x1="-4.445" y1="4.445" x2="-4.445" y2="1.905" width="0.127" layer="21"/>
+<wire x1="-4.445" y1="1.905" x2="-4.445" y2="0" width="0.127" layer="21"/>
+<wire x1="-4.445" y1="0" x2="-4.445" y2="-1.27" width="0.127" layer="21"/>
+<wire x1="-4.445" y1="-1.905" x2="-4.445" y2="-4.445" width="0.127" layer="21"/>
+<wire x1="-4.445" y1="-4.445" x2="4.445" y2="-4.445" width="0.127" layer="21"/>
+<wire x1="4.445" y1="-4.445" x2="4.445" y2="-1.905" width="0.127" layer="21"/>
+<wire x1="4.445" y1="-1.905" x2="4.445" y2="-1.27" width="0.127" layer="21"/>
+<wire x1="4.445" y1="-1.27" x2="4.445" y2="1.905" width="0.127" layer="21"/>
+<wire x1="4.445" y1="1.905" x2="4.445" y2="4.445" width="0.127" layer="21"/>
+<wire x1="4.445" y1="4.445" x2="-4.445" y2="4.445" width="0.127" layer="21"/>
+<wire x1="-4.445" y1="0" x2="-3.175" y2="0" width="0.127" layer="21"/>
+<wire x1="-3.175" y1="0" x2="-3.175" y2="-5.715" width="0.127" layer="21"/>
+<wire x1="-3.175" y1="-5.715" x2="-4.445" y2="-5.715" width="0.127" layer="21"/>
+<wire x1="-4.445" y1="-5.715" x2="-4.445" y2="-4.445" width="0.127" layer="21"/>
+<polygon width="0.127" layer="21">
+<vertex x="-4.445" y="0"/>
+<vertex x="-3.175" y="0"/>
+<vertex x="-3.175" y="-5.715"/>
+<vertex x="-4.445" y="-5.715"/>
+</polygon>
+<wire x1="-4.445" y1="1.905" x2="4.445" y2="1.905" width="0.127" layer="21"/>
+<wire x1="4.445" y1="-1.905" x2="-4.445" y2="-1.905" width="0.127" layer="21"/>
+<wire x1="-4.445" y1="-1.905" x2="-4.445" y2="-1.27" width="0.127" layer="21"/>
+<wire x1="-4.445" y1="-1.27" x2="4.445" y2="-1.27" width="0.127" layer="21"/>
 </package>
 <package name="EURORACK6HPPCB">
 <wire x1="0.5" y1="105.5" x2="0.5" y2="1" width="0.127" layer="20"/>
@@ -544,7 +568,7 @@ PCB width:
 <wire x1="19.98" y1="-11" x2="19.98" y2="117.5" width="0" layer="255"/>
 <wire x1="19.98" y1="117.5" x2="0" y2="117.5" width="0" layer="255"/>
 <wire x1="0" y1="117.5" x2="0" y2="-11" width="0" layer="255"/>
-<text x="0.5" y="115" size="1.27" layer="51">4HP front template</text>
+<text x="-0.135" y="118.175" size="1.27" layer="51">4HP Eurorack PCB template with frontpanel in Panel layer</text>
 <wire x1="10.075" y1="130" x2="10.075" y2="-20" width="0" layer="51"/>
 <circle x="7.5" y="-8" radius="1.5" width="0.0254" layer="255"/>
 <circle x="7.5" y="114.5" radius="1.5" width="0.0254" layer="255"/>

@@ -335,7 +335,7 @@ PCB width:
 <pad name="P$5" x="-4.4" y="0" drill="2.2" diameter="3.175" rot="R90"/>
 <text x="0" y="-1.905" size="1.27" layer="27" align="top-center">&gt;VALUE</text>
 <circle x="0" y="0" radius="6" width="1" layer="21"/>
-<circle x="0" y="0" radius="4.5" width="0.002540625" layer="255"/>
+<circle x="0" y="0" radius="4.75" width="0.002540625" layer="255"/>
 <text x="0" y="7.62" size="1.778" layer="255" align="bottom-center">&gt;VALUE</text>
 </package>
 <package name="ALPHAPOT-24MM">
@@ -344,27 +344,64 @@ PCB width:
 <pad name="P$2" x="0" y="-18.8" drill="2.1"/>
 <pad name="P$3" x="7.94521875" y="-17.0386" drill="2.1"/>
 </package>
+<package name="3.5MM-JACK-SWITCH-13MM-INPUT">
+<smd name="TIP@1" x="0" y="4.5" dx="4" dy="2" layer="1" roundness="50"/>
+<smd name="SWITCH@1" x="3.7" y="0" dx="4" dy="2" layer="1" roundness="50" rot="R90"/>
+<smd name="SECOND@1" x="0" y="-3.5" dx="4" dy="2" layer="1" roundness="50" rot="R180"/>
+<smd name="RING@1" x="-3.7" y="0" dx="4" dy="2" layer="1" roundness="50" rot="R270"/>
+<wire x1="-4.2" y1="-1.5" x2="-3.2" y2="-1.5" width="0" layer="46"/>
+<wire x1="-3.2" y1="-1.5" x2="-3.2" y2="1.5" width="0" layer="46"/>
+<wire x1="-3.2" y1="1.5" x2="-4.2" y2="1.5" width="0" layer="46"/>
+<wire x1="-4.2" y1="1.5" x2="-4.2" y2="-1.5" width="0" layer="46"/>
+<wire x1="3.2" y1="-1.5" x2="4.2" y2="-1.5" width="0" layer="46"/>
+<wire x1="4.2" y1="-1.5" x2="4.2" y2="1.5" width="0" layer="46"/>
+<wire x1="4.2" y1="1.5" x2="3.2" y2="1.5" width="0" layer="46"/>
+<wire x1="3.2" y1="1.5" x2="3.2" y2="-1.5" width="0" layer="46"/>
+<wire x1="1.5" y1="4" x2="1.5" y2="5" width="0" layer="46"/>
+<wire x1="1.5" y1="5" x2="-1.5" y2="5" width="0" layer="46"/>
+<wire x1="-1.5" y1="5" x2="-1.5" y2="4" width="0" layer="46"/>
+<wire x1="-1.5" y1="4" x2="1.5" y2="4" width="0" layer="46"/>
+<wire x1="1.5" y1="-4" x2="1.5" y2="-3" width="0" layer="46"/>
+<wire x1="1.5" y1="-3" x2="-1.5" y2="-3" width="0" layer="46"/>
+<wire x1="-1.5" y1="-3" x2="-1.5" y2="-4" width="0" layer="46"/>
+<wire x1="-1.5" y1="-4" x2="1.5" y2="-4" width="0" layer="46"/>
+<circle x="0" y="0" radius="5.08" width="0.127" layer="51"/>
+<circle x="0" y="0" radius="6.35" width="0.127" layer="51"/>
+<circle x="0" y="0" radius="7.62" width="0.127" layer="51"/>
+<circle x="0" y="0" radius="4.2" width="0.6" layer="21"/>
+<circle x="0" y="0" radius="5" width="0.4" layer="21"/>
+<circle x="0" y="0" radius="5.6" width="0.2" layer="21"/>
+<circle x="0" y="0" radius="6" width="0.1" layer="21"/>
+<circle x="0" y="0" radius="3" width="1.2" layer="21"/>
+<circle x="0" y="0" radius="1.5" width="2" layer="21"/>
+<smd name="TIP@2" x="0" y="4.5" dx="4" dy="2" layer="16" roundness="50" rot="R180"/>
+<smd name="SWITCH@2" x="3.7" y="0" dx="4" dy="2" layer="16" roundness="50" rot="R90"/>
+<smd name="SECOND@2" x="0" y="-3.5" dx="4" dy="2" layer="16" roundness="50"/>
+<smd name="RING@2" x="-3.7" y="0" dx="4" dy="2" layer="16" roundness="50" rot="R270"/>
+<circle x="0" y="0" radius="4" width="0.0254" layer="255"/>
+<text x="0" y="6.35" size="1.778" layer="255" align="bottom-center">&gt;VALUE</text>
+</package>
 <package name="3.5MM-JACK-SWITCH-13MM-OUTPUT">
-<smd name="TIP@1" x="0" y="4.9" dx="4.5" dy="2.5" layer="1" roundness="50"/>
-<smd name="SWITCH@1" x="4.2" y="0" dx="4.5" dy="2.5" layer="1" roundness="50" rot="R90"/>
-<smd name="SECOND@1" x="0" y="-3.3" dx="4.5" dy="2.5" layer="1" roundness="50" rot="R180"/>
-<smd name="RING@1" x="-4.2" y="0" dx="4.5" dy="2.5" layer="1" roundness="50" rot="R270"/>
-<wire x1="-4.7" y1="-1.5" x2="-3.7" y2="-1.5" width="0" layer="46"/>
-<wire x1="-3.7" y1="-1.5" x2="-3.7" y2="1.5" width="0" layer="46"/>
-<wire x1="-3.7" y1="1.5" x2="-4.7" y2="1.5" width="0" layer="46"/>
-<wire x1="-4.7" y1="1.5" x2="-4.7" y2="-1.5" width="0" layer="46"/>
-<wire x1="3.7" y1="-1.5" x2="4.7" y2="-1.5" width="0" layer="46"/>
-<wire x1="4.7" y1="-1.5" x2="4.7" y2="1.5" width="0" layer="46"/>
-<wire x1="4.7" y1="1.5" x2="3.7" y2="1.5" width="0" layer="46"/>
-<wire x1="3.7" y1="1.5" x2="3.7" y2="-1.5" width="0" layer="46"/>
-<wire x1="1.5" y1="4.4" x2="1.5" y2="5.4" width="0" layer="46"/>
-<wire x1="1.5" y1="5.4" x2="-1.5" y2="5.4" width="0" layer="46"/>
-<wire x1="-1.5" y1="5.4" x2="-1.5" y2="4.4" width="0" layer="46"/>
-<wire x1="-1.5" y1="4.4" x2="1.5" y2="4.4" width="0" layer="46"/>
-<wire x1="1.5" y1="-3.8" x2="1.5" y2="-2.8" width="0" layer="46"/>
-<wire x1="1.5" y1="-2.8" x2="-1.5" y2="-2.8" width="0" layer="46"/>
-<wire x1="-1.5" y1="-2.8" x2="-1.5" y2="-3.8" width="0" layer="46"/>
-<wire x1="-1.5" y1="-3.8" x2="1.5" y2="-3.8" width="0" layer="46"/>
+<smd name="TIP@1" x="0" y="4.5" dx="4" dy="2" layer="1" roundness="50"/>
+<smd name="SWITCH@1" x="3.7" y="0" dx="4" dy="2" layer="1" roundness="50" rot="R90"/>
+<smd name="SECOND@1" x="0" y="-3.5" dx="4" dy="2" layer="1" roundness="50" rot="R180"/>
+<smd name="RING@1" x="-3.7" y="0" dx="4" dy="2" layer="1" roundness="50" rot="R270"/>
+<wire x1="-4.2" y1="-1.5" x2="-3.2" y2="-1.5" width="0" layer="46"/>
+<wire x1="-3.2" y1="-1.5" x2="-3.2" y2="1.5" width="0" layer="46"/>
+<wire x1="-3.2" y1="1.5" x2="-4.2" y2="1.5" width="0" layer="46"/>
+<wire x1="-4.2" y1="1.5" x2="-4.2" y2="-1.5" width="0" layer="46"/>
+<wire x1="3.2" y1="-1.5" x2="4.2" y2="-1.5" width="0" layer="46"/>
+<wire x1="4.2" y1="-1.5" x2="4.2" y2="1.5" width="0" layer="46"/>
+<wire x1="4.2" y1="1.5" x2="3.2" y2="1.5" width="0" layer="46"/>
+<wire x1="3.2" y1="1.5" x2="3.2" y2="-1.5" width="0" layer="46"/>
+<wire x1="1.5" y1="4" x2="1.5" y2="5" width="0" layer="46"/>
+<wire x1="1.5" y1="5" x2="-1.5" y2="5" width="0" layer="46"/>
+<wire x1="-1.5" y1="5" x2="-1.5" y2="4" width="0" layer="46"/>
+<wire x1="-1.5" y1="4" x2="1.5" y2="4" width="0" layer="46"/>
+<wire x1="1.5" y1="-4" x2="1.5" y2="-3" width="0" layer="46"/>
+<wire x1="1.5" y1="-3" x2="-1.5" y2="-3" width="0" layer="46"/>
+<wire x1="-1.5" y1="-3" x2="-1.5" y2="-4" width="0" layer="46"/>
+<wire x1="-1.5" y1="-4" x2="1.5" y2="-4" width="0" layer="46"/>
 <circle x="0" y="0" radius="5.08" width="0.1" layer="51"/>
 <circle x="0" y="0" radius="6.35" width="0.1" layer="51"/>
 <circle x="0" y="0" radius="7.62" width="0.1" layer="51"/>
@@ -375,47 +412,10 @@ PCB width:
 <circle x="0" y="0" radius="2.9" width="0.1" layer="21"/>
 <circle x="0" y="0" radius="2" width="0.1" layer="21"/>
 <circle x="0" y="0" radius="1" width="0.1" layer="21"/>
-<smd name="TIP@2" x="0" y="4.9" dx="4.5" dy="2.5" layer="16" roundness="50" rot="R180"/>
-<smd name="SWITCH@2" x="4.2" y="0" dx="4.5" dy="2.5" layer="16" roundness="50" rot="R90"/>
-<smd name="SECOND@2" x="0" y="-3.3" dx="4.5" dy="2.5" layer="16" roundness="50"/>
-<smd name="RING@2" x="-4.2" y="0" dx="4.5" dy="2.5" layer="16" roundness="50" rot="R270"/>
-<circle x="0" y="0" radius="4" width="0.0254" layer="255"/>
-<text x="0" y="6.35" size="1.778" layer="255" align="bottom-center">&gt;VALUE</text>
-</package>
-<package name="3.5MM-JACK-SWITCH-13MM-INPUT">
-<smd name="TIP@1" x="0" y="4.9" dx="4.5" dy="2.5" layer="1" roundness="50"/>
-<smd name="SWITCH@1" x="4.2" y="0" dx="4.5" dy="2.5" layer="1" roundness="50" rot="R90"/>
-<smd name="SECOND@1" x="0" y="-3.3" dx="4.5" dy="2.5" layer="1" roundness="50" rot="R180"/>
-<smd name="RING@1" x="-4.2" y="0" dx="4.5" dy="2.5" layer="1" roundness="50" rot="R270"/>
-<wire x1="-4.7" y1="-1.5" x2="-3.7" y2="-1.5" width="0" layer="46"/>
-<wire x1="-3.7" y1="-1.5" x2="-3.7" y2="1.5" width="0" layer="46"/>
-<wire x1="-3.7" y1="1.5" x2="-4.7" y2="1.5" width="0" layer="46"/>
-<wire x1="-4.7" y1="1.5" x2="-4.7" y2="-1.5" width="0" layer="46"/>
-<wire x1="3.7" y1="-1.5" x2="4.7" y2="-1.5" width="0" layer="46"/>
-<wire x1="4.7" y1="-1.5" x2="4.7" y2="1.5" width="0" layer="46"/>
-<wire x1="4.7" y1="1.5" x2="3.7" y2="1.5" width="0" layer="46"/>
-<wire x1="3.7" y1="1.5" x2="3.7" y2="-1.5" width="0" layer="46"/>
-<wire x1="1.5" y1="4.4" x2="1.5" y2="5.4" width="0" layer="46"/>
-<wire x1="1.5" y1="5.4" x2="-1.5" y2="5.4" width="0" layer="46"/>
-<wire x1="-1.5" y1="5.4" x2="-1.5" y2="4.4" width="0" layer="46"/>
-<wire x1="-1.5" y1="4.4" x2="1.5" y2="4.4" width="0" layer="46"/>
-<wire x1="1.5" y1="-3.8" x2="1.5" y2="-2.8" width="0" layer="46"/>
-<wire x1="1.5" y1="-2.8" x2="-1.5" y2="-2.8" width="0" layer="46"/>
-<wire x1="-1.5" y1="-2.8" x2="-1.5" y2="-3.8" width="0" layer="46"/>
-<wire x1="-1.5" y1="-3.8" x2="1.5" y2="-3.8" width="0" layer="46"/>
-<circle x="0" y="0" radius="5.08" width="0.127" layer="51"/>
-<circle x="0" y="0" radius="6.35" width="0.127" layer="51"/>
-<circle x="0" y="0" radius="7.62" width="0.127" layer="51"/>
-<circle x="0" y="0" radius="4.2" width="0.6" layer="21"/>
-<circle x="0" y="0" radius="5" width="0.4" layer="21"/>
-<circle x="0" y="0" radius="5.6" width="0.2" layer="21"/>
-<circle x="0" y="0" radius="6" width="0.1" layer="21"/>
-<circle x="0" y="0" radius="3" width="1.2" layer="21"/>
-<circle x="0" y="0" radius="1.5" width="2" layer="21"/>
-<smd name="TIP@2" x="0" y="4.9" dx="4.5" dy="2.5" layer="16" roundness="50" rot="R180"/>
-<smd name="SWITCH@2" x="4.2" y="0" dx="4.5" dy="2.5" layer="16" roundness="50" rot="R90"/>
-<smd name="SECOND@2" x="0" y="-3.3" dx="4.5" dy="2.5" layer="16" roundness="50"/>
-<smd name="RING@2" x="-4.2" y="0" dx="4.5" dy="2.5" layer="16" roundness="50" rot="R270"/>
+<smd name="TIP@2" x="0" y="4.5" dx="4" dy="2" layer="16" roundness="50" rot="R180"/>
+<smd name="SWITCH@2" x="3.7" y="0" dx="4" dy="2" layer="16" roundness="50" rot="R90"/>
+<smd name="SECOND@2" x="0" y="-3.5" dx="4" dy="2" layer="16" roundness="50"/>
+<smd name="RING@2" x="-3.7" y="0" dx="4" dy="2" layer="16" roundness="50" rot="R270"/>
 <circle x="0" y="0" radius="4" width="0.0254" layer="255"/>
 <text x="0" y="6.35" size="1.778" layer="255" align="bottom-center">&gt;VALUE</text>
 </package>
@@ -718,46 +718,46 @@ We've spent an enormous amount of time creating and checking these footprints an
 <rectangle x1="98.806" y1="-0.254" x2="99.314" y2="0.254" layer="51"/>
 </package>
 <package name="1X40">
-<pad name="1" x="-49.53" y="0" drill="1.016" diameter="1.8796" shape="square" rot="R90"/>
-<pad name="2" x="-46.99" y="0" drill="1.016" diameter="1.8796" rot="R90"/>
-<pad name="3" x="-44.45" y="0" drill="1.016" diameter="1.8796" rot="R90"/>
-<pad name="4" x="-41.91" y="0" drill="1.016" diameter="1.8796" rot="R90"/>
-<pad name="5" x="-39.37" y="0" drill="1.016" diameter="1.8796" rot="R90"/>
-<pad name="6" x="-36.83" y="0" drill="1.016" diameter="1.8796" rot="R90"/>
-<pad name="7" x="-34.29" y="0" drill="1.016" diameter="1.8796" rot="R90"/>
-<pad name="8" x="-31.75" y="0" drill="1.016" diameter="1.8796" rot="R90"/>
-<pad name="9" x="-29.21" y="0" drill="1.016" diameter="1.8796" rot="R90"/>
-<pad name="10" x="-26.67" y="0" drill="1.016" diameter="1.8796" rot="R90"/>
-<pad name="11" x="-24.13" y="0" drill="1.016" diameter="1.8796" rot="R90"/>
-<pad name="12" x="-21.59" y="0" drill="1.016" diameter="1.8796" rot="R90"/>
-<pad name="13" x="-19.05" y="0" drill="1.016" diameter="1.8796" rot="R90"/>
-<pad name="14" x="-16.51" y="0" drill="1.016" diameter="1.8796" rot="R90"/>
-<pad name="15" x="-13.97" y="0" drill="1.016" diameter="1.8796" rot="R90"/>
-<pad name="16" x="-11.43" y="0" drill="1.016" diameter="1.8796" rot="R90"/>
-<pad name="17" x="-8.89" y="0" drill="1.016" diameter="1.8796" rot="R90"/>
-<pad name="18" x="-6.35" y="0" drill="1.016" diameter="1.8796" rot="R90"/>
-<pad name="19" x="-3.81" y="0" drill="1.016" diameter="1.8796" rot="R90"/>
-<pad name="20" x="-1.27" y="0" drill="1.016" diameter="1.8796" rot="R90"/>
-<pad name="21" x="1.27" y="0" drill="1.016" diameter="1.8796" rot="R90"/>
-<pad name="22" x="3.81" y="0" drill="1.016" diameter="1.8796" rot="R90"/>
-<pad name="23" x="6.35" y="0" drill="1.016" diameter="1.8796" rot="R90"/>
-<pad name="24" x="8.89" y="0" drill="1.016" diameter="1.8796" rot="R90"/>
-<pad name="25" x="11.43" y="0" drill="1.016" diameter="1.8796" rot="R90"/>
-<pad name="26" x="13.97" y="0" drill="1.016" diameter="1.8796" rot="R90"/>
-<pad name="27" x="16.51" y="0" drill="1.016" diameter="1.8796" rot="R90"/>
-<pad name="28" x="19.05" y="0" drill="1.016" diameter="1.8796" rot="R90"/>
-<pad name="29" x="21.59" y="0" drill="1.016" diameter="1.8796" rot="R90"/>
-<pad name="30" x="24.13" y="0" drill="1.016" diameter="1.8796" rot="R90"/>
-<pad name="31" x="26.67" y="0" drill="1.016" diameter="1.8796" rot="R90"/>
-<pad name="32" x="29.21" y="0" drill="1.016" diameter="1.8796" rot="R90"/>
-<pad name="33" x="31.75" y="0" drill="1.016" diameter="1.8796" rot="R90"/>
-<pad name="34" x="34.29" y="0" drill="1.016" diameter="1.8796" rot="R90"/>
-<pad name="35" x="36.83" y="0" drill="1.016" diameter="1.8796" rot="R90"/>
-<pad name="36" x="39.37" y="0" drill="1.016" diameter="1.8796" rot="R90"/>
-<pad name="37" x="41.91" y="0" drill="1.016" diameter="1.8796" rot="R90"/>
-<pad name="38" x="44.45" y="0" drill="1.016" diameter="1.8796" rot="R90"/>
-<pad name="39" x="46.99" y="0" drill="1.016" diameter="1.8796" rot="R90"/>
-<pad name="40" x="49.53" y="0" drill="1.016" diameter="1.8796" rot="R90"/>
+<pad name="1" x="-49.53" y="0" drill="1.016" shape="square" rot="R90"/>
+<pad name="2" x="-46.99" y="0" drill="1.016" rot="R90"/>
+<pad name="3" x="-44.45" y="0" drill="1.016" rot="R90"/>
+<pad name="4" x="-41.91" y="0" drill="1.016" rot="R90"/>
+<pad name="5" x="-39.37" y="0" drill="1.016" rot="R90"/>
+<pad name="6" x="-36.83" y="0" drill="1.016" rot="R90"/>
+<pad name="7" x="-34.29" y="0" drill="1.016" rot="R90"/>
+<pad name="8" x="-31.75" y="0" drill="1.016" rot="R90"/>
+<pad name="9" x="-29.21" y="0" drill="1.016" rot="R90"/>
+<pad name="10" x="-26.67" y="0" drill="1.016" rot="R90"/>
+<pad name="11" x="-24.13" y="0" drill="1.016" rot="R90"/>
+<pad name="12" x="-21.59" y="0" drill="1.016" rot="R90"/>
+<pad name="13" x="-19.05" y="0" drill="1.016" rot="R90"/>
+<pad name="14" x="-16.51" y="0" drill="1.016" rot="R90"/>
+<pad name="15" x="-13.97" y="0" drill="1.016" rot="R90"/>
+<pad name="16" x="-11.43" y="0" drill="1.016" rot="R90"/>
+<pad name="17" x="-8.89" y="0" drill="1.016" rot="R90"/>
+<pad name="18" x="-6.35" y="0" drill="1.016" rot="R90"/>
+<pad name="19" x="-3.81" y="0" drill="1.016" rot="R90"/>
+<pad name="20" x="-1.27" y="0" drill="1.016" rot="R90"/>
+<pad name="21" x="1.27" y="0" drill="1.016" rot="R90"/>
+<pad name="22" x="3.81" y="0" drill="1.016" rot="R90"/>
+<pad name="23" x="6.35" y="0" drill="1.016" rot="R90"/>
+<pad name="24" x="8.89" y="0" drill="1.016" rot="R90"/>
+<pad name="25" x="11.43" y="0" drill="1.016" rot="R90"/>
+<pad name="26" x="13.97" y="0" drill="1.016" rot="R90"/>
+<pad name="27" x="16.51" y="0" drill="1.016" rot="R90"/>
+<pad name="28" x="19.05" y="0" drill="1.016" rot="R90"/>
+<pad name="29" x="21.59" y="0" drill="1.016" rot="R90"/>
+<pad name="30" x="24.13" y="0" drill="1.016" rot="R90"/>
+<pad name="31" x="26.67" y="0" drill="1.016" rot="R90"/>
+<pad name="32" x="29.21" y="0" drill="1.016" rot="R90"/>
+<pad name="33" x="31.75" y="0" drill="1.016" rot="R90"/>
+<pad name="34" x="34.29" y="0" drill="1.016" rot="R90"/>
+<pad name="35" x="36.83" y="0" drill="1.016" rot="R90"/>
+<pad name="36" x="39.37" y="0" drill="1.016" rot="R90"/>
+<pad name="37" x="41.91" y="0" drill="1.016" rot="R90"/>
+<pad name="38" x="44.45" y="0" drill="1.016" rot="R90"/>
+<pad name="39" x="46.99" y="0" drill="1.016" rot="R90"/>
+<pad name="40" x="49.53" y="0" drill="1.016" rot="R90"/>
 <text x="-50.8762" y="1.8288" size="1.27" layer="25" ratio="10">&gt;NAME</text>
 <text x="-50.8" y="-3.175" size="1.27" layer="27">&gt;VALUE</text>
 <rectangle x1="-34.544" y1="-0.254" x2="-34.036" y2="0.254" layer="51"/>
