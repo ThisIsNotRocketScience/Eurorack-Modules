@@ -187,12 +187,12 @@
 <pad name="CVBUS" x="1.27" y="80.01" drill="0.8" shape="square"/>
 <pad name="CV_MIX1" x="1.27" y="77.47" drill="0.8"/>
 <pad name="CV_MIX2" x="1.27" y="74.93" drill="0.8"/>
-<pad name="GND_BUS" x="1.27" y="67.31" drill="0.8" shape="square"/>
-<pad name="+12V@2" x="1.27" y="64.77" drill="0.8"/>
-<pad name="-12V@2" x="1.27" y="62.23" drill="0.8"/>
-<pad name="3.3V" x="1.27" y="59.69" drill="0.8"/>
-<pad name="GND@6" x="1.27" y="57.15" drill="0.8"/>
-<pad name="1.2V" x="1.27" y="54.61" drill="0.8"/>
+<pad name="GND_BUS" x="1.27" y="66.04" drill="0.8" shape="square"/>
+<pad name="+12V@2" x="1.27" y="63.5" drill="0.8"/>
+<pad name="-12V@2" x="1.27" y="60.96" drill="0.8"/>
+<pad name="3.3V" x="1.27" y="58.42" drill="0.8"/>
+<pad name="GND@6" x="1.27" y="55.88" drill="0.8"/>
+<pad name="1.2V" x="1.27" y="53.34" drill="0.8"/>
 <pad name="ADC6" x="1.27" y="13.97" drill="0.8"/>
 <pad name="ADC7" x="1.27" y="16.51" drill="0.8"/>
 <pad name="TX/D7" x="1.27" y="19.05" drill="0.8"/>
@@ -1032,8 +1032,6 @@ design rules under a new name.</description>
 <wire x1="5.461" y1="35.179" x2="6.223" y2="34.417" width="0.254" layer="16"/>
 <wire x1="5.461" y1="40.259" x2="5.461" y2="35.179" width="0.254" layer="16"/>
 <wire x1="6.985" y1="41.783" x2="5.461" y2="40.259" width="0.254" layer="16"/>
-<wire x1="6.223" y1="59.69" x2="1.905" y2="59.69" width="0.254" layer="16"/>
-<wire x1="14.732" y1="51.181" x2="6.223" y2="59.69" width="0.254" layer="16"/>
 <wire x1="12.827" y1="49.276" x2="14.732" y2="51.181" width="0.254" layer="1"/>
 <wire x1="12.827" y1="49.276" x2="12.74" y2="49.18" width="0.254" layer="1"/>
 <wire x1="6.096" y1="42.545" x2="6.858" y2="41.783" width="0.254" layer="16"/>
@@ -1079,6 +1077,8 @@ design rules under a new name.</description>
 <wire x1="33.782" y1="32.893" x2="35.179" y2="31.496" width="0.2032" layer="16"/>
 <wire x1="35.179" y1="27.559" x2="35.222" y2="27.493" width="0.2032" layer="16"/>
 <wire x1="33.782" y1="32.893" x2="33.655" y2="32.893" width="0.2032" layer="16"/>
+<wire x1="7.493" y1="58.42" x2="1.905" y2="58.42" width="0.2032" layer="16"/>
+<wire x1="14.732" y1="51.181" x2="7.493" y2="58.42" width="0.2032" layer="16"/>
 </signal>
 <signal name="MODE1_A">
 <contactref element="U$1" pad="ADC13"/>

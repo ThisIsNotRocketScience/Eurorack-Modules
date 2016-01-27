@@ -185,12 +185,12 @@
 <pad name="CVBUS" x="1.27" y="80.01" drill="0.8" shape="square"/>
 <pad name="CV_MIX1" x="1.27" y="77.47" drill="0.8"/>
 <pad name="CV_MIX2" x="1.27" y="74.93" drill="0.8"/>
-<pad name="GND_BUS" x="1.27" y="67.31" drill="0.8" shape="square"/>
-<pad name="+12V@2" x="1.27" y="64.77" drill="0.8"/>
-<pad name="-12V@2" x="1.27" y="62.23" drill="0.8"/>
-<pad name="3.3V" x="1.27" y="59.69" drill="0.8"/>
-<pad name="GND@6" x="1.27" y="57.15" drill="0.8"/>
-<pad name="1.2V" x="1.27" y="54.61" drill="0.8"/>
+<pad name="GND_BUS" x="1.27" y="66.04" drill="0.8" shape="square"/>
+<pad name="+12V@2" x="1.27" y="63.5" drill="0.8"/>
+<pad name="-12V@2" x="1.27" y="60.96" drill="0.8"/>
+<pad name="3.3V" x="1.27" y="58.42" drill="0.8"/>
+<pad name="GND@6" x="1.27" y="55.88" drill="0.8"/>
+<pad name="1.2V" x="1.27" y="53.34" drill="0.8"/>
 <pad name="ADC6" x="1.27" y="13.97" drill="0.8"/>
 <pad name="ADC7" x="1.27" y="16.51" drill="0.8"/>
 <pad name="TX/D7" x="1.27" y="19.05" drill="0.8"/>
