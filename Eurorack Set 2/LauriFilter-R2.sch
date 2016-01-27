@@ -2350,7 +2350,6 @@ General-purpose diode for high-speed switching</description>
 <part name="GND21" library="SparkFun" deviceset="GND" device=""/>
 <part name="SUPPLY2" library="SparkFun-Aesthetics" deviceset="3.3V" device=""/>
 <part name="SUPPLY5" library="SparkFun-Aesthetics" deviceset="3.3V" device=""/>
-<part name="R13" library="OPL" deviceset="R*" device="-0603" value="100k"/>
 <part name="R14" library="OPL" deviceset="R*" device="" value="300"/>
 <part name="R15" library="OPL" deviceset="R*" device="" value="300"/>
 <part name="JP1" library="SparkFun-Connectors" deviceset="M02" device="PTH"/>
@@ -2432,7 +2431,6 @@ General-purpose diode for high-speed switching</description>
 <instance part="GND21" gate="1" x="-27.94" y="114.3"/>
 <instance part="SUPPLY2" gate="G$1" x="-27.94" y="142.24"/>
 <instance part="SUPPLY5" gate="G$1" x="-35.56" y="133.35"/>
-<instance part="R13" gate="R" x="-39.37" y="35.56"/>
 <instance part="R14" gate="R" x="86.36" y="22.86"/>
 <instance part="R15" gate="R" x="86.36" y="20.32"/>
 <instance part="JP1" gate="G$1" x="142.24" y="-10.16" rot="R180"/>
@@ -2741,8 +2739,8 @@ General-purpose diode for high-speed switching</description>
 <net name="N$7" class="0">
 <segment>
 <pinref part="U$4" gate="G$1" pin="TIP"/>
-<pinref part="R13" gate="R" pin="1"/>
-<wire x1="-43.18" y1="35.56" x2="-50.8" y2="35.56" width="0.1524" layer="91"/>
+<pinref part="U$14" gate="G$1" pin="A"/>
+<wire x1="-50.8" y1="35.56" x2="-27.94" y2="35.56" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="MODE2_A" class="0">
@@ -2909,13 +2907,6 @@ General-purpose diode for high-speed switching</description>
 <label x="-36.83" y="106.68" size="1.778" layer="95"/>
 <pinref part="R11" gate="R" pin="1"/>
 <junction x="-27.94" y="106.68"/>
-</segment>
-</net>
-<net name="N$10" class="0">
-<segment>
-<pinref part="U$14" gate="G$1" pin="A"/>
-<wire x1="-27.94" y1="35.56" x2="-35.56" y2="35.56" width="0.1524" layer="91"/>
-<pinref part="R13" gate="R" pin="2"/>
 </segment>
 </net>
 <net name="N$11" class="0">
