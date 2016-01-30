@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
+<grid distance="0.05" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="no" active="no"/>
 <layer number="2" name="Route2" color="1" fill="3" visible="no" active="no"/>
@@ -7723,6 +7723,9 @@ General-purpose diode for high-speed switching</description>
 <part name="U$5" library="adafruit" deviceset="FIDUCIAL" device=""/>
 <part name="U$7" library="adafruit" deviceset="FIDUCIAL" device=""/>
 <part name="U$8" library="adafruit" deviceset="FIDUCIAL" device=""/>
+<part name="R9" library="OPL" deviceset="R*" device="-0603" value="300"/>
+<part name="R10" library="OPL" deviceset="R*" device="-0603" value="300"/>
+<part name="R11" library="OPL" deviceset="R*" device="-0603" value="300"/>
 </parts>
 <sheets>
 <sheet>
@@ -7848,6 +7851,9 @@ General-purpose diode for high-speed switching</description>
 <instance part="U$5" gate="G$1" x="-83.82" y="129.54"/>
 <instance part="U$7" gate="G$1" x="-68.58" y="132.08"/>
 <instance part="U$8" gate="G$1" x="-53.34" y="129.54"/>
+<instance part="R9" gate="R" x="10.16" y="33.02" rot="R180"/>
+<instance part="R10" gate="R" x="12.7" y="-29.21" rot="R180"/>
+<instance part="R11" gate="R" x="17.78" y="-86.36" rot="R180"/>
 </instances>
 <busses>
 </busses>
@@ -8185,18 +8191,10 @@ General-purpose diode for high-speed switching</description>
 <label x="111.76" y="12.7" size="1.778" layer="95"/>
 </segment>
 <segment>
-<pinref part="R21" gate="R" pin="1"/>
-<pinref part="C6" gate="C" pin="2"/>
-<wire x1="2.54" y1="-22.86" x2="2.54" y2="-20.32" width="0.1524" layer="91"/>
-<wire x1="2.54" y1="-20.32" x2="2.54" y2="-17.78" width="0.1524" layer="91"/>
-<wire x1="2.54" y1="-20.32" x2="6.35" y2="-20.32" width="0.1524" layer="91"/>
-<wire x1="6.35" y1="-20.32" x2="6.35" y2="-29.21" width="0.1524" layer="91"/>
-<wire x1="6.35" y1="-29.21" x2="29.21" y2="-29.21" width="0.1524" layer="91"/>
-<junction x="2.54" y="-20.32"/>
-<pinref part="OP3.3" gate="B" pin="OUT"/>
-<junction x="6.35" y="-29.21"/>
-<label x="21.59" y="-26.67" size="1.778" layer="95" rot="R180"/>
 <pinref part="D2" gate="G$1" pin="C1A2"/>
+<pinref part="R10" gate="R" pin="1"/>
+<wire x1="16.51" y1="-29.21" x2="29.21" y2="-29.21" width="0.1524" layer="91"/>
+<label x="21.59" y="-26.67" size="1.778" layer="95" rot="R180"/>
 </segment>
 </net>
 <net name="RESONANCE" class="0">
@@ -8218,18 +8216,10 @@ General-purpose diode for high-speed switching</description>
 <label x="111.76" y="7.62" size="1.778" layer="95"/>
 </segment>
 <segment>
-<pinref part="R28" gate="R" pin="1"/>
-<pinref part="C8" gate="C" pin="2"/>
-<wire x1="0" y1="39.37" x2="0" y2="41.91" width="0.1524" layer="91"/>
-<wire x1="0" y1="41.91" x2="0" y2="44.45" width="0.1524" layer="91"/>
-<wire x1="0" y1="41.91" x2="3.81" y2="41.91" width="0.1524" layer="91"/>
-<wire x1="3.81" y1="41.91" x2="3.81" y2="33.02" width="0.1524" layer="91"/>
-<wire x1="3.81" y1="33.02" x2="25.4" y2="33.02" width="0.1524" layer="91"/>
-<junction x="0" y="41.91"/>
-<pinref part="OP3.3" gate="C" pin="OUT"/>
-<junction x="3.81" y="33.02"/>
-<label x="20.32" y="35.56" size="1.778" layer="95" rot="R180"/>
 <pinref part="D1" gate="G$1" pin="C1A2"/>
+<pinref part="R9" gate="R" pin="1"/>
+<wire x1="13.97" y1="33.02" x2="25.4" y2="33.02" width="0.1524" layer="91"/>
+<label x="20.32" y="35.56" size="1.778" layer="95" rot="R180"/>
 </segment>
 </net>
 <net name="ENVDEC" class="0">
@@ -8239,20 +8229,12 @@ General-purpose diode for high-speed switching</description>
 <label x="111.76" y="5.08" size="1.778" layer="95"/>
 </segment>
 <segment>
-<pinref part="R15" gate="R" pin="1"/>
-<pinref part="C3" gate="C" pin="2"/>
-<wire x1="7.62" y1="-80.01" x2="7.62" y2="-77.47" width="0.1524" layer="91"/>
-<wire x1="7.62" y1="-77.47" x2="7.62" y2="-74.93" width="0.1524" layer="91"/>
-<wire x1="7.62" y1="-77.47" x2="11.43" y2="-77.47" width="0.1524" layer="91"/>
-<wire x1="11.43" y1="-77.47" x2="11.43" y2="-86.36" width="0.1524" layer="91"/>
-<wire x1="11.43" y1="-86.36" x2="31.75" y2="-86.36" width="0.1524" layer="91"/>
-<junction x="7.62" y="-77.47"/>
-<pinref part="OP3.3" gate="A" pin="OUT"/>
-<junction x="11.43" y="-86.36"/>
-<label x="26.67" y="-83.82" size="1.778" layer="95" rot="R180"/>
 <pinref part="D3" gate="G$1" pin="C1A2"/>
-<wire x1="31.75" y1="-86.36" x2="33.02" y2="-86.36" width="0.1524" layer="91"/>
+<pinref part="R11" gate="R" pin="1"/>
+<wire x1="21.59" y1="-86.36" x2="31.75" y2="-86.36" width="0.1524" layer="91"/>
 <junction x="31.75" y="-86.36"/>
+<wire x1="31.75" y1="-86.36" x2="33.02" y2="-86.36" width="0.1524" layer="91"/>
+<label x="26.67" y="-83.82" size="1.778" layer="95" rot="R180"/>
 </segment>
 </net>
 <net name="TUNE" class="0">
@@ -8613,6 +8595,51 @@ General-purpose diode for high-speed switching</description>
 <pinref part="R8" gate="R" pin="1"/>
 <wire x1="170.18" y1="-15.24" x2="173.99" y2="-15.24" width="0.1524" layer="91"/>
 <pinref part="U$1" gate="G$1" pin="OUT_R"/>
+</segment>
+</net>
+<net name="PREPROTECTCUTOFF" class="0">
+<segment>
+<pinref part="R21" gate="R" pin="1"/>
+<pinref part="C6" gate="C" pin="2"/>
+<wire x1="2.54" y1="-22.86" x2="2.54" y2="-20.32" width="0.1524" layer="91"/>
+<wire x1="2.54" y1="-20.32" x2="2.54" y2="-17.78" width="0.1524" layer="91"/>
+<wire x1="2.54" y1="-20.32" x2="6.35" y2="-20.32" width="0.1524" layer="91"/>
+<wire x1="6.35" y1="-20.32" x2="6.35" y2="-29.21" width="0.1524" layer="91"/>
+<wire x1="6.35" y1="-29.21" x2="8.89" y2="-29.21" width="0.1524" layer="91"/>
+<junction x="2.54" y="-20.32"/>
+<pinref part="OP3.3" gate="B" pin="OUT"/>
+<junction x="6.35" y="-29.21"/>
+<pinref part="R10" gate="R" pin="2"/>
+</segment>
+</net>
+<net name="ENVDECPREPROTECTION" class="0">
+<segment>
+<pinref part="R15" gate="R" pin="1"/>
+<pinref part="C3" gate="C" pin="2"/>
+<wire x1="7.62" y1="-80.01" x2="7.62" y2="-77.47" width="0.1524" layer="91"/>
+<wire x1="7.62" y1="-77.47" x2="7.62" y2="-74.93" width="0.1524" layer="91"/>
+<wire x1="7.62" y1="-77.47" x2="11.43" y2="-77.47" width="0.1524" layer="91"/>
+<wire x1="11.43" y1="-77.47" x2="11.43" y2="-86.36" width="0.1524" layer="91"/>
+<wire x1="11.43" y1="-86.36" x2="13.97" y2="-86.36" width="0.1524" layer="91"/>
+<junction x="7.62" y="-77.47"/>
+<pinref part="OP3.3" gate="A" pin="OUT"/>
+<junction x="11.43" y="-86.36"/>
+<pinref part="R11" gate="R" pin="2"/>
+</segment>
+</net>
+<net name="ENVAMTPREPROTECTION" class="0">
+<segment>
+<pinref part="R28" gate="R" pin="1"/>
+<pinref part="C8" gate="C" pin="2"/>
+<wire x1="0" y1="39.37" x2="0" y2="41.91" width="0.1524" layer="91"/>
+<wire x1="0" y1="41.91" x2="0" y2="44.45" width="0.1524" layer="91"/>
+<wire x1="0" y1="41.91" x2="3.81" y2="41.91" width="0.1524" layer="91"/>
+<wire x1="3.81" y1="41.91" x2="3.81" y2="33.02" width="0.1524" layer="91"/>
+<wire x1="3.81" y1="33.02" x2="6.35" y2="33.02" width="0.1524" layer="91"/>
+<junction x="0" y="41.91"/>
+<pinref part="OP3.3" gate="C" pin="OUT"/>
+<junction x="3.81" y="33.02"/>
+<pinref part="R9" gate="R" pin="2"/>
 </segment>
 </net>
 </nets>
