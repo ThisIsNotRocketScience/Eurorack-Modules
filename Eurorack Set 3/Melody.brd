@@ -1117,8 +1117,8 @@ design rules under a new name.</description>
 <element name="CLOCK" library="EurorackModularParts" package="3.5MM-JACK-SWITCH-13MM-INPUT" value="Clock" x="12.7" y="99.06"/>
 <element name="IN1" library="EurorackModularParts" package="3.5MM-JACK-SWITCH-13MM-INPUT" value="In 2" x="12.7" y="45.72"/>
 <element name="IN2" library="EurorackModularParts" package="3.5MM-JACK-SWITCH-13MM-INPUT" value="In 1" x="12.7" y="63.5"/>
-<element name="U$7" library="EurorackModularParts" package="3.5MM-JACK-SWITCH-13MM-OUTPUT" value="CV2" x="53.34" y="10.16"/>
-<element name="U$8" library="EurorackModularParts" package="3.5MM-JACK-SWITCH-13MM-OUTPUT" value="CV1" x="53.34" y="27.94"/>
+<element name="U$7" library="EurorackModularParts" package="3.5MM-JACK-SWITCH-13MM-OUTPUT" value="NOTE" x="53.34" y="10.16"/>
+<element name="U$8" library="EurorackModularParts" package="3.5MM-JACK-SWITCH-13MM-OUTPUT" value="VELOCITY" x="53.34" y="27.94"/>
 <element name="U$2" library="EurorackModularParts" package="EURORACK12HPPCB" value="EURORACK_PCB12HP" x="0.67" y="0"/>
 <element name="D3" library="diode" package="SOT23" value="BAS70-04" x="16.74" y="36.735" rot="R270"/>
 <element name="D4" library="diode" package="SOT23" value="BAS70-04" x="27.71" y="33.83" rot="R90"/>
@@ -1139,8 +1139,7 @@ design rules under a new name.</description>
 <element name="R18" library="OPL" package="R0603" value="100k" x="20.32" y="86.995"/>
 <element name="R20" library="OPL" package="R0603" value="10k" x="26.67" y="80.645"/>
 <element name="RESET" library="EurorackModularParts" package="3.5MM-JACK-SWITCH-13MM-INPUT" value="Reset" x="12.7" y="81.28"/>
-<element name="U$4" library="EurorackModularParts" package="3.5MM-JACK-SWITCH-13MM-OUTPUT" value="GATE2" x="38.1" y="10.16"/>
-<element name="U$5" library="EurorackModularParts" package="3.5MM-JACK-SWITCH-13MM-OUTPUT" value="GATE1" x="38.1" y="27.94"/>
+<element name="U$4" library="EurorackModularParts" package="3.5MM-JACK-SWITCH-13MM-OUTPUT" value="ACCENT" x="38.1" y="10.16"/>
 <element name="JP2" library="SparkFun-Connectors" package="1X04" value="" x="31.75" y="104.14"/>
 <element name="SW1" library="switch-alps" package="ALPS_EC12E_SW" value="EC12E_SW" x="52.07" y="97.79">
 <attribute name="OC_NEWARK" value="74M1068" x="52.07" y="97.79" size="1.778" layer="27" display="off"/>
