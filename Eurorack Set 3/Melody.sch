@@ -6,36 +6,36 @@
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.05" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
+<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
 <layers>
-<layer number="1" name="Top" color="4" fill="1" visible="yes" active="no"/>
-<layer number="2" name="Route2" color="1" fill="3" visible="yes" active="no"/>
-<layer number="3" name="Route3" color="4" fill="3" visible="yes" active="no"/>
-<layer number="4" name="Route4" color="1" fill="4" visible="yes" active="no"/>
-<layer number="5" name="Route5" color="4" fill="4" visible="yes" active="no"/>
-<layer number="6" name="Route6" color="1" fill="8" visible="yes" active="no"/>
-<layer number="7" name="Route7" color="4" fill="8" visible="yes" active="no"/>
-<layer number="8" name="Route8" color="1" fill="2" visible="yes" active="no"/>
-<layer number="9" name="Route9" color="4" fill="2" visible="yes" active="no"/>
-<layer number="10" name="Route10" color="1" fill="7" visible="yes" active="no"/>
-<layer number="11" name="Route11" color="4" fill="7" visible="yes" active="no"/>
-<layer number="12" name="Route12" color="1" fill="5" visible="yes" active="no"/>
-<layer number="13" name="Route13" color="4" fill="5" visible="yes" active="no"/>
-<layer number="14" name="Route14" color="1" fill="6" visible="yes" active="no"/>
-<layer number="15" name="Route15" color="4" fill="6" visible="yes" active="no"/>
-<layer number="16" name="Bottom" color="1" fill="1" visible="yes" active="no"/>
-<layer number="17" name="Pads" color="2" fill="1" visible="yes" active="no"/>
-<layer number="18" name="Vias" color="2" fill="1" visible="yes" active="no"/>
-<layer number="19" name="Unrouted" color="6" fill="1" visible="yes" active="no"/>
-<layer number="20" name="Dimension" color="15" fill="1" visible="yes" active="no"/>
-<layer number="21" name="tPlace" color="7" fill="1" visible="yes" active="no"/>
-<layer number="22" name="bPlace" color="7" fill="1" visible="yes" active="no"/>
-<layer number="23" name="tOrigins" color="15" fill="1" visible="yes" active="no"/>
-<layer number="24" name="bOrigins" color="15" fill="1" visible="yes" active="no"/>
-<layer number="25" name="tNames" color="7" fill="1" visible="yes" active="no"/>
-<layer number="26" name="bNames" color="7" fill="1" visible="yes" active="no"/>
-<layer number="27" name="tValues" color="7" fill="1" visible="yes" active="no"/>
-<layer number="28" name="bValues" color="7" fill="1" visible="yes" active="no"/>
+<layer number="1" name="Top" color="4" fill="1" visible="no" active="no"/>
+<layer number="2" name="Route2" color="1" fill="3" visible="no" active="no"/>
+<layer number="3" name="Route3" color="4" fill="3" visible="no" active="no"/>
+<layer number="4" name="Route4" color="1" fill="4" visible="no" active="no"/>
+<layer number="5" name="Route5" color="4" fill="4" visible="no" active="no"/>
+<layer number="6" name="Route6" color="1" fill="8" visible="no" active="no"/>
+<layer number="7" name="Route7" color="4" fill="8" visible="no" active="no"/>
+<layer number="8" name="Route8" color="1" fill="2" visible="no" active="no"/>
+<layer number="9" name="Route9" color="4" fill="2" visible="no" active="no"/>
+<layer number="10" name="Route10" color="1" fill="7" visible="no" active="no"/>
+<layer number="11" name="Route11" color="4" fill="7" visible="no" active="no"/>
+<layer number="12" name="Route12" color="1" fill="5" visible="no" active="no"/>
+<layer number="13" name="Route13" color="4" fill="5" visible="no" active="no"/>
+<layer number="14" name="Route14" color="1" fill="6" visible="no" active="no"/>
+<layer number="15" name="Route15" color="4" fill="6" visible="no" active="no"/>
+<layer number="16" name="Bottom" color="1" fill="1" visible="no" active="no"/>
+<layer number="17" name="Pads" color="2" fill="1" visible="no" active="no"/>
+<layer number="18" name="Vias" color="2" fill="1" visible="no" active="no"/>
+<layer number="19" name="Unrouted" color="6" fill="1" visible="no" active="no"/>
+<layer number="20" name="Dimension" color="15" fill="1" visible="no" active="no"/>
+<layer number="21" name="tPlace" color="7" fill="1" visible="no" active="no"/>
+<layer number="22" name="bPlace" color="7" fill="1" visible="no" active="no"/>
+<layer number="23" name="tOrigins" color="15" fill="1" visible="no" active="no"/>
+<layer number="24" name="bOrigins" color="15" fill="1" visible="no" active="no"/>
+<layer number="25" name="tNames" color="7" fill="1" visible="no" active="no"/>
+<layer number="26" name="bNames" color="7" fill="1" visible="no" active="no"/>
+<layer number="27" name="tValues" color="7" fill="1" visible="no" active="no"/>
+<layer number="28" name="bValues" color="7" fill="1" visible="no" active="no"/>
 <layer number="29" name="tStop" color="7" fill="3" visible="no" active="no"/>
 <layer number="30" name="bStop" color="7" fill="6" visible="no" active="no"/>
 <layer number="31" name="tCream" color="7" fill="4" visible="no" active="no"/>
@@ -44,8 +44,8 @@
 <layer number="34" name="bFinish" color="6" fill="6" visible="no" active="no"/>
 <layer number="35" name="tGlue" color="7" fill="4" visible="no" active="no"/>
 <layer number="36" name="bGlue" color="7" fill="5" visible="no" active="no"/>
-<layer number="37" name="tTest" color="7" fill="1" visible="yes" active="no"/>
-<layer number="38" name="bTest" color="7" fill="1" visible="yes" active="no"/>
+<layer number="37" name="tTest" color="7" fill="1" visible="no" active="no"/>
+<layer number="38" name="bTest" color="7" fill="1" visible="no" active="no"/>
 <layer number="39" name="tKeepout" color="4" fill="11" visible="no" active="no"/>
 <layer number="40" name="bKeepout" color="1" fill="11" visible="no" active="no"/>
 <layer number="41" name="tRestrict" color="4" fill="10" visible="no" active="no"/>
@@ -53,17 +53,17 @@
 <layer number="43" name="vRestrict" color="2" fill="10" visible="no" active="no"/>
 <layer number="44" name="Drills" color="7" fill="1" visible="no" active="no"/>
 <layer number="45" name="Holes" color="7" fill="1" visible="no" active="no"/>
-<layer number="46" name="Milling" color="3" fill="1" visible="yes" active="no"/>
-<layer number="47" name="Measures" color="7" fill="1" visible="yes" active="no"/>
-<layer number="48" name="Document" color="7" fill="1" visible="yes" active="no"/>
-<layer number="49" name="Reference" color="7" fill="1" visible="yes" active="no"/>
-<layer number="50" name="dxf" color="7" fill="1" visible="yes" active="no"/>
-<layer number="51" name="tDocu" color="12" fill="1" visible="yes" active="no"/>
-<layer number="52" name="bDocu" color="7" fill="1" visible="yes" active="no"/>
-<layer number="53" name="tGND_GNDA" color="7" fill="9" visible="yes" active="no"/>
-<layer number="54" name="bGND_GNDA" color="1" fill="9" visible="yes" active="no"/>
-<layer number="56" name="wert" color="7" fill="1" visible="yes" active="no"/>
-<layer number="57" name="tCAD" color="7" fill="1" visible="yes" active="no"/>
+<layer number="46" name="Milling" color="3" fill="1" visible="no" active="no"/>
+<layer number="47" name="Measures" color="7" fill="1" visible="no" active="no"/>
+<layer number="48" name="Document" color="7" fill="1" visible="no" active="no"/>
+<layer number="49" name="Reference" color="7" fill="1" visible="no" active="no"/>
+<layer number="50" name="dxf" color="7" fill="1" visible="no" active="no"/>
+<layer number="51" name="tDocu" color="12" fill="1" visible="no" active="no"/>
+<layer number="52" name="bDocu" color="7" fill="1" visible="no" active="no"/>
+<layer number="53" name="tGND_GNDA" color="7" fill="9" visible="no" active="no"/>
+<layer number="54" name="bGND_GNDA" color="1" fill="9" visible="no" active="no"/>
+<layer number="56" name="wert" color="7" fill="1" visible="no" active="no"/>
+<layer number="57" name="tCAD" color="7" fill="1" visible="no" active="no"/>
 <layer number="91" name="Nets" color="2" fill="1" visible="yes" active="yes"/>
 <layer number="92" name="Busses" color="1" fill="1" visible="yes" active="yes"/>
 <layer number="93" name="Pins" color="2" fill="1" visible="no" active="yes"/>
@@ -3059,22 +3059,22 @@ BF959 corrected 2008.03.06&lt;br&gt;</description>
 <smd name="SWITCH@1" x="3.7" y="0" dx="4" dy="2" layer="1" roundness="50" rot="R90"/>
 <smd name="SECOND@1" x="0" y="-3.5" dx="4" dy="2" layer="1" roundness="50" rot="R180"/>
 <smd name="RING@1" x="-3.7" y="0" dx="4" dy="2" layer="1" roundness="50" rot="R270"/>
-<wire x1="-4.2" y1="-1.5" x2="-3.2" y2="-1.5" width="0" layer="46"/>
-<wire x1="-3.2" y1="-1.5" x2="-3.2" y2="1.5" width="0" layer="46"/>
-<wire x1="-3.2" y1="1.5" x2="-4.2" y2="1.5" width="0" layer="46"/>
-<wire x1="-4.2" y1="1.5" x2="-4.2" y2="-1.5" width="0" layer="46"/>
-<wire x1="3.2" y1="-1.5" x2="4.2" y2="-1.5" width="0" layer="46"/>
-<wire x1="4.2" y1="-1.5" x2="4.2" y2="1.5" width="0" layer="46"/>
-<wire x1="4.2" y1="1.5" x2="3.2" y2="1.5" width="0" layer="46"/>
-<wire x1="3.2" y1="1.5" x2="3.2" y2="-1.5" width="0" layer="46"/>
-<wire x1="1.5" y1="4" x2="1.5" y2="5" width="0" layer="46"/>
-<wire x1="1.5" y1="5" x2="-1.5" y2="5" width="0" layer="46"/>
-<wire x1="-1.5" y1="5" x2="-1.5" y2="4" width="0" layer="46"/>
-<wire x1="-1.5" y1="4" x2="1.5" y2="4" width="0" layer="46"/>
-<wire x1="1.5" y1="-4" x2="1.5" y2="-3" width="0" layer="46"/>
-<wire x1="1.5" y1="-3" x2="-1.5" y2="-3" width="0" layer="46"/>
-<wire x1="-1.5" y1="-3" x2="-1.5" y2="-4" width="0" layer="46"/>
-<wire x1="-1.5" y1="-4" x2="1.5" y2="-4" width="0" layer="46"/>
+<wire x1="-4.2" y1="-1.25" x2="-3.2" y2="-1.25" width="0" layer="46"/>
+<wire x1="-3.2" y1="-1.25" x2="-3.2" y2="1.25" width="0" layer="46"/>
+<wire x1="-3.2" y1="1.25" x2="-4.2" y2="1.25" width="0" layer="46"/>
+<wire x1="-4.2" y1="1.25" x2="-4.2" y2="-1.25" width="0" layer="46"/>
+<wire x1="3.2" y1="-1.25" x2="4.2" y2="-1.25" width="0" layer="46"/>
+<wire x1="4.2" y1="-1.25" x2="4.2" y2="1.25" width="0" layer="46"/>
+<wire x1="4.2" y1="1.25" x2="3.2" y2="1.25" width="0" layer="46"/>
+<wire x1="3.2" y1="1.25" x2="3.2" y2="-1.25" width="0" layer="46"/>
+<wire x1="1.25" y1="4" x2="1.25" y2="5" width="0" layer="46"/>
+<wire x1="1.25" y1="5" x2="-1.25" y2="5" width="0" layer="46"/>
+<wire x1="-1.25" y1="5" x2="-1.25" y2="4" width="0" layer="46"/>
+<wire x1="-1.25" y1="4" x2="1.25" y2="4" width="0" layer="46"/>
+<wire x1="1.25" y1="-4" x2="1.25" y2="-3" width="0" layer="46"/>
+<wire x1="1.25" y1="-3" x2="-1.25" y2="-3" width="0" layer="46"/>
+<wire x1="-1.25" y1="-3" x2="-1.25" y2="-4" width="0" layer="46"/>
+<wire x1="-1.25" y1="-4" x2="1.25" y2="-4" width="0" layer="46"/>
 <circle x="0" y="0" radius="5.08" width="0.1" layer="51"/>
 <circle x="0" y="0" radius="6.35" width="0.1" layer="51"/>
 <circle x="0" y="0" radius="7.62" width="0.1" layer="51"/>
@@ -3090,7 +3090,7 @@ BF959 corrected 2008.03.06&lt;br&gt;</description>
 <smd name="SECOND@2" x="0" y="-3.5" dx="4" dy="2" layer="16" roundness="50"/>
 <smd name="RING@2" x="-3.7" y="0" dx="4" dy="2" layer="16" roundness="50" rot="R270"/>
 <circle x="0" y="0" radius="4" width="0.0254" layer="255"/>
-<text x="0" y="6.35" size="1.778" layer="255" align="bottom-center">&gt;VALUE</text>
+<text x="0" y="6.35" size="1.778" layer="255" align="bottom-center">&gt;DESC</text>
 <wire x1="-4" y1="4.75" x2="4" y2="4.75" width="0.127" layer="51"/>
 <wire x1="4" y1="4.75" x2="4" y2="-3.75" width="0.127" layer="51"/>
 <wire x1="4" y1="-3.75" x2="-4" y2="-3.75" width="0.127" layer="51"/>
@@ -3102,22 +3102,22 @@ BF959 corrected 2008.03.06&lt;br&gt;</description>
 <smd name="SWITCH@1" x="3.7" y="0" dx="4" dy="2" layer="1" roundness="50" rot="R90"/>
 <smd name="SECOND@1" x="0" y="-3.5" dx="4" dy="2" layer="1" roundness="50" rot="R180"/>
 <smd name="RING@1" x="-3.7" y="0" dx="4" dy="2" layer="1" roundness="50" rot="R270"/>
-<wire x1="-4.2" y1="-1.5" x2="-3.2" y2="-1.5" width="0" layer="46"/>
-<wire x1="-3.2" y1="-1.5" x2="-3.2" y2="1.5" width="0" layer="46"/>
-<wire x1="-3.2" y1="1.5" x2="-4.2" y2="1.5" width="0" layer="46"/>
-<wire x1="-4.2" y1="1.5" x2="-4.2" y2="-1.5" width="0" layer="46"/>
-<wire x1="3.2" y1="-1.5" x2="4.2" y2="-1.5" width="0" layer="46"/>
-<wire x1="4.2" y1="-1.5" x2="4.2" y2="1.5" width="0" layer="46"/>
-<wire x1="4.2" y1="1.5" x2="3.2" y2="1.5" width="0" layer="46"/>
-<wire x1="3.2" y1="1.5" x2="3.2" y2="-1.5" width="0" layer="46"/>
-<wire x1="1.5" y1="4" x2="1.5" y2="5" width="0" layer="46"/>
-<wire x1="1.5" y1="5" x2="-1.5" y2="5" width="0" layer="46"/>
-<wire x1="-1.5" y1="5" x2="-1.5" y2="4" width="0" layer="46"/>
-<wire x1="-1.5" y1="4" x2="1.5" y2="4" width="0" layer="46"/>
-<wire x1="1.5" y1="-4" x2="1.5" y2="-3" width="0" layer="46"/>
-<wire x1="1.5" y1="-3" x2="-1.5" y2="-3" width="0" layer="46"/>
-<wire x1="-1.5" y1="-3" x2="-1.5" y2="-4" width="0" layer="46"/>
-<wire x1="-1.5" y1="-4" x2="1.5" y2="-4" width="0" layer="46"/>
+<wire x1="-4.2" y1="-1.25" x2="-3.2" y2="-1.25" width="0" layer="46"/>
+<wire x1="-3.2" y1="-1.25" x2="-3.2" y2="1.25" width="0" layer="46"/>
+<wire x1="-3.2" y1="1.25" x2="-4.2" y2="1.25" width="0" layer="46"/>
+<wire x1="-4.2" y1="1.25" x2="-4.2" y2="-1.25" width="0" layer="46"/>
+<wire x1="3.2" y1="-1.25" x2="4.2" y2="-1.25" width="0" layer="46"/>
+<wire x1="4.2" y1="-1.25" x2="4.2" y2="1.25" width="0" layer="46"/>
+<wire x1="4.2" y1="1.25" x2="3.2" y2="1.25" width="0" layer="46"/>
+<wire x1="3.2" y1="1.25" x2="3.2" y2="-1.25" width="0" layer="46"/>
+<wire x1="1.25" y1="4" x2="1.25" y2="5" width="0" layer="46"/>
+<wire x1="1.25" y1="5" x2="-1.25" y2="5" width="0" layer="46"/>
+<wire x1="-1.25" y1="5" x2="-1.25" y2="4" width="0" layer="46"/>
+<wire x1="-1.25" y1="4" x2="1.25" y2="4" width="0" layer="46"/>
+<wire x1="1.25" y1="-4" x2="1.25" y2="-3" width="0" layer="46"/>
+<wire x1="1.25" y1="-3" x2="-1.25" y2="-3" width="0" layer="46"/>
+<wire x1="-1.25" y1="-3" x2="-1.25" y2="-4" width="0" layer="46"/>
+<wire x1="-1.25" y1="-4" x2="1.25" y2="-4" width="0" layer="46"/>
 <circle x="0" y="0" radius="5.08" width="0.127" layer="51"/>
 <circle x="0" y="0" radius="6.35" width="0.127" layer="51"/>
 <circle x="0" y="0" radius="7.62" width="0.127" layer="51"/>
@@ -3132,7 +3132,7 @@ BF959 corrected 2008.03.06&lt;br&gt;</description>
 <smd name="SECOND@2" x="0" y="-3.5" dx="4" dy="2" layer="16" roundness="50"/>
 <smd name="RING@2" x="-3.7" y="0" dx="4" dy="2" layer="16" roundness="50" rot="R270"/>
 <circle x="0" y="0" radius="4" width="0.0254" layer="255"/>
-<text x="0" y="6.35" size="1.778" layer="255" align="bottom-center">&gt;VALUE</text>
+<text x="0" y="6.35" size="1.778" layer="255" align="bottom-center">&gt;DESC</text>
 <wire x1="-4" y1="4.75" x2="4" y2="4.75" width="0.127" layer="51"/>
 <wire x1="4" y1="4.75" x2="4" y2="-3.75" width="0.127" layer="51"/>
 <wire x1="4" y1="-3.75" x2="-4" y2="-3.75" width="0.127" layer="51"/>
@@ -3191,7 +3191,7 @@ PCB width:
 <text x="0" y="-1.905" size="1.27" layer="27" align="top-center">&gt;VALUE</text>
 <circle x="0" y="0" radius="6" width="1" layer="21"/>
 <circle x="0" y="0" radius="4.75" width="0.002540625" layer="255"/>
-<text x="0" y="7.62" size="1.778" layer="255" align="bottom-center">&gt;VALUE</text>
+<text x="0" y="7.62" size="1.778" layer="255" align="bottom-center">&gt;DESC</text>
 </package>
 <package name="ALPS_POT">
 <wire x1="6.73" y1="4.93" x2="6.73" y2="-4.93" width="0.2032" layer="51"/>
@@ -3481,7 +3481,7 @@ PCB width:
 <pin name="RING" x="7.62" y="2.54" visible="off" length="middle" rot="R180"/>
 <pin name="SWITCH" x="7.62" y="0" visible="off" length="middle" rot="R180"/>
 <pin name="TIP" x="7.62" y="-5.08" visible="off" length="middle" rot="R180"/>
-<text x="-12.7" y="3.81" size="1.778" layer="95">&gt;NAME</text>
+<text x="-12.7" y="3.81" size="1.778" layer="95">&gt;VALUE</text>
 <pin name="SECOND" x="7.62" y="-7.62" visible="off" length="middle" rot="R180"/>
 <wire x1="2.54" y1="-7.62" x2="-5.08" y2="-7.62" width="0.254" layer="94"/>
 <wire x1="-5.08" y1="-7.62" x2="-6.35" y2="-6.35" width="0.254" layer="94"/>
@@ -3490,6 +3490,8 @@ PCB width:
 <wire x1="-13.97" y1="6.35" x2="-13.97" y2="3.81" width="0.254" layer="94"/>
 <wire x1="-13.97" y1="-6.35" x2="-13.97" y2="-10.16" width="0.254" layer="94"/>
 <wire x1="-13.97" y1="-10.16" x2="5.08" y2="-10.16" width="0.254" layer="94"/>
+<text x="-12.7" y="7.62" size="1.778" layer="95">&gt;DESC</text>
+<text x="-12.7" y="-13.97" size="1.778" layer="95">&gt;NAME</text>
 </symbol>
 <symbol name="EURORACK_PCB">
 <text x="0" y="0" size="2.54" layer="94">Eurorack PCB</text>
@@ -3523,6 +3525,7 @@ PCB width:
 <pin name="S" x="5.08" y="0" visible="off" length="short" direction="pas" rot="R180"/>
 <text x="5.08" y="-10.16" size="1.778" layer="95" rot="R90">&gt;NAME</text>
 <text x="-2.54" y="-10.16" size="1.778" layer="95" rot="R90">&gt;Value</text>
+<text x="7.62" y="-10.16" size="1.778" layer="95" rot="R90">&gt;DESC</text>
 </symbol>
 <symbol name="24LC00T-I/OT">
 <pin name="VCC" x="-17.78" y="5.08" length="middle" direction="pwr"/>
@@ -3577,7 +3580,7 @@ PCB width:
 </symbol>
 </symbols>
 <devicesets>
-<deviceset name="AUDIO-JACK">
+<deviceset name="AUDIO-JACK" uservalue="yes">
 <description>Switching Mono 3.5mm Audio Jack from Erthenvar.</description>
 <gates>
 <gate name="G$1" symbol="AUDIO-JACK" x="0" y="0"/>
@@ -3591,7 +3594,11 @@ PCB width:
 <connect gate="G$1" pin="TIP" pad="TIP@1 TIP@2"/>
 </connects>
 <technologies>
-<technology name=""/>
+<technology name="">
+<attribute name="DESC" value="Output" constant="no"/>
+<attribute name="MPN" value="PJ-341" constant="no"/>
+<attribute name="VALUE" value="PJ-341"/>
+</technology>
 </technologies>
 </device>
 <device name="INPUT" package="3.5MM-JACK-SWITCH-13MM-INPUT">
@@ -3602,7 +3609,11 @@ PCB width:
 <connect gate="G$1" pin="TIP" pad="TIP@1 TIP@2"/>
 </connects>
 <technologies>
-<technology name=""/>
+<technology name="">
+<attribute name="DESC" value="Input" constant="no"/>
+<attribute name="MPN" value="PJ-341" constant="no"/>
+<attribute name="VALUE" value="PJ-341"/>
+</technology>
 </technologies>
 </device>
 </devices>
@@ -3701,7 +3712,9 @@ PCB width:
 <connect gate="G$1" pin="S" pad="P$2"/>
 </connects>
 <technologies>
-<technology name=""/>
+<technology name="">
+<attribute name="DESC" value="Parameter" constant="no"/>
+</technology>
 </technologies>
 </device>
 <device name="_ALPHA24" package="ALPHAPOT-24MM">
@@ -3858,7 +3871,7 @@ PCB width:
 <text x="-1.905" y="0" size="0.635" layer="27" ratio="10">&gt;VALUE</text>
 <rectangle x1="-3.048" y1="-3.048" x2="3.048" y2="3.048" layer="39"/>
 <circle x="0" y="0" radius="1.875" width="0.127" layer="255"/>
-<text x="0" y="5.08" size="1.778" layer="255" align="bottom-center">&gt;NAME</text>
+<text x="0" y="5.08" size="1.778" layer="255" align="bottom-center">&gt;DESC</text>
 </package>
 </packages>
 <symbols>
@@ -3902,6 +3915,7 @@ PCB width:
 <wire x1="6.35" y1="2.54" x2="5.08" y2="2.54" width="0.1524" layer="94"/>
 <circle x="-1.27" y="-0.762" radius="0.254" width="0" layer="94"/>
 <circle x="0" y="-1.27" radius="0.254" width="0" layer="94"/>
+<text x="0" y="6.985" size="1.27" layer="95" ratio="10" align="bottom-center">&gt;DESC</text>
 </symbol>
 </symbols>
 <devicesets>
@@ -3942,7 +3956,9 @@ PCB width:
 <connect gate="K" pin="B1" pad="3"/>
 </connects>
 <technologies>
-<technology name=""/>
+<technology name="">
+<attribute name="DESC" value="Button" constant="no"/>
+</technology>
 </technologies>
 </device>
 <device name="-3100010P1" package="4P-SMD-6.0X6.0X5.0H">
@@ -4297,7 +4313,7 @@ Standard schematic elements and footprints for 5mm, 3mm, 1206, and 0603 sized LE
 <variantdefs>
 </variantdefs>
 <classes>
-<class number="0" name="default" width="0" drill="0">
+<class number="0" name="default" width="0.2032" drill="0">
 </class>
 </classes>
 <parts>
@@ -4328,38 +4344,56 @@ Standard schematic elements and footprints for 5mm, 3mm, 1206, and 0603 sized LE
 <part name="GND3" library="SparkFun" deviceset="GND" device=""/>
 <part name="R12" library="OPL" deviceset="R*" device="-0603" value="33k 1%"/>
 <part name="R15" library="OPL" deviceset="R*" device="-0603" value="49.9k 1%"/>
-<part name="C15" library="OPL" deviceset="C*" device="-0603" value="3.3n"/>
+<part name="C15" library="OPL" deviceset="C*" device="-0603" value="3.3nF"/>
 <part name="R1" library="OPL" deviceset="R*" device="-0603" value="100k 1%"/>
 <part name="GND9" library="SparkFun" deviceset="GND" device=""/>
 <part name="R2" library="OPL" deviceset="R*" device="-0603" value="33k 1%"/>
 <part name="R3" library="OPL" deviceset="R*" device="-0603" value="49.9k 1%"/>
-<part name="C1" library="OPL" deviceset="C*" device="-0603" value="3.3n"/>
+<part name="C1" library="OPL" deviceset="C*" device="-0603" value="3.3nF"/>
 <part name="R5" library="OPL" deviceset="R*" device="-0603" value="25.5k 1%"/>
-<part name="C2" library="OPL" deviceset="C*" device="-0603" value="3.3n"/>
+<part name="C2" library="OPL" deviceset="C*" device="-0603" value="3.3nF"/>
 <part name="R7" library="OPL" deviceset="R*" device="-0603" value="10.2k 1%"/>
 <part name="R8" library="OPL" deviceset="R*" device="-0603" value="25.5k 1%"/>
 <part name="R9" library="OPL" deviceset="R*" device="-0603" value="10.2k 1%"/>
-<part name="C3" library="OPL" deviceset="C*" device="-0603" value="3.3n"/>
+<part name="C3" library="OPL" deviceset="C*" device="-0603" value="3.3nF"/>
 <part name="Q2" library="transistor" deviceset="*-NPN-" device="SOT23-BEC" technology="MMBT3904LT1" value="MMBT3904"/>
 <part name="R67" library="OPL" deviceset="R*" device="-0603" value="100k"/>
 <part name="GND50" library="SparkFun" deviceset="GND" device=""/>
 <part name="R60" library="OPL" deviceset="R*" device="-0603" value="10k"/>
 <part name="GND15" library="SparkFun" deviceset="GND" device=""/>
-<part name="POT_IN1" library="EurorackModularParts" deviceset="POT" device="ZEPHPOT" value="SEED A"/>
-<part name="POT_IN2" library="EurorackModularParts" deviceset="POT" device="ZEPHPOT" value="SEED B"/>
-<part name="POT_TEMPO" library="EurorackModularParts" deviceset="POT" device="ZEPHPOT" value="TEMPO"/>
-<part name="R17" library="EurorackModularParts" deviceset="POT" device="ZEPHPOT" value="INTENSITY"/>
+<part name="POT_IN1" library="EurorackModularParts" deviceset="POT" device="ZEPHPOT" value="SEED A">
+<attribute name="DESC" value="Seed X"/>
+</part>
+<part name="POT_IN2" library="EurorackModularParts" deviceset="POT" device="ZEPHPOT" value="SEED B">
+<attribute name="DESC" value="Seed Y"/>
+</part>
+<part name="POT_TEMPO" library="EurorackModularParts" deviceset="POT" device="ZEPHPOT" value="TEMPO">
+<attribute name="DESC" value="Tempo"/>
+</part>
+<part name="R17" library="EurorackModularParts" deviceset="POT" device="ZEPHPOT" value="INTENSITY">
+<attribute name="DESC" value="Intensity"/>
+</part>
 <part name="SUPPLY3" library="SparkFun-Aesthetics" deviceset="3.3V" device=""/>
 <part name="U$10" library="FarnellThings" deviceset="MCP4822-E/SN" device=""/>
 <part name="GND37" library="SparkFun" deviceset="GND" device=""/>
 <part name="GND40" library="SparkFun" deviceset="GND" device=""/>
 <part name="GND11" library="SparkFun" deviceset="GND" device=""/>
 <part name="GND14" library="SparkFun" deviceset="GND" device=""/>
-<part name="CLOCK" library="EurorackModularParts" deviceset="AUDIO-JACK" device="INPUT" value="Clock In"/>
-<part name="IN1" library="EurorackModularParts" deviceset="AUDIO-JACK" device="INPUT" value="In 1"/>
-<part name="IN2" library="EurorackModularParts" deviceset="AUDIO-JACK" device="INPUT" value="In 2"/>
-<part name="NOTE" library="EurorackModularParts" deviceset="AUDIO-JACK" device="OUTPUT" value="NOTE"/>
-<part name="VELOCITY" library="EurorackModularParts" deviceset="AUDIO-JACK" device="OUTPUT" value="VELOCITY"/>
+<part name="CLOCK" library="EurorackModularParts" deviceset="AUDIO-JACK" device="INPUT" value="PJ-341">
+<attribute name="DESC" value="Clock"/>
+</part>
+<part name="IN1" library="EurorackModularParts" deviceset="AUDIO-JACK" device="INPUT" value="PJ-341">
+<attribute name="DESC" value="Seed X"/>
+</part>
+<part name="IN2" library="EurorackModularParts" deviceset="AUDIO-JACK" device="INPUT" value="PJ-341">
+<attribute name="DESC" value="Seed Y"/>
+</part>
+<part name="NOTE" library="EurorackModularParts" deviceset="AUDIO-JACK" device="OUTPUT" value="PJ-341">
+<attribute name="DESC" value="Note"/>
+</part>
+<part name="VELOCITY" library="EurorackModularParts" deviceset="AUDIO-JACK" device="OUTPUT" value="PJ-341">
+<attribute name="DESC" value="Velocity"/>
+</part>
 <part name="GND32" library="SparkFun" deviceset="GND" device=""/>
 <part name="GND34" library="SparkFun" deviceset="GND" device=""/>
 <part name="U$2" library="EurorackModularParts" deviceset="EURORACK_PCB" device="12HP" value="EURORACK_PCB12HP"/>
@@ -4378,8 +4412,12 @@ Standard schematic elements and footprints for 5mm, 3mm, 1206, and 0603 sized LE
 <part name="GND13" library="SparkFun" deviceset="GND" device=""/>
 <part name="R20" library="OPL" deviceset="R*" device="-0603" value="10k"/>
 <part name="GND17" library="SparkFun" deviceset="GND" device=""/>
-<part name="RESET" library="EurorackModularParts" deviceset="AUDIO-JACK" device="INPUT" value="Reset"/>
-<part name="ACCENT" library="EurorackModularParts" deviceset="AUDIO-JACK" device="OUTPUT" value="ACCENT"/>
+<part name="RESET" library="EurorackModularParts" deviceset="AUDIO-JACK" device="INPUT" value="PJ-341">
+<attribute name="DESC" value="Reset"/>
+</part>
+<part name="ACCENT" library="EurorackModularParts" deviceset="AUDIO-JACK" device="OUTPUT" value="PJ-341">
+<attribute name="DESC" value="Accent"/>
+</part>
 <part name="GND2" library="SparkFun" deviceset="GND" device=""/>
 <part name="SUPPLY7" library="SparkFun-Aesthetics" deviceset="3.3V" device=""/>
 <part name="C5" library="OPL" deviceset="C-POLAR*" device="-A" value="10uF"/>
@@ -4393,7 +4431,9 @@ Standard schematic elements and footprints for 5mm, 3mm, 1206, and 0603 sized LE
 <part name="R27" library="OPL" deviceset="R*" device="-0603" value="33k 1%"/>
 <part name="SUPPLY1" library="SparkFun-Aesthetics" deviceset="3.3V" device=""/>
 <part name="GND30" library="SparkFun" deviceset="GND" device=""/>
-<part name="GATE" library="EurorackModularParts" deviceset="AUDIO-JACK" device="OUTPUT" value="GATE"/>
+<part name="GATE" library="EurorackModularParts" deviceset="AUDIO-JACK" device="OUTPUT" value="PJ-341">
+<attribute name="DESC" value="Gate"/>
+</part>
 <part name="C4" library="OPL" deviceset="C*" device="-0603" value="100nF"/>
 <part name="C7" library="OPL" deviceset="C*" device="-0603" value="100nF"/>
 <part name="GND21" library="SparkFun-Aesthetics" deviceset="GND" device=""/>
@@ -4414,10 +4454,18 @@ Standard schematic elements and footprints for 5mm, 3mm, 1206, and 0603 sized LE
 <part name="U$12" library="zephod-components" deviceset="-12V" device=""/>
 <part name="U$13" library="zephod-components" deviceset="12V" device=""/>
 <part name="GND42" library="SparkFun" deviceset="GND" device=""/>
-<part name="CLOCKOUT_JACK" library="EurorackModularParts" deviceset="AUDIO-JACK" device="OUTPUT" value="Clock Out"/>
-<part name="TICK" library="EurorackModularParts" deviceset="AUDIO-JACK" device="OUTPUT" value="Tick"/>
-<part name="BEAT" library="EurorackModularParts" deviceset="AUDIO-JACK" device="OUTPUT" value="Beat"/>
-<part name="LOOP" library="EurorackModularParts" deviceset="AUDIO-JACK" device="OUTPUT" value="Loop"/>
+<part name="CLOCKOUT_JACK" library="EurorackModularParts" deviceset="AUDIO-JACK" device="OUTPUT" value="PJ-341">
+<attribute name="DESC" value="Clock Out"/>
+</part>
+<part name="TICK" library="EurorackModularParts" deviceset="AUDIO-JACK" device="OUTPUT" value="PJ-341">
+<attribute name="DESC" value="Tick"/>
+</part>
+<part name="BEAT" library="EurorackModularParts" deviceset="AUDIO-JACK" device="OUTPUT" value="PJ-341">
+<attribute name="DESC" value="Beat"/>
+</part>
+<part name="LOOP" library="EurorackModularParts" deviceset="AUDIO-JACK" device="OUTPUT" value="PJ-341">
+<attribute name="DESC" value="Loop"/>
+</part>
 <part name="LED_TPB_2" library="SparkFun-LED" deviceset="LED" device="3MM" value="WHITE 3MM WITH 11MM HOLDER"/>
 <part name="LED_TPB_3" library="SparkFun-LED" deviceset="LED" device="3MM" value="WHITE 3MM WITH 11MM HOLDER"/>
 <part name="LED_TPB_4" library="SparkFun-LED" deviceset="LED" device="3MM" value="WHITE 3MM WITH 11MM HOLDER"/>
@@ -4430,11 +4478,21 @@ Standard schematic elements and footprints for 5mm, 3mm, 1206, and 0603 sized LE
 <part name="LED_BEAT" library="SparkFun-LED" deviceset="LED" device="3MM" value="WHITE 3MM WITH 11MM HOLDER"/>
 <part name="LED_LOOP" library="SparkFun-LED" deviceset="LED" device="3MM" value="WHITE 3MM WITH 11MM HOLDER"/>
 <part name="LED_GATE" library="SparkFun-LED" deviceset="LED" device="3MM" value="WHITE 3MM WITH 11MM HOLDER"/>
-<part name="B_TPB" library="zephod-components" deviceset="BUTTON-4P" device="-3100010P1"/>
-<part name="B_BEATS" library="zephod-components" deviceset="BUTTON-4P" device="-3100010P1"/>
-<part name="INTENSITY" library="EurorackModularParts" deviceset="AUDIO-JACK" device="INPUT" value="INTENSITY"/>
-<part name="B_ALGO" library="zephod-components" deviceset="BUTTON-4P" device="-3100010P1"/>
-<part name="B_SCALE" library="zephod-components" deviceset="BUTTON-4P" device="-3100010P1"/>
+<part name="B_TPB" library="zephod-components" deviceset="BUTTON-4P" device="-3100010P1">
+<attribute name="DESC" value="Ticks"/>
+</part>
+<part name="B_BEATS" library="zephod-components" deviceset="BUTTON-4P" device="-3100010P1">
+<attribute name="DESC" value="Beats"/>
+</part>
+<part name="INTENSITY" library="EurorackModularParts" deviceset="AUDIO-JACK" device="INPUT" value="PJ-341">
+<attribute name="DESC" value="Intensity"/>
+</part>
+<part name="B_ALGO" library="zephod-components" deviceset="BUTTON-4P" device="-3100010P1">
+<attribute name="DESC" value="Algorithm"/>
+</part>
+<part name="B_SCALE" library="zephod-components" deviceset="BUTTON-4P" device="-3100010P1">
+<attribute name="DESC" value="Scale"/>
+</part>
 <part name="GND43" library="SparkFun" deviceset="GND" device=""/>
 <part name="GND44" library="SparkFun" deviceset="GND" device=""/>
 <part name="GND45" library="SparkFun" deviceset="GND" device=""/>
@@ -4480,7 +4538,7 @@ Standard schematic elements and footprints for 5mm, 3mm, 1206, and 0603 sized LE
 <part name="GND76" library="SparkFun" deviceset="GND" device=""/>
 <part name="R22" library="OPL" deviceset="R*" device="-0603" value="33k 1%"/>
 <part name="R28" library="OPL" deviceset="R*" device="-0603" value="49.9k"/>
-<part name="C16" library="OPL" deviceset="C*" device="-0603" value="3.3n"/>
+<part name="C16" library="OPL" deviceset="C*" device="-0603" value="3.3nF"/>
 <part name="GND77" library="SparkFun" deviceset="GND" device=""/>
 <part name="GND78" library="SparkFun" deviceset="GND" device=""/>
 <part name="R30" library="OPL" deviceset="R*" device="-0603" value="33k 1%"/>
@@ -4632,20 +4690,32 @@ Standard schematic elements and footprints for 5mm, 3mm, 1206, and 0603 sized LE
 <instance part="R60" gate="R" x="350.52" y="-55.88" rot="R90"/>
 <instance part="GND15" gate="1" x="327.66" y="-67.31" rot="R180"/>
 <instance part="POT_IN1" gate="G$1" x="48.26" y="-68.58"/>
-<instance part="POT_IN2" gate="G$1" x="48.26" y="-105.41"/>
+<instance part="POT_IN2" gate="G$1" x="48.26" y="-105.41">
+<attribute name="DESC" x="48.26" y="-105.41" size="1.778" layer="96" display="off"/>
+</instance>
 <instance part="POT_TEMPO" gate="G$1" x="381" y="-73.66"/>
 <instance part="R17" gate="G$1" x="48.26" y="-27.94"/>
 <instance part="SUPPLY3" gate="G$1" x="264.16" y="218.44"/>
-<instance part="U$10" gate="A" x="180.34" y="-175.26"/>
-<instance part="GND37" gate="1" x="162.56" y="-193.04"/>
-<instance part="GND40" gate="1" x="162.56" y="-182.88"/>
+<instance part="U$10" gate="A" x="172.72" y="-170.18"/>
+<instance part="GND37" gate="1" x="154.94" y="-187.96"/>
+<instance part="GND40" gate="1" x="154.94" y="-177.8"/>
 <instance part="GND11" gate="1" x="219.71" y="-162.56" rot="R180"/>
 <instance part="GND14" gate="1" x="232.41" y="-182.88"/>
-<instance part="CLOCK" gate="G$1" x="316.23" y="-72.39"/>
-<instance part="IN1" gate="G$1" x="107.95" y="-63.5"/>
-<instance part="IN2" gate="G$1" x="107.95" y="-101.6"/>
-<instance part="NOTE" gate="G$1" x="361.95" y="-168.91" rot="R180"/>
-<instance part="VELOCITY" gate="G$1" x="361.95" y="-187.96" rot="R180"/>
+<instance part="CLOCK" gate="G$1" x="316.23" y="-72.39">
+<attribute name="DESC" x="316.23" y="-72.39" size="1.778" layer="96" display="off"/>
+</instance>
+<instance part="IN1" gate="G$1" x="107.95" y="-63.5">
+<attribute name="DESC" x="107.95" y="-63.5" size="1.778" layer="96" display="off"/>
+</instance>
+<instance part="IN2" gate="G$1" x="107.95" y="-101.6">
+<attribute name="DESC" x="107.95" y="-101.6" size="1.778" layer="96" display="off"/>
+</instance>
+<instance part="NOTE" gate="G$1" x="361.95" y="-168.91" rot="R180">
+<attribute name="DESC" x="361.95" y="-168.91" size="1.778" layer="96" rot="R180" display="off"/>
+</instance>
+<instance part="VELOCITY" gate="G$1" x="361.95" y="-187.96" rot="R180">
+<attribute name="DESC" x="361.95" y="-187.96" size="1.778" layer="96" rot="R180" display="off"/>
+</instance>
 <instance part="GND32" gate="1" x="346.71" y="-171.45" rot="R270"/>
 <instance part="GND34" gate="1" x="346.71" y="-190.5" rot="R270"/>
 <instance part="U$2" gate="G$1" x="76.2" y="44.45"/>
@@ -4664,8 +4734,12 @@ Standard schematic elements and footprints for 5mm, 3mm, 1206, and 0603 sized LE
 <instance part="GND13" gate="1" x="347.98" y="-154.94"/>
 <instance part="R20" gate="R" x="347.98" y="-116.84" rot="R90"/>
 <instance part="GND17" gate="1" x="325.12" y="-128.27" rot="R180"/>
-<instance part="RESET" gate="G$1" x="313.69" y="-133.35"/>
-<instance part="ACCENT" gate="G$1" x="487.68" y="-133.35" rot="R180"/>
+<instance part="RESET" gate="G$1" x="313.69" y="-133.35">
+<attribute name="DESC" x="313.69" y="-133.35" size="1.778" layer="96" display="off"/>
+</instance>
+<instance part="ACCENT" gate="G$1" x="487.68" y="-133.35" rot="R180">
+<attribute name="DESC" x="487.68" y="-133.35" size="1.778" layer="96" rot="R180" display="off"/>
+</instance>
 <instance part="GND2" gate="1" x="381" y="-58.42" rot="R180"/>
 <instance part="SUPPLY7" gate="G$1" x="381" y="-83.82" rot="R180"/>
 <instance part="C5" gate="C" x="137.16" y="222.25" rot="R270"/>
@@ -4677,9 +4751,11 @@ Standard schematic elements and footprints for 5mm, 3mm, 1206, and 0603 sized LE
 <instance part="GND25" gate="1" x="149.86" y="194.31"/>
 <instance part="R23" gate="R" x="147.32" y="-63.5" rot="R180"/>
 <instance part="R27" gate="R" x="147.32" y="-101.6" rot="R180"/>
-<instance part="SUPPLY1" gate="G$1" x="160.02" y="-165.1"/>
+<instance part="SUPPLY1" gate="G$1" x="152.4" y="-160.02"/>
 <instance part="GND30" gate="1" x="323.85" y="-133.35" rot="R90"/>
-<instance part="GATE" gate="G$1" x="490.22" y="-173.99" rot="R180"/>
+<instance part="GATE" gate="G$1" x="490.22" y="-173.99" rot="R180">
+<attribute name="DESC" x="490.22" y="-173.99" size="1.778" layer="96" rot="R180" display="off"/>
+</instance>
 <instance part="C4" gate="C" x="389.89" y="163.83" rot="R90"/>
 <instance part="C7" gate="C" x="453.39" y="163.83" rot="R90"/>
 <instance part="GND21" gate="1" x="438.15" y="91.44"/>
@@ -4700,10 +4776,18 @@ Standard schematic elements and footprints for 5mm, 3mm, 1206, and 0603 sized LE
 <instance part="U$12" gate="G$1" x="1.27" y="-190.5"/>
 <instance part="U$13" gate="G$1" x="458.47" y="-116.84"/>
 <instance part="GND42" gate="1" x="458.47" y="-144.78"/>
-<instance part="CLOCKOUT_JACK" gate="G$1" x="486.41" y="-92.71" rot="R180"/>
-<instance part="TICK" gate="G$1" x="580.39" y="-78.74" rot="R180"/>
-<instance part="BEAT" gate="G$1" x="585.47" y="-129.54" rot="R180"/>
-<instance part="LOOP" gate="G$1" x="585.47" y="-173.99" rot="R180"/>
+<instance part="CLOCKOUT_JACK" gate="G$1" x="486.41" y="-92.71" rot="R180">
+<attribute name="DESC" x="486.41" y="-92.71" size="1.778" layer="96" rot="R180" display="off"/>
+</instance>
+<instance part="TICK" gate="G$1" x="580.39" y="-78.74" rot="R180">
+<attribute name="DESC" x="580.39" y="-78.74" size="1.778" layer="96" rot="R180" display="off"/>
+</instance>
+<instance part="BEAT" gate="G$1" x="585.47" y="-129.54" rot="R180">
+<attribute name="DESC" x="585.47" y="-129.54" size="1.778" layer="96" rot="R180" display="off"/>
+</instance>
+<instance part="LOOP" gate="G$1" x="585.47" y="-173.99" rot="R180">
+<attribute name="DESC" x="585.47" y="-173.99" size="1.778" layer="96" rot="R180" display="off"/>
+</instance>
 <instance part="LED_TPB_2" gate="G$1" x="481.33" y="95.25"/>
 <instance part="LED_TPB_3" gate="G$1" x="490.22" y="95.25"/>
 <instance part="LED_TPB_4" gate="G$1" x="497.84" y="95.25"/>
@@ -4716,11 +4800,21 @@ Standard schematic elements and footprints for 5mm, 3mm, 1206, and 0603 sized LE
 <instance part="LED_BEAT" gate="G$1" x="537.21" y="-142.24"/>
 <instance part="LED_LOOP" gate="G$1" x="535.94" y="-186.69"/>
 <instance part="LED_GATE" gate="G$1" x="441.96" y="-186.69"/>
-<instance part="B_TPB" gate="K" x="458.47" y="48.26"/>
-<instance part="B_BEATS" gate="K" x="448.31" y="19.05"/>
-<instance part="INTENSITY" gate="G$1" x="107.95" y="-26.67"/>
-<instance part="B_ALGO" gate="K" x="367.03" y="36.83"/>
-<instance part="B_SCALE" gate="K" x="407.67" y="16.51"/>
+<instance part="B_TPB" gate="K" x="458.47" y="48.26">
+<attribute name="DESC" x="458.47" y="48.26" size="1.778" layer="96" display="off"/>
+</instance>
+<instance part="B_BEATS" gate="K" x="448.31" y="19.05">
+<attribute name="DESC" x="448.31" y="19.05" size="1.778" layer="96" display="off"/>
+</instance>
+<instance part="INTENSITY" gate="G$1" x="107.95" y="-26.67">
+<attribute name="DESC" x="107.95" y="-26.67" size="1.778" layer="96" display="off"/>
+</instance>
+<instance part="B_ALGO" gate="K" x="367.03" y="36.83">
+<attribute name="DESC" x="367.03" y="36.83" size="1.778" layer="96" display="off"/>
+</instance>
+<instance part="B_SCALE" gate="K" x="407.67" y="16.51">
+<attribute name="DESC" x="407.67" y="16.51" size="1.778" layer="96" display="off"/>
+</instance>
 <instance part="GND43" gate="1" x="398.78" y="6.35"/>
 <instance part="GND44" gate="1" x="416.56" y="6.35"/>
 <instance part="GND45" gate="1" x="439.42" y="13.97"/>
@@ -4853,10 +4947,10 @@ Standard schematic elements and footprints for 5mm, 3mm, 1206, and 0603 sized LE
 <instance part="C21" gate="C" x="308.61" y="165.1" rot="R90"/>
 <instance part="R50" gate="R" x="292.1" y="146.05" rot="R270"/>
 <instance part="R51" gate="R" x="336.55" y="151.13" rot="R270"/>
-<instance part="IC3" gate="D" x="293.37" y="-165.1"/>
-<instance part="IC3" gate="B" x="293.37" y="-182.88"/>
-<instance part="IC3" gate="C" x="232.41" y="-167.64"/>
-<instance part="IC3" gate="A" x="248.92" y="-177.8" rot="MR180"/>
+<instance part="IC3" gate="B" x="293.37" y="-165.1"/>
+<instance part="IC3" gate="C" x="293.37" y="-182.88"/>
+<instance part="IC3" gate="A" x="232.41" y="-167.64"/>
+<instance part="IC3" gate="D" x="248.92" y="-177.8" rot="MR180"/>
 <instance part="IC3" gate="P" x="-2.54" y="-182.88"/>
 <instance part="IC4" gate="K" x="165.1" y="-109.22" rot="MR180"/>
 <instance part="IC4" gate="L" x="161.29" y="8.89" rot="MR0"/>
@@ -4975,12 +5069,12 @@ Standard schematic elements and footprints for 5mm, 3mm, 1206, and 0603 sized LE
 <segment>
 <pinref part="GND11" gate="1" pin="GND"/>
 <wire x1="219.71" y1="-165.1" x2="224.79" y2="-165.1" width="0.1524" layer="91"/>
-<pinref part="IC3" gate="C" pin="+IN"/>
+<pinref part="IC3" gate="A" pin="+IN"/>
 </segment>
 <segment>
 <pinref part="GND14" gate="1" pin="GND"/>
 <wire x1="241.3" y1="-180.34" x2="232.41" y2="-180.34" width="0.1524" layer="91"/>
-<pinref part="IC3" gate="A" pin="+IN"/>
+<pinref part="IC3" gate="D" pin="+IN"/>
 </segment>
 <segment>
 <pinref part="NOTE" gate="G$1" pin="RING"/>
@@ -5342,11 +5436,11 @@ Standard schematic elements and footprints for 5mm, 3mm, 1206, and 0603 sized LE
 <wire x1="195.58" y1="-5.08" x2="195.58" y2="-1.27" width="0.1524" layer="91"/>
 </segment>
 <segment>
-<pinref part="IC3" gate="D" pin="+IN"/>
+<pinref part="IC3" gate="B" pin="+IN"/>
 <pinref part="GND16" gate="1" pin="GND"/>
 </segment>
 <segment>
-<pinref part="IC3" gate="B" pin="+IN"/>
+<pinref part="IC3" gate="C" pin="+IN"/>
 <pinref part="GND101" gate="1" pin="GND"/>
 </segment>
 <segment>
@@ -5409,7 +5503,7 @@ Standard schematic elements and footprints for 5mm, 3mm, 1206, and 0603 sized LE
 </segment>
 <segment>
 <pinref part="U$10" gate="A" pin="VDD"/>
-<wire x1="162.56" y1="-165.1" x2="160.02" y2="-165.1" width="0.1524" layer="91"/>
+<wire x1="154.94" y1="-160.02" x2="152.4" y2="-160.02" width="0.1524" layer="91"/>
 <pinref part="SUPPLY1" gate="G$1" pin="3.3V"/>
 </segment>
 <segment>
@@ -5755,7 +5849,7 @@ Standard schematic elements and footprints for 5mm, 3mm, 1206, and 0603 sized LE
 <wire x1="241.3" y1="-198.12" x2="269.24" y2="-198.12" width="0.1524" layer="91"/>
 <wire x1="269.24" y1="-198.12" x2="269.24" y2="-191.77" width="0.1524" layer="91"/>
 <junction x="269.24" y="-191.77"/>
-<pinref part="IC3" gate="A" pin="OUT"/>
+<pinref part="IC3" gate="D" pin="OUT"/>
 <pinref part="R53" gate="R" pin="1"/>
 <wire x1="269.24" y1="-185.42" x2="274.32" y2="-185.42" width="0.1524" layer="91"/>
 <junction x="269.24" y="-185.42"/>
@@ -5771,24 +5865,10 @@ Standard schematic elements and footprints for 5mm, 3mm, 1206, and 0603 sized LE
 <wire x1="241.3" y1="-148.59" x2="269.24" y2="-148.59" width="0.1524" layer="91"/>
 <wire x1="269.24" y1="-148.59" x2="269.24" y2="-154.94" width="0.1524" layer="91"/>
 <junction x="269.24" y="-154.94"/>
-<pinref part="IC3" gate="C" pin="OUT"/>
+<pinref part="IC3" gate="A" pin="OUT"/>
 <pinref part="R4" gate="R" pin="1"/>
 <wire x1="269.24" y1="-167.64" x2="273.05" y2="-167.64" width="0.1524" layer="91"/>
 <junction x="269.24" y="-167.64"/>
-</segment>
-</net>
-<net name="N$11" class="0">
-<segment>
-<pinref part="U$10" gate="A" pin="VOUTA"/>
-<pinref part="R7" gate="R" pin="2"/>
-<wire x1="198.12" y1="-170.18" x2="200.66" y2="-170.18" width="0.1524" layer="91"/>
-</segment>
-</net>
-<net name="N$12" class="0">
-<segment>
-<pinref part="U$10" gate="A" pin="VOUTB"/>
-<pinref part="R9" gate="R" pin="2"/>
-<wire x1="198.12" y1="-175.26" x2="200.66" y2="-175.26" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$9" class="0">
@@ -5803,7 +5883,7 @@ Standard schematic elements and footprints for 5mm, 3mm, 1206, and 0603 sized LE
 <wire x1="208.28" y1="-198.12" x2="233.68" y2="-198.12" width="0.1524" layer="91"/>
 <junction x="208.28" y="-191.77"/>
 <junction x="208.28" y="-175.26"/>
-<pinref part="IC3" gate="A" pin="-IN"/>
+<pinref part="IC3" gate="D" pin="-IN"/>
 </segment>
 </net>
 <net name="N$10" class="0">
@@ -5818,14 +5898,14 @@ Standard schematic elements and footprints for 5mm, 3mm, 1206, and 0603 sized LE
 <wire x1="208.28" y1="-148.59" x2="233.68" y2="-148.59" width="0.1524" layer="91"/>
 <junction x="208.28" y="-170.18"/>
 <junction x="208.28" y="-154.94"/>
-<pinref part="IC3" gate="C" pin="-IN"/>
+<pinref part="IC3" gate="A" pin="-IN"/>
 </segment>
 </net>
 <net name="DACCS" class="0">
 <segment>
 <pinref part="U$10" gate="A" pin="/CS"/>
-<wire x1="162.56" y1="-172.72" x2="142.24" y2="-172.72" width="0.1524" layer="91"/>
-<label x="143.51" y="-172.72" size="1.778" layer="95"/>
+<wire x1="154.94" y1="-167.64" x2="134.62" y2="-167.64" width="0.1524" layer="91"/>
+<label x="135.89" y="-167.64" size="1.778" layer="95"/>
 </segment>
 <segment>
 <pinref part="U1" gate="A" pin="PTA5/SPI0_SS_B"/>
@@ -5836,8 +5916,8 @@ Standard schematic elements and footprints for 5mm, 3mm, 1206, and 0603 sized LE
 <net name="DACSCK" class="0">
 <segment>
 <pinref part="U$10" gate="A" pin="SCK"/>
-<wire x1="162.56" y1="-175.26" x2="142.24" y2="-175.26" width="0.1524" layer="91"/>
-<label x="143.51" y="-175.26" size="1.778" layer="95"/>
+<wire x1="154.94" y1="-170.18" x2="134.62" y2="-170.18" width="0.1524" layer="91"/>
+<label x="135.89" y="-170.18" size="1.778" layer="95"/>
 </segment>
 <segment>
 <pinref part="U1" gate="A" pin="PTB0/IRQ_5/SPI0_SCK"/>
@@ -5848,8 +5928,8 @@ Standard schematic elements and footprints for 5mm, 3mm, 1206, and 0603 sized LE
 <net name="DACSDI" class="0">
 <segment>
 <pinref part="U$10" gate="A" pin="SDI"/>
-<wire x1="162.56" y1="-177.8" x2="142.24" y2="-177.8" width="0.1524" layer="91"/>
-<label x="143.51" y="-177.8" size="1.778" layer="95"/>
+<wire x1="154.94" y1="-172.72" x2="134.62" y2="-172.72" width="0.1524" layer="91"/>
+<label x="135.89" y="-172.72" size="1.778" layer="95"/>
 </segment>
 <segment>
 <pinref part="U1" gate="A" pin="PTA7/IRQ_4/SPI0_MOSI/SPI0_MISO"/>
@@ -6646,7 +6726,7 @@ Standard schematic elements and footprints for 5mm, 3mm, 1206, and 0603 sized LE
 <net name="N$2" class="0">
 <segment>
 <pinref part="R4" gate="R" pin="2"/>
-<pinref part="IC3" gate="D" pin="-IN"/>
+<pinref part="IC3" gate="B" pin="-IN"/>
 <wire x1="280.67" y1="-167.64" x2="283.21" y2="-167.64" width="0.1524" layer="91"/>
 <wire x1="283.21" y1="-167.64" x2="285.75" y2="-167.64" width="0.1524" layer="91"/>
 <wire x1="283.21" y1="-167.64" x2="283.21" y2="-173.99" width="0.1524" layer="91"/>
@@ -6660,7 +6740,7 @@ Standard schematic elements and footprints for 5mm, 3mm, 1206, and 0603 sized LE
 <pinref part="R6" gate="R" pin="2"/>
 <wire x1="297.18" y1="-173.99" x2="307.34" y2="-173.99" width="0.1524" layer="91"/>
 <wire x1="307.34" y1="-173.99" x2="307.34" y2="-165.1" width="0.1524" layer="91"/>
-<pinref part="IC3" gate="D" pin="OUT"/>
+<pinref part="IC3" gate="B" pin="OUT"/>
 <wire x1="307.34" y1="-165.1" x2="300.99" y2="-165.1" width="0.1524" layer="91"/>
 <pinref part="R24" gate="R" pin="2"/>
 <wire x1="337.82" y1="-163.83" x2="308.61" y2="-163.83" width="0.1524" layer="91"/>
@@ -6671,7 +6751,7 @@ Standard schematic elements and footprints for 5mm, 3mm, 1206, and 0603 sized LE
 <net name="N$17" class="0">
 <segment>
 <pinref part="R53" gate="R" pin="2"/>
-<pinref part="IC3" gate="B" pin="-IN"/>
+<pinref part="IC3" gate="C" pin="-IN"/>
 <wire x1="281.94" y1="-185.42" x2="284.48" y2="-185.42" width="0.1524" layer="91"/>
 <wire x1="284.48" y1="-185.42" x2="285.75" y2="-185.42" width="0.1524" layer="91"/>
 <wire x1="284.48" y1="-185.42" x2="284.48" y2="-193.04" width="0.1524" layer="91"/>
@@ -6685,7 +6765,7 @@ Standard schematic elements and footprints for 5mm, 3mm, 1206, and 0603 sized LE
 <pinref part="R52" gate="R" pin="2"/>
 <wire x1="297.18" y1="-193.04" x2="307.34" y2="-193.04" width="0.1524" layer="91"/>
 <wire x1="307.34" y1="-193.04" x2="307.34" y2="-182.88" width="0.1524" layer="91"/>
-<pinref part="IC3" gate="B" pin="OUT"/>
+<pinref part="IC3" gate="C" pin="OUT"/>
 <wire x1="307.34" y1="-182.88" x2="300.99" y2="-182.88" width="0.1524" layer="91"/>
 <pinref part="R25" gate="R" pin="2"/>
 <wire x1="307.34" y1="-182.88" x2="337.82" y2="-182.88" width="0.1524" layer="91"/>
@@ -6841,13 +6921,31 @@ Standard schematic elements and footprints for 5mm, 3mm, 1206, and 0603 sized LE
 <pinref part="R33" gate="A" pin="1"/>
 </segment>
 </net>
+<net name="N$5" class="0">
+<segment>
+<pinref part="U$10" gate="A" pin="VOUTA"/>
+<wire x1="190.5" y1="-165.1" x2="194.31" y2="-165.1" width="0.1524" layer="91"/>
+<wire x1="194.31" y1="-165.1" x2="196.85" y2="-167.64" width="0.1524" layer="91"/>
+<wire x1="196.85" y1="-167.64" x2="196.85" y2="-172.72" width="0.1524" layer="91"/>
+<wire x1="196.85" y1="-172.72" x2="199.39" y2="-175.26" width="0.1524" layer="91"/>
+<pinref part="R9" gate="R" pin="2"/>
+<wire x1="199.39" y1="-175.26" x2="200.66" y2="-175.26" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="N$7" class="0">
+<segment>
+<pinref part="U$10" gate="A" pin="VOUTB"/>
+<pinref part="R7" gate="R" pin="2"/>
+<wire x1="190.5" y1="-170.18" x2="200.66" y2="-170.18" width="0.1524" layer="91"/>
+</segment>
+</net>
 </nets>
 </sheet>
 </sheets>
 <errors>
 <approved hash="104,1,180.34,111.76,U1,VDD_VREFH,3.3V,,,"/>
-<approved hash="104,1,162.56,-165.1,U$10,VDD,3.3V,,,"/>
-<approved hash="104,1,162.56,-190.5,U$10,VSS,GND,,,"/>
+<approved hash="104,1,154.94,-160.02,U$10,VDD,3.3V,,,"/>
+<approved hash="104,1,154.94,-185.42,U$10,VSS,GND,,,"/>
 <approved hash="104,1,535.94,142.24,U3,VCC,3.3V,,,"/>
 <approved hash="104,1,455.93,130.81,U4,VCC,3.3V,,,"/>
 <approved hash="104,1,367.03,119.38,U5,VCC,3.3V,,,"/>
