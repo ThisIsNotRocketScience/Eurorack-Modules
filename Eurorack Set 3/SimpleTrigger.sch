@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.05" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
+<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="no"/>
 <layer number="2" name="Route2" color="1" fill="3" visible="yes" active="no"/>
@@ -967,7 +967,7 @@ We've spent an enormous amount of time creating and checking these footprints an
 <part name="GND4" library="SparkFun-Aesthetics" deviceset="GND" device=""/>
 <part name="GND5" library="SparkFun-Aesthetics" deviceset="GND" device=""/>
 <part name="GND6" library="SparkFun-Aesthetics" deviceset="GND" device=""/>
-<part name="U$9" library="EurorackModularParts" deviceset="EURORACK_PCB" device="4HP" value="EURORACK_PCB4HP"/>
+<part name="U$9" library="EurorackModularParts" deviceset="EURORACK_PCB" device="2HP" value="EURORACK_PCB2HP"/>
 <part name="U$10" library="zephod-components" deviceset="SWITCH_W_LED_PB6149L-X-102" device="WHITE"/>
 <part name="U$11" library="EurorackModularParts" deviceset="AUDIO-JACK" device="OUTPUT" value="PJ-341"/>
 <part name="U$12" library="EurorackModularParts" deviceset="AUDIO-JACK" device="OUTPUT" value="PJ-341"/>

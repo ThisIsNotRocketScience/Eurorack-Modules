@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
+<grid distance="1" unitdist="mm" unit="mm" style="lines" multiple="1" display="yes" altdistance="0.025" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="2" name="Route2" color="1" fill="3" visible="yes" active="yes"/>
@@ -27,8 +27,8 @@
 <layer number="17" name="Pads" color="2" fill="1" visible="yes" active="yes"/>
 <layer number="18" name="Vias" color="2" fill="1" visible="yes" active="yes"/>
 <layer number="19" name="Unrouted" color="6" fill="1" visible="no" active="yes"/>
-<layer number="20" name="Dimension" color="15" fill="1" visible="no" active="yes"/>
-<layer number="21" name="tPlace" color="7" fill="1" visible="no" active="yes"/>
+<layer number="20" name="Dimension" color="15" fill="1" visible="yes" active="yes"/>
+<layer number="21" name="tPlace" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="22" name="bPlace" color="7" fill="1" visible="no" active="yes"/>
 <layer number="23" name="tOrigins" color="15" fill="1" visible="no" active="yes"/>
 <layer number="24" name="bOrigins" color="15" fill="1" visible="no" active="yes"/>
@@ -58,7 +58,7 @@
 <layer number="48" name="Document" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="49" name="Reference" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="50" name="dxf" color="7" fill="1" visible="no" active="no"/>
-<layer number="51" name="tDocu" color="12" fill="1" visible="no" active="yes"/>
+<layer number="51" name="tDocu" color="12" fill="1" visible="yes" active="yes"/>
 <layer number="52" name="bDocu" color="7" fill="1" visible="no" active="yes"/>
 <layer number="53" name="tGND_GNDA" color="7" fill="9" visible="no" active="no"/>
 <layer number="54" name="bGND_GNDA" color="1" fill="9" visible="no" active="no"/>
@@ -987,6 +987,16 @@ NS Package M08A</description>
 <text x="-4.5466" y="1.8034" size="2.0828" layer="25" ratio="10" rot="SR0">&gt;NAME</text>
 <text x="-5.588" y="-4.0132" size="2.0828" layer="27" ratio="10" rot="SR0">&gt;VALUE</text>
 </package>
+<package name="INOUTBOARD">
+<text x="17" y="9" size="1.27" layer="51" align="center">INOUT</text>
+<text x="0" y="0" size="1.27" layer="51" align="center">MINIJACK</text>
+<text x="16" y="0" size="1.27" layer="51" align="center">BIGJACK</text>
+<text x="35" y="0" size="1.27" layer="51" align="center">POT</text>
+<circle x="0" y="0" radius="4.5" width="0.127" layer="255"/>
+<circle x="16.59" y="0" radius="5.5" width="0.127" layer="255"/>
+<circle x="34.93" y="0" radius="3.5" width="0.127" layer="255"/>
+<wire x1="0" y1="-4.19" x2="34.93" y2="-9.18" width="0.127" layer="51"/>
+</package>
 </packages>
 <symbols>
 <symbol name="EURORACK_PANEL">
@@ -1260,6 +1270,13 @@ NS Package M08A</description>
 <wire x1="12.7" y1="10.16" x2="-12.7" y2="10.16" width="0.4064" layer="94"/>
 <text x="-4.8514" y="12.0396" size="2.0828" layer="95" ratio="10" rot="SR0">&gt;NAME</text>
 <text x="-5.6896" y="-15.1638" size="2.0828" layer="96" ratio="10" rot="SR0">&gt;VALUE</text>
+</symbol>
+<symbol name="INOUTBOARD">
+<text x="0" y="0" size="1.778" layer="94">INOUT BOARD</text>
+<wire x1="-0.635" y1="2.54" x2="19.05" y2="2.54" width="0.254" layer="94"/>
+<wire x1="19.05" y1="2.54" x2="19.05" y2="-0.635" width="0.254" layer="94"/>
+<wire x1="19.05" y1="-0.635" x2="-0.635" y2="-0.635" width="0.254" layer="94"/>
+<wire x1="-0.635" y1="-0.635" x2="-0.635" y2="2.54" width="0.254" layer="94"/>
 </symbol>
 </symbols>
 <devicesets>
@@ -1841,6 +1858,18 @@ NS Package M08A</description>
 <connect gate="O" pin="V+" pad="4"/>
 <connect gate="O" pin="V-" pad="11"/>
 </connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="INOUTBOARD">
+<gates>
+<gate name="G$1" symbol="INOUTBOARD" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="INOUTBOARD">
 <technologies>
 <technology name=""/>
 </technologies>
