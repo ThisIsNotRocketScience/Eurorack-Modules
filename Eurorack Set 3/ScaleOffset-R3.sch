@@ -149,26 +149,22 @@
 <library name="EurorackModularParts">
 <packages>
 <package name="3.5MM-JACK-SWITCH-13MM-OUTPUT">
-<smd name="TIP@1" x="0" y="4.5" dx="4" dy="2" layer="1" roundness="50"/>
-<smd name="SWITCH@1" x="3.7" y="0" dx="4" dy="2" layer="1" roundness="50" rot="R90"/>
-<smd name="SECOND@1" x="0" y="-3.5" dx="4" dy="2" layer="1" roundness="50" rot="R180"/>
-<smd name="RING@1" x="-3.7" y="0" dx="4" dy="2" layer="1" roundness="50" rot="R270"/>
-<wire x1="-4.2" y1="-1.5" x2="-3.2" y2="-1.5" width="0" layer="46"/>
-<wire x1="-3.2" y1="-1.5" x2="-3.2" y2="1.5" width="0" layer="46"/>
-<wire x1="-3.2" y1="1.5" x2="-4.2" y2="1.5" width="0" layer="46"/>
-<wire x1="-4.2" y1="1.5" x2="-4.2" y2="-1.5" width="0" layer="46"/>
-<wire x1="3.2" y1="-1.5" x2="4.2" y2="-1.5" width="0" layer="46"/>
-<wire x1="4.2" y1="-1.5" x2="4.2" y2="1.5" width="0" layer="46"/>
-<wire x1="4.2" y1="1.5" x2="3.2" y2="1.5" width="0" layer="46"/>
-<wire x1="3.2" y1="1.5" x2="3.2" y2="-1.5" width="0" layer="46"/>
-<wire x1="1.5" y1="4" x2="1.5" y2="5" width="0" layer="46"/>
-<wire x1="1.5" y1="5" x2="-1.5" y2="5" width="0" layer="46"/>
-<wire x1="-1.5" y1="5" x2="-1.5" y2="4" width="0" layer="46"/>
-<wire x1="-1.5" y1="4" x2="1.5" y2="4" width="0" layer="46"/>
-<wire x1="1.5" y1="-4" x2="1.5" y2="-3" width="0" layer="46"/>
-<wire x1="1.5" y1="-3" x2="-1.5" y2="-3" width="0" layer="46"/>
-<wire x1="-1.5" y1="-3" x2="-1.5" y2="-4" width="0" layer="46"/>
-<wire x1="-1.5" y1="-4" x2="1.5" y2="-4" width="0" layer="46"/>
+<wire x1="-4.2" y1="-1.25" x2="-3.2" y2="-1.25" width="0" layer="46"/>
+<wire x1="-3.2" y1="-1.25" x2="-3.2" y2="1.25" width="0" layer="46"/>
+<wire x1="-3.2" y1="1.25" x2="-4.2" y2="1.25" width="0" layer="46"/>
+<wire x1="-4.2" y1="1.25" x2="-4.2" y2="-1.25" width="0" layer="46"/>
+<wire x1="3.2" y1="-1.25" x2="4.2" y2="-1.25" width="0" layer="46"/>
+<wire x1="4.2" y1="-1.25" x2="4.2" y2="1.25" width="0" layer="46"/>
+<wire x1="4.2" y1="1.25" x2="3.2" y2="1.25" width="0" layer="46"/>
+<wire x1="3.2" y1="1.25" x2="3.2" y2="-1.25" width="0" layer="46"/>
+<wire x1="1.25" y1="4" x2="1.25" y2="5" width="0" layer="46"/>
+<wire x1="1.25" y1="5" x2="-1.25" y2="5" width="0" layer="46"/>
+<wire x1="-1.25" y1="5" x2="-1.25" y2="4" width="0" layer="46"/>
+<wire x1="-1.25" y1="4" x2="1.25" y2="4" width="0" layer="46"/>
+<wire x1="1.25" y1="-4" x2="1.25" y2="-3" width="0" layer="46"/>
+<wire x1="1.25" y1="-3" x2="-1.25" y2="-3" width="0" layer="46"/>
+<wire x1="-1.25" y1="-3" x2="-1.25" y2="-4" width="0" layer="46"/>
+<wire x1="-1.25" y1="-4" x2="1.25" y2="-4" width="0" layer="46"/>
 <circle x="0" y="0" radius="5.08" width="0.1" layer="51"/>
 <circle x="0" y="0" radius="6.35" width="0.1" layer="51"/>
 <circle x="0" y="0" radius="7.62" width="0.1" layer="51"/>
@@ -179,34 +175,35 @@
 <circle x="0" y="0" radius="2.9" width="0.1" layer="21"/>
 <circle x="0" y="0" radius="2" width="0.1" layer="21"/>
 <circle x="0" y="0" radius="1" width="0.1" layer="21"/>
-<smd name="TIP@2" x="0" y="4.5" dx="4" dy="2" layer="16" roundness="50" rot="R180"/>
-<smd name="SWITCH@2" x="3.7" y="0" dx="4" dy="2" layer="16" roundness="50" rot="R90"/>
-<smd name="SECOND@2" x="0" y="-3.5" dx="4" dy="2" layer="16" roundness="50"/>
-<smd name="RING@2" x="-3.7" y="0" dx="4" dy="2" layer="16" roundness="50" rot="R270"/>
 <circle x="0" y="0" radius="4" width="0.0254" layer="255"/>
-<text x="0" y="6.35" size="1.778" layer="255" align="bottom-center">&gt;VALUE</text>
+<text x="0" y="6.35" size="1.778" layer="255" align="bottom-center">&gt;DESC</text>
+<wire x1="-4" y1="4.75" x2="4" y2="4.75" width="0.127" layer="51"/>
+<wire x1="4" y1="4.75" x2="4" y2="-3.75" width="0.127" layer="51"/>
+<wire x1="4" y1="-3.75" x2="-4" y2="-3.75" width="0.127" layer="51"/>
+<wire x1="-4" y1="-3.75" x2="-4" y2="4.75" width="0.127" layer="51"/>
+<rectangle x1="-4" y1="-3.75" x2="4" y2="4.75" layer="39"/>
+<pad name="RING@3" x="-3.7" y="0" drill="0.8" diameter="1.9304" shape="long" rot="R90"/>
+<pad name="SWITCH@3" x="3.7" y="0" drill="0.8" diameter="1.9304" shape="long" rot="R90"/>
+<pad name="SECOND@3" x="0" y="-3.5" drill="0.8" diameter="1.9304" shape="long" rot="R180"/>
+<pad name="TIP@3" x="0" y="4.5" drill="0.8" diameter="1.9304" shape="long" rot="R180"/>
 </package>
 <package name="3.5MM-JACK-SWITCH-13MM-INPUT">
-<smd name="TIP@1" x="0" y="4.5" dx="4" dy="2" layer="1" roundness="50"/>
-<smd name="SWITCH@1" x="3.7" y="0" dx="4" dy="2" layer="1" roundness="50" rot="R90"/>
-<smd name="SECOND@1" x="0" y="-3.5" dx="4" dy="2" layer="1" roundness="50" rot="R180"/>
-<smd name="RING@1" x="-3.7" y="0" dx="4" dy="2" layer="1" roundness="50" rot="R270"/>
-<wire x1="-4.2" y1="-1.5" x2="-3.2" y2="-1.5" width="0" layer="46"/>
-<wire x1="-3.2" y1="-1.5" x2="-3.2" y2="1.5" width="0" layer="46"/>
-<wire x1="-3.2" y1="1.5" x2="-4.2" y2="1.5" width="0" layer="46"/>
-<wire x1="-4.2" y1="1.5" x2="-4.2" y2="-1.5" width="0" layer="46"/>
-<wire x1="3.2" y1="-1.5" x2="4.2" y2="-1.5" width="0" layer="46"/>
-<wire x1="4.2" y1="-1.5" x2="4.2" y2="1.5" width="0" layer="46"/>
-<wire x1="4.2" y1="1.5" x2="3.2" y2="1.5" width="0" layer="46"/>
-<wire x1="3.2" y1="1.5" x2="3.2" y2="-1.5" width="0" layer="46"/>
-<wire x1="1.5" y1="4" x2="1.5" y2="5" width="0" layer="46"/>
-<wire x1="1.5" y1="5" x2="-1.5" y2="5" width="0" layer="46"/>
-<wire x1="-1.5" y1="5" x2="-1.5" y2="4" width="0" layer="46"/>
-<wire x1="-1.5" y1="4" x2="1.5" y2="4" width="0" layer="46"/>
-<wire x1="1.5" y1="-4" x2="1.5" y2="-3" width="0" layer="46"/>
-<wire x1="1.5" y1="-3" x2="-1.5" y2="-3" width="0" layer="46"/>
-<wire x1="-1.5" y1="-3" x2="-1.5" y2="-4" width="0" layer="46"/>
-<wire x1="-1.5" y1="-4" x2="1.5" y2="-4" width="0" layer="46"/>
+<wire x1="-4.2" y1="-1.25" x2="-3.2" y2="-1.25" width="0" layer="46"/>
+<wire x1="-3.2" y1="-1.25" x2="-3.2" y2="1.25" width="0" layer="46"/>
+<wire x1="-3.2" y1="1.25" x2="-4.2" y2="1.25" width="0" layer="46"/>
+<wire x1="-4.2" y1="1.25" x2="-4.2" y2="-1.25" width="0" layer="46"/>
+<wire x1="3.2" y1="-1.25" x2="4.2" y2="-1.25" width="0" layer="46"/>
+<wire x1="4.2" y1="-1.25" x2="4.2" y2="1.25" width="0" layer="46"/>
+<wire x1="4.2" y1="1.25" x2="3.2" y2="1.25" width="0" layer="46"/>
+<wire x1="3.2" y1="1.25" x2="3.2" y2="-1.25" width="0" layer="46"/>
+<wire x1="1.25" y1="4" x2="1.25" y2="5" width="0" layer="46"/>
+<wire x1="1.25" y1="5" x2="-1.25" y2="5" width="0" layer="46"/>
+<wire x1="-1.25" y1="5" x2="-1.25" y2="4" width="0" layer="46"/>
+<wire x1="-1.25" y1="4" x2="1.25" y2="4" width="0" layer="46"/>
+<wire x1="1.25" y1="-4" x2="1.25" y2="-3" width="0" layer="46"/>
+<wire x1="1.25" y1="-3" x2="-1.25" y2="-3" width="0" layer="46"/>
+<wire x1="-1.25" y1="-3" x2="-1.25" y2="-4" width="0" layer="46"/>
+<wire x1="-1.25" y1="-4" x2="1.25" y2="-4" width="0" layer="46"/>
 <circle x="0" y="0" radius="5.08" width="0.127" layer="51"/>
 <circle x="0" y="0" radius="6.35" width="0.127" layer="51"/>
 <circle x="0" y="0" radius="7.62" width="0.127" layer="51"/>
@@ -216,12 +213,17 @@
 <circle x="0" y="0" radius="6" width="0.1" layer="21"/>
 <circle x="0" y="0" radius="3" width="1.2" layer="21"/>
 <circle x="0" y="0" radius="1.5" width="2" layer="21"/>
-<smd name="TIP@2" x="0" y="4.5" dx="4" dy="2" layer="16" roundness="50" rot="R180"/>
-<smd name="SWITCH@2" x="3.7" y="0" dx="4" dy="2" layer="16" roundness="50" rot="R90"/>
-<smd name="SECOND@2" x="0" y="-3.5" dx="4" dy="2" layer="16" roundness="50"/>
-<smd name="RING@2" x="-3.7" y="0" dx="4" dy="2" layer="16" roundness="50" rot="R270"/>
 <circle x="0" y="0" radius="4" width="0.0254" layer="255"/>
-<text x="0" y="6.35" size="1.778" layer="255" align="bottom-center">&gt;VALUE</text>
+<text x="0" y="6.35" size="1.778" layer="255" align="bottom-center">&gt;DESC</text>
+<wire x1="-4" y1="4.75" x2="4" y2="4.75" width="0.127" layer="51"/>
+<wire x1="4" y1="4.75" x2="4" y2="-3.75" width="0.127" layer="51"/>
+<wire x1="4" y1="-3.75" x2="-4" y2="-3.75" width="0.127" layer="51"/>
+<wire x1="-4" y1="-3.75" x2="-4" y2="4.75" width="0.127" layer="51"/>
+<rectangle x1="-4" y1="-3.75" x2="4" y2="4.75" layer="39"/>
+<pad name="TIP@3" x="0" y="4.5" drill="0.8" diameter="1.9304" shape="long"/>
+<pad name="SWITCH@3" x="3.7" y="0" drill="0.8" diameter="1.9304" shape="long" rot="R90"/>
+<pad name="RING@3" x="-3.7" y="0" drill="0.8" diameter="1.9304" shape="long" rot="R90"/>
+<pad name="SECOND@3" x="0" y="-3.5" drill="0.8" diameter="1.9304" shape="long" rot="R180"/>
 </package>
 <package name="POWER_16">
 <pad name="1" x="-6.35" y="-1.27" drill="1.016" diameter="1.8796" shape="octagon"/>
@@ -360,7 +362,7 @@
 <text x="0" y="-1.905" size="1.27" layer="27" align="top-center">&gt;VALUE</text>
 <circle x="0" y="0" radius="6" width="1" layer="21"/>
 <circle x="0" y="0" radius="4.75" width="0.002540625" layer="255"/>
-<text x="0" y="7.62" size="1.778" layer="255" align="bottom-center">&gt;VALUE</text>
+<text x="0" y="7.62" size="1.778" layer="255" align="bottom-center">&gt;DESC</text>
 </package>
 <package name="ALPHAPOT-24MM">
 <circle x="0" y="0" radius="12" width="0.127" layer="51"/>
@@ -402,22 +404,24 @@
 <wire x1="4.305" y1="1.9" x2="4.305" y2="-1.4" width="0.2032" layer="51"/>
 <wire x1="4.305" y1="-1.4" x2="4.305" y2="-1.9" width="0.2032" layer="51"/>
 <wire x1="-4.305" y1="1.9" x2="4.305" y2="1.9" width="0.2032" layer="51"/>
-<smd name="2" x="-2.54" y="-2.6" dx="0.6" dy="2.2" layer="1"/>
-<smd name="13" x="-2.54" y="2.6" dx="0.6" dy="2.2" layer="1"/>
-<smd name="1" x="-3.81" y="-2.6" dx="0.6" dy="2.2" layer="1"/>
-<smd name="3" x="-1.27" y="-2.6" dx="0.6" dy="2.2" layer="1"/>
-<smd name="4" x="0" y="-2.6" dx="0.6" dy="2.2" layer="1"/>
-<smd name="14" x="-3.81" y="2.6" dx="0.6" dy="2.2" layer="1"/>
-<smd name="12" x="-1.27" y="2.6" dx="0.6" dy="2.2" layer="1"/>
-<smd name="11" x="0" y="2.6" dx="0.6" dy="2.2" layer="1"/>
-<smd name="6" x="2.54" y="-2.6" dx="0.6" dy="2.2" layer="1"/>
-<smd name="9" x="2.54" y="2.6" dx="0.6" dy="2.2" layer="1"/>
-<smd name="5" x="1.27" y="-2.6" dx="0.6" dy="2.2" layer="1"/>
-<smd name="7" x="3.81" y="-2.6" dx="0.6" dy="2.2" layer="1"/>
-<smd name="10" x="1.27" y="2.6" dx="0.6" dy="2.2" layer="1"/>
-<smd name="8" x="3.81" y="2.6" dx="0.6" dy="2.2" layer="1"/>
-<text x="-4.572" y="-1.905" size="1.27" layer="25" rot="R90">&gt;NAME</text>
-<text x="5.842" y="-1.905" size="1.27" layer="27" rot="R90">&gt;VALUE</text>
+<wire x1="-4.445" y1="4.445" x2="-4.445" y2="1.905" width="0.127" layer="21"/>
+<wire x1="-4.445" y1="1.905" x2="-4.445" y2="0" width="0.127" layer="21"/>
+<wire x1="-4.445" y1="0" x2="-4.445" y2="-1.27" width="0.127" layer="21"/>
+<wire x1="-4.445" y1="-1.27" x2="-4.445" y2="-1.905" width="0.127" layer="21"/>
+<wire x1="-4.445" y1="-1.905" x2="-4.445" y2="-4.445" width="0.127" layer="21"/>
+<wire x1="-4.445" y1="-4.445" x2="4.445" y2="-4.445" width="0.127" layer="21"/>
+<wire x1="4.445" y1="-4.445" x2="4.445" y2="-1.905" width="0.127" layer="21"/>
+<wire x1="4.445" y1="-1.905" x2="4.445" y2="-1.27" width="0.127" layer="21"/>
+<wire x1="4.445" y1="-1.27" x2="4.445" y2="1.905" width="0.127" layer="21"/>
+<wire x1="4.445" y1="1.905" x2="4.445" y2="4.445" width="0.127" layer="21"/>
+<wire x1="4.445" y1="4.445" x2="-4.445" y2="4.445" width="0.127" layer="21"/>
+<wire x1="-4.445" y1="0" x2="-3.175" y2="0" width="0.127" layer="21"/>
+<wire x1="-3.175" y1="0" x2="-3.175" y2="-5.715" width="0.127" layer="21"/>
+<wire x1="-3.175" y1="-5.715" x2="-4.445" y2="-5.715" width="0.127" layer="21"/>
+<wire x1="-4.445" y1="-5.715" x2="-4.445" y2="-4.445" width="0.127" layer="21"/>
+<wire x1="-4.445" y1="1.905" x2="4.445" y2="1.905" width="0.127" layer="21"/>
+<wire x1="4.445" y1="-1.905" x2="-4.445" y2="-1.905" width="0.127" layer="21"/>
+<wire x1="-4.445" y1="-1.27" x2="4.445" y2="-1.27" width="0.127" layer="21"/>
 <rectangle x1="-4.055" y1="-3.1" x2="-3.565" y2="-2" layer="51"/>
 <rectangle x1="-2.785" y1="-3.1" x2="-2.295" y2="-2" layer="51"/>
 <rectangle x1="-1.515" y1="-3.1" x2="-1.025" y2="-2" layer="51"/>
@@ -432,30 +436,28 @@
 <rectangle x1="3.565" y1="2" x2="4.055" y2="3.1" layer="51"/>
 <rectangle x1="2.295" y1="2" x2="2.785" y2="3.1" layer="51"/>
 <rectangle x1="1.025" y1="2" x2="1.515" y2="3.1" layer="51"/>
-<wire x1="-4.445" y1="4.445" x2="-4.445" y2="1.905" width="0.127" layer="21"/>
-<wire x1="-4.445" y1="1.905" x2="-4.445" y2="0" width="0.127" layer="21"/>
-<wire x1="-4.445" y1="0" x2="-4.445" y2="-1.27" width="0.127" layer="21"/>
-<wire x1="-4.445" y1="-1.905" x2="-4.445" y2="-4.445" width="0.127" layer="21"/>
-<wire x1="-4.445" y1="-4.445" x2="4.445" y2="-4.445" width="0.127" layer="21"/>
-<wire x1="4.445" y1="-4.445" x2="4.445" y2="-1.905" width="0.127" layer="21"/>
-<wire x1="4.445" y1="-1.905" x2="4.445" y2="-1.27" width="0.127" layer="21"/>
-<wire x1="4.445" y1="-1.27" x2="4.445" y2="1.905" width="0.127" layer="21"/>
-<wire x1="4.445" y1="1.905" x2="4.445" y2="4.445" width="0.127" layer="21"/>
-<wire x1="4.445" y1="4.445" x2="-4.445" y2="4.445" width="0.127" layer="21"/>
-<wire x1="-4.445" y1="0" x2="-3.175" y2="0" width="0.127" layer="21"/>
-<wire x1="-3.175" y1="0" x2="-3.175" y2="-5.715" width="0.127" layer="21"/>
-<wire x1="-3.175" y1="-5.715" x2="-4.445" y2="-5.715" width="0.127" layer="21"/>
-<wire x1="-4.445" y1="-5.715" x2="-4.445" y2="-4.445" width="0.127" layer="21"/>
+<smd name="1" x="-3.81" y="-2.6" dx="0.6" dy="2.2" layer="1"/>
+<smd name="2" x="-2.54" y="-2.6" dx="0.6" dy="2.2" layer="1"/>
+<smd name="3" x="-1.27" y="-2.6" dx="0.6" dy="2.2" layer="1"/>
+<smd name="4" x="0" y="-2.6" dx="0.6" dy="2.2" layer="1"/>
+<smd name="5" x="1.27" y="-2.6" dx="0.6" dy="2.2" layer="1"/>
+<smd name="6" x="2.54" y="-2.6" dx="0.6" dy="2.2" layer="1"/>
+<smd name="7" x="3.81" y="-2.6" dx="0.6" dy="2.2" layer="1"/>
+<smd name="8" x="3.81" y="2.6" dx="0.6" dy="2.2" layer="1"/>
+<smd name="9" x="2.54" y="2.6" dx="0.6" dy="2.2" layer="1"/>
+<smd name="10" x="1.27" y="2.6" dx="0.6" dy="2.2" layer="1"/>
+<smd name="11" x="0" y="2.6" dx="0.6" dy="2.2" layer="1"/>
+<smd name="12" x="-1.27" y="2.6" dx="0.6" dy="2.2" layer="1"/>
+<smd name="13" x="-2.54" y="2.6" dx="0.6" dy="2.2" layer="1"/>
+<smd name="14" x="-3.81" y="2.6" dx="0.6" dy="2.2" layer="1"/>
+<text x="-4.572" y="-1.905" size="1.27" layer="25" rot="R90">&gt;NAME</text>
+<text x="5.842" y="-1.905" size="1.27" layer="27" rot="R90">&gt;VALUE</text>
 <polygon width="0.127" layer="21">
 <vertex x="-4.445" y="0"/>
 <vertex x="-3.175" y="0"/>
 <vertex x="-3.175" y="-5.715"/>
 <vertex x="-4.445" y="-5.715"/>
 </polygon>
-<wire x1="-4.445" y1="1.905" x2="4.445" y2="1.905" width="0.127" layer="21"/>
-<wire x1="4.445" y1="-1.905" x2="-4.445" y2="-1.905" width="0.127" layer="21"/>
-<wire x1="-4.445" y1="-1.905" x2="-4.445" y2="-1.27" width="0.127" layer="21"/>
-<wire x1="-4.445" y1="-1.27" x2="4.445" y2="-1.27" width="0.127" layer="21"/>
 </package>
 <package name="EURORACK6HPPCB">
 <wire x1="0.5" y1="105.5" x2="0.5" y2="1" width="0.127" layer="20"/>
@@ -591,7 +593,7 @@ PCB width:
 <pin name="RING" x="7.62" y="2.54" visible="off" length="middle" rot="R180"/>
 <pin name="SWITCH" x="7.62" y="0" visible="off" length="middle" rot="R180"/>
 <pin name="TIP" x="7.62" y="-5.08" visible="off" length="middle" rot="R180"/>
-<text x="-12.7" y="3.81" size="1.778" layer="95">&gt;NAME</text>
+<text x="-12.7" y="3.81" size="1.778" layer="95">&gt;VALUE</text>
 <pin name="SECOND" x="7.62" y="-7.62" visible="off" length="middle" rot="R180"/>
 <wire x1="2.54" y1="-7.62" x2="-5.08" y2="-7.62" width="0.254" layer="94"/>
 <wire x1="-5.08" y1="-7.62" x2="-6.35" y2="-6.35" width="0.254" layer="94"/>
@@ -600,6 +602,8 @@ PCB width:
 <wire x1="-13.97" y1="6.35" x2="-13.97" y2="3.81" width="0.254" layer="94"/>
 <wire x1="-13.97" y1="-6.35" x2="-13.97" y2="-10.16" width="0.254" layer="94"/>
 <wire x1="-13.97" y1="-10.16" x2="5.08" y2="-10.16" width="0.254" layer="94"/>
+<text x="-12.7" y="7.62" size="1.778" layer="95">&gt;DESC</text>
+<text x="-12.7" y="-13.97" size="1.778" layer="95">&gt;NAME</text>
 </symbol>
 <symbol name="POWER">
 <wire x1="-5.08" y1="7.62" x2="-5.08" y2="-10.16" width="0.254" layer="94"/>
@@ -628,15 +632,16 @@ PCB width:
 <wire x1="1.27" y1="0" x2="2.54" y2="1.27" width="0.2032" layer="94"/>
 <wire x1="2.54" y1="-1.27" x2="1.27" y2="0" width="0.2032" layer="94"/>
 <wire x1="2.54" y1="1.27" x2="2.54" y2="-1.27" width="0.2032" layer="94"/>
-<wire x1="2.032" y1="-4.699" x2="2.032" y2="-2.159" width="0.1524" layer="94"/>
-<wire x1="2.032" y1="-2.159" x2="2.667" y2="-3.429" width="0.1524" layer="94"/>
-<wire x1="2.667" y1="-3.429" x2="1.397" y2="-3.429" width="0.1524" layer="94"/>
-<wire x1="1.397" y1="-3.429" x2="2.032" y2="-2.159" width="0.1524" layer="94"/>
+<wire x1="2.032" y1="-4.064" x2="2.032" y2="-6.604" width="0.1524" layer="94"/>
+<wire x1="2.032" y1="-6.604" x2="2.667" y2="-5.334" width="0.1524" layer="94"/>
+<wire x1="2.667" y1="-5.334" x2="1.397" y2="-5.334" width="0.1524" layer="94"/>
+<wire x1="1.397" y1="-5.334" x2="2.032" y2="-6.604" width="0.1524" layer="94"/>
 <pin name="A" x="0" y="-7.62" visible="off" length="short" direction="pas" rot="R90"/>
 <pin name="E" x="0" y="7.62" visible="off" length="short" direction="pas" rot="R270"/>
 <pin name="S" x="5.08" y="0" visible="off" length="short" direction="pas" rot="R180"/>
 <text x="5.08" y="-10.16" size="1.778" layer="95" rot="R90">&gt;NAME</text>
 <text x="-2.54" y="-10.16" size="1.778" layer="95" rot="R90">&gt;Value</text>
+<text x="7.62" y="-10.16" size="1.778" layer="95" rot="R90">&gt;DESC</text>
 </symbol>
 <symbol name="EURORACK_PCB">
 <text x="0" y="0" size="2.54" layer="94">Eurorack PCB</text>
@@ -668,7 +673,7 @@ PCB width:
 </symbol>
 </symbols>
 <devicesets>
-<deviceset name="AUDIO-JACK">
+<deviceset name="AUDIO-JACK" uservalue="yes">
 <description>Switching Mono 3.5mm Audio Jack from Erthenvar.</description>
 <gates>
 <gate name="G$1" symbol="AUDIO-JACK" x="0" y="0"/>
@@ -676,24 +681,32 @@ PCB width:
 <devices>
 <device name="OUTPUT" package="3.5MM-JACK-SWITCH-13MM-OUTPUT">
 <connects>
-<connect gate="G$1" pin="RING" pad="RING@1 RING@2"/>
-<connect gate="G$1" pin="SECOND" pad="SECOND@1 SECOND@2"/>
-<connect gate="G$1" pin="SWITCH" pad="SWITCH@1 SWITCH@2"/>
-<connect gate="G$1" pin="TIP" pad="TIP@1 TIP@2"/>
+<connect gate="G$1" pin="RING" pad="RING@3"/>
+<connect gate="G$1" pin="SECOND" pad="SECOND@3"/>
+<connect gate="G$1" pin="SWITCH" pad="SWITCH@3"/>
+<connect gate="G$1" pin="TIP" pad="TIP@3"/>
 </connects>
 <technologies>
-<technology name=""/>
+<technology name="">
+<attribute name="DESC" value="Output" constant="no"/>
+<attribute name="MPN" value="PJ-341" constant="no"/>
+<attribute name="VALUE" value="PJ-341"/>
+</technology>
 </technologies>
 </device>
 <device name="INPUT" package="3.5MM-JACK-SWITCH-13MM-INPUT">
 <connects>
-<connect gate="G$1" pin="RING" pad="RING@1 RING@2"/>
-<connect gate="G$1" pin="SECOND" pad="SECOND@1 SECOND@2"/>
-<connect gate="G$1" pin="SWITCH" pad="SWITCH@1 SWITCH@2"/>
-<connect gate="G$1" pin="TIP" pad="TIP@1 TIP@2"/>
+<connect gate="G$1" pin="RING" pad="RING@3"/>
+<connect gate="G$1" pin="SECOND" pad="SECOND@3"/>
+<connect gate="G$1" pin="SWITCH" pad="SWITCH@3"/>
+<connect gate="G$1" pin="TIP" pad="TIP@3"/>
 </connects>
 <technologies>
-<technology name=""/>
+<technology name="">
+<attribute name="DESC" value="Input" constant="no"/>
+<attribute name="MPN" value="PJ-341" constant="no"/>
+<attribute name="VALUE" value="PJ-341"/>
+</technology>
 </technologies>
 </device>
 </devices>
@@ -780,7 +793,9 @@ PCB width:
 <connect gate="G$1" pin="S" pad="P$2"/>
 </connects>
 <technologies>
-<technology name=""/>
+<technology name="">
+<attribute name="DESC" value="Parameter" constant="no"/>
+</technology>
 </technologies>
 </device>
 <device name="_ALPHA24" package="ALPHAPOT-24MM">
@@ -1156,9 +1171,25 @@ We've spent an enormous amount of time creating and checking these footprints an
 <wire x1="1.5748" y1="-1.2954" x2="1.5748" y2="-0.8382" width="0.254" layer="21"/>
 <pad name="A" x="-1.27" y="0" drill="0.8128" diameter="1.8796"/>
 <pad name="K" x="1.27" y="0" drill="0.8128" diameter="1.8796"/>
-<text x="1.905" y="0.381" size="1.27" layer="25" ratio="10">&gt;NAME</text>
-<text x="1.905" y="-1.651" size="1.27" layer="27" ratio="10">&gt;VALUE</text>
 <circle x="0" y="0" radius="1.5" width="0.0254" layer="255"/>
+<wire x1="1" y1="2" x2="2.25" y2="2" width="0.127" layer="21"/>
+<wire x1="2.25" y1="2" x2="2.25" y2="-2" width="0.127" layer="21"/>
+<wire x1="2.25" y1="-2" x2="1" y2="-2" width="0.127" layer="21"/>
+<wire x1="0.75" y1="-2" x2="1" y2="-2" width="0.127" layer="21"/>
+<wire x1="1" y1="-2" x2="1.5" y2="-1.5" width="0.127" layer="21"/>
+<wire x1="1.5" y1="-1.5" x2="1.5" y2="1.5" width="0.127" layer="21"/>
+<wire x1="1.5" y1="1.5" x2="1" y2="2" width="0.127" layer="21"/>
+<wire x1="1" y1="2" x2="0.75" y2="2" width="0.127" layer="21"/>
+<polygon width="0.127" layer="21">
+<vertex x="0.75" y="2"/>
+<vertex x="2.25" y="2"/>
+<vertex x="2.25" y="-2"/>
+<vertex x="0.75" y="-2"/>
+<vertex x="1.25" y="-2"/>
+<vertex x="1" y="-2"/>
+<vertex x="1.5" y="-1.25"/>
+<vertex x="1.5" y="1.25"/>
+</polygon>
 </package>
 <package name="LED-1206">
 <wire x1="-1" y1="1" x2="-2.4" y2="1" width="0.2032" layer="21"/>

@@ -1707,43 +1707,156 @@ new: Attribute TP_SIGNAL_NAME&lt;br&gt;
 <attribute name="MPN" value="MKL02Z32VFK4" x="19.25" y="49.5" size="0.6" layer="27" display="off"/>
 <attribute name="SUPPLIER" value="FREESCALE SEMICONDUCTOR" x="19.25" y="49.5" size="0.6" layer="27" display="off"/>
 <attribute name="OC_FARNELL" value="2321481" x="19.25" y="49.5" size="0.6" layer="27" display="off"/>
+<attribute name="MF" value="NXP" x="39.25" y="49.5" size="1.778" layer="27" display="off"/>
 </element>
-<element name="SWD1" library="carrilib with jtags" package="M50-3600542" value="CORTEX_SWD" x="23.765" y="66.06" rot="R180"/>
-<element name="C10" library="OPL" package="C0603" value="100nF" x="32.25" y="49.75"/>
-<element name="C8" library="OPL" package="C0603" value="100nF" x="17.145" y="42.295" rot="R270"/>
-<element name="C11" library="OPL" package="C0603" value="100nF" x="5.815" y="41.49" rot="R270"/>
-<element name="C12" library="OPL" package="AVX-A" value="10uF" x="19.935" y="39.41"/>
-<element name="C13" library="OPL" package="AVX-A" value="10uF" x="3.315" y="42.125" rot="R90"/>
-<element name="IC1" library="ld-components" package="SOT223" value="LD1117AS33TR" x="11.43" y="41.275" rot="R270"/>
-<element name="U$1" library="eurorack" package="POWER_16" value="POWER" x="10.795" y="19.685" rot="MR180"/>
-<element name="R16" library="OPL" package="R0603" value="100k 1%" x="15.24" y="48.895" rot="R90"/>
-<element name="R12" library="OPL" package="R0603" value="33k 1%" x="42.25" y="42" rot="R270"/>
-<element name="R15" library="OPL" package="R0603" value="49.9k 1%" x="38.25" y="42" rot="R90"/>
-<element name="C15" library="OPL" package="C0603" value="3.3nF" x="40.25" y="42" rot="R90"/>
-<element name="R1" library="OPL" package="R0603" value="100k 1%" x="13.335" y="36.83" rot="R180"/>
-<element name="R2" library="OPL" package="R0603" value="33k 1%" x="54" y="36" rot="R90"/>
-<element name="R3" library="OPL" package="R0603" value="49.9k 1%" x="24.765" y="38.735" rot="R90"/>
-<element name="C1" library="OPL" package="C0603" value="3.3nF" x="56" y="36" rot="R270"/>
-<element name="R5" library="OPL" package="R0603" value="25.5k 1%" x="30.48" y="27.305"/>
-<element name="C2" library="OPL" package="C0603" value="3.3nF" x="30.48" y="25.4" rot="R180"/>
-<element name="R7" library="OPL" package="R0603" value="10.2k 1%" x="30.345" y="34.06" rot="R90"/>
-<element name="R8" library="OPL" package="R0603" value="25.5k 1%" x="30.865" y="11.045"/>
-<element name="R9" library="OPL" package="R0603" value="10.2k 1%" x="32.135" y="34.06" rot="R90"/>
-<element name="C3" library="OPL" package="C0603" value="3.3nF" x="29.98" y="13.72" rot="R180"/>
-<element name="Q2" library="transistor" package="SOT23-BEC" value="MMBT3904" x="4.445" y="90.17" rot="R180"/>
-<element name="R67" library="OPL" package="R0603" value="100k" x="8.255" y="91.44" rot="R180"/>
-<element name="R60" library="OPL" package="R0603" value="10k" x="8.495" y="88.89"/>
+<element name="SWD1" library="carrilib with jtags" package="M50-3600542" value="CORTEX_SWD" x="23.765" y="66.06" rot="R180">
+<attribute name="OC_FARNELL" value="unknown" x="23.765" y="66.06" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="MF" value="" x="23.765" y="66.06" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="MPN" value="" x="23.765" y="66.06" size="1.778" layer="27" rot="R180" display="off"/>
+</element>
+<element name="C10" library="OPL" package="C0603" value="100nF" x="32.25" y="49.75">
+<attribute name="OC_FARNELL" value="1759017" x="32.25" y="49.75" size="1.778" layer="27" display="off"/>
+<attribute name="MF" value="MULTICOMP" x="32.25" y="49.75" size="1.778" layer="27" display="off"/>
+<attribute name="MPN" value="MC0603F104Z160CT" x="32.25" y="49.75" size="1.778" layer="27" display="off"/>
+</element>
+<element name="C8" library="OPL" package="C0603" value="100nF" x="17.145" y="42.295" rot="R270">
+<attribute name="OC_FARNELL" value="1759017" x="17.145" y="42.295" size="1.778" layer="27" rot="R270" display="off"/>
+<attribute name="MF" value="MULTICOMP" x="17.145" y="42.295" size="1.778" layer="27" rot="R270" display="off"/>
+<attribute name="MPN" value="MC0603F104Z160CT" x="17.145" y="42.295" size="1.778" layer="27" rot="R270" display="off"/>
+</element>
+<element name="C11" library="OPL" package="C0603" value="100nF" x="5.815" y="41.49" rot="R270">
+<attribute name="OC_FARNELL" value="1759017" x="5.815" y="41.49" size="1.778" layer="27" rot="R270" display="off"/>
+<attribute name="MF" value="MULTICOMP" x="5.815" y="41.49" size="1.778" layer="27" rot="R270" display="off"/>
+<attribute name="MPN" value="MC0603F104Z160CT" x="5.815" y="41.49" size="1.778" layer="27" rot="R270" display="off"/>
+</element>
+<element name="C12" library="OPL" package="AVX-A" value="10uF" x="19.935" y="39.41">
+<attribute name="OC_FARNELL" value="197427" x="19.935" y="39.41" size="1.778" layer="27" display="off"/>
+<attribute name="MF" value="AVX" x="19.935" y="39.41" size="1.778" layer="27" display="off"/>
+<attribute name="MPN" value="TAJB106K020RNJ" x="19.935" y="39.41" size="1.778" layer="27" display="off"/>
+</element>
+<element name="C13" library="OPL" package="AVX-A" value="10uF" x="3.315" y="42.125" rot="R90">
+<attribute name="OC_FARNELL" value="197427" x="3.315" y="42.125" size="1.778" layer="27" rot="R90" display="off"/>
+<attribute name="MF" value="AVX" x="3.315" y="42.125" size="1.778" layer="27" rot="R90" display="off"/>
+<attribute name="MPN" value="TAJB106K020RNJ" x="3.315" y="42.125" size="1.778" layer="27" rot="R90" display="off"/>
+</element>
+<element name="IC1" library="ld-components" package="SOT223" value="LD1117AS33TR" x="11.43" y="41.275" rot="R270">
+<attribute name="OC_FARNELL" value="1467776" x="11.43" y="41.275" size="1.778" layer="27" rot="R270" display="off"/>
+<attribute name="MF" value="STMICROELECTRONICS" x="11.43" y="41.275" size="1.778" layer="27" rot="R270" display="off"/>
+<attribute name="MPN" value="LD1117AS33TR" x="11.43" y="41.275" size="1.778" layer="27" rot="R270" display="off"/>
+</element>
+<element name="U$1" library="eurorack" package="POWER_16" value="POWER" x="10.795" y="19.685" rot="MR180">
+<attribute name="OC_FARNELL" value="unknown" x="10.795" y="19.685" size="1.778" layer="28" rot="MR180" display="off"/>
+<attribute name="MF" value="" x="10.795" y="19.685" size="1.778" layer="28" rot="MR180" display="off"/>
+<attribute name="MPN" value="" x="10.795" y="19.685" size="1.778" layer="28" rot="MR180" display="off"/>
+</element>
+<element name="R16" library="OPL" package="R0603" value="100k 1%" x="15.24" y="48.895" rot="R90">
+<attribute name="OC_FARNELL" value="unknown" x="15.24" y="48.895" size="1.778" layer="27" rot="R90" display="off"/>
+<attribute name="MF" value="" x="15.24" y="48.895" size="1.778" layer="27" rot="R90" display="off"/>
+<attribute name="MPN" value="" x="15.24" y="48.895" size="1.778" layer="27" rot="R90" display="off"/>
+</element>
+<element name="R12" library="OPL" package="R0603" value="33k 1%" x="42.25" y="42" rot="R270">
+<attribute name="OC_FARNELL" value="unknown" x="42.25" y="42" size="1.778" layer="27" rot="R270" display="off"/>
+<attribute name="MF" value="" x="42.25" y="42" size="1.778" layer="27" rot="R270" display="off"/>
+<attribute name="MPN" value="" x="42.25" y="42" size="1.778" layer="27" rot="R270" display="off"/>
+</element>
+<element name="R15" library="OPL" package="R0603" value="49.9k 1%" x="38.25" y="42" rot="R90">
+<attribute name="OC_FARNELL" value="unknown" x="38.25" y="42" size="1.778" layer="27" rot="R90" display="off"/>
+<attribute name="MF" value="" x="38.25" y="42" size="1.778" layer="27" rot="R90" display="off"/>
+<attribute name="MPN" value="" x="38.25" y="42" size="1.778" layer="27" rot="R90" display="off"/>
+</element>
+<element name="C15" library="OPL" package="C0603" value="3.3nF" x="40.25" y="42" rot="R90">
+<attribute name="OC_FARNELL" value="unknown" x="40.25" y="42" size="1.778" layer="27" rot="R90" display="off"/>
+<attribute name="MF" value="" x="40.25" y="42" size="1.778" layer="27" rot="R90" display="off"/>
+<attribute name="MPN" value="" x="40.25" y="42" size="1.778" layer="27" rot="R90" display="off"/>
+</element>
+<element name="R1" library="OPL" package="R0603" value="100k 1%" x="13.335" y="36.83" rot="R180">
+<attribute name="OC_FARNELL" value="unknown" x="13.335" y="36.83" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="MF" value="" x="13.335" y="36.83" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="MPN" value="" x="13.335" y="36.83" size="1.778" layer="27" rot="R180" display="off"/>
+</element>
+<element name="R2" library="OPL" package="R0603" value="33k 1%" x="54" y="36" rot="R90">
+<attribute name="OC_FARNELL" value="unknown" x="54" y="36" size="1.778" layer="27" rot="R90" display="off"/>
+<attribute name="MF" value="" x="54" y="36" size="1.778" layer="27" rot="R90" display="off"/>
+<attribute name="MPN" value="" x="54" y="36" size="1.778" layer="27" rot="R90" display="off"/>
+</element>
+<element name="R3" library="OPL" package="R0603" value="49.9k 1%" x="24.765" y="38.735" rot="R90">
+<attribute name="OC_FARNELL" value="unknown" x="24.765" y="38.735" size="1.778" layer="27" rot="R90" display="off"/>
+<attribute name="MF" value="" x="24.765" y="38.735" size="1.778" layer="27" rot="R90" display="off"/>
+<attribute name="MPN" value="" x="24.765" y="38.735" size="1.778" layer="27" rot="R90" display="off"/>
+</element>
+<element name="C1" library="OPL" package="C0603" value="3.3nF" x="56" y="36" rot="R270">
+<attribute name="OC_FARNELL" value="unknown" x="56" y="36" size="1.778" layer="27" rot="R270" display="off"/>
+<attribute name="MF" value="" x="56" y="36" size="1.778" layer="27" rot="R270" display="off"/>
+<attribute name="MPN" value="" x="56" y="36" size="1.778" layer="27" rot="R270" display="off"/>
+</element>
+<element name="R5" library="OPL" package="R0603" value="25.5k 1%" x="30.48" y="27.305">
+<attribute name="OC_FARNELL" value="unknown" x="30.48" y="27.305" size="1.778" layer="27" display="off"/>
+<attribute name="MF" value="" x="30.48" y="27.305" size="1.778" layer="27" display="off"/>
+<attribute name="MPN" value="" x="30.48" y="27.305" size="1.778" layer="27" display="off"/>
+</element>
+<element name="C2" library="OPL" package="C0603" value="3.3nF" x="30.48" y="25.4" rot="R180">
+<attribute name="OC_FARNELL" value="unknown" x="30.48" y="25.4" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="MF" value="" x="30.48" y="25.4" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="MPN" value="" x="30.48" y="25.4" size="1.778" layer="27" rot="R180" display="off"/>
+</element>
+<element name="R7" library="OPL" package="R0603" value="10.2k 1%" x="30.345" y="34.06" rot="R90">
+<attribute name="OC_FARNELL" value="unknown" x="30.345" y="34.06" size="1.778" layer="27" rot="R90" display="off"/>
+<attribute name="MF" value="" x="30.345" y="34.06" size="1.778" layer="27" rot="R90" display="off"/>
+<attribute name="MPN" value="" x="30.345" y="34.06" size="1.778" layer="27" rot="R90" display="off"/>
+</element>
+<element name="R8" library="OPL" package="R0603" value="25.5k 1%" x="30.865" y="11.045">
+<attribute name="OC_FARNELL" value="unknown" x="30.865" y="11.045" size="1.778" layer="27" display="off"/>
+<attribute name="MF" value="" x="30.865" y="11.045" size="1.778" layer="27" display="off"/>
+<attribute name="MPN" value="" x="30.865" y="11.045" size="1.778" layer="27" display="off"/>
+</element>
+<element name="R9" library="OPL" package="R0603" value="10.2k 1%" x="32.135" y="34.06" rot="R90">
+<attribute name="OC_FARNELL" value="unknown" x="32.135" y="34.06" size="1.778" layer="27" rot="R90" display="off"/>
+<attribute name="MF" value="" x="32.135" y="34.06" size="1.778" layer="27" rot="R90" display="off"/>
+<attribute name="MPN" value="" x="32.135" y="34.06" size="1.778" layer="27" rot="R90" display="off"/>
+</element>
+<element name="C3" library="OPL" package="C0603" value="3.3nF" x="29.98" y="13.72" rot="R180">
+<attribute name="OC_FARNELL" value="unknown" x="29.98" y="13.72" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="MF" value="" x="29.98" y="13.72" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="MPN" value="" x="29.98" y="13.72" size="1.778" layer="27" rot="R180" display="off"/>
+</element>
+<element name="Q2" library="transistor" package="SOT23-BEC" value="MMBT3904" x="4.445" y="90.17" rot="R180">
+<attribute name="OC_FARNELL" value="2336795" x="4.445" y="90.17" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="MF" value="NXP" x="4.445" y="90.17" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="MPN" value="PMBT3904,215" x="4.445" y="90.17" size="1.778" layer="27" rot="R180" display="off"/>
+</element>
+<element name="R67" library="OPL" package="R0603" value="100k" x="8.255" y="91.44" rot="R180">
+<attribute name="OC_FARNELL" value="unknown" x="8.255" y="91.44" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="MF" value="" x="8.255" y="91.44" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="MPN" value="" x="8.255" y="91.44" size="1.778" layer="27" rot="R180" display="off"/>
+</element>
+<element name="R60" library="OPL" package="R0603" value="10k" x="8.495" y="88.89">
+<attribute name="OC_FARNELL" value="unknown" x="8.495" y="88.89" size="1.778" layer="27" display="off"/>
+<attribute name="MF" value="" x="8.495" y="88.89" size="1.778" layer="27" display="off"/>
+<attribute name="MPN" value="" x="8.495" y="88.89" size="1.778" layer="27" display="off"/>
+</element>
 <element name="POT_IN1" library="EurorackModularParts" package="OG-POTS_ALPS_POT_VERTICAL" value="SEED A" x="22.86" y="50.8">
 <attribute name="DESC" value="Seed X" x="22.86" y="50.8" size="1.778" layer="27" display="off"/>
+<attribute name="OC_FARNELL" value="unknown" x="22.86" y="50.8" size="1.778" layer="27" display="off"/>
+<attribute name="MF" value="" x="22.86" y="50.8" size="1.778" layer="27" display="off"/>
+<attribute name="MPN" value="" x="22.86" y="50.8" size="1.778" layer="27" display="off"/>
 </element>
 <element name="POT_IN2" library="EurorackModularParts" package="OG-POTS_ALPS_POT_VERTICAL" value="SEED B" x="22.86" y="30.48">
 <attribute name="DESC" value="Seed Y" x="22.86" y="30.48" size="1.778" layer="27" display="off"/>
+<attribute name="OC_FARNELL" value="unknown" x="22.86" y="30.48" size="1.778" layer="27" display="off"/>
+<attribute name="MF" value="" x="22.86" y="30.48" size="1.778" layer="27" display="off"/>
+<attribute name="MPN" value="" x="22.86" y="30.48" size="1.778" layer="27" display="off"/>
 </element>
 <element name="POT_TEMPO" library="EurorackModularParts" package="OG-POTS_ALPS_POT_VERTICAL" value="TEMPO" x="22.86" y="99.06">
 <attribute name="DESC" value="Tempo" x="22.86" y="99.06" size="1.778" layer="27" display="off"/>
+<attribute name="OC_FARNELL" value="unknown" x="22.86" y="99.06" size="1.778" layer="27" display="off"/>
+<attribute name="MF" value="" x="22.86" y="99.06" size="1.778" layer="27" display="off"/>
+<attribute name="MPN" value="" x="22.86" y="99.06" size="1.778" layer="27" display="off"/>
 </element>
 <element name="R17" library="EurorackModularParts" package="OG-POTS_ALPS_POT_VERTICAL" value="INTENSITY" x="22.86" y="10.16">
 <attribute name="DESC" value="Intensity" x="22.86" y="10.16" size="1.778" layer="27" display="off"/>
+<attribute name="OC_FARNELL" value="unknown" x="22.86" y="10.16" size="1.778" layer="27" display="off"/>
+<attribute name="MF" value="" x="22.86" y="10.16" size="1.778" layer="27" display="off"/>
+<attribute name="MPN" value="" x="22.86" y="10.16" size="1.778" layer="27" display="off"/>
 </element>
 <element name="U$10" library="FarnellThings" package="SOIC8-N_MC" value="MCP4822-E/SN" x="30.48" y="40.91" rot="R270">
 <attribute name="PACKAGE" value="SOIC-8" x="30.48" y="40.91" size="1.778" layer="27" rot="R270" display="off"/>
@@ -1752,170 +1865,471 @@ new: Attribute TP_SIGNAL_NAME&lt;br&gt;
 <attribute name="MPN" value="MCP4822-E/SN" x="30.48" y="40.91" size="1.778" layer="27" rot="R270" display="off"/>
 <attribute name="SUPPLIER" value="Microchip" x="30.48" y="40.91" size="1.778" layer="27" rot="R270" display="off"/>
 <attribute name="OC_FARNELL" value="1439414" x="30.48" y="40.91" size="1.778" layer="27" rot="R270" display="off"/>
+<attribute name="MF" value="MICROCHIP" x="30.48" y="40.91" size="1.778" layer="27" rot="R270" display="off"/>
 </element>
 <element name="CLOCK" library="EurorackModularParts" package="3.5MM-JACK-SWITCH-13MM-INPUT" value="PJ-341" x="7.62" y="99.06">
 <attribute name="DESC" value="Clock" x="7.62" y="99.06" size="1.778" layer="27" display="off"/>
 <attribute name="VALUE" value="PJ-341" x="7.62" y="99.06" size="1.778" layer="27" display="off"/>
-<attribute name="MPN" value="PJ-341" x="7.62" y="99.06" size="1.778" layer="27" display="off"/>
+<attribute name="MPN" value="" x="7.62" y="99.06" size="1.778" layer="27" display="off"/>
+<attribute name="OC_FARNELL" value="unknown" x="7.62" y="99.06" size="1.778" layer="27" display="off"/>
+<attribute name="MF" value="" x="7.62" y="99.06" size="1.778" layer="27" display="off"/>
 </element>
 <element name="IN1" library="EurorackModularParts" package="3.5MM-JACK-SWITCH-13MM-INPUT" value="PJ-341" x="7.62" y="50.8">
 <attribute name="DESC" value="Seed X" x="7.62" y="50.8" size="1.778" layer="27" display="off"/>
 <attribute name="VALUE" value="PJ-341" x="7.62" y="50.8" size="1.778" layer="27" display="off"/>
-<attribute name="MPN" value="PJ-341" x="7.62" y="50.8" size="1.778" layer="27" display="off"/>
+<attribute name="MPN" value="" x="7.62" y="50.8" size="1.778" layer="27" display="off"/>
+<attribute name="OC_FARNELL" value="unknown" x="7.62" y="50.8" size="1.778" layer="27" display="off"/>
+<attribute name="MF" value="" x="7.62" y="50.8" size="1.778" layer="27" display="off"/>
 </element>
 <element name="IN2" library="EurorackModularParts" package="3.5MM-JACK-SWITCH-13MM-INPUT" value="PJ-341" x="7.62" y="30.48">
 <attribute name="DESC" value="Seed Y" x="7.62" y="30.48" size="1.778" layer="27" display="off"/>
 <attribute name="VALUE" value="PJ-341" x="7.62" y="30.48" size="1.778" layer="27" display="off"/>
-<attribute name="MPN" value="PJ-341" x="7.62" y="30.48" size="1.778" layer="27" display="off"/>
+<attribute name="MPN" value="" x="7.62" y="30.48" size="1.778" layer="27" display="off"/>
+<attribute name="OC_FARNELL" value="unknown" x="7.62" y="30.48" size="1.778" layer="27" display="off"/>
+<attribute name="MF" value="" x="7.62" y="30.48" size="1.778" layer="27" display="off"/>
 </element>
 <element name="NOTE" library="EurorackModularParts" package="3.5MM-JACK-SWITCH-13MM-OUTPUT" value="PJ-341" x="43.18" y="13.97">
 <attribute name="DESC" value="Note" x="43.18" y="13.97" size="1.778" layer="27" display="off"/>
 <attribute name="VALUE" value="PJ-341" x="43.18" y="13.97" size="1.778" layer="27" display="off"/>
-<attribute name="MPN" value="PJ-341" x="43.18" y="13.97" size="1.778" layer="27" display="off"/>
+<attribute name="MPN" value="" x="43.18" y="13.97" size="1.778" layer="27" display="off"/>
+<attribute name="OC_FARNELL" value="unknown" x="43.18" y="13.97" size="1.778" layer="27" display="off"/>
+<attribute name="MF" value="" x="43.18" y="13.97" size="1.778" layer="27" display="off"/>
 </element>
 <element name="VELOCITY" library="EurorackModularParts" package="3.5MM-JACK-SWITCH-13MM-OUTPUT" value="PJ-341" x="43.18" y="26.67">
 <attribute name="DESC" value="Velocity" x="43.18" y="26.67" size="1.778" layer="27" display="off"/>
 <attribute name="VALUE" value="PJ-341" x="43.18" y="26.67" size="1.778" layer="27" display="off"/>
-<attribute name="MPN" value="PJ-341" x="43.18" y="26.67" size="1.778" layer="27" display="off"/>
+<attribute name="MPN" value="" x="43.18" y="26.67" size="1.778" layer="27" display="off"/>
+<attribute name="OC_FARNELL" value="unknown" x="43.18" y="26.67" size="1.778" layer="27" display="off"/>
+<attribute name="MF" value="" x="43.18" y="26.67" size="1.778" layer="27" display="off"/>
 </element>
-<element name="U$2" library="EurorackModularParts" package="EURORACK12HPPCB" value="EURORACK_PCB12HP" x="0.67" y="0"/>
-<element name="R24" library="OPL" package="R0603" value="100" x="36.08" y="10.795" rot="R90"/>
-<element name="R25" library="OPL" package="R0603" value="100" x="36.48" y="30.85" rot="R270"/>
-<element name="C18" library="OPL" package="C0603" value="100nF 16V+" x="32.98" y="13.08" rot="R90"/>
-<element name="C19" library="OPL" package="C0603" value="100nF 16V+" x="33.23" y="26.665" rot="R270"/>
-<element name="Q1" library="transistor" package="SOT23-BEC" value="MMBT3904" x="30.73" y="100.965" rot="R180"/>
-<element name="R18" library="OPL" package="R0603" value="100k" x="31.865" y="104.775" rot="R180"/>
-<element name="R20" library="OPL" package="R0603" value="10k" x="29.75" y="95" rot="R270"/>
+<element name="U$2" library="EurorackModularParts" package="EURORACK12HPPCB" value="EURORACK_PCB12HP" x="0.67" y="0">
+<attribute name="OC_FARNELL" value="unknown" x="0.67" y="0" size="1.778" layer="27" display="off"/>
+<attribute name="MF" value="" x="0.67" y="0" size="1.778" layer="27" display="off"/>
+<attribute name="MPN" value="" x="0.67" y="0" size="1.778" layer="27" display="off"/>
+</element>
+<element name="R24" library="OPL" package="R0603" value="100" x="36.08" y="10.795" rot="R90">
+<attribute name="OC_FARNELL" value="unknown" x="36.08" y="10.795" size="1.778" layer="27" rot="R90" display="off"/>
+<attribute name="MF" value="" x="36.08" y="10.795" size="1.778" layer="27" rot="R90" display="off"/>
+<attribute name="MPN" value="" x="36.08" y="10.795" size="1.778" layer="27" rot="R90" display="off"/>
+</element>
+<element name="R25" library="OPL" package="R0603" value="100" x="36.48" y="30.85" rot="R270">
+<attribute name="OC_FARNELL" value="unknown" x="36.48" y="30.85" size="1.778" layer="27" rot="R270" display="off"/>
+<attribute name="MF" value="" x="36.48" y="30.85" size="1.778" layer="27" rot="R270" display="off"/>
+<attribute name="MPN" value="" x="36.48" y="30.85" size="1.778" layer="27" rot="R270" display="off"/>
+</element>
+<element name="C18" library="OPL" package="C0603" value="100nF 16V+" x="32.98" y="13.08" rot="R90">
+<attribute name="OC_FARNELL" value="1759017" x="32.98" y="13.08" size="1.778" layer="27" rot="R90" display="off"/>
+<attribute name="MF" value="MULTICOMP" x="32.98" y="13.08" size="1.778" layer="27" rot="R90" display="off"/>
+<attribute name="MPN" value="MC0603F104Z160CT" x="32.98" y="13.08" size="1.778" layer="27" rot="R90" display="off"/>
+</element>
+<element name="C19" library="OPL" package="C0603" value="100nF 16V+" x="33.23" y="26.665" rot="R270">
+<attribute name="OC_FARNELL" value="1759017" x="33.23" y="26.665" size="1.778" layer="27" rot="R270" display="off"/>
+<attribute name="MF" value="MULTICOMP" x="33.23" y="26.665" size="1.778" layer="27" rot="R270" display="off"/>
+<attribute name="MPN" value="MC0603F104Z160CT" x="33.23" y="26.665" size="1.778" layer="27" rot="R270" display="off"/>
+</element>
+<element name="Q1" library="transistor" package="SOT23-BEC" value="MMBT3904" x="30.73" y="100.965" rot="R180">
+<attribute name="OC_FARNELL" value="2336795" x="30.73" y="100.965" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="MF" value="NXP" x="30.73" y="100.965" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="MPN" value="PMBT3904,215" x="30.73" y="100.965" size="1.778" layer="27" rot="R180" display="off"/>
+</element>
+<element name="R18" library="OPL" package="R0603" value="100k" x="31.865" y="104.775" rot="R180">
+<attribute name="OC_FARNELL" value="unknown" x="31.865" y="104.775" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="MF" value="" x="31.865" y="104.775" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="MPN" value="" x="31.865" y="104.775" size="1.778" layer="27" rot="R180" display="off"/>
+</element>
+<element name="R20" library="OPL" package="R0603" value="10k" x="29.75" y="95" rot="R270">
+<attribute name="OC_FARNELL" value="unknown" x="29.75" y="95" size="1.778" layer="27" rot="R270" display="off"/>
+<attribute name="MF" value="" x="29.75" y="95" size="1.778" layer="27" rot="R270" display="off"/>
+<attribute name="MPN" value="" x="29.75" y="95" size="1.778" layer="27" rot="R270" display="off"/>
+</element>
 <element name="RESET" library="EurorackModularParts" package="3.5MM-JACK-SWITCH-13MM-INPUT" value="PJ-341" x="38.1" y="99.06">
 <attribute name="DESC" value="Reset" x="38.1" y="99.06" size="1.778" layer="27" display="off"/>
 <attribute name="VALUE" value="PJ-341" x="38.1" y="99.06" size="1.778" layer="27" display="off"/>
-<attribute name="MPN" value="PJ-341" x="38.1" y="99.06" size="1.778" layer="27" display="off"/>
+<attribute name="MPN" value="" x="38.1" y="99.06" size="1.778" layer="27" display="off"/>
+<attribute name="OC_FARNELL" value="unknown" x="38.1" y="99.06" size="1.778" layer="27" display="off"/>
+<attribute name="MF" value="" x="38.1" y="99.06" size="1.778" layer="27" display="off"/>
 </element>
 <element name="ACCENT" library="EurorackModularParts" package="3.5MM-JACK-SWITCH-13MM-OUTPUT" value="PJ-341" x="53.34" y="21.59">
 <attribute name="DESC" value="Accent" x="53.34" y="21.59" size="1.778" layer="27" display="off"/>
 <attribute name="VALUE" value="PJ-341" x="53.34" y="21.59" size="1.778" layer="27" display="off"/>
-<attribute name="MPN" value="PJ-341" x="53.34" y="21.59" size="1.778" layer="27" display="off"/>
+<attribute name="MPN" value="" x="53.34" y="21.59" size="1.778" layer="27" display="off"/>
+<attribute name="OC_FARNELL" value="unknown" x="53.34" y="21.59" size="1.778" layer="27" display="off"/>
+<attribute name="MF" value="" x="53.34" y="21.59" size="1.778" layer="27" display="off"/>
 </element>
-<element name="C5" library="OPL" package="AVX-A" value="10uF" x="20.32" y="60.96" rot="R180"/>
+<element name="C5" library="OPL" package="AVX-A" value="10uF" x="20.32" y="60.96" rot="R180">
+<attribute name="OC_FARNELL" value="197427" x="20.32" y="60.96" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="MF" value="AVX" x="20.32" y="60.96" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="MPN" value="TAJB106K020RNJ" x="20.32" y="60.96" size="1.778" layer="27" rot="R180" display="off"/>
+</element>
 <element name="U2" library="FarnellThings" package="SOT95P237X112-3N" value="LM4040DIM3-5.0" x="14.335" y="57.785" rot="R180">
 <attribute name="PACKAGE" value="SOT-23-3" x="14.335" y="62.865" size="1.778" layer="27" rot="R180" display="off"/>
 <attribute name="OC_NEWARK" value="97K3489" x="14.335" y="62.865" size="1.778" layer="27" rot="R180" display="off"/>
 <attribute name="MPN" value="LM4040DIM3-5.0" x="14.335" y="62.865" size="1.778" layer="27" rot="R180" display="off"/>
 <attribute name="SUPPLIER" value="TEXAS INSTRUMENTS" x="14.335" y="62.865" size="1.778" layer="27" rot="R180" display="off"/>
-<attribute name="OC_FARNELL" value="9778330 " x="14.335" y="62.865" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="OC_FARNELL" value="9778330" x="14.335" y="62.865" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="MF" value="TEXAS INSTRUMENTS" x="14.335" y="57.785" size="1.778" layer="27" rot="R180" display="off"/>
 </element>
-<element name="R26" library="OPL" package="R0603" value="10k" x="16.51" y="60.96" rot="R180"/>
-<element name="C6" library="OPL" package="C0603" value="1uF" x="11.43" y="57.785" rot="R90"/>
-<element name="R23" library="OPL" package="R0603" value="33k 1%" x="15.875" y="45.72"/>
-<element name="R27" library="OPL" package="R0603" value="33k 1%" x="17.145" y="36.83"/>
+<element name="R26" library="OPL" package="R0603" value="10k" x="16.51" y="60.96" rot="R180">
+<attribute name="OC_FARNELL" value="unknown" x="16.51" y="60.96" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="MF" value="" x="16.51" y="60.96" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="MPN" value="" x="16.51" y="60.96" size="1.778" layer="27" rot="R180" display="off"/>
+</element>
+<element name="C6" library="OPL" package="C0603" value="1uF" x="11.43" y="57.785" rot="R90">
+<attribute name="OC_FARNELL" value="1301804" x="11.43" y="57.785" size="1.778" layer="27" rot="R90" display="off"/>
+<attribute name="MF" value="AVX" x="11.43" y="57.785" size="1.778" layer="27" rot="R90" display="off"/>
+<attribute name="MPN" value="06035C104KAT2A" x="11.43" y="57.785" size="1.778" layer="27" rot="R90" display="off"/>
+</element>
+<element name="R23" library="OPL" package="R0603" value="33k 1%" x="15.875" y="45.72">
+<attribute name="OC_FARNELL" value="unknown" x="15.875" y="45.72" size="1.778" layer="27" display="off"/>
+<attribute name="MF" value="" x="15.875" y="45.72" size="1.778" layer="27" display="off"/>
+<attribute name="MPN" value="" x="15.875" y="45.72" size="1.778" layer="27" display="off"/>
+</element>
+<element name="R27" library="OPL" package="R0603" value="33k 1%" x="17.145" y="36.83">
+<attribute name="OC_FARNELL" value="unknown" x="17.145" y="36.83" size="1.778" layer="27" display="off"/>
+<attribute name="MF" value="" x="17.145" y="36.83" size="1.778" layer="27" display="off"/>
+<attribute name="MPN" value="" x="17.145" y="36.83" size="1.778" layer="27" display="off"/>
+</element>
 <element name="GATE" library="EurorackModularParts" package="3.5MM-JACK-SWITCH-13MM-OUTPUT" value="PJ-341" x="53.34" y="8.89">
 <attribute name="DESC" value="Gate" x="53.34" y="8.89" size="1.778" layer="27" display="off"/>
 <attribute name="VALUE" value="PJ-341" x="53.34" y="8.89" size="1.778" layer="27" display="off"/>
-<attribute name="MPN" value="PJ-341" x="53.34" y="8.89" size="1.778" layer="27" display="off"/>
+<attribute name="MPN" value="" x="53.34" y="8.89" size="1.778" layer="27" display="off"/>
+<attribute name="OC_FARNELL" value="unknown" x="53.34" y="8.89" size="1.778" layer="27" display="off"/>
+<attribute name="MF" value="" x="53.34" y="8.89" size="1.778" layer="27" display="off"/>
 </element>
-<element name="C4" library="OPL" package="C0603" value="100nF" x="22.235" y="89.57"/>
-<element name="C7" library="OPL" package="C0603" value="100nF" x="46.31" y="84.08" rot="R90"/>
-<element name="Q3" library="transistor" package="SOT23-BEC" value="MMBT3904" x="56.38" y="31.175" rot="R180"/>
-<element name="R19" library="OPL" package="R0603" value="10k" x="52.25" y="30.25" rot="R180"/>
-<element name="R21" library="OPL" package="R0603" value="100k" x="58.25" y="35.25" rot="R180"/>
+<element name="C4" library="OPL" package="C0603" value="100nF" x="22.235" y="89.57">
+<attribute name="OC_FARNELL" value="1759017" x="22.235" y="89.57" size="1.778" layer="27" display="off"/>
+<attribute name="MF" value="MULTICOMP" x="22.235" y="89.57" size="1.778" layer="27" display="off"/>
+<attribute name="MPN" value="MC0603F104Z160CT" x="22.235" y="89.57" size="1.778" layer="27" display="off"/>
+</element>
+<element name="C7" library="OPL" package="C0603" value="100nF" x="46.31" y="84.08" rot="R90">
+<attribute name="OC_FARNELL" value="1759017" x="46.31" y="84.08" size="1.778" layer="27" rot="R90" display="off"/>
+<attribute name="MF" value="MULTICOMP" x="46.31" y="84.08" size="1.778" layer="27" rot="R90" display="off"/>
+<attribute name="MPN" value="MC0603F104Z160CT" x="46.31" y="84.08" size="1.778" layer="27" rot="R90" display="off"/>
+</element>
+<element name="Q3" library="transistor" package="SOT23-BEC" value="MMBT3904" x="56.38" y="31.175" rot="R180">
+<attribute name="OC_FARNELL" value="2336795" x="56.38" y="31.175" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="MF" value="NXP" x="56.38" y="31.175" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="MPN" value="PMBT3904,215" x="56.38" y="31.175" size="1.778" layer="27" rot="R180" display="off"/>
+</element>
+<element name="R19" library="OPL" package="R0603" value="10k" x="52.25" y="30.25" rot="R180">
+<attribute name="OC_FARNELL" value="unknown" x="52.25" y="30.25" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="MF" value="" x="52.25" y="30.25" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="MPN" value="" x="52.25" y="30.25" size="1.778" layer="27" rot="R180" display="off"/>
+</element>
+<element name="R21" library="OPL" package="R0603" value="100k" x="58.25" y="35.25" rot="R180">
+<attribute name="OC_FARNELL" value="unknown" x="58.25" y="35.25" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="MF" value="" x="58.25" y="35.25" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="MPN" value="" x="58.25" y="35.25" size="1.778" layer="27" rot="R180" display="off"/>
+</element>
 <element name="CLOCKOUT_JACK" library="EurorackModularParts" package="3.5MM-JACK-SWITCH-13MM-OUTPUT" value="PJ-341" x="53.34" y="99.06">
 <attribute name="DESC" value="Clock Out" x="53.34" y="99.06" size="1.778" layer="27" display="off"/>
 <attribute name="VALUE" value="PJ-341" x="53.34" y="99.06" size="1.778" layer="27" display="off"/>
-<attribute name="MPN" value="PJ-341" x="53.34" y="99.06" size="1.778" layer="27" display="off"/>
+<attribute name="MPN" value="" x="53.34" y="99.06" size="1.778" layer="27" display="off"/>
+<attribute name="OC_FARNELL" value="unknown" x="53.34" y="99.06" size="1.778" layer="27" display="off"/>
+<attribute name="MF" value="" x="53.34" y="99.06" size="1.778" layer="27" display="off"/>
 </element>
 <element name="TICK" library="EurorackModularParts" package="3.5MM-JACK-SWITCH-13MM-OUTPUT" value="PJ-341" x="53.34" y="81.28">
 <attribute name="DESC" value="Tick" x="53.34" y="81.28" size="1.778" layer="27" display="off"/>
 <attribute name="VALUE" value="PJ-341" x="53.34" y="81.28" size="1.778" layer="27" display="off"/>
-<attribute name="MPN" value="PJ-341" x="53.34" y="81.28" size="1.778" layer="27" display="off"/>
+<attribute name="MPN" value="" x="53.34" y="81.28" size="1.778" layer="27" display="off"/>
+<attribute name="OC_FARNELL" value="unknown" x="53.34" y="81.28" size="1.778" layer="27" display="off"/>
+<attribute name="MF" value="" x="53.34" y="81.28" size="1.778" layer="27" display="off"/>
 </element>
 <element name="BEAT" library="EurorackModularParts" package="3.5MM-JACK-SWITCH-13MM-OUTPUT" value="PJ-341" x="53.34" y="67.31">
 <attribute name="DESC" value="Beat" x="53.34" y="67.31" size="1.778" layer="27" display="off"/>
 <attribute name="VALUE" value="PJ-341" x="53.34" y="67.31" size="1.778" layer="27" display="off"/>
-<attribute name="MPN" value="PJ-341" x="53.34" y="67.31" size="1.778" layer="27" display="off"/>
+<attribute name="MPN" value="" x="53.34" y="67.31" size="1.778" layer="27" display="off"/>
+<attribute name="OC_FARNELL" value="unknown" x="53.34" y="67.31" size="1.778" layer="27" display="off"/>
+<attribute name="MF" value="" x="53.34" y="67.31" size="1.778" layer="27" display="off"/>
 </element>
 <element name="LOOP" library="EurorackModularParts" package="3.5MM-JACK-SWITCH-13MM-OUTPUT" value="PJ-341" x="53.34" y="53.34">
 <attribute name="DESC" value="Loop" x="53.34" y="53.34" size="1.778" layer="27" display="off"/>
 <attribute name="VALUE" value="PJ-341" x="53.34" y="53.34" size="1.778" layer="27" display="off"/>
-<attribute name="MPN" value="PJ-341" x="53.34" y="53.34" size="1.778" layer="27" display="off"/>
+<attribute name="MPN" value="" x="53.34" y="53.34" size="1.778" layer="27" display="off"/>
+<attribute name="OC_FARNELL" value="unknown" x="53.34" y="53.34" size="1.778" layer="27" display="off"/>
+<attribute name="MF" value="" x="53.34" y="53.34" size="1.778" layer="27" display="off"/>
 </element>
-<element name="LED_TPB_2" library="SparkFun-LED" package="LED3MM" value="WHITE 3MM WITH 11MM HOLDER" x="43.18" y="83.82" rot="R270"/>
-<element name="LED_TPB_3" library="SparkFun-LED" package="LED3MM" value="WHITE 3MM WITH 11MM HOLDER" x="43.18" y="78.74" rot="R270"/>
-<element name="LED_TPB_4" library="SparkFun-LED" package="LED3MM" value="WHITE 3MM WITH 11MM HOLDER" x="38.1" y="83.82" rot="R270"/>
-<element name="LED_TPB_6" library="SparkFun-LED" package="LED3MM" value="WHITE 3MM WITH 11MM HOLDER" x="38.1" y="78.74" rot="R270"/>
-<element name="LED_BEAT_2" library="SparkFun-LED" package="LED3MM" value="WHITE 3MM WITH 11MM HOLDER" x="43.18" y="69.85" rot="R270"/>
-<element name="LED_BEAT_4" library="SparkFun-LED" package="LED3MM" value="WHITE 3MM WITH 11MM HOLDER" x="38.1" y="69.85" rot="R270"/>
-<element name="LED_BEAT_8" library="SparkFun-LED" package="LED3MM" value="WHITE 3MM WITH 11MM HOLDER" x="38.1" y="64.77" rot="R270"/>
-<element name="LED_BEAT_16" library="SparkFun-LED" package="LED3MM" value="WHITE 3MM WITH 11MM HOLDER" x="43.18" y="64.77" rot="R270"/>
-<element name="LED_TICK" library="SparkFun-LED" package="LED3MM" value="WHITE 3MM WITH 11MM HOLDER" x="58.42" y="74.93"/>
-<element name="LED_BEAT" library="SparkFun-LED" package="LED3MM" value="WHITE 3MM WITH 11MM HOLDER" x="58.42" y="60.96"/>
-<element name="LED_LOOP" library="SparkFun-LED" package="LED3MM" value="WHITE 3MM WITH 11MM HOLDER" x="58.42" y="46.99"/>
-<element name="LED_GATE" library="SparkFun-LED" package="LED3MM" value="WHITE 3MM WITH 11MM HOLDER" x="58.42" y="2.54"/>
+<element name="LED_TPB_2" library="SparkFun-LED" package="LED3MM" value="WHITE 3MM WITH 11MM HOLDER" x="43.18" y="83.82" rot="R270">
+<attribute name="OC_FARNELL" value="unknown" x="43.18" y="83.82" size="1.778" layer="27" rot="R270" display="off"/>
+<attribute name="MF" value="" x="43.18" y="83.82" size="1.778" layer="27" rot="R270" display="off"/>
+<attribute name="MPN" value="" x="43.18" y="83.82" size="1.778" layer="27" rot="R270" display="off"/>
+</element>
+<element name="LED_TPB_3" library="SparkFun-LED" package="LED3MM" value="WHITE 3MM WITH 11MM HOLDER" x="43.18" y="78.74" rot="R270">
+<attribute name="OC_FARNELL" value="unknown" x="43.18" y="78.74" size="1.778" layer="27" rot="R270" display="off"/>
+<attribute name="MF" value="" x="43.18" y="78.74" size="1.778" layer="27" rot="R270" display="off"/>
+<attribute name="MPN" value="" x="43.18" y="78.74" size="1.778" layer="27" rot="R270" display="off"/>
+</element>
+<element name="LED_TPB_4" library="SparkFun-LED" package="LED3MM" value="WHITE 3MM WITH 11MM HOLDER" x="38.1" y="83.82" rot="R270">
+<attribute name="OC_FARNELL" value="unknown" x="38.1" y="83.82" size="1.778" layer="27" rot="R270" display="off"/>
+<attribute name="MF" value="" x="38.1" y="83.82" size="1.778" layer="27" rot="R270" display="off"/>
+<attribute name="MPN" value="" x="38.1" y="83.82" size="1.778" layer="27" rot="R270" display="off"/>
+</element>
+<element name="LED_TPB_6" library="SparkFun-LED" package="LED3MM" value="WHITE 3MM WITH 11MM HOLDER" x="38.1" y="78.74" rot="R270">
+<attribute name="OC_FARNELL" value="unknown" x="38.1" y="78.74" size="1.778" layer="27" rot="R270" display="off"/>
+<attribute name="MF" value="" x="38.1" y="78.74" size="1.778" layer="27" rot="R270" display="off"/>
+<attribute name="MPN" value="" x="38.1" y="78.74" size="1.778" layer="27" rot="R270" display="off"/>
+</element>
+<element name="LED_BEAT_2" library="SparkFun-LED" package="LED3MM" value="WHITE 3MM WITH 11MM HOLDER" x="43.18" y="69.85" rot="R270">
+<attribute name="OC_FARNELL" value="unknown" x="43.18" y="69.85" size="1.778" layer="27" rot="R270" display="off"/>
+<attribute name="MF" value="" x="43.18" y="69.85" size="1.778" layer="27" rot="R270" display="off"/>
+<attribute name="MPN" value="" x="43.18" y="69.85" size="1.778" layer="27" rot="R270" display="off"/>
+</element>
+<element name="LED_BEAT_4" library="SparkFun-LED" package="LED3MM" value="WHITE 3MM WITH 11MM HOLDER" x="38.1" y="69.85" rot="R270">
+<attribute name="OC_FARNELL" value="unknown" x="38.1" y="69.85" size="1.778" layer="27" rot="R270" display="off"/>
+<attribute name="MF" value="" x="38.1" y="69.85" size="1.778" layer="27" rot="R270" display="off"/>
+<attribute name="MPN" value="" x="38.1" y="69.85" size="1.778" layer="27" rot="R270" display="off"/>
+</element>
+<element name="LED_BEAT_8" library="SparkFun-LED" package="LED3MM" value="WHITE 3MM WITH 11MM HOLDER" x="38.1" y="64.77" rot="R270">
+<attribute name="OC_FARNELL" value="unknown" x="38.1" y="64.77" size="1.778" layer="27" rot="R270" display="off"/>
+<attribute name="MF" value="" x="38.1" y="64.77" size="1.778" layer="27" rot="R270" display="off"/>
+<attribute name="MPN" value="" x="38.1" y="64.77" size="1.778" layer="27" rot="R270" display="off"/>
+</element>
+<element name="LED_BEAT_16" library="SparkFun-LED" package="LED3MM" value="WHITE 3MM WITH 11MM HOLDER" x="43.18" y="64.77" rot="R270">
+<attribute name="OC_FARNELL" value="unknown" x="43.18" y="64.77" size="1.778" layer="27" rot="R270" display="off"/>
+<attribute name="MF" value="" x="43.18" y="64.77" size="1.778" layer="27" rot="R270" display="off"/>
+<attribute name="MPN" value="" x="43.18" y="64.77" size="1.778" layer="27" rot="R270" display="off"/>
+</element>
+<element name="LED_TICK" library="SparkFun-LED" package="LED3MM" value="WHITE 3MM WITH 11MM HOLDER" x="58.42" y="74.93">
+<attribute name="OC_FARNELL" value="unknown" x="58.42" y="74.93" size="1.778" layer="27" display="off"/>
+<attribute name="MF" value="" x="58.42" y="74.93" size="1.778" layer="27" display="off"/>
+<attribute name="MPN" value="" x="58.42" y="74.93" size="1.778" layer="27" display="off"/>
+</element>
+<element name="LED_BEAT" library="SparkFun-LED" package="LED3MM" value="WHITE 3MM WITH 11MM HOLDER" x="58.42" y="60.96">
+<attribute name="OC_FARNELL" value="unknown" x="58.42" y="60.96" size="1.778" layer="27" display="off"/>
+<attribute name="MF" value="" x="58.42" y="60.96" size="1.778" layer="27" display="off"/>
+<attribute name="MPN" value="" x="58.42" y="60.96" size="1.778" layer="27" display="off"/>
+</element>
+<element name="LED_LOOP" library="SparkFun-LED" package="LED3MM" value="WHITE 3MM WITH 11MM HOLDER" x="58.42" y="46.99">
+<attribute name="OC_FARNELL" value="unknown" x="58.42" y="46.99" size="1.778" layer="27" display="off"/>
+<attribute name="MF" value="" x="58.42" y="46.99" size="1.778" layer="27" display="off"/>
+<attribute name="MPN" value="" x="58.42" y="46.99" size="1.778" layer="27" display="off"/>
+</element>
+<element name="LED_GATE" library="SparkFun-LED" package="LED3MM" value="WHITE 3MM WITH 11MM HOLDER" x="58.42" y="2.54">
+<attribute name="OC_FARNELL" value="unknown" x="58.42" y="2.54" size="1.778" layer="27" display="off"/>
+<attribute name="MF" value="" x="58.42" y="2.54" size="1.778" layer="27" display="off"/>
+<attribute name="MPN" value="" x="58.42" y="2.54" size="1.778" layer="27" display="off"/>
+</element>
 <element name="B_TPB" library="zephod-components" package="4P-SMD-6.0X6.0X5.0H" value="BUTTON-4P-3100010P1" x="31.75" y="81.28" smashed="yes" rot="R270">
 <attribute name="DESC" value="Ticks" x="35.56" y="86.36" size="1.778" layer="255" align="bottom-center"/>
 <attribute name="NAME" x="34.925" y="83.185" size="0.889" layer="25" ratio="11" rot="R270"/>
 <attribute name="VALUE" x="31.75" y="83.185" size="0.635" layer="27" ratio="10" rot="R270"/>
+<attribute name="OC_FARNELL" value="unknown" x="31.75" y="81.28" size="1.778" layer="27" rot="R270" display="off"/>
+<attribute name="MF" value="" x="31.75" y="81.28" size="1.778" layer="27" rot="R270" display="off"/>
+<attribute name="MPN" value="" x="31.75" y="81.28" size="1.778" layer="27" rot="R270" display="off"/>
 </element>
 <element name="B_BEATS" library="zephod-components" package="4P-SMD-6.0X6.0X5.0H" value="BUTTON-4P-3100010P1" x="31.75" y="67.31" smashed="yes" rot="R270">
 <attribute name="DESC" value="Beats" x="35.56" y="72.39" size="1.778" layer="255" align="bottom-center"/>
 <attribute name="NAME" x="34.925" y="69.215" size="0.889" layer="25" ratio="11" rot="R270"/>
 <attribute name="VALUE" x="31.75" y="69.215" size="0.635" layer="27" ratio="10" rot="R270"/>
+<attribute name="OC_FARNELL" value="unknown" x="31.75" y="67.31" size="1.778" layer="27" rot="R270" display="off"/>
+<attribute name="MF" value="" x="31.75" y="67.31" size="1.778" layer="27" rot="R270" display="off"/>
+<attribute name="MPN" value="" x="31.75" y="67.31" size="1.778" layer="27" rot="R270" display="off"/>
 </element>
 <element name="INTENSITY" library="EurorackModularParts" package="3.5MM-JACK-SWITCH-13MM-INPUT" value="PJ-341" x="7.62" y="10.16">
 <attribute name="DESC" value="Intensity" x="7.62" y="10.16" size="1.778" layer="27" display="off"/>
 <attribute name="VALUE" value="PJ-341" x="7.62" y="10.16" size="1.778" layer="27" display="off"/>
-<attribute name="MPN" value="PJ-341" x="7.62" y="10.16" size="1.778" layer="27" display="off"/>
+<attribute name="MPN" value="" x="7.62" y="10.16" size="1.778" layer="27" display="off"/>
+<attribute name="OC_FARNELL" value="unknown" x="7.62" y="10.16" size="1.778" layer="27" display="off"/>
+<attribute name="MF" value="" x="7.62" y="10.16" size="1.778" layer="27" display="off"/>
 </element>
 <element name="B_ALGO" library="zephod-components" package="4P-SMD-6.0X6.0X5.0H" value="BUTTON-4P-3100010P1" x="6.35" y="81.28" smashed="yes" rot="R270">
 <attribute name="DESC" value="Algorithm" x="10.16" y="86.36" size="1.778" layer="255" align="bottom-center"/>
 <attribute name="NAME" x="9.525" y="83.185" size="0.889" layer="25" ratio="11" rot="R270"/>
 <attribute name="VALUE" x="6.35" y="83.185" size="0.635" layer="27" ratio="10" rot="R270"/>
+<attribute name="OC_FARNELL" value="unknown" x="6.35" y="81.28" size="1.778" layer="27" rot="R270" display="off"/>
+<attribute name="MF" value="" x="6.35" y="81.28" size="1.778" layer="27" rot="R270" display="off"/>
+<attribute name="MPN" value="" x="6.35" y="81.28" size="1.778" layer="27" rot="R270" display="off"/>
 </element>
 <element name="B_SCALE" library="zephod-components" package="4P-SMD-6.0X6.0X5.0H" value="BUTTON-4P-3100010P1" x="6.35" y="67.31" smashed="yes" rot="R270">
 <attribute name="DESC" value="Scale" x="10.16" y="72.39" size="1.778" layer="255" align="bottom-center"/>
 <attribute name="NAME" x="9.525" y="69.215" size="0.889" layer="25" ratio="11" rot="R270"/>
 <attribute name="VALUE" x="6.35" y="69.215" size="0.635" layer="27" ratio="10" rot="R270"/>
+<attribute name="OC_FARNELL" value="unknown" x="6.35" y="67.31" size="1.778" layer="27" rot="R270" display="off"/>
+<attribute name="MF" value="" x="6.35" y="67.31" size="1.778" layer="27" rot="R270" display="off"/>
+<attribute name="MPN" value="" x="6.35" y="67.31" size="1.778" layer="27" rot="R270" display="off"/>
 </element>
-<element name="LED_ALGO_GOA" library="SparkFun-LED" package="LED3MM" value="WHITE 3MM WITH 11MM HOLDER" x="12.7" y="78.74" rot="R270"/>
-<element name="LED_ALGO_FLAT" library="SparkFun-LED" package="LED3MM" value="WHITE_WITH_11MM_SPACER" x="12.7" y="83.82" rot="R270"/>
-<element name="LED_ALGO_PSYCH" library="SparkFun-LED" package="LED3MM" value="WHITE 3MM WITH 11MM HOLDER" x="17.78" y="78.74" rot="R270"/>
-<element name="LED_ALGO_FOURCHORD" library="SparkFun-LED" package="LED3MM" value="WHITE 3MM WITH 11MM HOLDER" x="17.78" y="83.82" rot="R270"/>
-<element name="LED_SCALE_DORIAN" library="SparkFun-LED" package="LED3MM" value="WHITE 3MM WITH 11MM HOLDER" x="12.7" y="64.77" rot="R270"/>
-<element name="LED_SCALE_MAJOR" library="SparkFun-LED" package="LED3MM" value="WHITE 3MM WITH 11MM HOLDER" x="12.7" y="69.85" rot="R270"/>
-<element name="LED_SCALE_MINOR" library="SparkFun-LED" package="LED3MM" value="WHITE 3MM WITH 11MM HOLDER" x="17.78" y="64.77" rot="R270"/>
-<element name="LED_SCALE_PENTA" library="SparkFun-LED" package="LED3MM" value="WHITE 3MM WITH 11MM HOLDER" x="17.78" y="69.85" smashed="yes" rot="R270"/>
-<element name="C14" library="OPL" package="C0603" value="100nF" x="27" y="85.5" rot="R90"/>
-<element name="R14" library="OPL" package="R0603" value="100k 1%" x="14.605" y="6.35" rot="R90"/>
-<element name="R22" library="OPL" package="R0603" value="33k 1%" x="42.25" y="36" rot="R90"/>
-<element name="R28" library="OPL" package="R0603" value="49.9k" x="38.25" y="36" rot="R270"/>
-<element name="C16" library="OPL" package="C0603" value="3.3nF" x="40.25" y="36" rot="R270"/>
-<element name="R30" library="OPL" package="R0603" value="33k 1%" x="15.24" y="3.175"/>
-<element name="R31" library="OPL" package="R1206-8" value="2k" x="37.715" y="74.295" rot="R90"/>
-<element name="R32" library="OPL" package="R1206-8" value="2k" x="37.36" y="88.43" rot="R270"/>
-<element name="R33" library="OPL" package="R1206-8" value="2k" x="16.74" y="74.045" rot="R180"/>
-<element name="R34" library="OPL" package="R1206-8" value="2k" x="18.015" y="88.51" rot="R90"/>
-<element name="R36" library="OPL" package="R1206-8" value="10k" x="23.75" y="76.5" rot="R90"/>
-<element name="Q4" library="transistor" package="SOT23-BEC" value="MMBT3904" x="40.005" y="3.81" rot="R90"/>
-<element name="R37" library="OPL" package="R0603" value="10k" x="33.425" y="4.06" rot="R180"/>
-<element name="R38" library="OPL" package="R0603" value="100k" x="45.72" y="2.54" rot="R180"/>
-<element name="Q5" library="transistor" package="SOT23-BEC" value="MMBT3904" x="45.445" y="103.53"/>
-<element name="R39" library="OPL" package="R0603" value="10k" x="46.5" y="96" rot="R270"/>
-<element name="R40" library="OPL" package="R0603" value="100k" x="44.825" y="95.99" rot="R90"/>
-<element name="Q6" library="transistor" package="SOT23-BEC" value="MMBT3904" x="55.25" y="90.5" rot="R90"/>
-<element name="R41" library="OPL" package="R0603" value="10k" x="51" y="90.5" rot="R180"/>
-<element name="R42" library="OPL" package="R0603" value="100k" x="59" y="88.25" rot="R90"/>
-<element name="Q7" library="transistor" package="SOT23-BEC" value="MMBT3904" x="43.815" y="59.69"/>
-<element name="R43" library="OPL" package="R0603" value="10k" x="46.635" y="62.355" rot="R180"/>
-<element name="R44" library="OPL" package="R0603" value="100k" x="47.625" y="58.42" rot="R180"/>
-<element name="Q8" library="transistor" package="SOT23-BEC" value="MMBT3904" x="55.25" y="44.25"/>
-<element name="R45" library="OPL" package="R0603" value="10k" x="44.565" y="53.36" rot="R180"/>
-<element name="R46" library="OPL" package="R0603" value="100k" x="49.75" y="44.5"/>
-<element name="C17" library="OPL" package="C0603" value="100nF" x="53.985" y="39.43" rot="R270"/>
+<element name="LED_ALGO_GOA" library="SparkFun-LED" package="LED3MM" value="WHITE 3MM WITH 11MM HOLDER" x="12.7" y="78.74" rot="R270">
+<attribute name="OC_FARNELL" value="unknown" x="12.7" y="78.74" size="1.778" layer="27" rot="R270" display="off"/>
+<attribute name="MF" value="" x="12.7" y="78.74" size="1.778" layer="27" rot="R270" display="off"/>
+<attribute name="MPN" value="" x="12.7" y="78.74" size="1.778" layer="27" rot="R270" display="off"/>
+</element>
+<element name="LED_ALGO_FLAT" library="SparkFun-LED" package="LED3MM" value="WHITE_WITH_11MM_SPACER" x="12.7" y="83.82" rot="R270">
+<attribute name="OC_FARNELL" value="unknown" x="12.7" y="83.82" size="1.778" layer="27" rot="R270" display="off"/>
+<attribute name="MF" value="" x="12.7" y="83.82" size="1.778" layer="27" rot="R270" display="off"/>
+<attribute name="MPN" value="" x="12.7" y="83.82" size="1.778" layer="27" rot="R270" display="off"/>
+</element>
+<element name="LED_ALGO_PSYCH" library="SparkFun-LED" package="LED3MM" value="WHITE 3MM WITH 11MM HOLDER" x="17.78" y="78.74" rot="R270">
+<attribute name="OC_FARNELL" value="unknown" x="17.78" y="78.74" size="1.778" layer="27" rot="R270" display="off"/>
+<attribute name="MF" value="" x="17.78" y="78.74" size="1.778" layer="27" rot="R270" display="off"/>
+<attribute name="MPN" value="" x="17.78" y="78.74" size="1.778" layer="27" rot="R270" display="off"/>
+</element>
+<element name="LED_ALGO_FOURCHORD" library="SparkFun-LED" package="LED3MM" value="WHITE 3MM WITH 11MM HOLDER" x="17.78" y="83.82" rot="R270">
+<attribute name="OC_FARNELL" value="unknown" x="17.78" y="83.82" size="1.778" layer="27" rot="R270" display="off"/>
+<attribute name="MF" value="" x="17.78" y="83.82" size="1.778" layer="27" rot="R270" display="off"/>
+<attribute name="MPN" value="" x="17.78" y="83.82" size="1.778" layer="27" rot="R270" display="off"/>
+</element>
+<element name="LED_SCALE_DORIAN" library="SparkFun-LED" package="LED3MM" value="WHITE 3MM WITH 11MM HOLDER" x="12.7" y="64.77" rot="R270">
+<attribute name="OC_FARNELL" value="unknown" x="12.7" y="64.77" size="1.778" layer="27" rot="R270" display="off"/>
+<attribute name="MF" value="" x="12.7" y="64.77" size="1.778" layer="27" rot="R270" display="off"/>
+<attribute name="MPN" value="" x="12.7" y="64.77" size="1.778" layer="27" rot="R270" display="off"/>
+</element>
+<element name="LED_SCALE_MAJOR" library="SparkFun-LED" package="LED3MM" value="WHITE 3MM WITH 11MM HOLDER" x="12.7" y="69.85" rot="R270">
+<attribute name="OC_FARNELL" value="unknown" x="12.7" y="69.85" size="1.778" layer="27" rot="R270" display="off"/>
+<attribute name="MF" value="" x="12.7" y="69.85" size="1.778" layer="27" rot="R270" display="off"/>
+<attribute name="MPN" value="" x="12.7" y="69.85" size="1.778" layer="27" rot="R270" display="off"/>
+</element>
+<element name="LED_SCALE_MINOR" library="SparkFun-LED" package="LED3MM" value="WHITE 3MM WITH 11MM HOLDER" x="17.78" y="64.77" rot="R270">
+<attribute name="OC_FARNELL" value="unknown" x="17.78" y="64.77" size="1.778" layer="27" rot="R270" display="off"/>
+<attribute name="MF" value="" x="17.78" y="64.77" size="1.778" layer="27" rot="R270" display="off"/>
+<attribute name="MPN" value="" x="17.78" y="64.77" size="1.778" layer="27" rot="R270" display="off"/>
+</element>
+<element name="LED_SCALE_PENTA" library="SparkFun-LED" package="LED3MM" value="WHITE 3MM WITH 11MM HOLDER" x="17.78" y="69.85" smashed="yes" rot="R270">
+<attribute name="OC_FARNELL" value="unknown" x="17.78" y="69.85" size="1.778" layer="27" rot="R270" display="off"/>
+<attribute name="MF" value="" x="17.78" y="69.85" size="1.778" layer="27" rot="R270" display="off"/>
+<attribute name="MPN" value="" x="17.78" y="69.85" size="1.778" layer="27" rot="R270" display="off"/>
+</element>
+<element name="C14" library="OPL" package="C0603" value="100nF" x="27" y="85.5" rot="R90">
+<attribute name="OC_FARNELL" value="1759017" x="27" y="85.5" size="1.778" layer="27" rot="R90" display="off"/>
+<attribute name="MF" value="MULTICOMP" x="27" y="85.5" size="1.778" layer="27" rot="R90" display="off"/>
+<attribute name="MPN" value="MC0603F104Z160CT" x="27" y="85.5" size="1.778" layer="27" rot="R90" display="off"/>
+</element>
+<element name="R14" library="OPL" package="R0603" value="100k 1%" x="14.605" y="6.35" rot="R90">
+<attribute name="OC_FARNELL" value="unknown" x="14.605" y="6.35" size="1.778" layer="27" rot="R90" display="off"/>
+<attribute name="MF" value="" x="14.605" y="6.35" size="1.778" layer="27" rot="R90" display="off"/>
+<attribute name="MPN" value="" x="14.605" y="6.35" size="1.778" layer="27" rot="R90" display="off"/>
+</element>
+<element name="R22" library="OPL" package="R0603" value="33k 1%" x="42.25" y="36" rot="R90">
+<attribute name="OC_FARNELL" value="unknown" x="42.25" y="36" size="1.778" layer="27" rot="R90" display="off"/>
+<attribute name="MF" value="" x="42.25" y="36" size="1.778" layer="27" rot="R90" display="off"/>
+<attribute name="MPN" value="" x="42.25" y="36" size="1.778" layer="27" rot="R90" display="off"/>
+</element>
+<element name="R28" library="OPL" package="R0603" value="49.9k" x="38.25" y="36" rot="R270">
+<attribute name="OC_FARNELL" value="unknown" x="38.25" y="36" size="1.778" layer="27" rot="R270" display="off"/>
+<attribute name="MF" value="" x="38.25" y="36" size="1.778" layer="27" rot="R270" display="off"/>
+<attribute name="MPN" value="" x="38.25" y="36" size="1.778" layer="27" rot="R270" display="off"/>
+</element>
+<element name="C16" library="OPL" package="C0603" value="3.3nF" x="40.25" y="36" rot="R270">
+<attribute name="OC_FARNELL" value="unknown" x="40.25" y="36" size="1.778" layer="27" rot="R270" display="off"/>
+<attribute name="MF" value="" x="40.25" y="36" size="1.778" layer="27" rot="R270" display="off"/>
+<attribute name="MPN" value="" x="40.25" y="36" size="1.778" layer="27" rot="R270" display="off"/>
+</element>
+<element name="R30" library="OPL" package="R0603" value="33k 1%" x="15.24" y="3.175">
+<attribute name="OC_FARNELL" value="unknown" x="15.24" y="3.175" size="1.778" layer="27" display="off"/>
+<attribute name="MF" value="" x="15.24" y="3.175" size="1.778" layer="27" display="off"/>
+<attribute name="MPN" value="" x="15.24" y="3.175" size="1.778" layer="27" display="off"/>
+</element>
+<element name="R31" library="OPL" package="R1206-8" value="2k" x="37.715" y="74.295" rot="R90">
+<attribute name="OC_FARNELL" value="unknown" x="37.715" y="74.295" size="1.778" layer="27" rot="R90" display="off"/>
+<attribute name="MF" value="" x="37.715" y="74.295" size="1.778" layer="27" rot="R90" display="off"/>
+<attribute name="MPN" value="" x="37.715" y="74.295" size="1.778" layer="27" rot="R90" display="off"/>
+</element>
+<element name="R32" library="OPL" package="R1206-8" value="2k" x="37.36" y="88.43" rot="R270">
+<attribute name="OC_FARNELL" value="unknown" x="37.36" y="88.43" size="1.778" layer="27" rot="R270" display="off"/>
+<attribute name="MF" value="" x="37.36" y="88.43" size="1.778" layer="27" rot="R270" display="off"/>
+<attribute name="MPN" value="" x="37.36" y="88.43" size="1.778" layer="27" rot="R270" display="off"/>
+</element>
+<element name="R33" library="OPL" package="R1206-8" value="2k" x="16.74" y="74.045" rot="R180">
+<attribute name="OC_FARNELL" value="unknown" x="16.74" y="74.045" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="MF" value="" x="16.74" y="74.045" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="MPN" value="" x="16.74" y="74.045" size="1.778" layer="27" rot="R180" display="off"/>
+</element>
+<element name="R34" library="OPL" package="R1206-8" value="2k" x="18.015" y="88.51" rot="R90">
+<attribute name="OC_FARNELL" value="unknown" x="18.015" y="88.51" size="1.778" layer="27" rot="R90" display="off"/>
+<attribute name="MF" value="" x="18.015" y="88.51" size="1.778" layer="27" rot="R90" display="off"/>
+<attribute name="MPN" value="" x="18.015" y="88.51" size="1.778" layer="27" rot="R90" display="off"/>
+</element>
+<element name="R36" library="OPL" package="R1206-8" value="10k" x="23.75" y="76.5" rot="R90">
+<attribute name="OC_FARNELL" value="unknown" x="23.75" y="76.5" size="1.778" layer="27" rot="R90" display="off"/>
+<attribute name="MF" value="" x="23.75" y="76.5" size="1.778" layer="27" rot="R90" display="off"/>
+<attribute name="MPN" value="" x="23.75" y="76.5" size="1.778" layer="27" rot="R90" display="off"/>
+</element>
+<element name="Q4" library="transistor" package="SOT23-BEC" value="MMBT3904" x="40.005" y="3.81" rot="R90">
+<attribute name="OC_FARNELL" value="2336795" x="40.005" y="3.81" size="1.778" layer="27" rot="R90" display="off"/>
+<attribute name="MF" value="NXP" x="40.005" y="3.81" size="1.778" layer="27" rot="R90" display="off"/>
+<attribute name="MPN" value="PMBT3904,215" x="40.005" y="3.81" size="1.778" layer="27" rot="R90" display="off"/>
+</element>
+<element name="R37" library="OPL" package="R0603" value="10k" x="33.425" y="4.06" rot="R180">
+<attribute name="OC_FARNELL" value="unknown" x="33.425" y="4.06" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="MF" value="" x="33.425" y="4.06" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="MPN" value="" x="33.425" y="4.06" size="1.778" layer="27" rot="R180" display="off"/>
+</element>
+<element name="R38" library="OPL" package="R0603" value="100k" x="45.72" y="2.54" rot="R180">
+<attribute name="OC_FARNELL" value="unknown" x="45.72" y="2.54" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="MF" value="" x="45.72" y="2.54" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="MPN" value="" x="45.72" y="2.54" size="1.778" layer="27" rot="R180" display="off"/>
+</element>
+<element name="Q5" library="transistor" package="SOT23-BEC" value="MMBT3904" x="45.445" y="103.53">
+<attribute name="OC_FARNELL" value="2336795" x="45.445" y="103.53" size="1.778" layer="27" display="off"/>
+<attribute name="MF" value="NXP" x="45.445" y="103.53" size="1.778" layer="27" display="off"/>
+<attribute name="MPN" value="PMBT3904,215" x="45.445" y="103.53" size="1.778" layer="27" display="off"/>
+</element>
+<element name="R39" library="OPL" package="R0603" value="10k" x="46.5" y="96" rot="R270">
+<attribute name="OC_FARNELL" value="unknown" x="46.5" y="96" size="1.778" layer="27" rot="R270" display="off"/>
+<attribute name="MF" value="" x="46.5" y="96" size="1.778" layer="27" rot="R270" display="off"/>
+<attribute name="MPN" value="" x="46.5" y="96" size="1.778" layer="27" rot="R270" display="off"/>
+</element>
+<element name="R40" library="OPL" package="R0603" value="100k" x="44.825" y="95.99" rot="R90">
+<attribute name="OC_FARNELL" value="unknown" x="44.825" y="95.99" size="1.778" layer="27" rot="R90" display="off"/>
+<attribute name="MF" value="" x="44.825" y="95.99" size="1.778" layer="27" rot="R90" display="off"/>
+<attribute name="MPN" value="" x="44.825" y="95.99" size="1.778" layer="27" rot="R90" display="off"/>
+</element>
+<element name="Q6" library="transistor" package="SOT23-BEC" value="MMBT3904" x="55.25" y="90.5" rot="R90">
+<attribute name="OC_FARNELL" value="2336795" x="55.25" y="90.5" size="1.778" layer="27" rot="R90" display="off"/>
+<attribute name="MF" value="NXP" x="55.25" y="90.5" size="1.778" layer="27" rot="R90" display="off"/>
+<attribute name="MPN" value="PMBT3904,215" x="55.25" y="90.5" size="1.778" layer="27" rot="R90" display="off"/>
+</element>
+<element name="R41" library="OPL" package="R0603" value="10k" x="51" y="90.5" rot="R180">
+<attribute name="OC_FARNELL" value="unknown" x="51" y="90.5" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="MF" value="" x="51" y="90.5" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="MPN" value="" x="51" y="90.5" size="1.778" layer="27" rot="R180" display="off"/>
+</element>
+<element name="R42" library="OPL" package="R0603" value="100k" x="59" y="88.25" rot="R90">
+<attribute name="OC_FARNELL" value="unknown" x="59" y="88.25" size="1.778" layer="27" rot="R90" display="off"/>
+<attribute name="MF" value="" x="59" y="88.25" size="1.778" layer="27" rot="R90" display="off"/>
+<attribute name="MPN" value="" x="59" y="88.25" size="1.778" layer="27" rot="R90" display="off"/>
+</element>
+<element name="Q7" library="transistor" package="SOT23-BEC" value="MMBT3904" x="43.815" y="59.69">
+<attribute name="OC_FARNELL" value="2336795" x="43.815" y="59.69" size="1.778" layer="27" display="off"/>
+<attribute name="MF" value="NXP" x="43.815" y="59.69" size="1.778" layer="27" display="off"/>
+<attribute name="MPN" value="PMBT3904,215" x="43.815" y="59.69" size="1.778" layer="27" display="off"/>
+</element>
+<element name="R43" library="OPL" package="R0603" value="10k" x="46.635" y="62.355" rot="R180">
+<attribute name="OC_FARNELL" value="unknown" x="46.635" y="62.355" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="MF" value="" x="46.635" y="62.355" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="MPN" value="" x="46.635" y="62.355" size="1.778" layer="27" rot="R180" display="off"/>
+</element>
+<element name="R44" library="OPL" package="R0603" value="100k" x="47.625" y="58.42" rot="R180">
+<attribute name="OC_FARNELL" value="unknown" x="47.625" y="58.42" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="MF" value="" x="47.625" y="58.42" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="MPN" value="" x="47.625" y="58.42" size="1.778" layer="27" rot="R180" display="off"/>
+</element>
+<element name="Q8" library="transistor" package="SOT23-BEC" value="MMBT3904" x="55.25" y="44.25">
+<attribute name="OC_FARNELL" value="2336795" x="55.25" y="44.25" size="1.778" layer="27" display="off"/>
+<attribute name="MF" value="NXP" x="55.25" y="44.25" size="1.778" layer="27" display="off"/>
+<attribute name="MPN" value="PMBT3904,215" x="55.25" y="44.25" size="1.778" layer="27" display="off"/>
+</element>
+<element name="R45" library="OPL" package="R0603" value="10k" x="44.565" y="53.36" rot="R180">
+<attribute name="OC_FARNELL" value="unknown" x="44.565" y="53.36" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="MF" value="" x="44.565" y="53.36" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="MPN" value="" x="44.565" y="53.36" size="1.778" layer="27" rot="R180" display="off"/>
+</element>
+<element name="R46" library="OPL" package="R0603" value="100k" x="49.75" y="44.5">
+<attribute name="OC_FARNELL" value="unknown" x="49.75" y="44.5" size="1.778" layer="27" display="off"/>
+<attribute name="MF" value="" x="49.75" y="44.5" size="1.778" layer="27" display="off"/>
+<attribute name="MPN" value="" x="49.75" y="44.5" size="1.778" layer="27" display="off"/>
+</element>
+<element name="C17" library="OPL" package="C0603" value="100nF" x="53.985" y="39.43" rot="R270">
+<attribute name="OC_FARNELL" value="1759017" x="53.985" y="39.43" size="1.778" layer="27" rot="R270" display="off"/>
+<attribute name="MF" value="MULTICOMP" x="53.985" y="39.43" size="1.778" layer="27" rot="R270" display="off"/>
+<attribute name="MPN" value="MC0603F104Z160CT" x="53.985" y="39.43" size="1.778" layer="27" rot="R270" display="off"/>
+</element>
 <element name="U3" library="FarnellThings" package="QFN50P250X350X100-17N" value="74HC595BQ" x="46.25" y="89.75" rot="R180">
 <attribute name="PACKAGE" value="QFN-16" x="46.25" y="89.75" size="1.778" layer="27" rot="R180" display="off"/>
 <attribute name="OC_NEWARK" value="43W8000" x="46.25" y="89.75" size="1.778" layer="27" rot="R180" display="off"/>
 <attribute name="MPN" value="74HC595BQ" x="46.25" y="89.75" size="1.778" layer="27" rot="R180" display="off"/>
 <attribute name="SUPPLIER" value="NXP" x="46.25" y="89.75" size="1.778" layer="27" rot="R180" display="off"/>
 <attribute name="OC_FARNELL" value="2164850" x="46.25" y="89.75" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="MF" value="NXP" x="46.25" y="89.75" size="1.778" layer="27" rot="R180" display="off"/>
 </element>
 <element name="U4" library="FarnellThings" package="QFN50P250X350X100-17N" value="74HC595BQ" x="29.5" y="90" rot="R180">
 <attribute name="PACKAGE" value="QFN-16" x="29.5" y="90" size="1.778" layer="27" rot="R180" display="off"/>
@@ -1923,6 +2337,7 @@ new: Attribute TP_SIGNAL_NAME&lt;br&gt;
 <attribute name="MPN" value="74HC595BQ" x="29.5" y="90" size="1.778" layer="27" rot="R180" display="off"/>
 <attribute name="SUPPLIER" value="NXP" x="29.5" y="90" size="1.778" layer="27" rot="R180" display="off"/>
 <attribute name="OC_FARNELL" value="2164850" x="29.5" y="90" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="MF" value="NXP" x="29.5" y="90" size="1.778" layer="27" rot="R180" display="off"/>
 </element>
 <element name="U5" library="FarnellThings" package="QFN50P250X350X100-17N" value="74HC595BQ" x="22.25" y="82.5">
 <attribute name="PACKAGE" value="QFN-16" x="22.25" y="82.5" size="1.778" layer="27" display="off"/>
@@ -1930,39 +2345,136 @@ new: Attribute TP_SIGNAL_NAME&lt;br&gt;
 <attribute name="MPN" value="74HC595BQ" x="22.25" y="82.5" size="1.778" layer="27" display="off"/>
 <attribute name="SUPPLIER" value="NXP" x="22.25" y="82.5" size="1.778" layer="27" display="off"/>
 <attribute name="OC_FARNELL" value="2164850" x="22.25" y="82.5" size="1.778" layer="27" display="off"/>
+<attribute name="MF" value="NXP" x="22.25" y="82.5" size="1.778" layer="27" display="off"/>
 </element>
-<element name="R13" library="OPL" package="R0603" value="2k" x="48.895" y="74.295" rot="R180"/>
-<element name="R47" library="OPL" package="R0603" value="2k" x="49.24" y="60.675" rot="R180"/>
-<element name="R48" library="OPL" package="R0603" value="2k" x="49.75" y="46.25" rot="R180"/>
-<element name="R49" library="OPL" package="R0603" value="2k" x="49.53" y="2.54" rot="R180"/>
+<element name="R13" library="OPL" package="R0603" value="2k" x="48.895" y="74.295" rot="R180">
+<attribute name="OC_FARNELL" value="unknown" x="48.895" y="74.295" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="MF" value="" x="48.895" y="74.295" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="MPN" value="" x="48.895" y="74.295" size="1.778" layer="27" rot="R180" display="off"/>
+</element>
+<element name="R47" library="OPL" package="R0603" value="2k" x="49.24" y="60.675" rot="R180">
+<attribute name="OC_FARNELL" value="unknown" x="49.24" y="60.675" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="MF" value="" x="49.24" y="60.675" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="MPN" value="" x="49.24" y="60.675" size="1.778" layer="27" rot="R180" display="off"/>
+</element>
+<element name="R48" library="OPL" package="R0603" value="2k" x="49.75" y="46.25" rot="R180">
+<attribute name="OC_FARNELL" value="unknown" x="49.75" y="46.25" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="MF" value="" x="49.75" y="46.25" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="MPN" value="" x="49.75" y="46.25" size="1.778" layer="27" rot="R180" display="off"/>
+</element>
+<element name="R49" library="OPL" package="R0603" value="2k" x="49.53" y="2.54" rot="R180">
+<attribute name="OC_FARNELL" value="unknown" x="49.53" y="2.54" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="MF" value="" x="49.53" y="2.54" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="MPN" value="" x="49.53" y="2.54" size="1.778" layer="27" rot="R180" display="off"/>
+</element>
 <element name="U6" library="EurorackModularParts" package="SOT95P290X145-5N" value="24LC00T-I/OT" x="38.25" y="59.5" rot="R90">
 <attribute name="PACKAGE" value="SOT-23-5 " x="38.25" y="59.5" size="1.778" layer="27" rot="R90" display="off"/>
 <attribute name="OC_NEWARK" value="62K0574" x="38.25" y="59.5" size="1.778" layer="27" rot="R90" display="off"/>
-<attribute name="MPN" value="24LC00T-I/OT " x="38.25" y="59.5" size="1.778" layer="27" rot="R90" display="off"/>
+<attribute name="MPN" value="24LC00T-I/OT" x="38.25" y="59.5" size="1.778" layer="27" rot="R90" display="off"/>
 <attribute name="SUPPLIER" value="MICROCHIP" x="38.25" y="59.5" size="1.778" layer="27" rot="R90" display="off"/>
-<attribute name="OC_FARNELL" value="9757864  " x="38.25" y="59.5" size="1.778" layer="27" rot="R90" display="off"/>
+<attribute name="OC_FARNELL" value="9757864" x="38.25" y="59.5" size="1.778" layer="27" rot="R90" display="off"/>
+<attribute name="MF" value="MICROCHIP" x="38.25" y="59.5" size="1.778" layer="27" rot="R90" display="off"/>
 </element>
-<element name="C21" library="OPL" package="C0603" value="100nF" x="43.815" y="56.765" rot="R180"/>
-<element name="R50" library="OPL" package="R0603" value="2k" x="35.605" y="59.45" rot="R270"/>
-<element name="R51" library="OPL" package="R0603" value="2k" x="40.815" y="59.45" rot="R270"/>
-<element name="IC3" library="EurorackModularParts" package="SO14" value="TL074D" x="32.77" y="19.935"/>
-<element name="IC4" library="EurorackModularParts" package="SO14" value="MCP6004" x="48" y="39" rot="R90"/>
-<element name="R4" library="OPL" package="R0603" value="100k" x="33.42" y="8.17"/>
-<element name="R6" library="OPL" package="R0603" value="100k" x="35.46" y="13.865"/>
-<element name="R52" library="OPL" package="R0603" value="100k" x="35.56" y="27.94"/>
-<element name="R53" library="OPL" package="R0603" value="100k" x="34.04" y="30.48"/>
-<element name="LED_ACCENT" library="SparkFun-LED" package="LED3MM" value="WHITE 3MM WITH 11MM HOLDER" x="58.42" y="15.24"/>
-<element name="R10" library="OPL" package="R0603" value="2k" x="59.25" y="31.25" rot="R90"/>
-<element name="R11" library="OPL" package="R0603" value="10k" x="12.585" y="93.345"/>
-<element name="R29" library="OPL" package="R0603" value="10k" x="26.035" y="59.69" rot="R90"/>
-<element name="D3" library="OPL" package="DO-214AC" value="MRA4004T3G" x="14.605" y="26.67" rot="R90"/>
-<element name="D4" library="OPL" package="DO-214AC" value="MRA4004T3G" x="6.35" y="24.13" rot="R180"/>
-<element name="U$4" library="adafruit" package="FIDUCIAL_1MM" value="FIDUCIAL" x="3" y="5"/>
-<element name="U$7" library="adafruit" package="FIDUCIAL_1MM" value="FIDUCIAL" x="58" y="5"/>
-<element name="U$8" library="adafruit" package="FIDUCIAL_1MM" value="FIDUCIAL" x="3" y="104"/>
-<element name="U$19" library="zephod-components" package="SMALLROCKET" value="SMALLROCKET" x="31.5" y="4.1" rot="MR0"/>
+<element name="C21" library="OPL" package="C0603" value="100nF" x="43.815" y="56.765" rot="R180">
+<attribute name="OC_FARNELL" value="1759017" x="43.815" y="56.765" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="MF" value="MULTICOMP" x="43.815" y="56.765" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="MPN" value="MC0603F104Z160CT" x="43.815" y="56.765" size="1.778" layer="27" rot="R180" display="off"/>
+</element>
+<element name="R50" library="OPL" package="R0603" value="2k" x="35.605" y="59.45" rot="R270">
+<attribute name="OC_FARNELL" value="unknown" x="35.605" y="59.45" size="1.778" layer="27" rot="R270" display="off"/>
+<attribute name="MF" value="" x="35.605" y="59.45" size="1.778" layer="27" rot="R270" display="off"/>
+<attribute name="MPN" value="" x="35.605" y="59.45" size="1.778" layer="27" rot="R270" display="off"/>
+</element>
+<element name="R51" library="OPL" package="R0603" value="2k" x="40.815" y="59.45" rot="R270">
+<attribute name="OC_FARNELL" value="unknown" x="40.815" y="59.45" size="1.778" layer="27" rot="R270" display="off"/>
+<attribute name="MF" value="" x="40.815" y="59.45" size="1.778" layer="27" rot="R270" display="off"/>
+<attribute name="MPN" value="" x="40.815" y="59.45" size="1.778" layer="27" rot="R270" display="off"/>
+</element>
+<element name="IC3" library="EurorackModularParts" package="SO14" value="TL074D" x="32.77" y="19.935">
+<attribute name="OC_FARNELL" value="1103010" x="32.77" y="19.935" size="1.778" layer="27" display="off"/>
+<attribute name="MF" value="TEXAS INSTRUMENTS" x="32.77" y="19.935" size="1.778" layer="27" display="off"/>
+<attribute name="MPN" value="TL074CD" x="32.77" y="19.935" size="1.778" layer="27" display="off"/>
+</element>
+<element name="IC4" library="EurorackModularParts" package="SO14" value="MCP6004" x="48" y="39" rot="R90">
+<attribute name="OC_FARNELL" value="1605572" x="48" y="39" size="1.778" layer="27" rot="R90" display="off"/>
+<attribute name="MF" value="MICROCHIP" x="48" y="39" size="1.778" layer="27" rot="R90" display="off"/>
+<attribute name="MPN" value="MCP6004-I/SL." x="48" y="39" size="1.778" layer="27" rot="R90" display="off"/>
+</element>
+<element name="R4" library="OPL" package="R0603" value="100k" x="33.42" y="8.17">
+<attribute name="OC_FARNELL" value="unknown" x="33.42" y="8.17" size="1.778" layer="27" display="off"/>
+<attribute name="MF" value="" x="33.42" y="8.17" size="1.778" layer="27" display="off"/>
+<attribute name="MPN" value="" x="33.42" y="8.17" size="1.778" layer="27" display="off"/>
+</element>
+<element name="R6" library="OPL" package="R0603" value="100k" x="35.46" y="13.865">
+<attribute name="OC_FARNELL" value="unknown" x="35.46" y="13.865" size="1.778" layer="27" display="off"/>
+<attribute name="MF" value="" x="35.46" y="13.865" size="1.778" layer="27" display="off"/>
+<attribute name="MPN" value="" x="35.46" y="13.865" size="1.778" layer="27" display="off"/>
+</element>
+<element name="R52" library="OPL" package="R0603" value="100k" x="35.56" y="27.94">
+<attribute name="OC_FARNELL" value="unknown" x="35.56" y="27.94" size="1.778" layer="27" display="off"/>
+<attribute name="MF" value="" x="35.56" y="27.94" size="1.778" layer="27" display="off"/>
+<attribute name="MPN" value="" x="35.56" y="27.94" size="1.778" layer="27" display="off"/>
+</element>
+<element name="R53" library="OPL" package="R0603" value="100k" x="34.04" y="30.48">
+<attribute name="OC_FARNELL" value="unknown" x="34.04" y="30.48" size="1.778" layer="27" display="off"/>
+<attribute name="MF" value="" x="34.04" y="30.48" size="1.778" layer="27" display="off"/>
+<attribute name="MPN" value="" x="34.04" y="30.48" size="1.778" layer="27" display="off"/>
+</element>
+<element name="LED_ACCENT" library="SparkFun-LED" package="LED3MM" value="WHITE 3MM WITH 11MM HOLDER" x="58.42" y="15.24">
+<attribute name="OC_FARNELL" value="unknown" x="58.42" y="15.24" size="1.778" layer="27" display="off"/>
+<attribute name="MF" value="" x="58.42" y="15.24" size="1.778" layer="27" display="off"/>
+<attribute name="MPN" value="" x="58.42" y="15.24" size="1.778" layer="27" display="off"/>
+</element>
+<element name="R10" library="OPL" package="R0603" value="2k" x="59.25" y="31.25" rot="R90">
+<attribute name="OC_FARNELL" value="unknown" x="59.25" y="31.25" size="1.778" layer="27" rot="R90" display="off"/>
+<attribute name="MF" value="" x="59.25" y="31.25" size="1.778" layer="27" rot="R90" display="off"/>
+<attribute name="MPN" value="" x="59.25" y="31.25" size="1.778" layer="27" rot="R90" display="off"/>
+</element>
+<element name="R11" library="OPL" package="R0603" value="10k" x="12.585" y="93.345">
+<attribute name="OC_FARNELL" value="unknown" x="12.585" y="93.345" size="1.778" layer="27" display="off"/>
+<attribute name="MF" value="" x="12.585" y="93.345" size="1.778" layer="27" display="off"/>
+<attribute name="MPN" value="" x="12.585" y="93.345" size="1.778" layer="27" display="off"/>
+</element>
+<element name="R29" library="OPL" package="R0603" value="10k" x="26.035" y="59.69" rot="R90">
+<attribute name="OC_FARNELL" value="unknown" x="26.035" y="59.69" size="1.778" layer="27" rot="R90" display="off"/>
+<attribute name="MF" value="" x="26.035" y="59.69" size="1.778" layer="27" rot="R90" display="off"/>
+<attribute name="MPN" value="" x="26.035" y="59.69" size="1.778" layer="27" rot="R90" display="off"/>
+</element>
+<element name="D3" library="OPL" package="DO-214AC" value="MRA4004T3G" x="14.605" y="26.67" rot="R90">
+<attribute name="OC_FARNELL" value="9551824" x="14.605" y="26.67" size="1.778" layer="27" rot="R90" display="off"/>
+<attribute name="MF" value="VISHAY" x="14.605" y="26.67" size="1.778" layer="27" rot="R90" display="off"/>
+<attribute name="MPN" value="US1G-E3/5AT" x="14.605" y="26.67" size="1.778" layer="27" rot="R90" display="off"/>
+</element>
+<element name="D4" library="OPL" package="DO-214AC" value="MRA4004T3G" x="6.35" y="24.13" rot="R180">
+<attribute name="OC_FARNELL" value="9551824" x="6.35" y="24.13" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="MF" value="VISHAY" x="6.35" y="24.13" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="MPN" value="US1G-E3/5AT" x="6.35" y="24.13" size="1.778" layer="27" rot="R180" display="off"/>
+</element>
+<element name="U$4" library="adafruit" package="FIDUCIAL_1MM" value="FIDUCIAL" x="3" y="5">
+<attribute name="OC_FARNELL" value="unknown" x="3" y="5" size="1.778" layer="27" display="off"/>
+<attribute name="MF" value="" x="3" y="5" size="1.778" layer="27" display="off"/>
+<attribute name="MPN" value="" x="3" y="5" size="1.778" layer="27" display="off"/>
+</element>
+<element name="U$7" library="adafruit" package="FIDUCIAL_1MM" value="FIDUCIAL" x="58" y="5">
+<attribute name="OC_FARNELL" value="unknown" x="58" y="5" size="1.778" layer="27" display="off"/>
+<attribute name="MF" value="" x="58" y="5" size="1.778" layer="27" display="off"/>
+<attribute name="MPN" value="" x="58" y="5" size="1.778" layer="27" display="off"/>
+</element>
+<element name="U$8" library="adafruit" package="FIDUCIAL_1MM" value="FIDUCIAL" x="3" y="104">
+<attribute name="OC_FARNELL" value="unknown" x="3" y="104" size="1.778" layer="27" display="off"/>
+<attribute name="MF" value="" x="3" y="104" size="1.778" layer="27" display="off"/>
+<attribute name="MPN" value="" x="3" y="104" size="1.778" layer="27" display="off"/>
+</element>
+<element name="U$19" library="zephod-components" package="SMALLROCKET" value="SMALLROCKET" x="31.5" y="4.1" rot="MR0">
+<attribute name="OC_FARNELL" value="unknown" x="31.5" y="4.1" size="1.778" layer="28" rot="MR0" display="off"/>
+<attribute name="MF" value="" x="31.5" y="4.1" size="1.778" layer="28" rot="MR0" display="off"/>
+<attribute name="MPN" value="" x="31.5" y="4.1" size="1.778" layer="28" rot="MR0" display="off"/>
+</element>
 <element name="TP1" library="testpad" package="B1,27" value="TPB1,27" x="41.375" y="44" rot="MR0">
 <attribute name="TP_SIGNAL_NAME" value="" x="41.375" y="44" size="1.778" layer="28" rot="MR0" display="off"/>
+<attribute name="OC_FARNELL" value="unknown" x="41.375" y="44" size="1.778" layer="28" rot="MR0" display="off"/>
+<attribute name="MF" value="" x="41.375" y="44" size="1.778" layer="28" rot="MR0" display="off"/>
+<attribute name="MPN" value="" x="41.375" y="44" size="1.778" layer="28" rot="MR0" display="off"/>
 </element>
 </elements>
 <signals>
