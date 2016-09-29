@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="1" unitdist="mm" unit="mm" style="lines" multiple="1" display="yes" altdistance="0.025" altunitdist="inch" altunit="inch"/>
+<grid distance="0.25" unitdist="mm" unit="mm" style="lines" multiple="1" display="yes" altdistance="0.025" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="2" name="Route2" color="1" fill="3" visible="yes" active="yes"/>
@@ -417,11 +417,11 @@ PCB width:
 <circle x="0" y="0" radius="1" width="0.1" layer="21"/>
 <circle x="0" y="0" radius="4" width="0.0254" layer="255"/>
 <text x="0" y="6.35" size="1.778" layer="255" align="bottom-center">&gt;DESC</text>
-<wire x1="-4" y1="4.75" x2="4" y2="4.75" width="0.127" layer="51"/>
-<wire x1="4" y1="4.75" x2="4" y2="-3.75" width="0.127" layer="51"/>
-<wire x1="4" y1="-3.75" x2="-4" y2="-3.75" width="0.127" layer="51"/>
-<wire x1="-4" y1="-3.75" x2="-4" y2="4.75" width="0.127" layer="51"/>
-<rectangle x1="-4" y1="-3.75" x2="4" y2="4.75" layer="39"/>
+<wire x1="-4.5" y1="5.6" x2="4.5" y2="5.6" width="0.127" layer="51"/>
+<wire x1="4.5" y1="5.6" x2="4.5" y2="-5" width="0.127" layer="51"/>
+<wire x1="4.5" y1="-5" x2="-4.5" y2="-5" width="0.127" layer="51"/>
+<wire x1="-4.5" y1="-5" x2="-4.5" y2="5.6" width="0.127" layer="51"/>
+<rectangle x1="-4.5" y1="-5" x2="4.5" y2="5.6" layer="39"/>
 <pad name="RING@3" x="-3.7" y="0" drill="0.8" diameter="1.9304" shape="long" rot="R90"/>
 <pad name="SWITCH@3" x="3.7" y="0" drill="0.8" diameter="1.9304" shape="long" rot="R90"/>
 <pad name="SECOND@3" x="0" y="-3.5" drill="0.8" diameter="1.9304" shape="long" rot="R180"/>
@@ -455,11 +455,11 @@ PCB width:
 <circle x="0" y="0" radius="1.5" width="2" layer="21"/>
 <circle x="0" y="0" radius="4" width="0.0254" layer="255"/>
 <text x="0" y="6.35" size="1.778" layer="255" align="bottom-center">&gt;DESC</text>
-<wire x1="-4" y1="4.75" x2="4" y2="4.75" width="0.127" layer="51"/>
-<wire x1="4" y1="4.75" x2="4" y2="-3.75" width="0.127" layer="51"/>
-<wire x1="4" y1="-3.75" x2="-4" y2="-3.75" width="0.127" layer="51"/>
-<wire x1="-4" y1="-3.75" x2="-4" y2="4.75" width="0.127" layer="51"/>
-<rectangle x1="-4" y1="-3.75" x2="4" y2="4.75" layer="39"/>
+<wire x1="-4.5" y1="5.6" x2="4.5" y2="5.6" width="0.127" layer="51"/>
+<wire x1="4.5" y1="5.6" x2="4.5" y2="-5" width="0.127" layer="51"/>
+<wire x1="4.5" y1="-5" x2="-4.5" y2="-5" width="0.127" layer="51"/>
+<wire x1="-4.5" y1="-5" x2="-4.5" y2="5.6" width="0.127" layer="51"/>
+<rectangle x1="-4.5" y1="-5" x2="4.5" y2="5.6" layer="39"/>
 <pad name="TIP@3" x="0" y="4.5" drill="0.8" diameter="1.9304" shape="long"/>
 <pad name="SWITCH@3" x="3.7" y="0" drill="0.8" diameter="1.9304" shape="long" rot="R90"/>
 <pad name="RING@3" x="-3.7" y="0" drill="0.8" diameter="1.9304" shape="long" rot="R90"/>

@@ -4689,7 +4689,7 @@ new: Attribute TP_SIGNAL_NAME&lt;br&gt;
 <wire x1="41.375" y1="62" x2="41.75" y2="62" width="0.2032" layer="16"/>
 <via x="41.75" y="62" extent="1-16" drill="0.3048"/>
 </signal>
-<signal name="N$88">
+<signal name="SHIFTER1TO2">
 <contactref element="U5" pad="9"/>
 <contactref element="U4" pad="14"/>
 <wire x1="23.5" y1="80.75" x2="22.625" y2="80.75" width="0.2032" layer="1"/>
@@ -4712,7 +4712,7 @@ new: Attribute TP_SIGNAL_NAME&lt;br&gt;
 <via x="26.625" y="87.375" extent="1-16" drill="0.3048"/>
 <via x="27.375" y="88.625" extent="1-16" drill="0.3048"/>
 </signal>
-<signal name="N$89">
+<signal name="SHIFTER2TO3">
 <contactref element="U4" pad="9"/>
 <contactref element="U3" pad="14"/>
 <wire x1="29.25" y1="92.875" x2="29.25" y2="91.75" width="0.2032" layer="1"/>
