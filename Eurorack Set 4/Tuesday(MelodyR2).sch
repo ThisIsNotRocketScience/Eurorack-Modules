@@ -159,12 +159,6 @@
 <text x="0" y="0.889" size="0.889" layer="25" ratio="11" align="bottom-center">&gt;NAME</text>
 <text x="0" y="-0.9525" size="0.508" layer="27" ratio="10" align="top-center">&gt;VALUE</text>
 <rectangle x1="-1.397" y1="-0.635" x2="1.397" y2="0.635" layer="39"/>
-<polygon width="0.127" layer="41">
-<vertex x="-0.254" y="0.635"/>
-<vertex x="0.254" y="0.635"/>
-<vertex x="0.254" y="-0.635"/>
-<vertex x="-0.254" y="-0.635"/>
-</polygon>
 </package>
 <package name="C0805">
 <description>&lt;b&gt;0805&lt;b&gt;&lt;p&gt;</description>
@@ -182,38 +176,15 @@
 <wire x1="-2.0955" y1="0.8255" x2="2.0955" y2="0.8255" width="0.127" layer="21"/>
 <wire x1="2.0955" y1="0.8255" x2="2.0955" y2="-0.8255" width="0.127" layer="21"/>
 <wire x1="2.0955" y1="-0.8255" x2="-2.0955" y2="-0.8255" width="0.127" layer="21"/>
+<wire x1="-2.0955" y1="-0.8255" x2="-2.0955" y2="0.8255" width="0.127" layer="21"/>
+<wire x1="-1" y1="0" x2="0" y2="0" width="0.127" layer="21"/>
+<wire x1="-0.5" y1="-0.5" x2="-0.5" y2="0.5" width="0.127" layer="21"/>
 <smd name="+" x="-1.27" y="0" dx="1.27" dy="1.27" layer="1"/>
 <smd name="-" x="1.27" y="0" dx="1.27" dy="1.27" layer="1" rot="R180"/>
 <text x="-1.9175" y="1.2925" size="0.889" layer="25" ratio="11">&gt;NAME</text>
 <text x="-1.6" y="-1.492" size="0.635" layer="27" ratio="10">&gt;VALUE</text>
 <rectangle x1="-2.0955" y1="-0.8255" x2="2.0955" y2="0.8255" layer="39"/>
-<wire x1="-2.06375" y1="0.79375" x2="-3.4925" y2="0.79375" width="0.127" layer="21"/>
-<wire x1="-3.4925" y1="0.79375" x2="-3.4925" y2="-0.79375" width="0.127" layer="21"/>
-<wire x1="-3.4925" y1="-0.79375" x2="-2.06375" y2="-0.79375" width="0.127" layer="21"/>
-<polygon width="0.127" layer="21">
-<vertex x="-3.01625" y="0.79375"/>
-<vertex x="-3.4925" y="0.79375"/>
-<vertex x="-3.4925" y="0.3175"/>
-<vertex x="-3.01625" y="0.3175"/>
-</polygon>
-<polygon width="0.127" layer="21">
-<vertex x="-3.01625" y="-0.79375"/>
-<vertex x="-3.01625" y="-0.3175"/>
-<vertex x="-3.4925" y="-0.3175"/>
-<vertex x="-3.4925" y="-0.79375"/>
-</polygon>
-<polygon width="0.127" layer="21">
-<vertex x="-2.38125" y="-0.79375"/>
-<vertex x="-2.38125" y="-0.3175"/>
-<vertex x="-2.06375" y="-0.3175"/>
-<vertex x="-2.06375" y="-0.79375"/>
-</polygon>
-<polygon width="0.127" layer="21">
-<vertex x="-2.38125" y="0.79375"/>
-<vertex x="-2.38125" y="0.3175"/>
-<vertex x="-2.06375" y="0.3175"/>
-<vertex x="-2.06375" y="0.79375"/>
-</polygon>
+<rectangle x1="-2.25" y1="-1" x2="-0.75" y2="1" layer="21"/>
 </package>
 <package name="AVX-B">
 <wire x1="-2.2225" y1="1.397" x2="2.2225" y2="1.397" width="0.1016" layer="21"/>
@@ -251,12 +222,6 @@
 <text x="-1.905" y="0.885" size="0.889" layer="25" ratio="11">&gt;NAME</text>
 <text x="-1.397" y="-1.3175" size="0.508" layer="27" ratio="10">&gt;VALUE</text>
 <rectangle x1="-1.397" y1="-0.635" x2="1.397" y2="0.635" layer="39"/>
-<polygon width="0.127" layer="41">
-<vertex x="-0.254" y="0.635"/>
-<vertex x="0.254" y="0.635"/>
-<vertex x="0.254" y="-0.635"/>
-<vertex x="-0.254" y="-0.635"/>
-</polygon>
 </package>
 <package name="R1206-8">
 <description>&lt;b&gt;BOURNS&lt;/b&gt; Chip Resistor Array&lt;p&gt;
@@ -433,8 +398,6 @@ Source: RS Component / BUORNS</description>
 <pin name="2" x="5.08" y="0" visible="off" length="short" rot="R180"/>
 <text x="0" y="3.81" size="1.27" layer="95" font="vector" ratio="10" align="bottom-center">&gt;NAME</text>
 <text x="0" y="-3.81" size="1.27" layer="96" font="vector" ratio="10" align="top-center">&gt;VALUE</text>
-<wire x1="-2.54" y1="1.905" x2="-3.81" y2="1.905" width="0.254" layer="94"/>
-<wire x1="-3.175" y1="2.54" x2="-3.175" y2="1.27" width="0.254" layer="94"/>
 </symbol>
 <symbol name="R">
 <wire x1="-1.27" y1="0.635" x2="1.27" y2="0.635" width="0.4064" layer="94"/>
@@ -461,15 +424,14 @@ Source: RS Component / BUORNS</description>
 <pin name="2" x="3.81" y="0" visible="off" length="short" direction="pas" swaplevel="1" rot="R180"/>
 </symbol>
 <symbol name="D">
-<wire x1="-0.635" y1="-1.27" x2="-0.635" y2="1.27" width="0.254" layer="94"/>
-<wire x1="-0.635" y1="-1.27" x2="1.27" y2="0" width="0.254" layer="94"/>
-<wire x1="-0.635" y1="1.27" x2="1.27" y2="0" width="0.254" layer="94"/>
-<wire x1="1.27" y1="1.27" x2="1.27" y2="0" width="0.254" layer="94"/>
-<text x="0.635" y="1.5875" size="0.635" layer="95" ratio="10" align="bottom-center">&gt;NAME</text>
-<text x="0.635" y="-1.5875" size="0.635" layer="96" ratio="10" align="top-center">&gt;VALUE</text>
-<pin name="+" x="-3.175" y="0" visible="off" length="short" direction="pas"/>
+<wire x1="-1.27" y1="-2.54" x2="-1.27" y2="2.54" width="0.254" layer="94"/>
+<wire x1="-1.27" y1="-2.54" x2="1.27" y2="0" width="0.254" layer="94"/>
+<wire x1="-1.27" y1="2.54" x2="1.27" y2="0" width="0.254" layer="94"/>
+<wire x1="1.27" y1="2.54" x2="1.27" y2="-2.54" width="0.254" layer="94"/>
+<text x="-3.81" y="0" size="1.27" layer="95" ratio="10">&gt;NAME</text>
+<text x="0" y="0" size="1.27" layer="96" ratio="10">&gt;VALUE</text>
+<pin name="+" x="-3.81" y="0" visible="off" length="short" direction="pas"/>
 <pin name="-" x="3.81" y="0" visible="off" length="short" direction="pas" rot="R180"/>
-<wire x1="1.27" y1="0" x2="1.27" y2="-1.27" width="0.254" layer="94"/>
 </symbol>
 </symbols>
 <devicesets>
@@ -762,60 +724,54 @@ We've spent an enormous amount of time creating and checking these footprints an
 <smd name="6" x="2.3622" y="-0.635" dx="1.9812" dy="0.5588" layer="1"/>
 <smd name="7" x="2.3622" y="0.635" dx="1.9812" dy="0.5588" layer="1"/>
 <smd name="8" x="2.3622" y="1.905" dx="1.9812" dy="0.5588" layer="1"/>
-<wire x1="-1.9558" y1="1.651" x2="-1.9558" y2="2.159" width="0.127" layer="51"/>
-<wire x1="-1.9558" y1="2.159" x2="-2.9972" y2="2.159" width="0.127" layer="51"/>
-<wire x1="-2.9972" y1="2.159" x2="-2.9972" y2="1.651" width="0.127" layer="51"/>
-<wire x1="-2.9972" y1="1.651" x2="-1.9558" y2="1.651" width="0.127" layer="51"/>
-<wire x1="-1.9558" y1="0.381" x2="-1.9558" y2="0.889" width="0.127" layer="51"/>
-<wire x1="-1.9558" y1="0.889" x2="-2.9972" y2="0.889" width="0.127" layer="51"/>
-<wire x1="-2.9972" y1="0.889" x2="-2.9972" y2="0.381" width="0.127" layer="51"/>
-<wire x1="-2.9972" y1="0.381" x2="-1.9558" y2="0.381" width="0.127" layer="51"/>
-<wire x1="-1.9558" y1="-0.889" x2="-1.9558" y2="-0.381" width="0.127" layer="51"/>
-<wire x1="-1.9558" y1="-0.381" x2="-2.9972" y2="-0.381" width="0.127" layer="51"/>
-<wire x1="-2.9972" y1="-0.381" x2="-2.9972" y2="-0.889" width="0.127" layer="51"/>
-<wire x1="-2.9972" y1="-0.889" x2="-1.9558" y2="-0.889" width="0.127" layer="51"/>
-<wire x1="-1.9558" y1="-2.159" x2="-1.9558" y2="-1.651" width="0.127" layer="51"/>
-<wire x1="-1.9558" y1="-1.651" x2="-2.9972" y2="-1.651" width="0.127" layer="51"/>
-<wire x1="-2.9972" y1="-1.651" x2="-2.9972" y2="-2.159" width="0.127" layer="51"/>
-<wire x1="-2.9972" y1="-2.159" x2="-1.9558" y2="-2.159" width="0.127" layer="51"/>
-<wire x1="1.9558" y1="-1.651" x2="1.9558" y2="-2.159" width="0.127" layer="51"/>
-<wire x1="1.9558" y1="-2.159" x2="2.9972" y2="-2.159" width="0.127" layer="51"/>
-<wire x1="2.9972" y1="-2.159" x2="2.9972" y2="-1.651" width="0.127" layer="51"/>
-<wire x1="2.9972" y1="-1.651" x2="1.9558" y2="-1.651" width="0.127" layer="51"/>
-<wire x1="1.9558" y1="-0.381" x2="1.9558" y2="-0.889" width="0.127" layer="51"/>
-<wire x1="1.9558" y1="-0.889" x2="2.9972" y2="-0.889" width="0.127" layer="51"/>
-<wire x1="2.9972" y1="-0.889" x2="2.9972" y2="-0.381" width="0.127" layer="51"/>
-<wire x1="2.9972" y1="-0.381" x2="1.9558" y2="-0.381" width="0.127" layer="51"/>
-<wire x1="1.9558" y1="0.889" x2="1.9558" y2="0.381" width="0.127" layer="51"/>
-<wire x1="1.9558" y1="0.381" x2="2.9972" y2="0.381" width="0.127" layer="51"/>
-<wire x1="2.9972" y1="0.381" x2="2.9972" y2="0.889" width="0.127" layer="51"/>
-<wire x1="2.9972" y1="0.889" x2="1.9558" y2="0.889" width="0.127" layer="51"/>
-<wire x1="1.9558" y1="2.159" x2="1.9558" y2="1.651" width="0.127" layer="51"/>
-<wire x1="1.9558" y1="1.651" x2="2.9972" y2="1.651" width="0.127" layer="51"/>
-<wire x1="2.9972" y1="1.651" x2="2.9972" y2="2.159" width="0.127" layer="51"/>
-<wire x1="2.9972" y1="2.159" x2="1.9558" y2="2.159" width="0.127" layer="51"/>
-<wire x1="-2" y1="-2.25" x2="2" y2="-2.25" width="0.127" layer="51"/>
-<wire x1="2" y1="-2.25" x2="2" y2="2.25" width="0.127" layer="51"/>
-<wire x1="2" y1="2.25" x2="0.25" y2="2.25" width="0.127" layer="51"/>
-<wire x1="0.25" y1="2.25" x2="-0.25" y2="2.25" width="0.127" layer="51"/>
-<wire x1="-0.25" y1="2.25" x2="-2" y2="2.25" width="0.127" layer="51"/>
-<wire x1="-2" y1="2.25" x2="-2" y2="-2.25" width="0.127" layer="51"/>
-<wire x1="-1.25" y1="-2.25" x2="1.25" y2="-2.25" width="0.127" layer="21"/>
-<wire x1="2" y1="2.25" x2="0.25" y2="2.25" width="0.127" layer="21"/>
-<wire x1="0.25" y1="2.25" x2="-2" y2="2.25" width="0.127" layer="21"/>
-<wire x1="-2" y1="2.25" x2="-3.5" y2="2.25" width="0.127" layer="21"/>
-<text x="0" y="3.5" size="1" layer="25" ratio="10" rot="SR0" align="bottom-center">&gt;NAME</text>
-<text x="0" y="-3.5" size="1" layer="27" ratio="10" rot="SR0" align="top-center">&gt;VALUE</text>
-<wire x1="3.5" y1="-2.25" x2="3.5" y2="2.25" width="0.127" layer="21"/>
-<wire x1="3.5" y1="2.25" x2="-2" y2="2.25" width="0.127" layer="21"/>
-<wire x1="-3.5" y1="2.25" x2="-3.5" y2="1.25" width="0.127" layer="21"/>
-<wire x1="-3.5" y1="1.25" x2="-3.5" y2="-2.25" width="0.127" layer="21"/>
-<wire x1="-3.5" y1="-2.25" x2="3.5" y2="-2.25" width="0.127" layer="21"/>
-<rectangle x1="-4.75" y1="1.25" x2="-1.25" y2="2.25" layer="21"/>
-<wire x1="-3.5" y1="2.25" x2="-4.75" y2="2.25" width="0.127" layer="21"/>
-<wire x1="-4.75" y1="2.25" x2="-4.75" y2="1.25" width="0.127" layer="21"/>
-<wire x1="-4.75" y1="1.25" x2="-3.5" y2="1.25" width="0.127" layer="21"/>
-<wire x1="-3.5" y1="1.25" x2="-2" y2="1.25" width="0.127" layer="21"/>
+<wire x1="-1.9558" y1="1.651" x2="-1.9558" y2="2.159" width="0.1524" layer="51"/>
+<wire x1="-1.9558" y1="2.159" x2="-2.9972" y2="2.159" width="0.1524" layer="51"/>
+<wire x1="-2.9972" y1="2.159" x2="-2.9972" y2="1.651" width="0.1524" layer="51"/>
+<wire x1="-2.9972" y1="1.651" x2="-1.9558" y2="1.651" width="0.1524" layer="51"/>
+<wire x1="-1.9558" y1="0.381" x2="-1.9558" y2="0.889" width="0.1524" layer="51"/>
+<wire x1="-1.9558" y1="0.889" x2="-2.9972" y2="0.889" width="0.1524" layer="51"/>
+<wire x1="-2.9972" y1="0.889" x2="-2.9972" y2="0.381" width="0.1524" layer="51"/>
+<wire x1="-2.9972" y1="0.381" x2="-1.9558" y2="0.381" width="0.1524" layer="51"/>
+<wire x1="-1.9558" y1="-0.889" x2="-1.9558" y2="-0.381" width="0.1524" layer="51"/>
+<wire x1="-1.9558" y1="-0.381" x2="-2.9972" y2="-0.381" width="0.1524" layer="51"/>
+<wire x1="-2.9972" y1="-0.381" x2="-2.9972" y2="-0.889" width="0.1524" layer="51"/>
+<wire x1="-2.9972" y1="-0.889" x2="-1.9558" y2="-0.889" width="0.1524" layer="51"/>
+<wire x1="-1.9558" y1="-2.159" x2="-1.9558" y2="-1.651" width="0.1524" layer="51"/>
+<wire x1="-1.9558" y1="-1.651" x2="-2.9972" y2="-1.651" width="0.1524" layer="51"/>
+<wire x1="-2.9972" y1="-1.651" x2="-2.9972" y2="-2.159" width="0.1524" layer="51"/>
+<wire x1="-2.9972" y1="-2.159" x2="-1.9558" y2="-2.159" width="0.1524" layer="51"/>
+<wire x1="1.9558" y1="-1.651" x2="1.9558" y2="-2.159" width="0.1524" layer="51"/>
+<wire x1="1.9558" y1="-2.159" x2="2.9972" y2="-2.159" width="0.1524" layer="51"/>
+<wire x1="2.9972" y1="-2.159" x2="2.9972" y2="-1.651" width="0.1524" layer="51"/>
+<wire x1="2.9972" y1="-1.651" x2="1.9558" y2="-1.651" width="0.1524" layer="51"/>
+<wire x1="1.9558" y1="-0.381" x2="1.9558" y2="-0.889" width="0.1524" layer="51"/>
+<wire x1="1.9558" y1="-0.889" x2="2.9972" y2="-0.889" width="0.1524" layer="51"/>
+<wire x1="2.9972" y1="-0.889" x2="2.9972" y2="-0.381" width="0.1524" layer="51"/>
+<wire x1="2.9972" y1="-0.381" x2="1.9558" y2="-0.381" width="0.1524" layer="51"/>
+<wire x1="1.9558" y1="0.889" x2="1.9558" y2="0.381" width="0.1524" layer="51"/>
+<wire x1="1.9558" y1="0.381" x2="2.9972" y2="0.381" width="0.1524" layer="51"/>
+<wire x1="2.9972" y1="0.381" x2="2.9972" y2="0.889" width="0.1524" layer="51"/>
+<wire x1="2.9972" y1="0.889" x2="1.9558" y2="0.889" width="0.1524" layer="51"/>
+<wire x1="1.9558" y1="2.159" x2="1.9558" y2="1.651" width="0.1524" layer="51"/>
+<wire x1="1.9558" y1="1.651" x2="2.9972" y2="1.651" width="0.1524" layer="51"/>
+<wire x1="2.9972" y1="1.651" x2="2.9972" y2="2.159" width="0.1524" layer="51"/>
+<wire x1="2.9972" y1="2.159" x2="1.9558" y2="2.159" width="0.1524" layer="51"/>
+<wire x1="-1.9558" y1="-2.4384" x2="1.9558" y2="-2.4384" width="0.1524" layer="51"/>
+<wire x1="1.9558" y1="-2.4384" x2="1.9558" y2="2.4384" width="0.1524" layer="51"/>
+<wire x1="1.9558" y1="2.4384" x2="0.3048" y2="2.4384" width="0.1524" layer="51"/>
+<wire x1="0.3048" y1="2.4384" x2="-0.3048" y2="2.4384" width="0.1524" layer="51"/>
+<wire x1="-0.3048" y1="2.4384" x2="-1.9558" y2="2.4384" width="0.1524" layer="51"/>
+<wire x1="-1.9558" y1="2.4384" x2="-1.9558" y2="-2.4384" width="0.1524" layer="51"/>
+<wire x1="0.3048" y1="2.4384" x2="-0.3048" y2="2.4384" width="0" layer="51" curve="-180"/>
+<text x="-3.2004" y="2.3368" size="1.27" layer="51" ratio="6" rot="SR0">*</text>
+<wire x1="-1.1684" y1="-2.4384" x2="1.1684" y2="-2.4384" width="0.1524" layer="21"/>
+<wire x1="1.1684" y1="2.4384" x2="0.3048" y2="2.4384" width="0.1524" layer="21"/>
+<wire x1="0.3048" y1="2.4384" x2="-0.3048" y2="2.4384" width="0.1524" layer="21"/>
+<wire x1="-0.3048" y1="2.4384" x2="-1.1684" y2="2.4384" width="0.1524" layer="21"/>
+<wire x1="0.3048" y1="2.4384" x2="-0.3048" y2="2.4384" width="0" layer="21" curve="-180"/>
+<text x="-3.2004" y="2.3368" size="1.27" layer="21" ratio="6" rot="SR0">*</text>
+<text x="-4.8006" y="3.048" size="2.0828" layer="25" ratio="10" rot="SR0">&gt;NAME</text>
+<text x="-5.5372" y="-5.2324" size="2.0828" layer="27" ratio="10" rot="SR0">&gt;VALUE</text>
 </package>
 <package name="SOT95P237X112-3N">
 <smd name="1" x="-1.016" y="0.9398" dx="1.3208" dy="0.5588" layer="1"/>
@@ -3521,7 +3477,7 @@ PCB width:
 <symbol name="24LC00T-I/OT">
 <pin name="VCC" x="-17.78" y="5.08" length="middle" direction="pwr"/>
 <pin name="SCL" x="-17.78" y="0" length="middle" direction="in"/>
-<pin name="NC" x="-17.78" y="-2.54" length="middle" direction="in"/>
+<pin name="WP" x="-17.78" y="-2.54" length="middle" direction="in"/>
 <pin name="VSS" x="-17.78" y="-7.62" length="middle" direction="pas"/>
 <pin name="SDA" x="17.78" y="5.08" length="middle" rot="R180"/>
 <wire x1="-12.7" y1="10.16" x2="-12.7" y2="-12.7" width="0.4064" layer="94"/>
@@ -3728,11 +3684,11 @@ PCB width:
 <devices>
 <device name="" package="SOT95P290X145-5N">
 <connects>
-<connect gate="A" pin="NC" pad="4"/>
 <connect gate="A" pin="SCL" pad="1"/>
 <connect gate="A" pin="SDA" pad="3"/>
-<connect gate="A" pin="VCC" pad="5"/>
+<connect gate="A" pin="VCC" pad="4"/>
 <connect gate="A" pin="VSS" pad="2"/>
+<connect gate="A" pin="WP" pad="5"/>
 </connects>
 <technologies>
 <technology name="">
@@ -3846,25 +3802,8 @@ PCB width:
 <pad name="3" x="3.937" y="-2.159" drill="1.016" diameter="1.651"/>
 <pad name="4" x="3.937" y="2.159" drill="1.016" diameter="1.651"/>
 <rectangle x1="-3" y1="-3" x2="3" y2="3" layer="39"/>
-<text x="0" y="3.5" size="1" layer="25" ratio="11" align="bottom-center">&gt;NAME</text>
-<text x="0" y="-3.5" size="1" layer="27" ratio="10" align="top-center">&gt;VALUE</text>
-<text x="0" y="5.08" size="1.778" layer="255" align="bottom-center">&gt;DESC</text>
-<circle x="0" y="0" radius="1.875" width="0.127" layer="255"/>
-</package>
-<package name="4P-SMD-6.0X6.0X5.0H">
-<wire x1="-3.048" y1="3.048" x2="3.048" y2="3.048" width="0.127" layer="21"/>
-<wire x1="3.048" y1="3.048" x2="3.048" y2="-3.048" width="0.127" layer="21"/>
-<wire x1="3.048" y1="-3.048" x2="-3.048" y2="-3.048" width="0.127" layer="21"/>
-<wire x1="-3.048" y1="-3.048" x2="-3.048" y2="3.048" width="0.127" layer="21"/>
-<smd name="1" x="-4.129" y="2.159" dx="2.54" dy="1.27" layer="1"/>
-<smd name="2" x="-4.129" y="-2.159" dx="2.54" dy="1.27" layer="1"/>
-<smd name="3" x="4.129" y="-2.159" dx="2.54" dy="1.27" layer="1"/>
-<smd name="4" x="4.129" y="2.159" dx="2.54" dy="1.27" layer="1"/>
 <text x="-1.905" y="3.175" size="0.889" layer="25" ratio="11">&gt;NAME</text>
 <text x="-1.905" y="0" size="0.635" layer="27" ratio="10">&gt;VALUE</text>
-<rectangle x1="-3.048" y1="-3.048" x2="3.048" y2="3.048" layer="39"/>
-<circle x="0" y="0" radius="1.875" width="0.127" layer="255"/>
-<text x="0" y="5.08" size="1.778" layer="255" align="bottom-center">&gt;DESC</text>
 </package>
 <package name="SMALLROCKET">
 <polygon width="0" layer="21">
@@ -4355,6 +4294,20 @@ PCB width:
 <vertex x="0.479884375" y="-1.449628125"/>
 </polygon>
 </package>
+<package name="4P-SMD-6.0X6.0X5.0H">
+<wire x1="-3.048" y1="3.048" x2="3.048" y2="3.048" width="0.127" layer="21"/>
+<wire x1="3.048" y1="3.048" x2="3.048" y2="-3.048" width="0.127" layer="21"/>
+<wire x1="3.048" y1="-3.048" x2="-3.048" y2="-3.048" width="0.127" layer="21"/>
+<wire x1="-3.048" y1="-3.048" x2="-3.048" y2="3.048" width="0.127" layer="21"/>
+<smd name="1" x="-4.129" y="2.159" dx="2.54" dy="1.27" layer="1"/>
+<smd name="2" x="-4.129" y="-2.159" dx="2.54" dy="1.27" layer="1"/>
+<smd name="3" x="4.129" y="-2.159" dx="2.54" dy="1.27" layer="1"/>
+<smd name="4" x="4.129" y="2.159" dx="2.54" dy="1.27" layer="1"/>
+<text x="-1.905" y="3.175" size="0.889" layer="25" ratio="11">&gt;NAME</text>
+<text x="-1.905" y="0" size="0.635" layer="27" ratio="10">&gt;VALUE</text>
+<rectangle x1="-3.048" y1="-3.048" x2="3.048" y2="3.048" layer="39"/>
+<circle x="0" y="0" radius="1.875" width="0.127" layer="255"/>
+</package>
 </packages>
 <symbols>
 <symbol name="-12V">
@@ -4375,8 +4328,8 @@ PCB width:
 <wire x1="5.08" y1="2.54" x2="5.08" y2="-2.54" width="0.254" layer="94"/>
 <wire x1="5.08" y1="-2.54" x2="5.08" y2="-5.08" width="0.254" layer="94"/>
 <wire x1="5.08" y1="-5.08" x2="-5.08" y2="-5.08" width="0.254" layer="94"/>
-<text x="0" y="5.715" size="0.762" layer="95" ratio="10" align="bottom-center">&gt;NAME</text>
-<text x="0" y="-5.715" size="0.508" layer="96" ratio="10" align="top-center">&gt;VALUE</text>
+<text x="-5.08" y="5.08" size="1.27" layer="95" ratio="10">&gt;NAME</text>
+<text x="0" y="5.08" size="1.27" layer="96" ratio="10">&gt;VALUE</text>
 <pin name="A0" x="-8.89" y="2.54" length="short"/>
 <pin name="A1" x="8.89" y="2.54" length="short" rot="R180"/>
 <pin name="B0" x="-8.89" y="-2.54" length="short"/>
@@ -4397,7 +4350,6 @@ PCB width:
 <wire x1="6.35" y1="2.54" x2="5.08" y2="2.54" width="0.1524" layer="94"/>
 <circle x="-1.27" y="-0.762" radius="0.254" width="0" layer="94"/>
 <circle x="0" y="-1.27" radius="0.254" width="0" layer="94"/>
-<text x="0" y="6.985" size="1.27" layer="95" ratio="10" align="bottom-center">&gt;DESC</text>
 </symbol>
 <symbol name="SMALLROCKET">
 <text x="-5.08" y="-5.08" size="1.27" layer="94">SMALL ROCKET</text>
@@ -4884,9 +4836,7 @@ PCB width:
 <connect gate="K" pin="B1" pad="3"/>
 </connects>
 <technologies>
-<technology name="">
-<attribute name="DESC" value="Button" constant="no"/>
-</technology>
+<technology name=""/>
 </technologies>
 </device>
 <device name="-3100010P1" package="4P-SMD-6.0X6.0X5.0H">
@@ -4897,9 +4847,7 @@ PCB width:
 <connect gate="K" pin="B1" pad="3"/>
 </connects>
 <technologies>
-<technology name="">
-<attribute name="DESC" value="Button" constant="no"/>
-</technology>
+<technology name=""/>
 </technologies>
 </device>
 </devices>
@@ -4954,8 +4902,8 @@ We've spent an enormous amount of time creating and checking these footprints an
 <wire x1="-2.032" y1="0" x2="-1.7306" y2="-1.065" width="0.254" layer="51" curve="31.60822" cap="flat"/>
 <wire x1="1.5748" y1="1.2954" x2="1.5748" y2="0.7874" width="0.254" layer="21"/>
 <wire x1="1.5748" y1="-1.2954" x2="1.5748" y2="-0.8382" width="0.254" layer="21"/>
-<pad name="A" x="-1.27" y="0" drill="0.8128"/>
-<pad name="K" x="1.27" y="0" drill="0.8128"/>
+<pad name="A" x="-1.27" y="0" drill="0.8128" diameter="1.8796"/>
+<pad name="K" x="1.27" y="0" drill="0.8128" diameter="1.8796"/>
 <circle x="0" y="0" radius="1.5" width="0.0254" layer="255"/>
 <wire x1="1" y1="2" x2="2.25" y2="2" width="0.127" layer="21"/>
 <wire x1="2.25" y1="2" x2="2.25" y2="-2" width="0.127" layer="21"/>
@@ -4974,12 +4922,6 @@ We've spent an enormous amount of time creating and checking these footprints an
 <vertex x="1" y="-2"/>
 <vertex x="1.5" y="-1.25"/>
 <vertex x="1.5" y="1.25"/>
-</polygon>
-<polygon width="0.127" layer="39">
-<vertex x="0" y="1.5" curve="-90"/>
-<vertex x="1.5" y="0" curve="-90"/>
-<vertex x="0" y="-1.5" curve="-90"/>
-<vertex x="-1.5" y="0" curve="-90"/>
 </polygon>
 </package>
 <package name="LED-1206">
@@ -5144,10 +5086,11 @@ We've spent an enormous amount of time creating and checking these footprints an
 <wire x1="0" y1="-2.54" x2="-1.27" y2="-2.54" width="0.254" layer="94"/>
 <wire x1="1.27" y1="0" x2="0" y2="0" width="0.254" layer="94"/>
 <wire x1="0" y1="0" x2="-1.27" y2="0" width="0.254" layer="94"/>
+<wire x1="0" y1="0" x2="0" y2="-2.54" width="0.1524" layer="94"/>
 <wire x1="-2.032" y1="-0.762" x2="-3.429" y2="-2.159" width="0.1524" layer="94"/>
 <wire x1="-1.905" y1="-1.905" x2="-3.302" y2="-3.302" width="0.1524" layer="94"/>
-<text x="1.651" y="-0.762" size="0.762" layer="95" rot="R90" align="top-center">&gt;NAME</text>
-<text x="3.175" y="-0.762" size="0.762" layer="96" rot="R90" align="top-center">&gt;VALUE</text>
+<text x="3.556" y="-4.572" size="1.778" layer="95" rot="R90">&gt;NAME</text>
+<text x="5.715" y="-4.572" size="1.778" layer="96" rot="R90">&gt;VALUE</text>
 <pin name="C" x="0" y="-5.08" visible="off" length="short" direction="pas" rot="R90"/>
 <pin name="A" x="0" y="2.54" visible="off" length="short" direction="pas" rot="R270"/>
 <polygon width="0.1524" layer="94">
@@ -6058,18 +6001,18 @@ new: Attribute TP_SIGNAL_NAME&lt;br&gt;
 <attribute name="OC_FARNELL" value="unknown"/>
 </part>
 <part name="GND1" library="SparkFun-Aesthetics" deviceset="GND" device=""/>
-<part name="R16" library="OPL" deviceset="R*" device="-0603" value="100k 1%">
+<part name="R16" library="OPL" deviceset="R*" device="-0603" value="100k">
 <attribute name="MF" value=""/>
 <attribute name="MPN" value=""/>
 <attribute name="OC_FARNELL" value="unknown"/>
 </part>
 <part name="GND3" library="SparkFun" deviceset="GND" device=""/>
-<part name="R12" library="OPL" deviceset="R*" device="-0603" value="33k 1%">
+<part name="R12" library="OPL" deviceset="R*" device="-0603" value="33k">
 <attribute name="MF" value=""/>
 <attribute name="MPN" value=""/>
 <attribute name="OC_FARNELL" value="unknown"/>
 </part>
-<part name="R15" library="OPL" deviceset="R*" device="-0603" value="49.9k 1%">
+<part name="R15" library="OPL" deviceset="R*" device="-0603" value="51k">
 <attribute name="MF" value=""/>
 <attribute name="MPN" value=""/>
 <attribute name="OC_FARNELL" value="unknown"/>
@@ -6079,18 +6022,18 @@ new: Attribute TP_SIGNAL_NAME&lt;br&gt;
 <attribute name="MPN" value=""/>
 <attribute name="OC_FARNELL" value="unknown"/>
 </part>
-<part name="R1" library="OPL" deviceset="R*" device="-0603" value="100k 1%">
+<part name="R1" library="OPL" deviceset="R*" device="-0603" value="100k">
 <attribute name="MF" value=""/>
 <attribute name="MPN" value=""/>
 <attribute name="OC_FARNELL" value="unknown"/>
 </part>
 <part name="GND9" library="SparkFun" deviceset="GND" device=""/>
-<part name="R2" library="OPL" deviceset="R*" device="-0603" value="33k 1%">
+<part name="R2" library="OPL" deviceset="R*" device="-0603" value="33k">
 <attribute name="MF" value=""/>
 <attribute name="MPN" value=""/>
 <attribute name="OC_FARNELL" value="unknown"/>
 </part>
-<part name="R3" library="OPL" deviceset="R*" device="-0603" value="49.9k 1%">
+<part name="R3" library="OPL" deviceset="R*" device="-0603" value="51k">
 <attribute name="MF" value=""/>
 <attribute name="MPN" value=""/>
 <attribute name="OC_FARNELL" value="unknown"/>
@@ -6100,7 +6043,7 @@ new: Attribute TP_SIGNAL_NAME&lt;br&gt;
 <attribute name="MPN" value=""/>
 <attribute name="OC_FARNELL" value="unknown"/>
 </part>
-<part name="R5" library="OPL" deviceset="R*" device="-0603" value="25.5k 1%">
+<part name="R5" library="OPL" deviceset="R*" device="-0603" value="30k">
 <attribute name="MF" value=""/>
 <attribute name="MPN" value=""/>
 <attribute name="OC_FARNELL" value="unknown"/>
@@ -6110,17 +6053,17 @@ new: Attribute TP_SIGNAL_NAME&lt;br&gt;
 <attribute name="MPN" value=""/>
 <attribute name="OC_FARNELL" value="unknown"/>
 </part>
-<part name="R7" library="OPL" deviceset="R*" device="-0603" value="10.2k 1%">
+<part name="R7" library="OPL" deviceset="R*" device="-0603" value="12k">
 <attribute name="MF" value=""/>
 <attribute name="MPN" value=""/>
 <attribute name="OC_FARNELL" value="unknown"/>
 </part>
-<part name="R8" library="OPL" deviceset="R*" device="-0603" value="25.5k 1%">
+<part name="R8" library="OPL" deviceset="R*" device="-0603" value="30k">
 <attribute name="MF" value=""/>
 <attribute name="MPN" value=""/>
 <attribute name="OC_FARNELL" value="unknown"/>
 </part>
-<part name="R9" library="OPL" deviceset="R*" device="-0603" value="10.2k 1%">
+<part name="R9" library="OPL" deviceset="R*" device="-0603" value="12k">
 <attribute name="MF" value=""/>
 <attribute name="MPN" value=""/>
 <attribute name="OC_FARNELL" value="unknown"/>
@@ -6147,25 +6090,25 @@ new: Attribute TP_SIGNAL_NAME&lt;br&gt;
 <attribute name="OC_FARNELL" value="unknown"/>
 </part>
 <part name="GND15" library="SparkFun" deviceset="GND" device=""/>
-<part name="POT_IN1" library="EurorackModularParts" deviceset="POT" device="ZEPHPOT" value="SEED A">
+<part name="POT_IN1" library="EurorackModularParts" deviceset="POT" device="ZEPHPOT" value="10kB">
 <attribute name="DESC" value="Seed X"/>
 <attribute name="MF" value=""/>
 <attribute name="MPN" value=""/>
 <attribute name="OC_FARNELL" value="unknown"/>
 </part>
-<part name="POT_IN2" library="EurorackModularParts" deviceset="POT" device="ZEPHPOT" value="SEED B">
+<part name="POT_IN2" library="EurorackModularParts" deviceset="POT" device="ZEPHPOT" value="10kB">
 <attribute name="DESC" value="Seed Y"/>
 <attribute name="MF" value=""/>
 <attribute name="MPN" value=""/>
 <attribute name="OC_FARNELL" value="unknown"/>
 </part>
-<part name="POT_TEMPO" library="EurorackModularParts" deviceset="POT" device="ZEPHPOT" value="TEMPO">
+<part name="POT_TEMPO" library="EurorackModularParts" deviceset="POT" device="ZEPHPOT" value="10kB">
 <attribute name="DESC" value="Tempo"/>
 <attribute name="MF" value=""/>
 <attribute name="MPN" value=""/>
 <attribute name="OC_FARNELL" value="unknown"/>
 </part>
-<part name="R17" library="EurorackModularParts" deviceset="POT" device="ZEPHPOT" value="INTENSITY">
+<part name="R17" library="EurorackModularParts" deviceset="POT" device="ZEPHPOT" value="10kB">
 <attribute name="DESC" value="Intensity"/>
 <attribute name="MF" value=""/>
 <attribute name="MPN" value=""/>
@@ -6230,12 +6173,12 @@ new: Attribute TP_SIGNAL_NAME&lt;br&gt;
 <attribute name="MPN" value=""/>
 <attribute name="OC_FARNELL" value="unknown"/>
 </part>
-<part name="C18" library="OPL" deviceset="C*" device="-0603" value="100nF 16V+">
+<part name="C18" library="OPL" deviceset="C*" device="-0603" value="100nF">
 <attribute name="MF" value="MULTICOMP"/>
 <attribute name="MPN" value="MC0603F104Z160CT"/>
 <attribute name="OC_FARNELL" value="1759017"/>
 </part>
-<part name="C19" library="OPL" deviceset="C*" device="-0603" value="100nF 16V+">
+<part name="C19" library="OPL" deviceset="C*" device="-0603" value="100nF">
 <attribute name="MF" value="MULTICOMP"/>
 <attribute name="MPN" value="MC0603F104Z160CT"/>
 <attribute name="OC_FARNELL" value="1759017"/>
@@ -6295,12 +6238,12 @@ new: Attribute TP_SIGNAL_NAME&lt;br&gt;
 <attribute name="OC_FARNELL" value="1301804"/>
 </part>
 <part name="GND25" library="SparkFun-Aesthetics" deviceset="GND" device=""/>
-<part name="R23" library="OPL" deviceset="R*" device="-0603" value="33k 1%">
+<part name="R23" library="OPL" deviceset="R*" device="-0603" value="33k">
 <attribute name="MF" value=""/>
 <attribute name="MPN" value=""/>
 <attribute name="OC_FARNELL" value="unknown"/>
 </part>
-<part name="R27" library="OPL" deviceset="R*" device="-0603" value="33k 1%">
+<part name="R27" library="OPL" deviceset="R*" device="-0603" value="33k">
 <attribute name="MF" value=""/>
 <attribute name="MPN" value=""/>
 <attribute name="OC_FARNELL" value="unknown"/>
@@ -6377,74 +6320,72 @@ new: Attribute TP_SIGNAL_NAME&lt;br&gt;
 <attribute name="MPN" value=""/>
 <attribute name="OC_FARNELL" value="unknown"/>
 </part>
-<part name="LED_TPB_2" library="SparkFun-LED" deviceset="LED" device="3MM" value="WHITE 3MM WITH 11MM HOLDER">
+<part name="D15" library="SparkFun-LED" deviceset="LED" device="3MM" value="WHITE 3MM WITH 11MM HOLDER">
 <attribute name="MF" value=""/>
 <attribute name="MPN" value=""/>
 <attribute name="OC_FARNELL" value="unknown"/>
 </part>
-<part name="LED_TPB_3" library="SparkFun-LED" deviceset="LED" device="3MM" value="WHITE 3MM WITH 11MM HOLDER">
+<part name="D16" library="SparkFun-LED" deviceset="LED" device="3MM" value="WHITE 3MM WITH 11MM HOLDER">
 <attribute name="MF" value=""/>
 <attribute name="MPN" value=""/>
 <attribute name="OC_FARNELL" value="unknown"/>
 </part>
-<part name="LED_TPB_4" library="SparkFun-LED" deviceset="LED" device="3MM" value="WHITE 3MM WITH 11MM HOLDER">
+<part name="D17" library="SparkFun-LED" deviceset="LED" device="3MM" value="WHITE 3MM WITH 11MM HOLDER">
 <attribute name="MF" value=""/>
 <attribute name="MPN" value=""/>
 <attribute name="OC_FARNELL" value="unknown"/>
 </part>
-<part name="LED_TPB_6" library="SparkFun-LED" deviceset="LED" device="3MM" value="WHITE 3MM WITH 11MM HOLDER">
+<part name="D18" library="SparkFun-LED" deviceset="LED" device="3MM" value="WHITE 3MM WITH 11MM HOLDER">
 <attribute name="MF" value=""/>
 <attribute name="MPN" value=""/>
 <attribute name="OC_FARNELL" value="unknown"/>
 </part>
-<part name="LED_BEAT_2" library="SparkFun-LED" deviceset="LED" device="3MM" value="WHITE 3MM WITH 11MM HOLDER">
+<part name="D14" library="SparkFun-LED" deviceset="LED" device="3MM" value="WHITE 3MM WITH 11MM HOLDER">
 <attribute name="MF" value=""/>
 <attribute name="MPN" value=""/>
 <attribute name="OC_FARNELL" value="unknown"/>
 </part>
-<part name="LED_BEAT_4" library="SparkFun-LED" deviceset="LED" device="3MM" value="WHITE 3MM WITH 11MM HOLDER">
+<part name="D13" library="SparkFun-LED" deviceset="LED" device="3MM" value="WHITE 3MM WITH 11MM HOLDER">
 <attribute name="MF" value=""/>
 <attribute name="MPN" value=""/>
 <attribute name="OC_FARNELL" value="unknown"/>
 </part>
-<part name="LED_BEAT_8" library="SparkFun-LED" deviceset="LED" device="3MM" value="WHITE 3MM WITH 11MM HOLDER">
+<part name="D12" library="SparkFun-LED" deviceset="LED" device="3MM" value="WHITE 3MM WITH 11MM HOLDER">
 <attribute name="MF" value=""/>
 <attribute name="MPN" value=""/>
 <attribute name="OC_FARNELL" value="unknown"/>
 </part>
-<part name="LED_BEAT_16" library="SparkFun-LED" deviceset="LED" device="3MM" value="WHITE 3MM WITH 11MM HOLDER">
+<part name="D11" library="SparkFun-LED" deviceset="LED" device="3MM" value="WHITE 3MM WITH 11MM HOLDER">
 <attribute name="MF" value=""/>
 <attribute name="MPN" value=""/>
 <attribute name="OC_FARNELL" value="unknown"/>
 </part>
-<part name="LED_TICK" library="SparkFun-LED" deviceset="LED" device="3MM" value="WHITE 3MM WITH 11MM HOLDER">
+<part name="D23" library="SparkFun-LED" deviceset="LED" device="3MM" value="WHITE 3MM WITH 11MM HOLDER">
 <attribute name="MF" value=""/>
 <attribute name="MPN" value=""/>
 <attribute name="OC_FARNELL" value="unknown"/>
 </part>
-<part name="LED_BEAT" library="SparkFun-LED" deviceset="LED" device="3MM" value="WHITE 3MM WITH 11MM HOLDER">
+<part name="D22" library="SparkFun-LED" deviceset="LED" device="3MM" value="WHITE 3MM WITH 11MM HOLDER">
 <attribute name="MF" value=""/>
 <attribute name="MPN" value=""/>
 <attribute name="OC_FARNELL" value="unknown"/>
 </part>
-<part name="LED_LOOP" library="SparkFun-LED" deviceset="LED" device="3MM" value="WHITE 3MM WITH 11MM HOLDER">
+<part name="D21" library="SparkFun-LED" deviceset="LED" device="3MM" value="WHITE 3MM WITH 11MM HOLDER">
 <attribute name="MF" value=""/>
 <attribute name="MPN" value=""/>
 <attribute name="OC_FARNELL" value="unknown"/>
 </part>
-<part name="LED_GATE" library="SparkFun-LED" deviceset="LED" device="3MM" value="WHITE 3MM WITH 11MM HOLDER">
+<part name="D20" library="SparkFun-LED" deviceset="LED" device="3MM" value="WHITE 3MM WITH 11MM HOLDER">
 <attribute name="MF" value=""/>
 <attribute name="MPN" value=""/>
 <attribute name="OC_FARNELL" value="unknown"/>
 </part>
 <part name="B_TPB" library="zephod-components" deviceset="BUTTON-4P" device="-3110040P1" value="BUTTON-4P-3110040P1">
-<attribute name="DESC" value="Ticks"/>
 <attribute name="MF" value=""/>
 <attribute name="MPN" value=""/>
 <attribute name="OC_FARNELL" value="unknown"/>
 </part>
 <part name="B_BEATS" library="zephod-components" deviceset="BUTTON-4P" device="-3110040P1" value="BUTTON-4P-3110040P1">
-<attribute name="DESC" value="Beats"/>
 <attribute name="MF" value=""/>
 <attribute name="MPN" value=""/>
 <attribute name="OC_FARNELL" value="unknown"/>
@@ -6456,13 +6397,11 @@ new: Attribute TP_SIGNAL_NAME&lt;br&gt;
 <attribute name="OC_FARNELL" value="unknown"/>
 </part>
 <part name="B_ALGO" library="zephod-components" deviceset="BUTTON-4P" device="-3110040P1" value="BUTTON-4P-3110040P1">
-<attribute name="DESC" value="Algorithm"/>
 <attribute name="MF" value=""/>
 <attribute name="MPN" value=""/>
 <attribute name="OC_FARNELL" value="unknown"/>
 </part>
 <part name="B_SCALE" library="zephod-components" deviceset="BUTTON-4P" device="-3110040P1" value="BUTTON-4P-3110040P1">
-<attribute name="DESC" value="Scale"/>
 <attribute name="MF" value=""/>
 <attribute name="MPN" value=""/>
 <attribute name="OC_FARNELL" value="unknown"/>
@@ -6483,42 +6422,42 @@ new: Attribute TP_SIGNAL_NAME&lt;br&gt;
 <part name="GND59" library="SparkFun" deviceset="GND" device=""/>
 <part name="GND60" library="SparkFun" deviceset="GND" device=""/>
 <part name="GND61" library="SparkFun" deviceset="GND" device=""/>
-<part name="LED_ALGO_GOA" library="SparkFun-LED" deviceset="LED" device="3MM" value="WHITE 3MM WITH 11MM HOLDER">
+<part name="D6" library="SparkFun-LED" deviceset="LED" device="3MM" value="WHITE 3MM WITH 11MM HOLDER">
 <attribute name="MF" value=""/>
 <attribute name="MPN" value=""/>
 <attribute name="OC_FARNELL" value="unknown"/>
 </part>
-<part name="LED_ALGO_FLAT" library="SparkFun-LED" deviceset="LED" device="3MM" value="WHITE_WITH_11MM_SPACER">
+<part name="D5" library="SparkFun-LED" deviceset="LED" device="3MM" value="WHITE 3MM WITH 11MM HOLDER">
 <attribute name="MF" value=""/>
 <attribute name="MPN" value=""/>
 <attribute name="OC_FARNELL" value="unknown"/>
 </part>
-<part name="LED_ALGO_PSYCH" library="SparkFun-LED" deviceset="LED" device="3MM" value="WHITE 3MM WITH 11MM HOLDER">
+<part name="D2" library="SparkFun-LED" deviceset="LED" device="3MM" value="WHITE 3MM WITH 11MM HOLDER">
 <attribute name="MF" value=""/>
 <attribute name="MPN" value=""/>
 <attribute name="OC_FARNELL" value="unknown"/>
 </part>
-<part name="LED_ALGO_FOURCHORD" library="SparkFun-LED" deviceset="LED" device="3MM" value="WHITE 3MM WITH 11MM HOLDER">
+<part name="D1" library="SparkFun-LED" deviceset="LED" device="3MM" value="WHITE 3MM WITH 11MM HOLDER">
 <attribute name="MF" value=""/>
 <attribute name="MPN" value=""/>
 <attribute name="OC_FARNELL" value="unknown"/>
 </part>
-<part name="LED_SCALE_DORIAN" library="SparkFun-LED" deviceset="LED" device="3MM" value="WHITE 3MM WITH 11MM HOLDER">
+<part name="D7" library="SparkFun-LED" deviceset="LED" device="3MM" value="WHITE 3MM WITH 11MM HOLDER">
 <attribute name="MF" value=""/>
 <attribute name="MPN" value=""/>
 <attribute name="OC_FARNELL" value="unknown"/>
 </part>
-<part name="LED_SCALE_MAJOR" library="SparkFun-LED" deviceset="LED" device="3MM" value="WHITE 3MM WITH 11MM HOLDER">
+<part name="D8" library="SparkFun-LED" deviceset="LED" device="3MM" value="WHITE 3MM WITH 11MM HOLDER">
 <attribute name="MF" value=""/>
 <attribute name="MPN" value=""/>
 <attribute name="OC_FARNELL" value="unknown"/>
 </part>
-<part name="LED_SCALE_MINOR" library="SparkFun-LED" deviceset="LED" device="3MM" value="WHITE 3MM WITH 11MM HOLDER">
+<part name="D9" library="SparkFun-LED" deviceset="LED" device="3MM" value="WHITE 3MM WITH 11MM HOLDER">
 <attribute name="MF" value=""/>
 <attribute name="MPN" value=""/>
 <attribute name="OC_FARNELL" value="unknown"/>
 </part>
-<part name="LED_SCALE_PENTA" library="SparkFun-LED" deviceset="LED" device="3MM" value="WHITE 3MM WITH 11MM HOLDER">
+<part name="D10" library="SparkFun-LED" deviceset="LED" device="3MM" value="WHITE 3MM WITH 11MM HOLDER">
 <attribute name="MF" value=""/>
 <attribute name="MPN" value=""/>
 <attribute name="OC_FARNELL" value="unknown"/>
@@ -6540,18 +6479,18 @@ new: Attribute TP_SIGNAL_NAME&lt;br&gt;
 <attribute name="MPN" value="MC0603F104Z160CT"/>
 <attribute name="OC_FARNELL" value="1759017"/>
 </part>
-<part name="R14" library="OPL" deviceset="R*" device="-0603" value="100k 1%">
+<part name="R14" library="OPL" deviceset="R*" device="-0603" value="100k">
 <attribute name="MF" value=""/>
 <attribute name="MPN" value=""/>
 <attribute name="OC_FARNELL" value="unknown"/>
 </part>
 <part name="GND76" library="SparkFun" deviceset="GND" device=""/>
-<part name="R22" library="OPL" deviceset="R*" device="-0603" value="33k 1%">
+<part name="R22" library="OPL" deviceset="R*" device="-0603" value="33k">
 <attribute name="MF" value=""/>
 <attribute name="MPN" value=""/>
 <attribute name="OC_FARNELL" value="unknown"/>
 </part>
-<part name="R28" library="OPL" deviceset="R*" device="-0603" value="49.9k">
+<part name="R28" library="OPL" deviceset="R*" device="-0603" value="51k">
 <attribute name="MF" value=""/>
 <attribute name="MPN" value=""/>
 <attribute name="OC_FARNELL" value="unknown"/>
@@ -6563,27 +6502,27 @@ new: Attribute TP_SIGNAL_NAME&lt;br&gt;
 </part>
 <part name="GND77" library="SparkFun" deviceset="GND" device=""/>
 <part name="GND78" library="SparkFun" deviceset="GND" device=""/>
-<part name="R30" library="OPL" deviceset="R*" device="-0603" value="33k 1%">
+<part name="R30" library="OPL" deviceset="R*" device="-0603" value="33k">
 <attribute name="MF" value=""/>
 <attribute name="MPN" value=""/>
 <attribute name="OC_FARNELL" value="unknown"/>
 </part>
-<part name="R31" library="OPL" deviceset="R-4R*" device="" value="2k">
+<part name="R31" library="OPL" deviceset="R-4R*" device="" value="1k">
 <attribute name="MF" value=""/>
 <attribute name="MPN" value=""/>
 <attribute name="OC_FARNELL" value="unknown"/>
 </part>
-<part name="R32" library="OPL" deviceset="R-4R*" device="" value="2k">
+<part name="R32" library="OPL" deviceset="R-4R*" device="" value="1k">
 <attribute name="MF" value=""/>
 <attribute name="MPN" value=""/>
 <attribute name="OC_FARNELL" value="unknown"/>
 </part>
-<part name="R33" library="OPL" deviceset="R-4R*" device="" value="2k">
+<part name="R33" library="OPL" deviceset="R-4R*" device="" value="1k">
 <attribute name="MF" value=""/>
 <attribute name="MPN" value=""/>
 <attribute name="OC_FARNELL" value="unknown"/>
 </part>
-<part name="R34" library="OPL" deviceset="R-4R*" device="" value="2k">
+<part name="R34" library="OPL" deviceset="R-4R*" device="" value="1k">
 <attribute name="MF" value=""/>
 <attribute name="MPN" value=""/>
 <attribute name="OC_FARNELL" value="unknown"/>
@@ -6703,27 +6642,27 @@ new: Attribute TP_SIGNAL_NAME&lt;br&gt;
 <part name="GND95" library="SparkFun-Aesthetics" deviceset="GND" device=""/>
 <part name="GND96" library="SparkFun-Aesthetics" deviceset="GND" device=""/>
 <part name="GND97" library="SparkFun-Aesthetics" deviceset="GND" device=""/>
-<part name="R13" library="OPL" deviceset="R*" device="-0603" value="2k">
+<part name="R13" library="OPL" deviceset="R*" device="-0603" value="1k">
 <attribute name="MF" value=""/>
 <attribute name="MPN" value=""/>
 <attribute name="OC_FARNELL" value="unknown"/>
 </part>
-<part name="R47" library="OPL" deviceset="R*" device="-0603" value="2k">
+<part name="R47" library="OPL" deviceset="R*" device="-0603" value="1k">
 <attribute name="MF" value=""/>
 <attribute name="MPN" value=""/>
 <attribute name="OC_FARNELL" value="unknown"/>
 </part>
-<part name="R48" library="OPL" deviceset="R*" device="-0603" value="2k">
+<part name="R48" library="OPL" deviceset="R*" device="-0603" value="1k">
 <attribute name="MF" value=""/>
 <attribute name="MPN" value=""/>
 <attribute name="OC_FARNELL" value="unknown"/>
 </part>
-<part name="R49" library="OPL" deviceset="R*" device="-0603" value="2k">
+<part name="R49" library="OPL" deviceset="R*" device="-0603" value="1k">
 <attribute name="MF" value=""/>
 <attribute name="MPN" value=""/>
 <attribute name="OC_FARNELL" value="unknown"/>
 </part>
-<part name="U6" library="EurorackModularParts" deviceset="24LC00T-I/OT" device="">
+<part name="U6" library="EurorackModularParts" deviceset="24LC00T-I/OT" device="" value="24LC16T-I/OT">
 <attribute name="MF" value="MICROCHIP"/>
 <attribute name="MPN" value="24LC00T-I/OT"/>
 <attribute name="OC_FARNELL" value="9757864"/>
@@ -6789,12 +6728,12 @@ new: Attribute TP_SIGNAL_NAME&lt;br&gt;
 <part name="SUPPLY4" library="SparkFun-Aesthetics" deviceset="3.3V" device=""/>
 <part name="SUPPLY8" library="SparkFun-Aesthetics" deviceset="3.3V" device=""/>
 <part name="SUPPLY10" library="SparkFun-Aesthetics" deviceset="3.3V" device=""/>
-<part name="LED_ACCENT" library="SparkFun-LED" deviceset="LED" device="3MM" value="WHITE 3MM WITH 11MM HOLDER">
+<part name="D19" library="SparkFun-LED" deviceset="LED" device="3MM" value="WHITE 3MM WITH 11MM HOLDER">
 <attribute name="MF" value=""/>
 <attribute name="MPN" value=""/>
 <attribute name="OC_FARNELL" value="unknown"/>
 </part>
-<part name="R10" library="OPL" deviceset="R*" device="-0603" value="2k">
+<part name="R10" library="OPL" deviceset="R*" device="-0603" value="1k">
 <attribute name="MF" value=""/>
 <attribute name="MPN" value=""/>
 <attribute name="OC_FARNELL" value="unknown"/>
@@ -6852,6 +6791,7 @@ new: Attribute TP_SIGNAL_NAME&lt;br&gt;
 <part name="SUPPLY31" library="SparkFun-Aesthetics" deviceset="3.3V" device=""/>
 <part name="SUPPLY32" library="SparkFun-Aesthetics" deviceset="3.3V" device=""/>
 <part name="SUPPLY33" library="SparkFun-Aesthetics" deviceset="3.3V" device=""/>
+<part name="GND20" library="SparkFun-Aesthetics" deviceset="GND" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -7221,74 +7161,72 @@ new: Attribute TP_SIGNAL_NAME&lt;br&gt;
 <attribute name="OC_FARNELL" x="768.35" y="90.17" size="1.778" layer="96" display="off"/>
 <attribute name="MF" x="768.35" y="90.17" size="1.778" layer="96" display="off"/>
 </instance>
-<instance part="LED_TPB_2" gate="G$1" x="481.33" y="95.25">
+<instance part="D15" gate="G$1" x="481.33" y="95.25">
 <attribute name="OC_FARNELL" x="481.33" y="95.25" size="1.778" layer="96" display="off"/>
 <attribute name="MF" x="481.33" y="95.25" size="1.778" layer="96" display="off"/>
 <attribute name="MPN" x="481.33" y="95.25" size="1.778" layer="96" display="off"/>
 </instance>
-<instance part="LED_TPB_3" gate="G$1" x="490.22" y="95.25">
+<instance part="D16" gate="G$1" x="490.22" y="95.25">
 <attribute name="OC_FARNELL" x="490.22" y="95.25" size="1.778" layer="96" display="off"/>
 <attribute name="MF" x="490.22" y="95.25" size="1.778" layer="96" display="off"/>
 <attribute name="MPN" x="490.22" y="95.25" size="1.778" layer="96" display="off"/>
 </instance>
-<instance part="LED_TPB_4" gate="G$1" x="497.84" y="95.25">
+<instance part="D17" gate="G$1" x="497.84" y="95.25">
 <attribute name="OC_FARNELL" x="497.84" y="95.25" size="1.778" layer="96" display="off"/>
 <attribute name="MF" x="497.84" y="95.25" size="1.778" layer="96" display="off"/>
 <attribute name="MPN" x="497.84" y="95.25" size="1.778" layer="96" display="off"/>
 </instance>
-<instance part="LED_TPB_6" gate="G$1" x="505.46" y="95.25">
+<instance part="D18" gate="G$1" x="505.46" y="95.25">
 <attribute name="OC_FARNELL" x="505.46" y="95.25" size="1.778" layer="96" display="off"/>
 <attribute name="MF" x="505.46" y="95.25" size="1.778" layer="96" display="off"/>
 <attribute name="MPN" x="505.46" y="95.25" size="1.778" layer="96" display="off"/>
 </instance>
-<instance part="LED_BEAT_2" gate="G$1" x="504.19" y="121.92" rot="R180">
+<instance part="D14" gate="G$1" x="504.19" y="121.92" rot="R180">
 <attribute name="OC_FARNELL" x="504.19" y="121.92" size="1.778" layer="96" display="off"/>
 <attribute name="MF" x="504.19" y="121.92" size="1.778" layer="96" display="off"/>
 <attribute name="MPN" x="504.19" y="121.92" size="1.778" layer="96" display="off"/>
 </instance>
-<instance part="LED_BEAT_4" gate="G$1" x="496.57" y="121.92" rot="R180">
+<instance part="D13" gate="G$1" x="496.57" y="121.92" rot="R180">
 <attribute name="OC_FARNELL" x="496.57" y="121.92" size="1.778" layer="96" display="off"/>
 <attribute name="MF" x="496.57" y="121.92" size="1.778" layer="96" display="off"/>
 <attribute name="MPN" x="496.57" y="121.92" size="1.778" layer="96" display="off"/>
 </instance>
-<instance part="LED_BEAT_8" gate="G$1" x="488.95" y="121.92" rot="R180">
+<instance part="D12" gate="G$1" x="488.95" y="121.92" rot="R180">
 <attribute name="OC_FARNELL" x="488.95" y="121.92" size="1.778" layer="96" display="off"/>
 <attribute name="MF" x="488.95" y="121.92" size="1.778" layer="96" display="off"/>
 <attribute name="MPN" x="488.95" y="121.92" size="1.778" layer="96" display="off"/>
 </instance>
-<instance part="LED_BEAT_16" gate="G$1" x="482.6" y="121.92" rot="R180">
+<instance part="D11" gate="G$1" x="482.6" y="121.92" rot="R180">
 <attribute name="OC_FARNELL" x="482.6" y="121.92" size="1.778" layer="96" display="off"/>
 <attribute name="MF" x="482.6" y="121.92" size="1.778" layer="96" display="off"/>
 <attribute name="MPN" x="482.6" y="121.92" size="1.778" layer="96" display="off"/>
 </instance>
-<instance part="LED_TICK" gate="G$1" x="712.47" y="168.91" rot="R180">
+<instance part="D23" gate="G$1" x="712.47" y="168.91" rot="R180">
 <attribute name="OC_FARNELL" x="712.47" y="168.91" size="1.778" layer="96" rot="R180" display="off"/>
 <attribute name="MF" x="712.47" y="168.91" size="1.778" layer="96" rot="R180" display="off"/>
 <attribute name="MPN" x="712.47" y="168.91" size="1.778" layer="96" rot="R180" display="off"/>
 </instance>
-<instance part="LED_BEAT" gate="G$1" x="720.09" y="118.11" rot="R180">
+<instance part="D22" gate="G$1" x="720.09" y="118.11" rot="R180">
 <attribute name="OC_FARNELL" x="720.09" y="118.11" size="1.778" layer="96" rot="R180" display="off"/>
 <attribute name="MF" x="720.09" y="118.11" size="1.778" layer="96" rot="R180" display="off"/>
 <attribute name="MPN" x="720.09" y="118.11" size="1.778" layer="96" rot="R180" display="off"/>
 </instance>
-<instance part="LED_LOOP" gate="G$1" x="718.82" y="72.39" rot="R180">
+<instance part="D21" gate="G$1" x="718.82" y="72.39" rot="R180">
 <attribute name="OC_FARNELL" x="718.82" y="72.39" size="1.778" layer="96" rot="R180" display="off"/>
 <attribute name="MF" x="718.82" y="72.39" size="1.778" layer="96" rot="R180" display="off"/>
 <attribute name="MPN" x="718.82" y="72.39" size="1.778" layer="96" rot="R180" display="off"/>
 </instance>
-<instance part="LED_GATE" gate="G$1" x="624.84" y="72.39" rot="R180">
+<instance part="D20" gate="G$1" x="624.84" y="72.39" rot="R180">
 <attribute name="OC_FARNELL" x="624.84" y="72.39" size="1.778" layer="96" rot="R180" display="off"/>
 <attribute name="MF" x="624.84" y="72.39" size="1.778" layer="96" rot="R180" display="off"/>
 <attribute name="MPN" x="624.84" y="72.39" size="1.778" layer="96" rot="R180" display="off"/>
 </instance>
 <instance part="B_TPB" gate="K" x="500.38" y="34.29">
-<attribute name="DESC" x="500.38" y="34.29" size="1.778" layer="96" display="off"/>
 <attribute name="OC_FARNELL" x="500.38" y="34.29" size="1.778" layer="96" display="off"/>
 <attribute name="MF" x="500.38" y="34.29" size="1.778" layer="96" display="off"/>
 <attribute name="MPN" x="500.38" y="34.29" size="1.778" layer="96" display="off"/>
 </instance>
 <instance part="B_BEATS" gate="K" x="500.38" y="7.62">
-<attribute name="DESC" x="500.38" y="7.62" size="1.778" layer="96" display="off"/>
 <attribute name="OC_FARNELL" x="500.38" y="7.62" size="1.778" layer="96" display="off"/>
 <attribute name="MF" x="500.38" y="7.62" size="1.778" layer="96" display="off"/>
 <attribute name="MPN" x="500.38" y="7.62" size="1.778" layer="96" display="off"/>
@@ -7299,13 +7237,11 @@ new: Attribute TP_SIGNAL_NAME&lt;br&gt;
 <attribute name="MF" x="-8.89" y="151.13" size="1.778" layer="96" display="off"/>
 </instance>
 <instance part="B_ALGO" gate="K" x="462.28" y="34.29">
-<attribute name="DESC" x="462.28" y="34.29" size="1.778" layer="96" display="off"/>
 <attribute name="OC_FARNELL" x="462.28" y="34.29" size="1.778" layer="96" display="off"/>
 <attribute name="MF" x="462.28" y="34.29" size="1.778" layer="96" display="off"/>
 <attribute name="MPN" x="462.28" y="34.29" size="1.778" layer="96" display="off"/>
 </instance>
 <instance part="B_SCALE" gate="K" x="462.28" y="7.62">
-<attribute name="DESC" x="462.28" y="7.62" size="1.778" layer="96" display="off"/>
 <attribute name="OC_FARNELL" x="462.28" y="7.62" size="1.778" layer="96" display="off"/>
 <attribute name="MF" x="462.28" y="7.62" size="1.778" layer="96" display="off"/>
 <attribute name="MPN" x="462.28" y="7.62" size="1.778" layer="96" display="off"/>
@@ -7326,42 +7262,42 @@ new: Attribute TP_SIGNAL_NAME&lt;br&gt;
 <instance part="GND59" gate="1" x="497.84" y="87.63"/>
 <instance part="GND60" gate="1" x="490.22" y="87.63"/>
 <instance part="GND61" gate="1" x="481.33" y="87.63"/>
-<instance part="LED_ALGO_GOA" gate="G$1" x="414.02" y="110.49" rot="MR180">
+<instance part="D6" gate="G$1" x="414.02" y="110.49" rot="MR180">
 <attribute name="OC_FARNELL" x="414.02" y="110.49" size="1.778" layer="96" display="off"/>
 <attribute name="MF" x="414.02" y="110.49" size="1.778" layer="96" display="off"/>
 <attribute name="MPN" x="414.02" y="110.49" size="1.778" layer="96" display="off"/>
 </instance>
-<instance part="LED_ALGO_FLAT" gate="G$1" x="407.67" y="110.49" rot="MR180">
+<instance part="D5" gate="G$1" x="407.67" y="110.49" rot="MR180">
 <attribute name="OC_FARNELL" x="407.67" y="110.49" size="1.778" layer="96" display="off"/>
 <attribute name="MF" x="407.67" y="110.49" size="1.778" layer="96" display="off"/>
 <attribute name="MPN" x="407.67" y="110.49" size="1.778" layer="96" display="off"/>
 </instance>
-<instance part="LED_ALGO_PSYCH" gate="G$1" x="401.32" y="110.49" rot="MR180">
+<instance part="D2" gate="G$1" x="401.32" y="110.49" rot="MR180">
 <attribute name="OC_FARNELL" x="401.32" y="110.49" size="1.778" layer="96" display="off"/>
 <attribute name="MF" x="401.32" y="110.49" size="1.778" layer="96" display="off"/>
 <attribute name="MPN" x="401.32" y="110.49" size="1.778" layer="96" display="off"/>
 </instance>
-<instance part="LED_ALGO_FOURCHORD" gate="G$1" x="394.97" y="110.49" rot="MR180">
+<instance part="D1" gate="G$1" x="394.97" y="110.49" rot="MR180">
 <attribute name="OC_FARNELL" x="394.97" y="110.49" size="1.778" layer="96" display="off"/>
 <attribute name="MF" x="394.97" y="110.49" size="1.778" layer="96" display="off"/>
 <attribute name="MPN" x="394.97" y="110.49" size="1.778" layer="96" display="off"/>
 </instance>
-<instance part="LED_SCALE_DORIAN" gate="G$1" x="394.97" y="78.74" rot="MR0">
+<instance part="D7" gate="G$1" x="394.97" y="78.74" rot="MR0">
 <attribute name="OC_FARNELL" x="394.97" y="78.74" size="1.778" layer="96" display="off"/>
 <attribute name="MF" x="394.97" y="78.74" size="1.778" layer="96" display="off"/>
 <attribute name="MPN" x="394.97" y="78.74" size="1.778" layer="96" display="off"/>
 </instance>
-<instance part="LED_SCALE_MAJOR" gate="G$1" x="401.32" y="78.74" rot="MR0">
+<instance part="D8" gate="G$1" x="401.32" y="78.74" rot="MR0">
 <attribute name="OC_FARNELL" x="401.32" y="78.74" size="1.778" layer="96" display="off"/>
 <attribute name="MF" x="401.32" y="78.74" size="1.778" layer="96" display="off"/>
 <attribute name="MPN" x="401.32" y="78.74" size="1.778" layer="96" display="off"/>
 </instance>
-<instance part="LED_SCALE_MINOR" gate="G$1" x="407.67" y="78.74" rot="MR0">
+<instance part="D9" gate="G$1" x="407.67" y="78.74" rot="MR0">
 <attribute name="OC_FARNELL" x="407.67" y="78.74" size="1.778" layer="96" display="off"/>
 <attribute name="MF" x="407.67" y="78.74" size="1.778" layer="96" display="off"/>
 <attribute name="MPN" x="407.67" y="78.74" size="1.778" layer="96" display="off"/>
 </instance>
-<instance part="LED_SCALE_PENTA" gate="G$1" x="414.02" y="78.74" rot="MR0">
+<instance part="D10" gate="G$1" x="414.02" y="78.74" rot="MR0">
 <attribute name="OC_FARNELL" x="414.02" y="78.74" size="1.778" layer="96" display="off"/>
 <attribute name="MF" x="414.02" y="78.74" size="1.778" layer="96" display="off"/>
 <attribute name="MPN" x="414.02" y="78.74" size="1.778" layer="96" display="off"/>
@@ -7582,7 +7518,7 @@ new: Attribute TP_SIGNAL_NAME&lt;br&gt;
 <attribute name="MF" x="314.96" y="142.24" size="1.778" layer="96" display="off"/>
 </instance>
 <instance part="SUPPLY24" gate="G$1" x="336.55" y="157.48"/>
-<instance part="SUPPLY25" gate="G$1" x="292.1" y="157.48"/>
+<instance part="SUPPLY25" gate="G$1" x="292.1" y="151.13"/>
 <instance part="SUPPLY26" gate="G$1" x="297.18" y="151.13"/>
 <instance part="SUPPLY27" gate="G$1" x="308.61" y="170.18"/>
 <instance part="GND98" gate="1" x="297.18" y="129.54"/>
@@ -7650,7 +7586,7 @@ new: Attribute TP_SIGNAL_NAME&lt;br&gt;
 <instance part="SUPPLY4" gate="G$1" x="-68.58" y="139.7" rot="R180"/>
 <instance part="SUPPLY8" gate="G$1" x="-68.58" y="99.06" rot="R180"/>
 <instance part="SUPPLY10" gate="G$1" x="-68.58" y="59.69" rot="R180"/>
-<instance part="LED_ACCENT" gate="G$1" x="619.76" y="114.3" rot="R180">
+<instance part="D19" gate="G$1" x="619.76" y="114.3" rot="R180">
 <attribute name="OC_FARNELL" x="619.76" y="114.3" size="1.778" layer="96" rot="R180" display="off"/>
 <attribute name="MF" x="619.76" y="114.3" size="1.778" layer="96" rot="R180" display="off"/>
 <attribute name="MPN" x="619.76" y="114.3" size="1.778" layer="96" rot="R180" display="off"/>
@@ -7713,6 +7649,7 @@ new: Attribute TP_SIGNAL_NAME&lt;br&gt;
 <instance part="SUPPLY31" gate="G$1" x="720.09" y="110.49" rot="R180"/>
 <instance part="SUPPLY32" gate="G$1" x="619.76" y="105.41" rot="R180"/>
 <instance part="SUPPLY33" gate="G$1" x="712.47" y="161.29" rot="R180"/>
+<instance part="GND20" gate="1" x="288.29" y="137.16"/>
 </instances>
 <busses>
 </busses>
@@ -7940,78 +7877,78 @@ new: Attribute TP_SIGNAL_NAME&lt;br&gt;
 <pinref part="GND53" gate="1" pin="GND"/>
 </segment>
 <segment>
-<pinref part="LED_BEAT_2" gate="G$1" pin="C"/>
+<pinref part="D14" gate="G$1" pin="C"/>
 <pinref part="GND54" gate="1" pin="GND"/>
 <wire x1="504.19" y1="128.27" x2="504.19" y2="127" width="0.1524" layer="91"/>
 </segment>
 <segment>
-<pinref part="LED_BEAT_4" gate="G$1" pin="C"/>
+<pinref part="D13" gate="G$1" pin="C"/>
 <pinref part="GND55" gate="1" pin="GND"/>
 <wire x1="496.57" y1="128.27" x2="496.57" y2="127" width="0.1524" layer="91"/>
 </segment>
 <segment>
-<pinref part="LED_BEAT_8" gate="G$1" pin="C"/>
+<pinref part="D12" gate="G$1" pin="C"/>
 <pinref part="GND56" gate="1" pin="GND"/>
 <wire x1="488.95" y1="128.27" x2="488.95" y2="127" width="0.1524" layer="91"/>
 </segment>
 <segment>
-<pinref part="LED_BEAT_16" gate="G$1" pin="C"/>
+<pinref part="D11" gate="G$1" pin="C"/>
 <pinref part="GND57" gate="1" pin="GND"/>
 <wire x1="482.6" y1="128.27" x2="482.6" y2="127" width="0.1524" layer="91"/>
 </segment>
 <segment>
-<pinref part="LED_TPB_6" gate="G$1" pin="C"/>
+<pinref part="D18" gate="G$1" pin="C"/>
 <pinref part="GND58" gate="1" pin="GND"/>
 </segment>
 <segment>
-<pinref part="LED_TPB_4" gate="G$1" pin="C"/>
+<pinref part="D17" gate="G$1" pin="C"/>
 <pinref part="GND59" gate="1" pin="GND"/>
 </segment>
 <segment>
-<pinref part="LED_TPB_3" gate="G$1" pin="C"/>
+<pinref part="D16" gate="G$1" pin="C"/>
 <pinref part="GND60" gate="1" pin="GND"/>
 </segment>
 <segment>
-<pinref part="LED_TPB_2" gate="G$1" pin="C"/>
+<pinref part="D15" gate="G$1" pin="C"/>
 <pinref part="GND61" gate="1" pin="GND"/>
 </segment>
 <segment>
-<pinref part="LED_SCALE_DORIAN" gate="G$1" pin="C"/>
+<pinref part="D7" gate="G$1" pin="C"/>
 <pinref part="GND66" gate="1" pin="GND"/>
 <wire x1="394.97" y1="73.66" x2="394.97" y2="71.12" width="0.1524" layer="91"/>
 </segment>
 <segment>
-<pinref part="LED_SCALE_MAJOR" gate="G$1" pin="C"/>
+<pinref part="D8" gate="G$1" pin="C"/>
 <pinref part="GND67" gate="1" pin="GND"/>
 <wire x1="401.32" y1="71.12" x2="401.32" y2="73.66" width="0.1524" layer="91"/>
 </segment>
 <segment>
-<pinref part="LED_SCALE_MINOR" gate="G$1" pin="C"/>
+<pinref part="D9" gate="G$1" pin="C"/>
 <pinref part="GND68" gate="1" pin="GND"/>
 <wire x1="407.67" y1="71.12" x2="407.67" y2="73.66" width="0.1524" layer="91"/>
 </segment>
 <segment>
-<pinref part="LED_SCALE_PENTA" gate="G$1" pin="C"/>
+<pinref part="D10" gate="G$1" pin="C"/>
 <pinref part="GND69" gate="1" pin="GND"/>
 <wire x1="414.02" y1="71.12" x2="414.02" y2="73.66" width="0.1524" layer="91"/>
 </segment>
 <segment>
-<pinref part="LED_ALGO_FOURCHORD" gate="G$1" pin="C"/>
+<pinref part="D1" gate="G$1" pin="C"/>
 <pinref part="GND70" gate="1" pin="GND"/>
 <wire x1="394.97" y1="115.57" x2="394.97" y2="116.84" width="0.1524" layer="91"/>
 </segment>
 <segment>
-<pinref part="LED_ALGO_PSYCH" gate="G$1" pin="C"/>
+<pinref part="D2" gate="G$1" pin="C"/>
 <pinref part="GND71" gate="1" pin="GND"/>
 <wire x1="401.32" y1="115.57" x2="401.32" y2="116.84" width="0.1524" layer="91"/>
 </segment>
 <segment>
-<pinref part="LED_ALGO_FLAT" gate="G$1" pin="C"/>
+<pinref part="D5" gate="G$1" pin="C"/>
 <pinref part="GND72" gate="1" pin="GND"/>
 <wire x1="407.67" y1="116.84" x2="407.67" y2="115.57" width="0.1524" layer="91"/>
 </segment>
 <segment>
-<pinref part="LED_ALGO_GOA" gate="G$1" pin="C"/>
+<pinref part="D6" gate="G$1" pin="C"/>
 <pinref part="GND73" gate="1" pin="GND"/>
 <wire x1="414.02" y1="115.57" x2="414.02" y2="116.84" width="0.1524" layer="91"/>
 </segment>
@@ -8165,6 +8102,11 @@ new: Attribute TP_SIGNAL_NAME&lt;br&gt;
 <pinref part="GND19" gate="1" pin="GND"/>
 <wire x1="-68.58" y1="82.55" x2="-68.58" y2="80.01" width="0.1524" layer="91"/>
 </segment>
+<segment>
+<pinref part="U6" gate="A" pin="WP"/>
+<pinref part="GND20" gate="1" pin="GND"/>
+<wire x1="288.29" y1="139.7" x2="297.18" y2="139.7" width="0.1524" layer="91"/>
+</segment>
 </net>
 <net name="3.3V" class="2">
 <segment>
@@ -8261,7 +8203,7 @@ new: Attribute TP_SIGNAL_NAME&lt;br&gt;
 </segment>
 <segment>
 <pinref part="SUPPLY25" gate="G$1" pin="3.3V"/>
-<wire x1="292.1" y1="157.48" x2="292.1" y2="149.86" width="0.1524" layer="91"/>
+<wire x1="292.1" y1="151.13" x2="292.1" y2="149.86" width="0.1524" layer="91"/>
 <pinref part="R50" gate="R" pin="1"/>
 </segment>
 <segment>
@@ -8295,27 +8237,27 @@ new: Attribute TP_SIGNAL_NAME&lt;br&gt;
 <wire x1="149.86" y1="91.44" x2="149.86" y2="88.9" width="0.1524" layer="91"/>
 </segment>
 <segment>
-<pinref part="LED_GATE" gate="G$1" pin="A"/>
+<pinref part="D20" gate="G$1" pin="A"/>
 <pinref part="SUPPLY29" gate="G$1" pin="3.3V"/>
 <wire x1="624.84" y1="64.77" x2="624.84" y2="69.85" width="0.1524" layer="91"/>
 </segment>
 <segment>
-<pinref part="LED_LOOP" gate="G$1" pin="A"/>
+<pinref part="D21" gate="G$1" pin="A"/>
 <pinref part="SUPPLY30" gate="G$1" pin="3.3V"/>
 <wire x1="718.82" y1="63.5" x2="718.82" y2="69.85" width="0.1524" layer="91"/>
 </segment>
 <segment>
-<pinref part="LED_BEAT" gate="G$1" pin="A"/>
+<pinref part="D22" gate="G$1" pin="A"/>
 <pinref part="SUPPLY31" gate="G$1" pin="3.3V"/>
 <wire x1="720.09" y1="110.49" x2="720.09" y2="115.57" width="0.1524" layer="91"/>
 </segment>
 <segment>
-<pinref part="LED_ACCENT" gate="G$1" pin="A"/>
+<pinref part="D19" gate="G$1" pin="A"/>
 <pinref part="SUPPLY32" gate="G$1" pin="3.3V"/>
 <wire x1="619.76" y1="105.41" x2="619.76" y2="111.76" width="0.1524" layer="91"/>
 </segment>
 <segment>
-<pinref part="LED_TICK" gate="G$1" pin="A"/>
+<pinref part="D23" gate="G$1" pin="A"/>
 <pinref part="SUPPLY33" gate="G$1" pin="3.3V"/>
 <wire x1="712.47" y1="161.29" x2="712.47" y2="166.37" width="0.1524" layer="91"/>
 </segment>
@@ -8524,10 +8466,10 @@ new: Attribute TP_SIGNAL_NAME&lt;br&gt;
 <net name="N$13" class="1">
 <segment>
 <pinref part="U$1" gate="G$1" pin="+12V"/>
-<wire x1="378.46" y1="-62.23" x2="398.145" y2="-62.23" width="0.1524" layer="91"/>
+<wire x1="378.46" y1="-62.23" x2="397.51" y2="-62.23" width="0.1524" layer="91"/>
 <pinref part="D3" gate="D" pin="+"/>
-<wire x1="398.145" y1="-62.23" x2="398.78" y2="-62.23" width="0.1524" layer="91"/>
-<junction x="398.145" y="-62.23"/>
+<wire x1="397.51" y1="-62.23" x2="398.78" y2="-62.23" width="0.1524" layer="91"/>
+<junction x="397.51" y="-62.23"/>
 </segment>
 </net>
 <net name="N$24" class="0">
@@ -8777,11 +8719,11 @@ new: Attribute TP_SIGNAL_NAME&lt;br&gt;
 </net>
 <net name="-12V" class="1">
 <segment>
-<wire x1="407.67" y1="-67.31" x2="408.305" y2="-67.31" width="0.1524" layer="91"/>
+<wire x1="407.67" y1="-67.31" x2="408.94" y2="-67.31" width="0.1524" layer="91"/>
 <pinref part="U$5" gate="G$1" pin="-12V"/>
 <pinref part="D4" gate="D" pin="+"/>
-<wire x1="408.305" y1="-67.31" x2="410.21" y2="-67.31" width="0.1524" layer="91"/>
-<junction x="408.305" y="-67.31"/>
+<wire x1="408.94" y1="-67.31" x2="410.21" y2="-67.31" width="0.1524" layer="91"/>
+<junction x="408.94" y="-67.31"/>
 </segment>
 <segment>
 <wire x1="688.34" y1="-25.4" x2="692.15" y2="-25.4" width="0.1524" layer="91"/>
@@ -9223,7 +9165,7 @@ new: Attribute TP_SIGNAL_NAME&lt;br&gt;
 <pinref part="R34" gate="C" pin="2"/>
 <wire x1="389.89" y1="101.6" x2="414.02" y2="101.6" width="0.1524" layer="91"/>
 <wire x1="414.02" y1="101.6" x2="414.02" y2="107.95" width="0.1524" layer="91"/>
-<pinref part="LED_ALGO_GOA" gate="G$1" pin="A"/>
+<pinref part="D6" gate="G$1" pin="A"/>
 </segment>
 </net>
 <net name="N$74" class="0">
@@ -9231,7 +9173,7 @@ new: Attribute TP_SIGNAL_NAME&lt;br&gt;
 <pinref part="R34" gate="D" pin="2"/>
 <wire x1="389.89" y1="104.14" x2="407.67" y2="104.14" width="0.1524" layer="91"/>
 <wire x1="407.67" y1="104.14" x2="407.67" y2="107.95" width="0.1524" layer="91"/>
-<pinref part="LED_ALGO_FLAT" gate="G$1" pin="A"/>
+<pinref part="D5" gate="G$1" pin="A"/>
 </segment>
 </net>
 <net name="N$75" class="0">
@@ -9239,7 +9181,7 @@ new: Attribute TP_SIGNAL_NAME&lt;br&gt;
 <pinref part="R34" gate="B" pin="2"/>
 <wire x1="389.89" y1="99.06" x2="401.32" y2="99.06" width="0.1524" layer="91"/>
 <wire x1="401.32" y1="99.06" x2="401.32" y2="107.95" width="0.1524" layer="91"/>
-<pinref part="LED_ALGO_PSYCH" gate="G$1" pin="A"/>
+<pinref part="D2" gate="G$1" pin="A"/>
 </segment>
 </net>
 <net name="N$76" class="0">
@@ -9247,13 +9189,13 @@ new: Attribute TP_SIGNAL_NAME&lt;br&gt;
 <pinref part="R34" gate="A" pin="2"/>
 <wire x1="389.89" y1="96.52" x2="394.97" y2="96.52" width="0.1524" layer="91"/>
 <wire x1="394.97" y1="96.52" x2="394.97" y2="107.95" width="0.1524" layer="91"/>
-<pinref part="LED_ALGO_FOURCHORD" gate="G$1" pin="A"/>
+<pinref part="D1" gate="G$1" pin="A"/>
 </segment>
 </net>
 <net name="N$28" class="0">
 <segment>
 <pinref part="R33" gate="C" pin="2"/>
-<pinref part="LED_SCALE_DORIAN" gate="G$1" pin="A"/>
+<pinref part="D7" gate="G$1" pin="A"/>
 <wire x1="389.89" y1="91.44" x2="394.97" y2="91.44" width="0.1524" layer="91"/>
 <wire x1="394.97" y1="91.44" x2="394.97" y2="81.28" width="0.1524" layer="91"/>
 </segment>
@@ -9261,7 +9203,7 @@ new: Attribute TP_SIGNAL_NAME&lt;br&gt;
 <net name="N$32" class="0">
 <segment>
 <pinref part="R33" gate="D" pin="2"/>
-<pinref part="LED_SCALE_MAJOR" gate="G$1" pin="A"/>
+<pinref part="D8" gate="G$1" pin="A"/>
 <wire x1="389.89" y1="93.98" x2="401.32" y2="93.98" width="0.1524" layer="91"/>
 <wire x1="401.32" y1="93.98" x2="401.32" y2="81.28" width="0.1524" layer="91"/>
 </segment>
@@ -9269,7 +9211,7 @@ new: Attribute TP_SIGNAL_NAME&lt;br&gt;
 <net name="N$77" class="0">
 <segment>
 <pinref part="R33" gate="B" pin="2"/>
-<pinref part="LED_SCALE_MINOR" gate="G$1" pin="A"/>
+<pinref part="D9" gate="G$1" pin="A"/>
 <wire x1="389.89" y1="88.9" x2="407.67" y2="88.9" width="0.1524" layer="91"/>
 <wire x1="407.67" y1="88.9" x2="407.67" y2="81.28" width="0.1524" layer="91"/>
 </segment>
@@ -9277,7 +9219,7 @@ new: Attribute TP_SIGNAL_NAME&lt;br&gt;
 <net name="N$78" class="0">
 <segment>
 <pinref part="R33" gate="A" pin="2"/>
-<pinref part="LED_SCALE_PENTA" gate="G$1" pin="A"/>
+<pinref part="D10" gate="G$1" pin="A"/>
 <wire x1="389.89" y1="86.36" x2="414.02" y2="86.36" width="0.1524" layer="91"/>
 <wire x1="414.02" y1="86.36" x2="414.02" y2="81.28" width="0.1524" layer="91"/>
 </segment>
@@ -9285,7 +9227,7 @@ new: Attribute TP_SIGNAL_NAME&lt;br&gt;
 <net name="N$79" class="0">
 <segment>
 <pinref part="R31" gate="C" pin="1"/>
-<pinref part="LED_BEAT_16" gate="G$1" pin="A"/>
+<pinref part="D11" gate="G$1" pin="A"/>
 <wire x1="478.79" y1="110.49" x2="482.6" y2="110.49" width="0.1524" layer="91"/>
 <wire x1="482.6" y1="110.49" x2="482.6" y2="119.38" width="0.1524" layer="91"/>
 </segment>
@@ -9293,7 +9235,7 @@ new: Attribute TP_SIGNAL_NAME&lt;br&gt;
 <net name="N$80" class="0">
 <segment>
 <pinref part="R31" gate="B" pin="1"/>
-<pinref part="LED_BEAT_8" gate="G$1" pin="A"/>
+<pinref part="D12" gate="G$1" pin="A"/>
 <wire x1="478.79" y1="113.03" x2="488.95" y2="113.03" width="0.1524" layer="91"/>
 <wire x1="488.95" y1="113.03" x2="488.95" y2="119.38" width="0.1524" layer="91"/>
 </segment>
@@ -9301,7 +9243,7 @@ new: Attribute TP_SIGNAL_NAME&lt;br&gt;
 <net name="N$81" class="0">
 <segment>
 <pinref part="R31" gate="A" pin="1"/>
-<pinref part="LED_BEAT_4" gate="G$1" pin="A"/>
+<pinref part="D13" gate="G$1" pin="A"/>
 <wire x1="478.79" y1="115.57" x2="496.57" y2="115.57" width="0.1524" layer="91"/>
 <wire x1="496.57" y1="115.57" x2="496.57" y2="119.38" width="0.1524" layer="91"/>
 </segment>
@@ -9309,7 +9251,7 @@ new: Attribute TP_SIGNAL_NAME&lt;br&gt;
 <net name="N$82" class="0">
 <segment>
 <pinref part="R31" gate="D" pin="1"/>
-<pinref part="LED_BEAT_2" gate="G$1" pin="A"/>
+<pinref part="D14" gate="G$1" pin="A"/>
 <wire x1="478.79" y1="107.95" x2="504.19" y2="107.95" width="0.1524" layer="91"/>
 <wire x1="504.19" y1="107.95" x2="504.19" y2="119.38" width="0.1524" layer="91"/>
 </segment>
@@ -9317,14 +9259,14 @@ new: Attribute TP_SIGNAL_NAME&lt;br&gt;
 <net name="N$83" class="0">
 <segment>
 <pinref part="R32" gate="A" pin="2"/>
-<pinref part="LED_TPB_2" gate="G$1" pin="A"/>
+<pinref part="D15" gate="G$1" pin="A"/>
 <wire x1="478.79" y1="97.79" x2="481.33" y2="97.79" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$84" class="0">
 <segment>
 <pinref part="R32" gate="B" pin="2"/>
-<pinref part="LED_TPB_3" gate="G$1" pin="A"/>
+<pinref part="D16" gate="G$1" pin="A"/>
 <wire x1="478.79" y1="100.33" x2="490.22" y2="100.33" width="0.1524" layer="91"/>
 <wire x1="490.22" y1="100.33" x2="490.22" y2="97.79" width="0.1524" layer="91"/>
 </segment>
@@ -9332,7 +9274,7 @@ new: Attribute TP_SIGNAL_NAME&lt;br&gt;
 <net name="N$85" class="0">
 <segment>
 <pinref part="R32" gate="D" pin="2"/>
-<pinref part="LED_TPB_4" gate="G$1" pin="A"/>
+<pinref part="D17" gate="G$1" pin="A"/>
 <wire x1="478.79" y1="105.41" x2="497.84" y2="105.41" width="0.1524" layer="91"/>
 <wire x1="497.84" y1="105.41" x2="497.84" y2="97.79" width="0.1524" layer="91"/>
 </segment>
@@ -9340,7 +9282,7 @@ new: Attribute TP_SIGNAL_NAME&lt;br&gt;
 <net name="N$86" class="0">
 <segment>
 <pinref part="R32" gate="C" pin="2"/>
-<pinref part="LED_TPB_6" gate="G$1" pin="A"/>
+<pinref part="D18" gate="G$1" pin="A"/>
 <wire x1="478.79" y1="102.87" x2="505.46" y2="102.87" width="0.1524" layer="91"/>
 <wire x1="505.46" y1="102.87" x2="505.46" y2="97.79" width="0.1524" layer="91"/>
 </segment>
@@ -9595,35 +9537,35 @@ new: Attribute TP_SIGNAL_NAME&lt;br&gt;
 <net name="N$12" class="0">
 <segment>
 <pinref part="R13" gate="R" pin="1"/>
-<pinref part="LED_TICK" gate="G$1" pin="C"/>
+<pinref part="D23" gate="G$1" pin="C"/>
 <wire x1="712.47" y1="173.99" x2="712.47" y2="176.53" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$22" class="0">
 <segment>
 <pinref part="R47" gate="R" pin="1"/>
-<pinref part="LED_BEAT" gate="G$1" pin="C"/>
+<pinref part="D22" gate="G$1" pin="C"/>
 <wire x1="720.09" y1="123.19" x2="720.09" y2="125.73" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$23" class="0">
 <segment>
 <pinref part="R10" gate="R" pin="1"/>
-<pinref part="LED_ACCENT" gate="G$1" pin="C"/>
+<pinref part="D19" gate="G$1" pin="C"/>
 <wire x1="619.76" y1="119.38" x2="619.76" y2="121.92" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$44" class="0">
 <segment>
 <pinref part="R49" gate="R" pin="1"/>
-<pinref part="LED_GATE" gate="G$1" pin="C"/>
+<pinref part="D20" gate="G$1" pin="C"/>
 <wire x1="624.84" y1="77.47" x2="624.84" y2="81.28" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$45" class="0">
 <segment>
 <pinref part="R48" gate="R" pin="1"/>
-<pinref part="LED_LOOP" gate="G$1" pin="C"/>
+<pinref part="D21" gate="G$1" pin="C"/>
 <wire x1="718.82" y1="77.47" x2="718.82" y2="81.28" width="0.1524" layer="91"/>
 </segment>
 </net>
