@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.05" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
+<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="no" active="no"/>
 <layer number="2" name="Route2" color="1" fill="3" visible="no" active="no"/>
@@ -6418,27 +6418,27 @@ new: Attribute TP_SIGNAL_NAME&lt;br&gt;
 <part name="SUPPLY32" library="SparkFun-Aesthetics" deviceset="3.3V" device=""/>
 <part name="SUPPLY33" library="SparkFun-Aesthetics" deviceset="3.3V" device=""/>
 <part name="GND20" library="SparkFun-Aesthetics" deviceset="GND" device=""/>
-<part name="D24" library="OPL" deviceset="LED*" device=""/>
-<part name="D25" library="OPL" deviceset="LED*" device=""/>
-<part name="D26" library="OPL" deviceset="LED*" device=""/>
-<part name="D27" library="OPL" deviceset="LED*" device=""/>
-<part name="D28" library="OPL" deviceset="LED*" device=""/>
-<part name="D29" library="OPL" deviceset="LED*" device=""/>
-<part name="D30" library="OPL" deviceset="LED*" device=""/>
-<part name="D31" library="OPL" deviceset="LED*" device=""/>
-<part name="D32" library="OPL" deviceset="LED*" device=""/>
-<part name="D33" library="OPL" deviceset="LED*" device=""/>
-<part name="D34" library="OPL" deviceset="LED*" device=""/>
-<part name="D35" library="OPL" deviceset="LED*" device=""/>
-<part name="D36" library="OPL" deviceset="LED*" device=""/>
-<part name="D37" library="OPL" deviceset="LED*" device=""/>
-<part name="D38" library="OPL" deviceset="LED*" device=""/>
-<part name="D39" library="OPL" deviceset="LED*" device=""/>
-<part name="D40" library="OPL" deviceset="LED*" device=""/>
-<part name="D41" library="OPL" deviceset="LED*" device=""/>
-<part name="D42" library="OPL" deviceset="LED*" device=""/>
-<part name="D43" library="OPL" deviceset="LED*" device=""/>
-<part name="D44" library="OPL" deviceset="LED*" device=""/>
+<part name="D24" library="OPL" deviceset="LED*" device="" value="yellow"/>
+<part name="D25" library="OPL" deviceset="LED*" device="" value="yellow"/>
+<part name="D26" library="OPL" deviceset="LED*" device="" value="yellow"/>
+<part name="D27" library="OPL" deviceset="LED*" device="" value="yellow"/>
+<part name="D28" library="OPL" deviceset="LED*" device="" value="yellow"/>
+<part name="D29" library="OPL" deviceset="LED*" device="" value="yellow"/>
+<part name="D30" library="OPL" deviceset="LED*" device="" value="yellow"/>
+<part name="D31" library="OPL" deviceset="LED*" device="" value="yellow"/>
+<part name="D32" library="OPL" deviceset="LED*" device="" value="yellow"/>
+<part name="D33" library="OPL" deviceset="LED*" device="" value="yellow"/>
+<part name="D34" library="OPL" deviceset="LED*" device="" value="yellow"/>
+<part name="D35" library="OPL" deviceset="LED*" device="" value="yellow"/>
+<part name="D36" library="OPL" deviceset="LED*" device="" value="yellow"/>
+<part name="D37" library="OPL" deviceset="LED*" device="" value="yellow"/>
+<part name="D38" library="OPL" deviceset="LED*" device="" value="yellow"/>
+<part name="D39" library="OPL" deviceset="LED*" device="" value="yellow"/>
+<part name="D40" library="OPL" deviceset="LED*" device="" value="yellow"/>
+<part name="D41" library="OPL" deviceset="LED*" device="" value="yellow"/>
+<part name="D42" library="OPL" deviceset="LED*" device="" value="yellow"/>
+<part name="D43" library="OPL" deviceset="LED*" device="" value="yellow"/>
+<part name="D44" library="OPL" deviceset="LED*" device="" value="yellow"/>
 <part name="R31" library="OPL" deviceset="R*" device="-0603" value="56">
 <attribute name="MF" value=""/>
 <attribute name="MPN" value=""/>
@@ -9299,11 +9299,16 @@ new: Attribute TP_SIGNAL_NAME&lt;br&gt;
 </sheets>
 <errors>
 <approved hash="104,1,180.34,111.76,U1,VDD_VREFH,3.3V,,,"/>
+<approved hash="104,1,581.66,43.18,U7,VDD,3.3V,,,"/>
+<approved hash="104,1,581.66,17.78,U7,VSS,GND,,,"/>
 <approved hash="104,1,535.94,142.24,U3,VCC,3.3V,,,"/>
 <approved hash="104,1,455.93,130.81,U4,VCC,3.3V,,,"/>
 <approved hash="104,1,367.03,119.38,U5,VCC,3.3V,,,"/>
 <approved hash="104,1,297.18,147.32,U6,VCC,3.3V,,,"/>
-<approved hash="202,1,297.18,139.7,U6,NC,,,,"/>
+<approved hash="104,1,688.34,-10.16,IC3P,V+,12V,,,"/>
+<approved hash="104,1,688.34,-25.4,IC3P,V-,-12V,,,"/>
+<approved hash="104,1,78.74,191.77,IC4O,V+,3.3V,,,"/>
+<approved hash="104,1,78.74,176.53,IC4O,V-,GND,,,"/>
 </errors>
 </schematic>
 </drawing>

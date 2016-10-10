@@ -28,10 +28,10 @@
 <layer number="18" name="Vias" color="2" fill="1" visible="yes" active="yes"/>
 <layer number="19" name="Unrouted" color="6" fill="1" visible="yes" active="yes"/>
 <layer number="20" name="Dimension" color="15" fill="1" visible="yes" active="yes"/>
-<layer number="21" name="tPlace" color="7" fill="1" visible="no" active="yes"/>
-<layer number="22" name="bPlace" color="7" fill="1" visible="no" active="yes"/>
-<layer number="23" name="tOrigins" color="15" fill="1" visible="no" active="yes"/>
-<layer number="24" name="bOrigins" color="15" fill="1" visible="no" active="yes"/>
+<layer number="21" name="tPlace" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="22" name="bPlace" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="23" name="tOrigins" color="15" fill="1" visible="yes" active="yes"/>
+<layer number="24" name="bOrigins" color="15" fill="1" visible="yes" active="yes"/>
 <layer number="25" name="tNames" color="7" fill="1" visible="no" active="yes"/>
 <layer number="26" name="bNames" color="7" fill="1" visible="no" active="yes"/>
 <layer number="27" name="tValues" color="7" fill="1" visible="no" active="yes"/>
@@ -48,9 +48,9 @@
 <layer number="38" name="bTest" color="7" fill="1" visible="no" active="yes"/>
 <layer number="39" name="tKeepout" color="13" fill="11" visible="yes" active="yes"/>
 <layer number="40" name="bKeepout" color="1" fill="11" visible="yes" active="yes"/>
-<layer number="41" name="tRestrict" color="4" fill="10" visible="no" active="yes"/>
-<layer number="42" name="bRestrict" color="1" fill="10" visible="no" active="yes"/>
-<layer number="43" name="vRestrict" color="2" fill="10" visible="no" active="yes"/>
+<layer number="41" name="tRestrict" color="4" fill="10" visible="yes" active="yes"/>
+<layer number="42" name="bRestrict" color="1" fill="10" visible="yes" active="yes"/>
+<layer number="43" name="vRestrict" color="2" fill="10" visible="yes" active="yes"/>
 <layer number="44" name="Drills" color="7" fill="1" visible="no" active="yes"/>
 <layer number="45" name="Holes" color="7" fill="1" visible="no" active="yes"/>
 <layer number="46" name="Milling" color="3" fill="1" visible="no" active="yes"/>
@@ -2319,27 +2319,27 @@ new: Attribute TP_SIGNAL_NAME&lt;br&gt;
 <attribute name="MF" value="" x="37.875" y="45" size="1.778" layer="28" rot="MR0" display="off"/>
 <attribute name="MPN" value="" x="37.875" y="45" size="1.778" layer="28" rot="MR0" display="off"/>
 </element>
-<element name="D24" library="OPL" package="LED0603" value="" x="17.78" y="83.82" rot="R270"/>
-<element name="D25" library="OPL" package="LED0603" value="" x="17.78" y="78.74" rot="R270"/>
-<element name="D26" library="OPL" package="LED0603" value="" x="12.7" y="83.82" rot="R270"/>
-<element name="D27" library="OPL" package="LED0603" value="" x="12.7" y="78.74" rot="R270"/>
-<element name="D28" library="OPL" package="LED0603" value="" x="12.7" y="64.77" rot="R270"/>
-<element name="D29" library="OPL" package="LED0603" value="" x="12.7" y="69.85" rot="R270"/>
-<element name="D30" library="OPL" package="LED0603" value="" x="17.78" y="64.77" rot="R270"/>
-<element name="D31" library="OPL" package="LED0603" value="" x="17.78" y="69.85" rot="R270"/>
-<element name="D32" library="OPL" package="LED0603" value="" x="43.18" y="64.77" rot="R270"/>
-<element name="D33" library="OPL" package="LED0603" value="" x="38.1" y="64.77" rot="R270"/>
-<element name="D34" library="OPL" package="LED0603" value="" x="38.1" y="69.85" rot="R270"/>
-<element name="D35" library="OPL" package="LED0603" value="" x="43.18" y="69.85" rot="R270"/>
-<element name="D36" library="OPL" package="LED0603" value="" x="43.18" y="83.82" rot="R270"/>
-<element name="D37" library="OPL" package="LED0603" value="" x="43.18" y="78.74" rot="R270"/>
-<element name="D38" library="OPL" package="LED0603" value="" x="38.1" y="83.82" rot="R270"/>
-<element name="D39" library="OPL" package="LED0603" value="" x="38.1" y="78.74" rot="R270"/>
-<element name="D40" library="OPL" package="LED0603" value="" x="58.42" y="17.145" rot="R180"/>
-<element name="D41" library="OPL" package="LED0603" value="" x="58.42" y="2.54" rot="R180"/>
-<element name="D42" library="OPL" package="LED0603" value="" x="58.42" y="74.295" rot="R180"/>
-<element name="D43" library="OPL" package="LED0603" value="" x="58.42" y="59.055" rot="R180"/>
-<element name="D44" library="OPL" package="LED0603" value="" x="58.42" y="43.815" rot="R180"/>
+<element name="D24" library="OPL" package="LED0603" value="yellow" x="17.78" y="83.82" rot="R270"/>
+<element name="D25" library="OPL" package="LED0603" value="yellow" x="17.78" y="78.74" rot="R270"/>
+<element name="D26" library="OPL" package="LED0603" value="yellow" x="12.7" y="83.82" rot="R270"/>
+<element name="D27" library="OPL" package="LED0603" value="yellow" x="12.7" y="78.74" rot="R270"/>
+<element name="D28" library="OPL" package="LED0603" value="yellow" x="12.7" y="64.77" rot="R270"/>
+<element name="D29" library="OPL" package="LED0603" value="yellow" x="12.7" y="69.85" rot="R270"/>
+<element name="D30" library="OPL" package="LED0603" value="yellow" x="17.78" y="64.77" rot="R270"/>
+<element name="D31" library="OPL" package="LED0603" value="yellow" x="17.78" y="69.85" rot="R270"/>
+<element name="D32" library="OPL" package="LED0603" value="yellow" x="43.18" y="64.77" rot="R270"/>
+<element name="D33" library="OPL" package="LED0603" value="yellow" x="38.1" y="64.77" rot="R270"/>
+<element name="D34" library="OPL" package="LED0603" value="yellow" x="38.1" y="69.85" rot="R270"/>
+<element name="D35" library="OPL" package="LED0603" value="yellow" x="43.18" y="69.85" rot="R270"/>
+<element name="D36" library="OPL" package="LED0603" value="yellow" x="43.18" y="83.82" rot="R270"/>
+<element name="D37" library="OPL" package="LED0603" value="yellow" x="43.18" y="78.74" rot="R270"/>
+<element name="D38" library="OPL" package="LED0603" value="yellow" x="38.1" y="83.82" rot="R270"/>
+<element name="D39" library="OPL" package="LED0603" value="yellow" x="38.1" y="78.74" rot="R270"/>
+<element name="D40" library="OPL" package="LED0603" value="yellow" x="58.42" y="17.145" rot="R180"/>
+<element name="D41" library="OPL" package="LED0603" value="yellow" x="58.42" y="2.54" rot="R180"/>
+<element name="D42" library="OPL" package="LED0603" value="yellow" x="58.42" y="74.295" rot="R180"/>
+<element name="D43" library="OPL" package="LED0603" value="yellow" x="58.42" y="59.055" rot="R180"/>
+<element name="D44" library="OPL" package="LED0603" value="yellow" x="58.42" y="43.815" rot="R180"/>
 <element name="R31" library="OPL" package="R0603" value="56" x="38.1" y="73.025" rot="R90">
 <attribute name="MPN" value="" x="38.1" y="73.025" size="1.778" layer="27" rot="R90" display="off"/>
 <attribute name="MF" value="" x="38.1" y="73.025" size="1.778" layer="27" rot="R90" display="off"/>
