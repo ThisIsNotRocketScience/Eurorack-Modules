@@ -5686,8 +5686,8 @@ new: Attribute TP_SIGNAL_NAME&lt;br&gt;
 </class>
 <class number="2" name="mediumpower" width="0.254" drill="0">
 </class>
-<class number="3" name="groundplane" width="0.254" drill="0">
-<clearance class="3" value="0.2032"/>
+<class number="3" name="groundplane" width="0.1778" drill="0">
+<clearance class="3" value="0.1778"/>
 </class>
 </classes>
 <parts>
