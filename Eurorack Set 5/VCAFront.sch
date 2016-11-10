@@ -1350,6 +1350,46 @@ We've spent an enormous amount of time creating and checking these footprints an
 <wire x1="2.54" y1="-1.016" x2="-2.54" y2="-1.016" width="0.127" layer="21"/>
 <wire x1="-2.54" y1="-1.016" x2="-2.54" y2="1.016" width="0.127" layer="21"/>
 </package>
+<package name="AVX-A">
+<wire x1="-2.0955" y1="0.8255" x2="2.0955" y2="0.8255" width="0.127" layer="21"/>
+<wire x1="2.0955" y1="0.8255" x2="2.0955" y2="-0.8255" width="0.127" layer="21"/>
+<wire x1="2.0955" y1="-0.8255" x2="-2.0955" y2="-0.8255" width="0.127" layer="21"/>
+<wire x1="-2.0955" y1="-0.8255" x2="-2.0955" y2="0.8255" width="0.127" layer="21"/>
+<wire x1="-1" y1="0" x2="0" y2="0" width="0.127" layer="21"/>
+<wire x1="-0.5" y1="-0.5" x2="-0.5" y2="0.5" width="0.127" layer="21"/>
+<smd name="+" x="-1.27" y="0" dx="1.27" dy="1.27" layer="1"/>
+<smd name="-" x="1.27" y="0" dx="1.27" dy="1.27" layer="1" rot="R180"/>
+<text x="-1.9175" y="1.2925" size="0.889" layer="25" ratio="11">&gt;NAME</text>
+<text x="-1.6" y="-1.492" size="0.635" layer="27" ratio="10">&gt;VALUE</text>
+<rectangle x1="-2.0955" y1="-0.8255" x2="2.0955" y2="0.8255" layer="39"/>
+<rectangle x1="-2.25" y1="-1" x2="-0.75" y2="1" layer="21"/>
+</package>
+<package name="AVX-B">
+<wire x1="-2.2225" y1="1.397" x2="2.2225" y2="1.397" width="0.1016" layer="21"/>
+<wire x1="2.2225" y1="1.397" x2="2.2225" y2="-1.397" width="0.1016" layer="21"/>
+<wire x1="2.2225" y1="-1.397" x2="-2.2225" y2="-1.397" width="0.1016" layer="21"/>
+<wire x1="-2.2225" y1="-1.397" x2="-2.2225" y2="1.397" width="0.1016" layer="21"/>
+<wire x1="-0.6985" y1="0" x2="-0.1905" y2="0" width="0.127" layer="21"/>
+<wire x1="-0.4445" y1="-0.254" x2="-0.4445" y2="0.254" width="0.127" layer="21"/>
+<smd name="+" x="-1.4605" y="0" dx="1.143" dy="2.286" layer="1"/>
+<smd name="-" x="1.4605" y="0" dx="1.143" dy="2.286" layer="1" rot="R180"/>
+<text x="-1.905" y="1.905" size="0.889" layer="25" ratio="11">&gt;NAME</text>
+<text x="-1.651" y="-0.381" size="0.635" layer="27" ratio="10">&gt;VALUE</text>
+<rectangle x1="-2.2225" y1="-1.397" x2="2.2225" y2="1.397" layer="39"/>
+</package>
+<package name="AVX-C">
+<wire x1="-3.7465" y1="1.651" x2="3.7465" y2="1.651" width="0.127" layer="21"/>
+<wire x1="3.7465" y1="1.651" x2="3.7465" y2="-1.651" width="0.127" layer="21"/>
+<wire x1="3.7465" y1="-1.651" x2="-3.7465" y2="-1.651" width="0.127" layer="21"/>
+<wire x1="-3.7465" y1="-1.651" x2="-3.7465" y2="1.651" width="0.127" layer="21"/>
+<wire x1="-1.7145" y1="0" x2="-0.9525" y2="0" width="0.127" layer="21"/>
+<wire x1="-1.3335" y1="-0.381" x2="-1.3335" y2="0.381" width="0.127" layer="21"/>
+<smd name="+" x="-2.794" y="0" dx="2.54" dy="1.524" layer="1" rot="R90"/>
+<smd name="-" x="2.794" y="0" dx="2.54" dy="1.524" layer="1" rot="R90"/>
+<text x="-1.905" y="1.905" size="0.889" layer="25" ratio="11">&gt;NAME</text>
+<text x="-1.905" y="0" size="0.635" layer="27" ratio="10">&gt;VALUE</text>
+<rectangle x1="-3.7465" y1="-1.651" x2="3.7465" y2="1.651" layer="39"/>
+</package>
 </packages>
 <symbols>
 <symbol name="C">
@@ -1388,6 +1428,17 @@ We've spent an enormous amount of time creating and checking these footprints an
 <pin name="+" x="-3.175" y="0" visible="off" length="short" direction="pas"/>
 <pin name="-" x="3.81" y="0" visible="off" length="short" direction="pas" rot="R180"/>
 <wire x1="1.27" y1="0" x2="1.27" y2="-1.27" width="0.254" layer="94"/>
+</symbol>
+<symbol name="C-POLAR">
+<wire x1="-1.27" y1="-2.54" x2="-1.27" y2="0" width="0.4064" layer="94"/>
+<wire x1="-1.27" y1="0" x2="-1.27" y2="2.54" width="0.4064" layer="94"/>
+<wire x1="0.635" y1="0" x2="2.54" y2="0" width="0.1524" layer="94"/>
+<wire x1="1.27" y1="2.54" x2="1.27" y2="-2.54" width="0.4064" layer="94" curve="53.130102"/>
+<wire x1="-1.27" y1="0" x2="-2.54" y2="0" width="0.1524" layer="94"/>
+<pin name="1" x="-5.08" y="0" visible="off" length="short"/>
+<pin name="2" x="5.08" y="0" visible="off" length="short" rot="R180"/>
+<text x="0" y="3.81" size="1.27" layer="95" font="vector" ratio="10" align="bottom-center">&gt;NAME</text>
+<text x="0" y="-3.81" size="1.27" layer="96" font="vector" ratio="10" align="top-center">&gt;VALUE</text>
 </symbol>
 </symbols>
 <devicesets>
@@ -1478,6 +1529,40 @@ We've spent an enormous amount of time creating and checking these footprints an
 <connects>
 <connect gate="D" pin="+" pad="+"/>
 <connect gate="D" pin="-" pad="-"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="C-POLAR*" prefix="C" uservalue="yes">
+<gates>
+<gate name="C" symbol="C-POLAR" x="0" y="0"/>
+</gates>
+<devices>
+<device name="-A" package="AVX-A">
+<connects>
+<connect gate="C" pin="1" pad="+"/>
+<connect gate="C" pin="2" pad="-"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="-B" package="AVX-B">
+<connects>
+<connect gate="C" pin="1" pad="+"/>
+<connect gate="C" pin="2" pad="-"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="-C" package="AVX-C">
+<connects>
+<connect gate="C" pin="1" pad="+"/>
+<connect gate="C" pin="2" pad="-"/>
 </connects>
 <technologies>
 <technology name=""/>
@@ -1650,8 +1735,12 @@ We've spent an enormous amount of time creating and checking these footprints an
 </classes>
 <parts>
 <part name="U$1" library="EurorackModularParts" deviceset="EURORACK_PCB" device="4HP" value="EURORACK_PCB4HP"/>
-<part name="U$2" library="EurorackModularParts" deviceset="POT" device="ZEPHPOT" value="100K"/>
-<part name="U$3" library="EurorackModularParts" deviceset="POT" device="ZEPHPOT" value="100K"/>
+<part name="U$2" library="EurorackModularParts" deviceset="POT" device="ZEPHPOT" value="100K">
+<attribute name="DESC" value="Gain A"/>
+</part>
+<part name="U$3" library="EurorackModularParts" deviceset="POT" device="ZEPHPOT" value="100K">
+<attribute name="DESC" value="Gain B"/>
+</part>
 <part name="U$4" library="EurorackModularParts" deviceset="AUDIO-JACK" device="INPUT" value="PJ-341">
 <attribute name="DESC" value="Input A"/>
 </part>
@@ -1766,6 +1855,10 @@ We've spent an enormous amount of time creating and checking these footprints an
 <part name="R25" library="OPL" deviceset="R*" device="" value="2K"/>
 <part name="R26" library="OPL" deviceset="R*" device="" value="2K"/>
 <part name="GND31" library="SparkFun-Aesthetics" deviceset="GND" device=""/>
+<part name="GND32" library="SparkFun-Aesthetics" deviceset="GND" device=""/>
+<part name="GND33" library="SparkFun-Aesthetics" deviceset="GND" device=""/>
+<part name="C11" library="OPL" deviceset="C-POLAR*" device="-A"/>
+<part name="C12" library="OPL" deviceset="C-POLAR*" device="-A"/>
 </parts>
 <sheets>
 <sheet>
@@ -1855,7 +1948,7 @@ We've spent an enormous amount of time creating and checking these footprints an
 <instance part="GND28" gate="1" x="322.58" y="152.4" rot="R270"/>
 <instance part="R21" gate="R" x="384.81" y="130.81"/>
 <instance part="R22" gate="R" x="392.43" y="130.81"/>
-<instance part="U$15" gate="G$1" x="274.32" y="214.63"/>
+<instance part="U$15" gate="G$1" x="276.86" y="218.44"/>
 <instance part="D1" gate="D" x="260.35" y="223.52">
 <attribute name="OC_FARNELL" x="260.35" y="223.52" size="1.778" layer="96" rot="R180" display="off"/>
 <attribute name="MF" x="260.35" y="223.52" size="1.778" layer="96" rot="R180" display="off"/>
@@ -1885,6 +1978,10 @@ We've spent an enormous amount of time creating and checking these footprints an
 <instance part="R25" gate="R" x="307.34" y="49.53"/>
 <instance part="R26" gate="R" x="294.64" y="57.15"/>
 <instance part="GND31" gate="1" x="298.45" y="62.23" rot="R270"/>
+<instance part="GND32" gate="1" x="270.51" y="205.74"/>
+<instance part="GND33" gate="1" x="270.51" y="236.22" rot="R180"/>
+<instance part="C11" gate="C" x="270.51" y="228.6" rot="R90"/>
+<instance part="C12" gate="C" x="270.51" y="213.36" rot="R90"/>
 </instances>
 <busses>
 </busses>
@@ -2016,6 +2113,14 @@ We've spent an enormous amount of time creating and checking these footprints an
 <pinref part="IC2" gate="C" pin="+IN"/>
 <pinref part="GND31" gate="1" pin="GND"/>
 </segment>
+<segment>
+<pinref part="C12" gate="C" pin="1"/>
+<pinref part="GND32" gate="1" pin="GND"/>
+</segment>
+<segment>
+<pinref part="C11" gate="C" pin="2"/>
+<pinref part="GND33" gate="1" pin="GND"/>
+</segment>
 </net>
 <net name="12V" class="0">
 <segment>
@@ -2077,10 +2182,13 @@ We've spent an enormous amount of time creating and checking these footprints an
 </segment>
 <segment>
 <wire x1="262.89" y1="223.52" x2="264.16" y2="223.52" width="0.1524" layer="91"/>
-<wire x1="264.16" y1="223.52" x2="276.86" y2="223.52" width="0.1524" layer="91"/>
+<wire x1="264.16" y1="223.52" x2="270.51" y2="223.52" width="0.1524" layer="91"/>
 <pinref part="D1" gate="D" pin="-"/>
 <junction x="264.16" y="223.52"/>
 <label x="271.78" y="223.52" size="1.778" layer="95"/>
+<pinref part="C11" gate="C" pin="1"/>
+<wire x1="270.51" y1="223.52" x2="276.86" y2="223.52" width="0.1524" layer="91"/>
+<junction x="270.51" y="223.52"/>
 </segment>
 </net>
 <net name="-12V" class="0">
@@ -2135,8 +2243,11 @@ We've spent an enormous amount of time creating and checking these footprints an
 <wire x1="266.7" y1="218.44" x2="267.335" y2="218.44" width="0.1524" layer="91"/>
 <pinref part="U$15" gate="G$1" pin="-12V"/>
 <pinref part="D2" gate="D" pin="+"/>
-<wire x1="267.335" y1="218.44" x2="274.32" y2="214.63" width="0.1524" layer="91"/>
+<wire x1="267.335" y1="218.44" x2="270.51" y2="218.44" width="0.1524" layer="91"/>
 <junction x="267.335" y="218.44"/>
+<pinref part="C12" gate="C" pin="2"/>
+<wire x1="270.51" y1="218.44" x2="276.86" y2="218.44" width="0.1524" layer="91"/>
+<junction x="270.51" y="218.44"/>
 </segment>
 </net>
 <net name="N$1" class="0">
@@ -2440,9 +2551,9 @@ We've spent an enormous amount of time creating and checking these footprints an
 <segment>
 <wire x1="261.62" y1="218.44" x2="260.35" y2="218.44" width="0.1524" layer="91"/>
 <pinref part="D2" gate="D" pin="-"/>
-<wire x1="260.35" y1="218.44" x2="237.49" y2="218.44" width="0.1524" layer="91"/>
 <junction x="260.35" y="218.44"/>
 <pinref part="U$10" gate="G$1" pin="-12V"/>
+<wire x1="260.35" y1="218.44" x2="237.49" y2="218.44" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$28" class="1">
