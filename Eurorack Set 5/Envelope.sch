@@ -7622,7 +7622,7 @@ new: Attribute TP_SIGNAL_NAME&lt;br&gt;
 <junction x="38.1" y="151.13"/>
 </segment>
 </net>
-<net name="BUTTON_ALGO" class="0">
+<net name="BUTTON_TIMERANGE" class="0">
 <segment>
 <pinref part="B1" gate="K" pin="A0"/>
 <wire x1="453.39" y1="36.83" x2="453.39" y2="43.18" width="0.1524" layer="91"/>
@@ -7647,7 +7647,7 @@ new: Attribute TP_SIGNAL_NAME&lt;br&gt;
 <label x="157.48" y="81.28" size="1.778" layer="95"/>
 </segment>
 </net>
-<net name="BUTTON_SCALE" class="0">
+<net name="BUTTON_LOOP" class="0">
 <segment>
 <pinref part="B3" gate="K" pin="A0"/>
 <wire x1="453.39" y1="10.16" x2="453.39" y2="16.51" width="0.1524" layer="91"/>
@@ -7665,7 +7665,7 @@ new: Attribute TP_SIGNAL_NAME&lt;br&gt;
 <label x="156.21" y="99.06" size="1.778" layer="95"/>
 </segment>
 </net>
-<net name="BUTTON_BEATS" class="0">
+<net name="BUTTON_TRIGGER" class="0">
 <segment>
 <pinref part="B4" gate="K" pin="A0"/>
 <wire x1="491.49" y1="10.16" x2="491.49" y2="16.51" width="0.1524" layer="91"/>
@@ -8009,112 +8009,112 @@ new: Attribute TP_SIGNAL_NAME&lt;br&gt;
 <label x="313.69" y="93.98" size="1.778" layer="95"/>
 </segment>
 </net>
-<net name="N$1" class="0">
+<net name="LEDD_9" class="0">
 <segment>
 <pinref part="U4" gate="A" pin="Q1"/>
 <wire x1="468.63" y1="113.03" x2="471.17" y2="113.03" width="0.1524" layer="91"/>
 <pinref part="R32" gate="R" pin="2"/>
 </segment>
 </net>
-<net name="N$26" class="0">
+<net name="LEDD_11" class="0">
 <segment>
 <pinref part="U4" gate="A" pin="Q3"/>
 <wire x1="468.63" y1="107.95" x2="471.17" y2="107.95" width="0.1524" layer="91"/>
 <pinref part="R34" gate="R" pin="2"/>
 </segment>
 </net>
-<net name="N$27" class="0">
+<net name="LEDD_12" class="0">
 <segment>
 <pinref part="U4" gate="A" pin="Q4"/>
 <wire x1="468.63" y1="105.41" x2="471.17" y2="105.41" width="0.1524" layer="91"/>
 <pinref part="R35" gate="R" pin="2"/>
 </segment>
 </net>
-<net name="N$30" class="0">
+<net name="LEDD_13" class="0">
 <segment>
 <pinref part="U4" gate="A" pin="Q5"/>
 <wire x1="468.63" y1="102.87" x2="471.17" y2="102.87" width="0.1524" layer="91"/>
 <pinref part="R36" gate="R" pin="2"/>
 </segment>
 </net>
-<net name="N$31" class="0">
+<net name="LEDD_14" class="0">
 <segment>
 <pinref part="U4" gate="A" pin="Q6"/>
 <wire x1="468.63" y1="100.33" x2="471.17" y2="100.33" width="0.1524" layer="91"/>
 <pinref part="R54" gate="R" pin="2"/>
 </segment>
 </net>
-<net name="N$35" class="0">
+<net name="LEDD_15" class="0">
 <segment>
 <pinref part="U4" gate="A" pin="Q7"/>
 <wire x1="468.63" y1="97.79" x2="471.17" y2="97.79" width="0.1524" layer="91"/>
 <pinref part="R55" gate="R" pin="2"/>
 </segment>
 </net>
-<net name="N$19" class="0">
+<net name="LEDD_10" class="0">
 <segment>
 <pinref part="U4" gate="A" pin="Q2"/>
 <wire x1="471.17" y1="110.49" x2="468.63" y2="110.49" width="0.1524" layer="91"/>
 <pinref part="R33" gate="R" pin="2"/>
 </segment>
 </net>
-<net name="N$36" class="0">
+<net name="LEDD_8" class="0">
 <segment>
 <pinref part="U4" gate="A" pin="Q0"/>
 <wire x1="471.17" y1="115.57" x2="468.63" y2="115.57" width="0.1524" layer="91"/>
 <pinref part="R31" gate="R" pin="2"/>
 </segment>
 </net>
-<net name="N$37" class="0">
+<net name="LEDD_0" class="0">
 <segment>
 <pinref part="U5" gate="A" pin="Q0"/>
 <wire x1="379.73" y1="104.14" x2="382.27" y2="104.14" width="0.1524" layer="91"/>
 <pinref part="R56" gate="R" pin="2"/>
 </segment>
 </net>
-<net name="N$38" class="0">
+<net name="LEDD_1" class="0">
 <segment>
 <pinref part="U5" gate="A" pin="Q1"/>
 <wire x1="379.73" y1="101.6" x2="382.27" y2="101.6" width="0.1524" layer="91"/>
 <pinref part="R57" gate="R" pin="2"/>
 </segment>
 </net>
-<net name="N$39" class="0">
+<net name="LEDD_2" class="0">
 <segment>
 <pinref part="U5" gate="A" pin="Q2"/>
 <wire x1="379.73" y1="99.06" x2="382.27" y2="99.06" width="0.1524" layer="91"/>
 <pinref part="R58" gate="R" pin="2"/>
 </segment>
 </net>
-<net name="N$40" class="0">
+<net name="LEDD_3" class="0">
 <segment>
 <pinref part="U5" gate="A" pin="Q3"/>
 <wire x1="379.73" y1="96.52" x2="382.27" y2="96.52" width="0.1524" layer="91"/>
 <pinref part="R59" gate="R" pin="2"/>
 </segment>
 </net>
-<net name="N$41" class="0">
+<net name="LEDD_4" class="0">
 <segment>
 <pinref part="U5" gate="A" pin="Q4"/>
 <wire x1="379.73" y1="93.98" x2="382.27" y2="93.98" width="0.1524" layer="91"/>
 <pinref part="R61" gate="R" pin="2"/>
 </segment>
 </net>
-<net name="N$42" class="0">
+<net name="LEDD_5" class="0">
 <segment>
 <pinref part="U5" gate="A" pin="Q5"/>
 <wire x1="379.73" y1="91.44" x2="382.27" y2="91.44" width="0.1524" layer="91"/>
 <pinref part="R62" gate="R" pin="2"/>
 </segment>
 </net>
-<net name="N$48" class="0">
+<net name="LEDD_6" class="0">
 <segment>
 <pinref part="U5" gate="A" pin="Q6"/>
 <wire x1="379.73" y1="88.9" x2="382.27" y2="88.9" width="0.1524" layer="91"/>
 <pinref part="R63" gate="R" pin="2"/>
 </segment>
 </net>
-<net name="N$49" class="0">
+<net name="LEDD_7" class="0">
 <segment>
 <pinref part="U5" gate="A" pin="Q7"/>
 <wire x1="379.73" y1="86.36" x2="382.27" y2="86.36" width="0.1524" layer="91"/>
@@ -8394,7 +8394,7 @@ new: Attribute TP_SIGNAL_NAME&lt;br&gt;
 <pinref part="R42" gate="R" pin="1"/>
 </segment>
 </net>
-<net name="N$50" class="0">
+<net name="LEDD_16" class="0">
 <segment>
 <wire x1="548.64" y1="124.46" x2="561.34" y2="124.46" width="0.1524" layer="91"/>
 <pinref part="U3" gate="A" pin="Q1"/>
