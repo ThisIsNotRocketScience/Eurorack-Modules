@@ -5269,7 +5269,7 @@ new: Attribute TP_SIGNAL_NAME&lt;br&gt;
 </part>
 <part name="U6" library="EurorackModularParts" deviceset="24LC00T-I/OT" device="" value="24LC16T-I/OT">
 <attribute name="MF" value="MICROCHIP"/>
-<attribute name="MPN" value="24LC00T-I/OT"/>
+<attribute name="MPN" value="24LC16T-I/OT"/>
 <attribute name="OC_FARNELL" value="9757864"/>
 </part>
 <part name="SUPPLY24" library="SparkFun-Aesthetics" deviceset="3.3V" device=""/>
