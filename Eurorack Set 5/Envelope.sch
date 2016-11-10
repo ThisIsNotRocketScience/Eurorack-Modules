@@ -7660,9 +7660,9 @@ new: Attribute TP_SIGNAL_NAME&lt;br&gt;
 <label x="463.55" y="20.32" size="1.778" layer="95"/>
 </segment>
 <segment>
-<pinref part="U1" gate="A" pin="PTA3/EXTAL0/I2C0_SCL/I2C1_SDA"/>
-<wire x1="180.34" y1="99.06" x2="156.21" y2="99.06" width="0.1524" layer="91"/>
-<label x="156.21" y="99.06" size="1.778" layer="95"/>
+<pinref part="U1" gate="A" pin="PTA4/XTAL0/I2C0_SDA/I2C1_SCL"/>
+<wire x1="180.34" y1="96.52" x2="156.21" y2="96.52" width="0.1524" layer="91"/>
+<label x="156.21" y="96.52" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="BUTTON_TRIGGER" class="0">
@@ -7678,9 +7678,9 @@ new: Attribute TP_SIGNAL_NAME&lt;br&gt;
 <label x="500.38" y="20.32" size="1.778" layer="95"/>
 </segment>
 <segment>
-<pinref part="U1" gate="A" pin="PTA4/XTAL0/I2C0_SDA/I2C1_SCL"/>
-<wire x1="180.34" y1="96.52" x2="156.21" y2="96.52" width="0.1524" layer="91"/>
-<label x="156.21" y="96.52" size="1.778" layer="95"/>
+<pinref part="U1" gate="A" pin="PTA3/EXTAL0/I2C0_SCL/I2C1_SDA"/>
+<wire x1="180.34" y1="99.06" x2="156.21" y2="99.06" width="0.1524" layer="91"/>
+<label x="156.21" y="99.06" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="OUT_RELEASEDONE" class="0">
