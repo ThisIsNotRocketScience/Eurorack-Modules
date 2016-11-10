@@ -7181,13 +7181,6 @@ new: Attribute TP_SIGNAL_NAME&lt;br&gt;
 <junction x="38.1" y="76.2"/>
 </segment>
 </net>
-<net name="CLOCK_IN" class="0">
-<segment>
-<pinref part="U1" gate="A" pin="PTB2/IRQ_7/UART0_TX/UART0_RX"/>
-<wire x1="292.1" y1="106.68" x2="325.12" y2="106.68" width="0.1524" layer="91"/>
-<label x="313.69" y="106.68" size="1.778" layer="95"/>
-</segment>
-</net>
 <net name="N$64" class="1">
 <segment>
 <pinref part="J14" gate="G$1" pin="-12V"/>
@@ -7638,13 +7631,6 @@ new: Attribute TP_SIGNAL_NAME&lt;br&gt;
 <pinref part="U1" gate="A" pin="PTB10"/>
 <wire x1="292.1" y1="91.44" x2="325.12" y2="91.44" width="0.1524" layer="91"/>
 <label x="312.42" y="91.44" size="1.778" layer="95"/>
-</segment>
-</net>
-<net name="BUTTON_TPB" class="0">
-<segment>
-<pinref part="U1" gate="A" pin="PTA12/IRQ_13/LPTMR0_ALT2"/>
-<wire x1="180.34" y1="81.28" x2="156.21" y2="81.28" width="0.1524" layer="91"/>
-<label x="157.48" y="81.28" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="BUTTON_LOOP" class="0">
