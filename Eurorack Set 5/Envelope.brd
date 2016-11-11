@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.125" unitdist="mm" unit="mm" style="lines" multiple="1" display="yes" altdistance="0.025" altunitdist="inch" altunit="inch"/>
+<grid distance="5" unitdist="mil" unit="mil" style="lines" multiple="1" display="yes" altdistance="0.025" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="2" name="Route2" color="1" fill="3" visible="no" active="no"/>
@@ -30,7 +30,7 @@
 <layer number="20" name="Dimension" color="15" fill="1" visible="yes" active="yes"/>
 <layer number="21" name="tPlace" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="22" name="bPlace" color="7" fill="1" visible="yes" active="yes"/>
-<layer number="23" name="tOrigins" color="15" fill="1" visible="no" active="yes"/>
+<layer number="23" name="tOrigins" color="15" fill="1" visible="yes" active="yes"/>
 <layer number="24" name="bOrigins" color="15" fill="1" visible="yes" active="yes"/>
 <layer number="25" name="tNames" color="7" fill="1" visible="no" active="yes"/>
 <layer number="26" name="bNames" color="7" fill="1" visible="no" active="yes"/>
@@ -1082,7 +1082,7 @@ new: Attribute TP_SIGNAL_NAME&lt;br&gt;
 </designrules>
 <autorouter>
 <pass name="Default">
-<param name="RoutingGrid" value="0.125mm"/>
+<param name="RoutingGrid" value="4.92125984mil"/>
 <param name="tpViaShape" value="round"/>
 <param name="PrefDir.1" value="*"/>
 <param name="PrefDir.2" value="0"/>
@@ -1936,6 +1936,11 @@ new: Attribute TP_SIGNAL_NAME&lt;br&gt;
 <attribute name="MF" value="" x="43.18" y="86.36" size="1.778" layer="27" rot="R180" display="off"/>
 <attribute name="OC_FARNELL" value="unknown" x="43.18" y="86.36" size="1.778" layer="27" rot="R180" display="off"/>
 </element>
+<element name="C22" library="OPL" package="C0603" value="100nF" x="37.338" y="46.355">
+<attribute name="MPN" value="MC0603F104Z160CT" x="37.338" y="46.355" size="1.778" layer="27" display="off"/>
+<attribute name="MF" value="MULTICOMP" x="37.338" y="46.355" size="1.778" layer="27" display="off"/>
+<attribute name="OC_FARNELL" value="1759017" x="37.338" y="46.355" size="1.778" layer="27" display="off"/>
+</element>
 </elements>
 <signals>
 <signal name="GND" class="3">
@@ -2268,6 +2273,47 @@ new: Attribute TP_SIGNAL_NAME&lt;br&gt;
 <wire x1="28.875" y1="75.625" x2="28.875" y2="75.5" width="0.1778" layer="1"/>
 <via x="28.875" y="75.5" extent="1-16" drill="0.3048"/>
 <wire x1="28.875" y1="75.5" x2="28.625" y2="75.25" width="0.1778" layer="16"/>
+<contactref element="IC2" pad="11"/>
+<contactref element="C22" pad="2"/>
+<wire x1="38.1" y1="46.355" x2="38.1" y2="47.244" width="0.1778" layer="1"/>
+<via x="38.1" y="47.244" extent="1-16" drill="0.3048"/>
+<wire x1="38.1" y1="47.244" x2="38.1" y2="47.371" width="0.1778" layer="16"/>
+<contactref element="IC2" pad="7"/>
+<contactref element="IC2" pad="6"/>
+<contactref element="IC2" pad="5"/>
+<wire x1="38.735" y1="49.47" x2="38.04648125" y2="49.47" width="0.2032" layer="1"/>
+<contactref element="IC2" pad="12"/>
+<contactref element="IC2" pad="13"/>
+<contactref element="IC2" pad="14"/>
+<wire x1="38.04648125" y1="49.47" x2="37.465" y2="49.47" width="0.2032" layer="1"/>
+<wire x1="33.655" y1="54.67" x2="34.925" y2="54.67" width="0.2032" layer="1"/>
+<contactref element="IC2" pad="8"/>
+<contactref element="IC2" pad="10"/>
+<contactref element="IC2" pad="9"/>
+<wire x1="38.735" y1="54.67" x2="37.465" y2="54.67" width="0.2032" layer="1"/>
+<wire x1="32.385" y1="54.67" x2="31.937" y2="55.118" width="0.1778" layer="1"/>
+<wire x1="31.937" y1="55.118" x2="31.75" y2="55.118" width="0.1778" layer="1"/>
+<via x="31.75" y="55.118" extent="1-16" drill="0.3048"/>
+<wire x1="31.75" y1="55.118" x2="31.877" y2="55.245" width="0.1778" layer="16"/>
+<wire x1="31.877" y1="55.245" x2="31.877" y2="55.372" width="0.1778" layer="16"/>
+<wire x1="37.465" y1="54.67" x2="37.398" y2="54.737" width="0.1778" layer="1"/>
+<wire x1="37.398" y1="54.737" x2="37.465" y2="56.134" width="0.1778" layer="1"/>
+<via x="37.465" y="56.134" extent="1-16" drill="0.3048"/>
+<wire x1="37.465" y1="56.134" x2="36.83" y2="54.737" width="0.1778" layer="16"/>
+<wire x1="36.195" y1="54.67" x2="36.135" y2="54.61" width="0.1778" layer="1"/>
+<wire x1="40.005" y1="54.67" x2="40.192" y2="54.229" width="0.1778" layer="1"/>
+<wire x1="40.192" y1="54.229" x2="40.64" y2="54.102" width="0.1778" layer="1"/>
+<via x="40.64" y="54.102" extent="1-16" drill="0.3048"/>
+<wire x1="40.64" y1="54.102" x2="40.259" y2="54.229" width="0.1778" layer="16"/>
+<wire x1="34.925" y1="54.67" x2="36.195" y2="54.67" width="0.1778" layer="1"/>
+<wire x1="36.195" y1="54.67" x2="37.465" y2="54.67" width="0.1778" layer="1"/>
+<wire x1="38.04648125" y1="49.47" x2="38.1" y2="49.41648125" width="0.1778" layer="1"/>
+<wire x1="38.1" y1="49.41648125" x2="38.1" y2="49.276" width="0.1778" layer="1"/>
+<via x="38.1" y="49.276" extent="1-16" drill="0.3048"/>
+<wire x1="38.1" y1="49.276" x2="38.1" y2="49.149" width="0.1778" layer="16"/>
+<wire x1="40.005" y1="49.47" x2="40.005" y2="50.927" width="0.1778" layer="1"/>
+<via x="40.005" y="50.927" extent="1-16" drill="0.3048"/>
+<wire x1="40.005" y1="50.927" x2="40.005" y2="51.054" width="0.1778" layer="16"/>
 </signal>
 <signal name="3.3V" class="2">
 <contactref element="U1" pad="3"/>
@@ -2429,7 +2475,8 @@ new: Attribute TP_SIGNAL_NAME&lt;br&gt;
 <wire x1="34.375" y1="36.25" x2="34.375" y2="41.125" width="0.254" layer="1"/>
 <wire x1="34.375" y1="41.125" x2="33.625" y2="41.875" width="0.254" layer="1"/>
 <wire x1="33.625" y1="41.875" x2="33.625" y2="43.21" width="0.254" layer="1"/>
-<wire x1="33.625" y1="43.21" x2="31.7246" y2="45.1104" width="0.254" layer="1"/>
+<wire x1="33.625" y1="43.21" x2="32.7925" y2="44.0425" width="0.254" layer="1"/>
+<wire x1="32.7925" y1="44.0425" x2="31.7246" y2="45.1104" width="0.254" layer="1"/>
 <wire x1="21.59" y1="7.275" x2="21.59" y2="7.285" width="0.254" layer="1"/>
 <wire x1="21.59" y1="7.285" x2="20.875" y2="8" width="0.254" layer="1"/>
 <wire x1="20.875" y1="8" x2="20.875" y2="17.16" width="0.254" layer="1"/>
@@ -2477,6 +2524,17 @@ new: Attribute TP_SIGNAL_NAME&lt;br&gt;
 <wire x1="23.65" y1="31.4" x2="24.17" y2="31.4" width="0.254" layer="1"/>
 <wire x1="58.42" y1="44.45" x2="57.11" y2="44.45" width="0.254" layer="1"/>
 <wire x1="57.11" y1="44.45" x2="56.625" y2="43.965" width="0.254" layer="1"/>
+<contactref element="C22" pad="1"/>
+<contactref element="IC2" pad="4"/>
+<wire x1="36.195" y1="49.47" x2="36.195" y2="47.625" width="0.254" layer="1"/>
+<wire x1="36.195" y1="47.625" x2="36.285" y2="47.535" width="0.254" layer="1"/>
+<wire x1="36.285" y1="47.535" x2="36.576" y2="47.244" width="0.254" layer="1"/>
+<wire x1="36.576" y1="47.244" x2="36.576" y2="46.355" width="0.254" layer="1"/>
+<wire x1="35.750003125" y1="47.000003125" x2="36.285" y2="47.535" width="0.254" layer="1"/>
+<wire x1="33.500003125" y1="44.750003125" x2="35.750003125" y2="47.000003125" width="0.254" layer="16"/>
+<wire x1="32.7925" y1="44.0425" x2="33.500003125" y2="44.750003125" width="0.254" layer="1"/>
+<via x="35.750003125" y="47.000003125" extent="1-16" drill="0.3048"/>
+<via x="33.500003125" y="44.750003125" extent="1-16" drill="0.3048"/>
 </signal>
 <signal name="SWD_CLK">
 <contactref element="U1" pad="22"/>
@@ -3092,8 +3150,7 @@ new: Attribute TP_SIGNAL_NAME&lt;br&gt;
 <wire x1="52" y1="64.5" x2="48.5" y2="68" width="0.2032" layer="1"/>
 <wire x1="53.25" y1="63.25" x2="52" y2="64.5" width="0.2032" layer="16"/>
 <wire x1="53.25" y1="48.875" x2="53.25" y2="63.25" width="0.2032" layer="1"/>
-<wire x1="56.375" y1="45.75" x2="55.5" y2="46.625" width="0.2032" layer="16"/>
-<wire x1="55.5" y1="46.625" x2="55.375" y2="46.75" width="0.2032" layer="16"/>
+<wire x1="56.375" y1="45.75" x2="54.75" y2="47.375" width="0.2032" layer="16"/>
 <wire x1="58.875" y1="45.75" x2="56.375" y2="45.75" width="0.2032" layer="1"/>
 <wire x1="50.125" y1="86.125" x2="50.0888" y2="86.106" width="0.2032" layer="1"/>
 <wire x1="58.875" y1="45.75" x2="58.8865" y2="45.7615" width="0.2032" layer="1"/>
@@ -3106,7 +3163,6 @@ new: Attribute TP_SIGNAL_NAME&lt;br&gt;
 <via x="56.375" y="45.75" extent="1-16" drill="0.3048"/>
 <wire x1="53.25" y1="48.875" x2="54.75" y2="47.375" width="0.2032" layer="1"/>
 <via x="54.75" y="47.375" extent="1-16" drill="0.3048"/>
-<wire x1="54.75" y1="47.375" x2="55.375" y2="46.75" width="0.2032" layer="16"/>
 </signal>
 <signal name="N$25">
 <contactref element="R21" pad="2"/>
@@ -3213,9 +3269,7 @@ new: Attribute TP_SIGNAL_NAME&lt;br&gt;
 <wire x1="42.25" y1="34.5" x2="38.125" y2="30.375" width="0.2032" layer="16"/>
 <wire x1="42.25" y1="39.5" x2="42.25" y2="34.5" width="0.2032" layer="16"/>
 <wire x1="38.875" y1="42.875" x2="42.25" y2="39.5" width="0.2032" layer="1"/>
-<wire x1="38.875" y1="44.875" x2="38.875" y2="42.875" width="0.2032" layer="1"/>
-<wire x1="36.5" y1="47.25" x2="38.875" y2="44.875" width="0.2032" layer="1"/>
-<wire x1="34.5" y1="47.25" x2="36.5" y2="47.25" width="0.2032" layer="1"/>
+<wire x1="38.875" y1="44.945" x2="38.875" y2="42.875" width="0.2032" layer="1"/>
 <wire x1="34" y1="47.25" x2="34.5" y2="47.25" width="0.2032" layer="16"/>
 <wire x1="33.25" y1="48" x2="34" y2="47.25" width="0.2032" layer="16"/>
 <wire x1="31.75" y1="48" x2="33.25" y2="48" width="0.2032" layer="16"/>
@@ -3237,6 +3291,11 @@ new: Attribute TP_SIGNAL_NAME&lt;br&gt;
 <via x="21.75" y="53.375" extent="1-16" drill="0.3048"/>
 <wire x1="21.75" y1="53.375" x2="22.75" y2="53.375" width="0.2032" layer="16"/>
 <wire x1="22.75" y1="53.375" x2="25.375" y2="50.75" width="0.2032" layer="16"/>
+<wire x1="34.5" y1="47.25" x2="35.306" y2="46.444" width="0.2032" layer="1"/>
+<wire x1="35.306" y1="46.444" x2="35.306" y2="45.974" width="0.2032" layer="1"/>
+<wire x1="35.306" y1="45.974" x2="35.814" y2="45.466" width="0.2032" layer="1"/>
+<wire x1="35.814" y1="45.466" x2="38.354" y2="45.466" width="0.2032" layer="1"/>
+<wire x1="38.354" y1="45.466" x2="38.875" y2="44.945" width="0.2032" layer="1"/>
 </signal>
 <signal name="BUTTON_TIMERANGE">
 <contactref element="B1" pad="1"/>
@@ -4266,12 +4325,6 @@ new: Attribute TP_SIGNAL_NAME&lt;br&gt;
 <via x="56.125" y="69.875" extent="1-16" drill="0.3048"/>
 <via x="57.5" y="68.5" extent="1-16" drill="0.3048"/>
 </signal>
-<signal name="V+">
-<contactref element="IC2" pad="4"/>
-</signal>
-<signal name="V-">
-<contactref element="IC2" pad="11"/>
-</signal>
 <signal name="N$12">
 <contactref element="R13" pad="2"/>
 <contactref element="J4" pad="TIP@3"/>
@@ -4287,9 +4340,6 @@ new: Attribute TP_SIGNAL_NAME&lt;br&gt;
 <contactref element="IC2" pad="2"/>
 <wire x1="33.782" y1="46.355" x2="33.782" y2="49.343" width="0.2032" layer="1"/>
 <wire x1="33.782" y1="49.343" x2="33.655" y2="49.47" width="0.2032" layer="1"/>
-<wire x1="33.782" y1="46.355" x2="35.895" y2="46.355" width="0.2032" layer="1"/>
-<wire x1="35.895" y1="46.355" x2="36.5" y2="45.75" width="0.2032" layer="1"/>
-<wire x1="36.5" y1="45.75" x2="36.5" y2="44.478" width="0.2032" layer="1"/>
 <wire x1="36.5" y1="44.478" x2="36.558" y2="44.42" width="0.2032" layer="1"/>
 <wire x1="36.558" y1="44.42" x2="36.558" y2="42.866" width="0.2032" layer="1"/>
 <wire x1="36.558" y1="42.866" x2="36.457" y2="42.765" width="0.2032" layer="1"/>
@@ -4324,6 +4374,9 @@ new: Attribute TP_SIGNAL_NAME&lt;br&gt;
 <via x="18" y="42" extent="1-16" drill="0.3048"/>
 <via x="23.5" y="44.875" extent="1-16" drill="0.3048"/>
 <via x="30.375" y="50.25" extent="1-16" drill="0.3048"/>
+<wire x1="33.782" y1="46.355" x2="34.163" y2="46.355" width="0.2032" layer="1"/>
+<wire x1="34.163" y1="46.355" x2="36.098" y2="44.42" width="0.2032" layer="1"/>
+<wire x1="36.098" y1="44.42" x2="36.558" y2="44.42" width="0.2032" layer="1"/>
 </signal>
 <signal name="KNOB_CURVE">
 <contactref element="R70" pad="P$2"/>

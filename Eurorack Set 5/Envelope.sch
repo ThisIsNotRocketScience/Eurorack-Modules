@@ -5585,6 +5585,17 @@ new: Attribute TP_SIGNAL_NAME&lt;br&gt;
 <attribute name="MPN" value=""/>
 <attribute name="OC_FARNELL" value="unknown"/>
 </part>
+<part name="C22" library="OPL" deviceset="C*" device="-0603" value="100nF">
+<attribute name="MF" value="MULTICOMP"/>
+<attribute name="MPN" value="MC0603F104Z160CT"/>
+<attribute name="OC_FARNELL" value="1759017"/>
+</part>
+<part name="GND30" library="SparkFun-Aesthetics" deviceset="GND" device=""/>
+<part name="GND49" library="SparkFun-Aesthetics" deviceset="GND" device=""/>
+<part name="SUPPLY19" library="SparkFun-Aesthetics" deviceset="3.3V" device=""/>
+<part name="GND51" library="SparkFun-Aesthetics" deviceset="GND" device=""/>
+<part name="GND90" library="SparkFun-Aesthetics" deviceset="GND" device=""/>
+<part name="GND102" library="SparkFun-Aesthetics" deviceset="GND" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -6425,6 +6436,21 @@ new: Attribute TP_SIGNAL_NAME&lt;br&gt;
 <attribute name="MF" x="565.15" y="124.46" size="1.778" layer="96" rot="R90" display="off"/>
 <attribute name="MPN" x="565.15" y="124.46" size="1.778" layer="96" rot="R90" display="off"/>
 </instance>
+<instance part="IC2" gate="L" x="200.66" y="-73.66"/>
+<instance part="IC2" gate="M" x="205.74" y="-53.34"/>
+<instance part="IC2" gate="N" x="226.06" y="-68.58"/>
+<instance part="IC2" gate="O" x="152.4" y="-101.6"/>
+<instance part="C22" gate="C" x="160.02" y="-104.14" rot="R270">
+<attribute name="OC_FARNELL" x="160.02" y="-104.14" size="1.778" layer="96" display="off"/>
+<attribute name="MF" x="160.02" y="-104.14" size="1.778" layer="96" display="off"/>
+<attribute name="MPN" x="160.02" y="-104.14" size="1.778" layer="96" display="off"/>
+</instance>
+<instance part="GND30" gate="1" x="152.4" y="-113.03"/>
+<instance part="GND49" gate="1" x="160.02" y="-113.03"/>
+<instance part="SUPPLY19" gate="G$1" x="152.4" y="-90.17"/>
+<instance part="GND51" gate="1" x="204.47" y="-87.63"/>
+<instance part="GND90" gate="1" x="228.6" y="-81.28"/>
+<instance part="GND102" gate="1" x="205.74" y="-41.91" rot="R180"/>
 </instances>
 <busses>
 </busses>
@@ -6900,6 +6926,55 @@ new: Attribute TP_SIGNAL_NAME&lt;br&gt;
 <pinref part="D3" gate="LED" pin="-"/>
 <wire x1="575.31" y1="113.03" x2="575.31" y2="111.76" width="0.1524" layer="91"/>
 </segment>
+<segment>
+<pinref part="IC2" gate="O" pin="V-"/>
+<pinref part="GND30" gate="1" pin="GND"/>
+<wire x1="152.4" y1="-110.49" x2="152.4" y2="-109.22" width="0.1524" layer="91"/>
+</segment>
+<segment>
+<pinref part="GND49" gate="1" pin="GND"/>
+<pinref part="C22" gate="C" pin="2"/>
+<wire x1="160.02" y1="-110.49" x2="160.02" y2="-107.95" width="0.1524" layer="91"/>
+</segment>
+<segment>
+<pinref part="IC2" gate="L" pin="OUT"/>
+<wire x1="208.28" y1="-73.66" x2="208.28" y2="-85.09" width="0.1524" layer="91"/>
+<wire x1="208.28" y1="-85.09" x2="204.47" y2="-85.09" width="0.1524" layer="91"/>
+<pinref part="IC2" gate="L" pin="-IN"/>
+<wire x1="204.47" y1="-85.09" x2="193.04" y2="-85.09" width="0.1524" layer="91"/>
+<wire x1="193.04" y1="-85.09" x2="193.04" y2="-76.2" width="0.1524" layer="91"/>
+<pinref part="IC2" gate="L" pin="+IN"/>
+<wire x1="193.04" y1="-71.12" x2="193.04" y2="-76.2" width="0.1524" layer="91"/>
+<junction x="193.04" y="-76.2"/>
+<pinref part="GND51" gate="1" pin="GND"/>
+<junction x="204.47" y="-85.09"/>
+</segment>
+<segment>
+<pinref part="IC2" gate="N" pin="+IN"/>
+<pinref part="IC2" gate="N" pin="-IN"/>
+<wire x1="218.44" y1="-66.04" x2="218.44" y2="-71.12" width="0.1524" layer="91"/>
+<wire x1="218.44" y1="-71.12" x2="218.44" y2="-78.74" width="0.1524" layer="91"/>
+<wire x1="218.44" y1="-78.74" x2="228.6" y2="-78.74" width="0.1524" layer="91"/>
+<pinref part="IC2" gate="N" pin="OUT"/>
+<wire x1="228.6" y1="-78.74" x2="233.68" y2="-78.74" width="0.1524" layer="91"/>
+<wire x1="233.68" y1="-78.74" x2="233.68" y2="-68.58" width="0.1524" layer="91"/>
+<junction x="218.44" y="-71.12"/>
+<pinref part="GND90" gate="1" pin="GND"/>
+<junction x="228.6" y="-78.74"/>
+</segment>
+<segment>
+<pinref part="IC2" gate="M" pin="OUT"/>
+<wire x1="213.36" y1="-53.34" x2="213.36" y2="-44.45" width="0.1524" layer="91"/>
+<wire x1="213.36" y1="-44.45" x2="205.74" y2="-44.45" width="0.1524" layer="91"/>
+<pinref part="IC2" gate="M" pin="+IN"/>
+<wire x1="205.74" y1="-44.45" x2="198.12" y2="-44.45" width="0.1524" layer="91"/>
+<wire x1="198.12" y1="-44.45" x2="198.12" y2="-50.8" width="0.1524" layer="91"/>
+<pinref part="IC2" gate="M" pin="-IN"/>
+<wire x1="198.12" y1="-50.8" x2="198.12" y2="-55.88" width="0.1524" layer="91"/>
+<junction x="198.12" y="-50.8"/>
+<pinref part="GND102" gate="1" pin="GND"/>
+<junction x="205.74" y="-44.45"/>
+</segment>
 </net>
 <net name="3.3V" class="2">
 <segment>
@@ -7068,6 +7143,15 @@ new: Attribute TP_SIGNAL_NAME&lt;br&gt;
 <wire x1="25.4" y1="-82.55" x2="25.4" y2="-78.74" width="0.1524" layer="91"/>
 <label x="25.4" y="-78.74" size="1.778" layer="95" rot="R90"/>
 <pinref part="R42" gate="R" pin="2"/>
+</segment>
+<segment>
+<pinref part="C22" gate="C" pin="1"/>
+<pinref part="IC2" gate="O" pin="V+"/>
+<wire x1="160.02" y1="-100.33" x2="160.02" y2="-93.98" width="0.1524" layer="91"/>
+<wire x1="160.02" y1="-93.98" x2="152.4" y2="-93.98" width="0.1524" layer="91"/>
+<pinref part="SUPPLY19" gate="G$1" pin="3.3V"/>
+<wire x1="152.4" y1="-93.98" x2="152.4" y2="-90.17" width="0.1524" layer="91"/>
+<junction x="152.4" y="-93.98"/>
 </segment>
 </net>
 <net name="SWD_CLK" class="0">
