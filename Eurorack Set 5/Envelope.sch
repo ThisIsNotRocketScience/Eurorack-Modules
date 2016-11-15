@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.05" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
+<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="no" active="no"/>
 <layer number="2" name="Route2" color="1" fill="3" visible="no" active="no"/>
@@ -6448,9 +6448,9 @@ new: Attribute TP_SIGNAL_NAME&lt;br&gt;
 <instance part="GND30" gate="1" x="152.4" y="-113.03"/>
 <instance part="GND49" gate="1" x="160.02" y="-113.03"/>
 <instance part="SUPPLY19" gate="G$1" x="152.4" y="-90.17"/>
-<instance part="GND51" gate="1" x="204.47" y="-87.63"/>
-<instance part="GND90" gate="1" x="228.6" y="-81.28"/>
-<instance part="GND102" gate="1" x="205.74" y="-41.91" rot="R180"/>
+<instance part="GND51" gate="1" x="195.58" y="-50.8" rot="R270"/>
+<instance part="GND90" gate="1" x="190.5" y="-71.12" rot="R270"/>
+<instance part="GND102" gate="1" x="215.9" y="-66.04" rot="R270"/>
 </instances>
 <busses>
 </busses>
@@ -6937,43 +6937,16 @@ new: Attribute TP_SIGNAL_NAME&lt;br&gt;
 <wire x1="160.02" y1="-110.49" x2="160.02" y2="-107.95" width="0.1524" layer="91"/>
 </segment>
 <segment>
-<pinref part="IC2" gate="L" pin="OUT"/>
-<wire x1="208.28" y1="-73.66" x2="208.28" y2="-85.09" width="0.1524" layer="91"/>
-<wire x1="208.28" y1="-85.09" x2="204.47" y2="-85.09" width="0.1524" layer="91"/>
-<pinref part="IC2" gate="L" pin="-IN"/>
-<wire x1="204.47" y1="-85.09" x2="193.04" y2="-85.09" width="0.1524" layer="91"/>
-<wire x1="193.04" y1="-85.09" x2="193.04" y2="-76.2" width="0.1524" layer="91"/>
-<pinref part="IC2" gate="L" pin="+IN"/>
-<wire x1="193.04" y1="-71.12" x2="193.04" y2="-76.2" width="0.1524" layer="91"/>
-<junction x="193.04" y="-76.2"/>
+<pinref part="IC2" gate="M" pin="+IN"/>
 <pinref part="GND51" gate="1" pin="GND"/>
-<junction x="204.47" y="-85.09"/>
+</segment>
+<segment>
+<pinref part="IC2" gate="L" pin="+IN"/>
+<pinref part="GND90" gate="1" pin="GND"/>
 </segment>
 <segment>
 <pinref part="IC2" gate="N" pin="+IN"/>
-<pinref part="IC2" gate="N" pin="-IN"/>
-<wire x1="218.44" y1="-66.04" x2="218.44" y2="-71.12" width="0.1524" layer="91"/>
-<wire x1="218.44" y1="-71.12" x2="218.44" y2="-78.74" width="0.1524" layer="91"/>
-<wire x1="218.44" y1="-78.74" x2="228.6" y2="-78.74" width="0.1524" layer="91"/>
-<pinref part="IC2" gate="N" pin="OUT"/>
-<wire x1="228.6" y1="-78.74" x2="233.68" y2="-78.74" width="0.1524" layer="91"/>
-<wire x1="233.68" y1="-78.74" x2="233.68" y2="-68.58" width="0.1524" layer="91"/>
-<junction x="218.44" y="-71.12"/>
-<pinref part="GND90" gate="1" pin="GND"/>
-<junction x="228.6" y="-78.74"/>
-</segment>
-<segment>
-<pinref part="IC2" gate="M" pin="OUT"/>
-<wire x1="213.36" y1="-53.34" x2="213.36" y2="-44.45" width="0.1524" layer="91"/>
-<wire x1="213.36" y1="-44.45" x2="205.74" y2="-44.45" width="0.1524" layer="91"/>
-<pinref part="IC2" gate="M" pin="+IN"/>
-<wire x1="205.74" y1="-44.45" x2="198.12" y2="-44.45" width="0.1524" layer="91"/>
-<wire x1="198.12" y1="-44.45" x2="198.12" y2="-50.8" width="0.1524" layer="91"/>
-<pinref part="IC2" gate="M" pin="-IN"/>
-<wire x1="198.12" y1="-50.8" x2="198.12" y2="-55.88" width="0.1524" layer="91"/>
-<junction x="198.12" y="-50.8"/>
 <pinref part="GND102" gate="1" pin="GND"/>
-<junction x="205.74" y="-44.45"/>
 </segment>
 </net>
 <net name="3.3V" class="2">
@@ -8493,6 +8466,33 @@ new: Attribute TP_SIGNAL_NAME&lt;br&gt;
 <pinref part="R60" gate="R" pin="1"/>
 </segment>
 </net>
+<net name="N$19" class="3">
+<segment>
+<pinref part="IC2" gate="L" pin="OUT"/>
+<wire x1="208.28" y1="-73.66" x2="208.28" y2="-85.09" width="0.1524" layer="91"/>
+<pinref part="IC2" gate="L" pin="-IN"/>
+<wire x1="208.28" y1="-85.09" x2="193.04" y2="-85.09" width="0.1524" layer="91"/>
+<wire x1="193.04" y1="-85.09" x2="193.04" y2="-76.2" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="N$26" class="3">
+<segment>
+<pinref part="IC2" gate="N" pin="-IN"/>
+<wire x1="218.44" y1="-71.12" x2="218.44" y2="-78.74" width="0.1524" layer="91"/>
+<wire x1="218.44" y1="-78.74" x2="233.68" y2="-78.74" width="0.1524" layer="91"/>
+<pinref part="IC2" gate="N" pin="OUT"/>
+<wire x1="233.68" y1="-78.74" x2="233.68" y2="-68.58" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="N$1" class="0">
+<segment>
+<pinref part="IC2" gate="M" pin="OUT"/>
+<wire x1="213.36" y1="-53.34" x2="213.36" y2="-60.96" width="0.1524" layer="91"/>
+<pinref part="IC2" gate="M" pin="-IN"/>
+<wire x1="213.36" y1="-60.96" x2="198.12" y2="-60.96" width="0.1524" layer="91"/>
+<wire x1="198.12" y1="-60.96" x2="198.12" y2="-55.88" width="0.1524" layer="91"/>
+</segment>
+</net>
 </nets>
 </sheet>
 </sheets>
@@ -8510,114 +8510,6 @@ new: Attribute TP_SIGNAL_NAME&lt;br&gt;
 <approved hash="104,1,78.74,176.53,IC4O,V-,GND,,,"/>
 <approved hash="104,1,152.4,-93.98,IC2O,V+,3.3V,,,"/>
 <approved hash="104,1,152.4,-109.22,IC2O,V-,GND,,,"/>
-<approved hash="206,1,208.28,-73.66,GND,,,,,"/>
-<approved hash="206,1,233.68,-68.58,GND,,,,,"/>
-<approved hash="206,1,213.36,-53.34,GND,,,,,"/>
-<approved hash="208,1,170.18,71.12,GND,sup,,,,"/>
-<approved hash="208,1,170.18,76.2,GND,sup,,,,"/>
-<approved hash="208,1,114.3,106.68,GND,sup,,,,"/>
-<approved hash="208,1,107.95,104.14,GND,sup,,,,"/>
-<approved hash="208,1,125.73,59.69,GND,sup,,,,"/>
-<approved hash="208,1,246.38,0,GND,sup,,,,"/>
-<approved hash="208,1,251.46,-2.54,GND,sup,,,,"/>
-<approved hash="208,1,205.74,-2.54,GND,sup,,,,"/>
-<approved hash="208,1,215.9,0,GND,sup,,,,"/>
-<approved hash="208,1,228.6,-5.08,GND,sup,,,,"/>
-<approved hash="208,1,167.64,5.08,GND,sup,,,,"/>
-<approved hash="208,1,38.1,101.6,GND,sup,,,,"/>
-<approved hash="208,1,38.1,63.5,GND,sup,,,,"/>
-<approved hash="208,1,581.66,17.78,GND,sup,,,,"/>
-<approved hash="208,1,581.66,27.94,GND,sup,,,,"/>
-<approved hash="208,1,646.43,38.1,GND,sup,,,,"/>
-<approved hash="208,1,659.13,22.86,GND,sup,,,,"/>
-<approved hash="208,1,775.97,30.48,GND,sup,,,,"/>
-<approved hash="208,1,775.97,2.54,GND,sup,,,,"/>
-<approved hash="208,1,8.89,76.2,GND,sup,,,,"/>
-<approved hash="208,1,3.81,78.74,GND,sup,,,,"/>
-<approved hash="208,1,1.27,116.84,GND,sup,,,,"/>
-<approved hash="208,1,6.35,114.3,GND,sup,,,,"/>
-<approved hash="208,1,703.58,-25.4,GND,sup,,,,"/>
-<approved hash="208,1,703.58,-7.62,GND,sup,,,,"/>
-<approved hash="208,1,25.4,-60.96,GND,sup,,,,"/>
-<approved hash="208,1,2.54,-41.91,GND,sup,,,,"/>
-<approved hash="208,1,58.42,27.94,GND,sup,,,,"/>
-<approved hash="208,1,299.72,-40.64,GND,sup,,,,"/>
-<approved hash="208,1,313.69,-24.13,GND,sup,,,,"/>
-<approved hash="208,1,283.21,-2.54,GND,sup,,,,"/>
-<approved hash="208,1,438.15,93.98,GND,sup,,,,"/>
-<approved hash="208,1,367.03,135.89,GND,sup,,,,"/>
-<approved hash="208,1,455.93,146.05,GND,sup,,,,"/>
-<approved hash="208,1,350.52,81.28,GND,sup,,,,"/>
-<approved hash="208,1,641.35,121.92,GND,sup,,,,"/>
-<approved hash="208,1,453.39,5.08,GND,sup,,,,"/>
-<approved hash="208,1,471.17,5.08,GND,sup,,,,"/>
-<approved hash="208,1,491.49,5.08,GND,sup,,,,"/>
-<approved hash="208,1,509.27,5.08,GND,sup,,,,"/>
-<approved hash="208,1,471.17,31.75,GND,sup,,,,"/>
-<approved hash="208,1,453.39,31.75,GND,sup,,,,"/>
-<approved hash="208,1,488.95,128.27,GND,sup,,,,"/>
-<approved hash="208,1,481.33,88.9,GND,sup,,,,"/>
-<approved hash="208,1,394.97,71.12,GND,sup,,,,"/>
-<approved hash="208,1,401.32,71.12,GND,sup,,,,"/>
-<approved hash="208,1,407.67,71.12,GND,sup,,,,"/>
-<approved hash="208,1,414.02,71.12,GND,sup,,,,"/>
-<approved hash="208,1,394.97,116.84,GND,sup,,,,"/>
-<approved hash="208,1,401.32,116.84,GND,sup,,,,"/>
-<approved hash="208,1,407.67,116.84,GND,sup,,,,"/>
-<approved hash="208,1,414.02,116.84,GND,sup,,,,"/>
-<approved hash="208,1,520.7,104.14,GND,sup,,,,"/>
-<approved hash="208,1,535.94,156.21,GND,sup,,,,"/>
-<approved hash="208,1,38.1,138.43,GND,sup,,,,"/>
-<approved hash="208,1,1.27,153.67,GND,sup,,,,"/>
-<approved hash="208,1,6.35,151.13,GND,sup,,,,"/>
-<approved hash="208,1,643.89,81.28,GND,sup,,,,"/>
-<approved hash="208,1,638.81,228.6,GND,sup,,,,"/>
-<approved hash="208,1,638.81,184.15,GND,sup,,,,"/>
-<approved hash="208,1,660.4,234.95,GND,sup,,,,"/>
-<approved hash="208,1,660.4,190.5,GND,sup,,,,"/>
-<approved hash="208,1,665.48,87.63,GND,sup,,,,"/>
-<approved hash="208,1,662.94,128.27,GND,sup,,,,"/>
-<approved hash="208,1,88.9,172.72,GND,sup,,,,"/>
-<approved hash="208,1,538.48,88.9,GND,sup,,,,"/>
-<approved hash="208,1,458.47,77.47,GND,sup,,,,"/>
-<approved hash="208,1,461.01,73.66,GND,sup,,,,"/>
-<approved hash="208,1,541.02,85.09,GND,sup,,,,"/>
-<approved hash="208,1,369.57,66.04,GND,sup,,,,"/>
-<approved hash="208,1,372.11,62.23,GND,sup,,,,"/>
-<approved hash="208,1,297.18,132.08,GND,sup,,,,"/>
-<approved hash="208,1,308.61,160.02,GND,sup,,,,"/>
-<approved hash="208,1,78.74,172.72,GND,sup,,,,"/>
-<approved hash="208,1,712.47,40.64,GND,sup,,,,"/>
-<approved hash="208,1,712.47,12.7,GND,sup,,,,"/>
-<approved hash="208,1,-72.39,157.48,GND,sup,,,,"/>
-<approved hash="208,1,-68.58,120.65,GND,sup,,,,"/>
-<approved hash="208,1,-68.58,82.55,GND,sup,,,,"/>
-<approved hash="208,1,285.75,139.7,GND,sup,,,,"/>
-<approved hash="208,1,490.22,86.36,GND,sup,,,,"/>
-<approved hash="208,1,497.84,90.17,GND,sup,,,,"/>
-<approved hash="208,1,505.46,90.17,GND,sup,,,,"/>
-<approved hash="208,1,482.6,128.27,GND,sup,,,,"/>
-<approved hash="208,1,496.57,128.27,GND,sup,,,,"/>
-<approved hash="208,1,504.19,128.27,GND,sup,,,,"/>
-<approved hash="208,1,22.86,176.53,GND,sup,,,,"/>
-<approved hash="208,1,-13.97,191.77,GND,sup,,,,"/>
-<approved hash="208,1,-8.89,189.23,GND,sup,,,,"/>
-<approved hash="208,1,-82.55,193.04,GND,sup,,,,"/>
-<approved hash="208,1,143.51,-63.5,GND,sup,,,,"/>
-<approved hash="208,1,114.3,-50.8,GND,sup,,,,"/>
-<approved hash="208,1,109.22,-48.26,GND,sup,,,,"/>
-<approved hash="208,1,25.4,-119.38,GND,sup,,,,"/>
-<approved hash="208,1,2.54,-100.33,GND,sup,,,,"/>
-<approved hash="208,1,-1.27,-102.87,GND,sup,,,,"/>
-<approved hash="208,1,575.31,111.76,GND,sup,,,,"/>
-<approved hash="208,1,152.4,-110.49,GND,sup,,,,"/>
-<approved hash="208,1,160.02,-110.49,GND,sup,,,,"/>
-<approved hash="208,1,208.28,-73.66,GND,out,,,,"/>
-<approved hash="208,1,204.47,-85.09,GND,sup,,,,"/>
-<approved hash="208,1,233.68,-68.58,GND,out,,,,"/>
-<approved hash="208,1,228.6,-78.74,GND,sup,,,,"/>
-<approved hash="208,1,213.36,-53.34,GND,out,,,,"/>
-<approved hash="208,1,205.74,-44.45,GND,sup,,,,"/>
 </errors>
 </schematic>
 </drawing>
