@@ -1283,6 +1283,18 @@ We've spent an enormous amount of time creating and checking these footprints an
 <text x="-1.651" y="-0.254" size="0.635" layer="27" ratio="10">&gt;VALUE</text>
 <rectangle x1="-1.651" y1="-0.889" x2="1.651" y2="0.889" layer="39"/>
 </package>
+<package name="C0603">
+<description>&lt;b&gt;0603&lt;b&gt;&lt;p&gt;</description>
+<wire x1="-1.397" y1="0.635" x2="1.397" y2="0.635" width="0.127" layer="21"/>
+<wire x1="1.397" y1="0.635" x2="1.397" y2="-0.635" width="0.127" layer="21"/>
+<wire x1="1.397" y1="-0.635" x2="-1.397" y2="-0.635" width="0.127" layer="21"/>
+<wire x1="-1.397" y1="-0.635" x2="-1.397" y2="0.635" width="0.127" layer="21"/>
+<smd name="1" x="-0.762" y="0" dx="0.889" dy="0.889" layer="1" roundness="25"/>
+<smd name="2" x="0.762" y="0" dx="0.889" dy="0.889" layer="1" roundness="25"/>
+<text x="0" y="0.889" size="0.889" layer="25" ratio="11" align="bottom-center">&gt;NAME</text>
+<text x="0" y="-0.9525" size="0.508" layer="27" ratio="10" align="top-center">&gt;VALUE</text>
+<rectangle x1="-1.397" y1="-0.635" x2="1.397" y2="0.635" layer="39"/>
+</package>
 </packages>
 <symbols>
 <symbol name="R">
@@ -1297,6 +1309,18 @@ We've spent an enormous amount of time creating and checking these footprints an
 <pin name="1" x="-3.81" y="0" visible="off" length="short"/>
 <pin name="2" x="3.81" y="0" visible="off" length="short" rot="R180"/>
 <text x="0" y="1.27" size="1.27" layer="95" font="vector" ratio="10" align="bottom-center">&gt;NAME</text>
+<text x="0" y="-1.27" size="1.27" layer="96" font="vector" ratio="10" align="top-center">&gt;VALUE</text>
+</symbol>
+<symbol name="C">
+<wire x1="-0.635" y1="1.016" x2="-0.635" y2="0" width="0.4064" layer="94"/>
+<wire x1="-0.635" y1="0" x2="-0.635" y2="-1.016" width="0.4064" layer="94"/>
+<wire x1="0.635" y1="1.016" x2="0.635" y2="0" width="0.4064" layer="94"/>
+<wire x1="0.635" y1="0" x2="0.635" y2="-1.016" width="0.4064" layer="94"/>
+<wire x1="-0.635" y1="0" x2="-1.27" y2="0" width="0.1524" layer="94"/>
+<wire x1="1.27" y1="0" x2="0.635" y2="0" width="0.1524" layer="94"/>
+<pin name="1" x="-3.81" y="0" visible="off" length="short"/>
+<pin name="2" x="3.81" y="0" visible="off" length="short" rot="R180"/>
+<text x="0" y="1.27" size="1.27" layer="95" ratio="10" align="bottom-center">&gt;NAME</text>
 <text x="0" y="-1.27" size="1.27" layer="96" font="vector" ratio="10" align="top-center">&gt;VALUE</text>
 </symbol>
 </symbols>
@@ -1319,6 +1343,31 @@ We've spent an enormous amount of time creating and checking these footprints an
 <connects>
 <connect gate="R" pin="1" pad="1"/>
 <connect gate="R" pin="2" pad="2"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="C*" prefix="C" uservalue="yes">
+<gates>
+<gate name="C" symbol="C" x="0" y="0"/>
+</gates>
+<devices>
+<device name="-0603" package="C0603">
+<connects>
+<connect gate="C" pin="1" pad="1"/>
+<connect gate="C" pin="2" pad="2"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="-0805" package="C0805">
+<connects>
+<connect gate="C" pin="1" pad="1"/>
+<connect gate="C" pin="2" pad="2"/>
 </connects>
 <technologies>
 <technology name=""/>
@@ -1587,7 +1636,7 @@ http://www.fairchildsemi.com/ds/LM/LM7805.pdf</description>
 </classes>
 <parts>
 <part name="U$1" library="EurorackModularParts" deviceset="EURORACK_PCB" device="4HP"/>
-<part name="U$2" library="EurorackModularParts" deviceset="POT" device="ZEPHPOT">
+<part name="U$2" library="EurorackModularParts" deviceset="POT" device="ZEPHPOT" value="50K">
 <attribute name="DESC" value="Level"/>
 </part>
 <part name="U$3" library="EurorackModularParts" deviceset="POT" device="ZEPHPOT">
@@ -1617,12 +1666,12 @@ http://www.fairchildsemi.com/ds/LM/LM7805.pdf</description>
 <part name="GND3" library="SparkFun-Aesthetics" deviceset="GND" device=""/>
 <part name="GND4" library="SparkFun-Aesthetics" deviceset="GND" device=""/>
 <part name="GND5" library="SparkFun-Aesthetics" deviceset="GND" device=""/>
-<part name="R1" library="OPL" deviceset="R*" device="-0603"/>
-<part name="R2" library="OPL" deviceset="R*" device="-0603"/>
-<part name="R3" library="OPL" deviceset="R*" device="-0603"/>
-<part name="R4" library="OPL" deviceset="R*" device="-0603"/>
-<part name="R5" library="OPL" deviceset="R*" device="-0603"/>
-<part name="R6" library="OPL" deviceset="R*" device="-0603"/>
+<part name="R1" library="OPL" deviceset="R*" device="-0603" value="33K"/>
+<part name="R2" library="OPL" deviceset="R*" device="-0603" value="33K"/>
+<part name="R3" library="OPL" deviceset="R*" device="-0603" value="33K"/>
+<part name="R4" library="OPL" deviceset="R*" device="-0603" value="100K"/>
+<part name="R5" library="OPL" deviceset="R*" device="-0603" value="100K"/>
+<part name="R6" library="OPL" deviceset="R*" device="-0603" value="100K"/>
 <part name="R7" library="OPL" deviceset="R*" device="-0603"/>
 <part name="R8" library="OPL" deviceset="R*" device="-0603"/>
 <part name="R9" library="OPL" deviceset="R*" device="-0603"/>
@@ -1649,6 +1698,13 @@ http://www.fairchildsemi.com/ds/LM/LM7805.pdf</description>
 <part name="GND6" library="SparkFun-Aesthetics" deviceset="GND" device=""/>
 <part name="IC1" library="linear" deviceset="78*" device="TV" technology="05"/>
 <part name="GND7" library="SparkFun-Aesthetics" deviceset="GND" device=""/>
+<part name="C1" library="OPL" deviceset="C*" device="-0603"/>
+<part name="C2" library="OPL" deviceset="C*" device="-0603"/>
+<part name="C3" library="OPL" deviceset="C*" device="-0603"/>
+<part name="C4" library="OPL" deviceset="C*" device="-0603"/>
+<part name="C5" library="OPL" deviceset="C*" device="-0603"/>
+<part name="C6" library="OPL" deviceset="C*" device="-0603"/>
+<part name="C7" library="OPL" deviceset="C*" device="-0603"/>
 </parts>
 <sheets>
 <sheet>
@@ -1675,9 +1731,9 @@ http://www.fairchildsemi.com/ds/LM/LM7805.pdf</description>
 <instance part="R1" gate="R" x="-81.28" y="20.32"/>
 <instance part="R2" gate="R" x="-67.31" y="31.75"/>
 <instance part="R3" gate="R" x="-67.31" y="38.1"/>
-<instance part="R4" gate="R" x="-59.69" y="48.26" rot="R90"/>
-<instance part="R5" gate="R" x="-50.8" y="48.26" rot="R90"/>
-<instance part="R6" gate="R" x="-41.91" y="41.91" rot="R180"/>
+<instance part="R4" gate="R" x="-59.69" y="52.07" rot="R90"/>
+<instance part="R5" gate="R" x="-50.8" y="52.07" rot="R90"/>
+<instance part="R6" gate="R" x="-43.18" y="44.45" rot="R180"/>
 <instance part="R7" gate="R" x="22.86" y="134.62"/>
 <instance part="R8" gate="R" x="22.86" y="121.92"/>
 <instance part="R9" gate="R" x="22.86" y="114.3"/>
@@ -1704,6 +1760,13 @@ http://www.fairchildsemi.com/ds/LM/LM7805.pdf</description>
 <instance part="GND6" gate="1" x="-95.25" y="63.5" rot="R90"/>
 <instance part="IC1" gate="A1" x="-78.74" y="66.04"/>
 <instance part="GND7" gate="1" x="-78.74" y="53.34"/>
+<instance part="C1" gate="C" x="-72.39" y="20.32"/>
+<instance part="C2" gate="C" x="-67.31" y="44.45"/>
+<instance part="C3" gate="C" x="-73.66" y="-2.54"/>
+<instance part="C4" gate="C" x="-73.66" y="-10.16"/>
+<instance part="C5" gate="C" x="-73.66" y="-17.78"/>
+<instance part="C6" gate="C" x="-91.44" y="62.23" rot="R90"/>
+<instance part="C7" gate="C" x="-66.04" y="62.23" rot="R90"/>
 </instances>
 <busses>
 </busses>
@@ -1758,14 +1821,27 @@ http://www.fairchildsemi.com/ds/LM/LM7805.pdf</description>
 <segment>
 <pinref part="U$10" gate="G$1" pin="+12V"/>
 <pinref part="IC1" gate="A1" pin="VI"/>
-<wire x1="-88.9" y1="66.04" x2="-109.22" y2="66.04" width="0.1524" layer="91"/>
+<wire x1="-88.9" y1="66.04" x2="-91.44" y2="66.04" width="0.1524" layer="91"/>
+<pinref part="C6" gate="C" pin="2"/>
+<wire x1="-91.44" y1="66.04" x2="-109.22" y2="66.04" width="0.1524" layer="91"/>
+<junction x="-91.44" y="66.04"/>
 </segment>
 </net>
 <net name="5V" class="0">
 <segment>
 <pinref part="IC1" gate="A1" pin="VO"/>
 <pinref part="SUPPLY1" gate="G$1" pin="5V"/>
-<wire x1="-63.5" y1="66.04" x2="-68.58" y2="66.04" width="0.1524" layer="91"/>
+<wire x1="-63.5" y1="66.04" x2="-66.04" y2="66.04" width="0.1524" layer="91"/>
+<pinref part="C7" gate="C" pin="2"/>
+<wire x1="-66.04" y1="66.04" x2="-68.58" y2="66.04" width="0.1524" layer="91"/>
+<junction x="-66.04" y="66.04"/>
+</segment>
+</net>
+<net name="N$4" class="0">
+<segment>
+<pinref part="R1" gate="R" pin="2"/>
+<pinref part="C1" gate="C" pin="1"/>
+<wire x1="-76.2" y1="20.32" x2="-77.47" y2="20.32" width="0.1524" layer="91"/>
 </segment>
 </net>
 </nets>

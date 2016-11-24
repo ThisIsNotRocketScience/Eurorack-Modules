@@ -538,6 +538,18 @@
 <text x="-1.397" y="-1.3175" size="0.508" layer="27" ratio="10">&gt;VALUE</text>
 <rectangle x1="-1.397" y1="-0.635" x2="1.397" y2="0.635" layer="39"/>
 </package>
+<package name="C0603">
+<description>&lt;b&gt;0603&lt;b&gt;&lt;p&gt;</description>
+<wire x1="-1.397" y1="0.635" x2="1.397" y2="0.635" width="0.127" layer="21"/>
+<wire x1="1.397" y1="0.635" x2="1.397" y2="-0.635" width="0.127" layer="21"/>
+<wire x1="1.397" y1="-0.635" x2="-1.397" y2="-0.635" width="0.127" layer="21"/>
+<wire x1="-1.397" y1="-0.635" x2="-1.397" y2="0.635" width="0.127" layer="21"/>
+<smd name="1" x="-0.762" y="0" dx="0.889" dy="0.889" layer="1" roundness="25"/>
+<smd name="2" x="0.762" y="0" dx="0.889" dy="0.889" layer="1" roundness="25"/>
+<text x="0" y="0.889" size="0.889" layer="25" ratio="11" align="bottom-center">&gt;NAME</text>
+<text x="0" y="-0.9525" size="0.508" layer="27" ratio="10" align="top-center">&gt;VALUE</text>
+<rectangle x1="-1.397" y1="-0.635" x2="1.397" y2="0.635" layer="39"/>
+</package>
 </packages>
 </library>
 <library name="linear">
@@ -759,7 +771,7 @@ design rules under a new name.</description>
 </autorouter>
 <elements>
 <element name="U$1" library="EurorackModularParts" package="EURORACK4HPPCB" value="EURORACK_PCB4HP" x="0" y="0"/>
-<element name="U$2" library="EurorackModularParts" package="OG-POTS_ALPS_POT_VERTICAL" value="" x="10.16" y="88.9" rot="R90">
+<element name="U$2" library="EurorackModularParts" package="OG-POTS_ALPS_POT_VERTICAL" value="50K" x="10.16" y="88.9" rot="R90">
 <attribute name="DESC" value="Level" x="10.16" y="88.9" size="0.8" layer="27" rot="R90" display="off"/>
 </element>
 <element name="U$3" library="EurorackModularParts" package="OG-POTS_ALPS_POT_VERTICAL" value="" x="10.16" y="63.5" rot="R90">
@@ -803,12 +815,12 @@ design rules under a new name.</description>
 <attribute name="SUPPLIER" value="National Semiconductor" x="15.24" y="54.61" size="0.8" layer="27" rot="R180" display="off"/>
 <attribute name="OC_FARNELL" value="1468910" x="15.24" y="54.61" size="0.8" layer="27" rot="R180" display="off"/>
 </element>
-<element name="R1" library="OPL" package="R0603" value="" x="-7.62" y="-22.098"/>
-<element name="R2" library="OPL" package="R0603" value="" x="-7.62" y="-25.4"/>
-<element name="R3" library="OPL" package="R0603" value="" x="-7.62" y="-28.702"/>
-<element name="R4" library="OPL" package="R0603" value="" x="-7.62" y="-32.004"/>
-<element name="R5" library="OPL" package="R0603" value="" x="-7.62" y="-35.306"/>
-<element name="R6" library="OPL" package="R0603" value="" x="-7.62" y="-38.608"/>
+<element name="R1" library="OPL" package="R0603" value="33K" x="-7.62" y="-22.098"/>
+<element name="R2" library="OPL" package="R0603" value="33K" x="-7.62" y="-25.4"/>
+<element name="R3" library="OPL" package="R0603" value="33K" x="-7.62" y="-28.702"/>
+<element name="R4" library="OPL" package="R0603" value="100K" x="-7.62" y="-32.004"/>
+<element name="R5" library="OPL" package="R0603" value="100K" x="-7.62" y="-35.306"/>
+<element name="R6" library="OPL" package="R0603" value="100K" x="-7.62" y="-38.608"/>
 <element name="R7" library="OPL" package="R0603" value="" x="-7.62" y="-41.91"/>
 <element name="R8" library="OPL" package="R0603" value="" x="-7.62" y="-45.212"/>
 <element name="R9" library="OPL" package="R0603" value="" x="-7.62" y="-48.514"/>
@@ -832,6 +844,13 @@ design rules under a new name.</description>
 <element name="R27" library="OPL" package="R0603" value="" x="-7.62" y="-107.95"/>
 <element name="R28" library="OPL" package="R0603" value="" x="-7.62" y="-111.252"/>
 <element name="IC1" library="linear" package="TO220V" value="7805TV" x="-4.572" y="-112.268"/>
+<element name="C1" library="OPL" package="C0603" value="" x="-7.62" y="-122.682"/>
+<element name="C2" library="OPL" package="C0603" value="" x="-7.62" y="-125.984"/>
+<element name="C3" library="OPL" package="C0603" value="" x="-7.62" y="-129.286"/>
+<element name="C4" library="OPL" package="C0603" value="" x="-7.62" y="-132.588"/>
+<element name="C5" library="OPL" package="C0603" value="" x="-7.62" y="-135.89"/>
+<element name="C6" library="OPL" package="C0603" value="" x="-7.62" y="-139.192"/>
+<element name="C7" library="OPL" package="C0603" value="" x="-7.62" y="-142.494"/>
 </elements>
 <signals>
 <signal name="VDD">
@@ -879,11 +898,20 @@ design rules under a new name.</description>
 <contactref element="U$10" pad="10"/>
 <contactref element="U$10" pad="9"/>
 <contactref element="IC1" pad="1"/>
+<contactref element="C6" pad="2"/>
+<wire x1="-7.112" y1="-114.808" x2="-6.858" y2="-139.192" width="0" layer="19" extent="1-1"/>
 <wire x1="15.748" y1="12.7" x2="-7.112" y2="-114.808" width="0" layer="19" extent="1-1"/>
 <wire x1="18.288" y1="12.7" x2="15.748" y2="12.7" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="5V">
 <contactref element="IC1" pad="3"/>
+<contactref element="C7" pad="2"/>
+<wire x1="-2.032" y1="-114.808" x2="-6.858" y2="-142.494" width="0" layer="19" extent="1-1"/>
+</signal>
+<signal name="N$4">
+<contactref element="R1" pad="2"/>
+<contactref element="C1" pad="1"/>
+<wire x1="-6.858" y1="-22.098" x2="-8.382" y2="-122.682" width="0" layer="19" extent="1-1"/>
 </signal>
 </signals>
 </board>
