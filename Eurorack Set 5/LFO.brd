@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="6.5.0">
+<eagle version="7.7.0">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
@@ -1076,6 +1076,9 @@ new: Attribute TP_SIGNAL_NAME&lt;br&gt;
 <autorouter>
 <pass name="Default">
 <param name="RoutingGrid" value="4.92125984mil"/>
+<param name="AutoGrid" value="1"/>
+<param name="Efforts" value="0"/>
+<param name="TopRouterVariant" value="1"/>
 <param name="tpViaShape" value="round"/>
 <param name="PrefDir.1" value="*"/>
 <param name="PrefDir.2" value="0"/>
@@ -2043,7 +2046,6 @@ new: Attribute TP_SIGNAL_NAME&lt;br&gt;
 <contactref element="R51" pad="1"/>
 <contactref element="IC4" pad="4"/>
 <contactref element="C17" pad="1"/>
-<contactref element="C17" pad="1"/>
 <contactref element="R29" pad="1"/>
 <contactref element="R17" pad="P$3"/>
 <contactref element="R68" pad="P$3"/>
@@ -2765,8 +2767,7 @@ new: Attribute TP_SIGNAL_NAME&lt;br&gt;
 <wire x1="5.588" y1="5.168" x2="5.588" y2="3.175" width="0.381" layer="1"/>
 <wire x1="5.588" y1="3.175" x2="5.08" y2="2.667" width="0.381" layer="1"/>
 <wire x1="5.08" y1="2.667" x2="5.08" y2="1.27" width="0.381" layer="1"/>
-<wire x1="23.494003125" y1="8.621003125" x2="15.098003125" y2="8.621003125" width="0.381" layer="1"/>
-<wire x1="38.375003125" y1="23.375003125" x2="23.494003125" y2="8.621003125" width="0.381" layer="1"/>
+<wire x1="23.988003125" y1="8.621003125" x2="15.098003125" y2="8.621003125" width="0.381" layer="1"/>
 <wire x1="39.625003125" y1="24.625003125" x2="38.375003125" y2="23.375003125" width="0.381" layer="16"/>
 <wire x1="39.625003125" y1="33.375003125" x2="39.625003125" y2="24.625003125" width="0.381" layer="1"/>
 <wire x1="5.875003125" y1="5.375003125" x2="5.74" y2="5.32" width="0.381" layer="1"/>
@@ -2777,6 +2778,9 @@ new: Attribute TP_SIGNAL_NAME&lt;br&gt;
 <wire x1="14.351" y1="5.715" x2="13.208" y2="4.572" width="0.381" layer="1"/>
 <wire x1="13.208" y1="4.572" x2="6.488" y2="4.572" width="0.381" layer="1"/>
 <wire x1="6.488" y1="4.572" x2="5.74" y2="5.32" width="0.381" layer="1"/>
+<wire x1="23.988003125" y1="8.621003125" x2="30.353" y2="14.986" width="0.381" layer="1"/>
+<wire x1="30.353" y1="14.986" x2="30.353" y2="15.353" width="0.381" layer="1"/>
+<wire x1="30.353" y1="15.353" x2="38.375003125" y2="23.375003125" width="0.381" layer="1"/>
 </signal>
 <signal name="N$25">
 <contactref element="R21" pad="2"/>

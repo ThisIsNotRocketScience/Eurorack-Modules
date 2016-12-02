@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="6.5.0">
+<eagle version="7.7.0">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.05" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
+<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="no" active="no"/>
 <layer number="2" name="Route2" color="1" fill="3" visible="no" active="no"/>
@@ -6916,7 +6916,6 @@ We've spent an enormous amount of time creating and checking these footprints an
 <segment>
 <pinref part="GND61" gate="1" pin="GND"/>
 <pinref part="D36" gate="LED" pin="-"/>
-<pinref part="D36" gate="LED" pin="-"/>
 <wire x1="433.07" y1="-16.51" x2="429.26" y2="-16.51" width="0.1524" layer="91"/>
 <junction x="429.26" y="-16.51"/>
 </segment>
@@ -7321,7 +7320,6 @@ We've spent an enormous amount of time creating and checking these footprints an
 <pinref part="SUPPLY28" gate="G$1" pin="3.3V"/>
 <pinref part="C17" gate="C" pin="1"/>
 <junction x="88.9" y="191.77"/>
-<pinref part="C17" gate="C" pin="1"/>
 <wire x1="88.9" y1="191.77" x2="78.74" y2="196.85" width="0.1524" layer="91"/>
 <junction x="78.74" y="196.85"/>
 <wire x1="78.74" y1="196.85" x2="78.74" y2="191.77" width="0.1524" layer="91"/>
@@ -8777,7 +8775,7 @@ We've spent an enormous amount of time creating and checking these footprints an
 <approved hash="104,1,180.34,111.76,U1,VDD_VREFH,3.3V,,,"/>
 <approved hash="104,1,581.66,43.18,U7,VDD,3.3V,,,"/>
 <approved hash="104,1,581.66,17.78,U7,VSS,GND,,,"/>
-<approved hash="104,1,477.52,-44.45,U3,VCC,3.3V,,,"/>
+<approved hash="104,1,397.51,13.97,U3,VCC,3.3V,,,"/>
 <approved hash="104,1,397.51,-55.88,U4,VCC,3.3V,,,"/>
 <approved hash="104,1,396.24,-124.46,U5,VCC,3.3V,,,"/>
 <approved hash="104,1,297.18,147.32,U6,VCC,3.3V,,,"/>
@@ -8787,6 +8785,7 @@ We've spent an enormous amount of time creating and checking these footprints an
 <approved hash="104,1,78.74,176.53,IC4O,V-,GND,,,"/>
 <approved hash="104,1,152.4,-93.98,IC2O,V+,3.3V,,,"/>
 <approved hash="104,1,152.4,-109.22,IC2O,V-,GND,,,"/>
+<approved hash="113,1,191.437,-105.41,SJ1,,,,,"/>
 </errors>
 </schematic>
 </drawing>

@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="6.5.0">
+<eagle version="7.7.0">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
@@ -1453,8 +1453,8 @@ Standard SMD solder jumper. Used to automate production. Two varients : Normally
 <part name="IC2" library="EurorackModularParts" deviceset="TL074" device="D"/>
 <part name="U$10" library="EurorackModularParts" deviceset="POWER_SIMPLE" device="10"/>
 <part name="GND11" library="SparkFun-Aesthetics" deviceset="GND" device=""/>
-<part name="C1" library="OPL" deviceset="C*" device="-0603"/>
-<part name="C2" library="OPL" deviceset="C*" device="-0603"/>
+<part name="C1" library="OPL" deviceset="C*" device="-0603" value="100nF"/>
+<part name="C2" library="OPL" deviceset="C*" device="-0603" value="100nF"/>
 <part name="GND14" library="SparkFun-Aesthetics" deviceset="GND" device=""/>
 <part name="GND15" library="SparkFun-Aesthetics" deviceset="GND" device=""/>
 <part name="U$15" library="zephod-components" deviceset="-12V" device=""/>
@@ -1470,8 +1470,8 @@ Standard SMD solder jumper. Used to automate production. Two varients : Normally
 </part>
 <part name="GND32" library="SparkFun-Aesthetics" deviceset="GND" device=""/>
 <part name="GND33" library="SparkFun-Aesthetics" deviceset="GND" device=""/>
-<part name="C11" library="OPL" deviceset="C-POLAR*" device="-A"/>
-<part name="C12" library="OPL" deviceset="C-POLAR*" device="-A"/>
+<part name="C11" library="OPL" deviceset="C-POLAR*" device="-A" value="10uF"/>
+<part name="C12" library="OPL" deviceset="C-POLAR*" device="-A" value="10uF"/>
 <part name="U$3" library="EurorackModularParts" deviceset="AUDIO-JACK" device="INPUT" value="PJ-341">
 <attribute name="DESC" value="Input B"/>
 </part>
@@ -1787,6 +1787,7 @@ Standard SMD solder jumper. Used to automate production. Two varients : Normally
 <wire x1="-110.49" y1="138.43" x2="-133.35" y2="138.43" width="0.1524" layer="91"/>
 <wire x1="-133.35" y1="138.43" x2="-133.35" y2="105.41" width="0.1524" layer="91"/>
 <pinref part="SJ3" gate="1" pin="2"/>
+<junction x="-110.49" y="181.61"/>
 </segment>
 </net>
 <net name="N$14" class="0">
@@ -1989,6 +1990,7 @@ Standard SMD solder jumper. Used to automate production. Two varients : Normally
 <wire x1="-144.78" y1="111.76" x2="-95.25" y2="111.76" width="0.1524" layer="91"/>
 <wire x1="-95.25" y1="111.76" x2="-95.25" y2="107.95" width="0.1524" layer="91"/>
 <pinref part="SJ1" gate="1" pin="2"/>
+<junction x="-110.49" y="208.28"/>
 </segment>
 </net>
 <net name="N$1" class="0">
@@ -2017,12 +2019,8 @@ Standard SMD solder jumper. Used to automate production. Two varients : Normally
 </sheet>
 </sheets>
 <errors>
-<approved hash="104,1,299.72,207.01,IC1P,V+,12V,,,"/>
-<approved hash="104,1,299.72,191.77,IC1P,V-,-12V,,,"/>
-<approved hash="104,1,325.12,100.33,IC2P,V+,12V,,,"/>
-<approved hash="104,1,325.12,85.09,IC2P,V-,-12V,,,"/>
-<approved hash="104,1,-25.4,129.54,U1,V+,12V,,,"/>
-<approved hash="104,1,-25.4,91.44,U1,V-,-12V,,,"/>
+<approved hash="104,1,294.64,207.01,IC2P,V+,12V,,,"/>
+<approved hash="104,1,294.64,191.77,IC2P,V-,-12V,,,"/>
 </errors>
 </schematic>
 </drawing>
