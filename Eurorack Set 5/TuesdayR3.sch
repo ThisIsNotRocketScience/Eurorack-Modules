@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="6.5.0">
+<eagle version="7.7.0">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
@@ -3104,7 +3104,7 @@ BF959 corrected 2008.03.06&lt;br&gt;</description>
 <circle x="0" y="0" radius="2" width="0.1" layer="21"/>
 <circle x="0" y="0" radius="1" width="0.1" layer="21"/>
 <circle x="0" y="0" radius="4" width="0.0254" layer="255"/>
-<text x="0" y="6.35" size="1.778" layer="255" align="bottom-center">&gt;DESC</text>
+<text x="0" y="6.35" size="1.778" layer="254" align="bottom-center">&gt;DESC</text>
 <wire x1="-4.5" y1="5.6" x2="4.5" y2="5.6" width="0.127" layer="51"/>
 <wire x1="4.5" y1="5.6" x2="4.5" y2="-5" width="0.127" layer="51"/>
 <wire x1="4.5" y1="-5" x2="-4.5" y2="-5" width="0.127" layer="51"/>
@@ -3142,7 +3142,7 @@ BF959 corrected 2008.03.06&lt;br&gt;</description>
 <circle x="0" y="0" radius="3" width="1.2" layer="21"/>
 <circle x="0" y="0" radius="1.5" width="2" layer="21"/>
 <circle x="0" y="0" radius="4" width="0.0254" layer="255"/>
-<text x="0" y="6.35" size="1.778" layer="255" align="bottom-center">&gt;DESC</text>
+<text x="0" y="6.35" size="1.778" layer="254" align="bottom-center">&gt;DESC</text>
 <wire x1="-4.5" y1="5.6" x2="4.5" y2="5.6" width="0.127" layer="51"/>
 <wire x1="4.5" y1="5.6" x2="4.5" y2="-5" width="0.127" layer="51"/>
 <wire x1="4.5" y1="-5" x2="-4.5" y2="-5" width="0.127" layer="51"/>
@@ -3205,7 +3205,7 @@ PCB width:
 <text x="0" y="-1.905" size="1.27" layer="27" align="top-center">&gt;VALUE</text>
 <circle x="0" y="0" radius="6" width="1" layer="21"/>
 <circle x="0" y="0" radius="4.75" width="0.002540625" layer="255"/>
-<text x="0" y="7.62" size="1.778" layer="255" align="bottom-center">&gt;DESC</text>
+<text x="0" y="7.62" size="1.778" layer="254" align="bottom-center">&gt;DESC</text>
 </package>
 <package name="ALPS_POT">
 <wire x1="6.73" y1="4.93" x2="6.73" y2="-4.93" width="0.2032" layer="51"/>
@@ -6622,7 +6622,6 @@ new: Attribute TP_SIGNAL_NAME&lt;br&gt;
 <segment>
 <pinref part="GND61" gate="1" pin="GND"/>
 <pinref part="D36" gate="LED" pin="-"/>
-<pinref part="D36" gate="LED" pin="-"/>
 <wire x1="481.33" y1="88.9" x2="481.33" y2="90.17" width="0.1524" layer="91"/>
 <junction x="481.33" y="90.17"/>
 </segment>
@@ -6970,7 +6969,6 @@ new: Attribute TP_SIGNAL_NAME&lt;br&gt;
 <pinref part="SUPPLY28" gate="G$1" pin="3.3V"/>
 <pinref part="C17" gate="C" pin="1"/>
 <junction x="88.9" y="191.77"/>
-<pinref part="C17" gate="C" pin="1"/>
 <wire x1="88.9" y1="191.77" x2="78.74" y2="196.85" width="0.1524" layer="91"/>
 <junction x="78.74" y="196.85"/>
 <wire x1="78.74" y1="196.85" x2="78.74" y2="191.77" width="0.1524" layer="91"/>

@@ -3104,7 +3104,7 @@ BF959 corrected 2008.03.06&lt;br&gt;</description>
 <circle x="0" y="0" radius="2" width="0.1" layer="21"/>
 <circle x="0" y="0" radius="1" width="0.1" layer="21"/>
 <circle x="0" y="0" radius="4" width="0.0254" layer="255"/>
-<text x="0" y="6.35" size="1.778" layer="255" align="bottom-center">&gt;DESC</text>
+<text x="0" y="6.35" size="1.778" layer="254" align="bottom-center">&gt;DESC</text>
 <wire x1="-4.5" y1="5.6" x2="4.5" y2="5.6" width="0.127" layer="51"/>
 <wire x1="4.5" y1="5.6" x2="4.5" y2="-5" width="0.127" layer="51"/>
 <wire x1="4.5" y1="-5" x2="-4.5" y2="-5" width="0.127" layer="51"/>
@@ -3142,7 +3142,7 @@ BF959 corrected 2008.03.06&lt;br&gt;</description>
 <circle x="0" y="0" radius="3" width="1.2" layer="21"/>
 <circle x="0" y="0" radius="1.5" width="2" layer="21"/>
 <circle x="0" y="0" radius="4" width="0.0254" layer="255"/>
-<text x="0" y="6.35" size="1.778" layer="255" align="bottom-center">&gt;DESC</text>
+<text x="0" y="6.35" size="1.778" layer="254" align="bottom-center">&gt;DESC</text>
 <wire x1="-4.5" y1="5.6" x2="4.5" y2="5.6" width="0.127" layer="51"/>
 <wire x1="4.5" y1="5.6" x2="4.5" y2="-5" width="0.127" layer="51"/>
 <wire x1="4.5" y1="-5" x2="-4.5" y2="-5" width="0.127" layer="51"/>
@@ -3205,7 +3205,7 @@ PCB width:
 <text x="0" y="-1.905" size="1.27" layer="27" align="top-center">&gt;VALUE</text>
 <circle x="0" y="0" radius="6" width="1" layer="21"/>
 <circle x="0" y="0" radius="4.75" width="0.002540625" layer="255"/>
-<text x="0" y="7.62" size="1.778" layer="255" align="bottom-center">&gt;DESC</text>
+<text x="0" y="7.62" size="1.778" layer="254" align="bottom-center">&gt;DESC</text>
 </package>
 <package name="ALPS_POT">
 <wire x1="6.73" y1="4.93" x2="6.73" y2="-4.93" width="0.2032" layer="51"/>

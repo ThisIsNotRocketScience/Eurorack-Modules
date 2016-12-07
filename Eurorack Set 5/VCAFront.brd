@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="6.5.0">
+<eagle version="7.7.0">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
@@ -142,7 +142,7 @@
 <layer number="250" name="Descript" color="3" fill="1" visible="no" active="no"/>
 <layer number="251" name="SMDround" color="12" fill="11" visible="no" active="no"/>
 <layer number="254" name="cooling" color="7" fill="1" visible="yes" active="yes"/>
-<layer number="255" name="Panel" color="14" fill="1" visible="no" active="yes"/>
+<layer number="255" name="Panel" color="14" fill="1" visible="yes" active="yes"/>
 </layers>
 <board>
 <plain>
@@ -185,7 +185,7 @@
 <text x="0" y="-1.905" size="1.27" layer="27" align="top-center">&gt;VALUE</text>
 <circle x="0" y="0" radius="6" width="1" layer="21"/>
 <circle x="0" y="0" radius="4.75" width="0.002540625" layer="255"/>
-<text x="0" y="7.62" size="1.778" layer="255" align="bottom-center">&gt;DESC</text>
+<text x="0" y="7.62" size="1.778" layer="254" align="bottom-center">&gt;DESC</text>
 </package>
 <package name="3.5MM-JACK-SWITCH-13MM-INPUT">
 <wire x1="-4.2" y1="-1.25" x2="-3.2" y2="-1.25" width="0" layer="46"/>
@@ -214,7 +214,7 @@
 <circle x="0" y="0" radius="3" width="1.2" layer="21"/>
 <circle x="0" y="0" radius="1.5" width="2" layer="21"/>
 <circle x="0" y="0" radius="4" width="0.0254" layer="255"/>
-<text x="0" y="6.35" size="1.778" layer="255" align="bottom-center">&gt;DESC</text>
+<text x="0" y="6.35" size="1.778" layer="254" align="bottom-center">&gt;DESC</text>
 <wire x1="-4.5" y1="5.6" x2="4.5" y2="5.6" width="0.127" layer="51"/>
 <wire x1="4.5" y1="5.6" x2="4.5" y2="-5" width="0.127" layer="51"/>
 <wire x1="4.5" y1="-5" x2="-4.5" y2="-5" width="0.127" layer="51"/>
@@ -253,7 +253,7 @@
 <circle x="0" y="0" radius="2" width="0.1" layer="21"/>
 <circle x="0" y="0" radius="1" width="0.1" layer="21"/>
 <circle x="0" y="0" radius="4" width="0.0254" layer="255"/>
-<text x="0" y="6.35" size="1.778" layer="255" align="bottom-center">&gt;DESC</text>
+<text x="0" y="6.35" size="1.778" layer="254" align="bottom-center">&gt;DESC</text>
 <wire x1="-4.5" y1="5.6" x2="4.5" y2="5.6" width="0.127" layer="51"/>
 <wire x1="4.5" y1="5.6" x2="4.5" y2="-5" width="0.127" layer="51"/>
 <wire x1="4.5" y1="-5" x2="-4.5" y2="-5" width="0.127" layer="51"/>
@@ -705,6 +705,9 @@ design rules under a new name.</description>
 <autorouter>
 <pass name="Default">
 <param name="RoutingGrid" value="4.92125984mil"/>
+<param name="AutoGrid" value="1"/>
+<param name="Efforts" value="0"/>
+<param name="TopRouterVariant" value="1"/>
 <param name="tpViaShape" value="round"/>
 <param name="PrefDir.1" value="*"/>
 <param name="PrefDir.2" value="0"/>

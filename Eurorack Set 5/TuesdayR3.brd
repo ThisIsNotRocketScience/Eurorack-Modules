@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="6.5.0">
+<eagle version="7.7.0">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
@@ -142,7 +142,7 @@
 <layer number="250" name="Descript" color="3" fill="1" visible="no" active="no"/>
 <layer number="251" name="SMDround" color="12" fill="11" visible="no" active="no"/>
 <layer number="254" name="OrgLBR" color="13" fill="1" visible="no" active="no"/>
-<layer number="255" name="Panel" color="14" fill="1" visible="no" active="yes"/>
+<layer number="255" name="Panel" color="14" fill="1" visible="yes" active="yes"/>
 </layers>
 <board>
 <plain>
@@ -737,7 +737,7 @@ Source: http://www.onsemi.co.jp .. LM137M-D.PDF</description>
 <circle x="0" y="0" radius="3" width="1.2" layer="21"/>
 <circle x="0" y="0" radius="1.5" width="2" layer="21"/>
 <circle x="0" y="0" radius="4" width="0.0254" layer="255"/>
-<text x="0" y="6.35" size="1.778" layer="255" align="bottom-center">&gt;DESC</text>
+<text x="0" y="6.35" size="1.778" layer="254" align="bottom-center">&gt;DESC</text>
 <wire x1="-4.5" y1="5.6" x2="4.5" y2="5.6" width="0.127" layer="51"/>
 <wire x1="4.5" y1="5.6" x2="4.5" y2="-5" width="0.127" layer="51"/>
 <wire x1="4.5" y1="-5" x2="-4.5" y2="-5" width="0.127" layer="51"/>
@@ -776,7 +776,7 @@ Source: http://www.onsemi.co.jp .. LM137M-D.PDF</description>
 <circle x="0" y="0" radius="2" width="0.1" layer="21"/>
 <circle x="0" y="0" radius="1" width="0.1" layer="21"/>
 <circle x="0" y="0" radius="4" width="0.0254" layer="255"/>
-<text x="0" y="6.35" size="1.778" layer="255" align="bottom-center">&gt;DESC</text>
+<text x="0" y="6.35" size="1.778" layer="254" align="bottom-center">&gt;DESC</text>
 <wire x1="-4.5" y1="5.6" x2="4.5" y2="5.6" width="0.127" layer="51"/>
 <wire x1="4.5" y1="5.6" x2="4.5" y2="-5" width="0.127" layer="51"/>
 <wire x1="4.5" y1="-5" x2="-4.5" y2="-5" width="0.127" layer="51"/>
@@ -827,7 +827,7 @@ Source: http://www.onsemi.co.jp .. LM137M-D.PDF</description>
 <text x="0" y="-1.905" size="1.27" layer="27" align="top-center">&gt;VALUE</text>
 <circle x="0" y="0" radius="6" width="1" layer="21"/>
 <circle x="0" y="0" radius="4.75" width="0.002540625" layer="255"/>
-<text x="0" y="7.62" size="1.778" layer="255" align="bottom-center">&gt;DESC</text>
+<text x="0" y="7.62" size="1.778" layer="254" align="bottom-center">&gt;DESC</text>
 </package>
 <package name="SOT95P290X145-5N">
 <smd name="1" x="-1.2954" y="0.9398" dx="1.27" dy="0.5588" layer="1"/>
@@ -1083,6 +1083,9 @@ new: Attribute TP_SIGNAL_NAME&lt;br&gt;
 <autorouter>
 <pass name="Default">
 <param name="RoutingGrid" value="4.92125984mil"/>
+<param name="AutoGrid" value="1"/>
+<param name="Efforts" value="0"/>
+<param name="TopRouterVariant" value="1"/>
 <param name="tpViaShape" value="round"/>
 <param name="PrefDir.1" value="*"/>
 <param name="PrefDir.2" value="0"/>
@@ -2155,7 +2158,6 @@ new: Attribute TP_SIGNAL_NAME&lt;br&gt;
 <wire x1="45.046" y1="90.8338" x2="45.046" y2="89.894" width="0.254" layer="1"/>
 <wire x1="45.046" y1="89.894" x2="45.3" y2="89.64" width="0.254" layer="1"/>
 <contactref element="D36" pad="-"/>
-<contactref element="D36" pad="-"/>
 <contactref element="D37" pad="-"/>
 <contactref element="D38" pad="-"/>
 <contactref element="D39" pad="-"/>
@@ -2292,7 +2294,6 @@ new: Attribute TP_SIGNAL_NAME&lt;br&gt;
 <contactref element="R50" pad="1"/>
 <contactref element="R51" pad="1"/>
 <contactref element="IC4" pad="4"/>
-<contactref element="C17" pad="1"/>
 <contactref element="C17" pad="1"/>
 <contactref element="R29" pad="1"/>
 <contactref element="R17" pad="P$3"/>

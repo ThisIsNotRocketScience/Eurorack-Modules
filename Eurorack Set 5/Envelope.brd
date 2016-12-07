@@ -8,7 +8,7 @@
 </settings>
 <grid distance="5" unitdist="mil" unit="mil" style="lines" multiple="1" display="yes" altdistance="0.025" altunitdist="inch" altunit="inch"/>
 <layers>
-<layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
+<layer number="1" name="Top" color="4" fill="1" visible="no" active="yes"/>
 <layer number="2" name="Route2" color="1" fill="3" visible="no" active="no"/>
 <layer number="3" name="Route3" color="4" fill="3" visible="no" active="no"/>
 <layer number="4" name="Route4" color="1" fill="4" visible="no" active="no"/>
@@ -23,11 +23,11 @@
 <layer number="13" name="Route13" color="4" fill="5" visible="no" active="no"/>
 <layer number="14" name="Route14" color="1" fill="6" visible="no" active="no"/>
 <layer number="15" name="Route15" color="4" fill="6" visible="no" active="no"/>
-<layer number="16" name="Bottom" color="1" fill="1" visible="yes" active="yes"/>
-<layer number="17" name="Pads" color="2" fill="1" visible="yes" active="yes"/>
-<layer number="18" name="Vias" color="2" fill="1" visible="yes" active="yes"/>
-<layer number="19" name="Unrouted" color="6" fill="1" visible="yes" active="yes"/>
-<layer number="20" name="Dimension" color="15" fill="1" visible="yes" active="yes"/>
+<layer number="16" name="Bottom" color="1" fill="1" visible="no" active="yes"/>
+<layer number="17" name="Pads" color="2" fill="1" visible="no" active="yes"/>
+<layer number="18" name="Vias" color="2" fill="1" visible="no" active="yes"/>
+<layer number="19" name="Unrouted" color="6" fill="1" visible="no" active="yes"/>
+<layer number="20" name="Dimension" color="15" fill="1" visible="no" active="yes"/>
 <layer number="21" name="tPlace" color="7" fill="1" visible="no" active="yes"/>
 <layer number="22" name="bPlace" color="7" fill="1" visible="no" active="yes"/>
 <layer number="23" name="tOrigins" color="15" fill="1" visible="no" active="yes"/>
@@ -142,7 +142,7 @@
 <layer number="250" name="Descript" color="3" fill="1" visible="no" active="no"/>
 <layer number="251" name="SMDround" color="12" fill="11" visible="no" active="no"/>
 <layer number="254" name="OrgLBR" color="13" fill="1" visible="no" active="no"/>
-<layer number="255" name="Panel" color="14" fill="1" visible="no" active="yes"/>
+<layer number="255" name="Panel" color="14" fill="1" visible="yes" active="yes"/>
 </layers>
 <board>
 <plain>
@@ -737,7 +737,7 @@ Source: http://www.onsemi.co.jp .. LM137M-D.PDF</description>
 <circle x="0" y="0" radius="3" width="1.2" layer="21"/>
 <circle x="0" y="0" radius="1.5" width="2" layer="21"/>
 <circle x="0" y="0" radius="4" width="0.0254" layer="255"/>
-<text x="0" y="6.35" size="1.778" layer="255" align="bottom-center">&gt;DESC</text>
+<text x="0" y="6.35" size="1.778" layer="254" align="bottom-center">&gt;DESC</text>
 <wire x1="-4.5" y1="5.6" x2="4.5" y2="5.6" width="0.127" layer="51"/>
 <wire x1="4.5" y1="5.6" x2="4.5" y2="-5" width="0.127" layer="51"/>
 <wire x1="4.5" y1="-5" x2="-4.5" y2="-5" width="0.127" layer="51"/>
@@ -776,7 +776,7 @@ Source: http://www.onsemi.co.jp .. LM137M-D.PDF</description>
 <circle x="0" y="0" radius="2" width="0.1" layer="21"/>
 <circle x="0" y="0" radius="1" width="0.1" layer="21"/>
 <circle x="0" y="0" radius="4" width="0.0254" layer="255"/>
-<text x="0" y="6.35" size="1.778" layer="255" align="bottom-center">&gt;DESC</text>
+<text x="0" y="6.35" size="1.778" layer="254" align="bottom-center">&gt;DESC</text>
 <wire x1="-4.5" y1="5.6" x2="4.5" y2="5.6" width="0.127" layer="51"/>
 <wire x1="4.5" y1="5.6" x2="4.5" y2="-5" width="0.127" layer="51"/>
 <wire x1="4.5" y1="-5" x2="-4.5" y2="-5" width="0.127" layer="51"/>
@@ -827,7 +827,7 @@ Source: http://www.onsemi.co.jp .. LM137M-D.PDF</description>
 <text x="0" y="-1.905" size="1.27" layer="27" align="top-center">&gt;VALUE</text>
 <circle x="0" y="0" radius="6" width="1" layer="21"/>
 <circle x="0" y="0" radius="4.75" width="0.002540625" layer="255"/>
-<text x="0" y="7.62" size="1.778" layer="255" align="bottom-center">&gt;DESC</text>
+<text x="0" y="7.62" size="1.778" layer="254" align="bottom-center">&gt;DESC</text>
 </package>
 <package name="SOT95P290X145-5N">
 <smd name="1" x="-1.2954" y="0.9398" dx="1.27" dy="0.5588" layer="1"/>
@@ -1538,11 +1538,13 @@ We've spent an enormous amount of time creating and checking these footprints an
 <attribute name="OC_FARNELL" value="unknown" x="53.34" y="58.42" size="1.778" layer="27" rot="R180" display="off"/>
 <attribute name="MF" value="" x="53.34" y="58.42" size="1.778" layer="27" rot="R180" display="off"/>
 </element>
-<element name="B4" library="zephod-components" package="4P-6.0X6.0X5.0H" value="BUTTON-4P-3110040P1" x="45.085" y="99.06" rot="R90">
-<attribute name="DESC" value="Trigger" x="41.275" y="93.98" size="1.778" layer="255" rot="R180" align="bottom-center" display="off"/>
+<element name="B4" library="zephod-components" package="4P-6.0X6.0X5.0H" value="BUTTON-4P-3110040P1" x="45.085" y="99.06" smashed="yes" rot="R90">
+<attribute name="DESC" value="Trigger" x="40.005" y="99.06" size="1.778" layer="255" rot="R90" align="bottom-center" display="off"/>
 <attribute name="OC_FARNELL" value="unknown" x="45.085" y="99.06" size="1.778" layer="27" rot="R90" display="off"/>
 <attribute name="MF" value="" x="45.085" y="99.06" size="1.778" layer="27" rot="R90" display="off"/>
 <attribute name="MPN" value="" x="45.085" y="99.06" size="1.778" layer="27" rot="R90" display="off"/>
+<attribute name="NAME" x="41.585" y="99.06" size="1" layer="25" ratio="11" rot="R90" align="bottom-center"/>
+<attribute name="VALUE" x="48.585" y="99.06" size="1" layer="27" ratio="10" rot="R90" align="top-center"/>
 </element>
 <element name="J1" library="EurorackModularParts" package="3.5MM-JACK-SWITCH-13MM-INPUT" value="PJ-341" x="7.62" y="68.58">
 <attribute name="DESC" value="Decay" x="7.62" y="68.58" size="1.778" layer="27" display="off"/>
@@ -1551,17 +1553,21 @@ We've spent an enormous amount of time creating and checking these footprints an
 <attribute name="OC_FARNELL" value="unknown" x="7.62" y="68.58" size="1.778" layer="27" display="off"/>
 <attribute name="MF" value="" x="7.62" y="68.58" size="1.778" layer="27" display="off"/>
 </element>
-<element name="B1" library="zephod-components" package="4P-6.0X6.0X5.0H" value="BUTTON-4P-3110040P1" x="7.62" y="24.13">
-<attribute name="DESC" value="Mode" x="2.54" y="27.94" size="1.778" layer="255" rot="R90" align="bottom-center" display="off"/>
+<element name="B1" library="zephod-components" package="4P-6.0X6.0X5.0H" value="BUTTON-4P-3110040P1" x="7.62" y="24.13" smashed="yes">
+<attribute name="DESC" value="Mode" x="7.62" y="29.21" size="1.778" layer="255" align="bottom-center" display="off"/>
 <attribute name="OC_FARNELL" value="unknown" x="7.62" y="24.13" size="1.778" layer="27" display="off"/>
 <attribute name="MF" value="" x="7.62" y="24.13" size="1.778" layer="27" display="off"/>
 <attribute name="MPN" value="" x="7.62" y="24.13" size="1.778" layer="27" display="off"/>
+<attribute name="NAME" x="7.62" y="27.63" size="1" layer="25" ratio="11" align="bottom-center"/>
+<attribute name="VALUE" x="7.62" y="20.63" size="1" layer="27" ratio="10" align="top-center"/>
 </element>
-<element name="B3" library="zephod-components" package="4P-6.0X6.0X5.0H" value="BUTTON-4P-3110040P1" x="21.59" y="24.13" rot="R270">
-<attribute name="DESC" value="Time" x="25.4" y="29.21" size="1.778" layer="255" align="bottom-center" display="off"/>
+<element name="B3" library="zephod-components" package="4P-6.0X6.0X5.0H" value="BUTTON-4P-3110040P1" x="21.59" y="24.13" smashed="yes" rot="R270">
+<attribute name="DESC" value="Time" x="26.67" y="24.13" size="1.778" layer="255" rot="R270" align="bottom-center" display="off"/>
 <attribute name="OC_FARNELL" value="unknown" x="21.59" y="24.13" size="1.778" layer="27" rot="R270" display="off"/>
 <attribute name="MF" value="" x="21.59" y="24.13" size="1.778" layer="27" rot="R270" display="off"/>
 <attribute name="MPN" value="" x="21.59" y="24.13" size="1.778" layer="27" rot="R270" display="off"/>
+<attribute name="NAME" x="25.09" y="24.13" size="1" layer="25" ratio="11" rot="R270" align="bottom-center"/>
+<attribute name="VALUE" x="18.09" y="24.13" size="1" layer="27" ratio="10" rot="R270" align="top-center"/>
 </element>
 <element name="C14" library="OPL" package="C0603" value="100nF" x="53.975" y="81.28">
 <attribute name="OC_FARNELL" value="1759017" x="53.975" y="81.28" size="1.778" layer="27" display="off"/>
