@@ -4790,7 +4790,7 @@ new: Attribute TP_SIGNAL_NAME&lt;br&gt;
 <part name="GND27" library="SparkFun-Aesthetics" deviceset="GND" device=""/>
 <part name="GND28" library="SparkFun-Aesthetics" deviceset="GND" device=""/>
 <part name="GND29" library="SparkFun-Aesthetics" deviceset="GND" device=""/>
-<part name="IC1" library="ld-components" deviceset="LD1117A?*" device="S" technology="33TR">
+<part name="IC1" library="ld-components" deviceset="LD1117A?*" device="S" technology="33TR" value="LD1117S33CTR">
 <attribute name="MF" value="STMICROELECTRONICS"/>
 <attribute name="MPN" value="LD1117AS33TR"/>
 <attribute name="OC_FARNELL" value="1467776"/>

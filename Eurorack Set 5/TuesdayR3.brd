@@ -1226,7 +1226,7 @@ new: Attribute TP_SIGNAL_NAME&lt;br&gt;
 <attribute name="MF" value="AVX" x="3.19" y="41.5" size="1.778" layer="27" rot="R90" display="off"/>
 <attribute name="MPN" value="TAJB106K020RNJ" x="3.19" y="41.5" size="1.778" layer="27" rot="R90" display="off"/>
 </element>
-<element name="IC1" library="ld-components" package="SOT223" value="LD1117AS33TR" x="11.43" y="41.275" rot="R270">
+<element name="IC1" library="ld-components" package="SOT223" value="LD1117S33CTR" x="11.43" y="41.275" rot="R270">
 <attribute name="OC_FARNELL" value="1467776" x="11.43" y="41.275" size="1.778" layer="27" rot="R270" display="off"/>
 <attribute name="MF" value="STMICROELECTRONICS" x="11.43" y="41.275" size="1.778" layer="27" rot="R270" display="off"/>
 <attribute name="MPN" value="LD1117AS33TR" x="11.43" y="41.275" size="1.778" layer="27" rot="R270" display="off"/>
