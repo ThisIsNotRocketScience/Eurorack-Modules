@@ -32,8 +32,8 @@
 <layer number="22" name="bPlace" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="23" name="tOrigins" color="15" fill="1" visible="yes" active="yes"/>
 <layer number="24" name="bOrigins" color="15" fill="1" visible="yes" active="yes"/>
-<layer number="25" name="tNames" color="7" fill="1" visible="no" active="yes"/>
-<layer number="26" name="bNames" color="7" fill="1" visible="no" active="yes"/>
+<layer number="25" name="tNames" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="26" name="bNames" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="27" name="tValues" color="7" fill="1" visible="no" active="yes"/>
 <layer number="28" name="bValues" color="7" fill="1" visible="no" active="yes"/>
 <layer number="29" name="tStop" color="7" fill="3" visible="no" active="yes"/>
@@ -142,10 +142,29 @@
 <layer number="250" name="Descript" color="3" fill="1" visible="no" active="no"/>
 <layer number="251" name="SMDround" color="12" fill="11" visible="no" active="no"/>
 <layer number="254" name="OrgLBR" color="13" fill="1" visible="no" active="no"/>
-<layer number="255" name="Panel" color="14" fill="1" visible="yes" active="yes"/>
+<layer number="255" name="Panel" color="14" fill="1" visible="no" active="yes"/>
 </layers>
 <board>
 <plain>
+<text x="12.319" y="18.923" size="1.778" layer="26" rot="MR0">J14</text>
+<text x="6.604" y="9.525" size="1.778" layer="25">J1</text>
+<text x="6.223" y="50.165" size="1.778" layer="25">J2</text>
+<text x="6.223" y="29.718" size="1.778" layer="25">J3</text>
+<text x="6.223" y="98.552" size="1.778" layer="25">J4</text>
+<text x="36.576" y="98.425" size="1.778" layer="25">J5</text>
+<text x="52.07" y="98.425" size="1.778" layer="25">J6</text>
+<text x="52.07" y="23.241" size="1.778" layer="25">J7</text>
+<text x="51.943" y="8.509" size="1.778" layer="25">J8</text>
+<text x="51.943" y="80.391" size="1.778" layer="25">J9</text>
+<text x="51.181" y="65.151" size="1.778" layer="25">J10</text>
+<text x="51.435" y="49.911" size="1.778" layer="25">J11</text>
+<text x="39.116" y="8.636" size="1.778" layer="25">J12</text>
+<text x="39.243" y="23.368" size="1.778" layer="25">J13</text>
+<text x="20.955" y="98.171" size="1.778" layer="25">R70</text>
+<text x="20.574" y="49.911" size="1.778" layer="25">R68</text>
+<text x="20.574" y="29.464" size="1.778" layer="25">R69</text>
+<text x="20.701" y="9.271" size="1.778" layer="25">R17</text>
+<text x="37.338" y="49.276" size="1.778" layer="25">U1</text>
 </plain>
 <libraries>
 <library name="OPL">
@@ -954,25 +973,6 @@ Source: http://www.onsemi.co.jp .. LM137M-D.PDF</description>
 </package>
 </packages>
 </library>
-<library name="adafruit">
-<packages>
-<package name="FIDUCIAL_1MM">
-<smd name="1" x="0" y="0" dx="1" dy="1" layer="1" roundness="100" stop="no" cream="no"/>
-<polygon width="0.127" layer="29">
-<vertex x="-1" y="0" curve="90"/>
-<vertex x="0" y="-1" curve="90"/>
-<vertex x="1" y="0" curve="90"/>
-<vertex x="0" y="1" curve="90"/>
-</polygon>
-<polygon width="0.127" layer="41">
-<vertex x="-1" y="0" curve="90"/>
-<vertex x="0" y="-1" curve="90"/>
-<vertex x="1" y="0" curve="90"/>
-<vertex x="0" y="1" curve="90"/>
-</polygon>
-</package>
-</packages>
-</library>
 <library name="testpad">
 <description>&lt;b&gt;Test Pins/Pads&lt;/b&gt;&lt;p&gt;
 Cream on SMD OFF.&lt;br&gt;
@@ -1196,156 +1196,205 @@ new: Attribute TP_SIGNAL_NAME&lt;br&gt;
 <attribute name="OC_FARNELL" value="2321481" x="18.75" y="50.25" size="0.6" layer="27" display="off"/>
 <attribute name="MF" value="NXP" x="38.75" y="50.25" size="1.778" layer="27" display="off"/>
 </element>
-<element name="SWD1" library="carrilib with jtags" package="M50-3600542" value="CORTEX_SWD" x="18.48" y="58.095" rot="MR0">
+<element name="SWD1" library="carrilib with jtags" package="M50-3600542" value="CORTEX_SWD" x="18.48" y="58.095" smashed="yes" rot="MR0">
 <attribute name="OC_FARNELL" value="unknown" x="18.48" y="58.095" size="1.778" layer="28" rot="MR0" display="off"/>
 <attribute name="MF" value="" x="18.48" y="58.095" size="1.778" layer="28" rot="MR0" display="off"/>
 <attribute name="MPN" value="" x="18.48" y="58.095" size="1.778" layer="28" rot="MR0" display="off"/>
+<attribute name="NAME" x="16.58" y="58.412" size="0.8128" layer="26" rot="MR180"/>
 </element>
-<element name="C10" library="OPL" package="C0603" value="100nF" x="32" y="50.75">
+<element name="C10" library="OPL" package="C0603" value="100nF" x="32" y="50.75" smashed="yes">
 <attribute name="OC_FARNELL" value="1759017" x="32" y="50.75" size="1.778" layer="27" display="off"/>
 <attribute name="MF" value="MULTICOMP" x="32" y="50.75" size="1.778" layer="27" display="off"/>
 <attribute name="MPN" value="MC0603F104Z160CT" x="32" y="50.75" size="1.778" layer="27" display="off"/>
+<attribute name="NAME" x="32" y="50.369" size="0.889" layer="25" ratio="11" align="bottom-center"/>
+<attribute name="VALUE" x="32" y="49.7975" size="0.508" layer="27" ratio="10" align="top-center"/>
 </element>
-<element name="C8" library="OPL" package="C0603" value="100nF" x="17.145" y="42.295" rot="R270">
+<element name="C8" library="OPL" package="C0603" value="100nF" x="17.145" y="42.295" smashed="yes" rot="R270">
 <attribute name="OC_FARNELL" value="1759017" x="17.145" y="42.295" size="1.778" layer="27" rot="R270" display="off"/>
 <attribute name="MF" value="MULTICOMP" x="17.145" y="42.295" size="1.778" layer="27" rot="R270" display="off"/>
 <attribute name="MPN" value="MC0603F104Z160CT" x="17.145" y="42.295" size="1.778" layer="27" rot="R270" display="off"/>
+<attribute name="NAME" x="16.764" y="42.295" size="0.889" layer="25" ratio="11" rot="R270" align="bottom-center"/>
+<attribute name="VALUE" x="16.1925" y="42.295" size="0.508" layer="27" ratio="10" rot="R270" align="top-center"/>
 </element>
-<element name="C11" library="OPL" package="C0603" value="100nF" x="5.815" y="41.49" rot="R270">
+<element name="C11" library="OPL" package="C0603" value="100nF" x="5.815" y="41.49" smashed="yes" rot="R270">
 <attribute name="OC_FARNELL" value="1759017" x="5.815" y="41.49" size="1.778" layer="27" rot="R270" display="off"/>
 <attribute name="MF" value="MULTICOMP" x="5.815" y="41.49" size="1.778" layer="27" rot="R270" display="off"/>
 <attribute name="MPN" value="MC0603F104Z160CT" x="5.815" y="41.49" size="1.778" layer="27" rot="R270" display="off"/>
+<attribute name="NAME" x="5.434" y="41.49" size="0.889" layer="25" ratio="11" rot="R270" align="bottom-center"/>
+<attribute name="VALUE" x="4.8625" y="41.49" size="0.508" layer="27" ratio="10" rot="R270" align="top-center"/>
 </element>
-<element name="C12" library="OPL" package="AVX-A" value="10uF" x="20.81" y="39.66">
+<element name="C12" library="OPL" package="AVX-A" value="10uF" x="20.81" y="39.66" smashed="yes">
 <attribute name="OC_FARNELL" value="197427" x="20.81" y="39.66" size="1.778" layer="27" display="off"/>
 <attribute name="MF" value="AVX" x="20.81" y="39.66" size="1.778" layer="27" display="off"/>
 <attribute name="MPN" value="TAJB106K020RNJ" x="20.81" y="39.66" size="1.778" layer="27" display="off"/>
+<attribute name="NAME" x="19.6545" y="39.1745" size="0.889" layer="25" ratio="11"/>
+<attribute name="VALUE" x="19.21" y="38.168" size="0.635" layer="27" ratio="10"/>
 </element>
-<element name="C13" library="OPL" package="AVX-A" value="10uF" x="3.19" y="41.5" rot="R90">
+<element name="C13" library="OPL" package="AVX-A" value="10uF" x="3.19" y="41.5" smashed="yes" rot="R90">
 <attribute name="OC_FARNELL" value="197427" x="3.19" y="41.5" size="1.778" layer="27" rot="R90" display="off"/>
 <attribute name="MF" value="AVX" x="3.19" y="41.5" size="1.778" layer="27" rot="R90" display="off"/>
 <attribute name="MPN" value="TAJB106K020RNJ" x="3.19" y="41.5" size="1.778" layer="27" rot="R90" display="off"/>
+<attribute name="NAME" x="3.6755" y="40.2175" size="0.889" layer="25" ratio="11" rot="R90"/>
+<attribute name="VALUE" x="4.682" y="39.9" size="0.635" layer="27" ratio="10" rot="R90"/>
 </element>
-<element name="IC1" library="ld-components" package="SOT223" value="LD1117S33CTR" x="11.43" y="41.275" rot="R270">
+<element name="IC1" library="ld-components" package="SOT223" value="LD1117S33CTR" x="11.43" y="41.275" smashed="yes" rot="R270">
 <attribute name="OC_FARNELL" value="1467776" x="11.43" y="41.275" size="1.778" layer="27" rot="R270" display="off"/>
 <attribute name="MF" value="STMICROELECTRONICS" x="11.43" y="41.275" size="1.778" layer="27" rot="R270" display="off"/>
 <attribute name="MPN" value="LD1117AS33TR" x="11.43" y="41.275" size="1.778" layer="27" rot="R270" display="off"/>
 </element>
-<element name="J14" library="eurorack" package="POWER_16" value="POWER" x="10.795" y="19.185" rot="MR180">
+<element name="J14" library="eurorack" package="POWER_16" value="POWER" x="10.795" y="19.185" smashed="yes" rot="MR180">
 <attribute name="OC_FARNELL" value="unknown" x="10.795" y="19.185" size="1.778" layer="28" rot="MR180" display="off"/>
 <attribute name="MF" value="" x="10.795" y="19.185" size="1.778" layer="28" rot="MR180" display="off"/>
 <attribute name="MPN" value="" x="10.795" y="19.185" size="1.778" layer="28" rot="MR180" display="off"/>
 </element>
-<element name="R16" library="OPL" package="R0603" value="100k" x="15.24" y="48.895" rot="R90">
+<element name="R16" library="OPL" package="R0603" value="100k" x="15.24" y="48.895" smashed="yes" rot="R90">
 <attribute name="OC_FARNELL" value="unknown" x="15.24" y="48.895" size="1.778" layer="27" rot="R90" display="off"/>
 <attribute name="MF" value="" x="15.24" y="48.895" size="1.778" layer="27" rot="R90" display="off"/>
 <attribute name="MPN" value="" x="15.24" y="48.895" size="1.778" layer="27" rot="R90" display="off"/>
+<attribute name="NAME" x="15.625" y="47.752" size="0.889" layer="25" ratio="11" rot="R90"/>
+<attribute name="VALUE" x="16.5575" y="47.498" size="0.508" layer="27" ratio="10" rot="R90"/>
 </element>
-<element name="R12" library="OPL" package="R0603" value="33k" x="42.25" y="41.365" rot="R270">
+<element name="R12" library="OPL" package="R0603" value="33k" x="42.25" y="41.365" smashed="yes" rot="R270">
 <attribute name="OC_FARNELL" value="unknown" x="42.25" y="41.365" size="1.778" layer="27" rot="R270" display="off"/>
 <attribute name="MF" value="" x="42.25" y="41.365" size="1.778" layer="27" rot="R270" display="off"/>
 <attribute name="MPN" value="" x="42.25" y="41.365" size="1.778" layer="27" rot="R270" display="off"/>
+<attribute name="NAME" x="41.865" y="42.381" size="0.889" layer="25" ratio="11" rot="R270"/>
+<attribute name="VALUE" x="40.9325" y="42.762" size="0.508" layer="27" ratio="10" rot="R270"/>
 </element>
-<element name="R15" library="OPL" package="R0603" value="51k" x="38.25" y="41.365" rot="R90">
+<element name="R15" library="OPL" package="R0603" value="51k" x="38.25" y="41.365" smashed="yes" rot="R90">
 <attribute name="OC_FARNELL" value="unknown" x="38.25" y="41.365" size="1.778" layer="27" rot="R90" display="off"/>
 <attribute name="MF" value="" x="38.25" y="41.365" size="1.778" layer="27" rot="R90" display="off"/>
 <attribute name="MPN" value="" x="38.25" y="41.365" size="1.778" layer="27" rot="R90" display="off"/>
+<attribute name="NAME" x="38.762" y="40.222" size="0.889" layer="25" ratio="11" rot="R90"/>
+<attribute name="VALUE" x="39.5675" y="39.968" size="0.508" layer="27" ratio="10" rot="R90"/>
 </element>
-<element name="C15" library="OPL" package="C0603" value="3.3nF" x="40.25" y="41.365" rot="R90">
+<element name="C15" library="OPL" package="C0603" value="3.3nF" x="40.25" y="41.365" smashed="yes" rot="R90">
 <attribute name="OC_FARNELL" value="unknown" x="40.25" y="41.365" size="1.778" layer="27" rot="R90" display="off"/>
 <attribute name="MF" value="" x="40.25" y="41.365" size="1.778" layer="27" rot="R90" display="off"/>
 <attribute name="MPN" value="" x="40.25" y="41.365" size="1.778" layer="27" rot="R90" display="off"/>
+<attribute name="NAME" x="40.631" y="41.238" size="0.889" layer="25" ratio="11" rot="R90" align="bottom-center"/>
+<attribute name="VALUE" x="41.2025" y="41.365" size="0.508" layer="27" ratio="10" rot="R90" align="top-center"/>
 </element>
-<element name="R1" library="OPL" package="R0603" value="100k" x="13.335" y="36.83" rot="R180">
+<element name="R1" library="OPL" package="R0603" value="100k" x="13.335" y="36.83" smashed="yes" rot="R180">
 <attribute name="OC_FARNELL" value="unknown" x="13.335" y="36.83" size="1.778" layer="27" rot="R180" display="off"/>
 <attribute name="MF" value="" x="13.335" y="36.83" size="1.778" layer="27" rot="R180" display="off"/>
 <attribute name="MPN" value="" x="13.335" y="36.83" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="NAME" x="14.097" y="37.215" size="0.889" layer="25" ratio="11" rot="R180"/>
+<attribute name="VALUE" x="14.732" y="38.1475" size="0.508" layer="27" ratio="10" rot="R180"/>
 </element>
-<element name="R2" library="OPL" package="R0603" value="33k" x="53.873" y="35.746" rot="R90">
+<element name="R2" library="OPL" package="R0603" value="33k" x="53.873" y="35.746" smashed="yes" rot="R90">
 <attribute name="OC_FARNELL" value="unknown" x="53.873" y="35.746" size="1.778" layer="27" rot="R90" display="off"/>
 <attribute name="MF" value="" x="53.873" y="35.746" size="1.778" layer="27" rot="R90" display="off"/>
 <attribute name="MPN" value="" x="53.873" y="35.746" size="1.778" layer="27" rot="R90" display="off"/>
+<attribute name="NAME" x="54.258" y="34.984" size="0.889" layer="25" ratio="11" rot="R90"/>
+<attribute name="VALUE" x="55.1905" y="34.349" size="0.508" layer="27" ratio="10" rot="R90"/>
 </element>
-<element name="R3" library="OPL" package="R0603" value="51k" x="42.515" y="32.765" rot="R180">
+<element name="R3" library="OPL" package="R0603" value="51k" x="42.515" y="32.765" smashed="yes" rot="R180">
 <attribute name="OC_FARNELL" value="unknown" x="42.515" y="32.765" size="1.778" layer="27" rot="R180" display="off"/>
 <attribute name="MF" value="" x="42.515" y="32.765" size="1.778" layer="27" rot="R180" display="off"/>
 <attribute name="MPN" value="" x="42.515" y="32.765" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="NAME" x="43.277" y="33.15" size="0.889" layer="25" ratio="11" rot="R180"/>
+<attribute name="VALUE" x="43.912" y="34.0825" size="0.508" layer="27" ratio="10" rot="R180"/>
 </element>
-<element name="C1" library="OPL" package="C0603" value="3.3nF" x="55.746" y="35.746" rot="R270">
+<element name="C1" library="OPL" package="C0603" value="3.3nF" x="55.746" y="35.746" smashed="yes" rot="R270">
 <attribute name="OC_FARNELL" value="unknown" x="55.746" y="35.746" size="1.778" layer="27" rot="R270" display="off"/>
 <attribute name="MF" value="" x="55.746" y="35.746" size="1.778" layer="27" rot="R270" display="off"/>
 <attribute name="MPN" value="" x="55.746" y="35.746" size="1.778" layer="27" rot="R270" display="off"/>
+<attribute name="NAME" x="55.365" y="35.746" size="0.889" layer="25" ratio="11" rot="R270" align="bottom-center"/>
+<attribute name="VALUE" x="54.7935" y="35.746" size="0.508" layer="27" ratio="10" rot="R270" align="top-center"/>
 </element>
-<element name="R5" library="OPL" package="R0603" value="30k" x="29.21" y="27.305">
+<element name="R5" library="OPL" package="R0603" value="30k" x="29.21" y="27.305" smashed="yes">
 <attribute name="OC_FARNELL" value="unknown" x="29.21" y="27.305" size="1.778" layer="27" display="off"/>
 <attribute name="MF" value="" x="29.21" y="27.305" size="1.778" layer="27" display="off"/>
 <attribute name="MPN" value="" x="29.21" y="27.305" size="1.778" layer="27" display="off"/>
+<attribute name="NAME" x="28.702" y="26.793" size="0.889" layer="25" ratio="11"/>
+<attribute name="VALUE" x="27.813" y="25.9875" size="0.508" layer="27" ratio="10"/>
 </element>
-<element name="C2" library="OPL" package="C0603" value="3.3nF" x="29.21" y="25.4" rot="R180">
+<element name="C2" library="OPL" package="C0603" value="3.3nF" x="29.21" y="25.4" smashed="yes" rot="R180">
 <attribute name="OC_FARNELL" value="unknown" x="29.21" y="25.4" size="1.778" layer="27" rot="R180" display="off"/>
 <attribute name="MF" value="" x="29.21" y="25.4" size="1.778" layer="27" rot="R180" display="off"/>
 <attribute name="MPN" value="" x="29.21" y="25.4" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="NAME" x="29.083" y="25.908" size="0.889" layer="25" ratio="11" rot="R180" align="bottom-center"/>
+<attribute name="VALUE" x="29.21" y="26.3525" size="0.508" layer="27" ratio="10" rot="R180" align="top-center"/>
 </element>
-<element name="R7" library="OPL" package="R0603" value="12k" x="30.345" y="34.06" rot="R90">
+<element name="R7" library="OPL" package="R0603" value="12k" x="30.345" y="34.06" smashed="yes" rot="R90">
 <attribute name="OC_FARNELL" value="unknown" x="30.345" y="34.06" size="1.778" layer="27" rot="R90" display="off"/>
 <attribute name="MF" value="" x="30.345" y="34.06" size="1.778" layer="27" rot="R90" display="off"/>
 <attribute name="MPN" value="" x="30.345" y="34.06" size="1.778" layer="27" rot="R90" display="off"/>
+<attribute name="NAME" x="30.73" y="33.298" size="0.889" layer="25" ratio="11" rot="R90"/>
+<attribute name="VALUE" x="31.6625" y="32.663" size="0.508" layer="27" ratio="10" rot="R90"/>
 </element>
-<element name="R8" library="OPL" package="R0603" value="30k" x="30.865" y="9.275" rot="R90">
+<element name="R8" library="OPL" package="R0603" value="30k" x="30.865" y="9.275" smashed="yes" rot="R90">
 <attribute name="OC_FARNELL" value="unknown" x="30.865" y="9.275" size="1.778" layer="27" rot="R90" display="off"/>
 <attribute name="MF" value="" x="30.865" y="9.275" size="1.778" layer="27" rot="R90" display="off"/>
 <attribute name="MPN" value="" x="30.865" y="9.275" size="1.778" layer="27" rot="R90" display="off"/>
+<attribute name="NAME" x="31.25" y="8.513" size="0.889" layer="25" ratio="11" rot="R90"/>
+<attribute name="VALUE" x="32.1825" y="7.878" size="0.508" layer="27" ratio="10" rot="R90"/>
 </element>
-<element name="R9" library="OPL" package="R0603" value="12k" x="32.135" y="34.06" rot="R90">
+<element name="R9" library="OPL" package="R0603" value="12k" x="32.135" y="34.06" smashed="yes" rot="R90">
 <attribute name="OC_FARNELL" value="unknown" x="32.135" y="34.06" size="1.778" layer="27" rot="R90" display="off"/>
 <attribute name="MF" value="" x="32.135" y="34.06" size="1.778" layer="27" rot="R90" display="off"/>
 <attribute name="MPN" value="" x="32.135" y="34.06" size="1.778" layer="27" rot="R90" display="off"/>
+<attribute name="NAME" x="32.647" y="33.298" size="0.889" layer="25" ratio="11" rot="R90"/>
+<attribute name="VALUE" x="33.4525" y="32.663" size="0.508" layer="27" ratio="10" rot="R90"/>
 </element>
-<element name="C3" library="OPL" package="C0603" value="3.3nF" x="29.345" y="13.72" rot="R180">
+<element name="C3" library="OPL" package="C0603" value="3.3nF" x="29.345" y="13.72" smashed="yes" rot="R180">
 <attribute name="OC_FARNELL" value="unknown" x="29.345" y="13.72" size="1.778" layer="27" rot="R180" display="off"/>
 <attribute name="MF" value="" x="29.345" y="13.72" size="1.778" layer="27" rot="R180" display="off"/>
 <attribute name="MPN" value="" x="29.345" y="13.72" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="NAME" x="29.345" y="14.228" size="0.889" layer="25" ratio="11" rot="R180" align="bottom-center"/>
+<attribute name="VALUE" x="29.345" y="14.6725" size="0.508" layer="27" ratio="10" rot="R180" align="top-center"/>
 </element>
-<element name="Q2" library="transistor" package="SOT23-BEC" value="MMBT3904" x="4.445" y="90.17" rot="R180">
+<element name="Q2" library="transistor" package="SOT23-BEC" value="MMBT3904" x="4.445" y="90.17" smashed="yes" rot="R180">
 <attribute name="OC_FARNELL" value="2336795" x="4.445" y="90.17" size="1.778" layer="27" rot="R180" display="off"/>
 <attribute name="MF" value="NXP" x="4.445" y="90.17" size="1.778" layer="27" rot="R180" display="off"/>
 <attribute name="MPN" value="PMBT3904,215" x="4.445" y="90.17" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="NAME" x="5.588" y="90.805" size="1.27" layer="25" rot="R180"/>
+<attribute name="VALUE" x="6.35" y="93.345" size="1.27" layer="27" rot="R180"/>
 </element>
-<element name="R67" library="OPL" package="R0603" value="100k" x="8.255" y="91.44" rot="R180">
+<element name="R67" library="OPL" package="R0603" value="100k" x="8.255" y="91.44" smashed="yes" rot="R180">
 <attribute name="OC_FARNELL" value="unknown" x="8.255" y="91.44" size="1.778" layer="27" rot="R180" display="off"/>
 <attribute name="MF" value="" x="8.255" y="91.44" size="1.778" layer="27" rot="R180" display="off"/>
 <attribute name="MPN" value="" x="8.255" y="91.44" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="NAME" x="9.398" y="91.825" size="0.889" layer="25" ratio="11" rot="R180"/>
+<attribute name="VALUE" x="9.652" y="92.7575" size="0.508" layer="27" ratio="10" rot="R180"/>
 </element>
-<element name="R60" library="OPL" package="R0603" value="10k" x="8.255" y="89.535">
+<element name="R60" library="OPL" package="R0603" value="10k" x="8.255" y="89.535" smashed="yes">
 <attribute name="OC_FARNELL" value="unknown" x="8.255" y="89.535" size="1.778" layer="27" display="off"/>
 <attribute name="MF" value="" x="8.255" y="89.535" size="1.778" layer="27" display="off"/>
 <attribute name="MPN" value="" x="8.255" y="89.535" size="1.778" layer="27" display="off"/>
+<attribute name="NAME" x="7.112" y="89.15" size="0.889" layer="25" ratio="11"/>
+<attribute name="VALUE" x="6.858" y="88.2175" size="0.508" layer="27" ratio="10"/>
 </element>
-<element name="R68" library="EurorackModularParts" package="OG-POTS_ALPS_POT_VERTICAL" value="10kB" x="22.86" y="50.8">
-<attribute name="DESC" value="Seed X" x="22.86" y="50.8" size="1.778" layer="27" display="off"/>
+<element name="R68" library="EurorackModularParts" package="OG-POTS_ALPS_POT_VERTICAL" value="10kB" x="22.86" y="50.8" smashed="yes">
+<attribute name="DESC" value="Seed X" x="22.86" y="58.42" size="1.778" layer="254" align="bottom-center"/>
 <attribute name="OC_FARNELL" value="unknown" x="22.86" y="50.8" size="1.778" layer="27" display="off"/>
 <attribute name="MF" value="" x="22.86" y="50.8" size="1.778" layer="27" display="off"/>
 <attribute name="MPN" value="" x="22.86" y="50.8" size="1.778" layer="27" display="off"/>
+<attribute name="VALUE" x="22.86" y="48.895" size="1.27" layer="27" align="top-center"/>
 </element>
-<element name="R69" library="EurorackModularParts" package="OG-POTS_ALPS_POT_VERTICAL" value="10kB" x="22.86" y="30.48">
-<attribute name="DESC" value="Seed Y" x="22.86" y="30.48" size="1.778" layer="27" display="off"/>
+<element name="R69" library="EurorackModularParts" package="OG-POTS_ALPS_POT_VERTICAL" value="10kB" x="22.86" y="30.48" smashed="yes">
+<attribute name="DESC" value="Seed Y" x="22.86" y="38.1" size="1.778" layer="254" align="bottom-center"/>
 <attribute name="OC_FARNELL" value="unknown" x="22.86" y="30.48" size="1.778" layer="27" display="off"/>
 <attribute name="MF" value="" x="22.86" y="30.48" size="1.778" layer="27" display="off"/>
 <attribute name="MPN" value="" x="22.86" y="30.48" size="1.778" layer="27" display="off"/>
+<attribute name="VALUE" x="22.86" y="28.575" size="1.27" layer="27" align="top-center"/>
 </element>
-<element name="R70" library="EurorackModularParts" package="OG-POTS_ALPS_POT_VERTICAL" value="10kB" x="22.86" y="99.06">
-<attribute name="DESC" value="Tempo" x="22.86" y="99.06" size="1.778" layer="27" display="off"/>
+<element name="R70" library="EurorackModularParts" package="OG-POTS_ALPS_POT_VERTICAL" value="10kB" x="22.86" y="99.06" smashed="yes">
+<attribute name="DESC" value="Tempo" x="22.86" y="106.68" size="1.778" layer="254" align="bottom-center"/>
 <attribute name="OC_FARNELL" value="unknown" x="22.86" y="99.06" size="1.778" layer="27" display="off"/>
 <attribute name="MF" value="" x="22.86" y="99.06" size="1.778" layer="27" display="off"/>
 <attribute name="MPN" value="" x="22.86" y="99.06" size="1.778" layer="27" display="off"/>
+<attribute name="VALUE" x="22.86" y="97.155" size="1.27" layer="27" align="top-center"/>
 </element>
-<element name="R17" library="EurorackModularParts" package="OG-POTS_ALPS_POT_VERTICAL" value="10kB" x="22.86" y="10.16">
-<attribute name="DESC" value="Intensity" x="22.86" y="10.16" size="1.778" layer="27" display="off"/>
+<element name="R17" library="EurorackModularParts" package="OG-POTS_ALPS_POT_VERTICAL" value="10kB" x="22.86" y="10.16" smashed="yes">
+<attribute name="DESC" value="Intensity" x="22.86" y="17.78" size="1.778" layer="254" align="bottom-center"/>
 <attribute name="OC_FARNELL" value="unknown" x="22.86" y="10.16" size="1.778" layer="27" display="off"/>
 <attribute name="MF" value="" x="22.86" y="10.16" size="1.778" layer="27" display="off"/>
 <attribute name="MPN" value="" x="22.86" y="10.16" size="1.778" layer="27" display="off"/>
+<attribute name="VALUE" x="22.86" y="8.255" size="1.27" layer="27" align="top-center"/>
 </element>
-<element name="U7" library="FarnellThings" package="SOIC8-N_MC" value="MCP4822-E/SN" x="30.48" y="40.91" rot="R270">
+<element name="U7" library="FarnellThings" package="SOIC8-N_MC" value="MCP4822-E/SN" x="30.48" y="40.91" smashed="yes" rot="R270">
 <attribute name="PACKAGE" value="SOIC-8" x="30.48" y="40.91" size="1.778" layer="27" rot="R270" display="off"/>
 <attribute name="OC_NEWARK" value="31K2975" x="30.48" y="40.91" size="1.778" layer="27" rot="R270" display="off"/>
 <attribute name="DESCRIPTION" value="12 Bit DAC" x="30.48" y="40.91" size="1.778" layer="27" rot="R270" display="off"/>
@@ -1353,184 +1402,222 @@ new: Attribute TP_SIGNAL_NAME&lt;br&gt;
 <attribute name="SUPPLIER" value="Microchip" x="30.48" y="40.91" size="1.778" layer="27" rot="R270" display="off"/>
 <attribute name="OC_FARNELL" value="1439414" x="30.48" y="40.91" size="1.778" layer="27" rot="R270" display="off"/>
 <attribute name="MF" value="MICROCHIP" x="30.48" y="40.91" size="1.778" layer="27" rot="R270" display="off"/>
+<attribute name="NAME" x="30.464" y="39.314" size="1" layer="25" ratio="10" rot="SR0" align="bottom-center"/>
+<attribute name="VALUE" x="26.98" y="40.91" size="1" layer="27" ratio="10" rot="SR270" align="top-center"/>
 </element>
-<element name="J4" library="EurorackModularParts" package="3.5MM-JACK-SWITCH-13MM-INPUT" value="PJ-341" x="7.62" y="99.06">
-<attribute name="DESC" value="Clock" x="7.62" y="99.06" size="1.778" layer="27" display="off"/>
+<element name="J4" library="EurorackModularParts" package="3.5MM-JACK-SWITCH-13MM-INPUT" value="PJ-341" x="7.62" y="99.06" smashed="yes">
+<attribute name="DESC" value="Clock" x="7.62" y="105.41" size="1.778" layer="254" align="bottom-center"/>
 <attribute name="VALUE" value="PJ-341" x="7.62" y="99.06" size="1.778" layer="27" display="off"/>
 <attribute name="MPN" value="" x="7.62" y="99.06" size="1.778" layer="27" display="off"/>
 <attribute name="OC_FARNELL" value="unknown" x="7.62" y="99.06" size="1.778" layer="27" display="off"/>
 <attribute name="MF" value="" x="7.62" y="99.06" size="1.778" layer="27" display="off"/>
 </element>
-<element name="J2" library="EurorackModularParts" package="3.5MM-JACK-SWITCH-13MM-INPUT" value="PJ-341" x="7.62" y="50.8">
-<attribute name="DESC" value="Seed X" x="7.62" y="50.8" size="1.778" layer="27" display="off"/>
+<element name="J2" library="EurorackModularParts" package="3.5MM-JACK-SWITCH-13MM-INPUT" value="PJ-341" x="7.62" y="50.8" smashed="yes">
+<attribute name="DESC" value="Seed X" x="7.62" y="57.15" size="1.778" layer="254" align="bottom-center"/>
 <attribute name="VALUE" value="PJ-341" x="7.62" y="50.8" size="1.778" layer="27" display="off"/>
 <attribute name="MPN" value="" x="7.62" y="50.8" size="1.778" layer="27" display="off"/>
 <attribute name="OC_FARNELL" value="unknown" x="7.62" y="50.8" size="1.778" layer="27" display="off"/>
 <attribute name="MF" value="" x="7.62" y="50.8" size="1.778" layer="27" display="off"/>
 </element>
-<element name="J3" library="EurorackModularParts" package="3.5MM-JACK-SWITCH-13MM-INPUT" value="PJ-341" x="7.62" y="30.48">
-<attribute name="DESC" value="Seed Y" x="7.62" y="30.48" size="1.778" layer="27" display="off"/>
+<element name="J3" library="EurorackModularParts" package="3.5MM-JACK-SWITCH-13MM-INPUT" value="PJ-341" x="7.62" y="30.48" smashed="yes">
+<attribute name="DESC" value="Seed Y" x="7.62" y="36.83" size="1.778" layer="254" align="bottom-center"/>
 <attribute name="VALUE" value="PJ-341" x="7.62" y="30.48" size="1.778" layer="27" display="off"/>
 <attribute name="MPN" value="" x="7.62" y="30.48" size="1.778" layer="27" display="off"/>
 <attribute name="OC_FARNELL" value="unknown" x="7.62" y="30.48" size="1.778" layer="27" display="off"/>
 <attribute name="MF" value="" x="7.62" y="30.48" size="1.778" layer="27" display="off"/>
 </element>
-<element name="J12" library="EurorackModularParts" package="3.5MM-JACK-SWITCH-13MM-OUTPUT" value="PJ-341" x="41.275" y="9.525">
-<attribute name="DESC" value="Note" x="41.275" y="9.525" size="1.778" layer="27" display="off"/>
+<element name="J12" library="EurorackModularParts" package="3.5MM-JACK-SWITCH-13MM-OUTPUT" value="PJ-341" x="41.275" y="9.525" smashed="yes">
+<attribute name="DESC" value="Note" x="41.275" y="15.875" size="1.778" layer="254" align="bottom-center"/>
 <attribute name="VALUE" value="PJ-341" x="41.275" y="9.525" size="1.778" layer="27" display="off"/>
 <attribute name="MPN" value="" x="41.275" y="9.525" size="1.778" layer="27" display="off"/>
 <attribute name="OC_FARNELL" value="unknown" x="41.275" y="9.525" size="1.778" layer="27" display="off"/>
 <attribute name="MF" value="" x="41.275" y="9.525" size="1.778" layer="27" display="off"/>
 </element>
-<element name="J13" library="EurorackModularParts" package="3.5MM-JACK-SWITCH-13MM-OUTPUT" value="PJ-341" x="41.275" y="24.13">
-<attribute name="DESC" value="Velocity" x="41.275" y="24.13" size="1.778" layer="27" display="off"/>
+<element name="J13" library="EurorackModularParts" package="3.5MM-JACK-SWITCH-13MM-OUTPUT" value="PJ-341" x="41.275" y="24.13" smashed="yes">
+<attribute name="DESC" value="Velocity" x="41.275" y="30.48" size="1.778" layer="254" align="bottom-center"/>
 <attribute name="VALUE" value="PJ-341" x="41.275" y="24.13" size="1.778" layer="27" display="off"/>
 <attribute name="MPN" value="" x="41.275" y="24.13" size="1.778" layer="27" display="off"/>
 <attribute name="OC_FARNELL" value="unknown" x="41.275" y="24.13" size="1.778" layer="27" display="off"/>
 <attribute name="MF" value="" x="41.275" y="24.13" size="1.778" layer="27" display="off"/>
 </element>
-<element name="OUTLINE" library="EurorackModularParts" package="EURORACK12HPPCB" value="EURORACK_PCB12HP" x="0.67" y="0">
+<element name="OUTLINE" library="EurorackModularParts" package="EURORACK12HPPCB" value="EURORACK_PCB12HP" x="0.67" y="0" smashed="yes">
 <attribute name="OC_FARNELL" value="unknown" x="0.67" y="0" size="1.778" layer="27" display="off"/>
 <attribute name="MF" value="" x="0.67" y="0" size="1.778" layer="27" display="off"/>
 <attribute name="MPN" value="" x="0.67" y="0" size="1.778" layer="27" display="off"/>
 </element>
-<element name="R24" library="OPL" package="R0603" value="100" x="39.205" y="16.83" rot="R180">
+<element name="R24" library="OPL" package="R0603" value="100" x="39.205" y="16.83" smashed="yes" rot="R180">
 <attribute name="OC_FARNELL" value="unknown" x="39.205" y="16.83" size="1.778" layer="27" rot="R180" display="off"/>
 <attribute name="MF" value="" x="39.205" y="16.83" size="1.778" layer="27" rot="R180" display="off"/>
 <attribute name="MPN" value="" x="39.205" y="16.83" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="NAME" x="40.348" y="17.215" size="0.889" layer="25" ratio="11" rot="R180"/>
+<attribute name="VALUE" x="40.602" y="18.1475" size="0.508" layer="27" ratio="10" rot="R180"/>
 </element>
-<element name="R25" library="OPL" package="R0603" value="100" x="35.083" y="30.85" rot="R270">
+<element name="R25" library="OPL" package="R0603" value="100" x="35.083" y="30.85" smashed="yes" rot="R270">
 <attribute name="OC_FARNELL" value="unknown" x="35.083" y="30.85" size="1.778" layer="27" rot="R270" display="off"/>
 <attribute name="MF" value="" x="35.083" y="30.85" size="1.778" layer="27" rot="R270" display="off"/>
 <attribute name="MPN" value="" x="35.083" y="30.85" size="1.778" layer="27" rot="R270" display="off"/>
+<attribute name="NAME" x="34.698" y="31.866" size="0.889" layer="25" ratio="11" rot="R270"/>
+<attribute name="VALUE" x="33.7655" y="32.247" size="0.508" layer="27" ratio="10" rot="R270"/>
 </element>
-<element name="C18" library="OPL" package="C0603" value="100nF" x="31.71" y="13.08" rot="R90">
+<element name="C18" library="OPL" package="C0603" value="100nF" x="31.71" y="13.08" smashed="yes" rot="R90">
 <attribute name="OC_FARNELL" value="1759017" x="31.71" y="13.08" size="1.778" layer="27" rot="R90" display="off"/>
 <attribute name="MF" value="MULTICOMP" x="31.71" y="13.08" size="1.778" layer="27" rot="R90" display="off"/>
 <attribute name="MPN" value="MC0603F104Z160CT" x="31.71" y="13.08" size="1.778" layer="27" rot="R90" display="off"/>
+<attribute name="NAME" x="32.091" y="12.953" size="0.889" layer="25" ratio="11" rot="R90" align="bottom-center"/>
+<attribute name="VALUE" x="32.6625" y="13.08" size="0.508" layer="27" ratio="10" rot="R90" align="top-center"/>
 </element>
-<element name="C19" library="OPL" package="C0603" value="100nF" x="31.96" y="26.665" rot="R270">
+<element name="C19" library="OPL" package="C0603" value="100nF" x="31.96" y="26.665" smashed="yes" rot="R270">
 <attribute name="OC_FARNELL" value="1759017" x="31.96" y="26.665" size="1.778" layer="27" rot="R270" display="off"/>
 <attribute name="MF" value="MULTICOMP" x="31.96" y="26.665" size="1.778" layer="27" rot="R270" display="off"/>
 <attribute name="MPN" value="MC0603F104Z160CT" x="31.96" y="26.665" size="1.778" layer="27" rot="R270" display="off"/>
+<attribute name="NAME" x="31.452" y="26.665" size="0.889" layer="25" ratio="11" rot="R270" align="bottom-center"/>
+<attribute name="VALUE" x="31.0075" y="26.665" size="0.508" layer="27" ratio="10" rot="R270" align="top-center"/>
 </element>
-<element name="Q1" library="transistor" package="SOT23-BEC" value="MMBT3904" x="30.73" y="100.965" rot="R180">
+<element name="Q1" library="transistor" package="SOT23-BEC" value="MMBT3904" x="30.73" y="100.965" smashed="yes" rot="R180">
 <attribute name="OC_FARNELL" value="2336795" x="30.73" y="100.965" size="1.778" layer="27" rot="R180" display="off"/>
 <attribute name="MF" value="NXP" x="30.73" y="100.965" size="1.778" layer="27" rot="R180" display="off"/>
 <attribute name="MPN" value="PMBT3904,215" x="30.73" y="100.965" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="NAME" x="31.873" y="101.6" size="1.27" layer="25" rot="R180"/>
+<attribute name="VALUE" x="32.635" y="104.14" size="1.27" layer="27" rot="R180"/>
 </element>
-<element name="R18" library="OPL" package="R0603" value="100k" x="31.865" y="104.775" rot="R180">
+<element name="R18" library="OPL" package="R0603" value="100k" x="31.865" y="104.775" smashed="yes" rot="R180">
 <attribute name="OC_FARNELL" value="unknown" x="31.865" y="104.775" size="1.778" layer="27" rot="R180" display="off"/>
 <attribute name="MF" value="" x="31.865" y="104.775" size="1.778" layer="27" rot="R180" display="off"/>
 <attribute name="MPN" value="" x="31.865" y="104.775" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="NAME" x="32.881" y="105.287" size="0.889" layer="25" ratio="11" rot="R180"/>
+<attribute name="VALUE" x="33.262" y="106.0925" size="0.508" layer="27" ratio="10" rot="R180"/>
 </element>
-<element name="R20" library="OPL" package="R0603" value="10k" x="29.845" y="94.615" rot="R270">
+<element name="R20" library="OPL" package="R0603" value="10k" x="29.845" y="94.615" smashed="yes" rot="R270">
 <attribute name="OC_FARNELL" value="unknown" x="29.845" y="94.615" size="1.778" layer="27" rot="R270" display="off"/>
 <attribute name="MF" value="" x="29.845" y="94.615" size="1.778" layer="27" rot="R270" display="off"/>
 <attribute name="MPN" value="" x="29.845" y="94.615" size="1.778" layer="27" rot="R270" display="off"/>
+<attribute name="NAME" x="29.46" y="95.758" size="0.889" layer="25" ratio="11" rot="R270"/>
+<attribute name="VALUE" x="28.5275" y="96.012" size="0.508" layer="27" ratio="10" rot="R270"/>
 </element>
-<element name="J5" library="EurorackModularParts" package="3.5MM-JACK-SWITCH-13MM-INPUT" value="PJ-341" x="38.1" y="99.06">
-<attribute name="DESC" value="Reset" x="38.1" y="99.06" size="1.778" layer="27" display="off"/>
+<element name="J5" library="EurorackModularParts" package="3.5MM-JACK-SWITCH-13MM-INPUT" value="PJ-341" x="38.1" y="99.06" smashed="yes">
+<attribute name="DESC" value="Reset" x="38.1" y="105.41" size="1.778" layer="254" align="bottom-center"/>
 <attribute name="VALUE" value="PJ-341" x="38.1" y="99.06" size="1.778" layer="27" display="off"/>
 <attribute name="MPN" value="" x="38.1" y="99.06" size="1.778" layer="27" display="off"/>
 <attribute name="OC_FARNELL" value="unknown" x="38.1" y="99.06" size="1.778" layer="27" display="off"/>
 <attribute name="MF" value="" x="38.1" y="99.06" size="1.778" layer="27" display="off"/>
 </element>
-<element name="J7" library="EurorackModularParts" package="3.5MM-JACK-SWITCH-13MM-OUTPUT" value="PJ-341" x="53.34" y="24.13" rot="R180">
-<attribute name="DESC" value="Accent" x="53.34" y="24.13" size="1.778" layer="27" rot="R180" display="off"/>
+<element name="J7" library="EurorackModularParts" package="3.5MM-JACK-SWITCH-13MM-OUTPUT" value="PJ-341" x="53.34" y="24.13" smashed="yes" rot="R180">
+<attribute name="DESC" value="Accent" x="53.34" y="17.78" size="1.778" layer="254" rot="R180" align="bottom-center"/>
 <attribute name="VALUE" value="PJ-341" x="53.34" y="24.13" size="1.778" layer="27" rot="R180" display="off"/>
 <attribute name="MPN" value="" x="53.34" y="24.13" size="1.778" layer="27" rot="R180" display="off"/>
 <attribute name="OC_FARNELL" value="unknown" x="53.34" y="24.13" size="1.778" layer="27" rot="R180" display="off"/>
 <attribute name="MF" value="" x="53.34" y="24.13" size="1.778" layer="27" rot="R180" display="off"/>
 </element>
-<element name="C5" library="OPL" package="AVX-A" value="10uF" x="20.32" y="60.96" rot="R180">
+<element name="C5" library="OPL" package="AVX-A" value="10uF" x="20.32" y="60.96" smashed="yes" rot="R180">
 <attribute name="OC_FARNELL" value="197427" x="20.32" y="60.96" size="1.778" layer="27" rot="R180" display="off"/>
 <attribute name="MF" value="AVX" x="20.32" y="60.96" size="1.778" layer="27" rot="R180" display="off"/>
 <attribute name="MPN" value="TAJB106K020RNJ" x="20.32" y="60.96" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="NAME" x="20.9675" y="61.3185" size="0.889" layer="25" ratio="11" rot="R180"/>
+<attribute name="VALUE" x="21.92" y="62.452" size="0.635" layer="27" ratio="10" rot="R180"/>
 </element>
-<element name="U2" library="FarnellThings" package="SOT95P237X112-3N" value="LM4040DIM3-5.0" x="12.335" y="59.41" rot="R180">
+<element name="U2" library="FarnellThings" package="SOT95P237X112-3N" value="LM4040DIM3-5.0" x="12.335" y="59.41" smashed="yes" rot="R180">
 <attribute name="PACKAGE" value="SOT-23-3" x="12.335" y="64.49" size="1.778" layer="27" rot="R180" display="off"/>
 <attribute name="OC_NEWARK" value="97K3489" x="12.335" y="64.49" size="1.778" layer="27" rot="R180" display="off"/>
 <attribute name="MPN" value="LM4040DIM3-5.0" x="12.335" y="64.49" size="1.778" layer="27" rot="R180" display="off"/>
 <attribute name="SUPPLIER" value="TEXAS INSTRUMENTS" x="12.335" y="64.49" size="1.778" layer="27" rot="R180" display="off"/>
 <attribute name="OC_FARNELL" value="9778330" x="12.335" y="64.49" size="1.778" layer="27" rot="R180" display="off"/>
 <attribute name="MF" value="TEXAS INSTRUMENTS" x="12.335" y="59.41" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="NAME" x="11.8116" y="61.3824" size="2.0828" layer="25" ratio="10" rot="SR270"/>
+<attribute name="VALUE" x="17.923" y="63.4486" size="2.0828" layer="27" ratio="10" rot="SR180"/>
 </element>
-<element name="R26" library="OPL" package="R0603" value="10k" x="16.51" y="60.96" rot="R180">
+<element name="R26" library="OPL" package="R0603" value="10k" x="16.51" y="60.96" smashed="yes" rot="R180">
 <attribute name="OC_FARNELL" value="unknown" x="16.51" y="60.96" size="1.778" layer="27" rot="R180" display="off"/>
 <attribute name="MF" value="" x="16.51" y="60.96" size="1.778" layer="27" rot="R180" display="off"/>
 <attribute name="MPN" value="" x="16.51" y="60.96" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="NAME" x="17.526" y="61.345" size="0.889" layer="25" ratio="11" rot="R180"/>
+<attribute name="VALUE" x="17.907" y="62.2775" size="0.508" layer="27" ratio="10" rot="R180"/>
 </element>
-<element name="C6" library="OPL" package="C0603" value="100nF" x="8.805" y="59.41" rot="R90">
+<element name="C6" library="OPL" package="C0603" value="100nF" x="8.805" y="59.41" smashed="yes" rot="R90">
 <attribute name="OC_FARNELL" value="1301804" x="8.805" y="59.41" size="1.778" layer="27" rot="R90" display="off"/>
 <attribute name="MF" value="AVX" x="8.805" y="59.41" size="1.778" layer="27" rot="R90" display="off"/>
 <attribute name="MPN" value="06035C104KAT2A" x="8.805" y="59.41" size="1.778" layer="27" rot="R90" display="off"/>
+<attribute name="NAME" x="9.313" y="59.41" size="0.889" layer="25" ratio="11" rot="R90" align="bottom-center"/>
+<attribute name="VALUE" x="9.7575" y="59.41" size="0.508" layer="27" ratio="10" rot="R90" align="top-center"/>
 </element>
-<element name="R23" library="OPL" package="R0603" value="33k" x="15.875" y="45.72">
+<element name="R23" library="OPL" package="R0603" value="33k" x="15.875" y="45.72" smashed="yes">
 <attribute name="OC_FARNELL" value="unknown" x="15.875" y="45.72" size="1.778" layer="27" display="off"/>
 <attribute name="MF" value="" x="15.875" y="45.72" size="1.778" layer="27" display="off"/>
 <attribute name="MPN" value="" x="15.875" y="45.72" size="1.778" layer="27" display="off"/>
+<attribute name="NAME" x="14.732" y="45.335" size="0.889" layer="25" ratio="11"/>
+<attribute name="VALUE" x="14.478" y="44.4025" size="0.508" layer="27" ratio="10"/>
 </element>
-<element name="R27" library="OPL" package="R0603" value="33k" x="14.955" y="34.105" rot="R270">
+<element name="R27" library="OPL" package="R0603" value="33k" x="14.955" y="34.105" smashed="yes" rot="R270">
 <attribute name="OC_FARNELL" value="unknown" x="14.955" y="34.105" size="1.778" layer="27" rot="R270" display="off"/>
 <attribute name="MF" value="" x="14.955" y="34.105" size="1.778" layer="27" rot="R270" display="off"/>
 <attribute name="MPN" value="" x="14.955" y="34.105" size="1.778" layer="27" rot="R270" display="off"/>
+<attribute name="NAME" x="14.57" y="35.248" size="0.889" layer="25" ratio="11" rot="R270"/>
+<attribute name="VALUE" x="13.6375" y="35.502" size="0.508" layer="27" ratio="10" rot="R270"/>
 </element>
-<element name="J8" library="EurorackModularParts" package="3.5MM-JACK-SWITCH-13MM-OUTPUT" value="PJ-341" x="53.34" y="9.525" rot="R180">
-<attribute name="DESC" value="Gate" x="53.34" y="9.525" size="1.778" layer="27" rot="R180" display="off"/>
+<element name="J8" library="EurorackModularParts" package="3.5MM-JACK-SWITCH-13MM-OUTPUT" value="PJ-341" x="53.34" y="9.525" smashed="yes" rot="R180">
+<attribute name="DESC" value="Gate" x="53.34" y="3.175" size="1.778" layer="254" rot="R180" align="bottom-center"/>
 <attribute name="VALUE" value="PJ-341" x="53.34" y="9.525" size="1.778" layer="27" rot="R180" display="off"/>
 <attribute name="MPN" value="" x="53.34" y="9.525" size="1.778" layer="27" rot="R180" display="off"/>
 <attribute name="OC_FARNELL" value="unknown" x="53.34" y="9.525" size="1.778" layer="27" rot="R180" display="off"/>
 <attribute name="MF" value="" x="53.34" y="9.525" size="1.778" layer="27" rot="R180" display="off"/>
 </element>
-<element name="C4" library="OPL" package="C0603" value="100nF" x="12.7" y="89.535" rot="R180">
+<element name="C4" library="OPL" package="C0603" value="100nF" x="12.7" y="89.535" smashed="yes" rot="R180">
 <attribute name="OC_FARNELL" value="1759017" x="12.7" y="89.535" size="1.778" layer="27" rot="R180" display="off"/>
 <attribute name="MF" value="MULTICOMP" x="12.7" y="89.535" size="1.778" layer="27" rot="R180" display="off"/>
 <attribute name="MPN" value="MC0603F104Z160CT" x="12.7" y="89.535" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="NAME" x="12.7" y="89.916" size="0.889" layer="25" ratio="11" rot="R180" align="bottom-center"/>
+<attribute name="VALUE" x="12.7" y="90.4875" size="0.508" layer="27" ratio="10" rot="R180" align="top-center"/>
 </element>
-<element name="C7" library="OPL" package="C0603" value="100nF" x="41.955" y="92.45" rot="R270">
+<element name="C7" library="OPL" package="C0603" value="100nF" x="41.955" y="92.45" smashed="yes" rot="R270">
 <attribute name="OC_FARNELL" value="1759017" x="41.955" y="92.45" size="1.778" layer="27" rot="R270" display="off"/>
 <attribute name="MF" value="MULTICOMP" x="41.955" y="92.45" size="1.778" layer="27" rot="R270" display="off"/>
 <attribute name="MPN" value="MC0603F104Z160CT" x="41.955" y="92.45" size="1.778" layer="27" rot="R270" display="off"/>
+<attribute name="NAME" x="41.574" y="92.45" size="0.889" layer="25" ratio="11" rot="R270" align="bottom-center"/>
+<attribute name="VALUE" x="41.0025" y="92.45" size="0.508" layer="27" ratio="10" rot="R270" align="top-center"/>
 </element>
-<element name="Q3" library="transistor" package="SOT23-BEC" value="MMBT3904" x="54.987" y="32.191" rot="R180">
+<element name="Q3" library="transistor" package="SOT23-BEC" value="MMBT3904" x="54.987" y="32.191" smashed="yes" rot="R180">
 <attribute name="OC_FARNELL" value="2336795" x="54.987" y="32.191" size="1.778" layer="27" rot="R180" display="off"/>
 <attribute name="MF" value="NXP" x="54.987" y="32.191" size="1.778" layer="27" rot="R180" display="off"/>
 <attribute name="MPN" value="PMBT3904,215" x="54.987" y="32.191" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="NAME" x="56.003" y="32.826" size="1.27" layer="25" rot="R180"/>
+<attribute name="VALUE" x="56.892" y="35.366" size="1.27" layer="27" rot="R180"/>
 </element>
-<element name="R19" library="OPL" package="R0603" value="10k" x="50.976" y="31.76" rot="R180">
+<element name="R19" library="OPL" package="R0603" value="10k" x="50.976" y="31.76" smashed="yes" rot="R180">
 <attribute name="OC_FARNELL" value="unknown" x="50.976" y="31.76" size="1.778" layer="27" rot="R180" display="off"/>
 <attribute name="MF" value="" x="50.976" y="31.76" size="1.778" layer="27" rot="R180" display="off"/>
 <attribute name="MPN" value="" x="50.976" y="31.76" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="NAME" x="52.119" y="32.145" size="0.889" layer="25" ratio="11" rot="R180"/>
+<attribute name="VALUE" x="52.373" y="33.0775" size="0.508" layer="27" ratio="10" rot="R180"/>
 </element>
-<element name="R21" library="OPL" package="R0603" value="100k" x="57.623" y="37.889" rot="R270">
+<element name="R21" library="OPL" package="R0603" value="100k" x="57.623" y="37.889" smashed="yes" rot="R270">
 <attribute name="OC_FARNELL" value="unknown" x="57.623" y="37.889" size="1.778" layer="27" rot="R270" display="off"/>
 <attribute name="MF" value="" x="57.623" y="37.889" size="1.778" layer="27" rot="R270" display="off"/>
 <attribute name="MPN" value="" x="57.623" y="37.889" size="1.778" layer="27" rot="R270" display="off"/>
+<attribute name="NAME" x="57.238" y="39.032" size="0.889" layer="25" ratio="11" rot="R270"/>
+<attribute name="VALUE" x="56.3055" y="39.286" size="0.508" layer="27" ratio="10" rot="R270"/>
 </element>
-<element name="J6" library="EurorackModularParts" package="3.5MM-JACK-SWITCH-13MM-OUTPUT" value="PJ-341" x="53.34" y="99.06">
-<attribute name="DESC" value="Clock Out" x="53.34" y="99.06" size="1.778" layer="27" display="off"/>
+<element name="J6" library="EurorackModularParts" package="3.5MM-JACK-SWITCH-13MM-OUTPUT" value="PJ-341" x="53.34" y="99.06" smashed="yes">
+<attribute name="DESC" value="Clock Out" x="53.34" y="105.41" size="1.778" layer="254" align="bottom-center"/>
 <attribute name="VALUE" value="PJ-341" x="53.34" y="99.06" size="1.778" layer="27" display="off"/>
 <attribute name="MPN" value="" x="53.34" y="99.06" size="1.778" layer="27" display="off"/>
 <attribute name="OC_FARNELL" value="unknown" x="53.34" y="99.06" size="1.778" layer="27" display="off"/>
 <attribute name="MF" value="" x="53.34" y="99.06" size="1.778" layer="27" display="off"/>
 </element>
-<element name="J9" library="EurorackModularParts" package="3.5MM-JACK-SWITCH-13MM-OUTPUT" value="PJ-341" x="53.34" y="81.28" rot="R180">
-<attribute name="DESC" value="Tick" x="53.34" y="81.28" size="1.778" layer="27" rot="R180" display="off"/>
+<element name="J9" library="EurorackModularParts" package="3.5MM-JACK-SWITCH-13MM-OUTPUT" value="PJ-341" x="53.34" y="81.28" smashed="yes" rot="R180">
+<attribute name="DESC" value="Tick" x="53.34" y="74.93" size="1.778" layer="254" rot="R180" align="bottom-center"/>
 <attribute name="VALUE" value="PJ-341" x="53.34" y="81.28" size="1.778" layer="27" rot="R180" display="off"/>
 <attribute name="MPN" value="" x="53.34" y="81.28" size="1.778" layer="27" rot="R180" display="off"/>
 <attribute name="OC_FARNELL" value="unknown" x="53.34" y="81.28" size="1.778" layer="27" rot="R180" display="off"/>
 <attribute name="MF" value="" x="53.34" y="81.28" size="1.778" layer="27" rot="R180" display="off"/>
 </element>
-<element name="J10" library="EurorackModularParts" package="3.5MM-JACK-SWITCH-13MM-OUTPUT" value="PJ-341" x="53.34" y="66.04" rot="R180">
-<attribute name="DESC" value="Beat" x="53.34" y="66.04" size="1.778" layer="27" rot="R180" display="off"/>
+<element name="J10" library="EurorackModularParts" package="3.5MM-JACK-SWITCH-13MM-OUTPUT" value="PJ-341" x="53.34" y="66.04" smashed="yes" rot="R180">
+<attribute name="DESC" value="Beat" x="53.34" y="59.69" size="1.778" layer="254" rot="R180" align="bottom-center"/>
 <attribute name="VALUE" value="PJ-341" x="53.34" y="66.04" size="1.778" layer="27" rot="R180" display="off"/>
 <attribute name="MPN" value="" x="53.34" y="66.04" size="1.778" layer="27" rot="R180" display="off"/>
 <attribute name="OC_FARNELL" value="unknown" x="53.34" y="66.04" size="1.778" layer="27" rot="R180" display="off"/>
 <attribute name="MF" value="" x="53.34" y="66.04" size="1.778" layer="27" rot="R180" display="off"/>
 </element>
-<element name="J11" library="EurorackModularParts" package="3.5MM-JACK-SWITCH-13MM-OUTPUT" value="PJ-341" x="53.34" y="50.8" rot="R180">
-<attribute name="DESC" value="Loop" x="53.34" y="50.8" size="1.778" layer="27" rot="R180" display="off"/>
+<element name="J11" library="EurorackModularParts" package="3.5MM-JACK-SWITCH-13MM-OUTPUT" value="PJ-341" x="53.34" y="50.8" smashed="yes" rot="R180">
+<attribute name="DESC" value="Loop" x="53.34" y="44.45" size="1.778" layer="254" rot="R180" align="bottom-center"/>
 <attribute name="VALUE" value="PJ-341" x="53.34" y="50.8" size="1.778" layer="27" rot="R180" display="off"/>
 <attribute name="MPN" value="" x="53.34" y="50.8" size="1.778" layer="27" rot="R180" display="off"/>
 <attribute name="OC_FARNELL" value="unknown" x="53.34" y="50.8" size="1.778" layer="27" rot="R180" display="off"/>
@@ -1538,7 +1625,7 @@ new: Attribute TP_SIGNAL_NAME&lt;br&gt;
 </element>
 <element name="B2" library="zephod-components" package="4P-6.0X6.0X5.0H" value="BUTTON-4P-3110040P1" x="31.75" y="81.28" smashed="yes" rot="R270">
 <attribute name="DESC" value="Ticks" x="35.56" y="86.36" size="1.778" layer="255" align="bottom-center"/>
-<attribute name="NAME" x="34.925" y="83.185" size="0.889" layer="25" ratio="11" rot="R270"/>
+<attribute name="NAME" x="34.417" y="79.502" size="0.889" layer="25" ratio="11" rot="R180"/>
 <attribute name="VALUE" x="31.75" y="83.185" size="0.635" layer="27" ratio="10" rot="R270"/>
 <attribute name="OC_FARNELL" value="unknown" x="31.75" y="81.28" size="1.778" layer="27" rot="R270" display="off"/>
 <attribute name="MF" value="" x="31.75" y="81.28" size="1.778" layer="27" rot="R270" display="off"/>
@@ -1546,14 +1633,14 @@ new: Attribute TP_SIGNAL_NAME&lt;br&gt;
 </element>
 <element name="B4" library="zephod-components" package="4P-6.0X6.0X5.0H" value="BUTTON-4P-3110040P1" x="31.75" y="67.31" smashed="yes" rot="R270">
 <attribute name="DESC" value="Beats" x="35.56" y="72.39" size="1.778" layer="255" align="bottom-center"/>
-<attribute name="NAME" x="34.925" y="69.215" size="0.889" layer="25" ratio="11" rot="R270"/>
+<attribute name="NAME" x="33.02" y="64.643" size="0.889" layer="25" ratio="11"/>
 <attribute name="VALUE" x="31.75" y="69.215" size="0.635" layer="27" ratio="10" rot="R270"/>
 <attribute name="OC_FARNELL" value="unknown" x="31.75" y="67.31" size="1.778" layer="27" rot="R270" display="off"/>
 <attribute name="MF" value="" x="31.75" y="67.31" size="1.778" layer="27" rot="R270" display="off"/>
 <attribute name="MPN" value="" x="31.75" y="67.31" size="1.778" layer="27" rot="R270" display="off"/>
 </element>
-<element name="J1" library="EurorackModularParts" package="3.5MM-JACK-SWITCH-13MM-INPUT" value="PJ-341" x="7.62" y="10.16">
-<attribute name="DESC" value="Intensity" x="7.62" y="10.16" size="1.778" layer="27" display="off"/>
+<element name="J1" library="EurorackModularParts" package="3.5MM-JACK-SWITCH-13MM-INPUT" value="PJ-341" x="7.62" y="10.16" smashed="yes">
+<attribute name="DESC" value="Intensity" x="7.62" y="16.51" size="1.778" layer="254" align="bottom-center"/>
 <attribute name="VALUE" value="PJ-341" x="7.62" y="10.16" size="1.778" layer="27" display="off"/>
 <attribute name="MPN" value="" x="7.62" y="10.16" size="1.778" layer="27" display="off"/>
 <attribute name="OC_FARNELL" value="unknown" x="7.62" y="10.16" size="1.778" layer="27" display="off"/>
@@ -1561,7 +1648,7 @@ new: Attribute TP_SIGNAL_NAME&lt;br&gt;
 </element>
 <element name="B1" library="zephod-components" package="4P-6.0X6.0X5.0H" value="BUTTON-4P-3110040P1" x="6.35" y="81.28" smashed="yes" rot="R270">
 <attribute name="DESC" value="Algorithm" x="10.16" y="86.36" size="1.778" layer="255" align="bottom-center"/>
-<attribute name="NAME" x="9.525" y="83.185" size="0.889" layer="25" ratio="11" rot="R270"/>
+<attribute name="NAME" x="7.62" y="78.74" size="0.889" layer="25" ratio="11"/>
 <attribute name="VALUE" x="6.35" y="83.185" size="0.635" layer="27" ratio="10" rot="R270"/>
 <attribute name="OC_FARNELL" value="unknown" x="6.35" y="81.28" size="1.778" layer="27" rot="R270" display="off"/>
 <attribute name="MF" value="" x="6.35" y="81.28" size="1.778" layer="27" rot="R270" display="off"/>
@@ -1569,365 +1656,534 @@ new: Attribute TP_SIGNAL_NAME&lt;br&gt;
 </element>
 <element name="B3" library="zephod-components" package="4P-6.0X6.0X5.0H" value="BUTTON-4P-3110040P1" x="6.35" y="67.31" smashed="yes" rot="R270">
 <attribute name="DESC" value="Scale" x="10.16" y="72.39" size="1.778" layer="255" align="bottom-center"/>
-<attribute name="NAME" x="9.525" y="69.215" size="0.889" layer="25" ratio="11" rot="R270"/>
+<attribute name="NAME" x="7.62" y="64.643" size="0.889" layer="25" ratio="11"/>
 <attribute name="VALUE" x="6.35" y="69.215" size="0.635" layer="27" ratio="10" rot="R270"/>
 <attribute name="OC_FARNELL" value="unknown" x="6.35" y="67.31" size="1.778" layer="27" rot="R270" display="off"/>
 <attribute name="MF" value="" x="6.35" y="67.31" size="1.778" layer="27" rot="R270" display="off"/>
 <attribute name="MPN" value="" x="6.35" y="67.31" size="1.778" layer="27" rot="R270" display="off"/>
 </element>
-<element name="C14" library="OPL" package="C0603" value="100nF" x="24.22" y="89.23" rot="R180">
+<element name="C14" library="OPL" package="C0603" value="100nF" x="24.22" y="89.23" smashed="yes" rot="R180">
 <attribute name="OC_FARNELL" value="1759017" x="24.22" y="89.23" size="1.778" layer="27" rot="R180" display="off"/>
 <attribute name="MF" value="MULTICOMP" x="24.22" y="89.23" size="1.778" layer="27" rot="R180" display="off"/>
 <attribute name="MPN" value="MC0603F104Z160CT" x="24.22" y="89.23" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="NAME" x="24.22" y="89.611" size="0.889" layer="25" ratio="11" rot="R180" align="bottom-center"/>
+<attribute name="VALUE" x="24.22" y="90.1825" size="0.508" layer="27" ratio="10" rot="R180" align="top-center"/>
 </element>
-<element name="R14" library="OPL" package="R0603" value="100k" x="14.605" y="6.35" rot="R90">
+<element name="R14" library="OPL" package="R0603" value="100k" x="14.605" y="6.35" smashed="yes" rot="R90">
 <attribute name="OC_FARNELL" value="unknown" x="14.605" y="6.35" size="1.778" layer="27" rot="R90" display="off"/>
 <attribute name="MF" value="" x="14.605" y="6.35" size="1.778" layer="27" rot="R90" display="off"/>
 <attribute name="MPN" value="" x="14.605" y="6.35" size="1.778" layer="27" rot="R90" display="off"/>
+<attribute name="NAME" x="15.117" y="5.207" size="0.889" layer="25" ratio="11" rot="R90"/>
+<attribute name="VALUE" x="15.9225" y="4.953" size="0.508" layer="27" ratio="10" rot="R90"/>
 </element>
-<element name="R22" library="OPL" package="R0603" value="33k" x="42.25" y="35.365" rot="R90">
+<element name="R22" library="OPL" package="R0603" value="33k" x="42.25" y="35.365" smashed="yes" rot="R90">
 <attribute name="OC_FARNELL" value="unknown" x="42.25" y="35.365" size="1.778" layer="27" rot="R90" display="off"/>
 <attribute name="MF" value="" x="42.25" y="35.365" size="1.778" layer="27" rot="R90" display="off"/>
 <attribute name="MPN" value="" x="42.25" y="35.365" size="1.778" layer="27" rot="R90" display="off"/>
+<attribute name="NAME" x="42.762" y="34.095" size="0.889" layer="25" ratio="11" rot="R90"/>
+<attribute name="VALUE" x="43.5675" y="33.968" size="0.508" layer="27" ratio="10" rot="R90"/>
 </element>
-<element name="R28" library="OPL" package="R0603" value="51k" x="38.25" y="35.365" rot="R270">
+<element name="R28" library="OPL" package="R0603" value="51k" x="38.25" y="35.365" smashed="yes" rot="R270">
 <attribute name="OC_FARNELL" value="unknown" x="38.25" y="35.365" size="1.778" layer="27" rot="R270" display="off"/>
 <attribute name="MF" value="" x="38.25" y="35.365" size="1.778" layer="27" rot="R270" display="off"/>
 <attribute name="MPN" value="" x="38.25" y="35.365" size="1.778" layer="27" rot="R270" display="off"/>
+<attribute name="NAME" x="37.738" y="36.508" size="0.889" layer="25" ratio="11" rot="R270"/>
+<attribute name="VALUE" x="36.9325" y="36.762" size="0.508" layer="27" ratio="10" rot="R270"/>
 </element>
-<element name="C16" library="OPL" package="C0603" value="3.3nF" x="40.25" y="35.365" rot="R270">
+<element name="C16" library="OPL" package="C0603" value="3.3nF" x="40.25" y="35.365" smashed="yes" rot="R270">
 <attribute name="OC_FARNELL" value="unknown" x="40.25" y="35.365" size="1.778" layer="27" rot="R270" display="off"/>
 <attribute name="MF" value="" x="40.25" y="35.365" size="1.778" layer="27" rot="R270" display="off"/>
 <attribute name="MPN" value="" x="40.25" y="35.365" size="1.778" layer="27" rot="R270" display="off"/>
+<attribute name="NAME" x="39.869" y="35.365" size="0.889" layer="25" ratio="11" rot="R270" align="bottom-center"/>
+<attribute name="VALUE" x="39.2975" y="35.365" size="0.508" layer="27" ratio="10" rot="R270" align="top-center"/>
 </element>
-<element name="R30" library="OPL" package="R0603" value="33k" x="15.24" y="3.175">
+<element name="R30" library="OPL" package="R0603" value="33k" x="15.24" y="3.175" smashed="yes">
 <attribute name="OC_FARNELL" value="unknown" x="15.24" y="3.175" size="1.778" layer="27" display="off"/>
 <attribute name="MF" value="" x="15.24" y="3.175" size="1.778" layer="27" display="off"/>
 <attribute name="MPN" value="" x="15.24" y="3.175" size="1.778" layer="27" display="off"/>
+<attribute name="NAME" x="14.097" y="2.79" size="0.889" layer="25" ratio="11"/>
+<attribute name="VALUE" x="13.843" y="1.8575" size="0.508" layer="27" ratio="10"/>
 </element>
-<element name="Q4" library="transistor" package="SOT23-BEC" value="MMBT3904" x="33.909" y="4.699" rot="R90">
+<element name="Q4" library="transistor" package="SOT23-BEC" value="MMBT3904" x="33.909" y="4.699" smashed="yes" rot="R90">
 <attribute name="OC_FARNELL" value="2336795" x="33.909" y="4.699" size="1.778" layer="27" rot="R90" display="off"/>
 <attribute name="MF" value="NXP" x="33.909" y="4.699" size="1.778" layer="27" rot="R90" display="off"/>
 <attribute name="MPN" value="PMBT3904,215" x="33.909" y="4.699" size="1.778" layer="27" rot="R90" display="off"/>
+<attribute name="NAME" x="34.544" y="3.429" size="1.27" layer="25" rot="R90"/>
+<attribute name="VALUE" x="37.084" y="2.794" size="1.27" layer="27" rot="R90"/>
 </element>
-<element name="R37" library="OPL" package="R0603" value="10k" x="29.869" y="4.695" rot="R180">
+<element name="R37" library="OPL" package="R0603" value="10k" x="29.869" y="4.695" smashed="yes" rot="R180">
 <attribute name="OC_FARNELL" value="unknown" x="29.869" y="4.695" size="1.778" layer="27" rot="R180" display="off"/>
 <attribute name="MF" value="" x="29.869" y="4.695" size="1.778" layer="27" rot="R180" display="off"/>
 <attribute name="MPN" value="" x="29.869" y="4.695" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="NAME" x="30.885" y="5.08" size="0.889" layer="25" ratio="11" rot="R180"/>
+<attribute name="VALUE" x="31.266" y="6.0125" size="0.508" layer="27" ratio="10" rot="R180"/>
 </element>
-<element name="R38" library="OPL" package="R0603" value="100k" x="49.276" y="16.51" rot="R180">
+<element name="R38" library="OPL" package="R0603" value="100k" x="49.276" y="16.51" smashed="yes" rot="R180">
 <attribute name="OC_FARNELL" value="unknown" x="49.276" y="16.51" size="1.778" layer="27" rot="R180" display="off"/>
 <attribute name="MF" value="" x="49.276" y="16.51" size="1.778" layer="27" rot="R180" display="off"/>
 <attribute name="MPN" value="" x="49.276" y="16.51" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="NAME" x="50.419" y="16.895" size="0.889" layer="25" ratio="11" rot="R180"/>
+<attribute name="VALUE" x="50.673" y="17.8275" size="0.508" layer="27" ratio="10" rot="R180"/>
 </element>
-<element name="Q5" library="transistor" package="SOT23-BEC" value="MMBT3904" x="45.445" y="103.53">
+<element name="Q5" library="transistor" package="SOT23-BEC" value="MMBT3904" x="45.445" y="103.53" smashed="yes">
 <attribute name="OC_FARNELL" value="2336795" x="45.445" y="103.53" size="1.778" layer="27" display="off"/>
 <attribute name="MF" value="NXP" x="45.445" y="103.53" size="1.778" layer="27" display="off"/>
 <attribute name="MPN" value="PMBT3904,215" x="45.445" y="103.53" size="1.778" layer="27" display="off"/>
+<attribute name="NAME" x="44.175" y="102.895" size="1.27" layer="25"/>
+<attribute name="VALUE" x="43.54" y="100.355" size="1.27" layer="27"/>
 </element>
-<element name="R39" library="OPL" package="R0603" value="10k" x="46.5" y="96" rot="R270">
+<element name="R39" library="OPL" package="R0603" value="10k" x="46.5" y="96" smashed="yes" rot="R270">
 <attribute name="OC_FARNELL" value="unknown" x="46.5" y="96" size="1.778" layer="27" rot="R270" display="off"/>
 <attribute name="MF" value="" x="46.5" y="96" size="1.778" layer="27" rot="R270" display="off"/>
 <attribute name="MPN" value="" x="46.5" y="96" size="1.778" layer="27" rot="R270" display="off"/>
+<attribute name="NAME" x="46.115" y="97.143" size="0.889" layer="25" ratio="11" rot="R270"/>
+<attribute name="VALUE" x="45.1825" y="97.397" size="0.508" layer="27" ratio="10" rot="R270"/>
 </element>
-<element name="R40" library="OPL" package="R0603" value="100k" x="44.825" y="95.99" rot="R90">
+<element name="R40" library="OPL" package="R0603" value="100k" x="44.825" y="95.99" smashed="yes" rot="R90">
 <attribute name="OC_FARNELL" value="unknown" x="44.825" y="95.99" size="1.778" layer="27" rot="R90" display="off"/>
 <attribute name="MF" value="" x="44.825" y="95.99" size="1.778" layer="27" rot="R90" display="off"/>
 <attribute name="MPN" value="" x="44.825" y="95.99" size="1.778" layer="27" rot="R90" display="off"/>
+<attribute name="NAME" x="45.337" y="94.847" size="0.889" layer="25" ratio="11" rot="R90"/>
+<attribute name="VALUE" x="46.1425" y="94.593" size="0.508" layer="27" ratio="10" rot="R90"/>
 </element>
-<element name="Q6" library="transistor" package="SOT23-BEC" value="MMBT3904" x="54.359" y="89.189" rot="R180">
+<element name="Q6" library="transistor" package="SOT23-BEC" value="MMBT3904" x="54.359" y="89.189" smashed="yes" rot="R180">
 <attribute name="OC_FARNELL" value="2336795" x="54.359" y="89.189" size="1.778" layer="27" rot="R180" display="off"/>
 <attribute name="MF" value="NXP" x="54.359" y="89.189" size="1.778" layer="27" rot="R180" display="off"/>
 <attribute name="MPN" value="PMBT3904,215" x="54.359" y="89.189" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="NAME" x="55.502" y="89.824" size="1.27" layer="25" rot="R180"/>
+<attribute name="VALUE" x="56.264" y="92.364" size="1.27" layer="27" rot="R180"/>
 </element>
-<element name="R41" library="OPL" package="R0603" value="10k" x="51" y="90.5" rot="R180">
+<element name="R41" library="OPL" package="R0603" value="10k" x="51" y="90.5" smashed="yes" rot="R180">
 <attribute name="OC_FARNELL" value="unknown" x="51" y="90.5" size="1.778" layer="27" rot="R180" display="off"/>
 <attribute name="MF" value="" x="51" y="90.5" size="1.778" layer="27" rot="R180" display="off"/>
 <attribute name="MPN" value="" x="51" y="90.5" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="NAME" x="52.143" y="90.885" size="0.889" layer="25" ratio="11" rot="R180"/>
+<attribute name="VALUE" x="52.397" y="91.8175" size="0.508" layer="27" ratio="10" rot="R180"/>
 </element>
-<element name="R42" library="OPL" package="R0603" value="100k" x="54.61" y="92.202">
+<element name="R42" library="OPL" package="R0603" value="100k" x="54.61" y="92.202" smashed="yes">
 <attribute name="OC_FARNELL" value="unknown" x="54.61" y="92.202" size="1.778" layer="27" display="off"/>
 <attribute name="MF" value="" x="54.61" y="92.202" size="1.778" layer="27" display="off"/>
 <attribute name="MPN" value="" x="54.61" y="92.202" size="1.778" layer="27" display="off"/>
+<attribute name="NAME" x="53.467" y="91.69" size="0.889" layer="25" ratio="11"/>
+<attribute name="VALUE" x="53.213" y="90.8845" size="0.508" layer="27" ratio="10"/>
 </element>
-<element name="Q7" library="transistor" package="SOT23-BEC" value="MMBT3904" x="43.815" y="59.69">
+<element name="Q7" library="transistor" package="SOT23-BEC" value="MMBT3904" x="43.815" y="59.69" smashed="yes">
 <attribute name="OC_FARNELL" value="2336795" x="43.815" y="59.69" size="1.778" layer="27" display="off"/>
 <attribute name="MF" value="NXP" x="43.815" y="59.69" size="1.778" layer="27" display="off"/>
 <attribute name="MPN" value="PMBT3904,215" x="43.815" y="59.69" size="1.778" layer="27" display="off"/>
+<attribute name="NAME" x="42.672" y="59.055" size="1.27" layer="25"/>
+<attribute name="VALUE" x="41.91" y="56.515" size="1.27" layer="27"/>
 </element>
-<element name="R43" library="OPL" package="R0603" value="10k" x="46.99" y="61.595" rot="R180">
+<element name="R43" library="OPL" package="R0603" value="10k" x="46.99" y="61.595" smashed="yes" rot="R180">
 <attribute name="OC_FARNELL" value="unknown" x="46.99" y="61.595" size="1.778" layer="27" rot="R180" display="off"/>
 <attribute name="MF" value="" x="46.99" y="61.595" size="1.778" layer="27" rot="R180" display="off"/>
 <attribute name="MPN" value="" x="46.99" y="61.595" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="NAME" x="48.006" y="61.98" size="0.889" layer="25" ratio="11" rot="R180"/>
+<attribute name="VALUE" x="48.387" y="62.9125" size="0.508" layer="27" ratio="10" rot="R180"/>
 </element>
-<element name="R44" library="OPL" package="R0603" value="100k" x="48.26" y="57.785" rot="R180">
+<element name="R44" library="OPL" package="R0603" value="100k" x="48.26" y="57.785" smashed="yes" rot="R180">
 <attribute name="OC_FARNELL" value="unknown" x="48.26" y="57.785" size="1.778" layer="27" rot="R180" display="off"/>
 <attribute name="MF" value="" x="48.26" y="57.785" size="1.778" layer="27" rot="R180" display="off"/>
 <attribute name="MPN" value="" x="48.26" y="57.785" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="NAME" x="49.403" y="58.17" size="0.889" layer="25" ratio="11" rot="R180"/>
+<attribute name="VALUE" x="49.657" y="59.1025" size="0.508" layer="27" ratio="10" rot="R180"/>
 </element>
-<element name="Q8" library="transistor" package="SOT23-BEC" value="MMBT3904" x="54.615" y="42.98">
+<element name="Q8" library="transistor" package="SOT23-BEC" value="MMBT3904" x="54.615" y="42.98" smashed="yes">
 <attribute name="OC_FARNELL" value="2336795" x="54.615" y="42.98" size="1.778" layer="27" display="off"/>
 <attribute name="MF" value="NXP" x="54.615" y="42.98" size="1.778" layer="27" display="off"/>
 <attribute name="MPN" value="PMBT3904,215" x="54.615" y="42.98" size="1.778" layer="27" display="off"/>
+<attribute name="NAME" x="53.345" y="42.472" size="1.27" layer="25"/>
+<attribute name="VALUE" x="52.71" y="39.805" size="1.27" layer="27"/>
 </element>
-<element name="R45" library="OPL" package="R0603" value="10k" x="45.974" y="48.387" rot="R180">
+<element name="R45" library="OPL" package="R0603" value="10k" x="45.974" y="48.387" smashed="yes" rot="R180">
 <attribute name="OC_FARNELL" value="unknown" x="45.974" y="48.387" size="1.778" layer="27" rot="R180" display="off"/>
 <attribute name="MF" value="" x="45.974" y="48.387" size="1.778" layer="27" rot="R180" display="off"/>
 <attribute name="MPN" value="" x="45.974" y="48.387" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="NAME" x="47.117" y="48.772" size="0.889" layer="25" ratio="11" rot="R180"/>
+<attribute name="VALUE" x="47.371" y="49.7045" size="0.508" layer="27" ratio="10" rot="R180"/>
 </element>
-<element name="R46" library="OPL" package="R0603" value="100k" x="46.786" y="45.373" rot="R270">
+<element name="R46" library="OPL" package="R0603" value="100k" x="46.786" y="45.373" smashed="yes" rot="R270">
 <attribute name="OC_FARNELL" value="unknown" x="46.786" y="45.373" size="1.778" layer="27" rot="R270" display="off"/>
 <attribute name="MF" value="" x="46.786" y="45.373" size="1.778" layer="27" rot="R270" display="off"/>
 <attribute name="MPN" value="" x="46.786" y="45.373" size="1.778" layer="27" rot="R270" display="off"/>
+<attribute name="NAME" x="46.401" y="46.389" size="0.889" layer="25" ratio="11" rot="R270"/>
+<attribute name="VALUE" x="45.4685" y="46.77" size="0.508" layer="27" ratio="10" rot="R270"/>
 </element>
-<element name="C17" library="OPL" package="C0603" value="100nF" x="54.677" y="38.618">
+<element name="C17" library="OPL" package="C0603" value="100nF" x="54.677" y="38.618" smashed="yes">
 <attribute name="OC_FARNELL" value="1759017" x="54.677" y="38.618" size="1.778" layer="27" display="off"/>
 <attribute name="MF" value="MULTICOMP" x="54.677" y="38.618" size="1.778" layer="27" display="off"/>
 <attribute name="MPN" value="MC0603F104Z160CT" x="54.677" y="38.618" size="1.778" layer="27" display="off"/>
+<attribute name="NAME" x="54.677" y="38.11" size="0.889" layer="25" ratio="11" align="bottom-center"/>
+<attribute name="VALUE" x="54.677" y="37.6655" size="0.508" layer="27" ratio="10" align="top-center"/>
 </element>
-<element name="U3" library="FarnellThings" package="QFN50P250X350X100-17N" value="74HC595BQ" x="45.3" y="89.64" rot="R90">
+<element name="U3" library="FarnellThings" package="QFN50P250X350X100-17N" value="74HC595BQ" x="45.3" y="89.64" smashed="yes" rot="R90">
 <attribute name="PACKAGE" value="QFN-16" x="45.3" y="89.64" size="1.778" layer="27" rot="R90" display="off"/>
 <attribute name="OC_NEWARK" value="43W8000" x="45.3" y="89.64" size="1.778" layer="27" rot="R90" display="off"/>
 <attribute name="MPN" value="74HC595BQ" x="45.3" y="89.64" size="1.778" layer="27" rot="R90" display="off"/>
 <attribute name="SUPPLIER" value="NXP" x="45.3" y="89.64" size="1.778" layer="27" rot="R90" display="off"/>
 <attribute name="OC_FARNELL" value="2164850" x="45.3" y="89.64" size="1.778" layer="27" rot="R90" display="off"/>
 <attribute name="MF" value="NXP" x="45.3" y="89.64" size="1.778" layer="27" rot="R90" display="off"/>
+<attribute name="NAME" x="47.095" y="90.665" size="1" layer="25" ratio="10" rot="SR0" align="bottom-center"/>
+<attribute name="VALUE" x="48.55" y="89.64" size="1" layer="27" ratio="10" rot="SR90" align="top-center"/>
 </element>
-<element name="U4" library="FarnellThings" package="QFN50P250X350X100-17N" value="74HC595BQ" x="31.405" y="89.365" rot="R180">
+<element name="U4" library="FarnellThings" package="QFN50P250X350X100-17N" value="74HC595BQ" x="31.405" y="89.365" smashed="yes" rot="R180">
 <attribute name="PACKAGE" value="QFN-16" x="31.405" y="89.365" size="1.778" layer="27" rot="R180" display="off"/>
 <attribute name="OC_NEWARK" value="43W8000" x="31.405" y="89.365" size="1.778" layer="27" rot="R180" display="off"/>
 <attribute name="MPN" value="74HC595BQ" x="31.405" y="89.365" size="1.778" layer="27" rot="R180" display="off"/>
 <attribute name="SUPPLIER" value="NXP" x="31.405" y="89.365" size="1.778" layer="27" rot="R180" display="off"/>
 <attribute name="OC_FARNELL" value="2164850" x="31.405" y="89.365" size="1.778" layer="27" rot="R180" display="off"/>
 <attribute name="MF" value="NXP" x="31.405" y="89.365" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="NAME" x="29.936" y="90.923" size="1" layer="25" ratio="10" rot="SR0" align="bottom-center"/>
+<attribute name="VALUE" x="31.405" y="92.615" size="1" layer="27" ratio="10" rot="SR180" align="top-center"/>
 </element>
-<element name="U5" library="FarnellThings" package="QFN50P250X350X100-17N" value="74HC595BQ" x="23.51" y="85.165">
+<element name="U5" library="FarnellThings" package="QFN50P250X350X100-17N" value="74HC595BQ" x="23.51" y="85.165" smashed="yes">
 <attribute name="PACKAGE" value="QFN-16" x="23.51" y="85.165" size="1.778" layer="27" display="off"/>
 <attribute name="OC_NEWARK" value="43W8000" x="23.51" y="85.165" size="1.778" layer="27" display="off"/>
 <attribute name="MPN" value="74HC595BQ" x="23.51" y="85.165" size="1.778" layer="27" display="off"/>
 <attribute name="SUPPLIER" value="NXP" x="23.51" y="85.165" size="1.778" layer="27" display="off"/>
 <attribute name="OC_FARNELL" value="2164850" x="23.51" y="85.165" size="1.778" layer="27" display="off"/>
 <attribute name="MF" value="NXP" x="23.51" y="85.165" size="1.778" layer="27" display="off"/>
+<attribute name="NAME" x="24.78" y="82.573" size="1" layer="25" ratio="10" rot="SR0" align="bottom-center"/>
+<attribute name="VALUE" x="23.51" y="81.915" size="1" layer="27" ratio="10" rot="SR0" align="top-center"/>
 </element>
-<element name="R13" library="OPL" package="R0603" value="56" x="57.658" y="91.694" rot="R90">
+<element name="R13" library="OPL" package="R0603" value="56" x="57.658" y="91.694" smashed="yes" rot="R90">
 <attribute name="OC_FARNELL" value="unknown" x="57.658" y="91.694" size="1.778" layer="27" rot="R90" display="off"/>
 <attribute name="MF" value="" x="57.658" y="91.694" size="1.778" layer="27" rot="R90" display="off"/>
 <attribute name="MPN" value="" x="57.658" y="91.694" size="1.778" layer="27" rot="R90" display="off"/>
+<attribute name="NAME" x="58.043" y="90.424" size="0.889" layer="25" ratio="11" rot="R90"/>
+<attribute name="VALUE" x="58.9755" y="90.297" size="0.508" layer="27" ratio="10" rot="R90"/>
 </element>
-<element name="R47" library="OPL" package="R0603" value="56" x="54.991" y="73.025" rot="R180">
+<element name="R47" library="OPL" package="R0603" value="56" x="54.991" y="73.025" smashed="yes" rot="R180">
 <attribute name="OC_FARNELL" value="unknown" x="54.991" y="73.025" size="1.778" layer="27" rot="R180" display="off"/>
 <attribute name="MF" value="" x="54.991" y="73.025" size="1.778" layer="27" rot="R180" display="off"/>
 <attribute name="MPN" value="" x="54.991" y="73.025" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="NAME" x="56.007" y="73.41" size="0.889" layer="25" ratio="11" rot="R180"/>
+<attribute name="VALUE" x="56.388" y="74.3425" size="0.508" layer="27" ratio="10" rot="R180"/>
 </element>
-<element name="R48" library="OPL" package="R0603" value="56" x="54.957" y="57.807" rot="R180">
+<element name="R48" library="OPL" package="R0603" value="56" x="54.957" y="57.807" smashed="yes" rot="R180">
 <attribute name="OC_FARNELL" value="unknown" x="54.957" y="57.807" size="1.778" layer="27" rot="R180" display="off"/>
 <attribute name="MF" value="" x="54.957" y="57.807" size="1.778" layer="27" rot="R180" display="off"/>
 <attribute name="MPN" value="" x="54.957" y="57.807" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="NAME" x="56.1" y="58.192" size="0.889" layer="25" ratio="11" rot="R180"/>
+<attribute name="VALUE" x="56.354" y="59.1245" size="0.508" layer="27" ratio="10" rot="R180"/>
 </element>
-<element name="R49" library="OPL" package="R0603" value="56" x="54.864" y="16.51" rot="R180">
+<element name="R49" library="OPL" package="R0603" value="56" x="54.864" y="16.51" smashed="yes" rot="R180">
 <attribute name="OC_FARNELL" value="unknown" x="54.864" y="16.51" size="1.778" layer="27" rot="R180" display="off"/>
 <attribute name="MF" value="" x="54.864" y="16.51" size="1.778" layer="27" rot="R180" display="off"/>
 <attribute name="MPN" value="" x="54.864" y="16.51" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="NAME" x="55.88" y="16.895" size="0.889" layer="25" ratio="11" rot="R180"/>
+<attribute name="VALUE" x="56.261" y="17.8275" size="0.508" layer="27" ratio="10" rot="R180"/>
 </element>
-<element name="U6" library="EurorackModularParts" package="SOT95P290X145-5N" value="24LC16T-I/OT" x="38.25" y="59.5" rot="R90">
+<element name="U6" library="EurorackModularParts" package="SOT95P290X145-5N" value="24LC16T-I/OT" x="38.25" y="59.5" smashed="yes" rot="R90">
 <attribute name="PACKAGE" value="SOT-23-5 " x="38.25" y="59.5" size="1.778" layer="27" rot="R90" display="off"/>
 <attribute name="OC_NEWARK" value="62K0574" x="38.25" y="59.5" size="1.778" layer="27" rot="R90" display="off"/>
 <attribute name="MPN" value="24LC00T-I/OT" x="38.25" y="59.5" size="1.778" layer="27" rot="R90" display="off"/>
 <attribute name="SUPPLIER" value="MICROCHIP" x="38.25" y="59.5" size="1.778" layer="27" rot="R90" display="off"/>
 <attribute name="OC_FARNELL" value="9757864" x="38.25" y="59.5" size="1.778" layer="27" rot="R90" display="off"/>
 <attribute name="MF" value="MICROCHIP" x="38.25" y="59.5" size="1.778" layer="27" rot="R90" display="off"/>
+<attribute name="NAME" x="36.4114" y="58.4224" size="2.0828" layer="25" ratio="10" rot="SR0"/>
+<attribute name="VALUE" x="42.2632" y="53.912" size="2.0828" layer="27" ratio="10" rot="SR90"/>
 </element>
-<element name="C21" library="OPL" package="C0603" value="100nF" x="43.815" y="56.765" rot="R180">
+<element name="C21" library="OPL" package="C0603" value="100nF" x="43.815" y="56.765" smashed="yes" rot="R180">
 <attribute name="OC_FARNELL" value="1759017" x="43.815" y="56.765" size="1.778" layer="27" rot="R180" display="off"/>
 <attribute name="MF" value="MULTICOMP" x="43.815" y="56.765" size="1.778" layer="27" rot="R180" display="off"/>
 <attribute name="MPN" value="MC0603F104Z160CT" x="43.815" y="56.765" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="NAME" x="43.815" y="57.273" size="0.889" layer="25" ratio="11" rot="R180" align="bottom-center"/>
+<attribute name="VALUE" x="43.815" y="57.7175" size="0.508" layer="27" ratio="10" rot="R180" align="top-center"/>
 </element>
-<element name="R50" library="OPL" package="R0603" value="2k" x="35.605" y="59.45" rot="R270">
+<element name="R50" library="OPL" package="R0603" value="2k" x="35.605" y="59.45" smashed="yes" rot="R270">
 <attribute name="OC_FARNELL" value="unknown" x="35.605" y="59.45" size="1.778" layer="27" rot="R270" display="off"/>
 <attribute name="MF" value="" x="35.605" y="59.45" size="1.778" layer="27" rot="R270" display="off"/>
 <attribute name="MPN" value="" x="35.605" y="59.45" size="1.778" layer="27" rot="R270" display="off"/>
+<attribute name="NAME" x="35.22" y="60.593" size="0.889" layer="25" ratio="11" rot="R270"/>
+<attribute name="VALUE" x="34.2875" y="60.847" size="0.508" layer="27" ratio="10" rot="R270"/>
 </element>
-<element name="R51" library="OPL" package="R0603" value="2k" x="40.815" y="59.45" rot="R270">
+<element name="R51" library="OPL" package="R0603" value="2k" x="40.815" y="59.45" smashed="yes" rot="R270">
 <attribute name="OC_FARNELL" value="unknown" x="40.815" y="59.45" size="1.778" layer="27" rot="R270" display="off"/>
 <attribute name="MF" value="" x="40.815" y="59.45" size="1.778" layer="27" rot="R270" display="off"/>
 <attribute name="MPN" value="" x="40.815" y="59.45" size="1.778" layer="27" rot="R270" display="off"/>
+<attribute name="NAME" x="40.43" y="60.593" size="0.889" layer="25" ratio="11" rot="R270"/>
+<attribute name="VALUE" x="39.4975" y="60.847" size="0.508" layer="27" ratio="10" rot="R270"/>
 </element>
-<element name="IC3" library="EurorackModularParts" package="SO14" value="TL074D" x="31.5" y="19.935">
+<element name="IC3" library="EurorackModularParts" package="SO14" value="TL074D" x="31.5" y="19.935" smashed="yes">
 <attribute name="OC_FARNELL" value="1103010" x="31.5" y="19.935" size="1.778" layer="27" display="off"/>
 <attribute name="MF" value="TEXAS INSTRUMENTS" x="31.5" y="19.935" size="1.778" layer="27" display="off"/>
 <attribute name="MPN" value="TL074CD" x="31.5" y="19.935" size="1.778" layer="27" display="off"/>
+<attribute name="NAME" x="30.349" y="19.554" size="1.27" layer="25"/>
+<attribute name="VALUE" x="37.342" y="18.03" size="1.27" layer="27" rot="R90"/>
 </element>
-<element name="IC4" library="EurorackModularParts" package="SO14" value="MCP6004" x="48" y="38.365" rot="R90">
+<element name="IC4" library="EurorackModularParts" package="SO14" value="MCP6004" x="48" y="38.365" smashed="yes" rot="R90">
 <attribute name="OC_FARNELL" value="1605572" x="48" y="38.365" size="1.778" layer="27" rot="R90" display="off"/>
 <attribute name="MF" value="MICROCHIP" x="48" y="38.365" size="1.778" layer="27" rot="R90" display="off"/>
 <attribute name="MPN" value="MCP6004-I/SL." x="48" y="38.365" size="1.778" layer="27" rot="R90" display="off"/>
+<attribute name="NAME" x="49.016" y="40.651" size="1.27" layer="25" rot="R180"/>
+<attribute name="VALUE" x="49.905" y="44.207" size="1.27" layer="27" rot="R180"/>
 </element>
-<element name="R4" library="OPL" package="R0603" value="100k" x="33.359" y="9.29" rot="R90">
+<element name="R4" library="OPL" package="R0603" value="100k" x="33.359" y="9.29" smashed="yes" rot="R90">
 <attribute name="OC_FARNELL" value="unknown" x="33.359" y="9.29" size="1.778" layer="27" rot="R90" display="off"/>
 <attribute name="MF" value="" x="33.359" y="9.29" size="1.778" layer="27" rot="R90" display="off"/>
 <attribute name="MPN" value="" x="33.359" y="9.29" size="1.778" layer="27" rot="R90" display="off"/>
+<attribute name="NAME" x="33.744" y="8.528" size="0.889" layer="25" ratio="11" rot="R90"/>
+<attribute name="VALUE" x="34.6765" y="7.893" size="0.508" layer="27" ratio="10" rot="R90"/>
 </element>
-<element name="R6" library="OPL" package="R0603" value="100k" x="34.44" y="13.865">
+<element name="R6" library="OPL" package="R0603" value="100k" x="34.44" y="13.865" smashed="yes">
 <attribute name="OC_FARNELL" value="unknown" x="34.44" y="13.865" size="1.778" layer="27" display="off"/>
 <attribute name="MF" value="" x="34.44" y="13.865" size="1.778" layer="27" display="off"/>
 <attribute name="MPN" value="" x="34.44" y="13.865" size="1.778" layer="27" display="off"/>
+<attribute name="NAME" x="33.678" y="13.48" size="0.889" layer="25" ratio="11"/>
+<attribute name="VALUE" x="33.043" y="12.5475" size="0.508" layer="27" ratio="10"/>
 </element>
-<element name="R52" library="OPL" package="R0603" value="100k" x="34.29" y="27.94">
+<element name="R52" library="OPL" package="R0603" value="100k" x="34.29" y="27.94" smashed="yes">
 <attribute name="OC_FARNELL" value="unknown" x="34.29" y="27.94" size="1.778" layer="27" display="off"/>
 <attribute name="MF" value="" x="34.29" y="27.94" size="1.778" layer="27" display="off"/>
 <attribute name="MPN" value="" x="34.29" y="27.94" size="1.778" layer="27" display="off"/>
+<attribute name="NAME" x="33.147" y="27.428" size="0.889" layer="25" ratio="11"/>
+<attribute name="VALUE" x="32.893" y="26.6225" size="0.508" layer="27" ratio="10"/>
 </element>
-<element name="R53" library="OPL" package="R0603" value="100k" x="32.77" y="30.099">
+<element name="R53" library="OPL" package="R0603" value="100k" x="32.77" y="30.099" smashed="yes">
 <attribute name="OC_FARNELL" value="unknown" x="32.77" y="30.099" size="1.778" layer="27" display="off"/>
 <attribute name="MF" value="" x="32.77" y="30.099" size="1.778" layer="27" display="off"/>
 <attribute name="MPN" value="" x="32.77" y="30.099" size="1.778" layer="27" display="off"/>
+<attribute name="NAME" x="31.627" y="29.714" size="0.889" layer="25" ratio="11"/>
+<attribute name="VALUE" x="31.373" y="28.7815" size="0.508" layer="27" ratio="10"/>
 </element>
-<element name="R10" library="OPL" package="R0603" value="56" x="58.91" y="34.384" rot="R90">
+<element name="R10" library="OPL" package="R0603" value="56" x="58.91" y="34.384" smashed="yes" rot="R90">
 <attribute name="OC_FARNELL" value="unknown" x="58.91" y="34.384" size="1.778" layer="27" rot="R90" display="off"/>
 <attribute name="MF" value="" x="58.91" y="34.384" size="1.778" layer="27" rot="R90" display="off"/>
 <attribute name="MPN" value="" x="58.91" y="34.384" size="1.778" layer="27" rot="R90" display="off"/>
+<attribute name="NAME" x="59.422" y="33.241" size="0.889" layer="25" ratio="11" rot="R90"/>
+<attribute name="VALUE" x="60.2275" y="32.987" size="0.508" layer="27" ratio="10" rot="R90"/>
 </element>
-<element name="R11" library="OPL" package="R0603" value="10k" x="12.585" y="91.44">
+<element name="R11" library="OPL" package="R0603" value="10k" x="12.585" y="91.44" smashed="yes">
 <attribute name="OC_FARNELL" value="unknown" x="12.585" y="91.44" size="1.778" layer="27" display="off"/>
 <attribute name="MF" value="" x="12.585" y="91.44" size="1.778" layer="27" display="off"/>
 <attribute name="MPN" value="" x="12.585" y="91.44" size="1.778" layer="27" display="off"/>
+<attribute name="NAME" x="11.442" y="91.055" size="0.889" layer="25" ratio="11"/>
+<attribute name="VALUE" x="11.188" y="90.1225" size="0.508" layer="27" ratio="10"/>
 </element>
-<element name="R29" library="OPL" package="R0603" value="10k" x="15.285" y="55.69" rot="R90">
+<element name="R29" library="OPL" package="R0603" value="10k" x="15.285" y="55.69" smashed="yes" rot="R90">
 <attribute name="OC_FARNELL" value="unknown" x="15.285" y="55.69" size="1.778" layer="27" rot="R90" display="off"/>
 <attribute name="MF" value="" x="15.285" y="55.69" size="1.778" layer="27" rot="R90" display="off"/>
 <attribute name="MPN" value="" x="15.285" y="55.69" size="1.778" layer="27" rot="R90" display="off"/>
+<attribute name="NAME" x="15.67" y="54.547" size="0.889" layer="25" ratio="11" rot="R90"/>
+<attribute name="VALUE" x="16.6025" y="54.293" size="0.508" layer="27" ratio="10" rot="R90"/>
 </element>
-<element name="D1" library="OPL" package="DO-214AC" value="MRA4004T3G" x="14.605" y="26.67" rot="R90">
+<element name="D1" library="OPL" package="DO-214AC" value="MRA4004T3G" x="14.605" y="26.67" smashed="yes" rot="R90">
 <attribute name="OC_FARNELL" value="9551824" x="14.605" y="26.67" size="1.778" layer="27" rot="R90" display="off"/>
 <attribute name="MF" value="VISHAY" x="14.605" y="26.67" size="1.778" layer="27" rot="R90" display="off"/>
 <attribute name="MPN" value="US1G-E3/5AT" x="14.605" y="26.67" size="1.778" layer="27" rot="R90" display="off"/>
+<attribute name="NAME" x="15.113" y="24.257" size="0.889" layer="25" ratio="11" rot="R90"/>
+<attribute name="VALUE" x="14.605" y="24.765" size="0.635" layer="27" ratio="10" rot="R90"/>
 </element>
-<element name="D2" library="OPL" package="DO-214AC" value="MRA4004T3G" x="14.605" y="12.7" rot="R90">
+<element name="D2" library="OPL" package="DO-214AC" value="MRA4004T3G" x="14.605" y="12.7" smashed="yes" rot="R90">
 <attribute name="OC_FARNELL" value="9551824" x="14.605" y="12.7" size="1.778" layer="27" rot="R90" display="off"/>
 <attribute name="MF" value="VISHAY" x="14.605" y="12.7" size="1.778" layer="27" rot="R90" display="off"/>
 <attribute name="MPN" value="US1G-E3/5AT" x="14.605" y="12.7" size="1.778" layer="27" rot="R90" display="off"/>
+<attribute name="NAME" x="14.986" y="10.033" size="0.889" layer="25" ratio="11" rot="R90"/>
+<attribute name="VALUE" x="14.605" y="10.795" size="0.635" layer="27" ratio="10" rot="R90"/>
 </element>
-<element name="FID3" library="adafruit" package="FIDUCIAL_1MM" value="FIDUCIAL" x="3" y="5">
-<attribute name="OC_FARNELL" value="unknown" x="3" y="5" size="1.778" layer="27" display="off"/>
-<attribute name="MF" value="" x="3" y="5" size="1.778" layer="27" display="off"/>
-<attribute name="MPN" value="" x="3" y="5" size="1.778" layer="27" display="off"/>
-</element>
-<element name="FID2" library="adafruit" package="FIDUCIAL_1MM" value="FIDUCIAL" x="57.111" y="2.46">
-<attribute name="OC_FARNELL" value="unknown" x="57.111" y="2.46" size="1.778" layer="27" display="off"/>
-<attribute name="MF" value="" x="57.111" y="2.46" size="1.778" layer="27" display="off"/>
-<attribute name="MPN" value="" x="57.111" y="2.46" size="1.778" layer="27" display="off"/>
-</element>
-<element name="FID1" library="adafruit" package="FIDUCIAL_1MM" value="FIDUCIAL" x="3" y="104">
-<attribute name="OC_FARNELL" value="unknown" x="3" y="104" size="1.778" layer="27" display="off"/>
-<attribute name="MF" value="" x="3" y="104" size="1.778" layer="27" display="off"/>
-<attribute name="MPN" value="" x="3" y="104" size="1.778" layer="27" display="off"/>
-</element>
-<element name="TP1" library="testpad" package="B1,27" value="TPB1,27" x="37.875" y="45" rot="MR0">
-<attribute name="TP_SIGNAL_NAME" value="" x="37.875" y="45" size="1.778" layer="28" rot="MR0" display="off"/>
+<element name="TP1" library="testpad" package="B1,27" value="TPB1,27" x="37.875" y="45" smashed="yes" rot="MR0">
+<attribute name="TP_SIGNAL_NAME" value="" x="38.51" y="43.095" size="1" layer="38" rot="MR0"/>
 <attribute name="OC_FARNELL" value="unknown" x="37.875" y="45" size="1.778" layer="28" rot="MR0" display="off"/>
 <attribute name="MF" value="" x="37.875" y="45" size="1.778" layer="28" rot="MR0" display="off"/>
 <attribute name="MPN" value="" x="37.875" y="45" size="1.778" layer="28" rot="MR0" display="off"/>
+<attribute name="VALUE" x="38.51" y="44.238" size="0.0254" layer="28" rot="MR0"/>
 </element>
-<element name="D24" library="OPL" package="LED0603" value="yellow" x="17.78" y="83.82" rot="R270"/>
-<element name="D25" library="OPL" package="LED0603" value="yellow" x="17.78" y="78.74" rot="R270"/>
-<element name="D26" library="OPL" package="LED0603" value="yellow" x="12.7" y="83.82" rot="R270"/>
-<element name="D27" library="OPL" package="LED0603" value="yellow" x="12.7" y="78.74" rot="R270"/>
-<element name="D28" library="OPL" package="LED0603" value="yellow" x="12.7" y="64.77" rot="R270"/>
-<element name="D29" library="OPL" package="LED0603" value="yellow" x="12.7" y="69.85" rot="R270"/>
-<element name="D30" library="OPL" package="LED0603" value="yellow" x="17.78" y="64.77" rot="R270"/>
-<element name="D31" library="OPL" package="LED0603" value="yellow" x="17.78" y="69.85" rot="R270"/>
-<element name="D32" library="OPL" package="LED0603" value="yellow" x="43.18" y="64.77" rot="R270"/>
-<element name="D33" library="OPL" package="LED0603" value="yellow" x="38.1" y="64.77" rot="R270"/>
-<element name="D34" library="OPL" package="LED0603" value="yellow" x="38.1" y="69.85" rot="R270"/>
-<element name="D35" library="OPL" package="LED0603" value="yellow" x="43.18" y="69.85" rot="R270"/>
-<element name="D36" library="OPL" package="LED0603" value="yellow" x="43.18" y="83.82" rot="R270"/>
-<element name="D37" library="OPL" package="LED0603" value="yellow" x="43.18" y="78.74" rot="R270"/>
-<element name="D38" library="OPL" package="LED0603" value="yellow" x="38.1" y="83.82" rot="R270"/>
-<element name="D39" library="OPL" package="LED0603" value="yellow" x="38.1" y="78.74" rot="R270"/>
-<element name="D40" library="OPL" package="LED0603" value="yellow" x="58.42" y="31.115" rot="R180"/>
-<element name="D41" library="OPL" package="LED0603" value="yellow" x="58.42" y="16.51" rot="R180"/>
-<element name="D42" library="OPL" package="LED0603" value="yellow" x="58.42" y="88.265" rot="R180"/>
-<element name="D43" library="OPL" package="LED0603" value="yellow" x="58.42" y="73.025" rot="R180"/>
-<element name="D44" library="OPL" package="LED0603" value="yellow" x="58.42" y="57.785" rot="R180"/>
-<element name="R31" library="OPL" package="R0603" value="56" x="38.1" y="73.025" rot="R90">
+<element name="D24" library="OPL" package="LED0603" value="yellow" x="17.78" y="83.82" smashed="yes" rot="R270">
+<attribute name="NAME" x="19.642" y="83.92" size="0.635" layer="25" ratio="11" rot="R270" align="bottom-center"/>
+<attribute name="VALUE" x="16.118" y="83.82" size="0.635" layer="27" ratio="10" rot="R270" align="top-center"/>
+</element>
+<element name="D25" library="OPL" package="LED0603" value="yellow" x="17.78" y="78.74" smashed="yes" rot="R270">
+<attribute name="NAME" x="19.642" y="78.84" size="0.635" layer="25" ratio="11" rot="R270" align="bottom-center"/>
+<attribute name="VALUE" x="16.118" y="78.74" size="0.635" layer="27" ratio="10" rot="R270" align="top-center"/>
+</element>
+<element name="D26" library="OPL" package="LED0603" value="yellow" x="12.7" y="83.82" smashed="yes" rot="R270">
+<attribute name="NAME" x="14.562" y="83.92" size="0.635" layer="25" ratio="11" rot="R270" align="bottom-center"/>
+<attribute name="VALUE" x="11.038" y="83.82" size="0.635" layer="27" ratio="10" rot="R270" align="top-center"/>
+</element>
+<element name="D27" library="OPL" package="LED0603" value="yellow" x="12.7" y="78.74" smashed="yes" rot="R270">
+<attribute name="NAME" x="14.562" y="78.84" size="0.635" layer="25" ratio="11" rot="R270" align="bottom-center"/>
+<attribute name="VALUE" x="11.038" y="78.74" size="0.635" layer="27" ratio="10" rot="R270" align="top-center"/>
+</element>
+<element name="D28" library="OPL" package="LED0603" value="yellow" x="12.7" y="64.77" smashed="yes" rot="R270">
+<attribute name="NAME" x="14.562" y="64.87" size="0.635" layer="25" ratio="11" rot="R270" align="bottom-center"/>
+<attribute name="VALUE" x="11.038" y="64.77" size="0.635" layer="27" ratio="10" rot="R270" align="top-center"/>
+</element>
+<element name="D29" library="OPL" package="LED0603" value="yellow" x="12.7" y="69.85" smashed="yes" rot="R270">
+<attribute name="NAME" x="14.562" y="69.95" size="0.635" layer="25" ratio="11" rot="R270" align="bottom-center"/>
+<attribute name="VALUE" x="11.038" y="69.85" size="0.635" layer="27" ratio="10" rot="R270" align="top-center"/>
+</element>
+<element name="D30" library="OPL" package="LED0603" value="yellow" x="17.78" y="64.77" smashed="yes" rot="R270">
+<attribute name="NAME" x="19.642" y="64.87" size="0.635" layer="25" ratio="11" rot="R270" align="bottom-center"/>
+<attribute name="VALUE" x="16.118" y="64.77" size="0.635" layer="27" ratio="10" rot="R270" align="top-center"/>
+</element>
+<element name="D31" library="OPL" package="LED0603" value="yellow" x="17.78" y="69.85" smashed="yes" rot="R270">
+<attribute name="NAME" x="19.642" y="69.95" size="0.635" layer="25" ratio="11" rot="R270" align="bottom-center"/>
+<attribute name="VALUE" x="16.118" y="69.85" size="0.635" layer="27" ratio="10" rot="R270" align="top-center"/>
+</element>
+<element name="D32" library="OPL" package="LED0603" value="yellow" x="43.18" y="64.77" smashed="yes" rot="R270">
+<attribute name="NAME" x="45.042" y="64.87" size="0.635" layer="25" ratio="11" rot="R270" align="bottom-center"/>
+<attribute name="VALUE" x="41.518" y="64.77" size="0.635" layer="27" ratio="10" rot="R270" align="top-center"/>
+</element>
+<element name="D33" library="OPL" package="LED0603" value="yellow" x="38.1" y="64.77" smashed="yes" rot="R270">
+<attribute name="NAME" x="39.962" y="64.87" size="0.635" layer="25" ratio="11" rot="R270" align="bottom-center"/>
+<attribute name="VALUE" x="36.438" y="64.77" size="0.635" layer="27" ratio="10" rot="R270" align="top-center"/>
+</element>
+<element name="D34" library="OPL" package="LED0603" value="yellow" x="38.1" y="69.85" smashed="yes" rot="R270">
+<attribute name="NAME" x="39.962" y="69.95" size="0.635" layer="25" ratio="11" rot="R270" align="bottom-center"/>
+<attribute name="VALUE" x="36.438" y="69.85" size="0.635" layer="27" ratio="10" rot="R270" align="top-center"/>
+</element>
+<element name="D35" library="OPL" package="LED0603" value="yellow" x="43.18" y="69.85" smashed="yes" rot="R270">
+<attribute name="NAME" x="45.042" y="69.95" size="0.635" layer="25" ratio="11" rot="R270" align="bottom-center"/>
+<attribute name="VALUE" x="41.518" y="69.85" size="0.635" layer="27" ratio="10" rot="R270" align="top-center"/>
+</element>
+<element name="D36" library="OPL" package="LED0603" value="yellow" x="43.18" y="83.82" smashed="yes" rot="R270">
+<attribute name="NAME" x="45.042" y="83.92" size="0.635" layer="25" ratio="11" rot="R270" align="bottom-center"/>
+<attribute name="VALUE" x="41.518" y="83.82" size="0.635" layer="27" ratio="10" rot="R270" align="top-center"/>
+</element>
+<element name="D37" library="OPL" package="LED0603" value="yellow" x="43.18" y="78.74" smashed="yes" rot="R270">
+<attribute name="NAME" x="45.042" y="78.84" size="0.635" layer="25" ratio="11" rot="R270" align="bottom-center"/>
+<attribute name="VALUE" x="41.518" y="78.74" size="0.635" layer="27" ratio="10" rot="R270" align="top-center"/>
+</element>
+<element name="D38" library="OPL" package="LED0603" value="yellow" x="38.1" y="83.82" smashed="yes" rot="R270">
+<attribute name="NAME" x="39.962" y="83.92" size="0.635" layer="25" ratio="11" rot="R270" align="bottom-center"/>
+<attribute name="VALUE" x="36.438" y="83.82" size="0.635" layer="27" ratio="10" rot="R270" align="top-center"/>
+</element>
+<element name="D39" library="OPL" package="LED0603" value="yellow" x="38.1" y="78.74" smashed="yes" rot="R270">
+<attribute name="NAME" x="39.962" y="78.84" size="0.635" layer="25" ratio="11" rot="R270" align="bottom-center"/>
+<attribute name="VALUE" x="36.438" y="78.74" size="0.635" layer="27" ratio="10" rot="R270" align="top-center"/>
+</element>
+<element name="D40" library="OPL" package="LED0603" value="yellow" x="58.42" y="31.115" smashed="yes" rot="R180">
+<attribute name="NAME" x="58.52" y="29.253" size="0.635" layer="25" ratio="11" rot="R180" align="bottom-center"/>
+<attribute name="VALUE" x="58.42" y="32.777" size="0.635" layer="27" ratio="10" rot="R180" align="top-center"/>
+</element>
+<element name="D41" library="OPL" package="LED0603" value="yellow" x="58.42" y="16.51" smashed="yes" rot="R180">
+<attribute name="NAME" x="58.52" y="14.648" size="0.635" layer="25" ratio="11" rot="R180" align="bottom-center"/>
+<attribute name="VALUE" x="58.42" y="18.172" size="0.635" layer="27" ratio="10" rot="R180" align="top-center"/>
+</element>
+<element name="D42" library="OPL" package="LED0603" value="yellow" x="58.42" y="88.265" smashed="yes" rot="R180">
+<attribute name="NAME" x="58.52" y="86.403" size="0.635" layer="25" ratio="11" rot="R180" align="bottom-center"/>
+<attribute name="VALUE" x="58.42" y="89.927" size="0.635" layer="27" ratio="10" rot="R180" align="top-center"/>
+</element>
+<element name="D43" library="OPL" package="LED0603" value="yellow" x="58.42" y="73.025" smashed="yes" rot="R180">
+<attribute name="NAME" x="58.52" y="71.163" size="0.635" layer="25" ratio="11" rot="R180" align="bottom-center"/>
+<attribute name="VALUE" x="58.42" y="74.687" size="0.635" layer="27" ratio="10" rot="R180" align="top-center"/>
+</element>
+<element name="D44" library="OPL" package="LED0603" value="yellow" x="58.42" y="57.785" smashed="yes" rot="R180">
+<attribute name="NAME" x="58.266" y="60.368" size="0.635" layer="25" ratio="11" rot="R180" align="bottom-center"/>
+<attribute name="VALUE" x="58.42" y="59.447" size="0.635" layer="27" ratio="10" rot="R180" align="top-center"/>
+</element>
+<element name="R31" library="OPL" package="R0603" value="56" x="38.1" y="73.025" smashed="yes" rot="R90">
 <attribute name="MPN" value="" x="38.1" y="73.025" size="1.778" layer="27" rot="R90" display="off"/>
 <attribute name="MF" value="" x="38.1" y="73.025" size="1.778" layer="27" rot="R90" display="off"/>
 <attribute name="OC_FARNELL" value="unknown" x="38.1" y="73.025" size="1.778" layer="27" rot="R90" display="off"/>
+<attribute name="NAME" x="38.612" y="71.882" size="0.889" layer="25" ratio="11" rot="R90"/>
+<attribute name="VALUE" x="39.4175" y="71.628" size="0.508" layer="27" ratio="10" rot="R90"/>
 </element>
-<element name="R32" library="OPL" package="R0603" value="56" x="38.785" y="67.19">
+<element name="R32" library="OPL" package="R0603" value="56" x="38.785" y="67.19" smashed="yes">
 <attribute name="MPN" value="" x="38.785" y="67.19" size="1.778" layer="27" display="off"/>
 <attribute name="MF" value="" x="38.785" y="67.19" size="1.778" layer="27" display="off"/>
 <attribute name="OC_FARNELL" value="unknown" x="38.785" y="67.19" size="1.778" layer="27" display="off"/>
+<attribute name="NAME" x="37.642" y="66.678" size="0.889" layer="25" ratio="11"/>
+<attribute name="VALUE" x="37.388" y="65.8725" size="0.508" layer="27" ratio="10"/>
 </element>
-<element name="R33" library="OPL" package="R0603" value="56" x="42.545" y="67.31" rot="R180">
+<element name="R33" library="OPL" package="R0603" value="56" x="42.545" y="67.31" smashed="yes" rot="R180">
 <attribute name="MPN" value="" x="42.545" y="67.31" size="1.778" layer="27" rot="R180" display="off"/>
 <attribute name="MF" value="" x="42.545" y="67.31" size="1.778" layer="27" rot="R180" display="off"/>
 <attribute name="OC_FARNELL" value="unknown" x="42.545" y="67.31" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="NAME" x="43.561" y="67.695" size="0.889" layer="25" ratio="11" rot="R180"/>
+<attribute name="VALUE" x="43.942" y="68.6275" size="0.508" layer="27" ratio="10" rot="R180"/>
 </element>
-<element name="R34" library="OPL" package="R0603" value="56" x="43.18" y="73.025" rot="R90">
+<element name="R34" library="OPL" package="R0603" value="56" x="43.18" y="73.025" smashed="yes" rot="R90">
 <attribute name="MPN" value="" x="43.18" y="73.025" size="1.778" layer="27" rot="R90" display="off"/>
 <attribute name="MF" value="" x="43.18" y="73.025" size="1.778" layer="27" rot="R90" display="off"/>
 <attribute name="OC_FARNELL" value="unknown" x="43.18" y="73.025" size="1.778" layer="27" rot="R90" display="off"/>
+<attribute name="NAME" x="43.692" y="71.882" size="0.889" layer="25" ratio="11" rot="R90"/>
+<attribute name="VALUE" x="44.4975" y="71.628" size="0.508" layer="27" ratio="10" rot="R90"/>
 </element>
-<element name="R35" library="OPL" package="R0603" value="56" x="38.215" y="86.36" rot="R180">
+<element name="R35" library="OPL" package="R0603" value="56" x="38.215" y="86.36" smashed="yes" rot="R180">
 <attribute name="MPN" value="" x="38.215" y="86.36" size="1.778" layer="27" rot="R180" display="off"/>
 <attribute name="MF" value="" x="38.215" y="86.36" size="1.778" layer="27" rot="R180" display="off"/>
 <attribute name="OC_FARNELL" value="unknown" x="38.215" y="86.36" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="NAME" x="39.231" y="86.745" size="0.889" layer="25" ratio="11" rot="R180"/>
+<attribute name="VALUE" x="39.612" y="87.6775" size="0.508" layer="27" ratio="10" rot="R180"/>
 </element>
-<element name="R36" library="OPL" package="R0603" value="56" x="39.035" y="81.22">
+<element name="R36" library="OPL" package="R0603" value="56" x="39.035" y="81.22" smashed="yes">
 <attribute name="MPN" value="" x="39.035" y="81.22" size="1.778" layer="27" display="off"/>
 <attribute name="MF" value="" x="39.035" y="81.22" size="1.778" layer="27" display="off"/>
 <attribute name="OC_FARNELL" value="unknown" x="39.035" y="81.22" size="1.778" layer="27" display="off"/>
+<attribute name="NAME" x="37.892" y="80.835" size="0.889" layer="25" ratio="11"/>
+<attribute name="VALUE" x="37.638" y="79.9025" size="0.508" layer="27" ratio="10"/>
 </element>
-<element name="R54" library="OPL" package="R0603" value="56" x="42.545" y="81.28" rot="R180">
+<element name="R54" library="OPL" package="R0603" value="56" x="42.545" y="81.28" smashed="yes" rot="R180">
 <attribute name="MPN" value="" x="42.545" y="81.28" size="1.778" layer="27" rot="R180" display="off"/>
 <attribute name="MF" value="" x="42.545" y="81.28" size="1.778" layer="27" rot="R180" display="off"/>
 <attribute name="OC_FARNELL" value="unknown" x="42.545" y="81.28" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="NAME" x="43.815" y="81.665" size="0.889" layer="25" ratio="11" rot="R180"/>
+<attribute name="VALUE" x="43.942" y="82.5975" size="0.508" layer="27" ratio="10" rot="R180"/>
 </element>
-<element name="R55" library="OPL" package="R0603" value="56" x="38.295" y="90.61" rot="R180">
+<element name="R55" library="OPL" package="R0603" value="56" x="38.295" y="90.61" smashed="yes" rot="R180">
 <attribute name="MPN" value="" x="38.295" y="90.61" size="1.778" layer="27" rot="R180" display="off"/>
 <attribute name="MF" value="" x="38.295" y="90.61" size="1.778" layer="27" rot="R180" display="off"/>
 <attribute name="OC_FARNELL" value="unknown" x="38.295" y="90.61" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="NAME" x="39.311" y="90.995" size="0.889" layer="25" ratio="11" rot="R180"/>
+<attribute name="VALUE" x="39.692" y="91.9275" size="0.508" layer="27" ratio="10" rot="R180"/>
 </element>
-<element name="R56" library="OPL" package="R0603" value="56" x="13.335" y="86.36">
+<element name="R56" library="OPL" package="R0603" value="56" x="13.335" y="86.36" smashed="yes">
 <attribute name="MPN" value="" x="13.335" y="86.36" size="1.778" layer="27" display="off"/>
 <attribute name="MF" value="" x="13.335" y="86.36" size="1.778" layer="27" display="off"/>
 <attribute name="OC_FARNELL" value="unknown" x="13.335" y="86.36" size="1.778" layer="27" display="off"/>
+<attribute name="NAME" x="12.192" y="85.848" size="0.889" layer="25" ratio="11"/>
+<attribute name="VALUE" x="11.938" y="85.0425" size="0.508" layer="27" ratio="10"/>
 </element>
-<element name="R57" library="OPL" package="R0603" value="56" x="13.335" y="81.28">
+<element name="R57" library="OPL" package="R0603" value="56" x="13.335" y="81.28" smashed="yes">
 <attribute name="MPN" value="" x="13.335" y="81.28" size="1.778" layer="27" display="off"/>
 <attribute name="MF" value="" x="13.335" y="81.28" size="1.778" layer="27" display="off"/>
 <attribute name="OC_FARNELL" value="unknown" x="13.335" y="81.28" size="1.778" layer="27" display="off"/>
+<attribute name="NAME" x="12.192" y="80.768" size="0.889" layer="25" ratio="11"/>
+<attribute name="VALUE" x="11.938" y="79.9625" size="0.508" layer="27" ratio="10"/>
 </element>
-<element name="R58" library="OPL" package="R0603" value="56" x="16.835" y="81.22" rot="R180">
+<element name="R58" library="OPL" package="R0603" value="56" x="16.835" y="81.22" smashed="yes" rot="R180">
 <attribute name="MPN" value="" x="16.835" y="81.22" size="1.778" layer="27" rot="R180" display="off"/>
 <attribute name="MF" value="" x="16.835" y="81.22" size="1.778" layer="27" rot="R180" display="off"/>
 <attribute name="OC_FARNELL" value="unknown" x="16.835" y="81.22" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="NAME" x="17.978" y="81.605" size="0.889" layer="25" ratio="11" rot="R180"/>
+<attribute name="VALUE" x="18.232" y="82.5375" size="0.508" layer="27" ratio="10" rot="R180"/>
 </element>
-<element name="R59" library="OPL" package="R0603" value="56" x="18.415" y="86.36">
+<element name="R59" library="OPL" package="R0603" value="56" x="18.415" y="86.36" smashed="yes">
 <attribute name="MPN" value="" x="18.415" y="86.36" size="1.778" layer="27" display="off"/>
 <attribute name="MF" value="" x="18.415" y="86.36" size="1.778" layer="27" display="off"/>
 <attribute name="OC_FARNELL" value="unknown" x="18.415" y="86.36" size="1.778" layer="27" display="off"/>
+<attribute name="NAME" x="17.272" y="85.975" size="0.889" layer="25" ratio="11"/>
+<attribute name="VALUE" x="17.018" y="85.0425" size="0.508" layer="27" ratio="10"/>
 </element>
-<element name="R61" library="OPL" package="R0603" value="56" x="13.335" y="72.39">
+<element name="R61" library="OPL" package="R0603" value="56" x="13.335" y="72.39" smashed="yes">
 <attribute name="MPN" value="" x="13.335" y="72.39" size="1.778" layer="27" display="off"/>
 <attribute name="MF" value="" x="13.335" y="72.39" size="1.778" layer="27" display="off"/>
 <attribute name="OC_FARNELL" value="unknown" x="13.335" y="72.39" size="1.778" layer="27" display="off"/>
+<attribute name="NAME" x="12.192" y="71.878" size="0.889" layer="25" ratio="11"/>
+<attribute name="VALUE" x="11.938" y="71.0725" size="0.508" layer="27" ratio="10"/>
 </element>
-<element name="R62" library="OPL" package="R0603" value="56" x="13.335" y="67.31">
+<element name="R62" library="OPL" package="R0603" value="56" x="13.335" y="67.31" smashed="yes">
 <attribute name="MPN" value="" x="13.335" y="67.31" size="1.778" layer="27" display="off"/>
 <attribute name="MF" value="" x="13.335" y="67.31" size="1.778" layer="27" display="off"/>
 <attribute name="OC_FARNELL" value="unknown" x="13.335" y="67.31" size="1.778" layer="27" display="off"/>
+<attribute name="NAME" x="12.192" y="66.925" size="0.889" layer="25" ratio="11"/>
+<attribute name="VALUE" x="11.938" y="65.9925" size="0.508" layer="27" ratio="10"/>
 </element>
-<element name="R63" library="OPL" package="R0603" value="56" x="16.835" y="67.19" rot="R180">
+<element name="R63" library="OPL" package="R0603" value="56" x="16.835" y="67.19" smashed="yes" rot="R180">
 <attribute name="MPN" value="" x="16.835" y="67.19" size="1.778" layer="27" rot="R180" display="off"/>
 <attribute name="MF" value="" x="16.835" y="67.19" size="1.778" layer="27" rot="R180" display="off"/>
 <attribute name="OC_FARNELL" value="unknown" x="16.835" y="67.19" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="NAME" x="15.804" y="66.791" size="0.889" layer="25" ratio="11"/>
+<attribute name="VALUE" x="18.232" y="68.5075" size="0.508" layer="27" ratio="10" rot="R180"/>
 </element>
-<element name="R64" library="OPL" package="R0603" value="56" x="18.415" y="72.39">
+<element name="R64" library="OPL" package="R0603" value="56" x="18.415" y="72.39" smashed="yes">
 <attribute name="MPN" value="" x="18.415" y="72.39" size="1.778" layer="27" display="off"/>
 <attribute name="MF" value="" x="18.415" y="72.39" size="1.778" layer="27" display="off"/>
 <attribute name="OC_FARNELL" value="unknown" x="18.415" y="72.39" size="1.778" layer="27" display="off"/>
+<attribute name="NAME" x="17.272" y="71.878" size="0.889" layer="25" ratio="11"/>
+<attribute name="VALUE" x="17.018" y="71.0725" size="0.508" layer="27" ratio="10"/>
 </element>
 </elements>
 <signals>
