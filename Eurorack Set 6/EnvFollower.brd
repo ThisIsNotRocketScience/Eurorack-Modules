@@ -143,8 +143,8 @@
 <layer number="249" name="Edge" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="250" name="Descript" color="3" fill="1" visible="no" active="no"/>
 <layer number="251" name="SMDround" color="12" fill="11" visible="no" active="no"/>
-<layer number="254" name="Paneldesc" color="14" fill="1" visible="no" active="yes"/>
-<layer number="255" name="Panel" color="14" fill="1" visible="no" active="yes"/>
+<layer number="254" name="Paneldesc" color="14" fill="1" visible="yes" active="yes"/>
+<layer number="255" name="Panel" color="14" fill="1" visible="yes" active="yes"/>
 </layers>
 <board>
 <plain>
@@ -1501,6 +1501,8 @@ http://www.zetex.com&lt;p&gt;
 <circle x="0" y="0" radius="6" width="1" layer="21"/>
 <circle x="0" y="0" radius="4.75" width="0.002540625" layer="255"/>
 <text x="0" y="7.62" size="1.778" layer="254" align="bottom-center">&gt;DESC</text>
+<rectangle x1="-2" y1="4" x2="2" y2="6" layer="41"/>
+<rectangle x1="-2" y1="4" x2="2" y2="6" layer="21"/>
 </package>
 <package name="POWER_10_LABELSOTHERSIDE">
 <pad name="1" x="-5.08" y="-1.27" drill="1.016"/>
@@ -1615,6 +1617,7 @@ Extended by Federico Battaglin &lt;author&gt;&amp;lt;federico.rd@fdpinternationa
 <pad name="K" x="1.27" y="0" drill="0.8128" shape="octagon"/>
 <text x="1.905" y="0.381" size="1.27" layer="25" ratio="10">&gt;NAME</text>
 <text x="1.905" y="-1.651" size="1.27" layer="27" ratio="10">&gt;VALUE</text>
+<circle x="0" y="0" radius="1.5" width="0.127" layer="255"/>
 </package>
 </packages>
 </library>

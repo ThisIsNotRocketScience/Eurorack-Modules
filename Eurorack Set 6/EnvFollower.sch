@@ -339,6 +339,8 @@ PCB width:
 <circle x="0" y="0" radius="6" width="1" layer="21"/>
 <circle x="0" y="0" radius="4.75" width="0.002540625" layer="255"/>
 <text x="0" y="7.62" size="1.778" layer="254" align="bottom-center">&gt;DESC</text>
+<rectangle x1="-2" y1="4" x2="2" y2="6" layer="41"/>
+<rectangle x1="-2" y1="4" x2="2" y2="6" layer="21"/>
 </package>
 <package name="ALPHAPOT-24MM">
 <circle x="0" y="0" radius="12" width="0.127" layer="51"/>
@@ -676,6 +678,27 @@ PCB width:
 <vertex x="-4.445" y="-5.715"/>
 </polygon>
 </package>
+<package name="EURORACK24HPPCB">
+<wire x1="0.5" y1="105.5" x2="0.5" y2="1" width="0.127" layer="20"/>
+<wire x1="0.5" y1="1" x2="1.5" y2="0" width="0.127" layer="20" curve="90"/>
+<wire x1="1.5" y1="0" x2="120.08" y2="0" width="0.127" layer="20"/>
+<wire x1="120.08" y1="0" x2="121.08" y2="1" width="0.127" layer="20" curve="90"/>
+<wire x1="121.08" y1="1" x2="121.08" y2="105.5" width="0.127" layer="20"/>
+<wire x1="121.08" y1="105.5" x2="120.08" y2="106.5" width="0.127" layer="20" curve="90"/>
+<wire x1="120.08" y1="106.5" x2="1.5" y2="106.5" width="0.127" layer="20"/>
+<wire x1="1.5" y1="106.5" x2="0.5" y2="105.5" width="0.127" layer="20" curve="90"/>
+<wire x1="0" y1="-11" x2="121.58" y2="-11" width="0" layer="255"/>
+<wire x1="121.58" y1="-11" x2="121.58" y2="117.5" width="0" layer="255"/>
+<wire x1="121.58" y1="117.5" x2="0" y2="117.5" width="0" layer="255"/>
+<wire x1="0" y1="117.5" x2="0" y2="-11" width="0" layer="255"/>
+<text x="1.5" y="113" size="1.27" layer="51">24HP eurorack pcb template</text>
+<wire x1="60.79" y1="107" x2="60.79" y2="-11" width="0.127" layer="51"/>
+<circle x="7.5" y="-8" radius="1.5" width="0.0254" layer="255"/>
+<circle x="7.5" y="114.5" radius="1.5" width="0.0254" layer="255"/>
+<wire x1="0" y1="0" x2="4" y2="4" width="0.127" layer="51"/>
+<circle x="114.18" y="-8" radius="1.5" width="0.0254" layer="255"/>
+<circle x="114.18" y="114.5" radius="1.5" width="0.0254" layer="255"/>
+</package>
 </packages>
 <symbols>
 <symbol name="EURORACK_PCB">
@@ -817,6 +840,11 @@ PCB width:
 </technologies>
 </device>
 <device name="4HP" package="EURORACK4HPPCB">
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="24HP" package="EURORACK24HPPCB">
 <technologies>
 <technology name=""/>
 </technologies>
@@ -12452,6 +12480,7 @@ Extended by Federico Battaglin &lt;author&gt;&amp;lt;federico.rd@fdpinternationa
 <pad name="K" x="1.27" y="0" drill="0.8128" shape="octagon"/>
 <text x="1.905" y="0.381" size="1.27" layer="25" ratio="10">&gt;NAME</text>
 <text x="1.905" y="-1.651" size="1.27" layer="27" ratio="10">&gt;VALUE</text>
+<circle x="0" y="0" radius="1.5" width="0.127" layer="255"/>
 </package>
 <package name="LED5MM">
 <description>&lt;B&gt;LED&lt;/B&gt;&lt;p&gt;
