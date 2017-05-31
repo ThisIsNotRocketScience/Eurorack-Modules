@@ -18140,37 +18140,37 @@ Metric Code Size 5664</description>
 <part name="U$9" library="EurorackModularParts" deviceset="AUDIO-JACK" device="INPUT" value="PJ-341"/>
 <part name="U$10" library="EurorackModularParts" deviceset="AUDIO-JACK" device="OUTPUT" value="PJ-341"/>
 <part name="U$11" library="EurorackModularParts" deviceset="AUDIO-JACK" device="OUTPUT" value="PJ-341"/>
-<part name="C1" library="adafruit" deviceset="C-US" device="C1210K"/>
+<part name="C1" library="adafruit" deviceset="C-US" device="C1210K" value="22uF?"/>
 <part name="LED1" library="led" deviceset="LED" device="3MM" value="COOL"/>
 <part name="T1" library="transistor" deviceset="*-NPN-" device="SOT23-BEC" technology="BCX70"/>
 <part name="D1" library="zetex" deviceset="D" device="SOT23"/>
 <part name="IC1" library="EurorackModularParts" deviceset="TL074" device="D"/>
-<part name="R1" library="resistor" deviceset="R-EU_" device="R0603"/>
-<part name="R2" library="resistor" deviceset="R-EU_" device="R0603"/>
+<part name="R1" library="resistor" deviceset="R-EU_" device="R0603" value="100k"/>
+<part name="R2" library="resistor" deviceset="R-EU_" device="R0603" value="100k"/>
 <part name="U$4" library="EurorackModularParts" deviceset="ONOFFON" device=""/>
-<part name="R3" library="resistor" deviceset="R-EU_" device="R0603"/>
+<part name="R3" library="resistor" deviceset="R-EU_" device="R0603" value="100k"/>
 <part name="R4" library="resistor" deviceset="R-EU_" device="R0603"/>
 <part name="D2" library="zetex" deviceset="D" device="SOT23"/>
 <part name="R5" library="resistor" deviceset="R-EU_" device="R0603"/>
-<part name="R6" library="resistor" deviceset="R-EU_" device="R0603"/>
+<part name="R6" library="resistor" deviceset="R-EU_" device="R0603" value="100k"/>
 <part name="C2" library="resistor" deviceset="C-EU" device="C0603K"/>
 <part name="C3" library="resistor" deviceset="C-EU" device="C0603K"/>
 <part name="C4" library="resistor" deviceset="C-EU" device="C0603K"/>
-<part name="R7" library="resistor" deviceset="R-EU_" device="R0603"/>
-<part name="R8" library="resistor" deviceset="R-EU_" device="R0603"/>
-<part name="R9" library="resistor" deviceset="R-EU_" device="R0603"/>
-<part name="R10" library="resistor" deviceset="R-EU_" device="R0603"/>
-<part name="R11" library="resistor" deviceset="R-EU_" device="R0603"/>
-<part name="R12" library="resistor" deviceset="R-EU_" device="R0603"/>
-<part name="R13" library="resistor" deviceset="R-EU_" device="R0603"/>
-<part name="R14" library="resistor" deviceset="R-EU_" device="R0603"/>
-<part name="R15" library="resistor" deviceset="R-EU_" device="R0603"/>
-<part name="R16" library="resistor" deviceset="R-EU_" device="R0603"/>
-<part name="R17" library="resistor" deviceset="R-EU_" device="R0603"/>
-<part name="R18" library="resistor" deviceset="R-EU_" device="R0603"/>
-<part name="R19" library="resistor" deviceset="R-EU_" device="R0603"/>
-<part name="D3" library="zetex" deviceset="D" device="SOT23"/>
-<part name="R20" library="resistor" deviceset="R-EU_" device="R0603"/>
+<part name="R7" library="resistor" deviceset="R-EU_" device="R0603" value="10k"/>
+<part name="R8" library="resistor" deviceset="R-EU_" device="R0603" value="16.5k"/>
+<part name="R9" library="resistor" deviceset="R-EU_" device="R0603" value="6.8k"/>
+<part name="R10" library="resistor" deviceset="R-EU_" device="R0603" value="51k"/>
+<part name="R11" library="resistor" deviceset="R-EU_" device="R0603" value="100k"/>
+<part name="R12" library="resistor" deviceset="R-EU_" device="R0603" value="100k"/>
+<part name="R13" library="resistor" deviceset="R-EU_" device="R0603" value="300"/>
+<part name="R14" library="resistor" deviceset="R-EU_" device="R0603" value="10M"/>
+<part name="R15" library="resistor" deviceset="R-EU_" device="R0603" value="1k"/>
+<part name="R16" library="resistor" deviceset="R-EU_" device="R0603" value="470k"/>
+<part name="R17" library="resistor" deviceset="R-EU_" device="R0603" value="100k"/>
+<part name="R18" library="resistor" deviceset="R-EU_" device="R0603" value="100k"/>
+<part name="R19" library="resistor" deviceset="R-EU_" device="R0603" value="1k"/>
+<part name="D3" library="zetex" deviceset="D" device="SOT23" value="1N414B"/>
+<part name="R20" library="resistor" deviceset="R-EU_" device="R0603" value="300"/>
 <part name="SUPPLY2" library="supply2" deviceset="GND" device=""/>
 <part name="SUPPLY1" library="supply2" deviceset="+12V" device=""/>
 <part name="SUPPLY3" library="supply2" deviceset="-12V" device=""/>
@@ -18178,7 +18178,7 @@ Metric Code Size 5664</description>
 <part name="C6" library="resistor" deviceset="CPOL-EU" device="153CLV-0505" value="10uF"/>
 <part name="SUPPLY4" library="supply2" deviceset="GND" device=""/>
 <part name="SUPPLY5" library="supply2" deviceset="GND" device=""/>
-<part name="R21" library="resistor" deviceset="R-EU_" device="R0603"/>
+<part name="R21" library="resistor" deviceset="R-EU_" device="R0603" value="51k"/>
 <part name="SUPPLY6" library="supply2" deviceset="GND" device=""/>
 <part name="SUPPLY7" library="supply2" deviceset="GND" device=""/>
 <part name="SUPPLY8" library="supply2" deviceset="GND" device=""/>
@@ -18203,7 +18203,7 @@ Metric Code Size 5664</description>
 <part name="SUPPLY17" library="supply2" deviceset="GND" device=""/>
 <part name="SUPPLY22" library="supply2" deviceset="GND" device=""/>
 <part name="LED2" library="led" deviceset="LED" device="3MM" value="PRETTY"/>
-<part name="R22" library="resistor" deviceset="R-EU_" device="R0603"/>
+<part name="R22" library="resistor" deviceset="R-EU_" device="R0603" value="1k"/>
 <part name="SUPPLY23" library="supply2" deviceset="GND" device=""/>
 </parts>
 <sheets>

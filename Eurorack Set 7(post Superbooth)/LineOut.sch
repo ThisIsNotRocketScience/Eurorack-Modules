@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.05" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
+<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="no" active="no"/>
 <layer number="2" name="Route2" color="1" fill="3" visible="no" active="no"/>
@@ -7351,7 +7351,7 @@ diameter 5 mm, grid 2.54 mm</description>
 <instance part="C2" gate="C" x="35.56" y="7.62" rot="R270"/>
 <instance part="U$1" gate="G$1" x="5.08" y="12.7"/>
 <instance part="U$5" gate="G$1" x="1.27" y="55.88"/>
-<instance part="GND1" gate="1" x="52.07" y="12.7" rot="R90"/>
+<instance part="GND1" gate="1" x="57.15" y="12.7" rot="R90"/>
 <instance part="GND2" gate="1" x="91.44" y="26.67"/>
 <instance part="GND3" gate="1" x="45.72" y="33.02"/>
 <instance part="C5" gate="C" x="45.72" y="7.62" rot="R90"/>
@@ -7376,8 +7376,8 @@ diameter 5 mm, grid 2.54 mm</description>
 <instance part="C8" gate="G$1" x="109.22" y="57.15" rot="R90"/>
 <instance part="C9" gate="G$1" x="121.92" y="57.15" rot="R270"/>
 <instance part="JP1" gate="G$1" x="184.15" y="54.61" rot="R180"/>
-<instance part="C3" gate="C" x="49.53" y="17.78" rot="R90"/>
-<instance part="C4" gate="C" x="49.53" y="7.62" rot="R90"/>
+<instance part="C3" gate="C" x="54.61" y="20.32" rot="R90"/>
+<instance part="C4" gate="C" x="54.61" y="5.08" rot="R90"/>
 <instance part="GND6" gate="1" x="17.78" y="12.7" rot="R90"/>
 <instance part="JP3" gate="G$1" x="226.06" y="46.99" rot="R180"/>
 </instances>
@@ -7389,8 +7389,8 @@ diameter 5 mm, grid 2.54 mm</description>
 <pinref part="C1" gate="C" pin="2"/>
 <pinref part="C2" gate="C" pin="1"/>
 <pinref part="GND1" gate="1" pin="GND"/>
-<junction x="49.53" y="12.7"/>
-<wire x1="49.53" y1="12.7" x2="45.72" y2="12.7" width="0.1524" layer="91"/>
+<junction x="54.61" y="12.7"/>
+<wire x1="54.61" y1="12.7" x2="45.72" y2="12.7" width="0.1524" layer="91"/>
 <junction x="35.56" y="12.7"/>
 <junction x="45.72" y="12.7"/>
 <wire x1="45.72" y1="12.7" x2="35.56" y2="12.7" width="0.1524" layer="91"/>
@@ -7399,9 +7399,9 @@ diameter 5 mm, grid 2.54 mm</description>
 <pinref part="C6" gate="C" pin="1"/>
 <wire x1="45.72" y1="13.97" x2="45.72" y2="12.7" width="0.1524" layer="91"/>
 <pinref part="C4" gate="C" pin="2"/>
-<wire x1="49.53" y1="11.43" x2="49.53" y2="12.7" width="0.1524" layer="91"/>
+<wire x1="54.61" y1="8.89" x2="54.61" y2="12.7" width="0.1524" layer="91"/>
 <pinref part="C3" gate="C" pin="1"/>
-<wire x1="49.53" y1="13.97" x2="49.53" y2="12.7" width="0.1524" layer="91"/>
+<wire x1="54.61" y1="16.51" x2="54.61" y2="12.7" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <pinref part="IC1" gate="A" pin="+IN"/>
@@ -7451,7 +7451,6 @@ diameter 5 mm, grid 2.54 mm</description>
 <segment>
 <pinref part="R11" gate="R" pin="2"/>
 <pinref part="R10" gate="R" pin="2"/>
-<wire x1="124.46" y1="57.15" x2="130.81" y2="57.15" width="0.1524" layer="91"/>
 <pinref part="C9" gate="G$1" pin="+"/>
 <junction x="124.46" y="57.15"/>
 <wire x1="130.81" y1="57.15" x2="138.43" y2="57.15" width="0.1524" layer="91"/>
@@ -7553,7 +7552,7 @@ diameter 5 mm, grid 2.54 mm</description>
 <junction x="25.4" y="22.86"/>
 <wire x1="15.24" y1="22.86" x2="25.4" y2="22.86" width="0.1524" layer="91"/>
 <pinref part="C3" gate="C" pin="2"/>
-<wire x1="49.53" y1="21.59" x2="49.53" y2="22.86" width="0.1524" layer="91"/>
+<wire x1="54.61" y1="24.13" x2="49.53" y2="22.86" width="0.1524" layer="91"/>
 <wire x1="49.53" y1="22.86" x2="45.72" y2="22.86" width="0.1524" layer="91"/>
 <junction x="45.72" y="22.86"/>
 </segment>
@@ -7574,7 +7573,7 @@ diameter 5 mm, grid 2.54 mm</description>
 <wire x1="15.24" y1="2.54" x2="25.4" y2="2.54" width="0.1524" layer="91"/>
 <pinref part="C4" gate="C" pin="1"/>
 <wire x1="45.72" y1="2.54" x2="49.53" y2="2.54" width="0.1524" layer="91"/>
-<wire x1="49.53" y1="2.54" x2="49.53" y2="3.81" width="0.1524" layer="91"/>
+<wire x1="49.53" y1="2.54" x2="54.61" y2="1.27" width="0.1524" layer="91"/>
 <junction x="45.72" y="2.54"/>
 </segment>
 </net>

@@ -2189,7 +2189,7 @@ design rules under a new name.</description>
 </pass>
 </autorouter>
 <elements>
-<element name="C1" library="adafruit" package="C1210K" value="" x="6.75" y="84" rot="MR270"/>
+<element name="C1" library="adafruit" package="C1210K" value="22uF?" x="6.75" y="84" rot="MR270"/>
 <element name="C10" library="resistor" package="C0603K" value="100nF" x="14.5" y="76.5" smashed="yes" rot="MR180">
 <attribute name="NAME" x="13.7" y="75.85" size="1.016" layer="26" rot="MR180"/>
 <attribute name="VALUE" x="13.7" y="78.15" size="1.016" layer="28" rot="MR180"/>
@@ -2217,7 +2217,7 @@ design rules under a new name.</description>
 <attribute name="MF" value="" x="16.835" y="82.38" size="1.778" layer="28" rot="MR0" display="off"/>
 <attribute name="MPN" value="CDSOT23-T03" x="16.835" y="82.38" size="1.778" layer="28" rot="MR0" display="off"/>
 </element>
-<element name="D3" library="zetex" package="SOT-23" value="" x="2.5" y="50.305" smashed="yes" rot="MR0">
+<element name="D3" library="zetex" package="SOT-23" value="1N414B" x="2.5" y="50.305" smashed="yes" rot="MR0">
 <attribute name="OC_FARNELL" value="1824866" x="2.5" y="50.305" size="1.778" layer="28" rot="MR0" display="off"/>
 <attribute name="OC_NEWARK" value="75K7096" x="2.5" y="50.305" size="1.778" layer="28" rot="MR0" display="off"/>
 <attribute name="MF" value="" x="2.5" y="50.305" size="1.778" layer="28" rot="MR0" display="off"/>
@@ -2227,51 +2227,51 @@ design rules under a new name.</description>
 </element>
 <element name="IC1" library="EurorackModularParts" package="SO14" value="TL074D" x="8.025" y="76.74" rot="MR270"/>
 <element name="LED1" library="led" package="LED3MM" value="COOL" x="17.145" y="3.175"/>
-<element name="R1" library="resistor" package="R0603" value="" x="3" y="84.5" smashed="yes" rot="MR0">
+<element name="R1" library="resistor" package="R0603" value="100k" x="3" y="84.5" smashed="yes" rot="MR0">
 <attribute name="NAME" x="3.635" y="85.135" size="1.27" layer="26" rot="MR0"/>
 <attribute name="VALUE" x="3.635" y="82.595" size="1.27" layer="28" rot="MR0"/>
 </element>
-<element name="R10" library="resistor" package="R0603" value="" x="14.5" y="75" rot="MR0"/>
-<element name="R11" library="resistor" package="R0603" value="" x="14.96" y="85.48" rot="MR180"/>
-<element name="R12" library="resistor" package="R0603" value="" x="14.5" y="80.5" rot="MR180"/>
-<element name="R13" library="resistor" package="R0603" value="" x="7.01" y="27.09" rot="MR270"/>
-<element name="R14" library="resistor" package="R0603" value="" x="14" y="48.75" smashed="yes" rot="MR90">
+<element name="R10" library="resistor" package="R0603" value="51k" x="14.5" y="75" rot="MR0"/>
+<element name="R11" library="resistor" package="R0603" value="100k" x="14.96" y="85.48" rot="MR180"/>
+<element name="R12" library="resistor" package="R0603" value="100k" x="14.5" y="80.5" rot="MR180"/>
+<element name="R13" library="resistor" package="R0603" value="300" x="7.01" y="27.09" rot="MR270"/>
+<element name="R14" library="resistor" package="R0603" value="10M" x="14" y="48.75" smashed="yes" rot="MR90">
 <attribute name="NAME" x="14.635" y="48.115" size="1.27" layer="26" rot="MR90"/>
 <attribute name="VALUE" x="12.095" y="48.115" size="1.27" layer="28" rot="MR90"/>
 </element>
-<element name="R15" library="resistor" package="R0603" value="" x="16" y="48.75" smashed="yes" rot="MR270">
+<element name="R15" library="resistor" package="R0603" value="1k" x="16" y="48.75" smashed="yes" rot="MR270">
 <attribute name="NAME" x="15.365" y="49.385" size="1.27" layer="26" rot="MR270"/>
 <attribute name="VALUE" x="17.905" y="49.385" size="1.27" layer="28" rot="MR270"/>
 </element>
-<element name="R16" library="resistor" package="R0603" value="" x="17.25" y="41.5" smashed="yes" rot="MR270">
+<element name="R16" library="resistor" package="R0603" value="470k" x="17.25" y="41.5" smashed="yes" rot="MR270">
 <attribute name="NAME" x="16.615" y="42.135" size="1.27" layer="26" rot="MR270"/>
 <attribute name="VALUE" x="19.155" y="42.135" size="1.27" layer="28" rot="MR270"/>
 </element>
-<element name="R17" library="resistor" package="R0603" value="" x="16.51" y="24.13" smashed="yes" rot="MR270">
+<element name="R17" library="resistor" package="R0603" value="100k" x="16.51" y="24.13" smashed="yes" rot="MR270">
 <attribute name="NAME" x="15.875" y="24.765" size="1.27" layer="26" rot="MR270"/>
 <attribute name="VALUE" x="18.415" y="24.765" size="1.27" layer="28" rot="MR270"/>
 </element>
-<element name="R18" library="resistor" package="R0603" value="" x="13.75" y="52" smashed="yes" rot="MR0">
+<element name="R18" library="resistor" package="R0603" value="100k" x="13.75" y="52" smashed="yes" rot="MR0">
 <attribute name="NAME" x="14.385" y="52.635" size="1.27" layer="26" rot="MR0"/>
 <attribute name="VALUE" x="14.385" y="50.095" size="1.27" layer="28" rot="MR0"/>
 </element>
-<element name="R19" library="resistor" package="R0603" value="" x="16.22" y="6.765" rot="MR90"/>
-<element name="R2" library="resistor" package="R0603" value="" x="3" y="82.5" smashed="yes" rot="MR180">
+<element name="R19" library="resistor" package="R0603" value="1k" x="16.22" y="6.765" rot="MR90"/>
+<element name="R2" library="resistor" package="R0603" value="100k" x="3" y="82.5" smashed="yes" rot="MR180">
 <attribute name="NAME" x="2.365" y="81.865" size="1.27" layer="26" rot="MR180"/>
 <attribute name="VALUE" x="2.365" y="84.405" size="1.27" layer="28" rot="MR180"/>
 </element>
-<element name="R20" library="resistor" package="R0603" value="" x="6.355" y="12.34" rot="MR270"/>
-<element name="R21" library="resistor" package="R0603" value="" x="2.25" y="78.25" smashed="yes" rot="MR180">
+<element name="R20" library="resistor" package="R0603" value="300" x="6.355" y="12.34" rot="MR270"/>
+<element name="R21" library="resistor" package="R0603" value="51k" x="2.25" y="78.25" smashed="yes" rot="MR180">
 <attribute name="NAME" x="1.615" y="77.615" size="1.27" layer="26" rot="MR180"/>
 <attribute name="VALUE" x="1.615" y="80.155" size="1.27" layer="28" rot="MR180"/>
 </element>
-<element name="R3" library="resistor" package="R0603" value="" x="9.5" y="84.5" rot="MR270"/>
+<element name="R3" library="resistor" package="R0603" value="100k" x="9.5" y="84.5" rot="MR270"/>
 <element name="R4" library="resistor" package="R0603" value="" x="14.5" y="78.5" rot="MR0"/>
 <element name="R5" library="resistor" package="R0603" value="" x="17.5" y="75" rot="MR270"/>
-<element name="R6" library="resistor" package="R0603" value="" x="11" y="51.75" rot="MR270"/>
-<element name="R7" library="resistor" package="R0603" value="" x="6" y="51.75" rot="MR270"/>
-<element name="R8" library="resistor" package="R0603" value="" x="14.75" y="41.5" rot="MR270"/>
-<element name="R9" library="resistor" package="R0603" value="" x="15" y="44" rot="MR0"/>
+<element name="R6" library="resistor" package="R0603" value="100k" x="11" y="51.75" rot="MR270"/>
+<element name="R7" library="resistor" package="R0603" value="10k" x="6" y="51.75" rot="MR270"/>
+<element name="R8" library="resistor" package="R0603" value="16.5k" x="14.75" y="41.5" rot="MR270"/>
+<element name="R9" library="resistor" package="R0603" value="6.8k" x="15" y="44" rot="MR0"/>
 <element name="T1" library="transistor" package="SOT23-BEC" value="" x="16.605" y="13.57" rot="MR90"/>
 <element name="U$1" library="EurorackModularParts" package="EURORACK4HPPCB" value="EURORACK_PCB4HP" x="0" y="0"/>
 <element name="U$10" library="EurorackModularParts" package="3.5MM-JACK-SWITCH-13MM-OUTPUT" value="PJ-341" x="10.16" y="21.59">
@@ -2301,7 +2301,7 @@ design rules under a new name.</description>
 </element>
 <element name="U$2" library="zephod-components" package="JUSTATINYROCKET" value="JUSTATINYROCKET" x="2.75" y="30.75"/>
 <element name="LED2" library="led" package="LED3MM" value="PRETTY" x="17.145" y="17.78"/>
-<element name="R22" library="resistor" package="R0603" value="" x="2.96" y="71.87" rot="MR90"/>
+<element name="R22" library="resistor" package="R0603" value="1k" x="2.96" y="71.87" rot="MR90"/>
 </elements>
 <signals>
 <signal name="GND" class="1">
