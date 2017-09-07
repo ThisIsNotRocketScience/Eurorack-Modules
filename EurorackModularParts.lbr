@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.05" unitdist="inch" unit="inch" style="lines" multiple="1" display="yes" altdistance="0.025" altunitdist="inch" altunit="inch"/>
+<grid distance="0.0125" unitdist="inch" unit="inch" style="lines" multiple="1" display="yes" altdistance="0.025" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="2" name="Route2" color="1" fill="3" visible="yes" active="yes"/>
@@ -32,7 +32,7 @@
 <layer number="22" name="bPlace" color="7" fill="1" visible="no" active="yes"/>
 <layer number="23" name="tOrigins" color="15" fill="1" visible="no" active="yes"/>
 <layer number="24" name="bOrigins" color="15" fill="1" visible="no" active="yes"/>
-<layer number="25" name="tNames" color="7" fill="1" visible="no" active="yes"/>
+<layer number="25" name="tNames" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="26" name="bNames" color="7" fill="1" visible="no" active="yes"/>
 <layer number="27" name="tValues" color="7" fill="1" visible="no" active="yes"/>
 <layer number="28" name="bValues" color="7" fill="1" visible="no" active="yes"/>
@@ -56,9 +56,9 @@
 <layer number="46" name="Milling" color="3" fill="1" visible="yes" active="yes"/>
 <layer number="47" name="Measures" color="7" fill="1" visible="no" active="yes"/>
 <layer number="48" name="Document" color="7" fill="1" visible="yes" active="yes"/>
-<layer number="49" name="Reference" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="49" name="Reference" color="7" fill="1" visible="no" active="yes"/>
 <layer number="50" name="dxf" color="7" fill="1" visible="no" active="no"/>
-<layer number="51" name="tDocu" color="12" fill="1" visible="yes" active="yes"/>
+<layer number="51" name="tDocu" color="12" fill="1" visible="no" active="yes"/>
 <layer number="52" name="bDocu" color="7" fill="1" visible="no" active="yes"/>
 <layer number="53" name="tGND_GNDA" color="7" fill="9" visible="no" active="no"/>
 <layer number="54" name="bGND_GNDA" color="1" fill="9" visible="no" active="no"/>
@@ -437,6 +437,7 @@ PCB width:
 <pad name="SWITCH@3" x="3.7" y="0" drill="0.8" diameter="1.9304" shape="long" rot="R90"/>
 <pad name="SECOND@3" x="0" y="-3.5" drill="0.8" diameter="1.9304" shape="long" rot="R180"/>
 <pad name="TIP@3" x="0" y="4.5" drill="0.8" diameter="1.9304" shape="long" rot="R180"/>
+<text x="0" y="0" size="2.032" layer="25" ratio="10" rot="SR0" align="center">&gt;NAME</text>
 </package>
 <package name="3.5MM-JACK-SWITCH-13MM-INPUT">
 <wire x1="-4.2" y1="-1.25" x2="-3.2" y2="-1.25" width="0" layer="46"/>
@@ -475,6 +476,7 @@ PCB width:
 <pad name="SWITCH@3" x="3.7" y="0" drill="0.8" diameter="1.9304" shape="long" rot="R90"/>
 <pad name="RING@3" x="-3.7" y="0" drill="0.8" diameter="1.9304" shape="long" rot="R90"/>
 <pad name="SECOND@3" x="0" y="-3.5" drill="0.8" diameter="1.9304" shape="long" rot="R180"/>
+<text x="0" y="0" size="2.032" layer="25" ratio="10" rot="SR0" align="center">&gt;NAME</text>
 </package>
 <package name="OG-POTS_ALPS_POT_VERTICAL">
 <circle x="0" y="0" radius="2.54" width="0.2032" layer="51"/>
@@ -495,6 +497,7 @@ PCB width:
 <text x="0" y="7.62" size="1.778" layer="254" align="bottom-center">&gt;DESC</text>
 <rectangle x1="-2" y1="4" x2="2" y2="6" layer="41"/>
 <rectangle x1="-2" y1="4" x2="2" y2="6" layer="21"/>
+<text x="0" y="0" size="2.032" layer="25" ratio="10" rot="SR0" align="center">&gt;NAME</text>
 </package>
 <package name="ALPS_POT">
 <wire x1="6.73" y1="4.93" x2="6.73" y2="-4.93" width="0.2032" layer="51"/>
@@ -767,24 +770,15 @@ NS Package M08A</description>
 <wire x1="4.305" y1="1.9" x2="4.305" y2="-1.4" width="0.2032" layer="51"/>
 <wire x1="4.305" y1="-1.4" x2="4.305" y2="-1.9" width="0.2032" layer="51"/>
 <wire x1="-4.305" y1="1.9" x2="4.305" y2="1.9" width="0.2032" layer="51"/>
-<wire x1="-4.445" y1="4.445" x2="-4.445" y2="1.905" width="0.127" layer="21"/>
 <wire x1="-4.445" y1="1.905" x2="-4.445" y2="0" width="0.127" layer="21"/>
-<wire x1="-4.445" y1="0" x2="-4.445" y2="-1.27" width="0.127" layer="21"/>
-<wire x1="-4.445" y1="-1.27" x2="-4.445" y2="-1.905" width="0.127" layer="21"/>
-<wire x1="-4.445" y1="-1.905" x2="-4.445" y2="-4.445" width="0.127" layer="21"/>
-<wire x1="-4.445" y1="-4.445" x2="4.445" y2="-4.445" width="0.127" layer="21"/>
-<wire x1="4.445" y1="-4.445" x2="4.445" y2="-1.905" width="0.127" layer="21"/>
-<wire x1="4.445" y1="-1.905" x2="4.445" y2="-1.27" width="0.127" layer="21"/>
-<wire x1="4.445" y1="-1.27" x2="4.445" y2="1.905" width="0.127" layer="21"/>
-<wire x1="4.445" y1="1.905" x2="4.445" y2="4.445" width="0.127" layer="21"/>
-<wire x1="4.445" y1="4.445" x2="-4.445" y2="4.445" width="0.127" layer="21"/>
+<wire x1="-4.445" y1="0" x2="-4.445" y2="-1.905" width="0.127" layer="21"/>
+<wire x1="-4.445" y1="-1.905" x2="-4.445" y2="-5.715" width="0.127" layer="21"/>
+<wire x1="4.445" y1="-1.905" x2="4.445" y2="1.905" width="0.127" layer="21"/>
 <wire x1="-4.445" y1="0" x2="-3.175" y2="0" width="0.127" layer="21"/>
 <wire x1="-3.175" y1="0" x2="-3.175" y2="-5.715" width="0.127" layer="21"/>
 <wire x1="-3.175" y1="-5.715" x2="-4.445" y2="-5.715" width="0.127" layer="21"/>
-<wire x1="-4.445" y1="-5.715" x2="-4.445" y2="-4.445" width="0.127" layer="21"/>
 <wire x1="-4.445" y1="1.905" x2="4.445" y2="1.905" width="0.127" layer="21"/>
 <wire x1="4.445" y1="-1.905" x2="-4.445" y2="-1.905" width="0.127" layer="21"/>
-<wire x1="-4.445" y1="-1.27" x2="4.445" y2="-1.27" width="0.127" layer="21"/>
 <rectangle x1="-4.055" y1="-3.1" x2="-3.565" y2="-2" layer="51"/>
 <rectangle x1="-2.785" y1="-3.1" x2="-2.295" y2="-2" layer="51"/>
 <rectangle x1="-1.515" y1="-3.1" x2="-1.025" y2="-2" layer="51"/>
@@ -813,7 +807,7 @@ NS Package M08A</description>
 <smd name="12" x="-1.27" y="2.6" dx="0.6" dy="2.2" layer="1"/>
 <smd name="13" x="-2.54" y="2.6" dx="0.6" dy="2.2" layer="1"/>
 <smd name="14" x="-3.81" y="2.6" dx="0.6" dy="2.2" layer="1"/>
-<text x="-4.572" y="-1.905" size="1.27" layer="25" rot="R90">&gt;NAME</text>
+<text x="0" y="0" size="1.27" layer="25" align="center">&gt;NAME</text>
 <text x="5.842" y="-1.905" size="1.27" layer="27" rot="R90">&gt;VALUE</text>
 <polygon width="0.127" layer="21">
 <vertex x="-4.445" y="0"/>
@@ -966,11 +960,6 @@ NS Package M08A</description>
 <smd name="3" x="-1.2954" y="-0.9398" dx="1.27" dy="0.5588" layer="1"/>
 <smd name="4" x="1.2954" y="-0.9398" dx="1.27" dy="0.5588" layer="1"/>
 <smd name="5" x="1.2954" y="0.9398" dx="1.27" dy="0.5588" layer="1"/>
-<wire x1="-0.6096" y1="-1.5494" x2="0.6096" y2="-1.5494" width="0.1524" layer="21"/>
-<wire x1="0.8636" y1="-0.3302" x2="0.8636" y2="0.3302" width="0.1524" layer="21"/>
-<wire x1="0.6096" y1="1.5494" x2="-0.6096" y2="1.5494" width="0.1524" layer="21"/>
-<wire x1="0.3048" y1="1.5494" x2="-0.3048" y2="1.5494" width="0.1524" layer="21" curve="-180"/>
-<text x="-2.1336" y="1.3716" size="1.27" layer="21" ratio="6" rot="SR0">*</text>
 <wire x1="-0.8636" y1="-1.5494" x2="0.8636" y2="-1.5494" width="0.1524" layer="51"/>
 <wire x1="0.8636" y1="-1.5494" x2="0.8636" y2="1.5494" width="0.1524" layer="51"/>
 <wire x1="0.8636" y1="1.5494" x2="-0.8636" y2="1.5494" width="0.1524" layer="51"/>
@@ -997,8 +986,16 @@ NS Package M08A</description>
 <wire x1="1.4986" y1="1.1938" x2="0.8636" y2="1.1938" width="0.1524" layer="51"/>
 <wire x1="0.3048" y1="1.5494" x2="-0.3048" y2="1.5494" width="0.1524" layer="51" curve="-180"/>
 <text x="-2.1336" y="1.3716" size="1.27" layer="51" ratio="6" rot="SR0">*</text>
-<text x="-4.5466" y="1.8034" size="2.0828" layer="25" ratio="10" rot="SR0">&gt;NAME</text>
+<text x="0" y="0" size="0.762" layer="25" ratio="10" rot="SR270" align="center">&gt;NAME</text>
 <text x="-5.588" y="-4.0132" size="2.0828" layer="27" ratio="10" rot="SR0">&gt;VALUE</text>
+<wire x1="-0.9525" y1="1.27" x2="-0.9525" y2="-1.27" width="0.127" layer="21"/>
+<wire x1="-0.9525" y1="-1.27" x2="0.9525" y2="-1.27" width="0.127" layer="21"/>
+<wire x1="0.9525" y1="-1.27" x2="0.9525" y2="1.27" width="0.127" layer="21"/>
+<wire x1="0.9525" y1="1.27" x2="-0.9525" y2="1.27" width="0.127" layer="21"/>
+<wire x1="-0.635" y1="0.635" x2="-2.54" y2="0.635" width="0.127" layer="21"/>
+<wire x1="-2.54" y1="0.635" x2="-2.54" y2="1.27" width="0.127" layer="21"/>
+<wire x1="-2.54" y1="1.27" x2="-0.9525" y2="1.27" width="0.127" layer="21"/>
+<rectangle x1="-2.54" y1="0.635" x2="-0.635" y2="1.27" layer="21"/>
 </package>
 <package name="INOUTBOARD">
 <text x="17" y="9" size="1.27" layer="51" align="center">INOUT</text>
@@ -1484,6 +1481,7 @@ NS Package M08A</description>
 <wire x1="-7.62" y1="-4.318" x2="-7.62" y2="4.318" width="0.127" layer="21"/>
 <rectangle x1="-15.494" y1="-4.318" x2="-13.97" y2="4.318" layer="21"/>
 <rectangle x1="-12.446" y1="-4.318" x2="-7.62" y2="4.318" layer="21"/>
+<text x="0" y="0" size="1.016" layer="25" ratio="10" rot="SR0" align="center">&gt;NAME</text>
 </package>
 <package name="EURORACK24HPPCB">
 <wire x1="0.5" y1="105.5" x2="0.5" y2="1" width="0.127" layer="20"/>
@@ -1728,7 +1726,6 @@ NS Package M08A</description>
 <rectangle x1="-2.0955" y1="-0.8255" x2="2.0955" y2="0.8255" layer="39"/>
 <smd name="+" x="-1.27" y="0" dx="1.27" dy="1.27" layer="1"/>
 <smd name="-" x="1.27" y="0" dx="1.27" dy="1.27" layer="1" rot="R180"/>
-<text x="-1.9175" y="1.2925" size="0.889" layer="25" ratio="11">&gt;NAME</text>
 <text x="-1.6" y="-1.492" size="0.635" layer="27" ratio="10">&gt;VALUE</text>
 <polygon width="0.127" layer="21">
 <vertex x="-3.01625" y="0.79375"/>
@@ -1754,6 +1751,7 @@ NS Package M08A</description>
 <vertex x="-2.06375" y="0.3175"/>
 <vertex x="-2.06375" y="0.79375"/>
 </polygon>
+<text x="0" y="0" size="0.762" layer="25" ratio="10" rot="SR0" align="center">&gt;NAME</text>
 </package>
 <package name="AVX-B">
 <wire x1="-2.2225" y1="1.397" x2="2.2225" y2="1.397" width="0.1016" layer="21"/>
@@ -1866,6 +1864,8 @@ NS Package M08A</description>
 <circle x="0" y="0" radius="2" width="0.2" layer="21"/>
 <circle x="0" y="0" radius="2.4" width="0.1" layer="21"/>
 <circle x="0" y="0" radius="2.7" width="0.05" layer="21"/>
+<text x="0" y="0" size="0.762" layer="25" ratio="10" rot="SR270" align="center">&gt;NAME</text>
+<wire x1="1.27" y1="1.27" x2="1.27" y2="-1.27" width="0.508" layer="25"/>
 </package>
 <package name="SOP65P640X110-16N">
 <wire x1="-2.2098" y1="2.1336" x2="-2.2098" y2="2.4384" width="0.1524" layer="51"/>

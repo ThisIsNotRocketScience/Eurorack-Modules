@@ -28,7 +28,7 @@
 <layer number="18" name="Vias" color="2" fill="1" visible="yes" active="yes"/>
 <layer number="19" name="Unrouted" color="6" fill="1" visible="yes" active="yes"/>
 <layer number="20" name="Dimension" color="15" fill="1" visible="yes" active="yes"/>
-<layer number="21" name="tPlace" color="7" fill="1" visible="no" active="yes"/>
+<layer number="21" name="tPlace" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="22" name="bPlace" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="23" name="tOrigins" color="15" fill="1" visible="yes" active="yes"/>
 <layer number="24" name="bOrigins" color="15" fill="1" visible="yes" active="yes"/>
@@ -2014,12 +2014,12 @@ new: Attribute TP_SIGNAL_NAME&lt;br&gt;
 <attribute name="NAME" x="38.885" y="87.357" size="0.889" layer="25" ratio="11" rot="R90"/>
 <attribute name="VALUE" x="39.8175" y="87.103" size="0.508" layer="27" ratio="10" rot="R90"/>
 </element>
-<element name="R54" library="OPL" package="R0603" value="56" x="40.64" y="82.55" smashed="yes" rot="R90">
-<attribute name="MPN" value="" x="40.64" y="82.55" size="1.778" layer="27" rot="R90" display="off"/>
-<attribute name="MF" value="" x="40.64" y="82.55" size="1.778" layer="27" rot="R90" display="off"/>
-<attribute name="OC_FARNELL" value="unknown" x="40.64" y="82.55" size="1.778" layer="27" rot="R90" display="off"/>
-<attribute name="NAME" x="41.025" y="81.28" size="0.889" layer="25" ratio="11" rot="R90"/>
-<attribute name="VALUE" x="41.9575" y="81.153" size="0.508" layer="27" ratio="10" rot="R90"/>
+<element name="R54" library="OPL" package="R0603" value="56" x="40.64" y="80.9875" smashed="yes" rot="R90">
+<attribute name="MPN" value="" x="40.64" y="80.9875" size="1.778" layer="27" rot="R90" display="off"/>
+<attribute name="MF" value="" x="40.64" y="80.9875" size="1.778" layer="27" rot="R90" display="off"/>
+<attribute name="OC_FARNELL" value="unknown" x="40.64" y="80.9875" size="1.778" layer="27" rot="R90" display="off"/>
+<attribute name="NAME" x="41.025" y="79.7175" size="0.889" layer="25" ratio="11" rot="R90"/>
+<attribute name="VALUE" x="41.9575" y="79.5905" size="0.508" layer="27" ratio="10" rot="R90"/>
 </element>
 <element name="R55" library="OPL" package="R0603" value="56" x="38.5" y="91" smashed="yes" rot="R180">
 <attribute name="MPN" value="" x="38.5" y="91" size="1.778" layer="27" rot="R180" display="off"/>
@@ -2723,9 +2723,10 @@ new: Attribute TP_SIGNAL_NAME&lt;br&gt;
 <via x="35.5" y="53.125" extent="1-16" drill="0.3048"/>
 <wire x1="35.5" y1="53.125" x2="35.625" y2="53.125" width="0.2032" layer="1"/>
 <wire x1="35.625" y1="53.125" x2="35.875" y2="53.375" width="0.2032" layer="1"/>
-<wire x1="17.466" y1="59.804" x2="18.27" y2="59" width="0.2032" layer="16"/>
-<wire x1="18.27" y1="59" x2="23.625" y2="59" width="0.2032" layer="16"/>
+<wire x1="19.625" y1="59" x2="23.625" y2="59" width="0.2032" layer="16"/>
 <wire x1="23.625" y1="59" x2="24.875" y2="60.25" width="0.2032" layer="16"/>
+<wire x1="17.466" y1="59.804" x2="18.821" y2="59.804" width="0.2032" layer="16"/>
+<wire x1="18.821" y1="59.804" x2="19.625" y2="59" width="0.2032" layer="16"/>
 </signal>
 <signal name="N$3">
 <contactref element="R16" pad="2"/>
@@ -3983,8 +3984,8 @@ new: Attribute TP_SIGNAL_NAME&lt;br&gt;
 <signal name="N$84">
 <contactref element="D37" pad="+"/>
 <contactref element="R54" pad="1"/>
-<wire x1="40.64" y1="81.788" x2="42.418" y2="80.01" width="0.2032" layer="1"/>
-<wire x1="42.418" y1="80.01" x2="43.18" y2="80.01" width="0.2032" layer="1"/>
+<wire x1="40.64" y1="80.2255" x2="42.9645" y2="80.2255" width="0.2032" layer="1"/>
+<wire x1="42.9645" y1="80.2255" x2="43.18" y2="80.01" width="0.2032" layer="1"/>
 </signal>
 <signal name="N$85">
 <contactref element="D38" pad="+"/>
@@ -4241,7 +4242,7 @@ new: Attribute TP_SIGNAL_NAME&lt;br&gt;
 <signal name="N$31">
 <contactref element="U4" pad="6"/>
 <contactref element="R54" pad="2"/>
-<wire x1="40.64" y1="83.312" x2="40.64" y2="84.985" width="0.2032" layer="1"/>
+<wire x1="40.64" y1="81.7495" x2="40.64" y2="84.985" width="0.2032" layer="1"/>
 <wire x1="40.64" y1="84.985" x2="40" y2="85.625" width="0.2032" layer="1"/>
 <wire x1="40" y1="85.625" x2="40" y2="89.5" width="0.2032" layer="1"/>
 <wire x1="40" y1="89.5" x2="39.25" y2="90.25" width="0.2032" layer="1"/>
