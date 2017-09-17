@@ -1500,7 +1500,7 @@ grid 5.45 mm</description>
 <smd name="C" x="0" y="1.1" dx="1" dy="1.4" layer="1"/>
 <smd name="E" x="0.95" y="-1.1" dx="1" dy="1.4" layer="1"/>
 <smd name="B" x="-0.95" y="-1.1" dx="1" dy="1.4" layer="1"/>
-<text x="-1.905" y="1.905" size="1.27" layer="25">&gt;NAME</text>
+<text x="0" y="0" size="0.635" layer="25" align="center">&gt;NAME</text>
 <text x="-1.905" y="-3.175" size="1.27" layer="27">&gt;VALUE</text>
 <rectangle x1="-0.2286" y1="0.7112" x2="0.2286" y2="1.2954" layer="51"/>
 <rectangle x1="0.7112" y1="-1.2954" x2="1.1684" y2="-0.7112" layer="51"/>
@@ -4339,7 +4339,7 @@ NS Package M08A</description>
 <attribute name="MPN" value=""/>
 <attribute name="OC_FARNELL" value="unknown"/>
 </part>
-<part name="C2" library="OPL" deviceset="C*" device="-0603" value="3.3nF">
+<part name="C2" library="OPL" deviceset="C*" device="-0603" value="3.3nF C0G">
 <attribute name="MF" value=""/>
 <attribute name="MPN" value=""/>
 <attribute name="OC_FARNELL" value="unknown"/>
@@ -4359,7 +4359,7 @@ NS Package M08A</description>
 <attribute name="MPN" value=""/>
 <attribute name="OC_FARNELL" value="unknown"/>
 </part>
-<part name="C3" library="OPL" deviceset="C*" device="-0603" value="3.3nF">
+<part name="C3" library="OPL" deviceset="C*" device="-0603" value="3.3nF COG">
 <attribute name="MF" value=""/>
 <attribute name="MPN" value=""/>
 <attribute name="OC_FARNELL" value="unknown"/>
@@ -4999,6 +4999,19 @@ NS Package M08A</description>
 <part name="GND85" library="SparkFun-Aesthetics" deviceset="GND" device=""/>
 <part name="SUPPLY31" library="SparkFun-Aesthetics" deviceset="3.3V" device=""/>
 <part name="IC2" library="EurorackModularParts" deviceset="TL072" device=""/>
+<part name="C23" library="EurorackModularParts" deviceset="C-POLAR*" device="-A" value="10uF">
+<attribute name="MF" value="AVX"/>
+<attribute name="MPN" value="TAJB106K020RNJ"/>
+<attribute name="OC_FARNELL" value="197427"/>
+</part>
+<part name="SUPPLY33" library="SparkFun-Aesthetics" deviceset="3.3V" device=""/>
+<part name="GND16" library="SparkFun-Aesthetics" deviceset="GND" device=""/>
+<part name="C24" library="OPL" deviceset="C*" device="-0603" value="100nF">
+<attribute name="MF" value="MULTICOMP"/>
+<attribute name="MPN" value="MC0603F104Z160CT"/>
+<attribute name="OC_FARNELL" value="1759017"/>
+</part>
+<part name="GND86" library="SparkFun" deviceset="GND" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -6781,7 +6794,7 @@ NS Package M08A</description>
 <wire x1="85.09" y1="-49.53" x2="85.09" y2="-53.34" width="0.1524" layer="91"/>
 </segment>
 </net>
-<net name="N$63" class="4">
+<net name="RETURNGROUND" class="4">
 <segment>
 <pinref part="J13" gate="G$1" pin="RING"/>
 <pinref part="J12" gate="G$1" pin="RING"/>
@@ -6871,6 +6884,13 @@ NS Package M08A</description>
 <attribute name="MF" x="46.99" y="52.07" size="1.778" layer="96" rot="R180" display="off"/>
 <attribute name="MPN" x="46.99" y="52.07" size="1.778" layer="96" rot="R180" display="off"/>
 </instance>
+<instance part="C23" gate="C" x="71.12" y="19.05" rot="R270">
+<attribute name="OC_FARNELL" x="71.12" y="19.05" size="1.778" layer="96" rot="R180" display="off"/>
+<attribute name="MF" x="71.12" y="19.05" size="1.778" layer="96" rot="R180" display="off"/>
+<attribute name="MPN" x="71.12" y="19.05" size="1.778" layer="96" rot="R180" display="off"/>
+</instance>
+<instance part="SUPPLY33" gate="G$1" x="71.12" y="25.4"/>
+<instance part="GND16" gate="1" x="71.12" y="10.16"/>
 </instances>
 <busses>
 </busses>
@@ -6917,6 +6937,11 @@ NS Package M08A</description>
 <pinref part="GND25" gate="1" pin="GND"/>
 <wire x1="148.59" y1="46.99" x2="148.59" y2="49.53" width="0.1524" layer="91"/>
 </segment>
+<segment>
+<pinref part="C23" gate="C" pin="2"/>
+<pinref part="GND16" gate="1" pin="GND"/>
+<wire x1="71.12" y1="12.7" x2="71.12" y2="13.97" width="0.1524" layer="91"/>
+</segment>
 </net>
 <net name="3.3V" class="1">
 <segment>
@@ -6930,6 +6955,11 @@ NS Package M08A</description>
 <label x="116.84" y="59.69" size="1.778" layer="95"/>
 <pinref part="SUPPLY3" gate="G$1" pin="3.3V"/>
 <junction x="105.41" y="57.15"/>
+</segment>
+<segment>
+<pinref part="C23" gate="C" pin="1"/>
+<pinref part="SUPPLY33" gate="G$1" pin="3.3V"/>
+<wire x1="71.12" y1="25.4" x2="71.12" y2="24.13" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$64" class="1">
@@ -7250,6 +7280,12 @@ NS Package M08A</description>
 <instance part="GND50" gate="1" x="31.75" y="359.41" rot="R180"/>
 <instance part="SUPPLY18" gate="G$1" x="29.21" y="378.46" rot="R180"/>
 <instance part="SUPPLY19" gate="G$1" x="31.75" y="336.55" rot="R180"/>
+<instance part="C24" gate="C" x="52.07" y="289.56" rot="R270">
+<attribute name="OC_FARNELL" x="52.07" y="289.56" size="1.778" layer="96" display="off"/>
+<attribute name="MF" x="52.07" y="289.56" size="1.778" layer="96" display="off"/>
+<attribute name="MPN" x="52.07" y="289.56" size="1.778" layer="96" display="off"/>
+</instance>
+<instance part="GND86" gate="1" x="52.07" y="280.67"/>
 </instances>
 <busses>
 </busses>
@@ -7387,6 +7423,11 @@ NS Package M08A</description>
 <pinref part="GND50" gate="1" pin="GND"/>
 <wire x1="31.75" y1="356.87" x2="31.75" y2="355.6" width="0.1524" layer="91"/>
 </segment>
+<segment>
+<pinref part="C24" gate="C" pin="2"/>
+<pinref part="GND86" gate="1" pin="GND"/>
+<wire x1="52.07" y1="283.21" x2="52.07" y2="285.75" width="0.1524" layer="91"/>
+</segment>
 </net>
 <net name="3.3V" class="1">
 <segment>
@@ -7519,8 +7560,11 @@ NS Package M08A</description>
 <net name="KNOB_FREQ" class="0">
 <segment>
 <pinref part="R17" gate="G$1" pin="S"/>
-<wire x1="43.18" y1="293.37" x2="55.88" y2="293.37" width="0.1524" layer="91"/>
+<wire x1="43.18" y1="293.37" x2="52.07" y2="293.37" width="0.1524" layer="91"/>
 <label x="48.26" y="293.37" size="1.778" layer="95"/>
+<pinref part="C24" gate="C" pin="1"/>
+<wire x1="52.07" y1="293.37" x2="55.88" y2="293.37" width="0.1524" layer="91"/>
+<junction x="52.07" y="293.37"/>
 </segment>
 <segment>
 <pinref part="R30" gate="R" pin="2"/>
