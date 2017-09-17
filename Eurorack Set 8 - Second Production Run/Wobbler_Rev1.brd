@@ -32,7 +32,7 @@
 <layer number="22" name="bPlace" color="7" fill="1" visible="no" active="yes"/>
 <layer number="23" name="tOrigins" color="15" fill="1" visible="no" active="yes"/>
 <layer number="24" name="bOrigins" color="15" fill="1" visible="no" active="yes"/>
-<layer number="25" name="tNames" color="13" fill="1" visible="no" active="yes"/>
+<layer number="25" name="tNames" color="57" fill="1" visible="no" active="yes"/>
 <layer number="26" name="bNames" color="10" fill="1" visible="no" active="yes"/>
 <layer number="27" name="tValues" color="7" fill="1" visible="no" active="yes"/>
 <layer number="28" name="bValues" color="7" fill="1" visible="no" active="yes"/>
@@ -465,22 +465,18 @@ Source: http://www.onsemi.co.jp .. LM137M-D.PDF</description>
 <packages>
 <package name="SOT23-BEC">
 <description>TO-236 ITT Intermetall</description>
-<wire x1="1.4224" y1="0.6604" x2="1.4224" y2="-0.6604" width="0.127" layer="51"/>
-<wire x1="1.4224" y1="-0.6604" x2="-1.4224" y2="-0.6604" width="0.127" layer="51"/>
-<wire x1="-1.4224" y1="-0.6604" x2="-1.4224" y2="0.6604" width="0.127" layer="51"/>
-<wire x1="-1.4224" y1="0.6604" x2="1.4224" y2="0.6604" width="0.127" layer="51"/>
+<wire x1="1.4224" y1="0.6604" x2="1.4224" y2="-0.6604" width="0.127" layer="21"/>
+<wire x1="1.4224" y1="-0.6604" x2="-1.4224" y2="-0.6604" width="0.127" layer="21"/>
+<wire x1="-1.4224" y1="-0.6604" x2="-1.4224" y2="0.6604" width="0.127" layer="21"/>
+<wire x1="-1.4224" y1="0.6604" x2="1.4224" y2="0.6604" width="0.127" layer="21"/>
 <smd name="C" x="0" y="1.1" dx="1" dy="1.4" layer="1"/>
 <smd name="E" x="0.95" y="-1.1" dx="1" dy="1.4" layer="1"/>
 <smd name="B" x="-0.95" y="-1.1" dx="1" dy="1.4" layer="1"/>
-<text x="0" y="0" size="0.635" layer="25" align="center">&gt;NAME</text>
+<text x="-1.905" y="1.905" size="1.27" layer="25">&gt;NAME</text>
 <text x="-1.905" y="-3.175" size="1.27" layer="27">&gt;VALUE</text>
 <rectangle x1="-0.2286" y1="0.7112" x2="0.2286" y2="1.2954" layer="51"/>
 <rectangle x1="0.7112" y1="-1.2954" x2="1.1684" y2="-0.7112" layer="51"/>
 <rectangle x1="-1.1684" y1="-1.2954" x2="-0.7112" y2="-0.7112" layer="51"/>
-<wire x1="-1.27" y1="0.635" x2="-1.27" y2="-0.635" width="0.127" layer="21"/>
-<wire x1="-1.27" y1="-0.635" x2="1.27" y2="-0.635" width="0.127" layer="21"/>
-<wire x1="1.27" y1="-0.635" x2="1.27" y2="0.635" width="0.127" layer="21"/>
-<wire x1="1.27" y1="0.635" x2="-1.27" y2="0.635" width="0.127" layer="21"/>
 </package>
 </packages>
 </library>
@@ -839,14 +835,9 @@ NS Package M08A</description>
 <rectangle x1="0.39" y1="2" x2="0.88" y2="3.1" layer="51"/>
 <rectangle x1="-0.88" y1="2" x2="-0.39" y2="3.1" layer="51"/>
 <rectangle x1="-2.15" y1="2" x2="-1.66" y2="3.1" layer="51"/>
-<wire x1="-2.54" y1="4.445" x2="-2.54" y2="1.27" width="0.127" layer="21"/>
 <wire x1="-2.54" y1="1.27" x2="-2.54" y2="-1.27" width="0.127" layer="21"/>
 <wire x1="-2.54" y1="-1.27" x2="-2.54" y2="-4.445" width="0.127" layer="21"/>
-<wire x1="-2.54" y1="-4.445" x2="2.54" y2="-4.445" width="0.127" layer="21"/>
-<wire x1="2.54" y1="-4.445" x2="2.54" y2="-1.27" width="0.127" layer="21"/>
 <wire x1="2.54" y1="-1.27" x2="2.54" y2="1.27" width="0.127" layer="21"/>
-<wire x1="2.54" y1="1.27" x2="2.54" y2="4.445" width="0.127" layer="21"/>
-<wire x1="2.54" y1="4.445" x2="-2.54" y2="4.445" width="0.127" layer="21"/>
 <wire x1="-2.54" y1="1.27" x2="2.54" y2="1.27" width="0.127" layer="21"/>
 <wire x1="2.54" y1="-1.27" x2="-1.27" y2="-1.27" width="0.127" layer="21"/>
 <wire x1="-1.27" y1="-1.27" x2="-2.54" y2="-1.27" width="0.127" layer="21"/>
@@ -1084,7 +1075,7 @@ NS Package M08A</description>
 </pass>
 </autorouter>
 <elements>
-<element name="U1" library="FarnellThings" package="QFN50P400X400X100-25N" value="MKL02Z32VFK4" x="21.25" y="61" rot="R90">
+<element name="IC9" library="FarnellThings" package="QFN50P400X400X100-25N" value="MKL02Z32VFK4" x="21.25" y="61" rot="R90">
 <attribute name="PACKAGE" value="QFN-24" x="21.25" y="40.999996875" size="0.6" layer="27" rot="R90" display="off"/>
 <attribute name="OC_NEWARK" value="61W9887" x="21.25" y="40.999996875" size="0.6" layer="27" rot="R90" display="off"/>
 <attribute name="MPN" value="MKL02Z32VFK4" x="21.25" y="40.999996875" size="0.6" layer="27" rot="R90" display="off"/>
@@ -1127,10 +1118,10 @@ NS Package M08A</description>
 <attribute name="MF" value="STMICROELECTRONICS" x="30.5" y="97.131" size="1.778" layer="27" display="off"/>
 <attribute name="MPN" value="LD1117AS33TR" x="30.5" y="97.131" size="1.778" layer="27" display="off"/>
 </element>
-<element name="J14" library="EurorackModularParts" package="2X08_SMT_HEADER" value="POWERSMT" x="49.103" y="87.539" rot="MR180">
-<attribute name="OC_FARNELL" value="unknown" x="49.103" y="87.539" size="1.778" layer="28" rot="MR180" display="off"/>
-<attribute name="MF" value="" x="49.103" y="87.539" size="1.778" layer="28" rot="MR180" display="off"/>
-<attribute name="MPN" value="" x="49.103" y="87.539" size="1.778" layer="28" rot="MR180" display="off"/>
+<element name="J14" library="EurorackModularParts" package="2X08_SMT_HEADER" value="POWERSMT" x="48.353" y="87.539" rot="MR180">
+<attribute name="OC_FARNELL" value="unknown" x="48.353" y="87.539" size="1.778" layer="28" rot="MR180" display="off"/>
+<attribute name="MF" value="" x="48.353" y="87.539" size="1.778" layer="28" rot="MR180" display="off"/>
+<attribute name="MPN" value="" x="48.353" y="87.539" size="1.778" layer="28" rot="MR180" display="off"/>
 </element>
 <element name="R16" library="OPL" package="R0603" value="100k" x="2.5" y="69.75" rot="R90">
 <attribute name="OC_FARNELL" value="unknown" x="2.5" y="69.75" size="1.778" layer="27" rot="R90" display="off"/>
@@ -1172,35 +1163,35 @@ NS Package M08A</description>
 <attribute name="MF" value="" x="12.25" y="70" size="1.778" layer="27" display="off"/>
 <attribute name="MPN" value="" x="12.25" y="70" size="1.778" layer="27" display="off"/>
 </element>
-<element name="R5" library="OPL" package="R0603" value="36k" x="58" y="69.25" rot="R270">
-<attribute name="OC_FARNELL" value="unknown" x="58" y="69.25" size="1.778" layer="27" rot="R270" display="off"/>
-<attribute name="MF" value="" x="58" y="69.25" size="1.778" layer="27" rot="R270" display="off"/>
-<attribute name="MPN" value="" x="58" y="69.25" size="1.778" layer="27" rot="R270" display="off"/>
+<element name="R5" library="OPL" package="R0603" value="187k 0.1%" x="44.125" y="66.625" rot="R90">
+<attribute name="OC_FARNELL" value="unknown" x="44.125" y="66.625" size="1.778" layer="27" rot="R90" display="off"/>
+<attribute name="MF" value="" x="44.125" y="66.625" size="1.778" layer="27" rot="R90" display="off"/>
+<attribute name="MPN" value="" x="44.125" y="66.625" size="1.778" layer="27" rot="R90" display="off"/>
 </element>
-<element name="C2" library="OPL" package="C0603" value="3.3nF" x="56.5" y="69.25" rot="R90">
-<attribute name="OC_FARNELL" value="unknown" x="56.5" y="69.25" size="1.778" layer="27" rot="R90" display="off"/>
-<attribute name="MF" value="" x="56.5" y="69.25" size="1.778" layer="27" rot="R90" display="off"/>
-<attribute name="MPN" value="" x="56.5" y="69.25" size="1.778" layer="27" rot="R90" display="off"/>
+<element name="C2" library="OPL" package="C0603" value="3.3nF" x="45.75" y="66.625" rot="R270">
+<attribute name="OC_FARNELL" value="unknown" x="45.75" y="66.625" size="1.778" layer="27" rot="R270" display="off"/>
+<attribute name="MF" value="" x="45.75" y="66.625" size="1.778" layer="27" rot="R270" display="off"/>
+<attribute name="MPN" value="" x="45.75" y="66.625" size="1.778" layer="27" rot="R270" display="off"/>
 </element>
-<element name="R7" library="OPL" package="R0603" value="12k" x="37.5" y="59" rot="R180">
-<attribute name="OC_FARNELL" value="unknown" x="37.5" y="59" size="1.778" layer="27" rot="R180" display="off"/>
-<attribute name="MF" value="" x="37.5" y="59" size="1.778" layer="27" rot="R180" display="off"/>
-<attribute name="MPN" value="" x="37.5" y="59" size="1.778" layer="27" rot="R180" display="off"/>
+<element name="R7" library="OPL" package="R0603" value="38.3k 0.1%" x="37.125" y="59" rot="R180">
+<attribute name="OC_FARNELL" value="unknown" x="37.125" y="59" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="MF" value="" x="37.125" y="59" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="MPN" value="" x="37.125" y="59" size="1.778" layer="27" rot="R180" display="off"/>
 </element>
-<element name="R8" library="OPL" package="R0603" value="36k" x="44.5" y="69" rot="R270">
-<attribute name="OC_FARNELL" value="unknown" x="44.5" y="69" size="1.778" layer="27" rot="R270" display="off"/>
-<attribute name="MF" value="" x="44.5" y="69" size="1.778" layer="27" rot="R270" display="off"/>
-<attribute name="MPN" value="" x="44.5" y="69" size="1.778" layer="27" rot="R270" display="off"/>
+<element name="R8" library="OPL" package="R0603" value="187k 0.1%" x="55.75" y="65.125" rot="R90">
+<attribute name="OC_FARNELL" value="unknown" x="55.75" y="65.125" size="1.778" layer="27" rot="R90" display="off"/>
+<attribute name="MF" value="" x="55.75" y="65.125" size="1.778" layer="27" rot="R90" display="off"/>
+<attribute name="MPN" value="" x="55.75" y="65.125" size="1.778" layer="27" rot="R90" display="off"/>
 </element>
-<element name="R9" library="OPL" package="R0603" value="12k" x="37.5" y="61.5" rot="R180">
-<attribute name="OC_FARNELL" value="unknown" x="37.5" y="61.5" size="1.778" layer="27" rot="R180" display="off"/>
-<attribute name="MF" value="" x="37.5" y="61.5" size="1.778" layer="27" rot="R180" display="off"/>
-<attribute name="MPN" value="" x="37.5" y="61.5" size="1.778" layer="27" rot="R180" display="off"/>
+<element name="R9" library="OPL" package="R0603" value="38.3k 0.1%" x="37.25" y="61.5" rot="R180">
+<attribute name="OC_FARNELL" value="unknown" x="37.25" y="61.5" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="MF" value="" x="37.25" y="61.5" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="MPN" value="" x="37.25" y="61.5" size="1.778" layer="27" rot="R180" display="off"/>
 </element>
-<element name="C3" library="OPL" package="C0603" value="3.3nF" x="46" y="69" rot="R90">
-<attribute name="OC_FARNELL" value="unknown" x="46" y="69" size="1.778" layer="27" rot="R90" display="off"/>
-<attribute name="MF" value="" x="46" y="69" size="1.778" layer="27" rot="R90" display="off"/>
-<attribute name="MPN" value="" x="46" y="69" size="1.778" layer="27" rot="R90" display="off"/>
+<element name="C3" library="OPL" package="C0603" value="3.3nF" x="57.375" y="65.125" rot="R270">
+<attribute name="OC_FARNELL" value="unknown" x="57.375" y="65.125" size="1.778" layer="27" rot="R270" display="off"/>
+<attribute name="MF" value="" x="57.375" y="65.125" size="1.778" layer="27" rot="R270" display="off"/>
+<attribute name="MPN" value="" x="57.375" y="65.125" size="1.778" layer="27" rot="R270" display="off"/>
 </element>
 <element name="R68" library="EurorackModularParts" package="OG-POTS_ALPS_POT_VERTICAL" value="10kB" x="30.48" y="77.47">
 <attribute name="DESC" value="Shape" x="30.48" y="85.09" size="1.778" layer="254" align="bottom-center" display="off"/>
@@ -1220,7 +1211,7 @@ NS Package M08A</description>
 <attribute name="MF" value="" x="30.48" y="46.99" size="1.778" layer="27" display="off"/>
 <attribute name="MPN" value="" x="30.48" y="46.99" size="1.778" layer="27" display="off"/>
 </element>
-<element name="U7" library="FarnellThings" package="SOIC8-N_MC" value="MCP4822-E/SN" x="31" y="59.5">
+<element name="IC3" library="FarnellThings" package="SOIC8-N_MC" value="MCP4822-E/SN" x="31" y="59.5">
 <attribute name="PACKAGE" value="SOIC-8" x="31" y="59.5" size="1.778" layer="27" display="off"/>
 <attribute name="OC_NEWARK" value="31K2975" x="31" y="59.5" size="1.778" layer="27" display="off"/>
 <attribute name="DESCRIPTION" value="12 Bit DAC" x="31" y="59.5" size="1.778" layer="27" display="off"/>
@@ -1268,15 +1259,15 @@ NS Package M08A</description>
 <attribute name="MF" value="" x="57.67" y="14.074" size="1.778" layer="27" display="off"/>
 <attribute name="MPN" value="" x="57.67" y="14.074" size="1.778" layer="27" display="off"/>
 </element>
-<element name="C18" library="OPL" package="C0603" value="100nF" x="45" y="66">
-<attribute name="OC_FARNELL" value="1759017" x="45" y="66" size="1.778" layer="27" display="off"/>
-<attribute name="MF" value="MULTICOMP" x="45" y="66" size="1.778" layer="27" display="off"/>
-<attribute name="MPN" value="MC0603F104Z160CT" x="45" y="66" size="1.778" layer="27" display="off"/>
+<element name="C18" library="OPL" package="C0603" value="100nF" x="45" y="64.25">
+<attribute name="OC_FARNELL" value="1759017" x="45" y="64.25" size="1.778" layer="27" display="off"/>
+<attribute name="MF" value="MULTICOMP" x="45" y="64.25" size="1.778" layer="27" display="off"/>
+<attribute name="MPN" value="MC0603F104Z160CT" x="45" y="64.25" size="1.778" layer="27" display="off"/>
 </element>
-<element name="C19" library="OPL" package="C0603" value="100nF" x="56.5" y="65.5" rot="R90">
-<attribute name="OC_FARNELL" value="1759017" x="56.5" y="65.5" size="1.778" layer="27" rot="R90" display="off"/>
-<attribute name="MF" value="MULTICOMP" x="56.5" y="65.5" size="1.778" layer="27" rot="R90" display="off"/>
-<attribute name="MPN" value="MC0603F104Z160CT" x="56.5" y="65.5" size="1.778" layer="27" rot="R90" display="off"/>
+<element name="C19" library="OPL" package="C0603" value="100nF" x="56.875" y="68.375" rot="R180">
+<attribute name="OC_FARNELL" value="1759017" x="56.875" y="68.375" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="MF" value="MULTICOMP" x="56.875" y="68.375" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="MPN" value="MC0603F104Z160CT" x="56.875" y="68.375" size="1.778" layer="27" rot="R180" display="off"/>
 </element>
 <element name="Q1" library="transistor" package="SOT23-BEC" value="MMBT3904" x="45.608" y="56.95" rot="R180">
 <attribute name="OC_FARNELL" value="2336795" x="45.608" y="56.95" size="1.778" layer="27" rot="R180" display="off"/>
@@ -1310,7 +1301,7 @@ NS Package M08A</description>
 <attribute name="MF" value="AVX" x="53.125" y="89.504" size="1.778" layer="27" rot="R180" display="off"/>
 <attribute name="MPN" value="TAJB106K020RNJ" x="53.125" y="89.504" size="1.778" layer="27" rot="R180" display="off"/>
 </element>
-<element name="U2" library="FarnellThings" package="SOT95P237X112-3N" value="LM4040DIM3-5.0" x="38.998" y="71.125" rot="R180">
+<element name="U1" library="FarnellThings" package="SOT95P237X112-3N" value="LM4040DIM3-5.0" x="38.998" y="71.125" rot="R180">
 <attribute name="PACKAGE" value="SOT-23-3" x="38.998" y="76.205" size="1.778" layer="27" rot="R180" display="off"/>
 <attribute name="OC_NEWARK" value="97K3489" x="38.998" y="76.205" size="1.778" layer="27" rot="R180" display="off"/>
 <attribute name="MPN" value="LM4040DIM3-5.0" x="38.998" y="76.205" size="1.778" layer="27" rot="R180" display="off"/>
@@ -1422,7 +1413,7 @@ NS Package M08A</description>
 <attribute name="MF" value="MULTICOMP" x="9.25" y="69.25" size="1.778" layer="27" rot="R90" display="off"/>
 <attribute name="MPN" value="MC0603F104Z160CT" x="9.25" y="69.25" size="1.778" layer="27" rot="R90" display="off"/>
 </element>
-<element name="U4" library="FarnellThings" package="QFN50P250X350X100-17N" value="74HC595BQ" x="31.25" y="34.75" smashed="yes" rot="R90">
+<element name="IC6" library="FarnellThings" package="QFN50P250X350X100-17N" value="74HC595BQ" x="31.25" y="34.75" smashed="yes" rot="R90">
 <attribute name="PACKAGE" value="QFN-16" x="31.25" y="34.75" size="1.778" layer="27" rot="R90" display="off"/>
 <attribute name="OC_NEWARK" value="43W8000" x="31.25" y="34.75" size="1.778" layer="27" rot="R90" display="off"/>
 <attribute name="MPN" value="74HC595BQ" x="31.25" y="34.75" size="1.778" layer="27" rot="R90" display="off"/>
@@ -1432,7 +1423,7 @@ NS Package M08A</description>
 <attribute name="NAME" x="31.25" y="34.25" size="1" layer="25" ratio="10" rot="SR0" align="bottom-center"/>
 <attribute name="VALUE" x="34.5" y="34.75" size="1" layer="27" ratio="10" rot="SR90" align="top-center"/>
 </element>
-<element name="U5" library="FarnellThings" package="QFN50P250X350X100-17N" value="74HC595BQ" x="17" y="42.5" smashed="yes" rot="R90">
+<element name="IC5" library="FarnellThings" package="QFN50P250X350X100-17N" value="74HC595BQ" x="17" y="42.5" smashed="yes" rot="R90">
 <attribute name="PACKAGE" value="QFN-16" x="17" y="42.5" size="1.778" layer="27" rot="R90" display="off"/>
 <attribute name="OC_NEWARK" value="43W8000" x="17" y="42.5" size="1.778" layer="27" rot="R90" display="off"/>
 <attribute name="MPN" value="74HC595BQ" x="17" y="42.5" size="1.778" layer="27" rot="R90" display="off"/>
@@ -1442,7 +1433,7 @@ NS Package M08A</description>
 <attribute name="NAME" x="17" y="42" size="1" layer="25" ratio="10" rot="SR0" align="bottom-center"/>
 <attribute name="VALUE" x="20.25" y="42.5" size="1" layer="27" ratio="10" rot="SR90" align="top-center"/>
 </element>
-<element name="U6" library="EurorackModularParts" package="SOT95P290X145-5N" value="24LC16T-I/OT" x="21.109" y="72.079" rot="R270">
+<element name="IC10" library="EurorackModularParts" package="SOT95P290X145-5N" value="24LC16T-I/OT" x="21.109" y="72.079" rot="R270">
 <attribute name="PACKAGE" value="SOT-23-5 " x="21.109" y="72.079" size="1.778" layer="27" rot="R270" display="off"/>
 <attribute name="OC_NEWARK" value="62K0574" x="21.109" y="72.079" size="1.778" layer="27" rot="R270" display="off"/>
 <attribute name="MPN" value="24LC00T-I/OT" x="21.109" y="72.079" size="1.778" layer="27" rot="R270" display="off"/>
@@ -1501,7 +1492,7 @@ NS Package M08A</description>
 <element name="D32" library="EurorackModularParts" package="3MMLED" value="yellow" x="9.722721875" y="33.2522" rot="R180"/>
 <element name="D33" library="EurorackModularParts" package="3MMLED" value="yellow" x="33.857940625" y="13.7031" rot="R270"/>
 <element name="D34" library="EurorackModularParts" package="3MMLED" value="yellow" x="30.48" y="86.47"/>
-<element name="D35" library="EurorackModularParts" package="3MMLED" value="yellow" x="36.265090625" y="84.3644"/>
+<element name="D35" library="EurorackModularParts" package="3MMLED" value="yellow" x="36.265090625" y="84.3644" rot="R270"/>
 <element name="D40" library="EurorackModularParts" package="3MMLED" value="yellow" x="43.18" y="17.78" rot="R270"/>
 <element name="R31" library="OPL" package="R0603" value="56" x="18.375" y="84.125" rot="R180">
 <attribute name="MPN" value="" x="18.375" y="84.125" size="1.778" layer="27" rot="R180" display="off"/>
@@ -1611,15 +1602,15 @@ NS Package M08A</description>
 <attribute name="MF" value="MULTICOMP" x="14.0795" y="42.75" size="1.778" layer="27" display="off"/>
 <attribute name="OC_FARNELL" value="1759017" x="14.0795" y="42.75" size="1.778" layer="27" display="off"/>
 </element>
-<element name="R36" library="OPL" package="R0603" value="36k" x="50.272" y="71.5805">
-<attribute name="MF" value="" x="50.272" y="71.5805" size="1.778" layer="27" display="off"/>
-<attribute name="MPN" value="" x="50.272" y="71.5805" size="1.778" layer="27" display="off"/>
-<attribute name="OC_FARNELL" value="unknown" x="50.272" y="71.5805" size="1.778" layer="27" display="off"/>
+<element name="R36" library="OPL" package="R0603" value="187k 0.1%" x="47.75" y="70.875" rot="R90">
+<attribute name="MF" value="" x="47.75" y="70.875" size="1.778" layer="27" rot="R90" display="off"/>
+<attribute name="MPN" value="" x="47.75" y="70.875" size="1.778" layer="27" rot="R90" display="off"/>
+<attribute name="OC_FARNELL" value="unknown" x="47.75" y="70.875" size="1.778" layer="27" rot="R90" display="off"/>
 </element>
-<element name="R37" library="OPL" package="R0603" value="36k" x="53.406" y="71.607" rot="R180">
-<attribute name="MF" value="" x="53.406" y="71.607" size="1.778" layer="27" rot="R180" display="off"/>
-<attribute name="MPN" value="" x="53.406" y="71.607" size="1.778" layer="27" rot="R180" display="off"/>
-<attribute name="OC_FARNELL" value="unknown" x="53.406" y="71.607" size="1.778" layer="27" rot="R180" display="off"/>
+<element name="R37" library="OPL" package="R0603" value="187k 0.1%" x="45.857" y="70.844" rot="R90">
+<attribute name="MF" value="" x="45.857" y="70.844" size="1.778" layer="27" rot="R90" display="off"/>
+<attribute name="MPN" value="" x="45.857" y="70.844" size="1.778" layer="27" rot="R90" display="off"/>
+<attribute name="OC_FARNELL" value="unknown" x="45.857" y="70.844" size="1.778" layer="27" rot="R90" display="off"/>
 </element>
 <element name="U$1" library="zephod-components" package="PB6149L" value="SWITCH_W_LED_PB6149L-X-102YELLOW" x="30.48" y="25.4"/>
 <element name="R38" library="OPL" package="R0603" value="56" x="31.184" y="30.696">
@@ -1660,7 +1651,7 @@ NS Package M08A</description>
 <attribute name="DESC" value="Phase Amp" x="53.34" y="30.48" size="1.778" layer="254" align="bottom-center" display="off"/>
 <attribute name="OC_FARNELL" value="unknown" x="53.34" y="22.86" size="1.778" layer="27" display="off"/>
 </element>
-<element name="U3" library="FarnellThings" package="QFN50P250X350X100-17N" value="74HC595BQ" x="47" y="41.625" smashed="yes" rot="R90">
+<element name="IC7" library="FarnellThings" package="QFN50P250X350X100-17N" value="74HC595BQ" x="47" y="41.625" smashed="yes" rot="R90">
 <attribute name="SUPPLIER" value="NXP" x="34.3" y="31.465" size="1.778" layer="27" rot="R90" display="off"/>
 <attribute name="MF" value="NXP" x="34.3" y="31.465" size="1.778" layer="27" rot="R90" display="off"/>
 <attribute name="MPN" value="74HC595BQ" x="34.3" y="31.465" size="1.778" layer="27" rot="R90" display="off"/>
@@ -1746,7 +1737,7 @@ NS Package M08A</description>
 <attribute name="MPN" value="" x="16.875" y="78.75" size="1.778" layer="27" rot="R180" display="off"/>
 <attribute name="MF" value="" x="16.875" y="78.75" size="1.778" layer="27" rot="R180" display="off"/>
 </element>
-<element name="U8" library="FarnellThings" package="QFN50P250X350X100-17N" value="74HC595BQ" x="12.75" y="88.625" rot="R180">
+<element name="IC8" library="FarnellThings" package="QFN50P250X350X100-17N" value="74HC595BQ" x="12.75" y="88.625" rot="R180">
 <attribute name="OC_FARNELL" value="2164850" x="12.75" y="88.625" size="1.778" layer="27" rot="R180" display="off"/>
 <attribute name="MPN" value="74HC595BQ" x="12.75" y="88.625" size="1.778" layer="27" rot="R180" display="off"/>
 <attribute name="MF" value="NXP" x="12.75" y="88.625" size="1.778" layer="27" rot="R180" display="off"/>
@@ -1759,12 +1750,12 @@ NS Package M08A</description>
 <attribute name="MPN" value="MC0603F104Z160CT" x="13.125" y="84.875" size="1.778" layer="27" rot="R180" display="off"/>
 <attribute name="MF" value="MULTICOMP" x="13.125" y="84.875" size="1.778" layer="27" rot="R180" display="off"/>
 </element>
-<element name="U$2" library="EurorackModularParts" package="SO08" value="TL072" x="-17.375" y="-5.25"/>
+<element name="IC2" library="EurorackModularParts" package="SO08" value="TL072" x="51" y="66.5" rot="R90"/>
 </elements>
 <signals>
 <signal name="GND" class="3">
-<contactref element="U1" pad="4"/>
-<contactref element="U1" pad="25"/>
+<contactref element="IC9" pad="4"/>
+<contactref element="IC9" pad="25"/>
 <contactref element="SWD1" pad="3"/>
 <contactref element="SWD1" pad="5"/>
 <contactref element="C10" pad="1"/>
@@ -1779,8 +1770,8 @@ NS Package M08A</description>
 <contactref element="J14" pad="4"/>
 <contactref element="J14" pad="6"/>
 <contactref element="J14" pad="5"/>
-<contactref element="U7" pad="7"/>
-<contactref element="U7" pad="5"/>
+<contactref element="IC3" pad="7"/>
+<contactref element="IC3" pad="5"/>
 <contactref element="J3" pad="SWITCH@3"/>
 <contactref element="J3" pad="RING@3"/>
 <contactref element="J2" pad="RING@3"/>
@@ -1796,7 +1787,7 @@ NS Package M08A</description>
 <contactref element="Q1" pad="E"/>
 <contactref element="J5" pad="RING@3"/>
 <contactref element="C5" pad="+"/>
-<contactref element="U2" pad="1"/>
+<contactref element="U1" pad="1"/>
 <contactref element="C6" pad="1"/>
 <contactref element="J5" pad="SWITCH@3"/>
 <contactref element="C4" pad="1"/>
@@ -1808,13 +1799,13 @@ NS Package M08A</description>
 <contactref element="J7" pad="RING@3"/>
 <contactref element="J6" pad="RING@3"/>
 <contactref element="C17" pad="2"/>
-<contactref element="U4" pad="13"/>
-<contactref element="U5" pad="13"/>
-<contactref element="U4" pad="17"/>
-<contactref element="U4" pad="8"/>
-<contactref element="U5" pad="17"/>
-<contactref element="U5" pad="8"/>
-<contactref element="U6" pad="2"/>
+<contactref element="IC6" pad="13"/>
+<contactref element="IC5" pad="13"/>
+<contactref element="IC6" pad="17"/>
+<contactref element="IC6" pad="8"/>
+<contactref element="IC5" pad="17"/>
+<contactref element="IC5" pad="8"/>
+<contactref element="IC10" pad="2"/>
 <contactref element="C21" pad="1"/>
 <contactref element="IC4" pad="11"/>
 <contactref element="IC4" pad="12"/>
@@ -1823,7 +1814,7 @@ NS Package M08A</description>
 <contactref element="R17" pad="P$1"/>
 <contactref element="R68" pad="P$1"/>
 <contactref element="R69" pad="P$1"/>
-<contactref element="U6" pad="5"/>
+<contactref element="IC10" pad="5"/>
 <contactref element="D32" pad="-"/>
 <contactref element="D33" pad="-"/>
 <contactref element="D34" pad="-"/>
@@ -1849,7 +1840,7 @@ NS Package M08A</description>
 <contactref element="J8" pad="SWITCH@3"/>
 <contactref element="R44" pad="P$1"/>
 <contactref element="R45" pad="P$1"/>
-<contactref element="U3" pad="13"/>
+<contactref element="IC7" pad="13"/>
 <contactref element="D8" pad="-"/>
 <contactref element="D9" pad="-"/>
 <contactref element="D10" pad="-"/>
@@ -1858,8 +1849,8 @@ NS Package M08A</description>
 <contactref element="D5" pad="-"/>
 <contactref element="D6" pad="-"/>
 <contactref element="D7" pad="-"/>
-<contactref element="U3" pad="17"/>
-<contactref element="U3" pad="8"/>
+<contactref element="IC7" pad="17"/>
+<contactref element="IC7" pad="8"/>
 <contactref element="D12" pad="-"/>
 <wire x1="30.73" y1="104.254" x2="29.5" y2="104.254" width="0.2032" layer="1"/>
 <via x="29.5" y="104.254" extent="1-16" drill="0.3048"/>
@@ -1871,13 +1862,6 @@ NS Package M08A</description>
 <wire x1="28.2" y1="95.331" x2="28.25" y2="95.381" width="0.2032" layer="1"/>
 <via x="28.25" y="95.381" extent="1-16" drill="0.3048"/>
 <wire x1="28.25" y1="95.381" x2="28" y2="95.631" width="0.2032" layer="16"/>
-<wire x1="56.5" y1="64.738" x2="55.762" y2="64.738" width="0.2032" layer="1"/>
-<wire x1="55.762" y1="64.738" x2="55.75" y2="64.75" width="0.2032" layer="1"/>
-<via x="55.75" y="64.75" extent="1-16" drill="0.3048"/>
-<wire x1="55.75" y1="64.75" x2="55.5" y2="64.75" width="0.2032" layer="16"/>
-<wire x1="44.238" y1="66" x2="44" y2="66" width="0.2032" layer="1"/>
-<via x="44" y="66" extent="1-16" drill="0.3048"/>
-<wire x1="44" y1="66" x2="43.75" y2="66" width="0.2032" layer="16"/>
 <wire x1="44.658" y1="58.05" x2="43.8" y2="58.05" width="0.2032" layer="1"/>
 <wire x1="43.8" y1="58.05" x2="43.75" y2="58" width="0.2032" layer="1"/>
 <via x="43.75" y="58" extent="1-16" drill="0.3048"/>
@@ -1991,13 +1975,12 @@ NS Package M08A</description>
 <via x="40.375" y="14.875" extent="1-16" drill="0.3048"/>
 <wire x1="40.375" y1="14.875" x2="40.5" y2="15" width="0.2032" layer="16"/>
 <wire x1="40.5" y1="15" x2="40.75" y2="15" width="0.2032" layer="16"/>
-<wire x1="55.73" y1="64.73" x2="55.75" y2="64.75" width="0.2032" layer="1"/>
 <contactref element="D13" pad="-"/>
 <contactref element="D14" pad="-"/>
 <contactref element="C22" pad="1"/>
-<contactref element="U8" pad="17"/>
-<contactref element="U8" pad="8"/>
-<contactref element="U8" pad="13"/>
+<contactref element="IC8" pad="17"/>
+<contactref element="IC8" pad="8"/>
+<contactref element="IC8" pad="13"/>
 <wire x1="13.004" y1="90.3268" x2="13.004" y2="88.879" width="0.2032" layer="1"/>
 <wire x1="13.004" y1="88.879" x2="12.75" y2="88.625" width="0.2032" layer="1"/>
 <wire x1="11.5562" y1="88.371" x2="12.496" y2="88.371" width="0.2032" layer="1"/>
@@ -2026,28 +2009,41 @@ NS Package M08A</description>
 <wire x1="11.5522" y1="88.375" x2="9.5" y2="88.375" width="0.2032" layer="1"/>
 <via x="9.5" y="88.375" extent="1-16" drill="0.3048"/>
 <wire x1="9.5" y1="88.375" x2="10.5" y2="88.375" width="0.2032" layer="16"/>
-<contactref element="U$2" pad="3"/>
-<contactref element="U$2" pad="5"/>
-<wire x1="-15.47" y1="-2.65" x2="-16.74" y2="-7.85" width="0" layer="19" extent="1-1"/>
-<wire x1="5.04" y1="16.16" x2="-15.47" y2="-2.65" width="0" layer="19" extent="1-1"/>
+<contactref element="IC2" pad="3"/>
+<contactref element="IC2" pad="5"/>
+<wire x1="57.637" y1="68.375" x2="58.375" y2="68.375" width="0.2032" layer="1"/>
+<via x="58.375" y="68.375" extent="1-16" drill="0.3048"/>
+<wire x1="58.375" y1="68.375" x2="58.375" y2="68.625" width="0.2032" layer="16"/>
+<wire x1="53.6" y1="67.135" x2="54.99" y2="67.135" width="0.2032" layer="1"/>
+<wire x1="54.99" y1="67.135" x2="55" y2="67.125" width="0.2032" layer="1"/>
+<via x="55" y="67.125" extent="1-16" drill="0.3048"/>
+<wire x1="55" y1="67.125" x2="55.25" y2="67.125" width="0.2032" layer="16"/>
+<wire x1="48.4" y1="68.405" x2="47.03" y2="68.405" width="0.2032" layer="1"/>
+<wire x1="47.03" y1="68.405" x2="47" y2="68.375" width="0.2032" layer="1"/>
+<via x="47" y="68.375" extent="1-16" drill="0.3048"/>
+<wire x1="47" y1="68.375" x2="46.875" y2="68.5" width="0.2032" layer="16"/>
+<wire x1="44.238" y1="64.25" x2="44.238" y2="63.613" width="0.2032" layer="1"/>
+<wire x1="44.238" y1="63.613" x2="44.125" y2="63.5" width="0.2032" layer="1"/>
+<via x="44.125" y="63.5" extent="1-16" drill="0.3048"/>
+<wire x1="44.125" y1="63.5" x2="44.125" y2="63.125" width="0.2032" layer="16"/>
 </signal>
 <signal name="3.3V" class="1">
-<contactref element="U1" pad="3"/>
+<contactref element="IC9" pad="3"/>
 <contactref element="SWD1" pad="1"/>
 <contactref element="C10" pad="2"/>
 <contactref element="C12" pad="+"/>
 <contactref element="C8" pad="2"/>
 <contactref element="IC1" pad="2"/>
 <contactref element="IC1" pad="4"/>
-<contactref element="U7" pad="1"/>
+<contactref element="IC3" pad="1"/>
 <contactref element="R20" pad="2"/>
 <contactref element="C4" pad="2"/>
 <contactref element="C7" pad="2"/>
-<contactref element="U4" pad="10"/>
-<contactref element="U5" pad="10"/>
-<contactref element="U5" pad="16"/>
-<contactref element="U4" pad="16"/>
-<contactref element="U6" pad="4"/>
+<contactref element="IC6" pad="10"/>
+<contactref element="IC5" pad="10"/>
+<contactref element="IC5" pad="16"/>
+<contactref element="IC6" pad="16"/>
+<contactref element="IC10" pad="4"/>
 <contactref element="C21" pad="2"/>
 <contactref element="R50" pad="1"/>
 <contactref element="R51" pad="1"/>
@@ -2064,8 +2060,8 @@ NS Package M08A</description>
 <contactref element="R73" pad="2"/>
 <contactref element="R44" pad="P$3"/>
 <contactref element="R45" pad="P$3"/>
-<contactref element="U3" pad="10"/>
-<contactref element="U3" pad="16"/>
+<contactref element="IC7" pad="10"/>
+<contactref element="IC7" pad="16"/>
 <wire x1="9" y1="65.85" x2="9" y2="68.488" width="0.508" layer="1"/>
 <wire x1="9" y1="68.488" x2="9.25" y2="68.488" width="0.508" layer="1"/>
 <wire x1="20.1692" y1="70.7836" x2="20.1692" y2="69.1948" width="0.508" layer="1"/>
@@ -2234,8 +2230,8 @@ NS Package M08A</description>
 <wire x1="30.25" y1="63.512" x2="30.363" y2="63.625" width="0.3048" layer="1"/>
 <wire x1="30.25" y1="63.2835" x2="30.25" y2="63.1315" width="0.3048" layer="1"/>
 <contactref element="C22" pad="2"/>
-<contactref element="U8" pad="10"/>
-<contactref element="U8" pad="16"/>
+<contactref element="IC8" pad="10"/>
+<contactref element="IC8" pad="16"/>
 <wire x1="38.06" y1="103.22" x2="37.595" y2="103.22" width="0.3048" layer="1"/>
 <wire x1="37.595" y1="103.22" x2="36.875" y2="102.5" width="0.3048" layer="1"/>
 <wire x1="36.875" y1="102.5" x2="32.897" y2="102.5" width="0.3048" layer="1"/>
@@ -2265,7 +2261,7 @@ NS Package M08A</description>
 <wire x1="24.75" y1="85.75" x2="24.75" y2="81.875" width="0.508" layer="1"/>
 </signal>
 <signal name="SWD_CLK">
-<contactref element="U1" pad="22"/>
+<contactref element="IC9" pad="22"/>
 <contactref element="SWD1" pad="4"/>
 <wire x1="17.915" y1="57.36" x2="18" y2="56.945" width="0.2032" layer="16"/>
 <wire x1="18" y1="56.945" x2="18" y2="59" width="0.2032" layer="16"/>
@@ -2279,7 +2275,7 @@ NS Package M08A</description>
 </signal>
 <signal name="SWD_DIO">
 <contactref element="SWD1" pad="2"/>
-<contactref element="U1" pad="24"/>
+<contactref element="IC9" pad="24"/>
 <wire x1="19.05" y1="59.7554" x2="19.25" y2="59.5554" width="0.2032" layer="1"/>
 <wire x1="19.25" y1="59.5554" x2="19.25" y2="59" width="0.2032" layer="1"/>
 <via x="19.25" y="59" extent="1-16" drill="0.3048"/>
@@ -2287,7 +2283,7 @@ NS Package M08A</description>
 <wire x1="19.185" y1="58.935" x2="19.185" y2="57.36" width="0.2032" layer="16"/>
 </signal>
 <signal name="CPU_RESET">
-<contactref element="U1" pad="23"/>
+<contactref element="IC9" pad="23"/>
 <contactref element="SWD1" pad="10"/>
 <contactref element="R29" pad="2"/>
 <wire x1="14.105" y1="57.36" x2="14" y2="56.965" width="0.2032" layer="16"/>
@@ -2341,14 +2337,21 @@ NS Package M08A</description>
 <contactref element="R2" pad="1"/>
 <contactref element="C1" pad="2"/>
 <contactref element="IC4" pad="1"/>
-<contactref element="U1" pad="21"/>
+<contactref element="IC9" pad="21"/>
 <wire x1="12.81" y1="65.85" x2="12.81" y2="68.5" width="0.2032" layer="1"/>
 <wire x1="12.81" y1="68.5" x2="13.012" y2="68.5" width="0.2032" layer="1"/>
 <wire x1="13.012" y1="68.5" x2="13.012" y2="70" width="0.2032" layer="1"/>
 <wire x1="19.05" y1="61.254" x2="19.046" y2="61.25" width="0.2032" layer="1"/>
-<wire x1="19.046" y1="61.25" x2="17.75" y2="61.25" width="0.2032" layer="1"/>
-<wire x1="17.75" y1="61.25" x2="13.15" y2="65.85" width="0.2032" layer="1"/>
-<wire x1="13.15" y1="65.85" x2="12.81" y2="65.85" width="0.2032" layer="1"/>
+<wire x1="19.046" y1="61.25" x2="17.125" y2="61.25" width="0.2032" layer="1"/>
+<wire x1="17.125" y1="61.25" x2="17" y2="61.125" width="0.2032" layer="1"/>
+<wire x1="17" y1="61.125" x2="16.375" y2="61.125" width="0.2032" layer="1"/>
+<wire x1="16.375" y1="61.125" x2="16" y2="61.5" width="0.2032" layer="1"/>
+<wire x1="16" y1="61.5" x2="16" y2="62" width="0.2032" layer="1"/>
+<wire x1="16" y1="62" x2="16.125" y2="62.125" width="0.2032" layer="1"/>
+<wire x1="16.125" y1="62.125" x2="16.125" y2="63.125" width="0.2032" layer="1"/>
+<wire x1="16.125" y1="63.125" x2="14.375" y2="64.875" width="0.2032" layer="1"/>
+<wire x1="14.375" y1="64.875" x2="13.785" y2="64.875" width="0.2032" layer="1"/>
+<wire x1="13.785" y1="64.875" x2="12.81" y2="65.85" width="0.2032" layer="1"/>
 </signal>
 <signal name="N$6">
 <contactref element="R1" pad="2"/>
@@ -2429,71 +2432,66 @@ NS Package M08A</description>
 <contactref element="J14" pad="1"/>
 <contactref element="J14" pad="2"/>
 <contactref element="D2" pad="2"/>
-<wire x1="40.213" y1="84.999" x2="40.213" y2="89.375" width="0.508" layer="16"/>
-<wire x1="40.213" y1="89.375" x2="40.213" y2="90.079" width="0.508" layer="16"/>
-<wire x1="45" y1="89.375" x2="39" y2="89.375" width="0.508" layer="1"/>
-<via x="39" y="89.375" extent="1-16" drill="0.3048"/>
-<wire x1="39" y1="89.375" x2="40.213" y2="89.375" width="0.508" layer="16"/>
+<wire x1="39.463" y1="84.999" x2="39.463" y2="89.375" width="0.508" layer="16"/>
+<wire x1="39.463" y1="89.375" x2="39.463" y2="90.079" width="0.508" layer="16"/>
+<wire x1="45" y1="89.375" x2="38.625" y2="89.375" width="0.508" layer="1"/>
+<via x="38.625" y="89.375" extent="1-16" drill="0.3048"/>
+<wire x1="38.625" y1="89.375" x2="39.463" y2="89.375" width="0.508" layer="16"/>
 </signal>
 <signal name="N$13" class="1">
 <contactref element="J14" pad="10"/>
 <contactref element="J14" pad="9"/>
 <contactref element="D1" pad="1"/>
-<wire x1="50.373" y1="84.999" x2="50.373" y2="87.5" width="0.508" layer="16"/>
-<wire x1="50.373" y1="87.5" x2="50.373" y2="90.079" width="0.508" layer="16"/>
+<wire x1="49.623" y1="84.999" x2="49.623" y2="87.5" width="0.508" layer="16"/>
+<wire x1="49.623" y1="87.5" x2="49.623" y2="90.079" width="0.508" layer="16"/>
 <wire x1="49" y1="85.5" x2="49" y2="86.875" width="0.3048" layer="1"/>
 <wire x1="49" y1="86.875" x2="49.625" y2="87.5" width="0.3048" layer="1"/>
 <via x="49.625" y="87.5" extent="1-16" drill="0.3048"/>
-<wire x1="49.625" y1="87.5" x2="50.373" y2="87.5" width="0.3048" layer="16"/>
+<wire x1="49.625" y1="87.5" x2="49.623" y2="87.5" width="0.3048" layer="16"/>
 </signal>
 <signal name="N$9">
 <contactref element="R9" pad="1"/>
 <contactref element="R5" pad="2"/>
 <contactref element="C2" pad="1"/>
 <contactref element="R37" pad="1"/>
-<wire x1="58" y1="68.488" x2="56.5" y2="68.488" width="0.2032" layer="1"/>
-<wire x1="56.448" y1="68.54" x2="56.5" y2="68.488" width="0.2032" layer="1"/>
-<wire x1="54.168" y1="71.607" x2="54.168" y2="70.793" width="0.2032" layer="1"/>
-<wire x1="54.168" y1="70.793" x2="54" y2="70.625" width="0.2032" layer="1"/>
-<wire x1="54" y1="70.625" x2="52.5" y2="70.625" width="0.2032" layer="1"/>
-<wire x1="52.5" y1="70.625" x2="52.25" y2="70.375" width="0.2032" layer="1"/>
-<wire x1="52.25" y1="70.375" x2="52.25" y2="68.5" width="0.2032" layer="1"/>
-<wire x1="52.25" y1="68.5" x2="53.81" y2="68.5" width="0.2032" layer="1"/>
-<wire x1="40.625" y1="60.375" x2="39.5" y2="61.5" width="0.2032" layer="1"/>
-<wire x1="39.5" y1="61.5" x2="38.262" y2="61.5" width="0.2032" layer="1"/>
-<wire x1="40.625" y1="60.375" x2="50.5" y2="60.375" width="0.2032" layer="1"/>
-<wire x1="50.5" y1="60.375" x2="51" y2="60.875" width="0.2032" layer="1"/>
-<wire x1="51" y1="60.875" x2="51" y2="65.625" width="0.2032" layer="1"/>
-<wire x1="51" y1="65.625" x2="51.75" y2="66.375" width="0.2032" layer="1"/>
-<wire x1="51.75" y1="66.375" x2="51.75" y2="68" width="0.2032" layer="1"/>
-<wire x1="51.75" y1="68" x2="52.25" y2="68.5" width="0.2032" layer="1"/>
-<contactref element="U$2" pad="6"/>
-<wire x1="53.81" y1="68.5" x2="56.448" y2="68.54" width="0" layer="19" extent="1-1"/>
-<wire x1="-16.74" y1="-2.65" x2="38.262" y2="61.5" width="0" layer="19" extent="1-1"/>
+<contactref element="IC2" pad="6"/>
+<wire x1="38.012" y1="61.5" x2="38" y2="62.5" width="0.2032" layer="1"/>
+<wire x1="48.4" y1="67.135" x2="46.002" y2="67.135" width="0.2032" layer="1"/>
+<wire x1="46.002" y1="67.135" x2="45.75" y2="67.387" width="0.2032" layer="1"/>
+<wire x1="45.75" y1="67.387" x2="44.125" y2="67.387" width="0.2032" layer="1"/>
+<wire x1="38" y1="62.5" x2="42.5" y2="67" width="0.2032" layer="1"/>
+<wire x1="42.5" y1="67" x2="43.738" y2="67" width="0.2032" layer="1"/>
+<wire x1="43.738" y1="67" x2="44.125" y2="67.387" width="0.2032" layer="1"/>
+<wire x1="45.857" y1="70.082" x2="45.857" y2="67.494" width="0.2032" layer="1"/>
+<wire x1="45.857" y1="67.494" x2="45.75" y2="67.387" width="0.2032" layer="1"/>
 </signal>
 <signal name="N$10">
 <contactref element="R7" pad="1"/>
 <contactref element="R8" pad="2"/>
 <contactref element="C3" pad="1"/>
 <contactref element="R36" pad="1"/>
-<wire x1="49.51" y1="71.5805" x2="49.51" y2="70.99" width="0.2032" layer="1"/>
-<wire x1="49.51" y1="70.99" x2="50.25" y2="70.25" width="0.2032" layer="1"/>
-<wire x1="50.25" y1="70.25" x2="50.25" y2="68.75" width="0.2032" layer="1"/>
-<wire x1="50.25" y1="68.75" x2="50" y2="68.5" width="0.2032" layer="1"/>
-<wire x1="50" y1="68.5" x2="48.69" y2="68.5" width="0.2032" layer="1"/>
-<wire x1="46.302" y1="68.54" x2="46" y2="68.238" width="0.2032" layer="1"/>
-<wire x1="46" y1="68.238" x2="44.5" y2="68.238" width="0.2032" layer="1"/>
-<wire x1="38.262" y1="59" x2="37.5" y2="59.762" width="0.2032" layer="1"/>
-<wire x1="37.5" y1="59.762" x2="37.5" y2="62.75" width="0.2032" layer="1"/>
-<wire x1="37.5" y1="62.75" x2="42.988" y2="68.238" width="0.2032" layer="1"/>
-<wire x1="42.988" y1="68.238" x2="44.5" y2="68.238" width="0.2032" layer="1"/>
-<contactref element="U$2" pad="2"/>
-<wire x1="46.302" y1="68.54" x2="48.69" y2="68.5" width="0" layer="19" extent="1-1"/>
-<wire x1="-18.01" y1="-7.85" x2="38.262" y2="59" width="0" layer="19" extent="1-1"/>
+<contactref element="IC2" pad="2"/>
+<wire x1="53.6" y1="65.865" x2="55.728" y2="65.865" width="0.2032" layer="1"/>
+<wire x1="55.728" y1="65.865" x2="55.75" y2="65.887" width="0.2032" layer="1"/>
+<wire x1="57.375" y1="65.887" x2="55.75" y2="65.887" width="0.2032" layer="1"/>
+<wire x1="52" y1="69" x2="52" y2="66.25" width="0.2032" layer="1"/>
+<wire x1="52" y1="66.25" x2="52.375" y2="65.875" width="0.2032" layer="1"/>
+<wire x1="52.375" y1="65.875" x2="53.59" y2="65.875" width="0.2032" layer="1"/>
+<wire x1="53.59" y1="65.875" x2="53.6" y2="65.865" width="0.2032" layer="1"/>
+<wire x1="47.75" y1="70.113" x2="50.887" y2="70.113" width="0.2032" layer="1"/>
+<wire x1="50.887" y1="70.113" x2="52" y2="69" width="0.2032" layer="1"/>
+<wire x1="37.887" y1="59" x2="37.887" y2="59.988" width="0.2032" layer="1"/>
+<wire x1="37.887" y1="59.988" x2="37.25" y2="60.625" width="0.2032" layer="1"/>
+<wire x1="37.25" y1="60.625" x2="37.25" y2="62.375" width="0.2032" layer="1"/>
+<wire x1="37.25" y1="62.375" x2="43.875" y2="69" width="0.2032" layer="1"/>
+<wire x1="43.875" y1="69" x2="43.875" y2="70" width="0.2032" layer="1"/>
+<wire x1="43.875" y1="70" x2="44.75" y2="70.875" width="0.2032" layer="1"/>
+<wire x1="44.75" y1="70.875" x2="46.988" y2="70.875" width="0.2032" layer="1"/>
+<wire x1="46.988" y1="70.875" x2="47.75" y2="70.113" width="0.2032" layer="1"/>
 </signal>
 <signal name="DACCS">
-<contactref element="U7" pad="2"/>
-<contactref element="U1" pad="7"/>
+<contactref element="IC3" pad="2"/>
+<contactref element="IC9" pad="7"/>
 <wire x1="23.45" y1="59.7554" x2="23.4554" y2="59.75" width="0.2032" layer="1"/>
 <via x="27.25" y="59.75" extent="1-16" drill="0.3048"/>
 <wire x1="27.25" y1="59.75" x2="27.635" y2="60.135" width="0.2032" layer="1"/>
@@ -2505,8 +2503,8 @@ NS Package M08A</description>
 <wire x1="25.25" y1="57.75" x2="27.25" y2="59.75" width="0.2032" layer="16"/>
 </signal>
 <signal name="DACSCK">
-<contactref element="U7" pad="3"/>
-<contactref element="U1" pad="12"/>
+<contactref element="IC3" pad="3"/>
+<contactref element="IC9" pad="12"/>
 <wire x1="23.45" y1="62.2446" x2="23.4554" y2="62.25" width="0.2032" layer="1"/>
 <wire x1="23.4554" y1="62.25" x2="25.75" y2="62.25" width="0.2032" layer="1"/>
 <wire x1="25.75" y1="62.25" x2="26.5" y2="61.5" width="0.2032" layer="1"/>
@@ -2515,8 +2513,8 @@ NS Package M08A</description>
 <wire x1="27.135" y1="58.865" x2="28.6378" y2="58.865" width="0.2032" layer="1"/>
 </signal>
 <signal name="DACSDI">
-<contactref element="U7" pad="4"/>
-<contactref element="U1" pad="11"/>
+<contactref element="IC3" pad="4"/>
+<contactref element="IC9" pad="11"/>
 <wire x1="23.45" y1="61.762" x2="23.462" y2="61.75" width="0.2032" layer="1"/>
 <wire x1="23.462" y1="61.75" x2="25.5" y2="61.75" width="0.2032" layer="1"/>
 <wire x1="25.5" y1="61.75" x2="26" y2="61.25" width="0.2032" layer="1"/>
@@ -2525,7 +2523,7 @@ NS Package M08A</description>
 <wire x1="27.155" y1="57.595" x2="28.6378" y2="57.595" width="0.2032" layer="1"/>
 </signal>
 <signal name="ADC_SHAPE">
-<contactref element="U1" pad="15"/>
+<contactref element="IC9" pad="15"/>
 <contactref element="R12" pad="1"/>
 <contactref element="C15" pad="2"/>
 <contactref element="IC4" pad="8"/>
@@ -2572,7 +2570,7 @@ NS Package M08A</description>
 <signal name="REF_-5V">
 <contactref element="R15" pad="2"/>
 <contactref element="R3" pad="2"/>
-<contactref element="U2" pad="2"/>
+<contactref element="U1" pad="2"/>
 <contactref element="R26" pad="2"/>
 <contactref element="C6" pad="2"/>
 <contactref element="R28" pad="2"/>
@@ -2580,8 +2578,6 @@ NS Package M08A</description>
 <contactref element="R37" pad="2"/>
 <contactref element="R36" pad="2"/>
 <wire x1="2.25" y1="60.988" x2="3.75" y2="60.988" width="0.2032" layer="1"/>
-<wire x1="52.644" y1="71.607" x2="51.0605" y2="71.607" width="0.2032" layer="1"/>
-<wire x1="51.0605" y1="71.607" x2="51.034" y2="71.5805" width="0.2032" layer="1"/>
 <wire x1="8.238" y1="56.5" x2="8.238" y2="55.736" width="0.2032" layer="1"/>
 <wire x1="8.238" y1="55.736" x2="7.747" y2="55.245" width="0.2032" layer="1"/>
 <wire x1="7.747" y1="55.245" x2="3.937" y2="55.245" width="0.2032" layer="1"/>
@@ -2617,10 +2613,8 @@ NS Package M08A</description>
 <wire x1="41" y1="74.238" x2="41.012" y2="74.25" width="0.2032" layer="1"/>
 <wire x1="41.012" y1="74.25" x2="43.859" y2="74.25" width="0.2032" layer="1"/>
 <wire x1="43.859" y1="74.25" x2="43.996" y2="74.113" width="0.2032" layer="1"/>
-<wire x1="43.996" y1="74.113" x2="46.887" y2="74.113" width="0.2032" layer="1"/>
-<wire x1="46.887" y1="74.113" x2="48.25" y2="72.75" width="0.2032" layer="1"/>
-<wire x1="48.25" y1="72.75" x2="49.8645" y2="72.75" width="0.2032" layer="1"/>
-<wire x1="49.8645" y1="72.75" x2="51.034" y2="71.5805" width="0.2032" layer="1"/>
+<wire x1="43.996" y1="74.113" x2="45.75" y2="74.113" width="0.2032" layer="1"/>
+<wire x1="45.75" y1="74.113" x2="47.137" y2="74.113" width="0.2032" layer="1"/>
 <wire x1="13.75" y1="76.125" x2="14.125" y2="75.75" width="0.2032" layer="1"/>
 <wire x1="14.125" y1="75.75" x2="23.75" y2="75.75" width="0.2032" layer="1"/>
 <wire x1="23.75" y1="75.75" x2="25.125" y2="74.375" width="0.2032" layer="1"/>
@@ -2632,6 +2626,10 @@ NS Package M08A</description>
 <via x="36.875" y="73.125" extent="1-16" drill="0.3048"/>
 <wire x1="36.875" y1="73.125" x2="37.9352" y2="72.0648" width="0.2032" layer="1"/>
 <wire x1="37.9352" y1="72.0648" x2="40.014" y2="72.0648" width="0.2032" layer="1"/>
+<wire x1="45.857" y1="71.606" x2="45.857" y2="74.006" width="0.2032" layer="1"/>
+<wire x1="45.857" y1="74.006" x2="45.75" y2="74.113" width="0.2032" layer="1"/>
+<wire x1="47.137" y1="74.113" x2="47.75" y2="73.5" width="0.2032" layer="1"/>
+<wire x1="47.75" y1="73.5" x2="47.75" y2="71.637" width="0.2032" layer="1"/>
 </signal>
 <signal name="N$15">
 <contactref element="R18" pad="2"/>
@@ -2651,7 +2649,7 @@ NS Package M08A</description>
 <contactref element="R20" pad="1"/>
 <contactref element="U$1" pad="2"/>
 <contactref element="U$1" pad="1"/>
-<contactref element="U1" pad="20"/>
+<contactref element="IC9" pad="20"/>
 <wire x1="19.05" y1="61.762" x2="19.038" y2="61.75" width="0.2032" layer="1"/>
 <wire x1="19.038" y1="61.75" x2="17.875" y2="61.75" width="0.2032" layer="1"/>
 <wire x1="45.5555" y1="51.198" x2="45.608" y2="51.2505" width="0.2032" layer="1"/>
@@ -2681,7 +2679,6 @@ NS Package M08A</description>
 <wire x1="47.375" y1="49.625" x2="45.802" y2="51.198" width="0.2032" layer="1"/>
 <wire x1="45.802" y1="51.198" x2="45.5555" y2="51.198" width="0.2032" layer="1"/>
 <wire x1="45.608" y1="55.85" x2="45.083" y2="56.375" width="0.2032" layer="1"/>
-<wire x1="45.083" y1="56.375" x2="39.5" y2="56.375" width="0.2032" layer="1"/>
 <wire x1="25.375" y1="75" x2="30.25" y2="75" width="0.2032" layer="1"/>
 <wire x1="24" y1="76.375" x2="25.375" y2="75" width="0.2032" layer="1"/>
 <wire x1="14.75" y1="70.625" x2="14.75" y2="74.25" width="0.2032" layer="1"/>
@@ -2693,16 +2690,13 @@ NS Package M08A</description>
 <wire x1="18.5" y1="66.25" x2="18.5" y2="67.5" width="0.2032" layer="1"/>
 <wire x1="31.5" y1="76.375" x2="30.25" y2="75" width="0.2032" layer="16"/>
 <wire x1="34.625" y1="73.25" x2="31.5" y2="76.375" width="0.2032" layer="1"/>
-<wire x1="39.25" y1="56.625" x2="39.25" y2="60.75" width="0.2032" layer="1"/>
-<wire x1="39.5" y1="56.375" x2="39.25" y2="56.625" width="0.2032" layer="1"/>
 <via x="30.25" y="75" extent="1-16" drill="0.3048"/>
 <via x="31.5" y="76.375" extent="1-16" drill="0.3048"/>
 <wire x1="17.125" y1="64.875" x2="17.125" y2="62.5" width="0.2032" layer="1"/>
 <wire x1="18.5" y1="66.25" x2="17.125" y2="64.875" width="0.2032" layer="1"/>
 <wire x1="17.875" y1="61.75" x2="17.125" y2="62.5" width="0.2032" layer="1"/>
-<wire x1="38.125" y1="64.25" x2="39.25" y2="63.125" width="0.2032" layer="16"/>
-<wire x1="39.25" y1="63.125" x2="39.25" y2="60.75" width="0.2032" layer="16"/>
-<via x="39.25" y="60.75" extent="1-16" drill="0.3048"/>
+<wire x1="38.125" y1="64.25" x2="39.625" y2="62.75" width="0.2032" layer="16"/>
+<via x="39.625" y="62.75" extent="1-16" drill="0.3048"/>
 <wire x1="24" y1="76.375" x2="16.625" y2="76.375" width="0.2032" layer="1"/>
 <via x="16.625" y="76.375" extent="1-16" drill="0.3048"/>
 <via x="16.375" y="74.625" extent="1-16" drill="0.3048"/>
@@ -2713,10 +2707,15 @@ NS Package M08A</description>
 <via x="38.125" y="64.25" extent="1-16" drill="0.3048"/>
 <wire x1="16.375" y1="74.625" x2="16.375" y2="76.125" width="0.2032" layer="16"/>
 <wire x1="16.375" y1="76.125" x2="16.625" y2="76.375" width="0.2032" layer="16"/>
+<wire x1="39.625" y1="62.75" x2="39.625" y2="60.375" width="0.2032" layer="1"/>
+<wire x1="39.625" y1="60.375" x2="43.625" y2="56.375" width="0.2032" layer="1"/>
+<wire x1="43.625" y1="56.375" x2="45.625" y2="56.375" width="0.2032" layer="1"/>
+<wire x1="45.608" y1="55.85" x2="45.608" y2="56.358" width="0.2032" layer="1"/>
+<wire x1="45.608" y1="56.358" x2="45.625" y2="56.375" width="0.2032" layer="1"/>
 </signal>
 <signal name="SDA">
-<contactref element="U1" pad="18"/>
-<contactref element="U6" pad="3"/>
+<contactref element="IC9" pad="18"/>
+<contactref element="IC10" pad="3"/>
 <contactref element="R51" pad="2"/>
 <wire x1="20.1692" y1="73.3744" x2="19.9074" y2="73.3744" width="0.2032" layer="1"/>
 <wire x1="19.9074" y1="73.3744" x2="19.431" y2="72.898" width="0.2032" layer="1"/>
@@ -2728,8 +2727,8 @@ NS Package M08A</description>
 <wire x1="17.5" y1="71.8395" x2="18.504" y2="72.8435" width="0.2032" layer="1"/>
 </signal>
 <signal name="SCL">
-<contactref element="U1" pad="17"/>
-<contactref element="U6" pad="1"/>
+<contactref element="IC9" pad="17"/>
+<contactref element="IC10" pad="1"/>
 <contactref element="R50" pad="2"/>
 <wire x1="23.643" y1="72.747" x2="22.6762" y2="72.747" width="0.2032" layer="1"/>
 <wire x1="22.6762" y1="72.747" x2="22.0488" y2="73.3744" width="0.2032" layer="1"/>
@@ -2745,32 +2744,32 @@ NS Package M08A</description>
 <contactref element="R26" pad="1"/>
 <contactref element="C5" pad="-"/>
 <contactref element="D2" pad="1"/>
-<wire x1="56.238" y1="66" x2="56.5" y2="66.262" width="0.508" layer="1"/>
 <wire x1="49" y1="89.375" x2="51.25" y2="89.375" width="0.508" layer="1"/>
 <wire x1="51.25" y1="89.375" x2="51.726" y2="89.375" width="0.508" layer="1"/>
 <wire x1="51.726" y1="89.375" x2="51.855" y2="89.504" width="0.3048" layer="1"/>
-<wire x1="52.5" y1="66" x2="51.75" y2="65.25" width="0.3048" layer="1"/>
-<via x="51.75" y="65.25" extent="1-16" drill="0.3048"/>
-<wire x1="51.75" y1="65.25" x2="51.75" y2="65.5" width="0.3048" layer="16"/>
-<wire x1="51.75" y1="65.5" x2="58.375" y2="72.125" width="0.3048" layer="16"/>
 <wire x1="59.125" y1="74.75" x2="59.125" y2="89.75" width="0.3048" layer="1"/>
 <wire x1="59.125" y1="89.75" x2="57.75" y2="91.125" width="0.3048" layer="1"/>
 <wire x1="57.75" y1="91.125" x2="53" y2="91.125" width="0.3048" layer="1"/>
 <wire x1="53" y1="91.125" x2="51.25" y2="89.375" width="0.3048" layer="1"/>
 <wire x1="49" y1="89.375" x2="48.5" y2="89.375" width="0.3048" layer="1"/>
 <wire x1="48.5" y1="89.375" x2="46.625" y2="87.5" width="0.3048" layer="1"/>
-<via x="46.625" y="87.5" extent="1-16" drill="0.3048"/>
-<wire x1="46.625" y1="87.5" x2="46.625" y2="82.875" width="0.3048" layer="16"/>
-<wire x1="46.625" y1="82.875" x2="44" y2="80.25" width="0.3048" layer="16"/>
+<wire x1="46.625" y1="87.5" x2="46.125" y2="87.5" width="0.3048" layer="1"/>
+<via x="46.125" y="87.5" extent="1-16" drill="0.3048"/>
+<wire x1="46.125" y1="87.5" x2="46.125" y2="82.375" width="0.3048" layer="16"/>
+<wire x1="46.125" y1="82.375" x2="44" y2="80.25" width="0.3048" layer="16"/>
 <via x="44" y="80.25" extent="1-16" drill="0.3048"/>
 <wire x1="44" y1="80.25" x2="44" y2="75.641" width="0.3048" layer="1"/>
 <wire x1="44" y1="75.641" x2="43.996" y2="75.637" width="0.3048" layer="1"/>
 <wire x1="59.125" y1="74.75" x2="58.375" y2="74" width="0.3048" layer="1"/>
 <via x="58.375" y="74" extent="1-16" drill="0.3048"/>
-<wire x1="58.375" y1="74" x2="58.375" y2="72.125" width="0.3048" layer="16"/>
-<contactref element="U$2" pad="8"/>
-<wire x1="52.5" y1="66" x2="56.238" y2="66" width="0" layer="19" extent="1-1"/>
-<wire x1="-19.28" y1="-2.65" x2="51.75" y2="65.25" width="0" layer="19" extent="1-1"/>
+<wire x1="58.375" y1="74" x2="58.375" y2="71.875" width="0.3048" layer="16"/>
+<wire x1="58.375" y1="71.875" x2="56.125" y2="69.625" width="0.3048" layer="16"/>
+<via x="56.125" y="69.625" extent="1-16" drill="0.3048"/>
+<wire x1="56.125" y1="69.625" x2="56.125" y2="68.387" width="0.3048" layer="1"/>
+<wire x1="56.125" y1="68.387" x2="56.113" y2="68.375" width="0.3048" layer="1"/>
+<wire x1="53.768" y1="68.405" x2="56.113" y2="68.375" width="0.3048" layer="1"/>
+<contactref element="IC2" pad="4"/>
+<wire x1="53.6" y1="68.405" x2="53.768" y2="68.405" width="0.3048" layer="1"/>
 </signal>
 <signal name="12V" class="1">
 <contactref element="C11" pad="2"/>
@@ -2784,12 +2783,9 @@ NS Package M08A</description>
 <wire x1="31.349" y1="90.15" x2="32.639" y2="91.44" width="0.508" layer="1"/>
 <wire x1="32.639" y1="91.44" x2="32.639" y2="93.82" width="0.508" layer="1"/>
 <wire x1="32.639" y1="93.82" x2="32.8" y2="93.981" width="0.3048" layer="1"/>
-<wire x1="31.349" y1="90.15" x2="34.1" y2="90.15" width="0.508" layer="1"/>
-<wire x1="34.1" y1="90.15" x2="42.689" y2="81.561" width="0.508" layer="1"/>
-<wire x1="50.25" y1="66" x2="51" y2="66.75" width="0.508" layer="1"/>
-<wire x1="51" y1="66.75" x2="51" y2="70.125" width="0.508" layer="1"/>
-<wire x1="51" y1="70.125" x2="51.25" y2="70.375" width="0.508" layer="1"/>
-<via x="51.25" y="70.375" extent="1-16" drill="0.3048"/>
+<wire x1="31.349" y1="90.15" x2="34.725" y2="90.15" width="0.508" layer="1"/>
+<wire x1="34.725" y1="90.15" x2="43.314" y2="81.561" width="0.508" layer="1"/>
+<via x="51.25" y="68.5" extent="1-16" drill="0.3048"/>
 <wire x1="37.504" y1="14.052" x2="37.504" y2="4.004" width="0.508" layer="1"/>
 <wire x1="37.504" y1="4.004" x2="35" y2="1.5" width="0.508" layer="1"/>
 <wire x1="35" y1="1.5" x2="25.875" y2="1.5" width="0.508" layer="1"/>
@@ -2804,9 +2800,9 @@ NS Package M08A</description>
 <wire x1="58.25" y1="53.625" x2="58.25" y2="58.5" width="0.508" layer="1"/>
 <wire x1="58.25" y1="58.5" x2="56.5" y2="60.25" width="0.508" layer="1"/>
 <via x="56.5" y="60.25" extent="1-16" drill="0.3048"/>
-<wire x1="56.5" y1="60.25" x2="57.875" y2="61.625" width="0.508" layer="16"/>
-<via x="57.875" y="61.625" extent="1-16" drill="0.3048"/>
-<wire x1="57.875" y1="61.625" x2="59.5" y2="63.25" width="0.508" layer="1"/>
+<wire x1="56.5" y1="60.25" x2="58.125" y2="61.875" width="0.508" layer="16"/>
+<via x="58.125" y="61.875" extent="1-16" drill="0.3048"/>
+<wire x1="58.125" y1="61.875" x2="59.5" y2="63.25" width="0.508" layer="1"/>
 <wire x1="59.5" y1="63.25" x2="59.5" y2="71.25" width="0.508" layer="1"/>
 <wire x1="59.5" y1="71.25" x2="55" y2="75.75" width="0.508" layer="1"/>
 <wire x1="55" y1="75.75" x2="51.625" y2="75.75" width="0.508" layer="1"/>
@@ -2820,10 +2816,10 @@ NS Package M08A</description>
 <via x="54" y="38" extent="1-16" drill="0.3048"/>
 <wire x1="54" y1="38" x2="55.125" y2="39.125" width="0.508" layer="16"/>
 <wire x1="55.125" y1="39.125" x2="55.125" y2="40.25" width="0.508" layer="16"/>
-<wire x1="51.25" y1="70.375" x2="51.25" y2="72.25" width="0.508" layer="16"/>
-<wire x1="51.25" y1="72.25" x2="50" y2="73.5" width="0.508" layer="16"/>
-<via x="50" y="73.5" extent="1-16" drill="0.3048"/>
-<wire x1="50" y1="73.5" x2="50" y2="74.125" width="0.508" layer="1"/>
+<wire x1="51.25" y1="68.5" x2="51.25" y2="69.875" width="0.508" layer="16"/>
+<wire x1="51.25" y1="69.875" x2="50" y2="71.125" width="0.508" layer="16"/>
+<via x="50" y="71.125" extent="1-16" drill="0.3048"/>
+<wire x1="50" y1="71.125" x2="50" y2="74.125" width="0.508" layer="1"/>
 <wire x1="50" y1="74.125" x2="51.625" y2="75.75" width="0.508" layer="1"/>
 <wire x1="19.625" y1="14.5" x2="19.108" y2="14.5" width="0.3048" layer="1"/>
 <wire x1="19.108" y1="14.5" x2="19.081" y2="14.473" width="0.3048" layer="1"/>
@@ -2833,12 +2829,17 @@ NS Package M08A</description>
 <wire x1="47.5" y1="80.75" x2="46.75" y2="81.5" width="0.508" layer="1"/>
 <wire x1="46.75" y1="81.5" x2="45.764" y2="81.5" width="0.508" layer="1"/>
 <wire x1="45.764" y1="81.5" x2="45.703" y2="81.561" width="0.3048" layer="1"/>
-<wire x1="45.703" y1="81.561" x2="42.689" y2="81.561" width="0.508" layer="1"/>
+<wire x1="45.703" y1="81.561" x2="43.314" y2="81.561" width="0.508" layer="1"/>
 <wire x1="50" y1="74.125" x2="49" y2="74.125" width="0.508" layer="1"/>
 <wire x1="49" y1="74.125" x2="47.5" y2="75.625" width="0.508" layer="1"/>
-<contactref element="U$2" pad="4"/>
-<wire x1="50.25" y1="66" x2="45.762" y2="66" width="0" layer="19" extent="1-1"/>
-<wire x1="-15.47" y1="-7.85" x2="23.625" y2="3.75" width="0" layer="19" extent="1-1"/>
+<contactref element="IC2" pad="8"/>
+<wire x1="48.4" y1="64.595" x2="46.107" y2="64.595" width="0.3048" layer="1"/>
+<wire x1="46.107" y1="64.595" x2="45.762" y2="64.25" width="0.3048" layer="1"/>
+<wire x1="48.4" y1="64.595" x2="50.47" y2="64.595" width="0.3048" layer="1"/>
+<wire x1="50.47" y1="64.595" x2="51.125" y2="65.25" width="0.3048" layer="1"/>
+<wire x1="51.125" y1="65.25" x2="51.125" y2="68.25" width="0.3048" layer="1"/>
+<wire x1="51.25" y1="68.5" x2="51.25" y2="68.375" width="0.3048" layer="1"/>
+<wire x1="51.25" y1="68.375" x2="51.125" y2="68.25" width="0.3048" layer="1"/>
 </signal>
 <signal name="N$25">
 <contactref element="R21" pad="2"/>
@@ -2862,10 +2863,10 @@ NS Package M08A</description>
 <wire x1="39.489" y1="14.513" x2="39.489" y2="18.2575" width="0.2032" layer="1"/>
 </signal>
 <signal name="CLOCK">
-<contactref element="U4" pad="11"/>
-<contactref element="U5" pad="11"/>
-<contactref element="U1" pad="1"/>
-<contactref element="U3" pad="11"/>
+<contactref element="IC6" pad="11"/>
+<contactref element="IC5" pad="11"/>
+<contactref element="IC9" pad="1"/>
+<contactref element="IC7" pad="11"/>
 <wire x1="47.762" y1="42.8188" x2="47.762" y2="43.762" width="0.2032" layer="1"/>
 <wire x1="47.762" y1="43.762" x2="47.875" y2="43.875" width="0.2032" layer="1"/>
 <wire x1="47.875" y1="43.875" x2="47.875" y2="45" width="0.2032" layer="1"/>
@@ -2929,7 +2930,7 @@ NS Package M08A</description>
 </signal>
 <signal name="OUT_LFOCYCLESTART">
 <contactref element="R40" pad="1"/>
-<contactref element="U4" pad="4"/>
+<contactref element="IC6" pad="4"/>
 <contactref element="R35" pad="2"/>
 <wire x1="18.363" y1="22" x2="16.637" y2="22" width="0.2032" layer="1"/>
 <wire x1="18.363" y1="22" x2="18.363" y2="25.988" width="0.2032" layer="1"/>
@@ -2960,7 +2961,7 @@ NS Package M08A</description>
 <wire x1="16.625" y1="15.405" x2="17.557" y2="14.473" width="0.2032" layer="1"/>
 </signal>
 <signal name="OUT_LFOCYCLEMID">
-<contactref element="U4" pad="5"/>
+<contactref element="IC6" pad="5"/>
 <contactref element="R21" pad="1"/>
 <contactref element="R10" pad="2"/>
 <wire x1="31.504" y1="33.5562" x2="31.5" y2="33.5522" width="0.2032" layer="1"/>
@@ -3000,15 +3001,15 @@ NS Package M08A</description>
 <contactref element="R22" pad="1"/>
 <contactref element="C16" pad="2"/>
 <contactref element="IC4" pad="14"/>
-<contactref element="U1" pad="16"/>
+<contactref element="IC9" pad="16"/>
 <wire x1="12.81" y1="60.65" x2="12.81" y2="58" width="0.2032" layer="1"/>
 <wire x1="12.81" y1="58" x2="12.762" y2="58" width="0.2032" layer="1"/>
 <wire x1="12.762" y1="58" x2="12.762" y2="56.5" width="0.2032" layer="1"/>
 <wire x1="12.81" y1="60.65" x2="12.81" y2="61.935" width="0.2032" layer="1"/>
 <wire x1="12.81" y1="61.935" x2="13" y2="62.125" width="0.2032" layer="1"/>
 <wire x1="13" y1="62.125" x2="15.125" y2="62.125" width="0.2032" layer="1"/>
-<wire x1="15.125" y1="62.125" x2="15.375" y2="62.375" width="0.2032" layer="1"/>
-<via x="15.375" y="62.375" extent="1-16" drill="0.3048"/>
+<wire x1="15.125" y1="62.125" x2="15.25" y2="62.25" width="0.2032" layer="1"/>
+<via x="15.25" y="62.25" extent="1-16" drill="0.3048"/>
 <via x="19.25" y="65.25" extent="1-16" drill="0.3048"/>
 <wire x1="19.25" y1="65.25" x2="21" y2="65.25" width="0.2032" layer="16"/>
 <wire x1="21" y1="65.25" x2="21.125" y2="65.125" width="0.2032" layer="16"/>
@@ -3017,7 +3018,7 @@ NS Package M08A</description>
 <wire x1="21.125" y1="65.25" x2="21" y2="65.125" width="0.2032" layer="1"/>
 <wire x1="21" y1="65.125" x2="21" y2="63.204" width="0.2032" layer="1"/>
 <wire x1="21" y1="63.204" x2="20.996" y2="63.2" width="0.2032" layer="1"/>
-<wire x1="15.375" y1="62.375" x2="18.25" y2="65.25" width="0.2032" layer="16"/>
+<wire x1="15.25" y1="62.25" x2="18.25" y2="65.25" width="0.2032" layer="16"/>
 <wire x1="18.25" y1="65.25" x2="19.25" y2="65.25" width="0.2032" layer="16"/>
 </signal>
 <signal name="N$73">
@@ -3113,20 +3114,18 @@ NS Package M08A</description>
 <signal name="N$82">
 <contactref element="D35" pad="+"/>
 <contactref element="R34" pad="1"/>
-<wire x1="34.995090625" y1="84.3644" x2="35" y2="84.359490625" width="0.2032" layer="1"/>
-<wire x1="35" y1="84.359490625" x2="35" y2="85.375" width="0.2032" layer="1"/>
-<wire x1="35" y1="85.375" x2="32.75" y2="87.625" width="0.2032" layer="1"/>
-<wire x1="32.75" y1="87.625" x2="28" y2="87.625" width="0.2032" layer="1"/>
+<wire x1="34.274490625" y1="87.625" x2="28" y2="87.625" width="0.2032" layer="1"/>
 <wire x1="28" y1="87.625" x2="27.5" y2="87.125" width="0.2032" layer="1"/>
 <wire x1="27.5" y1="87.125" x2="23.125" y2="87.125" width="0.2032" layer="1"/>
 <wire x1="19.137" y1="85.625" x2="21.625" y2="85.625" width="0.2032" layer="1"/>
 <wire x1="21.625" y1="85.625" x2="23.125" y2="87.125" width="0.2032" layer="1"/>
+<wire x1="34.274490625" y1="87.625" x2="36.265090625" y2="85.6344" width="0.2032" layer="1"/>
 </signal>
 <signal name="LATCH">
-<contactref element="U5" pad="12"/>
-<contactref element="U4" pad="12"/>
-<contactref element="U1" pad="19"/>
-<contactref element="U3" pad="12"/>
+<contactref element="IC5" pad="12"/>
+<contactref element="IC6" pad="12"/>
+<contactref element="IC9" pad="19"/>
+<contactref element="IC7" pad="12"/>
 <wire x1="47.254" y1="42.8188" x2="47.254" y2="44.004" width="0.2032" layer="1"/>
 <wire x1="47.254" y1="44.004" x2="47.375" y2="44.125" width="0.2032" layer="1"/>
 <wire x1="47.375" y1="44.125" x2="47.375" y2="44.875" width="0.2032" layer="1"/>
@@ -3155,8 +3154,8 @@ NS Package M08A</description>
 <wire x1="17.254" y1="45.846471875" x2="17.225471875" y2="45.875" width="0.2032" layer="1"/>
 <wire x1="17.225471875" y1="45.875" x2="16.875" y2="45.875" width="0.2032" layer="1"/>
 <via x="16.875" y="45.875" extent="1-16" drill="0.3048"/>
-<wire x1="17.75" y1="62.875" x2="15.870875" y2="60.995875" width="0.2032" layer="16"/>
-<wire x1="15.870875" y1="60.995875" x2="15.5" y2="60.625" width="0.2032" layer="16"/>
+<wire x1="17.75" y1="62.875" x2="16.625" y2="61.75" width="0.2032" layer="16"/>
+<wire x1="16.625" y1="61.75" x2="15.5" y2="60.625" width="0.2032" layer="16"/>
 <wire x1="17.75" y1="62.625" x2="17.75" y2="62.875" width="0.2032" layer="1"/>
 <wire x1="18.125" y1="62.25" x2="17.75" y2="62.625" width="0.2032" layer="1"/>
 <wire x1="19" y1="62.25" x2="18.125" y2="62.25" width="0.2032" layer="1"/>
@@ -3174,18 +3173,12 @@ NS Package M08A</description>
 <wire x1="34.625" y1="42" x2="35.375" y2="41.25" width="0.2032" layer="16"/>
 <wire x1="35.375" y1="41.25" x2="36" y2="41.25" width="0.2032" layer="16"/>
 <via x="36" y="41.25" extent="1-16" drill="0.3048"/>
-<contactref element="U8" pad="12"/>
+<contactref element="IC8" pad="12"/>
 <wire x1="16.875" y1="45.875" x2="22.375" y2="45.875" width="0.2032" layer="16"/>
 <via x="22.375" y="45.875" extent="1-16" drill="0.3048"/>
 <wire x1="22.375" y1="45.875" x2="24.375" y2="43.875" width="0.2032" layer="1"/>
 <wire x1="24.375" y1="43.875" x2="32.75" y2="43.875" width="0.2032" layer="1"/>
 <wire x1="32.75" y1="43.875" x2="34.625" y2="42" width="0.2032" layer="1"/>
-<wire x1="15.33525" y1="70.00875" x2="14.57325" y2="70.77075" width="0.2032" layer="16"/>
-<wire x1="15.33525" y1="63.246" x2="15.33525" y2="70.00875" width="0.2032" layer="16"/>
-<wire x1="14.76375" y1="62.6745" x2="15.33525" y2="63.246" width="0.2032" layer="16"/>
-<wire x1="14.76375" y1="62.103" x2="14.76375" y2="62.6745" width="0.2032" layer="16"/>
-<wire x1="15.870875" y1="60.995875" x2="14.76375" y2="62.103" width="0.2032" layer="16"/>
-<wire x1="14.57325" y1="70.77075" x2="14.57325" y2="75.07325" width="0.2032" layer="16"/>
 <wire x1="14.57325" y1="75.07325" x2="15.125" y2="75.625" width="0.2032" layer="16"/>
 <wire x1="9.906" y1="88.86825" x2="11.52525" y2="88.86825" width="0.2032" layer="1"/>
 <wire x1="9.7155" y1="89.05875" x2="9.906" y2="88.86825" width="0.2032" layer="1"/>
@@ -3200,10 +3193,22 @@ NS Package M08A</description>
 <wire x1="11.52525" y1="88.86825" x2="11.5562" y2="88.879" width="0.2032" layer="1"/>
 <wire x1="15.14475" y1="75.72375" x2="15.125" y2="75.625" width="0.2032" layer="16"/>
 <via x="14.57325" y="77.3905" extent="1-16" drill="0.3048"/>
+<via x="16.625" y="61.75" extent="1-16" drill="0.3048"/>
+<wire x1="16.625" y1="61.75" x2="16.625" y2="63.75" width="0.2032" layer="1"/>
+<wire x1="16.625" y1="63.75" x2="16.125" y2="64.25" width="0.2032" layer="1"/>
+<wire x1="16.125" y1="64.25" x2="16.125" y2="65.5" width="0.2032" layer="1"/>
+<wire x1="16.125" y1="65.5" x2="15.625" y2="66" width="0.2032" layer="1"/>
+<via x="15.625" y="66" extent="1-16" drill="0.3048"/>
+<wire x1="15.625" y1="66" x2="15.625" y2="69.125" width="0.2032" layer="16"/>
+<wire x1="15.625" y1="69.125" x2="16.125" y2="69.625" width="0.2032" layer="16"/>
+<wire x1="16.125" y1="69.625" x2="16.125" y2="69.75" width="0.2032" layer="16"/>
+<wire x1="16.125" y1="69.75" x2="14.625" y2="71.25" width="0.2032" layer="16"/>
+<wire x1="14.625" y1="71.25" x2="14.625" y2="75.0215" width="0.2032" layer="16"/>
+<wire x1="14.625" y1="75.0215" x2="14.57325" y2="75.07325" width="0.2032" layer="16"/>
 </signal>
 <signal name="SHIFTER1TO2">
-<contactref element="U5" pad="9"/>
-<contactref element="U4" pad="14"/>
+<contactref element="IC5" pad="9"/>
+<contactref element="IC6" pad="14"/>
 <wire x1="18.7018" y1="42.754" x2="21.246" y2="42.754" width="0.2032" layer="1"/>
 <wire x1="21.246" y1="42.754" x2="26.375" y2="37.625" width="0.2032" layer="1"/>
 <wire x1="26.375" y1="37.625" x2="30" y2="37.625" width="0.2032" layer="1"/>
@@ -3220,29 +3225,15 @@ NS Package M08A</description>
 <wire x1="59.375" y1="17.75" x2="55.75" y2="21.375" width="0.2032" layer="1"/>
 <wire x1="55.75" y1="21.375" x2="55.75" y2="24" width="0.2032" layer="1"/>
 <wire x1="55.75" y1="24" x2="59.5" y2="27.75" width="0.2032" layer="1"/>
-<wire x1="59.5" y1="27.75" x2="59.5" y2="59.875" width="0.2032" layer="1"/>
-<wire x1="59.5" y1="59.875" x2="58.75" y2="60.75" width="0.2032" layer="1"/>
-<wire x1="51.875" y1="58.875" x2="49.125" y2="61.125" width="0.2032" layer="16"/>
-<wire x1="49.125" y1="61.125" x2="48.875" y2="61.125" width="0.2032" layer="16"/>
-<via x="48.875" y="61.125" extent="1-16" drill="0.3048"/>
-<wire x1="48.875" y1="61.125" x2="48.65" y2="61.35" width="0.2032" layer="1"/>
-<wire x1="51.875" y1="58.875" x2="56.875" y2="58.875" width="0.2032" layer="16"/>
-<wire x1="56.875" y1="58.875" x2="58.75" y2="60.75" width="0.2032" layer="16"/>
-<via x="58.75" y="60.75" extent="1-16" drill="0.3048"/>
+<wire x1="59.5" y1="27.75" x2="59.5" y2="59.375" width="0.2032" layer="1"/>
 <contactref element="R8" pad="1"/>
 <contactref element="C3" pad="2"/>
-<contactref element="U$2" pad="1"/>
-<wire x1="44.5" y1="69.762" x2="46" y2="69.762" width="0.2032" layer="1"/>
-<wire x1="46" y1="69.762" x2="48.602" y2="69.762" width="0.2032" layer="1"/>
-<wire x1="43.262" y1="69.762" x2="44.5" y2="69.762" width="0.2032" layer="1"/>
-<wire x1="41.5" y1="65.488" x2="41.5" y2="65.5" width="0.2032" layer="1"/>
-<via x="41.5" y="65.5" extent="1-16" drill="0.3048"/>
-<wire x1="41.5" y1="65.5" x2="40.25" y2="66.75" width="0.2032" layer="16"/>
-<via x="40.25" y="66.75" extent="1-16" drill="0.3048"/>
-<wire x1="40.25" y1="66.75" x2="43.262" y2="69.762" width="0.2032" layer="1"/>
-<wire x1="41.5" y1="64.988" x2="41.5" y2="65.5" width="0.2032" layer="1"/>
-<wire x1="48.65" y1="61.35" x2="41.5" y2="64.988" width="0" layer="19" extent="1-1"/>
-<wire x1="-19.28" y1="-7.85" x2="13.133" y2="1.531" width="0" layer="19" extent="1-1"/>
+<contactref element="IC2" pad="1"/>
+<wire x1="57.375" y1="64.363" x2="57.375" y2="61.5" width="0.2032" layer="1"/>
+<wire x1="57.375" y1="61.5" x2="59.5" y2="59.375" width="0.2032" layer="1"/>
+<wire x1="57.375" y1="64.363" x2="55.75" y2="64.363" width="0.2032" layer="1"/>
+<wire x1="53.6" y1="64.595" x2="55.518" y2="64.595" width="0.2032" layer="1"/>
+<wire x1="55.518" y1="64.595" x2="55.75" y2="64.363" width="0.2032" layer="1"/>
 </signal>
 <signal name="PHASEDOUT">
 <contactref element="R25" pad="2"/>
@@ -3250,21 +3241,27 @@ NS Package M08A</description>
 <wire x1="58.426" y1="17.949" x2="55.25" y2="21.125" width="0.2032" layer="1"/>
 <wire x1="55.25" y1="21.125" x2="55.25" y2="24.25" width="0.2032" layer="1"/>
 <wire x1="55.25" y1="24.25" x2="59" y2="28" width="0.2032" layer="1"/>
-<wire x1="59" y1="28" x2="58.875" y2="59.363" width="0.2032" layer="1"/>
+<wire x1="59" y1="28" x2="58.875" y2="58.863" width="0.2032" layer="1"/>
 <contactref element="R5" pad="1"/>
 <contactref element="C2" pad="2"/>
-<contactref element="U$2" pad="7"/>
-<wire x1="58" y1="66.5" x2="58.875" y2="67.375" width="0.2032" layer="1"/>
-<wire x1="58.875" y1="67.375" x2="58.875" y2="69.137" width="0.2032" layer="1"/>
-<wire x1="58.875" y1="69.137" x2="58" y2="70.012" width="0.2032" layer="1"/>
-<wire x1="58" y1="70.012" x2="56.5" y2="70.012" width="0.2032" layer="1"/>
-<wire x1="56.298" y1="69.81" x2="56.5" y2="70.012" width="0.2032" layer="1"/>
-<wire x1="58.875" y1="59.363" x2="58" y2="66.5" width="0" layer="19" extent="1-1"/>
-<wire x1="-18.01" y1="-2.65" x2="55.25" y2="21.125" width="0" layer="19" extent="1-1"/>
+<contactref element="IC2" pad="7"/>
+<wire x1="58.875" y1="58.863" x2="58.875" y2="59" width="0.2032" layer="1"/>
+<wire x1="58.875" y1="59" x2="56.75" y2="61.125" width="0.2032" layer="1"/>
+<wire x1="56.75" y1="61.125" x2="56.75" y2="62" width="0.2032" layer="1"/>
+<wire x1="48.4" y1="65.865" x2="45.752" y2="65.865" width="0.2032" layer="1"/>
+<wire x1="45.752" y1="65.865" x2="45.75" y2="65.863" width="0.2032" layer="1"/>
+<wire x1="45.752" y1="65.865" x2="44.127" y2="65.865" width="0.2032" layer="1"/>
+<wire x1="44.127" y1="65.865" x2="44.125" y2="65.863" width="0.2032" layer="1"/>
+<wire x1="44.125" y1="65.863" x2="43.488" y2="65.863" width="0.2032" layer="1"/>
+<wire x1="43.488" y1="65.863" x2="42.875" y2="65.25" width="0.2032" layer="1"/>
+<wire x1="42.875" y1="65.25" x2="42.875" y2="63.25" width="0.2032" layer="1"/>
+<wire x1="42.875" y1="63.25" x2="43.625" y2="62.5" width="0.2032" layer="1"/>
+<wire x1="43.625" y1="62.5" x2="56.25" y2="62.5" width="0.2032" layer="1"/>
+<wire x1="56.25" y1="62.5" x2="56.75" y2="62" width="0.2032" layer="1"/>
 </signal>
 <signal name="SHIFTERS">
-<contactref element="U5" pad="14"/>
-<contactref element="U1" pad="2"/>
+<contactref element="IC5" pad="14"/>
+<contactref element="IC9" pad="2"/>
 <wire x1="20.488" y1="58.8" x2="20.488" y2="57.488" width="0.2032" layer="1"/>
 <wire x1="20.488" y1="57.488" x2="17.25" y2="54.25" width="0.2032" layer="1"/>
 <wire x1="17.25" y1="54.25" x2="17.25" y2="51" width="0.2032" layer="1"/>
@@ -3273,16 +3270,16 @@ NS Package M08A</description>
 <wire x1="16.25" y1="43.7058" x2="16.238" y2="43.6938" width="0.2032" layer="1"/>
 </signal>
 <signal name="N$5">
-<contactref element="U7" pad="8"/>
+<contactref element="IC3" pad="8"/>
 <contactref element="R9" pad="2"/>
 <wire x1="33.3622" y1="61.405" x2="36.643" y2="61.405" width="0.2032" layer="1"/>
-<wire x1="36.643" y1="61.405" x2="36.738" y2="61.5" width="0.2032" layer="1"/>
+<wire x1="36.643" y1="61.405" x2="36.488" y2="61.5" width="0.2032" layer="1"/>
 </signal>
 <signal name="N$7">
-<contactref element="U7" pad="6"/>
+<contactref element="IC3" pad="6"/>
 <contactref element="R7" pad="2"/>
-<wire x1="33.3622" y1="58.865" x2="36.603" y2="58.865" width="0.2032" layer="1"/>
-<wire x1="36.603" y1="58.865" x2="36.738" y2="59" width="0.2032" layer="1"/>
+<wire x1="33.3622" y1="58.865" x2="36.353" y2="58.865" width="0.2032" layer="1"/>
+<wire x1="36.353" y1="58.865" x2="36.363" y2="59" width="0.2032" layer="1"/>
 </signal>
 <signal name="N$23">
 <contactref element="R10" pad="1"/>
@@ -3346,7 +3343,7 @@ NS Package M08A</description>
 <contactref element="R13" pad="1"/>
 <contactref element="C9" pad="2"/>
 <contactref element="IC4" pad="7"/>
-<contactref element="U1" pad="10"/>
+<contactref element="IC9" pad="10"/>
 <wire x1="3.75" y1="65.512" x2="2.25" y2="65.512" width="0.2032" layer="1"/>
 <wire x1="3.75" y1="65.512" x2="3.762" y2="65.5" width="0.2032" layer="1"/>
 <wire x1="3.762" y1="65.5" x2="4.5" y2="65.5" width="0.2032" layer="1"/>
@@ -3399,7 +3396,7 @@ NS Package M08A</description>
 </signal>
 <signal name="TRIGGERBUTTONLED">
 <contactref element="R38" pad="2"/>
-<contactref element="U4" pad="6"/>
+<contactref element="IC6" pad="6"/>
 <wire x1="32.012" y1="33.5562" x2="32.012" y2="30.762" width="0.2032" layer="1"/>
 <wire x1="32.012" y1="30.762" x2="31.946" y2="30.696" width="0.2032" layer="1"/>
 </signal>
@@ -3420,7 +3417,7 @@ NS Package M08A</description>
 <signal name="SYNC_LFO">
 <contactref element="Q2" pad="C"/>
 <contactref element="R73" pad="1"/>
-<contactref element="U1" pad="13"/>
+<contactref element="IC9" pad="13"/>
 <wire x1="22.4946" y1="63.2" x2="22.5446" y2="63.25" width="0.2032" layer="1"/>
 <wire x1="22.5446" y1="63.25" x2="24.125" y2="63.25" width="0.2032" layer="1"/>
 <wire x1="24.125" y1="63.25" x2="26.375" y2="65.5" width="0.2032" layer="1"/>
@@ -3454,7 +3451,7 @@ NS Package M08A</description>
 </signal>
 <signal name="ADC_NORMAL">
 <contactref element="R44" pad="P$2"/>
-<contactref element="U1" pad="9"/>
+<contactref element="IC9" pad="9"/>
 <wire x1="23.45" y1="60.746" x2="24.504" y2="60.746" width="0.2032" layer="1"/>
 <wire x1="24.504" y1="60.746" x2="24.875" y2="60.375" width="0.2032" layer="1"/>
 <wire x1="24.875" y1="60.375" x2="24.875" y2="58.75" width="0.2032" layer="1"/>
@@ -3474,7 +3471,7 @@ NS Package M08A</description>
 </signal>
 <signal name="ADC_PHASED">
 <contactref element="R45" pad="P$2"/>
-<contactref element="U1" pad="14"/>
+<contactref element="IC9" pad="14"/>
 <via x="31.5" y="66.125" extent="1-16" drill="0.3048"/>
 <wire x1="31.5" y1="66.125" x2="28.875" y2="66.125" width="0.2032" layer="16"/>
 <via x="28.875" y="66.125" extent="1-16" drill="0.3048"/>
@@ -3573,8 +3570,8 @@ NS Package M08A</description>
 <wire x1="37.5" y1="34.5" x2="37.5" y2="35.238" width="0.2032" layer="1"/>
 </signal>
 <signal name="SHIFTERS2TO3">
-<contactref element="U4" pad="9"/>
-<contactref element="U3" pad="14"/>
+<contactref element="IC6" pad="9"/>
+<contactref element="IC7" pad="14"/>
 <wire x1="46.238" y1="42.8188" x2="46.238" y2="44.012" width="0.2032" layer="1"/>
 <wire x1="46.238" y1="44.012" x2="46" y2="44.25" width="0.2032" layer="1"/>
 <wire x1="46" y1="44.25" x2="39.875" y2="44.25" width="0.2032" layer="1"/>
@@ -3588,18 +3585,16 @@ NS Package M08A</description>
 <signal name="N$65">
 <contactref element="R66" pad="1"/>
 <contactref element="D12" pad="+"/>
-<wire x1="36.25" y1="83.002" x2="36.25" y2="85.125" width="0.2032" layer="1"/>
-<wire x1="36.25" y1="85.125" x2="33" y2="88.375" width="0.2032" layer="1"/>
-<wire x1="33" y1="88.375" x2="27.625" y2="88.375" width="0.2032" layer="1"/>
+<wire x1="35.25" y1="88.375" x2="27.625" y2="88.375" width="0.2032" layer="1"/>
 <wire x1="27.625" y1="88.375" x2="27" y2="87.75" width="0.2032" layer="1"/>
 <wire x1="27" y1="87.75" x2="22.75" y2="87.75" width="0.2032" layer="1"/>
 <wire x1="20.262" y1="87.125" x2="22.125" y2="87.125" width="0.2032" layer="1"/>
 <wire x1="22.125" y1="87.125" x2="22.75" y2="87.75" width="0.2032" layer="1"/>
-<wire x1="36.25" y1="83.002" x2="38.949159375" y2="80.302840625" width="0.2032" layer="1"/>
-<wire x1="38.949159375" y1="80.302840625" x2="39.34326875" y2="80.302840625" width="0.2032" layer="1"/>
+<wire x1="39.34326875" y1="80.302840625" x2="39.34326875" y2="84.28173125" width="0.2032" layer="1"/>
+<wire x1="39.34326875" y1="84.28173125" x2="35.25" y2="88.375" width="0.2032" layer="1"/>
 </signal>
 <signal name="N$1">
-<contactref element="U5" pad="15"/>
+<contactref element="IC5" pad="15"/>
 <contactref element="R33" pad="2"/>
 <wire x1="13" y1="36.762" x2="13" y2="39.75" width="0.2032" layer="1"/>
 <wire x1="13" y1="39.75" x2="11.25" y2="41.5" width="0.2032" layer="1"/>
@@ -3609,13 +3604,13 @@ NS Package M08A</description>
 <wire x1="15.6992" y1="43.75" x2="15.7554" y2="43.6938" width="0.2032" layer="1"/>
 </signal>
 <signal name="N$19">
-<contactref element="U5" pad="1"/>
+<contactref element="IC5" pad="1"/>
 <contactref element="R64" pad="2"/>
 <wire x1="15.2982" y1="42.246" x2="15.2982" y2="37.5602" width="0.2032" layer="1"/>
 <wire x1="15.2982" y1="37.5602" x2="14.5" y2="36.762" width="0.2032" layer="1"/>
 </signal>
 <signal name="N$22">
-<contactref element="U5" pad="2"/>
+<contactref element="IC5" pad="2"/>
 <contactref element="R63" pad="2"/>
 <wire x1="16" y1="36.762" x2="16" y2="38.75" width="0.2032" layer="1"/>
 <wire x1="16" y1="38.75" x2="15.75" y2="39" width="0.2032" layer="1"/>
@@ -3623,21 +3618,21 @@ NS Package M08A</description>
 <wire x1="15.75" y1="41.3008" x2="15.7554" y2="41.3062" width="0.2032" layer="1"/>
 </signal>
 <signal name="N$26">
-<contactref element="U5" pad="3"/>
+<contactref element="IC5" pad="3"/>
 <contactref element="R61" pad="2"/>
 <wire x1="16.238" y1="41.3062" x2="16.238" y2="39.762" width="0.2032" layer="1"/>
 <wire x1="16.238" y1="39.762" x2="17.5" y2="38.5" width="0.2032" layer="1"/>
 <wire x1="17.5" y1="38.5" x2="17.5" y2="36.762" width="0.2032" layer="1"/>
 </signal>
 <signal name="N$30">
-<contactref element="U5" pad="4"/>
+<contactref element="IC5" pad="4"/>
 <contactref element="R62" pad="2"/>
 <wire x1="16.746" y1="41.3062" x2="16.746" y2="40.004" width="0.2032" layer="1"/>
 <wire x1="16.746" y1="40.004" x2="19" y2="37.75" width="0.2032" layer="1"/>
 <wire x1="19" y1="37.75" x2="19" y2="36.762" width="0.2032" layer="1"/>
 </signal>
 <signal name="N$31">
-<contactref element="U5" pad="5"/>
+<contactref element="IC5" pad="5"/>
 <contactref element="R57" pad="2"/>
 <wire x1="17.254" y1="41.3062" x2="17.254" y2="40.246" width="0.2032" layer="1"/>
 <wire x1="17.254" y1="40.246" x2="19.75" y2="37.75" width="0.2032" layer="1"/>
@@ -3646,7 +3641,7 @@ NS Package M08A</description>
 <wire x1="20.5" y1="37.5" x2="20.5" y2="36.762" width="0.2032" layer="1"/>
 </signal>
 <signal name="N$35">
-<contactref element="U5" pad="6"/>
+<contactref element="IC5" pad="6"/>
 <contactref element="R56" pad="2"/>
 <wire x1="17.762" y1="41.3062" x2="17.762" y2="40.488" width="0.2032" layer="1"/>
 <wire x1="17.762" y1="40.488" x2="20" y2="38.25" width="0.2032" layer="1"/>
@@ -3654,7 +3649,7 @@ NS Package M08A</description>
 <wire x1="20.512" y1="38.25" x2="22" y2="36.762" width="0.2032" layer="1"/>
 </signal>
 <signal name="N$36">
-<contactref element="U5" pad="7"/>
+<contactref element="IC5" pad="7"/>
 <contactref element="R58" pad="2"/>
 <wire x1="18.2446" y1="41.3062" x2="18.2446" y2="40.7554" width="0.2032" layer="1"/>
 <wire x1="18.2446" y1="40.7554" x2="20.25" y2="38.75" width="0.2032" layer="1"/>
@@ -3662,19 +3657,19 @@ NS Package M08A</description>
 <wire x1="21.512" y1="38.75" x2="23.5" y2="36.762" width="0.2032" layer="1"/>
 </signal>
 <signal name="N$38">
-<contactref element="U3" pad="7"/>
+<contactref element="IC7" pad="7"/>
 <contactref element="R54" pad="2"/>
 <wire x1="48.2446" y1="40.4312" x2="48.2446" y2="37.0066" width="0.2032" layer="1"/>
 <wire x1="48.2446" y1="37.0066" x2="48" y2="36.762" width="0.2032" layer="1"/>
 </signal>
 <signal name="N$39">
-<contactref element="U3" pad="6"/>
+<contactref element="IC7" pad="6"/>
 <contactref element="R55" pad="2"/>
 <wire x1="47.762" y1="40.4312" x2="47.762" y2="38.024" width="0.2032" layer="1"/>
 <wire x1="47.762" y1="38.024" x2="46.5" y2="36.762" width="0.2032" layer="1"/>
 </signal>
 <signal name="N$40">
-<contactref element="U3" pad="5"/>
+<contactref element="IC7" pad="5"/>
 <contactref element="R47" pad="2"/>
 <wire x1="47.254" y1="40.4312" x2="47.254" y2="38.879" width="0.2032" layer="1"/>
 <wire x1="47.254" y1="38.879" x2="46.375" y2="38" width="0.2032" layer="1"/>
@@ -3683,7 +3678,7 @@ NS Package M08A</description>
 <wire x1="45" y1="37.375" x2="45" y2="36.762" width="0.2032" layer="1"/>
 </signal>
 <signal name="N$43">
-<contactref element="U3" pad="4"/>
+<contactref element="IC7" pad="4"/>
 <contactref element="R46" pad="2"/>
 <wire x1="46.746" y1="40.4312" x2="46.746" y2="39.246" width="0.2032" layer="1"/>
 <wire x1="46.746" y1="39.246" x2="46.125" y2="38.625" width="0.2032" layer="1"/>
@@ -3691,7 +3686,7 @@ NS Package M08A</description>
 <wire x1="45.363" y1="38.625" x2="43.5" y2="36.762" width="0.2032" layer="1"/>
 </signal>
 <signal name="N$53">
-<contactref element="U3" pad="3"/>
+<contactref element="IC7" pad="3"/>
 <contactref element="R48" pad="2"/>
 <wire x1="46.238" y1="40.4312" x2="46.238" y2="39.613" width="0.2032" layer="1"/>
 <wire x1="44.363" y1="39.125" x2="42" y2="36.762" width="0.2032" layer="1"/>
@@ -3699,26 +3694,26 @@ NS Package M08A</description>
 <wire x1="45.75" y1="39.125" x2="44.363" y2="39.125" width="0.2032" layer="1"/>
 </signal>
 <signal name="N$54">
-<contactref element="U3" pad="2"/>
+<contactref element="IC7" pad="2"/>
 <contactref element="R49" pad="2"/>
 <wire x1="45.7554" y1="40.4312" x2="44.1692" y2="40.4312" width="0.2032" layer="1"/>
 <wire x1="44.1692" y1="40.4312" x2="40.5" y2="36.762" width="0.2032" layer="1"/>
 </signal>
 <signal name="N$55">
-<contactref element="U3" pad="1"/>
+<contactref element="IC7" pad="1"/>
 <contactref element="R32" pad="2"/>
 <wire x1="45.2982" y1="41.371" x2="43.609" y2="41.371" width="0.2032" layer="1"/>
 <wire x1="43.609" y1="41.371" x2="39" y2="36.762" width="0.2032" layer="1"/>
 </signal>
 <signal name="N$56">
-<contactref element="U3" pad="15"/>
+<contactref element="IC7" pad="15"/>
 <contactref element="R65" pad="2"/>
 <wire x1="45.7554" y1="42.8188" x2="39.5688" y2="42.8188" width="0.2032" layer="1"/>
 <wire x1="39.5688" y1="42.8188" x2="37.5" y2="40.75" width="0.2032" layer="1"/>
 <wire x1="37.5" y1="40.75" x2="37.5" y2="36.762" width="0.2032" layer="1"/>
 </signal>
 <signal name="N$57">
-<contactref element="U4" pad="7"/>
+<contactref element="IC6" pad="7"/>
 <contactref element="R60" pad="2"/>
 <wire x1="32.4946" y1="33.5562" x2="33.6812" y2="33.5562" width="0.2032" layer="1"/>
 <wire x1="33.6812" y1="33.5562" x2="35" y2="34.875" width="0.2032" layer="1"/>
@@ -3727,7 +3722,7 @@ NS Package M08A</description>
 </signal>
 <signal name="N$37">
 <contactref element="R59" pad="2"/>
-<contactref element="U4" pad="3"/>
+<contactref element="IC6" pad="3"/>
 <wire x1="30.488" y1="33.5562" x2="30.488" y2="32.613" width="0.2032" layer="1"/>
 <wire x1="30.488" y1="32.613" x2="30.125" y2="32.25" width="0.2032" layer="1"/>
 <wire x1="30.125" y1="32.25" x2="26.25" y2="32.25" width="0.2032" layer="1"/>
@@ -3771,8 +3766,8 @@ NS Package M08A</description>
 <wire x1="17.669840625" y1="79.032840625" x2="20.34673125" y2="79.032840625" width="0.2032" layer="1"/>
 </signal>
 <signal name="CLOCK_2">
-<contactref element="U8" pad="11"/>
-<contactref element="U1" pad="6"/>
+<contactref element="IC8" pad="11"/>
+<contactref element="IC9" pad="6"/>
 <wire x1="24.003" y1="66.1095" x2="24.003" y2="67.622" width="0.2032" layer="16"/>
 <wire x1="22.57425" y1="64.68075" x2="24.003" y2="66.1095" width="0.2032" layer="16"/>
 <wire x1="22.57425" y1="58.95975" x2="22.57425" y2="64.68075" width="0.2032" layer="16"/>
@@ -3804,8 +3799,8 @@ NS Package M08A</description>
 <wire x1="20.5" y1="71.74975" x2="18.0915" y2="74.15825" width="0.2032" layer="16"/>
 </signal>
 <signal name="SHIFTERS_2">
-<contactref element="U8" pad="14"/>
-<contactref element="U1" pad="5"/>
+<contactref element="IC8" pad="14"/>
+<contactref element="IC9" pad="5"/>
 <wire x1="10.95375" y1="87.8205" x2="11.52525" y2="87.8205" width="0.2032" layer="1"/>
 <wire x1="10.8585" y1="87.72525" x2="10.95375" y2="87.8205" width="0.2032" layer="1"/>
 <wire x1="10.8585" y1="84.963" x2="10.8585" y2="87.72525" width="0.2032" layer="1"/>
@@ -3839,7 +3834,7 @@ NS Package M08A</description>
 <via x="21.717" y="57.62625" extent="1-16" drill="0.3048"/>
 </signal>
 <signal name="N$59">
-<contactref element="U8" pad="1"/>
+<contactref element="IC8" pad="1"/>
 <contactref element="R71" pad="2"/>
 <wire x1="13.004" y1="86.9232" x2="13" y2="86.9232" width="0.2032" layer="1"/>
 <wire x1="13" y1="86.9232" x2="13" y2="86" width="0.2032" layer="1"/>
@@ -3851,7 +3846,7 @@ NS Package M08A</description>
 <wire x1="16.113" y1="79.262" x2="16.113" y2="79" width="0.2032" layer="1"/>
 </signal>
 <signal name="N$62">
-<contactref element="U8" pad="2"/>
+<contactref element="IC8" pad="2"/>
 <contactref element="R70" pad="2"/>
 <wire x1="13.9438" y1="87.3804" x2="14" y2="87.3242" width="0.2032" layer="1"/>
 <wire x1="14" y1="87.3242" x2="14" y2="86.75" width="0.2032" layer="1"/>
@@ -3862,7 +3857,7 @@ NS Package M08A</description>
 <wire x1="15.875" y1="84.363" x2="17.613" y2="82.625" width="0.2032" layer="1"/>
 </signal>
 <signal name="N$66">
-<contactref element="U8" pad="3"/>
+<contactref element="IC8" pad="3"/>
 <contactref element="R31" pad="2"/>
 <wire x1="13.9438" y1="87.863" x2="13.9558" y2="87.875" width="0.2032" layer="1"/>
 <wire x1="13.9558" y1="87.875" x2="15.125" y2="87.875" width="0.2032" layer="1"/>
@@ -3871,7 +3866,7 @@ NS Package M08A</description>
 <wire x1="16.5" y1="85.238" x2="17.613" y2="84.125" width="0.2032" layer="1"/>
 </signal>
 <signal name="N$67">
-<contactref element="U8" pad="4"/>
+<contactref element="IC8" pad="4"/>
 <contactref element="R34" pad="2"/>
 <wire x1="13.9438" y1="88.371" x2="13.9478" y2="88.375" width="0.2032" layer="1"/>
 <wire x1="13.9478" y1="88.375" x2="15.5" y2="88.375" width="0.2032" layer="1"/>
@@ -3879,7 +3874,7 @@ NS Package M08A</description>
 <wire x1="17.613" y1="86.262" x2="17.613" y2="85.625" width="0.2032" layer="1"/>
 </signal>
 <signal name="N$68">
-<contactref element="U8" pad="5"/>
+<contactref element="IC8" pad="5"/>
 <contactref element="R66" pad="2"/>
 <wire x1="13.9438" y1="88.879" x2="13.9478" y2="88.875" width="0.2032" layer="1"/>
 <wire x1="13.9478" y1="88.875" x2="15.875" y2="88.875" width="0.2032" layer="1"/>
