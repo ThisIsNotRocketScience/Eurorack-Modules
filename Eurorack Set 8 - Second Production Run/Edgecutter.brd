@@ -28,9 +28,9 @@
 <layer number="18" name="Vias" color="2" fill="1" visible="yes" active="yes"/>
 <layer number="19" name="Unrouted" color="6" fill="1" visible="yes" active="yes"/>
 <layer number="20" name="Dimension" color="15" fill="1" visible="yes" active="yes"/>
-<layer number="21" name="tPlace" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="21" name="tPlace" color="7" fill="1" visible="no" active="yes"/>
 <layer number="22" name="bPlace" color="7" fill="1" visible="yes" active="yes"/>
-<layer number="23" name="tOrigins" color="15" fill="1" visible="yes" active="yes"/>
+<layer number="23" name="tOrigins" color="15" fill="1" visible="no" active="yes"/>
 <layer number="24" name="bOrigins" color="15" fill="1" visible="yes" active="yes"/>
 <layer number="25" name="tNames" color="57" fill="1" visible="no" active="yes"/>
 <layer number="26" name="bNames" color="7" fill="1" visible="no" active="yes"/>
@@ -152,7 +152,7 @@
 <layer number="249" name="Edge" color="7" fill="1" visible="no" active="no"/>
 <layer number="250" name="Descript" color="3" fill="1" visible="no" active="no"/>
 <layer number="251" name="SMDround" color="12" fill="11" visible="no" active="no"/>
-<layer number="254" name="OrgLBR" color="13" fill="1" visible="no" active="no"/>
+<layer number="254" name="OrgLBR" color="13" fill="1" visible="yes" active="yes"/>
 <layer number="255" name="Panel" color="14" fill="1" visible="yes" active="yes"/>
 </layers>
 <board>
@@ -1082,10 +1082,10 @@ Source: http://www.onsemi.co.jp .. LM137M-D.PDF</description>
 <attribute name="MF" value="STMICROELECTRONICS" x="53.5305" y="96.3295" size="1.778" layer="27" rot="R180" display="off"/>
 <attribute name="MPN" value="LD1117AS33TR" x="53.5305" y="96.3295" size="1.778" layer="27" rot="R180" display="off"/>
 </element>
-<element name="J14" library="EurorackModularParts" package="2X08_SMT_HEADER" value="POWERSMT" x="55.475" y="95.645" rot="MR90">
-<attribute name="OC_FARNELL" value="unknown" x="55.475" y="95.645" size="1.778" layer="28" rot="MR90" display="off"/>
-<attribute name="MF" value="" x="55.475" y="95.645" size="1.778" layer="28" rot="MR90" display="off"/>
-<attribute name="MPN" value="" x="55.475" y="95.645" size="1.778" layer="28" rot="MR90" display="off"/>
+<element name="J14" library="EurorackModularParts" package="2X08_SMT_HEADER" value="POWERSMT" x="55.475" y="94.895" rot="MR90">
+<attribute name="OC_FARNELL" value="unknown" x="55.475" y="94.895" size="1.778" layer="28" rot="MR90" display="off"/>
+<attribute name="MF" value="" x="55.475" y="94.895" size="1.778" layer="28" rot="MR90" display="off"/>
+<attribute name="MPN" value="" x="55.475" y="94.895" size="1.778" layer="28" rot="MR90" display="off"/>
 </element>
 <element name="R16" library="OPL" package="R0603" value="100k" x="10.245" y="47.21" rot="R180">
 <attribute name="OC_FARNELL" value="unknown" x="10.245" y="47.21" size="1.778" layer="27" rot="R180" display="off"/>
@@ -1953,9 +1953,9 @@ Source: http://www.onsemi.co.jp .. LM137M-D.PDF</description>
 <via x="55.625" y="100.875" extent="1-16" drill="0.3048"/>
 <wire x1="55.625" y1="100.875" x2="55.625" y2="101.125" width="0.1778" layer="16"/>
 <wire x1="55.625" y1="101.125" x2="55.5" y2="101.25" width="0.1778" layer="16"/>
-<wire x1="55.995" y1="86.63" x2="55.995" y2="85.88" width="0.1778" layer="1"/>
-<wire x1="55.995" y1="85.88" x2="56" y2="85.5" width="0.1778" layer="1"/>
-<via x="56" y="85.5" extent="1-16" drill="0.3048"/>
+<wire x1="55.995" y1="86.63" x2="55.995" y2="87.38" width="0.1778" layer="1"/>
+<wire x1="55.995" y1="87.38" x2="55.5" y2="87.875" width="0.1778" layer="1"/>
+<via x="55.5" y="87.875" extent="1-16" drill="0.3048"/>
 <wire x1="50.0365" y1="104.617" x2="49.133" y2="104.617" width="0.1778" layer="1"/>
 <wire x1="49.133" y1="104.617" x2="49.125" y2="104.625" width="0.1778" layer="1"/>
 <via x="49.125" y="104.625" extent="1-16" drill="0.3048"/>
@@ -2098,11 +2098,11 @@ Source: http://www.onsemi.co.jp .. LM137M-D.PDF</description>
 <wire x1="41.125" y1="52.5" x2="41.125" y2="52.25" width="0.1778" layer="16"/>
 <via x="32" y="57" extent="1-16" drill="0.3048"/>
 <via x="39.75" y="57" extent="1-16" drill="0.3048"/>
-<wire x1="51.75" y1="84.375" x2="51.496" y2="84.121" width="0.1778" layer="1"/>
+<wire x1="51.75" y1="84.125" x2="51.496" y2="84.121" width="0.1778" layer="1"/>
 <wire x1="51.496" y1="84.121" x2="51.496" y2="82.6732" width="0.1778" layer="1"/>
 <wire x1="52.9438" y1="84.629" x2="52.004" y2="84.629" width="0.1778" layer="1"/>
-<wire x1="52.004" y1="84.629" x2="51.75" y2="84.375" width="0.1778" layer="1" curve="90"/>
-<via x="51.75" y="84.375" extent="1-16" drill="0.3048"/>
+<wire x1="52.004" y1="84.629" x2="51.75" y2="84.125" width="0.1778" layer="1" curve="90"/>
+<via x="51.75" y="84.125" extent="1-16" drill="0.3048"/>
 <wire x1="53.44" y1="66.99" x2="52.635" y2="66.99" width="0.1778" layer="1"/>
 <wire x1="52.635" y1="66.99" x2="52.625" y2="67" width="0.1778" layer="1"/>
 <via x="52.625" y="67" extent="1-16" drill="0.3048"/>
@@ -2138,6 +2138,7 @@ Source: http://www.onsemi.co.jp .. LM137M-D.PDF</description>
 <wire x1="40.75" y1="67.125" x2="41" y2="67.25" width="0.1778" layer="16"/>
 <wire x1="39.456" y1="66.765" x2="39.456" y2="66.044" width="0.1778" layer="1"/>
 <wire x1="39.456" y1="66.044" x2="39.5" y2="66" width="0.1778" layer="1"/>
+<wire x1="51.75" y1="84.125" x2="51.75" y2="84.375" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="3.3V" class="2">
 <contactref element="IC5" pad="3"/>
@@ -2181,13 +2182,13 @@ Source: http://www.onsemi.co.jp .. LM137M-D.PDF</description>
 <wire x1="37.905" y1="68.72" x2="38.375" y2="68.25" width="0.254" layer="1"/>
 <wire x1="38.375" y1="68.25" x2="39.417" y2="68.25" width="0.254" layer="1"/>
 <wire x1="39.417" y1="68.25" x2="39.456" y2="68.289" width="0.254" layer="1"/>
-<wire x1="53.5305" y1="99.4795" x2="53.5305" y2="93.1795" width="0.254" layer="1"/>
-<wire x1="53.5305" y1="93.1795" x2="49.5685" y2="93.1795" width="0.254" layer="1"/>
+<wire x1="53.5305" y1="99.4795" x2="53.5305" y2="93.1795" width="0.508" layer="1"/>
+<wire x1="53.5305" y1="93.1795" x2="49.5685" y2="93.1795" width="0.508" layer="1"/>
 <wire x1="49.5685" y1="93.1795" x2="49.53" y2="93.218" width="0.254" layer="1"/>
 <wire x1="49.5685" y1="93.1795" x2="49.5685" y2="92.8065" width="0.254" layer="1"/>
-<wire x1="49.5685" y1="92.8065" x2="50.25" y2="92.125" width="0.254" layer="1"/>
-<wire x1="50.25" y1="92.125" x2="50.25" y2="91.6815" width="0.254" layer="1"/>
-<wire x1="50.25" y1="91.6815" x2="50.1175" y2="91.549" width="0.254" layer="1"/>
+<wire x1="49.5685" y1="92.8065" x2="50.25" y2="92.125" width="0.508" layer="1"/>
+<wire x1="50.25" y1="92.125" x2="50.25" y2="91.6815" width="0.508" layer="1"/>
+<wire x1="50.25" y1="91.6815" x2="50.1175" y2="91.549" width="0.508" layer="1"/>
 <wire x1="59.69" y1="34.925" x2="59.69" y2="35.44" width="0.254" layer="1"/>
 <wire x1="59.69" y1="35.44" x2="60.125" y2="35.875" width="0.254" layer="1"/>
 <wire x1="60.125" y1="35.875" x2="60.125" y2="49.73" width="0.254" layer="1"/>
@@ -2200,13 +2201,13 @@ Source: http://www.onsemi.co.jp .. LM137M-D.PDF</description>
 <wire x1="59.69" y1="65.44" x2="60.25" y2="66" width="0.254" layer="1"/>
 <wire x1="60.25" y1="66" x2="60.25" y2="80.085" width="0.254" layer="1"/>
 <wire x1="60.25" y1="80.085" x2="59.69" y2="80.645" width="0.254" layer="1"/>
-<wire x1="38.3648" y1="86.0904" x2="39.7484" y2="86.0904" width="0.254" layer="1"/>
+<wire x1="38.3648" y1="86.0904" x2="39.7484" y2="86.0904" width="0.508" layer="1"/>
 <wire x1="39.7484" y1="86.0904" x2="39.725" y2="86.192" width="0.254" layer="1"/>
 <wire x1="38.3648" y1="86.0904" x2="38.3648" y2="86.6352" width="0.254" layer="1"/>
-<wire x1="38.3648" y1="86.6352" x2="37.625" y2="87.375" width="0.254" layer="1"/>
-<wire x1="37.625" y1="87.375" x2="36.068" y2="87.375" width="0.254" layer="1"/>
+<wire x1="38.3648" y1="86.6352" x2="37.625" y2="87.375" width="0.508" layer="1"/>
+<wire x1="37.625" y1="87.375" x2="36.068" y2="87.375" width="0.508" layer="1"/>
 <wire x1="36.068" y1="87.375" x2="35.909" y2="87.216" width="0.254" layer="1"/>
-<wire x1="35.909" y1="87.216" x2="34.885" y2="86.192" width="0.254" layer="1"/>
+<wire x1="35.909" y1="87.216" x2="34.885" y2="86.192" width="0.508" layer="1"/>
 <wire x1="34.885" y1="86.192" x2="34.827" y2="86.25" width="0.254" layer="1"/>
 <wire x1="24.17" y1="2.19" x2="24.17" y2="2.455" width="0.254" layer="1"/>
 <wire x1="24.17" y1="2.455" x2="23.25" y2="3.375" width="0.254" layer="1"/>
@@ -2214,11 +2215,11 @@ Source: http://www.onsemi.co.jp .. LM137M-D.PDF</description>
 <wire x1="23.25" y1="11.625" x2="24.375" y2="12.75" width="0.254" layer="1"/>
 <wire x1="24.375" y1="12.75" x2="24.375" y2="14.75" width="0.254" layer="1"/>
 <wire x1="24.375" y1="14.75" x2="21.625" y2="17.5" width="0.254" layer="1"/>
-<wire x1="30.375" y1="84" x2="30.375" y2="90.637" width="0.254" layer="1"/>
-<wire x1="30.375" y1="90.637" x2="29.072" y2="91.94" width="0.254" layer="1"/>
-<wire x1="35.406" y1="91.468" x2="35.406" y2="87.719" width="0.254" layer="1"/>
-<wire x1="35.406" y1="87.719" x2="35.909" y2="87.216" width="0.254" layer="1"/>
-<wire x1="28.587" y1="75.625" x2="31.296" y2="75.625" width="0.254" layer="1"/>
+<wire x1="30.25" y1="84.125" x2="30.25" y2="90.762" width="0.508" layer="1"/>
+<wire x1="30.25" y1="90.762" x2="29.072" y2="91.94" width="0.254" layer="1"/>
+<wire x1="35.406" y1="91.468" x2="35.406" y2="87.719" width="0.508" layer="1"/>
+<wire x1="35.406" y1="87.719" x2="35.909" y2="87.216" width="0.508" layer="1"/>
+<wire x1="28.587" y1="75.625" x2="31.296" y2="75.625" width="0.3048" layer="1"/>
 <wire x1="31.296" y1="75.625" x2="31.3" y2="75.629" width="0.254" layer="1"/>
 <wire x1="36.355" y1="22.174" x2="36.355" y2="24.685" width="0.254" layer="1"/>
 <wire x1="36.355" y1="24.685" x2="36.32" y2="24.72" width="0.254" layer="1"/>
@@ -2252,14 +2253,14 @@ Source: http://www.onsemi.co.jp .. LM137M-D.PDF</description>
 <wire x1="23.75" y1="70.375" x2="24.25" y2="70.875" width="0.254" layer="1"/>
 <wire x1="24.25" y1="70.875" x2="24.25" y2="77.04" width="0.254" layer="1"/>
 <wire x1="24.25" y1="77.04" x2="24.17" y2="77.12" width="0.254" layer="1"/>
-<wire x1="28.587" y1="75.625" x2="28.587" y2="76.413" width="0.254" layer="1"/>
-<wire x1="28.587" y1="76.413" x2="27.875" y2="77.125" width="0.254" layer="1"/>
+<wire x1="28.587" y1="75.625" x2="28.587" y2="76.413" width="0.508" layer="1"/>
+<wire x1="28.587" y1="76.413" x2="27.875" y2="77.125" width="0.508" layer="1"/>
 <wire x1="27.875" y1="77.125" x2="24.175" y2="77.125" width="0.254" layer="1"/>
 <wire x1="24.175" y1="77.125" x2="24.17" y2="77.12" width="0.254" layer="1"/>
-<wire x1="27.875" y1="77.125" x2="27.875" y2="81.5" width="0.254" layer="1"/>
-<wire x1="27.875" y1="81.5" x2="29.875" y2="83.5" width="0.254" layer="1"/>
-<wire x1="29.875" y1="84.375" x2="29.875" y2="83.5" width="0.254" layer="1"/>
-<wire x1="29.875" y1="83.5" x2="30.375" y2="84" width="0.254" layer="1"/>
+<wire x1="27.875" y1="77.125" x2="27.875" y2="81.75" width="0.508" layer="1"/>
+<wire x1="27.875" y1="81.75" x2="29.875" y2="83.75" width="0.508" layer="1"/>
+<wire x1="29.875" y1="84.375" x2="29.875" y2="83.75" width="0.508" layer="1"/>
+<wire x1="29.875" y1="83.75" x2="30.25" y2="84.125" width="0.508" layer="1"/>
 <wire x1="32.262" y1="60.875" x2="32.262" y2="62.113" width="0.254" layer="1"/>
 <wire x1="29.815" y1="85.04" x2="29.815" y2="84.44" width="0.254" layer="16"/>
 <wire x1="29.815" y1="84.44" x2="29.75" y2="84.25" width="0.254" layer="16"/>
@@ -2267,11 +2268,11 @@ Source: http://www.onsemi.co.jp .. LM137M-D.PDF</description>
 <wire x1="29.75" y1="84.25" x2="29.875" y2="84.375" width="0.254" layer="1"/>
 <wire x1="32.875" y1="85.137" x2="33.83" y2="85.137" width="0.254" layer="1"/>
 <wire x1="33.83" y1="85.137" x2="34.885" y2="86.192" width="0.254" layer="1"/>
-<wire x1="35.406" y1="91.468" x2="34.407" y2="91.468" width="0.254" layer="1"/>
-<wire x1="34.407" y1="91.468" x2="34.125" y2="91.75" width="0.254" layer="1"/>
-<wire x1="30.375" y1="90.637" x2="30.375" y2="90.875" width="0.254" layer="1"/>
-<wire x1="30.375" y1="90.875" x2="31.25" y2="91.75" width="0.254" layer="1"/>
-<wire x1="31.25" y1="91.75" x2="34.125" y2="91.75" width="0.254" layer="1"/>
+<wire x1="35.406" y1="91.468" x2="34.407" y2="91.468" width="0.508" layer="1"/>
+<wire x1="34.407" y1="91.468" x2="33.875" y2="92" width="0.508" layer="1"/>
+<wire x1="30.25" y1="90.762" x2="30.375" y2="91.125" width="0.254" layer="1"/>
+<wire x1="30.375" y1="91.125" x2="31.25" y2="92" width="0.508" layer="1"/>
+<wire x1="31.25" y1="92" x2="33.875" y2="92" width="0.508" layer="1"/>
 <wire x1="52.012" y1="88.125" x2="52.012" y2="89.6545" width="0.254" layer="1"/>
 <wire x1="52.012" y1="89.6545" x2="50.1175" y2="91.549" width="0.254" layer="1"/>
 <wire x1="59.69" y1="80.645" x2="59.69" y2="80.685" width="0.254" layer="1"/>
@@ -2280,13 +2281,11 @@ Source: http://www.onsemi.co.jp .. LM137M-D.PDF</description>
 <via x="53.125" y="82.375" extent="1-16" drill="0.3048"/>
 <wire x1="53.125" y1="82.375" x2="53" y2="82.25" width="0.254" layer="16"/>
 <wire x1="53" y1="82.25" x2="50.5" y2="82.25" width="0.254" layer="16"/>
-<wire x1="50.5" y1="82.25" x2="49.375" y2="83.375" width="0.254" layer="16"/>
-<wire x1="49.375" y1="83.375" x2="49.375" y2="87.125" width="0.254" layer="16"/>
-<wire x1="49.375" y1="87.125" x2="48.75" y2="87.75" width="0.254" layer="16"/>
-<wire x1="48.75" y1="87.75" x2="48.75" y2="88.25" width="0.254" layer="16"/>
+<wire x1="50.5" y1="82.25" x2="48.75" y2="84" width="0.254" layer="16"/>
+<wire x1="48.75" y1="84" x2="48.75" y2="88.25" width="0.254" layer="16"/>
 <via x="48.75" y="88.25" extent="1-16" drill="0.3048"/>
 <wire x1="48.75" y1="88.25" x2="48.75" y2="90.1815" width="0.254" layer="1"/>
-<wire x1="48.75" y1="90.1815" x2="50.1175" y2="91.549" width="0.254" layer="1"/>
+<wire x1="48.75" y1="90.1815" x2="50.1175" y2="91.549" width="0.508" layer="1"/>
 <via x="59" y="82.875" extent="1-16" drill="0.3048"/>
 <wire x1="59" y1="82.875" x2="59" y2="81.335" width="0.254" layer="1"/>
 <wire x1="59" y1="81.335" x2="59.69" y2="80.645" width="0.254" layer="1"/>
@@ -2298,15 +2297,15 @@ Source: http://www.onsemi.co.jp .. LM137M-D.PDF</description>
 <wire x1="30.875" y1="63.5" x2="30.375" y2="63.5" width="0.254" layer="1"/>
 <wire x1="30.375" y1="63.5" x2="24.25" y2="63.5" width="0.254" layer="1"/>
 <wire x1="24.25" y1="63.5" x2="24.25" y2="66.75" width="0.254" layer="1"/>
-<wire x1="39.725" y1="86.192" x2="39.725" y2="87.975" width="0.254" layer="1"/>
-<wire x1="39.725" y1="87.975" x2="43.5" y2="91.75" width="0.254" layer="1"/>
+<wire x1="39.725" y1="86.192" x2="39.725" y2="87.975" width="0.508" layer="1"/>
+<wire x1="39.725" y1="87.975" x2="43.5" y2="91.75" width="0.508" layer="1"/>
 <via x="43.5" y="91.75" extent="1-16" drill="0.3048"/>
-<wire x1="43.5" y1="91.75" x2="44.125" y2="91.75" width="0.254" layer="16"/>
-<wire x1="44.125" y1="91.75" x2="45" y2="90.875" width="0.254" layer="16"/>
+<wire x1="43.5" y1="91.75" x2="44.125" y2="91.75" width="0.508" layer="16"/>
+<wire x1="44.125" y1="91.75" x2="45" y2="90.875" width="0.508" layer="16"/>
 <via x="45" y="90.875" extent="1-16" drill="0.3048"/>
-<wire x1="45" y1="90.875" x2="45.5" y2="90.375" width="0.254" layer="1"/>
-<wire x1="45.5" y1="90.375" x2="48.5565" y2="90.375" width="0.254" layer="1"/>
-<wire x1="48.5565" y1="90.375" x2="48.75" y2="90.1815" width="0.254" layer="1"/>
+<wire x1="45" y1="90.875" x2="45.5" y2="90.375" width="0.508" layer="1"/>
+<wire x1="45.5" y1="90.375" x2="48.5565" y2="90.375" width="0.508" layer="1"/>
+<wire x1="48.5565" y1="90.375" x2="48.75" y2="90.1815" width="0.508" layer="1"/>
 <wire x1="32.262" y1="62.113" x2="30.875" y2="63.5" width="0.254" layer="1"/>
 <wire x1="24.17" y1="36.58" x2="23.75" y2="37" width="0.254" layer="1"/>
 <wire x1="23.75" y1="37" x2="23.75" y2="39.75" width="0.254" layer="1"/>
@@ -2533,8 +2532,8 @@ Source: http://www.onsemi.co.jp .. LM137M-D.PDF</description>
 <contactref element="J14" pad="1"/>
 <contactref element="J14" pad="2"/>
 <contactref element="D2" pad="2"/>
-<wire x1="58.015" y1="86.755" x2="52.935" y2="86.755" width="0.381" layer="16"/>
-<wire x1="58.015" y1="86.755" x2="58.015" y2="84.89" width="0.381" layer="16"/>
+<wire x1="58.015" y1="86.005" x2="52.935" y2="86.005" width="0.381" layer="16"/>
+<wire x1="58.015" y1="86.005" x2="58.015" y2="84.89" width="0.381" layer="16"/>
 <wire x1="58.015" y1="84.89" x2="58" y2="84.625" width="0.381" layer="16"/>
 <via x="58" y="84.625" extent="1-16" drill="0.3048"/>
 <wire x1="58" y1="84.625" x2="58" y2="85.21" width="0.381" layer="1"/>
@@ -2544,11 +2543,11 @@ Source: http://www.onsemi.co.jp .. LM137M-D.PDF</description>
 <contactref element="J14" pad="10"/>
 <contactref element="J14" pad="9"/>
 <contactref element="D1" pad="1"/>
-<wire x1="52.935" y1="96.915" x2="58.015" y2="96.915" width="0.381" layer="16"/>
-<wire x1="58.015" y1="96.915" x2="58.015" y2="97.765" width="0.381" layer="16"/>
-<wire x1="58.015" y1="97.765" x2="58.25" y2="98" width="0.381" layer="16"/>
-<via x="58.25" y="98" extent="1-16" drill="0.3048"/>
-<wire x1="58.25" y1="98" x2="58.25" y2="100.065" width="0.381" layer="1"/>
+<wire x1="52.935" y1="96.165" x2="58.015" y2="96.165" width="0.381" layer="16"/>
+<wire x1="58.015" y1="96.165" x2="58.015" y2="96.515" width="0.381" layer="16"/>
+<wire x1="58.015" y1="96.515" x2="58.25" y2="96.75" width="0.381" layer="16"/>
+<via x="58.25" y="96.75" extent="1-16" drill="0.3048"/>
+<wire x1="58.25" y1="96.75" x2="58.25" y2="100.065" width="0.381" layer="1"/>
 <wire x1="58.25" y1="100.065" x2="58.42" y2="99.735" width="0.381" layer="1"/>
 </signal>
 <signal name="N$24">
@@ -2836,8 +2835,10 @@ Source: http://www.onsemi.co.jp .. LM137M-D.PDF</description>
 <via x="41.125" y="90.625" extent="1-16" drill="0.3048"/>
 <wire x1="41.125" y1="90.625" x2="41.125" y2="92.25" width="0.2032" layer="1"/>
 <wire x1="41.125" y1="92.25" x2="40.5" y2="92.875" width="0.2032" layer="1"/>
-<wire x1="40.5" y1="92.875" x2="28.483" y2="92.875" width="0.2032" layer="1"/>
-<wire x1="28.483" y1="92.875" x2="27.548" y2="91.94" width="0.2032" layer="1"/>
+<wire x1="40.5" y1="92.875" x2="36.25" y2="92.875" width="0.2032" layer="1"/>
+<wire x1="36.25" y1="92.875" x2="35.875" y2="93.25" width="0.2032" layer="1"/>
+<wire x1="35.875" y1="93.25" x2="28.858" y2="93.25" width="0.2032" layer="1"/>
+<wire x1="28.858" y1="93.25" x2="27.548" y2="91.94" width="0.2032" layer="1"/>
 <wire x1="39" y1="72.125" x2="39.25" y2="72.375" width="0.2032" layer="1"/>
 <wire x1="39.25" y1="72.375" x2="39.25" y2="73.75" width="0.2032" layer="1"/>
 <wire x1="39.25" y1="73.75" x2="38.75" y2="74.25" width="0.2032" layer="1"/>
@@ -3665,7 +3666,7 @@ Source: http://www.onsemi.co.jp .. LM137M-D.PDF</description>
 <signal name="SHIFTERS">
 <contactref element="IC5" pad="2"/>
 <contactref element="IC7" pad="14"/>
-<wire x1="52.9438" y1="85.137" x2="53.875" y2="85.137" width="0.2032" layer="1"/>
+<wire x1="52.9438" y1="85.137" x2="53.75" y2="85.137" width="0.2032" layer="1"/>
 <wire x1="30.625" y1="76.125" x2="31.25" y2="76.125" width="0.2032" layer="1"/>
 <wire x1="30.375" y1="76.375" x2="30.625" y2="76.125" width="0.2032" layer="1"/>
 <wire x1="30.375" y1="77.25" x2="30.375" y2="76.375" width="0.2032" layer="1"/>
@@ -3677,10 +3678,9 @@ Source: http://www.onsemi.co.jp .. LM137M-D.PDF</description>
 <wire x1="37.875" y1="81.25" x2="37.875" y2="81.125" width="0.2032" layer="1"/>
 <wire x1="40.75" y1="84.125" x2="37.875" y2="81.25" width="0.2032" layer="1"/>
 <wire x1="42.75" y1="86.125" x2="40.75" y2="84.125" width="0.2032" layer="16"/>
-<wire x1="50.75" y1="86.375" x2="47.125" y2="86.375" width="0.2032" layer="1"/>
-<wire x1="52.125" y1="85" x2="50.75" y2="86.375" width="0.2032" layer="16"/>
-<wire x1="53.875" y1="85" x2="52.125" y2="85" width="0.2032" layer="16"/>
-<wire x1="53.875" y1="85.137" x2="53.875" y2="85" width="0.2032" layer="1"/>
+<wire x1="50.5" y1="86.375" x2="47.125" y2="86.375" width="0.2032" layer="1"/>
+<wire x1="54" y1="84.875" x2="51" y2="84.875" width="0.2032" layer="16"/>
+<wire x1="53.75" y1="85.137" x2="54" y2="84.875" width="0.2032" layer="1"/>
 <wire x1="31.25" y1="76.125" x2="31.3" y2="76.137" width="0.2032" layer="1"/>
 <via x="31.625" y="78.5" extent="1-16" drill="0.3048"/>
 <via x="33.875" y="80.75" extent="1-16" drill="0.3048"/>
@@ -3688,10 +3688,12 @@ Source: http://www.onsemi.co.jp .. LM137M-D.PDF</description>
 <via x="37.875" y="81.125" extent="1-16" drill="0.3048"/>
 <via x="40.75" y="84.125" extent="1-16" drill="0.3048"/>
 <via x="47.125" y="86.375" extent="1-16" drill="0.3048"/>
-<via x="50.75" y="86.375" extent="1-16" drill="0.3048"/>
-<via x="53.875" y="85" extent="1-16" drill="0.3048"/>
+<via x="50.5" y="86.375" extent="1-16" drill="0.3048"/>
+<via x="54" y="84.875" extent="1-16" drill="0.3048"/>
 <wire x1="42.75" y1="86.125" x2="46.875" y2="86.125" width="0.2032" layer="16"/>
 <wire x1="46.875" y1="86.125" x2="47.125" y2="86.375" width="0.2032" layer="16"/>
+<wire x1="51" y1="84.875" x2="50.5" y2="85.375" width="0.2032" layer="16"/>
+<wire x1="50.5" y1="85.375" x2="50.5" y2="86.375" width="0.2032" layer="16"/>
 </signal>
 <signal name="N$5">
 <contactref element="IC10" pad="8"/>
@@ -4039,36 +4041,36 @@ Source: http://www.onsemi.co.jp .. LM137M-D.PDF</description>
 <wire x1="36.375" y1="91.5" x2="36.875" y2="91.5" width="0.2032" layer="1"/>
 <wire x1="36.25" y1="91.625" x2="36.375" y2="91.5" width="0.2032" layer="1"/>
 <wire x1="36.25" y1="91.875" x2="36.25" y2="91.625" width="0.2032" layer="1"/>
-<wire x1="35.75" y1="92.375" x2="36.25" y2="91.875" width="0.2032" layer="1"/>
-<wire x1="31" y1="92.375" x2="35.75" y2="92.375" width="0.2032" layer="1"/>
-<wire x1="30.625" y1="92" x2="31" y2="92.375" width="0.2032" layer="1"/>
-<wire x1="31.5" y1="91.125" x2="30.625" y2="92" width="0.2032" layer="16"/>
+<wire x1="35.5" y1="92.625" x2="36.25" y2="91.875" width="0.2032" layer="1"/>
+<wire x1="30.75" y1="92.625" x2="35.5" y2="92.625" width="0.2032" layer="1"/>
+<wire x1="30.375" y1="92.25" x2="30.75" y2="92.625" width="0.2032" layer="1"/>
+<wire x1="31.5" y1="91.125" x2="30.375" y2="92.25" width="0.2032" layer="16"/>
 <wire x1="31.25" y1="91.125" x2="31.5" y2="91.125" width="0.2032" layer="1"/>
 <wire x1="30.875" y1="90.75" x2="31.25" y2="91.125" width="0.2032" layer="1"/>
-<wire x1="30.875" y1="83.875" x2="30.875" y2="90.75" width="0.2032" layer="1"/>
-<wire x1="28.375" y1="81.375" x2="30.875" y2="83.875" width="0.2032" layer="1"/>
-<wire x1="28.375" y1="77.25" x2="28.375" y2="81.375" width="0.2032" layer="1"/>
-<wire x1="29" y1="76.625" x2="28.375" y2="77.25" width="0.2032" layer="1"/>
-<wire x1="29.5" y1="76.625" x2="29" y2="76.625" width="0.2032" layer="1"/>
+<wire x1="30.875" y1="83.75" x2="30.875" y2="90.75" width="0.2032" layer="1"/>
+<wire x1="28.625" y1="81.5" x2="30.875" y2="83.75" width="0.2032" layer="1"/>
+<wire x1="28.625" y1="77.25" x2="28.625" y2="81.5" width="0.2032" layer="1"/>
+<wire x1="29.25" y1="76.625" x2="28.625" y2="77.25" width="0.2032" layer="1"/>
+<wire x1="29.5" y1="76.625" x2="29.25" y2="76.625" width="0.2032" layer="1"/>
 <wire x1="29.625" y1="76.5" x2="29.5" y2="76.625" width="0.2032" layer="1"/>
-<wire x1="29.625" y1="76.25" x2="29.625" y2="76.5" width="0.2032" layer="1"/>
-<wire x1="29.625" y1="74" x2="29.625" y2="76.25" width="0.2032" layer="16"/>
+<wire x1="29.625" y1="76.375" x2="29.625" y2="76.5" width="0.2032" layer="1"/>
+<wire x1="29.625" y1="74" x2="29.625" y2="76.375" width="0.2032" layer="16"/>
 <wire x1="29.375" y1="73.75" x2="29.625" y2="74" width="0.2032" layer="1"/>
 <wire x1="29.375" y1="72.125" x2="29.375" y2="73.75" width="0.2032" layer="1"/>
 <wire x1="29.125" y1="71.875" x2="29.375" y2="72.125" width="0.2032" layer="1"/>
 <wire x1="36.875" y1="91.5" x2="36.93" y2="91.468" width="0.2032" layer="1"/>
-<via x="30.625" y="92" extent="1-16" drill="0.3048"/>
+<via x="30.375" y="92.25" extent="1-16" drill="0.3048"/>
 <via x="31.5" y="91.125" extent="1-16" drill="0.3048"/>
-<via x="29.625" y="76.25" extent="1-16" drill="0.3048"/>
+<via x="29.625" y="76.375" extent="1-16" drill="0.3048"/>
 <via x="29.625" y="74" extent="1-16" drill="0.3048"/>
 </signal>
 <signal name="EXTGATE">
 <contactref element="J14" pad="15"/>
 <contactref element="J14" pad="16"/>
 <contactref element="J5" pad="SWITCH@3"/>
-<wire x1="58.015" y1="104.535" x2="52.935" y2="104.535" width="0.2032" layer="16"/>
-<wire x1="52.935" y1="104.535" x2="51.91" y2="104.535" width="0.2032" layer="16"/>
-<wire x1="51.91" y1="104.535" x2="50.875" y2="103.5" width="0.2032" layer="16"/>
+<wire x1="58.015" y1="103.785" x2="52.935" y2="103.785" width="0.2032" layer="16"/>
+<wire x1="52.935" y1="103.785" x2="51.91" y2="103.535" width="0.2032" layer="16"/>
+<wire x1="51.91" y1="103.535" x2="50.875" y2="103.5" width="0.2032" layer="16"/>
 <wire x1="50.875" y1="103.5" x2="48.75" y2="103.5" width="0.2032" layer="16"/>
 <wire x1="48.75" y1="103.5" x2="48.5" y2="103.75" width="0.2032" layer="16"/>
 <via x="48.5" y="103.75" extent="1-16" drill="0.3048"/>

@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="12.5" unitdist="mil" unit="mil" style="dots" multiple="1" display="yes" altdistance="0.025" altunitdist="inch" altunit="inch"/>
+<grid distance="50" unitdist="mil" unit="mil" style="dots" multiple="1" display="yes" altdistance="0.025" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="2" name="Route2" color="1" fill="3" visible="no" active="no"/>
@@ -29,10 +29,10 @@
 <layer number="19" name="Unrouted" color="6" fill="1" visible="yes" active="yes"/>
 <layer number="20" name="Dimension" color="15" fill="1" visible="yes" active="yes"/>
 <layer number="21" name="tPlace" color="7" fill="1" visible="yes" active="yes"/>
-<layer number="22" name="bPlace" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="22" name="bPlace" color="11" fill="1" visible="yes" active="yes"/>
 <layer number="23" name="tOrigins" color="15" fill="1" visible="yes" active="yes"/>
 <layer number="24" name="bOrigins" color="15" fill="1" visible="yes" active="yes"/>
-<layer number="25" name="tNames" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="25" name="tNames" color="57" fill="1" visible="yes" active="yes"/>
 <layer number="26" name="bNames" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="27" name="tValues" color="7" fill="1" visible="no" active="yes"/>
 <layer number="28" name="bValues" color="7" fill="1" visible="no" active="yes"/>
@@ -312,14 +312,9 @@ NS Package M08A</description>
 <rectangle x1="0.39" y1="2" x2="0.88" y2="3.1" layer="51"/>
 <rectangle x1="-0.88" y1="2" x2="-0.39" y2="3.1" layer="51"/>
 <rectangle x1="-2.15" y1="2" x2="-1.66" y2="3.1" layer="51"/>
-<wire x1="-2.54" y1="4.445" x2="-2.54" y2="1.27" width="0.127" layer="21"/>
 <wire x1="-2.54" y1="1.27" x2="-2.54" y2="-1.27" width="0.127" layer="21"/>
 <wire x1="-2.54" y1="-1.27" x2="-2.54" y2="-4.445" width="0.127" layer="21"/>
-<wire x1="-2.54" y1="-4.445" x2="2.54" y2="-4.445" width="0.127" layer="21"/>
-<wire x1="2.54" y1="-4.445" x2="2.54" y2="-1.27" width="0.127" layer="21"/>
 <wire x1="2.54" y1="-1.27" x2="2.54" y2="1.27" width="0.127" layer="21"/>
-<wire x1="2.54" y1="1.27" x2="2.54" y2="4.445" width="0.127" layer="21"/>
-<wire x1="2.54" y1="4.445" x2="-2.54" y2="4.445" width="0.127" layer="21"/>
 <wire x1="-2.54" y1="1.27" x2="2.54" y2="1.27" width="0.127" layer="21"/>
 <wire x1="2.54" y1="-1.27" x2="-1.27" y2="-1.27" width="0.127" layer="21"/>
 <wire x1="-1.27" y1="-1.27" x2="-2.54" y2="-1.27" width="0.127" layer="21"/>
@@ -390,44 +385,36 @@ NS Package M08A</description>
 <rectangle x1="-8.636" y1="-4.318" x2="-3.81" y2="4.318" layer="21"/>
 <text x="0" y="0" size="1.016" layer="25" ratio="10" rot="SR0" align="center">&gt;NAME</text>
 </package>
-<package name="ERRORLOGO">
-<wire x1="-1.75" y1="0" x2="0" y2="1.75" width="0.1" layer="21"/>
-<wire x1="0" y1="1.75" x2="1.75" y2="0" width="0.1" layer="21"/>
-<wire x1="1.75" y1="0" x2="0" y2="-1.75" width="0.1" layer="21"/>
-<wire x1="0" y1="-1.75" x2="-1.75" y2="0" width="0.1" layer="21"/>
-<wire x1="0" y1="-1.75" x2="-0.5" y2="-0.125" width="0.1" layer="21"/>
-<wire x1="-0.5" y1="-0.125" x2="-1" y2="1.5" width="0.1" layer="21"/>
-<wire x1="-1" y1="1.5" x2="1" y2="1.5" width="0.1" layer="21"/>
-<wire x1="1" y1="1.5" x2="0.5" y2="-0.125" width="0.1" layer="21"/>
-<wire x1="0.5" y1="-0.125" x2="0" y2="-1.75" width="0.1" layer="21"/>
-<wire x1="-1" y1="-1.5" x2="-0.5" y2="0.125" width="0.1" layer="21"/>
-<wire x1="-0.5" y1="0.125" x2="0" y2="1.75" width="0.1" layer="21"/>
-<wire x1="0" y1="1.75" x2="0.5" y2="0.125" width="0.1" layer="21"/>
-<wire x1="0.5" y1="0.125" x2="1" y2="-1.5" width="0.1" layer="21"/>
-<wire x1="1" y1="-1.5" x2="-1" y2="-1.5" width="0.1" layer="21"/>
-<wire x1="-0.5" y1="0" x2="0.5" y2="0" width="0.05" layer="21"/>
-<wire x1="-0.5" y1="0.125" x2="0.5" y2="0.125" width="0.05" layer="21"/>
-<wire x1="0.4625" y1="0.25" x2="-0.4625" y2="0.25" width="0.05" layer="21"/>
-<wire x1="-0.4125" y1="0.375" x2="0.425" y2="0.375" width="0.05" layer="21"/>
-<wire x1="-0.375" y1="0.5" x2="0.375" y2="0.5" width="0.05" layer="21"/>
-<wire x1="-0.35" y1="0.625" x2="0.35" y2="0.625" width="0.05" layer="21"/>
-<wire x1="-0.2875" y1="0.75" x2="0.3" y2="0.75" width="0.05" layer="21"/>
-<wire x1="-0.25" y1="0.875" x2="0.25" y2="0.875" width="0.05" layer="21"/>
-<wire x1="-0.25" y1="1" x2="0.2125" y2="1" width="0.05" layer="21"/>
-<wire x1="-0.1875" y1="1.125" x2="0.1875" y2="1.125" width="0.05" layer="21"/>
-<wire x1="-0.125" y1="1.25" x2="0.125" y2="1.25" width="0.05" layer="21"/>
-<wire x1="-0.125" y1="1.375" x2="0.125" y2="1.375" width="0.05" layer="21"/>
-<wire x1="-0.125" y1="-1.375" x2="0.125" y2="-1.375" width="0.05" layer="21"/>
-<wire x1="-0.125" y1="-1.25" x2="0.125" y2="-1.25" width="0.05" layer="21"/>
-<wire x1="-0.1625" y1="-1.125" x2="0.1625" y2="-1.125" width="0.05" layer="21"/>
-<wire x1="-0.25" y1="-1" x2="0.225" y2="-1" width="0.05" layer="21"/>
-<wire x1="0.25" y1="-0.875" x2="-0.25" y2="-0.875" width="0.05" layer="21"/>
-<wire x1="-0.3125" y1="-0.75" x2="0.2875" y2="-0.75" width="0.05" layer="21"/>
-<wire x1="0.3375" y1="-0.625" x2="-0.325" y2="-0.625" width="0.05" layer="21"/>
-<wire x1="-0.375" y1="-0.5" x2="0.375" y2="-0.5" width="0.05" layer="21"/>
-<wire x1="0.375" y1="-0.375" x2="-0.375" y2="-0.375" width="0.05" layer="21"/>
-<wire x1="-0.45" y1="-0.25" x2="0.45" y2="-0.25" width="0.05" layer="21"/>
-<wire x1="0.5" y1="-0.125" x2="-0.5" y2="-0.125" width="0.05" layer="21"/>
+<package name="ERRORLOGO_BIGGER">
+<wire x1="-10" y1="0" x2="0" y2="10" width="0.5" layer="21"/>
+<wire x1="0" y1="10" x2="10" y2="0" width="0.5" layer="21"/>
+<wire x1="10" y1="0" x2="0" y2="-10" width="0.5" layer="21"/>
+<wire x1="0" y1="-10" x2="-10" y2="0" width="0.5" layer="21"/>
+<wire x1="-5" y1="8" x2="5" y2="8" width="0.5" layer="21"/>
+<wire x1="5" y1="8" x2="2.5" y2="-1" width="0.5" layer="21"/>
+<wire x1="2.5" y1="-1" x2="0" y2="-10" width="0.5" layer="21"/>
+<wire x1="0" y1="-10" x2="-2.5" y2="-1" width="0.5" layer="21"/>
+<wire x1="-2.5" y1="-1" x2="-5" y2="8" width="0.5" layer="21"/>
+<wire x1="-5" y1="-8" x2="-2.5" y2="1" width="0.5" layer="21"/>
+<wire x1="-2.5" y1="1" x2="0" y2="10" width="0.5" layer="21"/>
+<wire x1="0" y1="10" x2="2.5" y2="1" width="0.5" layer="21"/>
+<wire x1="2.5" y1="1" x2="5" y2="-8" width="0.5" layer="21"/>
+<wire x1="5" y1="-8" x2="-5" y2="-8" width="0.5" layer="21"/>
+<wire x1="-0.8" y1="7" x2="0.8" y2="7" width="0.5" layer="21"/>
+<wire x1="-1.1" y1="6" x2="1.1" y2="6" width="0.5" layer="21"/>
+<wire x1="-1.4" y1="5" x2="1.4" y2="5" width="0.5" layer="21"/>
+<wire x1="-1.6" y1="4" x2="1.6" y2="4" width="0.5" layer="21"/>
+<wire x1="-1.9" y1="3" x2="1.9" y2="3" width="0.5" layer="21"/>
+<wire x1="-2.2" y1="2" x2="2.2" y2="2" width="0.5" layer="21"/>
+<wire x1="-0.8" y1="-7" x2="0.8" y2="-7" width="0.5" layer="21"/>
+<wire x1="-1.1" y1="-6" x2="1.1" y2="-6" width="0.5" layer="21"/>
+<wire x1="1.4" y1="-5" x2="-1.4" y2="-5" width="0.5" layer="21"/>
+<wire x1="-1.6" y1="-4" x2="1.6" y2="-4" width="0.5" layer="21"/>
+<wire x1="1.9" y1="-3" x2="-1.9" y2="-3" width="0.5" layer="21"/>
+<wire x1="-2.2" y1="-2" x2="2.2" y2="-2" width="0.5" layer="21"/>
+<wire x1="2.5" y1="-1" x2="-2.5" y2="-1" width="0.5" layer="21"/>
+<wire x1="-2.7" y1="0" x2="2.7" y2="0" width="0.5" layer="21"/>
+<wire x1="2.5" y1="1" x2="-2.5" y2="1" width="0.5" layer="21"/>
 </package>
 <package name="TINRS_ROCKET">
 <rectangle x1="-9.4055" y1="-5.3625" x2="-8.8975" y2="-5.2355" layer="21"/>
@@ -951,8 +938,8 @@ design rules under a new name.</description>
 <element name="D6" library="SparkFun-DiscreteSemi" package="SOT23" value="" x="15.875" y="33.3375" rot="R180">
 <attribute name="PROD_ID" value="DIO-10647" x="15.875" y="33.3375" size="1.778" layer="27" rot="R180" display="off"/>
 </element>
-<element name="U$10" library="EurorackModularParts" package="ERRORLOGO" value="ERRORLOGO" x="3.175" y="103.1875"/>
-<element name="U$13" library="EurorackModularParts" package="TINRS_ROCKET" value="TINRS_ARTWORKROCKET" x="32.385" y="97.155" rot="R180"/>
+<element name="U$10" library="EurorackModularParts" package="ERRORLOGO_BIGGER" value="ERRORLOGOBIGGER" x="10.16" y="26.67" rot="MR0"/>
+<element name="U$13" library="EurorackModularParts" package="TINRS_ROCKET" value="TINRS_ARTWORKROCKET" x="10.16" y="96.52" rot="MR90"/>
 </elements>
 <signals>
 <signal name="GND" class="1">
