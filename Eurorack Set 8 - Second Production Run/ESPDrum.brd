@@ -527,27 +527,27 @@ design rules under a new name.</description>
 <elements>
 <element name="MDL1" library="EurorackModularParts" package="ESP8266-ESP12E" value="" x="10.414" y="14.478" rot="R180"/>
 <element name="U$1" library="EurorackModularParts" package="EURORACK4HPPCB" value="EURORACK_PCB4HP" x="0" y="0"/>
-<element name="U$2" library="EurorackModularParts" package="3.5MM-JACK-SWITCH-13MM-OUTPUT" value="PJ-341" x="10.16" y="31.75">
-<attribute name="DESC" value="Output" x="10.16" y="31.75" size="1.778" layer="27" display="off"/>
-<attribute name="MPN" value="PJ-341" x="10.16" y="31.75" size="1.778" layer="27" display="off"/>
+<element name="U$2" library="EurorackModularParts" package="3.5MM-JACK-SWITCH-13MM-OUTPUT" value="PJ-341" x="10.16" y="31.75" rot="R90">
+<attribute name="DESC" value="Output" x="10.16" y="31.75" size="1.778" layer="27" rot="R90" display="off"/>
+<attribute name="MPN" value="PJ-341" x="10.16" y="31.75" size="1.778" layer="27" rot="R90" display="off"/>
 </element>
-<element name="U$3" library="EurorackModularParts" package="3.5MM-JACK-SWITCH-13MM-OUTPUT" value="PJ-341" x="10.16" y="43.18">
-<attribute name="DESC" value="Output" x="10.16" y="43.18" size="1.778" layer="27" display="off"/>
-<attribute name="MPN" value="PJ-341" x="10.16" y="43.18" size="1.778" layer="27" display="off"/>
+<element name="U$3" library="EurorackModularParts" package="3.5MM-JACK-SWITCH-13MM-OUTPUT" value="PJ-341" x="10.16" y="41.91" rot="R90">
+<attribute name="DESC" value="Output" x="10.16" y="41.91" size="1.778" layer="27" rot="R90" display="off"/>
+<attribute name="MPN" value="PJ-341" x="10.16" y="41.91" size="1.778" layer="27" rot="R90" display="off"/>
 </element>
-<element name="U$4" library="EurorackModularParts" package="3.5MM-JACK-SWITCH-13MM-INPUT" value="PJ-341" x="10.16" y="68.58">
-<attribute name="DESC" value="Input" x="10.16" y="68.58" size="1.778" layer="27" display="off"/>
-<attribute name="MPN" value="PJ-341" x="10.16" y="68.58" size="1.778" layer="27" display="off"/>
+<element name="U$4" library="EurorackModularParts" package="3.5MM-JACK-SWITCH-13MM-INPUT" value="PJ-341" x="10.16" y="64.77" rot="R90">
+<attribute name="DESC" value="Input" x="10.16" y="64.77" size="1.778" layer="27" rot="R90" display="off"/>
+<attribute name="MPN" value="PJ-341" x="10.16" y="64.77" size="1.778" layer="27" rot="R90" display="off"/>
 </element>
-<element name="U$5" library="EurorackModularParts" package="3.5MM-JACK-SWITCH-13MM-INPUT" value="PJ-341" x="36.83" y="59.69">
-<attribute name="DESC" value="Input" x="36.83" y="59.69" size="1.778" layer="27" display="off"/>
-<attribute name="MPN" value="PJ-341" x="36.83" y="59.69" size="1.778" layer="27" display="off"/>
+<element name="U$5" library="EurorackModularParts" package="3.5MM-JACK-SWITCH-13MM-INPUT" value="PJ-341" x="10.16" y="54.61" rot="R90">
+<attribute name="DESC" value="Input" x="10.16" y="54.61" size="1.778" layer="27" rot="R90" display="off"/>
+<attribute name="MPN" value="PJ-341" x="10.16" y="54.61" size="1.778" layer="27" rot="R90" display="off"/>
 </element>
 <element name="U$6" library="EurorackModularParts" package="OG-POTS_ALPS_POT_VERTICAL" value="" x="10.16" y="99.06">
 <attribute name="DESC" value="Parameter" x="10.16" y="99.06" size="1.778" layer="27" display="off"/>
 </element>
-<element name="U$7" library="EurorackModularParts" package="OG-POTS_ALPS_POT_VERTICAL" value="" x="10.16" y="83.82">
-<attribute name="DESC" value="Parameter" x="10.16" y="83.82" size="1.778" layer="27" display="off"/>
+<element name="U$7" library="EurorackModularParts" package="OG-POTS_ALPS_POT_VERTICAL" value="" x="10.16" y="81.28">
+<attribute name="DESC" value="Parameter" x="10.16" y="81.28" size="1.778" layer="27" display="off"/>
 </element>
 </elements>
 <signals>
