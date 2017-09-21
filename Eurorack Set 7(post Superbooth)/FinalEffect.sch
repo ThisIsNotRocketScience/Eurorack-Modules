@@ -6003,6 +6003,9 @@ We've spent an enormous amount of time creating and checking these footprints an
 <instance part="GND96" gate="1" x="397.51" y="91.44" rot="R90"/>
 <instance part="U$33" gate="G$1" x="391.16" y="99.06"/>
 <instance part="U$43" gate="G$1" x="391.16" y="83.82"/>
+<instance part="IC3" gate="K" x="444.5" y="179.07"/>
+<instance part="IC3" gate="N" x="468.63" y="161.29"/>
+<instance part="IC4" gate="M" x="467.36" y="179.07"/>
 </instances>
 <busses>
 </busses>
@@ -6947,13 +6950,6 @@ We've spent an enormous amount of time creating and checking these footprints an
 <label x="80.01" y="-30.48" size="1.778" layer="95"/>
 </segment>
 </net>
-<net name="ADC_VELOCITY" class="0">
-<segment>
-<pinref part="MCU" gate="G$4" pin="PTD6"/>
-<wire x1="101.6" y1="-33.02" x2="80.01" y2="-33.02" width="0.1524" layer="91"/>
-<label x="80.01" y="-33.02" size="1.778" layer="95"/>
-</segment>
-</net>
 <net name="N$57" class="0">
 <segment>
 <pinref part="MCU" gate="G$2" pin="PTA4"/>
@@ -7089,6 +7085,27 @@ We've spent an enormous amount of time creating and checking these footprints an
 <pinref part="MCU" gate="G$3" pin="PTC3"/>
 <wire x1="101.6" y1="36.83" x2="81.28" y2="36.83" width="0.1524" layer="91"/>
 <label x="81.28" y="36.83" size="1.778" layer="95"/>
+</segment>
+</net>
+<net name="LED_UP" class="0">
+<segment>
+<pinref part="MCU" gate="G$2" pin="PTA13"/>
+<wire x1="20.32" y1="-29.21" x2="5.08" y2="-29.21" width="0.1524" layer="91"/>
+<label x="3.81" y="-29.21" size="1.778" layer="95"/>
+</segment>
+</net>
+<net name="LED_ENTER" class="0">
+<segment>
+<pinref part="MCU" gate="G$4" pin="PTC4"/>
+<wire x1="101.6" y1="2.54" x2="87.63" y2="2.54" width="0.1524" layer="91"/>
+<label x="86.36" y="2.54" size="1.778" layer="95"/>
+</segment>
+</net>
+<net name="LED_DOWN" class="0">
+<segment>
+<pinref part="MCU" gate="G$4" pin="PTD7"/>
+<wire x1="101.6" y1="-35.56" x2="86.36" y2="-35.56" width="0.1524" layer="91"/>
+<label x="86.36" y="-35.56" size="1.778" layer="95"/>
 </segment>
 </net>
 </nets>
@@ -7575,6 +7592,7 @@ We've spent an enormous amount of time creating and checking these footprints an
 <attribute name="MPN" x="142.24" y="229.87" size="1.778" layer="96" display="off"/>
 </instance>
 <instance part="GND1" gate="1" x="2.54" y="138.43" rot="R90"/>
+<instance part="IC5" gate="D" x="58.42" y="181.61"/>
 </instances>
 <busses>
 </busses>
@@ -8322,7 +8340,7 @@ We've spent an enormous amount of time creating and checking these footprints an
 <pinref part="GND12" gate="1" pin="GND"/>
 </segment>
 </net>
-<net name="DOWNBUTTON_LED" class="0">
+<net name="LED_DOWN" class="0">
 <segment>
 <pinref part="R44" gate="R" pin="2"/>
 <wire x1="157.48" y1="22.86" x2="146.05" y2="22.86" width="0.1524" layer="91"/>
@@ -8361,7 +8379,7 @@ We've spent an enormous amount of time creating and checking these footprints an
 <label x="114.3" y="30.48" size="1.778" layer="95" rot="R90"/>
 </segment>
 </net>
-<net name="ENTERBUTTON_LED" class="0">
+<net name="LED_ENTER" class="0">
 <segment>
 <pinref part="R45" gate="R" pin="2"/>
 <wire x1="114.3" y1="20.32" x2="101.6" y2="20.32" width="0.1524" layer="91"/>
@@ -8374,7 +8392,7 @@ We've spent an enormous amount of time creating and checking these footprints an
 <pinref part="R4" gate="R" pin="1"/>
 </segment>
 </net>
-<net name="UPBUTTON_LED" class="0">
+<net name="LED_UP" class="0">
 <segment>
 <pinref part="R4" gate="R" pin="2"/>
 <wire x1="219.71" y1="22.86" x2="208.28" y2="22.86" width="0.1524" layer="91"/>
@@ -8395,21 +8413,13 @@ We've spent an enormous amount of time creating and checking these footprints an
 </sheet>
 </sheets>
 <errors>
-<approved hash="104,1,425.45,119.38,IC3O,V+,3.3V,,,"/>
-<approved hash="104,1,425.45,104.14,IC3O,V-,GND,,,"/>
-<approved hash="104,1,429.26,119.38,IC4O,V+,3.3V,,,"/>
-<approved hash="104,1,429.26,104.14,IC4O,V-,GND,,,"/>
+<approved hash="104,1,414.02,119.38,IC3O,V+,3.3V,,,"/>
+<approved hash="104,1,414.02,104.14,IC3O,V-,GND,,,"/>
+<approved hash="104,1,425.45,119.38,IC4O,V+,3.3V,,,"/>
+<approved hash="104,1,425.45,104.14,IC4O,V-,GND,,,"/>
 <approved hash="104,2,205.74,40.64,U6,VCC,3.3V,,,"/>
-<approved hash="104,6,130.81,105.41,U4,VCC,3.3V,,,"/>
-<approved hash="104,6,45.72,95.25,U5,VCC,3.3V,,,"/>
-<approved hash="104,1,90.17,-10.16,IC1P,V+,12V,,,"/>
-<approved hash="104,1,90.17,-25.4,IC1P,V-,-12V,,,"/>
-<approved hash="104,1,685.8,151.13,U1,VDD,3.3V,,,"/>
-<approved hash="104,1,695.96,151.13,U1,VEE,GND,,,"/>
-<approved hash="104,1,685.8,82.55,U3,VDD,3.3V,,,"/>
-<approved hash="104,1,695.96,82.55,U3,VEE,GND,,,"/>
-<approved hash="104,1,778.51,151.13,U7,VDD,3.3V,,,"/>
-<approved hash="104,1,788.67,151.13,U7,VEE,GND,,,"/>
+<approved hash="104,1,388.62,99.06,IC1P,V+,12V,,,"/>
+<approved hash="104,1,388.62,83.82,IC1P,V-,-12V,,,"/>
 <approved hash="104,5,151.13,149.86,IC5P,V+,12V,,,"/>
 <approved hash="104,5,151.13,134.62,IC5P,V-,-12V,,,"/>
 </errors>
