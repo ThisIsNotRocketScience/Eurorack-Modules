@@ -7161,7 +7161,7 @@ new: Attribute TP_SIGNAL_NAME&lt;br&gt;
 <junction x="695.96" y="17.78"/>
 </segment>
 </net>
-<net name="N$18" class="0">
+<net name="NOTE_SCALEROPAMPPOST" class="0">
 <segment>
 <pinref part="R8" gate="R" pin="1"/>
 <wire x1="695.96" y1="35.56" x2="666.75" y2="35.56" width="0.1524" layer="91"/>
@@ -7175,6 +7175,7 @@ new: Attribute TP_SIGNAL_NAME&lt;br&gt;
 <pinref part="R4" gate="R" pin="1"/>
 <wire x1="695.96" y1="35.56" x2="699.77" y2="35.56" width="0.1524" layer="91"/>
 <junction x="695.96" y="35.56"/>
+<label x="675.64" y="58.42" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="N$9" class="0">
@@ -7192,7 +7193,7 @@ new: Attribute TP_SIGNAL_NAME&lt;br&gt;
 <pinref part="IC3" gate="D" pin="-IN"/>
 </segment>
 </net>
-<net name="N$10" class="0">
+<net name="NOTE_SCALEROPAMPPRE" class="0">
 <segment>
 <pinref part="R7" gate="R" pin="1"/>
 <wire x1="635" y1="33.02" x2="651.51" y2="33.02" width="0.1524" layer="91"/>
@@ -7205,6 +7206,7 @@ new: Attribute TP_SIGNAL_NAME&lt;br&gt;
 <junction x="635" y="33.02"/>
 <junction x="635" y="48.26"/>
 <pinref part="IC3" gate="A" pin="-IN"/>
+<label x="632.46" y="58.42" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="DACCS" class="0">
@@ -8007,7 +8009,7 @@ new: Attribute TP_SIGNAL_NAME&lt;br&gt;
 <label x="487.68" y="144.78" size="1.778" layer="95"/>
 </segment>
 </net>
-<net name="N$2" class="0">
+<net name="NOTE_INVERTERPRE" class="0">
 <segment>
 <pinref part="R4" gate="R" pin="2"/>
 <pinref part="IC3" gate="B" pin="-IN"/>
@@ -8017,9 +8019,10 @@ new: Attribute TP_SIGNAL_NAME&lt;br&gt;
 <pinref part="R6" gate="R" pin="1"/>
 <wire x1="709.93" y1="29.21" x2="716.28" y2="29.21" width="0.1524" layer="91"/>
 <junction x="709.93" y="35.56"/>
+<label x="695.96" y="25.4" size="1.778" layer="95"/>
 </segment>
 </net>
-<net name="N$14" class="0">
+<net name="NOTE_OUT" class="0">
 <segment>
 <pinref part="R6" gate="R" pin="2"/>
 <wire x1="723.9" y1="29.21" x2="734.06" y2="29.21" width="0.1524" layer="91"/>
@@ -8030,6 +8033,7 @@ new: Attribute TP_SIGNAL_NAME&lt;br&gt;
 <wire x1="764.54" y1="39.37" x2="735.33" y2="39.37" width="0.1524" layer="91"/>
 <wire x1="735.33" y1="39.37" x2="734.06" y2="38.1" width="0.1524" layer="91"/>
 <junction x="734.06" y="38.1"/>
+<label x="736.6" y="25.4" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="N$17" class="0">
@@ -8209,11 +8213,12 @@ new: Attribute TP_SIGNAL_NAME&lt;br&gt;
 <wire x1="626.11" y1="27.94" x2="627.38" y2="27.94" width="0.1524" layer="91"/>
 </segment>
 </net>
-<net name="N$7" class="0">
+<net name="NOTE_DACOUT" class="0">
 <segment>
 <pinref part="U7" gate="A" pin="VOUTB"/>
 <pinref part="R7" gate="R" pin="2"/>
 <wire x1="617.22" y1="33.02" x2="627.38" y2="33.02" width="0.1524" layer="91"/>
+<label x="614.68" y="22.86" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="PTA6" class="0">
