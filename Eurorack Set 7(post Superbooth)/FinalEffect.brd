@@ -920,6 +920,10 @@ We've spent an enormous amount of time creating and checking these footprints an
 <pad name="P$7" x="-6.35" y="15.24" drill="1"/>
 <pad name="P$8" x="-8.89" y="15.24" drill="1"/>
 <rectangle x1="-9.95" y1="-6.7" x2="9.95" y2="6.7" layer="51"/>
+<wire x1="-10" y1="6.75" x2="10" y2="6.75" width="0.127" layer="255"/>
+<wire x1="10" y1="6.75" x2="10" y2="-6.75" width="0.127" layer="255"/>
+<wire x1="10" y1="-6.75" x2="-10" y2="-6.75" width="0.127" layer="255"/>
+<wire x1="-10" y1="-6.75" x2="-10" y2="6.75" width="0.127" layer="255"/>
 </package>
 </packages>
 </library>

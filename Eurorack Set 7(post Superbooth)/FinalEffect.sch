@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.05" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
+<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="no" active="no"/>
 <layer number="2" name="Route2" color="1" fill="3" visible="no" active="no"/>
@@ -5119,6 +5119,10 @@ We've spent an enormous amount of time creating and checking these footprints an
 <pad name="P$7" x="-6.35" y="15.24" drill="1"/>
 <pad name="P$8" x="-8.89" y="15.24" drill="1"/>
 <rectangle x1="-9.95" y1="-6.7" x2="9.95" y2="6.7" layer="51"/>
+<wire x1="-10" y1="6.75" x2="10" y2="6.75" width="0.127" layer="255"/>
+<wire x1="10" y1="6.75" x2="10" y2="-6.75" width="0.127" layer="255"/>
+<wire x1="10" y1="-6.75" x2="-10" y2="-6.75" width="0.127" layer="255"/>
+<wire x1="-10" y1="-6.75" x2="-10" y2="6.75" width="0.127" layer="255"/>
 </package>
 </packages>
 <symbols>

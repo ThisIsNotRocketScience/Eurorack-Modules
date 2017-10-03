@@ -28,10 +28,10 @@
 <layer number="18" name="Vias" color="2" fill="1" visible="yes" active="yes"/>
 <layer number="19" name="Unrouted" color="6" fill="1" visible="yes" active="yes"/>
 <layer number="20" name="Dimension" color="15" fill="1" visible="yes" active="yes"/>
-<layer number="21" name="tPlace" color="7" fill="1" visible="no" active="yes"/>
-<layer number="22" name="bPlace" color="7" fill="1" visible="yes" active="yes"/>
-<layer number="23" name="tOrigins" color="15" fill="1" visible="no" active="yes"/>
-<layer number="24" name="bOrigins" color="15" fill="1" visible="yes" active="yes"/>
+<layer number="21" name="tPlace" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="22" name="bPlace" color="7" fill="1" visible="no" active="yes"/>
+<layer number="23" name="tOrigins" color="15" fill="1" visible="yes" active="yes"/>
+<layer number="24" name="bOrigins" color="15" fill="1" visible="no" active="yes"/>
 <layer number="25" name="tNames" color="57" fill="1" visible="no" active="yes"/>
 <layer number="26" name="bNames" color="7" fill="1" visible="no" active="yes"/>
 <layer number="27" name="tValues" color="7" fill="1" visible="no" active="yes"/>
@@ -152,8 +152,8 @@
 <layer number="249" name="Edge" color="7" fill="1" visible="no" active="no"/>
 <layer number="250" name="Descript" color="3" fill="1" visible="no" active="no"/>
 <layer number="251" name="SMDround" color="12" fill="11" visible="no" active="no"/>
-<layer number="254" name="OrgLBR" color="13" fill="1" visible="yes" active="yes"/>
-<layer number="255" name="Panel" color="14" fill="1" visible="yes" active="yes"/>
+<layer number="254" name="OrgLBR" color="13" fill="1" visible="no" active="yes"/>
+<layer number="255" name="Panel" color="14" fill="1" visible="no" active="yes"/>
 </layers>
 <board>
 <plain>
@@ -172,20 +172,6 @@
 <text x="0" y="0" size="0.508" layer="25" ratio="11" align="center">&gt;NAME</text>
 <text x="0" y="-0.9525" size="0.508" layer="27" ratio="10" align="top-center">&gt;VALUE</text>
 <rectangle x1="-1.397" y1="-0.635" x2="1.397" y2="0.635" layer="39"/>
-</package>
-<package name="AVX-A">
-<wire x1="-2.0955" y1="0.8255" x2="2.0955" y2="0.8255" width="0.127" layer="21"/>
-<wire x1="2.0955" y1="0.8255" x2="2.0955" y2="-0.8255" width="0.127" layer="21"/>
-<wire x1="2.0955" y1="-0.8255" x2="-2.0955" y2="-0.8255" width="0.127" layer="21"/>
-<wire x1="-2.0955" y1="-0.8255" x2="-2.0955" y2="0.8255" width="0.127" layer="21"/>
-<wire x1="-1" y1="0" x2="0" y2="0" width="0.127" layer="21"/>
-<wire x1="-0.5" y1="-0.5" x2="-0.5" y2="0.5" width="0.127" layer="21"/>
-<smd name="+" x="-1.27" y="0" dx="1.27" dy="1.27" layer="1"/>
-<smd name="-" x="1.27" y="0" dx="1.27" dy="1.27" layer="1" rot="R180"/>
-<text x="-1.9175" y="1.2925" size="0.889" layer="25" ratio="11">&gt;NAME</text>
-<text x="-1.6" y="-1.492" size="0.635" layer="27" ratio="10">&gt;VALUE</text>
-<rectangle x1="-2.0955" y1="-0.8255" x2="2.0955" y2="0.8255" layer="39"/>
-<rectangle x1="-2.25" y1="-1" x2="-0.75" y2="1" layer="21"/>
 </package>
 <package name="R0603">
 <wire x1="-1.397" y1="0.635" x2="1.397" y2="0.635" width="0.127" layer="21"/>
@@ -381,7 +367,7 @@
 <smd name="5" x="0" y="-1.81" dx="2.5" dy="0.75" layer="1" rot="R90"/>
 <smd name="7" x="1.27" y="-1.81" dx="2.5" dy="0.75" layer="1" rot="R90"/>
 <smd name="9" x="2.54" y="-1.81" dx="2.5" dy="0.75" layer="1" rot="R90"/>
-<text x="3.17" y="-3.62" size="0.8128" layer="25" rot="R180">&gt;NAME</text>
+<text x="0" y="0" size="0.8128" layer="25" align="center">&gt;NAME</text>
 <wire x1="-3.175" y1="-1.27" x2="-2.54" y2="-1.27" width="0.127" layer="51"/>
 <wire x1="-2.54" y1="-1.27" x2="-1.905" y2="-1.27" width="0.127" layer="51"/>
 <wire x1="-1.905" y1="-1.27" x2="-1.27" y2="-1.27" width="0.127" layer="51"/>
@@ -479,18 +465,22 @@ Source: http://www.onsemi.co.jp .. LM137M-D.PDF</description>
 <packages>
 <package name="SOT23-BEC">
 <description>TO-236 ITT Intermetall</description>
-<wire x1="1.4224" y1="0.6604" x2="1.4224" y2="-0.6604" width="0.127" layer="21"/>
-<wire x1="1.4224" y1="-0.6604" x2="-1.4224" y2="-0.6604" width="0.127" layer="21"/>
-<wire x1="-1.4224" y1="-0.6604" x2="-1.4224" y2="0.6604" width="0.127" layer="21"/>
-<wire x1="-1.4224" y1="0.6604" x2="1.4224" y2="0.6604" width="0.127" layer="21"/>
+<wire x1="1.4224" y1="0.6604" x2="1.4224" y2="-0.6604" width="0.127" layer="51"/>
+<wire x1="1.4224" y1="-0.6604" x2="-1.4224" y2="-0.6604" width="0.127" layer="51"/>
+<wire x1="-1.4224" y1="-0.6604" x2="-1.4224" y2="0.6604" width="0.127" layer="51"/>
+<wire x1="-1.4224" y1="0.6604" x2="1.4224" y2="0.6604" width="0.127" layer="51"/>
 <smd name="C" x="0" y="1.1" dx="1" dy="1.4" layer="1"/>
 <smd name="E" x="0.95" y="-1.1" dx="1" dy="1.4" layer="1"/>
 <smd name="B" x="-0.95" y="-1.1" dx="1" dy="1.4" layer="1"/>
-<text x="-1.905" y="1.905" size="1.27" layer="25">&gt;NAME</text>
+<text x="0" y="0" size="0.635" layer="25" align="center">&gt;NAME</text>
 <text x="-1.905" y="-3.175" size="1.27" layer="27">&gt;VALUE</text>
 <rectangle x1="-0.2286" y1="0.7112" x2="0.2286" y2="1.2954" layer="51"/>
 <rectangle x1="0.7112" y1="-1.2954" x2="1.1684" y2="-0.7112" layer="51"/>
 <rectangle x1="-1.1684" y1="-1.2954" x2="-0.7112" y2="-0.7112" layer="51"/>
+<wire x1="-1.27" y1="0.635" x2="-1.27" y2="-0.635" width="0.127" layer="21"/>
+<wire x1="-1.27" y1="-0.635" x2="1.27" y2="-0.635" width="0.127" layer="21"/>
+<wire x1="1.27" y1="-0.635" x2="1.27" y2="0.635" width="0.127" layer="21"/>
+<wire x1="1.27" y1="0.635" x2="-1.27" y2="0.635" width="0.127" layer="21"/>
 </package>
 </packages>
 </library>
@@ -784,6 +774,43 @@ Source: http://www.onsemi.co.jp .. LM137M-D.PDF</description>
 <text x="0" y="0" size="0.762" layer="25" ratio="10" rot="SR270" align="center">&gt;NAME</text>
 <wire x1="1.27" y1="1.27" x2="1.27" y2="-1.27" width="0.508" layer="25"/>
 </package>
+<package name="AVX-A">
+<wire x1="-2.0955" y1="0.8255" x2="2.0955" y2="0.8255" width="0.127" layer="21"/>
+<wire x1="2.0955" y1="0.8255" x2="2.0955" y2="-0.8255" width="0.127" layer="21"/>
+<wire x1="2.0955" y1="-0.8255" x2="-2.0955" y2="-0.8255" width="0.127" layer="21"/>
+<wire x1="-2.06375" y1="0.79375" x2="-3.4925" y2="0.79375" width="0.127" layer="21"/>
+<wire x1="-3.4925" y1="0.79375" x2="-3.4925" y2="-0.79375" width="0.127" layer="21"/>
+<wire x1="-3.4925" y1="-0.79375" x2="-2.06375" y2="-0.79375" width="0.127" layer="21"/>
+<rectangle x1="-2.0955" y1="-0.8255" x2="2.0955" y2="0.8255" layer="39"/>
+<smd name="+" x="-1.27" y="0" dx="1.27" dy="1.27" layer="1"/>
+<smd name="-" x="1.27" y="0" dx="1.27" dy="1.27" layer="1" rot="R180"/>
+<text x="-1.6" y="-1.492" size="0.635" layer="27" ratio="10">&gt;VALUE</text>
+<polygon width="0.127" layer="21">
+<vertex x="-3.01625" y="0.79375"/>
+<vertex x="-3.4925" y="0.79375"/>
+<vertex x="-3.4925" y="0.3175"/>
+<vertex x="-3.01625" y="0.3175"/>
+</polygon>
+<polygon width="0.127" layer="21">
+<vertex x="-3.01625" y="-0.79375"/>
+<vertex x="-3.01625" y="-0.3175"/>
+<vertex x="-3.4925" y="-0.3175"/>
+<vertex x="-3.4925" y="-0.79375"/>
+</polygon>
+<polygon width="0.127" layer="21">
+<vertex x="-2.38125" y="-0.79375"/>
+<vertex x="-2.38125" y="-0.3175"/>
+<vertex x="-2.06375" y="-0.3175"/>
+<vertex x="-2.06375" y="-0.79375"/>
+</polygon>
+<polygon width="0.127" layer="21">
+<vertex x="-2.38125" y="0.79375"/>
+<vertex x="-2.38125" y="0.3175"/>
+<vertex x="-2.06375" y="0.3175"/>
+<vertex x="-2.06375" y="0.79375"/>
+</polygon>
+<text x="0" y="0" size="0.762" layer="25" ratio="10" rot="SR0" align="center">&gt;NAME</text>
+</package>
 </packages>
 </library>
 <library name="zephod-components">
@@ -1067,12 +1094,12 @@ Source: http://www.onsemi.co.jp .. LM137M-D.PDF</description>
 <attribute name="MF" value="MULTICOMP" x="51.16" y="102.3225" size="1.778" layer="27" display="off"/>
 <attribute name="MPN" value="MC0603F104Z160CT" x="51.16" y="102.3225" size="1.778" layer="27" display="off"/>
 </element>
-<element name="C12" library="OPL" package="AVX-A" value="10uF" x="48.8475" y="91.549" rot="R180">
+<element name="C12" library="EurorackModularParts" package="AVX-A" value="10uF" x="48.8475" y="91.549" rot="R180">
 <attribute name="OC_FARNELL" value="197427" x="48.8475" y="91.549" size="1.778" layer="27" rot="R180" display="off"/>
 <attribute name="MF" value="AVX" x="48.8475" y="91.549" size="1.778" layer="27" rot="R180" display="off"/>
 <attribute name="MPN" value="TAJB106K020RNJ" x="48.8475" y="91.549" size="1.778" layer="27" rot="R180" display="off"/>
 </element>
-<element name="C13" library="OPL" package="AVX-A" value="10uF" x="51.3065" y="104.617" rot="R180">
+<element name="C13" library="EurorackModularParts" package="AVX-A" value="10uF" x="51.3065" y="104.617" rot="R180">
 <attribute name="OC_FARNELL" value="197427" x="51.3065" y="104.617" size="1.778" layer="27" rot="R180" display="off"/>
 <attribute name="MF" value="AVX" x="51.3065" y="104.617" size="1.778" layer="27" rot="R180" display="off"/>
 <attribute name="MPN" value="TAJB106K020RNJ" x="51.3065" y="104.617" size="1.778" layer="27" rot="R180" display="off"/>
@@ -1279,7 +1306,7 @@ Source: http://www.onsemi.co.jp .. LM137M-D.PDF</description>
 <attribute name="OC_FARNELL" value="unknown" x="53.34" y="43.18" size="1.778" layer="27" rot="R180" display="off"/>
 <attribute name="MF" value="" x="53.34" y="43.18" size="1.778" layer="27" rot="R180" display="off"/>
 </element>
-<element name="C5" library="OPL" package="AVX-A" value="10uF" x="55.995" y="87.9" rot="R90">
+<element name="C5" library="EurorackModularParts" package="AVX-A" value="10uF" x="55.995" y="87.9" rot="R90">
 <attribute name="OC_FARNELL" value="197427" x="55.995" y="87.9" size="1.778" layer="27" rot="R90" display="off"/>
 <attribute name="MF" value="AVX" x="55.995" y="87.9" size="1.778" layer="27" rot="R90" display="off"/>
 <attribute name="MPN" value="TAJB106K020RNJ" x="55.995" y="87.9" size="1.778" layer="27" rot="R90" display="off"/>
