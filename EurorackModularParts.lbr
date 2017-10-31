@@ -498,6 +498,7 @@ PCB width:
 <rectangle x1="-2" y1="4" x2="2" y2="6" layer="41"/>
 <rectangle x1="-2" y1="4" x2="2" y2="6" layer="21"/>
 <text x="0" y="0" size="2.032" layer="25" ratio="10" rot="SR0" align="center">&gt;NAME</text>
+<text x="0" y="-2.54" size="1.27" layer="21" ratio="10" rot="SR0" align="center">&gt;VALUE</text>
 </package>
 <package name="ALPS_POT">
 <wire x1="6.73" y1="4.93" x2="6.73" y2="-4.93" width="0.2032" layer="51"/>
@@ -1711,7 +1712,7 @@ NS Package M08A</description>
 <hole x="63.38" y="3" drill="3.2"/>
 <hole x="63.38" y="125.5" drill="3.2"/>
 </package>
-<package name="AVX-A">
+<package name="CASE-A_3216">
 <wire x1="-2.0955" y1="0.8255" x2="2.0955" y2="0.8255" width="0.127" layer="21"/>
 <wire x1="2.0955" y1="0.8255" x2="2.0955" y2="-0.8255" width="0.127" layer="21"/>
 <wire x1="2.0955" y1="-0.8255" x2="-2.0955" y2="-0.8255" width="0.127" layer="21"/>
@@ -2091,6 +2092,7 @@ NS Package M08A</description>
 <wire x1="-13.96" y1="4.4" x2="-13.96" y2="-4.445" width="0.127" layer="21"/>
 <wire x1="-13.335" y1="3.81" x2="-13.335" y2="-3.81" width="0.127" layer="21"/>
 <rectangle x1="-13.97" y1="-4.445" x2="-10.16" y2="4.445" layer="21"/>
+<text x="0" y="0" size="2.54" layer="25" align="center">&gt;NAME</text>
 </package>
 <package name="4PIN5MM">
 <pad name="1" x="-7.5" y="0" drill="1.016" diameter="1.778" shape="square"/>
@@ -2133,6 +2135,7 @@ NS Package M08A</description>
 <wire x1="5.5" y1="-4" x2="5.5" y2="-3" width="0.127" layer="21"/>
 <wire x1="5.5" y1="-3" x2="9.5" y2="-3" width="0.127" layer="21"/>
 <wire x1="9.5" y1="-3" x2="9.5" y2="-4" width="0.127" layer="21"/>
+<text x="0" y="0" size="2.54" layer="25" align="center">&gt;NAME</text>
 </package>
 <package name="2X05_SMT_HEADER">
 <smd name="1" x="-5.08" y="-2.54" dx="3.17" dy="1" layer="1" rot="R270"/>
@@ -2343,6 +2346,27 @@ or will meet your specific requirements.&lt;p&gt;
 <circle x="0" y="0" radius="8" width="0.127" layer="21"/>
 <circle x="0" y="0" radius="7.5" width="0.127" layer="21"/>
 <circle x="0" y="0" radius="7" width="0.127" layer="21"/>
+</package>
+<package name="POT_SMALLERHOLE">
+<circle x="0" y="0" radius="2.54" width="0.2032" layer="51"/>
+<wire x1="-4.295" y1="5.46" x2="4.295" y2="5.46" width="0.127" layer="51"/>
+<wire x1="4.295" y1="5.46" x2="4.295" y2="-4.33" width="0.127" layer="51"/>
+<wire x1="4.295" y1="-4.33" x2="-4.295" y2="-4.33" width="0.127" layer="51"/>
+<wire x1="-4.295" y1="-4.33" x2="-4.295" y2="5.46" width="0.127" layer="51"/>
+<wire x1="1.1" y1="-0.625" x2="-1.1" y2="-0.625" width="0.2032" layer="51" curve="239.208901"/>
+<wire x1="2.45" y1="-0.625" x2="-2.425" y2="-0.625" width="0.2032" layer="51"/>
+<pad name="P$1" x="-2.58" y="-6.7" drill="1" diameter="1.8796" rot="R90"/>
+<pad name="P$2" x="0" y="-6.7" drill="1" diameter="1.8796" rot="R90"/>
+<pad name="P$3" x="2.58" y="-6.7" drill="1" diameter="1.8796" rot="R90"/>
+<pad name="P$4" x="4.4" y="0" drill="2.2" diameter="3.175" rot="R90"/>
+<pad name="P$5" x="-4.4" y="0" drill="2.2" diameter="3.175" rot="R90"/>
+<circle x="0" y="0" radius="6" width="1" layer="21"/>
+<circle x="0" y="0" radius="3.5" width="0.002540625" layer="255"/>
+<text x="0" y="7.62" size="1.778" layer="254" align="bottom-center">&gt;DESC</text>
+<rectangle x1="-2" y1="4" x2="2" y2="6" layer="41"/>
+<rectangle x1="-2" y1="4" x2="2" y2="6" layer="21"/>
+<text x="0" y="0" size="2.032" layer="25" ratio="10" rot="SR0" align="center">&gt;NAME</text>
+<text x="0" y="-2.54" size="1.27" layer="21" ratio="10" rot="SR0" align="center">&gt;VALUE</text>
 </package>
 </packages>
 <symbols>
@@ -3334,6 +3358,16 @@ or will meet your specific requirements.&lt;p&gt;
 <technology name=""/>
 </technologies>
 </device>
+<device name="ZEPHPOT_SMALLHOLE" package="POT_SMALLERHOLE">
+<connects>
+<connect gate="G$1" pin="A" pad="P$3"/>
+<connect gate="G$1" pin="E" pad="P$1"/>
+<connect gate="G$1" pin="S" pad="P$2"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
 </devices>
 </deviceset>
 <deviceset name="MCP6001">
@@ -3831,7 +3865,7 @@ or will meet your specific requirements.&lt;p&gt;
 <gate name="C" symbol="C-POLAR" x="0" y="0"/>
 </gates>
 <devices>
-<device name="-A" package="AVX-A">
+<device name="-A" package="CASE-A_3216">
 <connects>
 <connect gate="C" pin="1" pad="+"/>
 <connect gate="C" pin="2" pad="-"/>

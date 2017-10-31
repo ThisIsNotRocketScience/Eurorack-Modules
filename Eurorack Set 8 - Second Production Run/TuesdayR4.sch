@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.05" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
+<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="no" active="no"/>
 <layer number="2" name="Route2" color="1" fill="3" visible="no" active="no"/>
@@ -183,46 +183,6 @@
 <text x="-1.651" y="-0.254" size="0.635" layer="27" ratio="10">&gt;VALUE</text>
 <rectangle x1="-1.651" y1="-0.889" x2="1.651" y2="0.889" layer="39"/>
 </package>
-<package name="AVX-A">
-<wire x1="-2.0955" y1="0.8255" x2="2.0955" y2="0.8255" width="0.127" layer="21"/>
-<wire x1="2.0955" y1="0.8255" x2="2.0955" y2="-0.8255" width="0.127" layer="21"/>
-<wire x1="2.0955" y1="-0.8255" x2="-2.0955" y2="-0.8255" width="0.127" layer="21"/>
-<wire x1="-2.0955" y1="-0.8255" x2="-2.0955" y2="0.8255" width="0.127" layer="21"/>
-<wire x1="-1" y1="0" x2="0" y2="0" width="0.127" layer="21"/>
-<wire x1="-0.5" y1="-0.5" x2="-0.5" y2="0.5" width="0.127" layer="21"/>
-<smd name="+" x="-1.27" y="0" dx="1.27" dy="1.27" layer="1"/>
-<smd name="-" x="1.27" y="0" dx="1.27" dy="1.27" layer="1" rot="R180"/>
-<text x="-1.9175" y="1.2925" size="0.889" layer="25" ratio="11">&gt;NAME</text>
-<text x="-1.6" y="-1.492" size="0.635" layer="27" ratio="10">&gt;VALUE</text>
-<rectangle x1="-2.0955" y1="-0.8255" x2="2.0955" y2="0.8255" layer="39"/>
-<rectangle x1="-2.25" y1="-1" x2="-0.75" y2="1" layer="21"/>
-</package>
-<package name="AVX-B">
-<wire x1="-2.2225" y1="1.397" x2="2.2225" y2="1.397" width="0.1016" layer="21"/>
-<wire x1="2.2225" y1="1.397" x2="2.2225" y2="-1.397" width="0.1016" layer="21"/>
-<wire x1="2.2225" y1="-1.397" x2="-2.2225" y2="-1.397" width="0.1016" layer="21"/>
-<wire x1="-2.2225" y1="-1.397" x2="-2.2225" y2="1.397" width="0.1016" layer="21"/>
-<wire x1="-0.6985" y1="0" x2="-0.1905" y2="0" width="0.127" layer="21"/>
-<wire x1="-0.4445" y1="-0.254" x2="-0.4445" y2="0.254" width="0.127" layer="21"/>
-<smd name="+" x="-1.4605" y="0" dx="1.143" dy="2.286" layer="1"/>
-<smd name="-" x="1.4605" y="0" dx="1.143" dy="2.286" layer="1" rot="R180"/>
-<text x="-1.905" y="1.905" size="0.889" layer="25" ratio="11">&gt;NAME</text>
-<text x="-1.651" y="-0.381" size="0.635" layer="27" ratio="10">&gt;VALUE</text>
-<rectangle x1="-2.2225" y1="-1.397" x2="2.2225" y2="1.397" layer="39"/>
-</package>
-<package name="AVX-C">
-<wire x1="-3.7465" y1="1.651" x2="3.7465" y2="1.651" width="0.127" layer="21"/>
-<wire x1="3.7465" y1="1.651" x2="3.7465" y2="-1.651" width="0.127" layer="21"/>
-<wire x1="3.7465" y1="-1.651" x2="-3.7465" y2="-1.651" width="0.127" layer="21"/>
-<wire x1="-3.7465" y1="-1.651" x2="-3.7465" y2="1.651" width="0.127" layer="21"/>
-<wire x1="-1.7145" y1="0" x2="-0.9525" y2="0" width="0.127" layer="21"/>
-<wire x1="-1.3335" y1="-0.381" x2="-1.3335" y2="0.381" width="0.127" layer="21"/>
-<smd name="+" x="-2.794" y="0" dx="2.54" dy="1.524" layer="1" rot="R90"/>
-<smd name="-" x="2.794" y="0" dx="2.54" dy="1.524" layer="1" rot="R90"/>
-<text x="-1.905" y="1.905" size="0.889" layer="25" ratio="11">&gt;NAME</text>
-<text x="-1.905" y="0" size="0.635" layer="27" ratio="10">&gt;VALUE</text>
-<rectangle x1="-3.7465" y1="-1.651" x2="3.7465" y2="1.651" layer="39"/>
-</package>
 <package name="R0603">
 <wire x1="-1.397" y1="0.635" x2="1.397" y2="0.635" width="0.127" layer="21"/>
 <wire x1="1.397" y1="0.635" x2="1.397" y2="-0.635" width="0.127" layer="21"/>
@@ -365,17 +325,6 @@
 <text x="0" y="1.27" size="1.27" layer="95" ratio="10" align="bottom-center">&gt;NAME</text>
 <text x="0" y="-1.27" size="1.27" layer="96" font="vector" ratio="10" align="top-center">&gt;VALUE</text>
 </symbol>
-<symbol name="C-POLAR">
-<wire x1="-1.27" y1="-2.54" x2="-1.27" y2="0" width="0.4064" layer="94"/>
-<wire x1="-1.27" y1="0" x2="-1.27" y2="2.54" width="0.4064" layer="94"/>
-<wire x1="0.635" y1="0" x2="2.54" y2="0" width="0.1524" layer="94"/>
-<wire x1="1.27" y1="2.54" x2="1.27" y2="-2.54" width="0.4064" layer="94" curve="53.130102"/>
-<wire x1="-1.27" y1="0" x2="-2.54" y2="0" width="0.1524" layer="94"/>
-<pin name="1" x="-5.08" y="0" visible="off" length="short"/>
-<pin name="2" x="5.08" y="0" visible="off" length="short" rot="R180"/>
-<text x="0" y="3.81" size="1.27" layer="95" font="vector" ratio="10" align="bottom-center">&gt;NAME</text>
-<text x="0" y="-3.81" size="1.27" layer="96" font="vector" ratio="10" align="top-center">&gt;VALUE</text>
-</symbol>
 <symbol name="R">
 <wire x1="-1.27" y1="0.635" x2="1.27" y2="0.635" width="0.0508" layer="94"/>
 <wire x1="1.27" y1="0.635" x2="1.27" y2="0" width="0.0508" layer="94"/>
@@ -420,40 +369,6 @@
 <connects>
 <connect gate="C" pin="1" pad="1"/>
 <connect gate="C" pin="2" pad="2"/>
-</connects>
-<technologies>
-<technology name=""/>
-</technologies>
-</device>
-</devices>
-</deviceset>
-<deviceset name="C-POLAR*" prefix="C" uservalue="yes">
-<gates>
-<gate name="C" symbol="C-POLAR" x="0" y="0"/>
-</gates>
-<devices>
-<device name="-A" package="AVX-A">
-<connects>
-<connect gate="C" pin="1" pad="+"/>
-<connect gate="C" pin="2" pad="-"/>
-</connects>
-<technologies>
-<technology name=""/>
-</technologies>
-</device>
-<device name="-B" package="AVX-B">
-<connects>
-<connect gate="C" pin="1" pad="+"/>
-<connect gate="C" pin="2" pad="-"/>
-</connects>
-<technologies>
-<technology name=""/>
-</technologies>
-</device>
-<device name="-C" package="AVX-C">
-<connects>
-<connect gate="C" pin="1" pad="+"/>
-<connect gate="C" pin="2" pad="-"/>
 </connects>
 <technologies>
 <technology name=""/>
@@ -3479,6 +3394,69 @@ PCB width:
 <text x="-5.6134" y="-4.7244" size="2.0828" layer="27" ratio="10" rot="SR0">&gt;VALUE</text>
 <rectangle x1="-2.25" y1="1" x2="-0.5" y2="2.75" layer="21"/>
 </package>
+<package name="AVX-A">
+<wire x1="-2.0955" y1="0.8255" x2="2.0955" y2="0.8255" width="0.127" layer="21"/>
+<wire x1="2.0955" y1="0.8255" x2="2.0955" y2="-0.8255" width="0.127" layer="21"/>
+<wire x1="2.0955" y1="-0.8255" x2="-2.0955" y2="-0.8255" width="0.127" layer="21"/>
+<wire x1="-2.06375" y1="0.79375" x2="-3.4925" y2="0.79375" width="0.127" layer="21"/>
+<wire x1="-3.4925" y1="0.79375" x2="-3.4925" y2="-0.79375" width="0.127" layer="21"/>
+<wire x1="-3.4925" y1="-0.79375" x2="-2.06375" y2="-0.79375" width="0.127" layer="21"/>
+<rectangle x1="-2.0955" y1="-0.8255" x2="2.0955" y2="0.8255" layer="39"/>
+<smd name="+" x="-1.27" y="0" dx="1.27" dy="1.27" layer="1"/>
+<smd name="-" x="1.27" y="0" dx="1.27" dy="1.27" layer="1" rot="R180"/>
+<text x="-1.6" y="-1.492" size="0.635" layer="27" ratio="10">&gt;VALUE</text>
+<polygon width="0.127" layer="21">
+<vertex x="-3.01625" y="0.79375"/>
+<vertex x="-3.4925" y="0.79375"/>
+<vertex x="-3.4925" y="0.3175"/>
+<vertex x="-3.01625" y="0.3175"/>
+</polygon>
+<polygon width="0.127" layer="21">
+<vertex x="-3.01625" y="-0.79375"/>
+<vertex x="-3.01625" y="-0.3175"/>
+<vertex x="-3.4925" y="-0.3175"/>
+<vertex x="-3.4925" y="-0.79375"/>
+</polygon>
+<polygon width="0.127" layer="21">
+<vertex x="-2.38125" y="-0.79375"/>
+<vertex x="-2.38125" y="-0.3175"/>
+<vertex x="-2.06375" y="-0.3175"/>
+<vertex x="-2.06375" y="-0.79375"/>
+</polygon>
+<polygon width="0.127" layer="21">
+<vertex x="-2.38125" y="0.79375"/>
+<vertex x="-2.38125" y="0.3175"/>
+<vertex x="-2.06375" y="0.3175"/>
+<vertex x="-2.06375" y="0.79375"/>
+</polygon>
+<text x="0" y="0" size="0.762" layer="25" ratio="10" rot="SR0" align="center">&gt;NAME</text>
+</package>
+<package name="AVX-B">
+<wire x1="-2.2225" y1="1.397" x2="2.2225" y2="1.397" width="0.1016" layer="21"/>
+<wire x1="2.2225" y1="1.397" x2="2.2225" y2="-1.397" width="0.1016" layer="21"/>
+<wire x1="2.2225" y1="-1.397" x2="-2.2225" y2="-1.397" width="0.1016" layer="21"/>
+<wire x1="-2.2225" y1="-1.397" x2="-2.2225" y2="1.397" width="0.1016" layer="21"/>
+<wire x1="-0.6985" y1="0" x2="-0.1905" y2="0" width="0.127" layer="21"/>
+<wire x1="-0.4445" y1="-0.254" x2="-0.4445" y2="0.254" width="0.127" layer="21"/>
+<rectangle x1="-2.2225" y1="-1.397" x2="2.2225" y2="1.397" layer="39"/>
+<smd name="+" x="-1.4605" y="0" dx="1.143" dy="2.286" layer="1"/>
+<smd name="-" x="1.4605" y="0" dx="1.143" dy="2.286" layer="1" rot="R180"/>
+<text x="-1.905" y="1.905" size="0.889" layer="25" ratio="11">&gt;NAME</text>
+<text x="-1.651" y="-0.381" size="0.635" layer="27" ratio="10">&gt;VALUE</text>
+</package>
+<package name="AVX-C">
+<wire x1="-3.7465" y1="1.651" x2="3.7465" y2="1.651" width="0.127" layer="21"/>
+<wire x1="3.7465" y1="1.651" x2="3.7465" y2="-1.651" width="0.127" layer="21"/>
+<wire x1="3.7465" y1="-1.651" x2="-3.7465" y2="-1.651" width="0.127" layer="21"/>
+<wire x1="-3.7465" y1="-1.651" x2="-3.7465" y2="1.651" width="0.127" layer="21"/>
+<wire x1="-1.7145" y1="0" x2="-0.9525" y2="0" width="0.127" layer="21"/>
+<wire x1="-1.3335" y1="-0.381" x2="-1.3335" y2="0.381" width="0.127" layer="21"/>
+<rectangle x1="-3.7465" y1="-1.651" x2="3.7465" y2="1.651" layer="39"/>
+<smd name="+" x="-2.794" y="0" dx="2.54" dy="1.524" layer="1" rot="R90"/>
+<smd name="-" x="2.794" y="0" dx="2.54" dy="1.524" layer="1" rot="R90"/>
+<text x="-1.905" y="1.905" size="0.889" layer="25" ratio="11">&gt;NAME</text>
+<text x="-1.905" y="0" size="0.635" layer="27" ratio="10">&gt;VALUE</text>
+</package>
 </packages>
 <symbols>
 <symbol name="AUDIO-JACK">
@@ -3668,6 +3646,19 @@ PCB width:
 <wire x1="12.7" y1="15.24" x2="-12.7" y2="15.24" width="0.4064" layer="94"/>
 <text x="-5.842" y="17.7546" size="2.0828" layer="95" ratio="10" rot="SR0">&gt;NAME</text>
 <text x="-7.8994" y="-26.1366" size="2.0828" layer="96" ratio="10" rot="SR0">&gt;VALUE</text>
+</symbol>
+<symbol name="C-POLAR">
+<wire x1="-1.27" y1="-2.54" x2="-1.27" y2="0" width="0.4064" layer="94"/>
+<wire x1="-1.27" y1="0" x2="-1.27" y2="2.54" width="0.4064" layer="94"/>
+<wire x1="0.635" y1="0" x2="2.54" y2="0" width="0.1524" layer="94"/>
+<wire x1="1.27" y1="2.54" x2="1.27" y2="-2.54" width="0.4064" layer="94" curve="53.130102"/>
+<wire x1="-1.27" y1="0" x2="-2.54" y2="0" width="0.1524" layer="94"/>
+<wire x1="-2.54" y1="1.905" x2="-3.81" y2="1.905" width="0.254" layer="94"/>
+<wire x1="-3.175" y1="2.54" x2="-3.175" y2="1.27" width="0.254" layer="94"/>
+<pin name="1" x="-5.08" y="0" visible="off" length="short"/>
+<pin name="2" x="5.08" y="0" visible="off" length="short" rot="R180"/>
+<text x="0" y="3.81" size="1.27" layer="95" font="vector" ratio="10" align="bottom-center">&gt;NAME</text>
+<text x="0" y="-3.81" size="1.27" layer="96" font="vector" ratio="10" align="top-center">&gt;VALUE</text>
 </symbol>
 </symbols>
 <devicesets>
@@ -4056,6 +4047,40 @@ PCB width:
 <attribute name="PACKAGE" value="QFN-16" constant="no"/>
 <attribute name="SUPPLIER" value="NXP" constant="no"/>
 </technology>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="C-POLAR*" prefix="C" uservalue="yes">
+<gates>
+<gate name="C" symbol="C-POLAR" x="0" y="0"/>
+</gates>
+<devices>
+<device name="-A" package="AVX-A">
+<connects>
+<connect gate="C" pin="1" pad="+"/>
+<connect gate="C" pin="2" pad="-"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="-B" package="AVX-B">
+<connects>
+<connect gate="C" pin="1" pad="+"/>
+<connect gate="C" pin="2" pad="-"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="-C" package="AVX-C">
+<connects>
+<connect gate="C" pin="1" pad="+"/>
+<connect gate="C" pin="2" pad="-"/>
+</connects>
+<technologies>
+<technology name=""/>
 </technologies>
 </device>
 </devices>
@@ -4933,12 +4958,12 @@ new: Attribute TP_SIGNAL_NAME&lt;br&gt;
 <attribute name="MPN" value="MC0603F104Z160CT"/>
 <attribute name="OC_FARNELL" value="1759017"/>
 </part>
-<part name="C12" library="OPL" deviceset="C-POLAR*" device="-A" value="10uF">
+<part name="C12" library="EurorackModularParts" deviceset="C-POLAR*" device="-A" value="10uF">
 <attribute name="MF" value="AVX"/>
 <attribute name="MPN" value="TAJB106K020RNJ"/>
 <attribute name="OC_FARNELL" value="197427"/>
 </part>
-<part name="C13" library="OPL" deviceset="C-POLAR*" device="-A" value="10uF">
+<part name="C13" library="EurorackModularParts" deviceset="C-POLAR*" device="-A" value="10uF">
 <attribute name="MF" value="AVX"/>
 <attribute name="MPN" value="TAJB106K020RNJ"/>
 <attribute name="OC_FARNELL" value="197427"/>
@@ -5169,7 +5194,7 @@ new: Attribute TP_SIGNAL_NAME&lt;br&gt;
 </part>
 <part name="GND2" library="SparkFun" deviceset="GND" device=""/>
 <part name="SUPPLY7" library="SparkFun-Aesthetics" deviceset="3.3V" device=""/>
-<part name="C5" library="OPL" deviceset="C-POLAR*" device="-A" value="10uF">
+<part name="C5" library="EurorackModularParts" deviceset="C-POLAR*" device="-A" value="10uF">
 <attribute name="MF" value="AVX"/>
 <attribute name="MPN" value="TAJB106K020RNJ"/>
 <attribute name="OC_FARNELL" value="197427"/>

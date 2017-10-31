@@ -205,6 +205,7 @@
 <rectangle x1="-2" y1="4" x2="2" y2="6" layer="41"/>
 <rectangle x1="-2" y1="4" x2="2" y2="6" layer="21"/>
 <text x="0" y="0" size="2.032" layer="25" ratio="10" rot="SR0" align="center">&gt;NAME</text>
+<text x="0" y="-2.54" size="1.27" layer="21" ratio="10" rot="SR0" align="center">&gt;VALUE</text>
 </package>
 <package name="3.5MM-JACK-SWITCH-13MM-INPUT">
 <wire x1="-4.2" y1="-1.25" x2="-3.2" y2="-1.25" width="0" layer="46"/>
@@ -549,7 +550,7 @@
 <vertex x="1.246" y="1.246"/>
 </polygon>
 </package>
-<package name="AVX-A">
+<package name="CASE-A_3216">
 <wire x1="-2.0955" y1="0.8255" x2="2.0955" y2="0.8255" width="0.127" layer="21"/>
 <wire x1="2.0955" y1="0.8255" x2="2.0955" y2="-0.8255" width="0.127" layer="21"/>
 <wire x1="2.0955" y1="-0.8255" x2="-2.0955" y2="-0.8255" width="0.127" layer="21"/>
@@ -1200,12 +1201,12 @@ design rules under a new name.</description>
 <attribute name="MF" value="MULTICOMP" x="-6.7945" y="87.1855" size="1.778" layer="27" display="off"/>
 <attribute name="OC_FARNELL" value="1759017" x="-6.7945" y="87.1855" size="1.778" layer="27" display="off"/>
 </element>
-<element name="C12" library="EurorackModularParts" package="AVX-A" value="10uF" x="14.1605" y="52.5145">
+<element name="C12" library="EurorackModularParts" package="CASE-A_3216" value="10uF" x="14.1605" y="52.5145">
 <attribute name="MPN" value="TAJB106K020RNJ" x="6.5405" y="76.6445" size="1.778" layer="27" display="off"/>
 <attribute name="MF" value="AVX" x="6.5405" y="76.6445" size="1.778" layer="27" display="off"/>
 <attribute name="OC_FARNELL" value="197427" x="6.5405" y="76.6445" size="1.778" layer="27" display="off"/>
 </element>
-<element name="C13" library="EurorackModularParts" package="AVX-A" value="10uF" x="20.828" y="51.181" rot="R180">
+<element name="C13" library="EurorackModularParts" package="CASE-A_3216" value="10uF" x="20.828" y="51.181" rot="R180">
 <attribute name="MPN" value="TAJB106K020RNJ" x="36.068" y="32.131" size="1.778" layer="27" rot="R180" display="off"/>
 <attribute name="MF" value="AVX" x="36.068" y="32.131" size="1.778" layer="27" rot="R180" display="off"/>
 <attribute name="OC_FARNELL" value="197427" x="36.068" y="32.131" size="1.778" layer="27" rot="R180" display="off"/>
@@ -1215,7 +1216,7 @@ design rules under a new name.</description>
 <attribute name="MF" value="STMICROELECTRONICS" x="19.939" y="60.6425" size="1.778" layer="27" display="off"/>
 <attribute name="OC_FARNELL" value="1467776" x="19.939" y="60.6425" size="1.778" layer="27" display="off"/>
 </element>
-<element name="C5" library="EurorackModularParts" package="AVX-A" value="10uF" x="33.782" y="68.834" rot="R180">
+<element name="C5" library="EurorackModularParts" package="CASE-A_3216" value="10uF" x="33.782" y="68.834" rot="R180">
 <attribute name="MPN" value="TAJB106K020RNJ" x="33.782" y="87.884" size="1.778" layer="27" rot="R180" display="off"/>
 <attribute name="MF" value="AVX" x="33.782" y="87.884" size="1.778" layer="27" rot="R180" display="off"/>
 <attribute name="OC_FARNELL" value="197427" x="33.782" y="87.884" size="1.778" layer="27" rot="R180" display="off"/>
@@ -1606,22 +1607,22 @@ design rules under a new name.</description>
 <attribute name="OC_FARNELL" value="unknown" x="37.592" y="3.683" size="1.778" layer="27" rot="R180" display="off"/>
 <attribute name="MF" value="" x="37.592" y="3.683" size="1.778" layer="27" rot="R180" display="off"/>
 </element>
-<element name="C29" library="EurorackModularParts" package="AVX-A" value="10uF" x="21.18" y="21.591">
+<element name="C29" library="EurorackModularParts" package="CASE-A_3216" value="10uF" x="21.18" y="21.591">
 <attribute name="MPN" value="TAJB106K020RNJ" x="21.18" y="21.591" size="1.778" layer="27" display="off"/>
 <attribute name="MF" value="AVX" x="21.18" y="21.591" size="1.778" layer="27" display="off"/>
 <attribute name="OC_FARNELL" value="197427" x="21.18" y="21.591" size="1.778" layer="27" display="off"/>
 </element>
-<element name="C30" library="EurorackModularParts" package="AVX-A" value="10uF" x="21.17" y="19.593">
+<element name="C30" library="EurorackModularParts" package="CASE-A_3216" value="10uF" x="21.17" y="19.593">
 <attribute name="MPN" value="TAJB106K020RNJ" x="21.17" y="19.593" size="1.778" layer="27" display="off"/>
 <attribute name="MF" value="AVX" x="21.17" y="19.593" size="1.778" layer="27" display="off"/>
 <attribute name="OC_FARNELL" value="197427" x="21.17" y="19.593" size="1.778" layer="27" display="off"/>
 </element>
-<element name="C31" library="EurorackModularParts" package="AVX-A" value="10uF" x="20.642" y="14.588">
+<element name="C31" library="EurorackModularParts" package="CASE-A_3216" value="10uF" x="20.642" y="14.588">
 <attribute name="MPN" value="TAJB106K020RNJ" x="20.642" y="14.588" size="1.778" layer="27" display="off"/>
 <attribute name="MF" value="AVX" x="20.642" y="14.588" size="1.778" layer="27" display="off"/>
 <attribute name="OC_FARNELL" value="197427" x="20.642" y="14.588" size="1.778" layer="27" display="off"/>
 </element>
-<element name="C32" library="EurorackModularParts" package="AVX-A" value="10uF" x="20.642" y="16.586">
+<element name="C32" library="EurorackModularParts" package="CASE-A_3216" value="10uF" x="20.642" y="16.586">
 <attribute name="MPN" value="TAJB106K020RNJ" x="20.642" y="16.586" size="1.778" layer="27" display="off"/>
 <attribute name="MF" value="AVX" x="20.642" y="16.586" size="1.778" layer="27" display="off"/>
 <attribute name="OC_FARNELL" value="197427" x="20.642" y="16.586" size="1.778" layer="27" display="off"/>
