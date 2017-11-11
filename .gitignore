@@ -59,6 +59,9 @@ ZephMultiples.dxf
 *.job
 Eurorack Set 8 - Second Production Run/Frontpanels/Wobbler_Rev1.PNLDESC
 *.PNLDESC
-*.AssemblyTop
+*.zip
 *.AssemblyBottom
-*.Assembly
+*.AssemblyTop
+*.GBOold
+*.SILK
+EuroForError/Gerbers/BigBus_Error/BigBus_Error.Assembly
