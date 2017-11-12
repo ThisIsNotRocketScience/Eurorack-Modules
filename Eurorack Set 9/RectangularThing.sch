@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.05" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
+<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="no"/>
 <layer number="2" name="Route2" color="1" fill="3" visible="yes" active="no"/>
@@ -490,37 +490,6 @@ PCB width:
 <wire x1="13.335" y1="-10.16" x2="13.97" y2="-9.525" width="0.127" layer="21"/>
 <wire x1="-13.97" y1="4.445" x2="-13.97" y2="-10.16" width="0.127" layer="21"/>
 </package>
-<package name="POWER_16_SHROUDED_NOTEXT">
-<pad name="1" x="-8.89" y="-1.27" drill="1.016" diameter="1.8796" shape="square"/>
-<pad name="2" x="-8.89" y="1.27" drill="1.016" diameter="1.8796"/>
-<pad name="3" x="-6.35" y="-1.27" drill="1.016" diameter="1.8796"/>
-<pad name="4" x="-6.35" y="1.27" drill="1.016" diameter="1.8796"/>
-<pad name="5" x="-3.81" y="-1.27" drill="1.016" diameter="1.8796"/>
-<pad name="6" x="-3.81" y="1.27" drill="1.016" diameter="1.8796"/>
-<pad name="7" x="-1.27" y="-1.27" drill="1.016" diameter="1.8796"/>
-<pad name="8" x="-1.27" y="1.27" drill="1.016" diameter="1.8796"/>
-<pad name="9" x="1.27" y="-1.27" drill="1.016" diameter="1.8796"/>
-<pad name="10" x="1.27" y="1.27" drill="1.016" diameter="1.8796"/>
-<pad name="11" x="3.81" y="-1.27" drill="1.016" diameter="1.8796"/>
-<pad name="12" x="3.81" y="1.27" drill="1.016" diameter="1.8796"/>
-<pad name="13" x="6.35" y="-1.27" drill="1.016" diameter="1.8796"/>
-<pad name="14" x="6.35" y="1.27" drill="1.016" diameter="1.8796"/>
-<pad name="15" x="8.89" y="-1.27" drill="1.016" diameter="1.8796"/>
-<pad name="16" x="8.89" y="1.27" drill="1.016" diameter="1.8796"/>
-<wire x1="-13.96" y1="4.4" x2="13.96" y2="4.4" width="0.127" layer="21"/>
-<wire x1="13.96" y1="4.4" x2="13.96" y2="-4.4" width="0.127" layer="21"/>
-<wire x1="-2.54" y1="-4.445" x2="-2.54" y2="-3.81" width="0.127" layer="21"/>
-<wire x1="-2.54" y1="-3.81" x2="-13.335" y2="-3.81" width="0.127" layer="21"/>
-<wire x1="-13.335" y1="3.81" x2="13.335" y2="3.81" width="0.127" layer="21"/>
-<wire x1="13.335" y1="3.81" x2="13.335" y2="-3.81" width="0.127" layer="21"/>
-<wire x1="13.335" y1="-3.81" x2="2.54" y2="-3.81" width="0.127" layer="21"/>
-<wire x1="2.54" y1="-3.81" x2="2.54" y2="-4.445" width="0.127" layer="21"/>
-<wire x1="-2.54" y1="-4.445" x2="-13.96" y2="-4.445" width="0.127" layer="21"/>
-<wire x1="2.54" y1="-4.445" x2="13.97" y2="-4.445" width="0.127" layer="21"/>
-<wire x1="-13.96" y1="4.4" x2="-13.96" y2="-4.445" width="0.127" layer="21"/>
-<wire x1="-13.335" y1="3.81" x2="-13.335" y2="-3.81" width="0.127" layer="21"/>
-<rectangle x1="-13.97" y1="-4.445" x2="-10.16" y2="4.445" layer="21"/>
-</package>
 <package name="ALPS_POT">
 <wire x1="6.73" y1="4.93" x2="6.73" y2="-4.93" width="0.2032" layer="51"/>
 <wire x1="6.73" y1="-4.93" x2="-5.346" y2="-4.93" width="0.2032" layer="51"/>
@@ -596,6 +565,7 @@ PCB width:
 <rectangle x1="-2" y1="4" x2="2" y2="6" layer="41"/>
 <rectangle x1="-2" y1="4" x2="2" y2="6" layer="21"/>
 <text x="0" y="0" size="2.032" layer="25" ratio="10" rot="SR0" align="center">&gt;NAME</text>
+<text x="0" y="-2.54" size="1.27" layer="21" ratio="10" rot="SR0" align="center">&gt;VALUE</text>
 </package>
 <package name="ALPHAPOT-24MM">
 <circle x="0" y="0" radius="12" width="0.127" layer="51"/>
@@ -682,7 +652,7 @@ PCB width:
 <pad name="SECOND@3" x="0" y="-3.5" drill="0.8" diameter="1.9304" shape="long" rot="R180"/>
 <text x="0" y="0" size="2.032" layer="25" ratio="10" rot="SR0" align="center">&gt;NAME</text>
 </package>
-<package name="AVX-A">
+<package name="CASE-A_3216">
 <wire x1="-2.0955" y1="0.8255" x2="2.0955" y2="0.8255" width="0.127" layer="21"/>
 <wire x1="2.0955" y1="0.8255" x2="2.0955" y2="-0.8255" width="0.127" layer="21"/>
 <wire x1="2.0955" y1="-0.8255" x2="-2.0955" y2="-0.8255" width="0.127" layer="21"/>
@@ -900,6 +870,76 @@ NS Package M08A</description>
 <vertex x="-2.54" y="-5.715"/>
 </polygon>
 </package>
+<package name="POWER_16_SHROUDED_NOTEXT">
+<pad name="1" x="-8.89" y="-1.27" drill="1.016" diameter="1.8796" shape="square"/>
+<pad name="2" x="-8.89" y="1.27" drill="1.016" diameter="1.8796"/>
+<pad name="3" x="-6.35" y="-1.27" drill="1.016" diameter="1.8796"/>
+<pad name="4" x="-6.35" y="1.27" drill="1.016" diameter="1.8796"/>
+<pad name="5" x="-3.81" y="-1.27" drill="1.016" diameter="1.8796"/>
+<pad name="6" x="-3.81" y="1.27" drill="1.016" diameter="1.8796"/>
+<pad name="7" x="-1.27" y="-1.27" drill="1.016" diameter="1.8796"/>
+<pad name="8" x="-1.27" y="1.27" drill="1.016" diameter="1.8796"/>
+<pad name="9" x="1.27" y="-1.27" drill="1.016" diameter="1.8796"/>
+<pad name="10" x="1.27" y="1.27" drill="1.016" diameter="1.8796"/>
+<pad name="11" x="3.81" y="-1.27" drill="1.016" diameter="1.8796"/>
+<pad name="12" x="3.81" y="1.27" drill="1.016" diameter="1.8796"/>
+<pad name="13" x="6.35" y="-1.27" drill="1.016" diameter="1.8796"/>
+<pad name="14" x="6.35" y="1.27" drill="1.016" diameter="1.8796"/>
+<pad name="15" x="8.89" y="-1.27" drill="1.016" diameter="1.8796"/>
+<pad name="16" x="8.89" y="1.27" drill="1.016" diameter="1.8796"/>
+<wire x1="-13.96" y1="4.4" x2="13.96" y2="4.4" width="0.127" layer="21"/>
+<wire x1="13.96" y1="4.4" x2="13.96" y2="-4.4" width="0.127" layer="21"/>
+<wire x1="-2.54" y1="-4.445" x2="-2.54" y2="-3.81" width="0.127" layer="21"/>
+<wire x1="-2.54" y1="-3.81" x2="-13.335" y2="-3.81" width="0.127" layer="21"/>
+<wire x1="-13.335" y1="3.81" x2="13.335" y2="3.81" width="0.127" layer="21"/>
+<wire x1="13.335" y1="3.81" x2="13.335" y2="-3.81" width="0.127" layer="21"/>
+<wire x1="13.335" y1="-3.81" x2="2.54" y2="-3.81" width="0.127" layer="21"/>
+<wire x1="2.54" y1="-3.81" x2="2.54" y2="-4.445" width="0.127" layer="21"/>
+<wire x1="-2.54" y1="-4.445" x2="-13.96" y2="-4.445" width="0.127" layer="21"/>
+<wire x1="2.54" y1="-4.445" x2="13.97" y2="-4.445" width="0.127" layer="21"/>
+<wire x1="-13.96" y1="4.4" x2="-13.96" y2="-4.445" width="0.127" layer="21"/>
+<wire x1="-13.335" y1="3.81" x2="-13.335" y2="-3.81" width="0.127" layer="21"/>
+<rectangle x1="-13.97" y1="-4.445" x2="-10.16" y2="4.445" layer="21"/>
+<text x="0" y="0" size="2.54" layer="25" align="center">&gt;NAME</text>
+</package>
+<package name="POT_SMALLERHOLE">
+<circle x="0" y="0" radius="2.54" width="0.2032" layer="51"/>
+<wire x1="-4.295" y1="5.46" x2="4.295" y2="5.46" width="0.127" layer="51"/>
+<wire x1="4.295" y1="5.46" x2="4.295" y2="-4.33" width="0.127" layer="51"/>
+<wire x1="4.295" y1="-4.33" x2="-4.295" y2="-4.33" width="0.127" layer="51"/>
+<wire x1="-4.295" y1="-4.33" x2="-4.295" y2="5.46" width="0.127" layer="51"/>
+<wire x1="1.1" y1="-0.625" x2="-1.1" y2="-0.625" width="0.2032" layer="51" curve="239.208901"/>
+<wire x1="2.45" y1="-0.625" x2="-2.425" y2="-0.625" width="0.2032" layer="51"/>
+<pad name="P$1" x="-2.58" y="-6.7" drill="1" diameter="1.8796" rot="R90"/>
+<pad name="P$2" x="0" y="-6.7" drill="1" diameter="1.8796" rot="R90"/>
+<pad name="P$3" x="2.58" y="-6.7" drill="1" diameter="1.8796" rot="R90"/>
+<pad name="P$4" x="4.4" y="0" drill="2.2" diameter="3.175" rot="R90"/>
+<pad name="P$5" x="-4.4" y="0" drill="2.2" diameter="3.175" rot="R90"/>
+<circle x="0" y="0" radius="6" width="1" layer="21"/>
+<circle x="0" y="0" radius="3.5" width="0.002540625" layer="255"/>
+<text x="0" y="7.62" size="1.778" layer="254" align="bottom-center">&gt;DESC</text>
+<rectangle x1="-2" y1="4" x2="2" y2="6" layer="41"/>
+<rectangle x1="-2" y1="4" x2="2" y2="6" layer="21"/>
+<text x="0" y="0" size="2.032" layer="25" ratio="10" rot="SR0" align="center">&gt;NAME</text>
+<text x="0" y="-2.54" size="1.27" layer="21" ratio="10" rot="SR0" align="center">&gt;VALUE</text>
+</package>
+<package name="EURORACK20HP_10X10CM">
+<wire x1="0.34" y1="103" x2="0.34" y2="3" width="0.127" layer="20"/>
+<wire x1="0.34" y1="3" x2="99.84" y2="3" width="0.127" layer="20"/>
+<wire x1="99.84" y1="3" x2="99.84" y2="103" width="0.127" layer="20"/>
+<wire x1="99.84" y1="103" x2="0.34" y2="103" width="0.127" layer="20"/>
+<wire x1="0" y1="-11" x2="101.26" y2="-11" width="0" layer="255"/>
+<wire x1="101.26" y1="-11" x2="101.26" y2="117.5" width="0" layer="255"/>
+<wire x1="101.26" y1="117.5" x2="0" y2="117.5" width="0" layer="255"/>
+<wire x1="0" y1="117.5" x2="0" y2="-11" width="0" layer="255"/>
+<text x="1.5" y="113" size="1.27" layer="51">20HP eurorack pcb template</text>
+<wire x1="50.63" y1="107" x2="50.63" y2="-11" width="0.127" layer="51"/>
+<circle x="7.5" y="-8" radius="1.5" width="0.0254" layer="255"/>
+<circle x="7.5" y="114.5" radius="1.5" width="0.0254" layer="255"/>
+<wire x1="0" y1="0" x2="3.84" y2="7" width="0.127" layer="51"/>
+<circle x="93.86" y="-8" radius="1.5" width="0.0254" layer="255"/>
+<circle x="93.86" y="114.5" radius="1.5" width="0.0254" layer="255"/>
+</package>
 </packages>
 <symbols>
 <symbol name="EURORACK_PCB">
@@ -1110,6 +1150,11 @@ NS Package M08A</description>
 <technology name=""/>
 </technologies>
 </device>
+<device name="20HP_10X10CM" package="EURORACK20HP_10X10CM">
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
 </devices>
 </deviceset>
 <deviceset name="POWER">
@@ -1248,6 +1293,16 @@ NS Package M08A</description>
 <technology name=""/>
 </technologies>
 </device>
+<device name="ZEPHPOT_SMALLHOLE" package="POT_SMALLERHOLE">
+<connects>
+<connect gate="G$1" pin="A" pad="P$3"/>
+<connect gate="G$1" pin="E" pad="P$1"/>
+<connect gate="G$1" pin="S" pad="P$2"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
 </devices>
 </deviceset>
 <deviceset name="AUDIO-JACK" uservalue="yes">
@@ -1293,7 +1348,7 @@ NS Package M08A</description>
 <gate name="C" symbol="C-POLAR" x="0" y="0"/>
 </gates>
 <devices>
-<device name="-A" package="AVX-A">
+<device name="-A" package="CASE-A_3216">
 <connects>
 <connect gate="C" pin="1" pad="+"/>
 <connect gate="C" pin="2" pad="-"/>
@@ -1873,10 +1928,8 @@ We've spent an enormous amount of time creating and checking these footprints an
 <symbols>
 <symbol name="DGND">
 <wire x1="-1.905" y1="0" x2="1.905" y2="0" width="0.254" layer="94"/>
-<text x="0.254" y="0.254" size="0.762" layer="96" rot="R90" align="top-left">&gt;VALUE</text>
+<text x="-2.54" y="-2.54" size="1.778" layer="96">&gt;VALUE</text>
 <pin name="GND" x="0" y="2.54" visible="off" length="short" direction="sup" rot="R270"/>
-<wire x1="-1.397" y1="-0.508" x2="1.397" y2="-0.508" width="0.254" layer="94"/>
-<wire x1="-0.889" y1="-1.016" x2="0.889" y2="-1.016" width="0.254" layer="94"/>
 </symbol>
 </symbols>
 <devicesets>
@@ -6417,8 +6470,8 @@ diameter 5 mm, grid 2.54 mm</description>
 <wire x1="-2.54" y1="-0.508" x2="-3.048" y2="-1.524" width="0.1524" layer="94"/>
 <wire x1="-2.54" y1="-0.508" x2="-2.032" y2="-1.524" width="0.1524" layer="94"/>
 <wire x1="-2.1597" y1="1.2939" x2="-1.7018" y2="2.2352" width="0.1524" layer="94"/>
-<text x="1.27" y="0.889" size="0.762" layer="95">&gt;NAME</text>
-<text x="1.27" y="-1.27" size="0.762" layer="96">&gt;VALUE</text>
+<text x="-5.969" y="-3.81" size="1.778" layer="95" rot="R90">&gt;NAME</text>
+<text x="-3.81" y="-3.81" size="1.778" layer="96" rot="R90">&gt;VALUE</text>
 <pin name="A" x="0" y="-5.08" visible="pad" length="short" direction="pas" rot="R90"/>
 <pin name="E" x="0" y="5.08" visible="pad" length="short" direction="pas" rot="R270"/>
 <pin name="S" x="5.08" y="0" visible="pad" length="short" direction="pas" rot="R180"/>
@@ -7789,7 +7842,7 @@ diameter 5 mm, grid 2.54 mm</description>
 </class>
 </classes>
 <parts>
-<part name="U$1" library="EurorackModularParts" deviceset="EURORACK_PCB" device="24HP_10X10CM" value="EURORACK_PCB24HP_10X10CM"/>
+<part name="U$1" library="EurorackModularParts" deviceset="EURORACK_PCB" device="20HP_10X10CM" value="EURORACK_PCB20HP_10X10CM"/>
 <part name="IC1" library="CEM" deviceset="CEM3310" device=""/>
 <part name="IC3" library="CEM" deviceset="CEM3320" device=""/>
 <part name="IC7" library="CEM" deviceset="CEM3340" device=""/>
@@ -8496,7 +8549,6 @@ diameter 5 mm, grid 2.54 mm</description>
 <pinref part="GND22" gate="1" pin="GND"/>
 <pinref part="C6" gate="C" pin="2"/>
 <junction x="204.47" y="-162.56"/>
-<pinref part="C6" gate="C" pin="2"/>
 </segment>
 <segment>
 <pinref part="C7" gate="C" pin="1"/>
@@ -8810,14 +8862,12 @@ diameter 5 mm, grid 2.54 mm</description>
 <pinref part="C34" gate="C" pin="2"/>
 <pinref part="GND85" gate="1" pin="GND"/>
 <junction x="-11.43" y="167.64"/>
-<pinref part="GND85" gate="1" pin="GND"/>
 </segment>
 <segment>
 <pinref part="C35" gate="C" pin="1"/>
 <pinref part="C36" gate="C" pin="2"/>
 <pinref part="GND86" gate="1" pin="GND"/>
 <junction x="59.69" y="139.7"/>
-<pinref part="GND86" gate="1" pin="GND"/>
 </segment>
 </net>
 <net name="N$1" class="0">
