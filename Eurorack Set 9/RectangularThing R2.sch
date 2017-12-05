@@ -10794,11 +10794,6 @@ diameter 5 mm, grid 2.54 mm</description>
 </net>
 <net name="10V" class="1">
 <segment>
-<pinref part="U$6" gate="G$1" pin="A"/>
-<wire x1="3.81" y1="102.87" x2="-6.35" y2="102.87" width="0.1524" layer="91"/>
-<label x="-5.08" y="102.87" size="1.778" layer="95"/>
-</segment>
-<segment>
 <pinref part="U$5" gate="G$1" pin="E"/>
 <wire x1="33.02" y1="88.9" x2="27.94" y2="88.9" width="0.1524" layer="91"/>
 <label x="31.75" y="88.9" size="1.778" layer="95" rot="R180"/>
@@ -10809,6 +10804,13 @@ diameter 5 mm, grid 2.54 mm</description>
 <pinref part="R88" gate="R" pin="1"/>
 <wire x1="93.98" y1="69.85" x2="102.87" y2="69.85" width="0.1524" layer="91"/>
 <label x="96.52" y="69.85" size="1.27" layer="95"/>
+</segment>
+</net>
+<net name="5V" class="1">
+<segment>
+<pinref part="U$6" gate="G$1" pin="A"/>
+<wire x1="3.81" y1="102.87" x2="-6.35" y2="102.87" width="0.1524" layer="91"/>
+<label x="-5.08" y="102.87" size="1.778" layer="95"/>
 </segment>
 </net>
 </nets>
