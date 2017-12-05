@@ -2,28 +2,14 @@
 
 This is the central repo for all the "This is not Rocket Science" eurorack modular synth modules.
 
-Modules included so far:
+Please refer to the "Production" folder if you are looking for boards to build. You will find all the design & firmware files for our latest production versions. Artwork is NOT included. Be creative. 
 
-# Eurorack Set 1:
+All our current development & experiments can be found in the "Development" folder
 
-## Modules:
-- Goldfish 
-- Chameleon 
-- Sonic Screwdriver
-- Multiples
-- ScaleOffset
-- TimeLord
-- GateRhytm
+Sourcecode to the firmware can be found in the Eurorack-KDS repository
 
-## Utility boards:
-- Jack
-- Opamp
+Tools needed:
 
-# Eurorack Set 2:
-
-## Modules:
-- Protoboard module
-
-## Utility boards:
-- Test frame 1
-
+- Eagle 7+
+- Kinetis Development Studio (or whatever the latest NXP/freescale IDE is)
+- A JTAG probe to flash the initial firmware
