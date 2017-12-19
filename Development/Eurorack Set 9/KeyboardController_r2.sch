@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
+<grid distance="0.05" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="no" active="no"/>
 <layer number="2" name="Route2" color="1" fill="3" visible="no" active="no"/>
@@ -7489,7 +7489,6 @@ BF959 corrected 2008.03.06&lt;br&gt;</description>
 <part name="SWD1" library="carrilib with jtags" deviceset="CORTEX_SWD" device=""/>
 <part name="SWD2" library="carrilib with jtags" deviceset="CORTEX_SWD" device=""/>
 <part name="SUPPLY11" library="SparkFun-Aesthetics" deviceset="3.3V" device=""/>
-<part name="SUPPLY12" library="SparkFun-Aesthetics" deviceset="3.3V" device=""/>
 <part name="GND34" library="SparkFun-Aesthetics" deviceset="GND" device=""/>
 <part name="GND35" library="SparkFun-Aesthetics" deviceset="GND" device=""/>
 <part name="GND36" library="SparkFun-Aesthetics" deviceset="GND" device=""/>
@@ -7627,13 +7626,15 @@ BF959 corrected 2008.03.06&lt;br&gt;</description>
 <part name="L10" library="OPL Eagle Library" deviceset="L*" device="-0603" value="FERRITE"/>
 <part name="L13" library="OPL Eagle Library" deviceset="L*" device="-0603" value="FERRITE"/>
 <part name="L14" library="OPL Eagle Library" deviceset="L*" device="-0603" value="FERRITE"/>
+<part name="SUPPLY21" library="SparkFun-Aesthetics" deviceset="3.3V" device=""/>
+<part name="GND41" library="SparkFun-Aesthetics" deviceset="GND" device=""/>
 </parts>
 <sheets>
 <sheet>
 <plain>
 </plain>
 <instances>
-<instance part="USB" gate="G$1" x="-52.07" y="124.46" rot="R270"/>
+<instance part="USB" gate="G$1" x="-40.64" y="118.11" rot="MR270"/>
 <instance part="OUT" gate="G$1" x="93.98" y="113.03" rot="R270"/>
 <instance part="IN" gate="G$1" x="-151.13" y="133.35" rot="R180"/>
 <instance part="THROUGH" gate="G$1" x="33.02" y="113.03" rot="R270"/>
@@ -7643,8 +7644,8 @@ BF959 corrected 2008.03.06&lt;br&gt;</description>
 <instance part="H4" gate="G$1" x="104.14" y="107.95" rot="R270"/>
 <instance part="H5" gate="G$1" x="137.16" y="107.95" rot="R270"/>
 <instance part="U$6" gate="G$1" x="-53.34" y="170.18"/>
-<instance part="R11" gate="R" x="-44.45" y="134.62" rot="R90"/>
-<instance part="R12" gate="R" x="-46.99" y="134.62" rot="R90"/>
+<instance part="R11" gate="R" x="-48.26" y="129.54" rot="R90"/>
+<instance part="R12" gate="R" x="-45.72" y="129.54" rot="R90"/>
 <instance part="R13" gate="R" x="-40.64" y="234.95" rot="R90"/>
 <instance part="R14" gate="R" x="-43.18" y="214.63" rot="R270"/>
 <instance part="D1" gate="LED" x="-43.18" y="222.25" rot="R90"/>
@@ -7652,21 +7653,20 @@ BF959 corrected 2008.03.06&lt;br&gt;</description>
 <instance part="C2" gate="C" x="-78.74" y="217.17" rot="R180"/>
 <instance part="GND20" gate="1" x="-71.12" y="228.6" rot="R90"/>
 <instance part="GND21" gate="1" x="-72.39" y="217.17" rot="R90"/>
-<instance part="GND22" gate="1" x="-54.61" y="127" rot="R270"/>
+<instance part="GND22" gate="1" x="-40.64" y="125.73" rot="R180"/>
 <instance part="GND23" gate="1" x="76.2" y="100.33"/>
 <instance part="GND24" gate="1" x="-165.1" y="153.67" rot="R270"/>
 <instance part="GND25" gate="1" x="15.24" y="100.33"/>
 <instance part="C14" gate="C" x="-43.18" y="143.51" rot="R270"/>
-<instance part="GND26" gate="1" x="-40.64" y="135.89" rot="R90"/>
+<instance part="GND26" gate="1" x="-43.18" y="137.16"/>
 <instance part="L1" gate="L" x="-33.02" y="135.89" rot="R90"/>
 <instance part="SUPPLY9" gate="G$1" x="-81.28" y="228.6" rot="R90"/>
 <instance part="SUPPLY10" gate="G$1" x="-82.55" y="217.17" rot="R90"/>
 <instance part="SWD2" gate="G$1" x="-129.54" y="189.23"/>
 <instance part="SUPPLY11" gate="G$1" x="-40.64" y="241.3"/>
-<instance part="SUPPLY12" gate="G$1" x="-17.78" y="182.88" rot="R270"/>
 <instance part="GND34" gate="1" x="-30.48" y="144.78"/>
 <instance part="GND35" gate="1" x="-35.56" y="144.78"/>
-<instance part="GND36" gate="1" x="-50.8" y="144.78"/>
+<instance part="GND36" gate="1" x="-50.8" y="140.97"/>
 <instance part="SUPPLY13" gate="G$1" x="-38.1" y="147.32" rot="R180"/>
 <instance part="GND37" gate="1" x="-142.24" y="181.61"/>
 <instance part="GND38" gate="1" x="-144.78" y="189.23" rot="R270"/>
@@ -7717,6 +7717,8 @@ BF959 corrected 2008.03.06&lt;br&gt;</description>
 <instance part="GND50" gate="1" x="91.44" y="120.65" rot="R180"/>
 <instance part="GND51" gate="1" x="25.4" y="138.43" rot="R180"/>
 <instance part="GND52" gate="1" x="86.36" y="138.43" rot="R180"/>
+<instance part="SUPPLY21" gate="G$1" x="-7.62" y="180.34" rot="R270"/>
+<instance part="GND41" gate="1" x="-6.35" y="182.88" rot="R90"/>
 </instances>
 <busses>
 </busses>
@@ -7734,10 +7736,6 @@ BF959 corrected 2008.03.06&lt;br&gt;</description>
 <pinref part="R13" gate="R" pin="2"/>
 <pinref part="SUPPLY11" gate="G$1" pin="3.3V"/>
 <wire x1="-40.64" y1="241.3" x2="-40.64" y2="238.76" width="0.1524" layer="91"/>
-</segment>
-<segment>
-<pinref part="U$6" gate="G$1" pin="VSS@1"/>
-<pinref part="SUPPLY12" gate="G$1" pin="3.3V"/>
 </segment>
 <segment>
 <pinref part="U$6" gate="G$1" pin="VDDA"/>
@@ -7773,6 +7771,11 @@ BF959 corrected 2008.03.06&lt;br&gt;</description>
 <pinref part="IC2" gate="F" pin="I"/>
 <pinref part="SUPPLY20" gate="G$1" pin="3.3V"/>
 </segment>
+<segment>
+<pinref part="U$6" gate="G$1" pin="VDD"/>
+<wire x1="-17.78" y1="180.34" x2="-7.62" y2="180.34" width="0.1524" layer="91"/>
+<pinref part="SUPPLY21" gate="G$1" pin="3.3V"/>
+</segment>
 </net>
 <net name="GND" class="3">
 <segment>
@@ -7786,6 +7789,7 @@ BF959 corrected 2008.03.06&lt;br&gt;</description>
 <segment>
 <pinref part="USB" gate="G$1" pin="GND"/>
 <pinref part="GND22" gate="1" pin="GND"/>
+<wire x1="-40.64" y1="120.65" x2="-40.64" y2="123.19" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <pinref part="OUT" gate="G$1" pin="SHIELD"/>
@@ -7803,7 +7807,6 @@ BF959 corrected 2008.03.06&lt;br&gt;</description>
 <segment>
 <pinref part="C14" gate="C" pin="2"/>
 <pinref part="GND26" gate="1" pin="GND"/>
-<wire x1="-43.18" y1="135.89" x2="-43.18" y2="139.7" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <pinref part="U$6" gate="G$1" pin="VSS@3"/>
@@ -7816,6 +7819,7 @@ BF959 corrected 2008.03.06&lt;br&gt;</description>
 <segment>
 <pinref part="U$6" gate="G$1" pin="VSS@2"/>
 <pinref part="GND36" gate="1" pin="GND"/>
+<wire x1="-50.8" y1="143.51" x2="-50.8" y2="147.32" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <pinref part="SWD2" gate="G$1" pin="GND3"/>
@@ -7877,19 +7881,26 @@ BF959 corrected 2008.03.06&lt;br&gt;</description>
 <pinref part="R20" gate="R" pin="1"/>
 <pinref part="GND52" gate="1" pin="GND"/>
 </segment>
+<segment>
+<pinref part="U$6" gate="G$1" pin="VSS@1"/>
+<wire x1="-7.62" y1="182.88" x2="-8.89" y2="182.88" width="0.1524" layer="91"/>
+<pinref part="GND41" gate="1" pin="GND"/>
+<wire x1="-8.89" y1="182.88" x2="-17.78" y2="182.88" width="0.1524" layer="91"/>
+<junction x="-8.89" y="182.88"/>
+</segment>
 </net>
 <net name="N$2" class="0">
 <segment>
 <pinref part="U$6" gate="G$1" pin="USB0_DP"/>
 <pinref part="R11" gate="R" pin="2"/>
-<wire x1="-44.45" y1="138.43" x2="-48.26" y2="147.32" width="0.1524" layer="91"/>
+<wire x1="-48.26" y1="133.35" x2="-48.26" y2="147.32" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$3" class="0">
 <segment>
 <pinref part="U$6" gate="G$1" pin="USB0_DM"/>
 <pinref part="R12" gate="R" pin="2"/>
-<wire x1="-46.99" y1="138.43" x2="-45.72" y2="147.32" width="0.1524" layer="91"/>
+<wire x1="-45.72" y1="133.35" x2="-45.72" y2="147.32" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$5" class="0">
@@ -7908,14 +7919,14 @@ BF959 corrected 2008.03.06&lt;br&gt;</description>
 <segment>
 <pinref part="USB" gate="G$1" pin="D+"/>
 <pinref part="R11" gate="R" pin="1"/>
-<wire x1="-44.45" y1="130.81" x2="-44.45" y2="127" width="0.1524" layer="91"/>
+<wire x1="-48.26" y1="125.73" x2="-48.26" y2="120.65" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$11" class="0">
 <segment>
 <pinref part="USB" gate="G$1" pin="D-"/>
 <pinref part="R12" gate="R" pin="1"/>
-<wire x1="-46.99" y1="130.81" x2="-46.99" y2="127" width="0.1524" layer="91"/>
+<wire x1="-45.72" y1="125.73" x2="-45.72" y2="120.65" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$9" class="0">
@@ -7928,8 +7939,8 @@ BF959 corrected 2008.03.06&lt;br&gt;</description>
 <segment>
 <pinref part="USB" gate="G$1" pin="VBUS"/>
 <wire x1="-33.02" y1="130.81" x2="-33.02" y2="129.54" width="0.1524" layer="91"/>
-<wire x1="-33.02" y1="129.54" x2="-49.53" y2="129.54" width="0.1524" layer="91"/>
-<wire x1="-49.53" y1="129.54" x2="-49.53" y2="127" width="0.1524" layer="91"/>
+<wire x1="-33.02" y1="129.54" x2="-43.18" y2="129.54" width="0.1524" layer="91"/>
+<wire x1="-43.18" y1="129.54" x2="-43.18" y2="120.65" width="0.1524" layer="91"/>
 <pinref part="L1" gate="L" pin="1"/>
 </segment>
 </net>

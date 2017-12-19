@@ -8429,15 +8429,15 @@ PCB width:
 </sheet>
 </sheets>
 <errors>
-<approved hash="104,6,78.74,66.04,U1,VDD_VREFH,3.3V,,,"/>
-<approved hash="104,4,20.32,71.12,U7,VDD,3.3V,,,"/>
-<approved hash="104,4,20.32,45.72,U7,VSS,GND,,,"/>
-<approved hash="104,2,57.15,212.09,U3,VCC,3.3V,,,"/>
-<approved hash="104,2,57.15,142.24,U4,VCC,3.3V,,,"/>
-<approved hash="104,2,55.88,73.66,U5,VCC,3.3V,,,"/>
-<approved hash="104,6,195.58,101.6,U6,VCC,3.3V,,,"/>
-<approved hash="104,4,127,17.78,IC3P,V+,12V,,,"/>
-<approved hash="104,4,127,2.54,IC3P,V-,-12V,,,"/>
+<approved hash="104,6,78.74,66.04,IC5,VDD_VREFH,3.3V,,,"/>
+<approved hash="104,4,20.32,71.12,IC10,VDD,3.3V,,,"/>
+<approved hash="104,4,20.32,45.72,IC10,VSS,GND,,,"/>
+<approved hash="104,2,57.15,212.09,IC7,VCC,3.3V,,,"/>
+<approved hash="104,2,57.15,142.24,IC8,VCC,3.3V,,,"/>
+<approved hash="104,2,55.88,73.66,IC9,VCC,3.3V,,,"/>
+<approved hash="104,6,195.58,101.6,IC6,VCC,3.3V,,,"/>
+<approved hash="104,4,100.33,115.57,IC3P,V+,12V,,,"/>
+<approved hash="104,4,100.33,100.33,IC3P,V-,-12V,,,"/>
 <approved hash="104,1,78.74,191.77,IC4O,V+,3.3V,,,"/>
 <approved hash="104,1,78.74,176.53,IC4O,V-,GND,,,"/>
 <approved hash="104,1,30.48,-45.72,IC2O,V+,3.3V,,,"/>
