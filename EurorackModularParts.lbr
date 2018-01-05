@@ -2396,7 +2396,7 @@ or will meet your specific requirements.&lt;p&gt;
 <wire x1="101.26" y1="-11" x2="101.26" y2="117.5" width="0" layer="255"/>
 <wire x1="101.26" y1="117.5" x2="0" y2="117.5" width="0" layer="255"/>
 <wire x1="0" y1="117.5" x2="0" y2="-11" width="0" layer="255"/>
-<text x="1.5" y="113" size="1.27" layer="51">20HP eurorack pcb template</text>
+<text x="1.5" y="113" size="1.27" layer="51">24HP eurorack pcb template</text>
 <wire x1="50.63" y1="107" x2="50.63" y2="-11" width="0.127" layer="51"/>
 <circle x="7.5" y="-8" radius="1.5" width="0.0254" layer="255"/>
 <circle x="7.5" y="114.5" radius="1.5" width="0.0254" layer="255"/>
@@ -2659,6 +2659,23 @@ or will meet your specific requirements.&lt;p&gt;
 </polygon>
 <smd name="15" x="-3.175" y="3.235" dx="0.6" dy="4.064" layer="1"/>
 <smd name="16" x="-4.445" y="3.235" dx="0.6" dy="4.064" layer="1"/>
+</package>
+<package name="EURORACK36HP">
+<wire x1="0.34" y1="103" x2="0.34" y2="3" width="0.127" layer="20"/>
+<wire x1="0.34" y1="3" x2="181.12" y2="3" width="0.127" layer="20"/>
+<wire x1="181.12" y1="3" x2="181.12" y2="103" width="0.127" layer="20"/>
+<wire x1="181.12" y1="103" x2="0.34" y2="103" width="0.127" layer="20"/>
+<wire x1="0" y1="-11" x2="182.54" y2="-11" width="0" layer="255"/>
+<wire x1="182.54" y1="-11" x2="182.54" y2="117.5" width="0" layer="255"/>
+<wire x1="182.54" y1="117.5" x2="0" y2="117.5" width="0" layer="255"/>
+<wire x1="0" y1="117.5" x2="0" y2="-11" width="0" layer="255"/>
+<text x="1.5" y="113" size="1.27" layer="51">36HP eurorack pcb template</text>
+<wire x1="91.27" y1="112.08" x2="91.27" y2="-5.92" width="0.127" layer="51"/>
+<circle x="7.5" y="-8" radius="1.5" width="0.0254" layer="255"/>
+<circle x="7.5" y="114.5" radius="1.5" width="0.0254" layer="255"/>
+<wire x1="0" y1="0" x2="3.84" y2="7" width="0.127" layer="51"/>
+<circle x="175.14" y="-8" radius="1.5" width="0.0254" layer="255"/>
+<circle x="175.14" y="114.5" radius="1.5" width="0.0254" layer="255"/>
 </package>
 </packages>
 <symbols>
@@ -3649,6 +3666,11 @@ MAX13331</text>
 </technologies>
 </device>
 <device name="6HP_10CM" package="EURORACK6HPPCB_10CMTALL">
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="36HP_10CM" package="EURORACK36HP">
 <technologies>
 <technology name=""/>
 </technologies>
