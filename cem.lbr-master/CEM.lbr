@@ -477,22 +477,22 @@ Library created by Rob Kam of a few CEM music synthesizer ICs. More info about t
 <wire x1="-5.08" y1="-11.43" x2="5.08" y2="-11.43" width="0.254" layer="94"/>
 <wire x1="5.08" y1="11.43" x2="5.08" y2="-11.43" width="0.254" layer="94"/>
 <wire x1="-5.08" y1="11.43" x2="-5.08" y2="-11.43" width="0.254" layer="94"/>
-<pin name="1" x="-7.62" y="10.16" visible="pad" length="short" direction="in"/>
-<pin name="2" x="-7.62" y="7.62" visible="pad" length="short" direction="in"/>
-<pin name="3" x="-7.62" y="5.08" visible="pad" length="short" direction="pwr"/>
-<pin name="4" x="-7.62" y="2.54" visible="pad" length="short"/>
-<pin name="5" x="-7.62" y="0" visible="pad" length="short"/>
-<pin name="6" x="-7.62" y="-2.54" visible="pad" length="short" direction="out"/>
-<pin name="7" x="-7.62" y="-5.08" visible="pad" length="short" direction="out"/>
-<pin name="8" x="-7.62" y="-7.62" visible="pad" length="short" direction="in"/>
-<pin name="11" x="7.62" y="-7.62" visible="pad" length="short" direction="out" rot="R180"/>
-<pin name="12" x="7.62" y="-5.08" visible="pad" length="short" rot="R180"/>
-<pin name="13" x="7.62" y="-2.54" visible="pad" length="short" direction="pwr" rot="R180"/>
-<pin name="14" x="7.62" y="0" visible="pad" length="short" direction="pwr" rot="R180"/>
-<pin name="15" x="7.62" y="2.54" visible="pad" length="short" direction="out" rot="R180"/>
-<pin name="16" x="7.62" y="5.08" visible="pad" length="short" rot="R180"/>
-<pin name="17" x="7.62" y="7.62" visible="pad" length="short" direction="in" rot="R180"/>
-<pin name="18" x="7.62" y="10.16" visible="pad" length="short" direction="in" rot="R180"/>
+<pin name="1" x="-7.62" y="10.16" visible="off" length="short" direction="in"/>
+<pin name="2" x="-7.62" y="7.62" visible="off" length="short" direction="in"/>
+<pin name="3" x="-7.62" y="5.08" visible="off" length="short" direction="pwr"/>
+<pin name="4" x="-7.62" y="2.54" visible="off" length="short"/>
+<pin name="5" x="-7.62" y="0" visible="off" length="short"/>
+<pin name="6" x="-7.62" y="-2.54" visible="off" length="short" direction="out"/>
+<pin name="7" x="-7.62" y="-5.08" visible="off" length="short" direction="out"/>
+<pin name="8" x="-7.62" y="-7.62" visible="off" length="short" direction="in"/>
+<pin name="11" x="7.62" y="-7.62" visible="off" length="short" direction="out" rot="R180"/>
+<pin name="12" x="7.62" y="-5.08" visible="off" length="short" rot="R180"/>
+<pin name="13" x="7.62" y="-2.54" visible="off" length="short" direction="pwr" rot="R180"/>
+<pin name="14" x="7.62" y="0" visible="off" length="short" direction="pwr" rot="R180"/>
+<pin name="15" x="7.62" y="2.54" visible="off" length="short" direction="out" rot="R180"/>
+<pin name="16" x="7.62" y="5.08" visible="off" length="short" rot="R180"/>
+<pin name="17" x="7.62" y="7.62" visible="off" length="short" direction="in" rot="R180"/>
+<pin name="18" x="7.62" y="10.16" visible="off" length="short" direction="in" rot="R180"/>
 <text x="-4.445" y="12.065" size="1.778" layer="95">&gt;NAME</text>
 <text x="1.27" y="-5.715" size="1.778" layer="96" rot="R90">CEM 3320</text>
 <wire x1="-5.08" y1="11.43" x2="-0.635" y2="11.43" width="0.254" layer="94"/>
@@ -514,8 +514,8 @@ Library created by Rob Kam of a few CEM music synthesizer ICs. More info about t
 <text x="5.08" y="5.08" size="0.508" layer="94" align="center-right">Capacitor C   </text>
 <text x="5.08" y="7.62" size="0.508" layer="94" align="center-right">Input C   </text>
 <text x="5.08" y="10.16" size="0.508" layer="94" align="center-right">Input D   </text>
-<pin name="9" x="-7.62" y="-10.16" visible="pad" length="short" direction="in"/>
-<pin name="10" x="7.62" y="-10.16" visible="pad" length="short" direction="out" rot="R180"/>
+<pin name="9" x="-7.62" y="-10.16" visible="off" length="short" direction="in"/>
+<pin name="10" x="7.62" y="-10.16" visible="off" length="short" direction="out" rot="R180"/>
 <text x="-5.08" y="-10.16" size="0.508" layer="94" align="center-left">   Resonance ctrl</text>
 <text x="5.08" y="-10.16" size="0.508" layer="94" align="center-right">Output D   </text>
 </symbol>
@@ -657,6 +657,151 @@ Library created by Rob Kam of a few CEM music synthesizer ICs. More info about t
 <text x="-6.985" y="10.541" size="1.27" layer="94">AS3360 VCA</text>
 <text x="2.032" y="-3.048" size="0.762" layer="94" rot="R180">0-&gt;2V</text>
 <text x="13.462" y="-3.302" size="0.762" layer="94" rot="R180">0-&gt;2V</text>
+</symbol>
+<symbol name="CEM3320_UNFOLDED">
+<pin name="STAGE1_IN" x="-30.48" y="15.24" visible="off" length="middle" rot="R270"/>
+<pin name="STAGE1_OUT" x="-20.32" y="15.24" visible="off" length="middle" rot="R270"/>
+<pin name="STAGE2_IN" x="-10.16" y="15.24" visible="off" length="middle" rot="R270"/>
+<pin name="STAGE2_OUT" x="0" y="15.24" visible="off" length="middle" rot="R270"/>
+<pin name="STAGE3_IN" x="10.16" y="15.24" visible="off" length="middle" rot="R270"/>
+<pin name="STAGE3_OUT" x="20.32" y="15.24" visible="off" length="middle" rot="R270"/>
+<pin name="STAGE4_IN" x="30.48" y="15.24" visible="off" length="middle" rot="R270"/>
+<pin name="STAGE4_OUT" x="40.64" y="15.24" visible="off" length="middle" rot="R270"/>
+<pin name="FREQCV" x="-40.64" y="0" visible="off" length="middle"/>
+<pin name="STAGE1_CAP" x="-25.4" y="-10.16" visible="off" length="middle" rot="R90"/>
+<pin name="STAGE2_CAP" x="-5.08" y="-10.16" visible="off" length="middle" rot="R90"/>
+<pin name="STAGE3_CAP" x="15.24" y="-10.16" visible="off" length="middle" rot="R90"/>
+<pin name="STAGE4_CAP" x="35.56" y="-10.16" visible="off" length="middle" rot="R90"/>
+<pin name="GROUND" x="48.26" y="-10.16" visible="off" length="middle" rot="R90"/>
+<pin name="POSRAIL" x="50.8" y="-10.16" visible="off" length="middle" rot="R90"/>
+<pin name="NEGRAIL" x="53.34" y="-10.16" visible="off" length="middle" rot="R90"/>
+<pin name="FEEDBACK_IN" x="63.5" y="5.08" visible="off" length="middle" rot="R180"/>
+<pin name="RESONANCE_CV" x="63.5" y="2.54" visible="off" length="middle" rot="R180"/>
+<wire x1="-35.56" y1="10.16" x2="-30.48" y2="10.16" width="0.254" layer="94"/>
+<wire x1="-30.48" y1="10.16" x2="-20.32" y2="10.16" width="0.254" layer="94"/>
+<wire x1="-20.32" y1="10.16" x2="58.42" y2="10.16" width="0.254" layer="94"/>
+<wire x1="58.42" y1="10.16" x2="58.42" y2="5.08" width="0.254" layer="94"/>
+<wire x1="58.42" y1="5.08" x2="58.42" y2="2.54" width="0.254" layer="94"/>
+<wire x1="58.42" y1="2.54" x2="58.42" y2="-5.08" width="0.254" layer="94"/>
+<wire x1="58.42" y1="-5.08" x2="55.245" y2="-5.08" width="0.254" layer="94"/>
+<wire x1="55.245" y1="-5.08" x2="46.355" y2="-5.08" width="0.254" layer="94"/>
+<wire x1="46.355" y1="-5.08" x2="35.56" y2="-5.08" width="0.254" layer="94"/>
+<wire x1="35.56" y1="-5.08" x2="15.24" y2="-5.08" width="0.254" layer="94"/>
+<wire x1="15.24" y1="-5.08" x2="-5.08" y2="-5.08" width="0.254" layer="94"/>
+<wire x1="-5.08" y1="-5.08" x2="-25.4" y2="-5.08" width="0.254" layer="94"/>
+<wire x1="-25.4" y1="-5.08" x2="-35.56" y2="-5.08" width="0.254" layer="94"/>
+<wire x1="-35.56" y1="-5.08" x2="-35.56" y2="0" width="0.254" layer="94"/>
+<wire x1="-35.56" y1="0" x2="-35.56" y2="10.16" width="0.254" layer="94"/>
+<wire x1="-20.32" y1="10.16" x2="-20.32" y2="7.62" width="0.254" layer="94"/>
+<wire x1="58.42" y1="5.08" x2="55.88" y2="5.08" width="0.254" layer="94"/>
+<wire x1="58.42" y1="2.54" x2="54.61" y2="2.54" width="0.254" layer="94"/>
+<wire x1="55.88" y1="6.35" x2="55.88" y2="3.81" width="0.254" layer="94"/>
+<wire x1="55.88" y1="3.81" x2="54.61" y2="4.445" width="0.254" layer="94"/>
+<wire x1="54.61" y1="4.445" x2="53.34" y2="5.08" width="0.254" layer="94"/>
+<wire x1="53.34" y1="5.08" x2="55.88" y2="6.35" width="0.254" layer="94"/>
+<wire x1="54.61" y1="4.445" x2="54.61" y2="2.54" width="0.254" layer="94"/>
+<wire x1="53.34" y1="5.08" x2="-30.48" y2="5.08" width="0.254" layer="94"/>
+<wire x1="-30.48" y1="5.08" x2="-30.48" y2="7.62" width="0.254" layer="94"/>
+<wire x1="-30.48" y1="7.62" x2="-30.48" y2="10.16" width="0.254" layer="94"/>
+<wire x1="-30.48" y1="7.62" x2="-29.21" y2="7.62" width="0.254" layer="94"/>
+<wire x1="-29.21" y1="8.89" x2="-29.21" y2="6.35" width="0.254" layer="94"/>
+<wire x1="-29.21" y1="6.35" x2="-27.94" y2="6.985" width="0.254" layer="94"/>
+<wire x1="-27.94" y1="6.985" x2="-26.67" y2="7.62" width="0.254" layer="94"/>
+<wire x1="-26.67" y1="7.62" x2="-29.21" y2="8.89" width="0.254" layer="94"/>
+<wire x1="-24.13" y1="8.89" x2="-24.13" y2="7.62" width="0.254" layer="94"/>
+<wire x1="-24.13" y1="7.62" x2="-24.13" y2="6.35" width="0.254" layer="94"/>
+<wire x1="-24.13" y1="6.35" x2="-21.59" y2="7.62" width="0.254" layer="94"/>
+<wire x1="-21.59" y1="7.62" x2="-24.13" y2="8.89" width="0.254" layer="94"/>
+<wire x1="-21.59" y1="7.62" x2="-20.32" y2="7.62" width="0.254" layer="94"/>
+<wire x1="-26.67" y1="7.62" x2="-25.4" y2="7.62" width="0.254" layer="94"/>
+<wire x1="-25.4" y1="7.62" x2="-24.13" y2="7.62" width="0.254" layer="94"/>
+<wire x1="-27.94" y1="6.985" x2="-27.94" y2="0" width="0.254" layer="94"/>
+<wire x1="-33.655" y1="1.27" x2="-33.655" y2="0" width="0.254" layer="94"/>
+<wire x1="-33.655" y1="0" x2="-33.655" y2="-1.27" width="0.254" layer="94"/>
+<wire x1="-33.655" y1="-1.27" x2="-31.115" y2="0" width="0.254" layer="94"/>
+<wire x1="-31.115" y1="0" x2="-33.655" y2="1.27" width="0.254" layer="94"/>
+<wire x1="-31.115" y1="0" x2="-27.94" y2="0" width="0.254" layer="94"/>
+<wire x1="-35.56" y1="0" x2="-33.655" y2="0" width="0.254" layer="94"/>
+<wire x1="-25.4" y1="-5.08" x2="-25.4" y2="7.62" width="0.254" layer="94"/>
+<wire x1="48.26" y1="-2.54" x2="48.26" y2="-3.81" width="0.254" layer="94"/>
+<wire x1="47.625" y1="-3.175" x2="48.895" y2="-3.175" width="0.254" layer="94"/>
+<wire x1="47.625" y1="-3.81" x2="48.895" y2="-3.81" width="0.254" layer="94"/>
+<wire x1="49.53" y1="-3.175" x2="46.99" y2="-3.175" width="0.254" layer="94"/>
+<wire x1="50.8" y1="-2.54" x2="50.8" y2="-3.81" width="0.254" layer="94"/>
+<wire x1="50.165" y1="-3.175" x2="51.435" y2="-3.175" width="0.254" layer="94"/>
+<wire x1="52.705" y1="-3.175" x2="53.975" y2="-3.175" width="0.254" layer="94"/>
+<wire x1="46.355" y1="-5.08" x2="46.355" y2="-0.635" width="0.254" layer="94"/>
+<wire x1="46.355" y1="-0.635" x2="55.245" y2="-0.635" width="0.254" layer="94"/>
+<wire x1="55.245" y1="-0.635" x2="55.245" y2="-5.08" width="0.254" layer="94"/>
+<wire x1="-27.94" y1="0" x2="33.02" y2="0" width="0.254" layer="94"/>
+<wire x1="0" y1="10.16" x2="0" y2="7.62" width="0.254" layer="94"/>
+<wire x1="-10.16" y1="5.08" x2="-10.16" y2="7.62" width="0.254" layer="94"/>
+<wire x1="-10.16" y1="7.62" x2="-10.16" y2="10.16" width="0.254" layer="94"/>
+<wire x1="-10.16" y1="7.62" x2="-8.89" y2="7.62" width="0.254" layer="94"/>
+<wire x1="-8.89" y1="8.89" x2="-8.89" y2="6.35" width="0.254" layer="94"/>
+<wire x1="-8.89" y1="6.35" x2="-7.62" y2="6.985" width="0.254" layer="94"/>
+<wire x1="-7.62" y1="6.985" x2="-6.35" y2="7.62" width="0.254" layer="94"/>
+<wire x1="-6.35" y1="7.62" x2="-8.89" y2="8.89" width="0.254" layer="94"/>
+<wire x1="-3.81" y1="8.89" x2="-3.81" y2="7.62" width="0.254" layer="94"/>
+<wire x1="-3.81" y1="7.62" x2="-3.81" y2="6.35" width="0.254" layer="94"/>
+<wire x1="-3.81" y1="6.35" x2="-1.27" y2="7.62" width="0.254" layer="94"/>
+<wire x1="-1.27" y1="7.62" x2="-3.81" y2="8.89" width="0.254" layer="94"/>
+<wire x1="-1.27" y1="7.62" x2="0" y2="7.62" width="0.254" layer="94"/>
+<wire x1="-6.35" y1="7.62" x2="-5.08" y2="7.62" width="0.254" layer="94"/>
+<wire x1="-5.08" y1="7.62" x2="-3.81" y2="7.62" width="0.254" layer="94"/>
+<wire x1="-7.62" y1="6.985" x2="-7.62" y2="0" width="0.254" layer="94"/>
+<wire x1="-5.08" y1="-5.08" x2="-5.08" y2="7.62" width="0.254" layer="94"/>
+<wire x1="20.32" y1="10.16" x2="20.32" y2="7.62" width="0.254" layer="94"/>
+<wire x1="10.16" y1="5.08" x2="10.16" y2="7.62" width="0.254" layer="94"/>
+<wire x1="10.16" y1="7.62" x2="10.16" y2="10.16" width="0.254" layer="94"/>
+<wire x1="10.16" y1="7.62" x2="11.43" y2="7.62" width="0.254" layer="94"/>
+<wire x1="11.43" y1="8.89" x2="11.43" y2="6.35" width="0.254" layer="94"/>
+<wire x1="11.43" y1="6.35" x2="12.7" y2="6.985" width="0.254" layer="94"/>
+<wire x1="12.7" y1="6.985" x2="13.97" y2="7.62" width="0.254" layer="94"/>
+<wire x1="13.97" y1="7.62" x2="11.43" y2="8.89" width="0.254" layer="94"/>
+<wire x1="16.51" y1="8.89" x2="16.51" y2="7.62" width="0.254" layer="94"/>
+<wire x1="16.51" y1="7.62" x2="16.51" y2="6.35" width="0.254" layer="94"/>
+<wire x1="16.51" y1="6.35" x2="19.05" y2="7.62" width="0.254" layer="94"/>
+<wire x1="19.05" y1="7.62" x2="16.51" y2="8.89" width="0.254" layer="94"/>
+<wire x1="19.05" y1="7.62" x2="20.32" y2="7.62" width="0.254" layer="94"/>
+<wire x1="13.97" y1="7.62" x2="15.24" y2="7.62" width="0.254" layer="94"/>
+<wire x1="15.24" y1="7.62" x2="16.51" y2="7.62" width="0.254" layer="94"/>
+<wire x1="12.7" y1="6.985" x2="12.7" y2="0" width="0.254" layer="94"/>
+<wire x1="15.24" y1="-5.08" x2="15.24" y2="7.62" width="0.254" layer="94"/>
+<wire x1="40.64" y1="10.16" x2="40.64" y2="7.62" width="0.254" layer="94"/>
+<wire x1="30.48" y1="5.08" x2="30.48" y2="7.62" width="0.254" layer="94"/>
+<wire x1="30.48" y1="7.62" x2="30.48" y2="10.16" width="0.254" layer="94"/>
+<wire x1="30.48" y1="7.62" x2="31.75" y2="7.62" width="0.254" layer="94"/>
+<wire x1="31.75" y1="8.89" x2="31.75" y2="6.35" width="0.254" layer="94"/>
+<wire x1="31.75" y1="6.35" x2="33.02" y2="6.985" width="0.254" layer="94"/>
+<wire x1="33.02" y1="6.985" x2="34.29" y2="7.62" width="0.254" layer="94"/>
+<wire x1="34.29" y1="7.62" x2="31.75" y2="8.89" width="0.254" layer="94"/>
+<wire x1="36.83" y1="8.89" x2="36.83" y2="7.62" width="0.254" layer="94"/>
+<wire x1="36.83" y1="7.62" x2="36.83" y2="6.35" width="0.254" layer="94"/>
+<wire x1="36.83" y1="6.35" x2="39.37" y2="7.62" width="0.254" layer="94"/>
+<wire x1="39.37" y1="7.62" x2="36.83" y2="8.89" width="0.254" layer="94"/>
+<wire x1="39.37" y1="7.62" x2="40.64" y2="7.62" width="0.254" layer="94"/>
+<wire x1="34.29" y1="7.62" x2="35.56" y2="7.62" width="0.254" layer="94"/>
+<wire x1="35.56" y1="7.62" x2="36.83" y2="7.62" width="0.254" layer="94"/>
+<wire x1="33.02" y1="6.985" x2="33.02" y2="0" width="0.254" layer="94"/>
+<wire x1="35.56" y1="-5.08" x2="35.56" y2="7.62" width="0.254" layer="94"/>
+<text x="-34.925" y="1.905" size="0.508" layer="94">FREQ CV</text>
+<text x="-32.7025" y="0" size="0.381" layer="94" align="center">exp(x)</text>
+<text x="-28.2575" y="7.62" size="0.381" layer="94" align="center">dA</text>
+<text x="-7.9375" y="7.62" size="0.381" layer="94" align="center">dA</text>
+<text x="12.3825" y="7.62" size="0.381" layer="94" align="center">dA</text>
+<text x="32.7025" y="7.62" size="0.381" layer="94" align="center">dA</text>
+<text x="-23.1775" y="7.62" size="0.381" layer="94" align="center">B</text>
+<text x="-2.8575" y="7.62" size="0.381" layer="94" align="center">B</text>
+<text x="17.4625" y="7.62" size="0.381" layer="94" align="center">B</text>
+<text x="37.7825" y="7.62" size="0.381" layer="94" align="center">B</text>
+<text x="54.9275" y="5.08" size="0.381" layer="94" align="center">VCA</text>
+<text x="57.4675" y="3.81" size="0.381" layer="94" align="center">RES</text>
+<text x="47.9425" y="-1.27" size="0.381" layer="94" align="center">POWER</text>
+<text x="-26.035" y="8.89" size="0.508" layer="94" align="center">STAGE 1</text>
+<text x="-6.0325" y="8.89" size="0.508" layer="94" align="center">STAGE 2</text>
+<text x="14.2875" y="8.89" size="0.508" layer="94" align="center">STAGE 3</text>
+<text x="34.6075" y="8.89" size="0.508" layer="94" align="center">STAGE 4</text>
 </symbol>
 </symbols>
 <devicesets>
@@ -901,6 +1046,63 @@ Library created by Rob Kam of a few CEM music synthesizer ICs. More info about t
 <connect gate="G$1" pin="VO1" pad="4"/>
 <connect gate="G$1" pin="VO2" pad="11"/>
 <connect gate="G$1" pin="VREF" pad="8"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="CEM3320_UNFOLDED">
+<gates>
+<gate name="G$1" symbol="CEM3320_UNFOLDED" x="-12.7" y="-2.54"/>
+</gates>
+<devices>
+<device name="" package="DIL18">
+<connects>
+<connect gate="G$1" pin="FEEDBACK_IN" pad="8"/>
+<connect gate="G$1" pin="FREQCV" pad="12"/>
+<connect gate="G$1" pin="GROUND" pad="3"/>
+<connect gate="G$1" pin="NEGRAIL" pad="13"/>
+<connect gate="G$1" pin="POSRAIL" pad="14"/>
+<connect gate="G$1" pin="RESONANCE_CV" pad="9"/>
+<connect gate="G$1" pin="STAGE1_CAP" pad="5"/>
+<connect gate="G$1" pin="STAGE1_IN" pad="1"/>
+<connect gate="G$1" pin="STAGE1_OUT" pad="7"/>
+<connect gate="G$1" pin="STAGE2_CAP" pad="4"/>
+<connect gate="G$1" pin="STAGE2_IN" pad="2"/>
+<connect gate="G$1" pin="STAGE2_OUT" pad="6"/>
+<connect gate="G$1" pin="STAGE3_CAP" pad="16"/>
+<connect gate="G$1" pin="STAGE3_IN" pad="17"/>
+<connect gate="G$1" pin="STAGE3_OUT" pad="15"/>
+<connect gate="G$1" pin="STAGE4_CAP" pad="11"/>
+<connect gate="G$1" pin="STAGE4_IN" pad="18"/>
+<connect gate="G$1" pin="STAGE4_OUT" pad="10"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="QFN" package="QFN24">
+<connects>
+<connect gate="G$1" pin="FEEDBACK_IN" pad="P$14"/>
+<connect gate="G$1" pin="FREQCV" pad="P$19"/>
+<connect gate="G$1" pin="GROUND" pad="P$7"/>
+<connect gate="G$1" pin="NEGRAIL" pad="P$20"/>
+<connect gate="G$1" pin="POSRAIL" pad="P$22"/>
+<connect gate="G$1" pin="RESONANCE_CV" pad="P$15"/>
+<connect gate="G$1" pin="STAGE1_CAP" pad="P$9"/>
+<connect gate="G$1" pin="STAGE1_IN" pad="P$4"/>
+<connect gate="G$1" pin="STAGE1_OUT" pad="P$12"/>
+<connect gate="G$1" pin="STAGE2_CAP" pad="P$8"/>
+<connect gate="G$1" pin="STAGE2_IN" pad="P$5"/>
+<connect gate="G$1" pin="STAGE2_OUT" pad="P$11"/>
+<connect gate="G$1" pin="STAGE3_CAP" pad="P$24"/>
+<connect gate="G$1" pin="STAGE3_IN" pad="P$2"/>
+<connect gate="G$1" pin="STAGE3_OUT" pad="P$23"/>
+<connect gate="G$1" pin="STAGE4_CAP" pad="P$17"/>
+<connect gate="G$1" pin="STAGE4_IN" pad="P$3"/>
+<connect gate="G$1" pin="STAGE4_OUT" pad="P$16"/>
 </connects>
 <technologies>
 <technology name=""/>
