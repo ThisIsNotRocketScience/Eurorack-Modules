@@ -2681,15 +2681,15 @@ or will meet your specific requirements.&lt;p&gt;
 <pad name="P$1" x="-2.54" y="0" drill="0.9"/>
 <pad name="P$2" x="0" y="0" drill="0.9"/>
 <pad name="P$3" x="2.54" y="0" drill="0.9"/>
-<wire x1="-5" y1="-2.5" x2="-5" y2="2.5" width="0.127" layer="21"/>
-<wire x1="-5" y1="2.5" x2="5" y2="2.5" width="0.127" layer="21"/>
-<wire x1="5" y1="2.5" x2="5" y2="-2.5" width="0.127" layer="21"/>
-<wire x1="5" y1="-2.5" x2="-5" y2="-2.5" width="0.127" layer="21"/>
+<wire x1="-5.08" y1="-2.54" x2="-5.08" y2="2.54" width="0.127" layer="21"/>
+<wire x1="-5.08" y1="2.54" x2="5.08" y2="2.54" width="0.127" layer="21"/>
+<wire x1="5.08" y1="2.54" x2="5.08" y2="-2.54" width="0.127" layer="21"/>
+<wire x1="5.08" y1="-2.54" x2="-5.08" y2="-2.54" width="0.127" layer="21"/>
 <text x="-4.75" y="2.25" size="1" layer="21" align="top-left">&gt;VALUE</text>
-<text x="-4.75" y="3.75" size="1" layer="21" align="top-left">&gt;DESC</text>
-<wire x1="-5" y1="2.5" x2="-5" y2="4" width="0.127" layer="21"/>
-<wire x1="-5" y1="4" x2="5" y2="4" width="0.127" layer="21"/>
-<wire x1="5" y1="4" x2="5" y2="2.5" width="0.127" layer="21"/>
+<text x="-4.75" y="3.115" size="0.762" layer="21" align="center-left">&gt;DESC</text>
+<wire x1="-5.08" y1="2.54" x2="-5.08" y2="3.81" width="0.127" layer="21"/>
+<wire x1="-5.08" y1="3.81" x2="5.08" y2="3.81" width="0.127" layer="21"/>
+<wire x1="5.08" y1="3.81" x2="5.08" y2="2.54" width="0.127" layer="21"/>
 </package>
 </packages>
 <symbols>
@@ -3518,7 +3518,7 @@ MAX13331</text>
 </device>
 </devices>
 </deviceset>
-<deviceset name="POWER">
+<deviceset name="POWER" prefix="J">
 <gates>
 <gate name="G$1" symbol="POWER" x="0" y="0"/>
 </gates>
@@ -3664,7 +3664,7 @@ MAX13331</text>
 </device>
 </devices>
 </deviceset>
-<deviceset name="EURORACK_PCB">
+<deviceset name="EURORACK_PCB" prefix="PCB">
 <gates>
 <gate name="G$1" symbol="EURORACK_PCB" x="0" y="0"/>
 </gates>
@@ -3721,7 +3721,7 @@ MAX13331</text>
 </device>
 </devices>
 </deviceset>
-<deviceset name="AUDIO-JACK" uservalue="yes">
+<deviceset name="AUDIO-JACK" prefix="J" uservalue="yes">
 <description>Switching Mono 3.5mm Audio Jack from Erthenvar.</description>
 <gates>
 <gate name="G$1" symbol="AUDIO-JACK" x="0" y="0"/>
@@ -3759,7 +3759,7 @@ MAX13331</text>
 </device>
 </devices>
 </deviceset>
-<deviceset name="POT" uservalue="yes">
+<deviceset name="POT" prefix="R" uservalue="yes">
 <gates>
 <gate name="G$1" symbol="POT" x="0" y="0"/>
 </gates>
@@ -3961,7 +3961,7 @@ MAX13331</text>
 </device>
 </devices>
 </deviceset>
-<deviceset name="TL072">
+<deviceset name="TL072" prefix="IC">
 <gates>
 <gate name="VR1" symbol="OPAMP" x="-12.7" y="0"/>
 <gate name="VR2" symbol="OPAMP" x="-12.7" y="-15.24"/>
@@ -4094,7 +4094,7 @@ MAX13331</text>
 </device>
 </devices>
 </deviceset>
-<deviceset name="ONOFFON">
+<deviceset name="ONOFFON" prefix="S">
 <gates>
 <gate name="G$1" symbol="ONOFFON" x="0" y="0"/>
 </gates>
@@ -4701,7 +4701,7 @@ or will meet your specific requirements.&lt;p&gt;
 </device>
 </devices>
 </deviceset>
-<deviceset name="TRIMPOT">
+<deviceset name="TRIMPOT" prefix="R">
 <gates>
 <gate name="G$1" symbol="TRIMPOT" x="0" y="-2.54"/>
 </gates>

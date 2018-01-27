@@ -1004,7 +1004,7 @@ Library created by Rob Kam of a few CEM music synthesizer ICs. More info about t
 </device>
 </devices>
 </deviceset>
-<deviceset name="CEM3360">
+<deviceset name="CEM3360" prefix="IC">
 <gates>
 <gate name="G$1" symbol="CEM3360" x="-7.62" y="-2.54"/>
 </gates>
@@ -1053,7 +1053,7 @@ Library created by Rob Kam of a few CEM music synthesizer ICs. More info about t
 </device>
 </devices>
 </deviceset>
-<deviceset name="CEM3320_UNFOLDED">
+<deviceset name="CEM3320_UNFOLDED" prefix="IC">
 <gates>
 <gate name="G$1" symbol="CEM3320_UNFOLDED" x="-12.7" y="-2.54"/>
 </gates>
