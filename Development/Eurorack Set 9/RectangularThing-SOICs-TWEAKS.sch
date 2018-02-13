@@ -11964,7 +11964,7 @@ BF959 corrected 2008.03.06&lt;br&gt;</description>
 </part>
 <part name="C3" library="OPL" deviceset="C*" device="-0603" value="0.01uF"/>
 <part name="C7" library="OPL" deviceset="C*" device="-0603" value="100nF"/>
-<part name="C10" library="OPL" deviceset="C*" device="-0603" value="1000pF"/>
+<part name="C10" library="OPL" deviceset="C*" device="-0603" value="1nF C0G"/>
 <part name="C6" library="OPL" deviceset="C*" device="-0603" value="10nF"/>
 <part name="C23" library="OPL" deviceset="C*" device="-0603" value="0.001uF"/>
 <part name="R6" library="OPL" deviceset="R*" device="-0603" value="470"/>
@@ -12459,6 +12459,9 @@ BF959 corrected 2008.03.06&lt;br&gt;</description>
 <part name="C63" library="OPL" deviceset="C*" device="-0603" value="10nF"/>
 <part name="GND144" library="SparkFun-Aesthetics" deviceset="GND" device=""/>
 <part name="GND145" library="SparkFun-Aesthetics" deviceset="GND" device=""/>
+<part name="C64" library="OPL" deviceset="C*" device="-0603" value="100nF"/>
+<part name="R39" library="OPL" deviceset="R*" device="-0603" value="100k"/>
+<part name="GND122" library="SparkFun-Aesthetics" deviceset="GND" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -14474,6 +14477,9 @@ BF959 corrected 2008.03.06&lt;br&gt;</description>
 <instance part="J9" gate="G$1" x="148.59" y="53.34"/>
 <instance part="GND74" gate="1" x="158.75" y="55.88" rot="R90"/>
 <instance part="IC1" gate="VR2" x="93.98" y="78.74" rot="MR180"/>
+<instance part="C64" gate="C" x="124.46" y="78.74"/>
+<instance part="R39" gate="R" x="128.27" y="82.55" rot="R90"/>
+<instance part="GND122" gate="1" x="128.27" y="88.9" rot="R180"/>
 </instances>
 <busses>
 </busses>
@@ -14583,6 +14589,10 @@ BF959 corrected 2008.03.06&lt;br&gt;</description>
 <pinref part="IC1" gate="VR2" pin="+IN"/>
 <wire x1="86.36" y1="76.2" x2="85.09" y2="76.2" width="0.1524" layer="91"/>
 </segment>
+<segment>
+<pinref part="R39" gate="R" pin="2"/>
+<pinref part="GND122" gate="1" pin="GND"/>
+</segment>
 </net>
 <net name="12V" class="1">
 <segment>
@@ -14685,10 +14695,16 @@ BF959 corrected 2008.03.06&lt;br&gt;</description>
 </net>
 <net name="OSCSUM" class="0">
 <segment>
-<pinref part="R13" gate="R" pin="2"/>
-<wire x1="119.38" y1="78.74" x2="134.62" y2="78.74" width="0.1524" layer="91"/>
-<label x="123.19" y="78.74" size="1.778" layer="95"/>
 <pinref part="J7" gate="G$1" pin="TIP"/>
+<pinref part="C64" gate="C" pin="2"/>
+<wire x1="128.27" y1="78.74" x2="132.08" y2="78.74" width="0.1524" layer="91"/>
+<junction x="128.27" y="78.74"/>
+<pinref part="R39" gate="R" pin="1"/>
+<junction x="132.08" y="78.74"/>
+<wire x1="132.08" y1="78.74" x2="134.62" y2="78.74" width="0.1524" layer="91"/>
+<wire x1="132.08" y1="78.74" x2="132.08" y2="96.52" width="0.1524" layer="91"/>
+<wire x1="132.08" y1="96.52" x2="165.1" y2="96.52" width="0.1524" layer="91"/>
+<label x="153.67" y="97.79" size="1.778" layer="95"/>
 </segment>
 <segment>
 <pinref part="J9" gate="G$1" pin="SWITCH"/>
@@ -15098,6 +15114,13 @@ BF959 corrected 2008.03.06&lt;br&gt;</description>
 <pinref part="J9" gate="G$1" pin="TIP"/>
 <wire x1="156.21" y1="48.26" x2="182.88" y2="48.26" width="0.1524" layer="91"/>
 <label x="165.1" y="48.26" size="1.778" layer="95"/>
+</segment>
+</net>
+<net name="N$84" class="0">
+<segment>
+<pinref part="R13" gate="R" pin="2"/>
+<wire x1="119.38" y1="78.74" x2="120.65" y2="78.74" width="0.1524" layer="91"/>
+<pinref part="C64" gate="C" pin="1"/>
 </segment>
 </net>
 </nets>
@@ -16579,21 +16602,21 @@ BF959 corrected 2008.03.06&lt;br&gt;</description>
 <plain>
 </plain>
 <instances>
-<instance part="IC2" gate="A" x="63.5" y="58.42"/>
+<instance part="IC2" gate="A" x="35.56" y="91.44"/>
 <instance part="IC2" gate="B" x="66.04" y="20.32"/>
-<instance part="IC2" gate="P" x="63.5" y="93.98"/>
-<instance part="GND127" gate="1" x="50.8" y="49.53"/>
-<instance part="GND126" gate="1" x="50.8" y="69.85" rot="R180"/>
-<instance part="GND130" gate="1" x="63.5" y="83.82"/>
-<instance part="C5" gate="C" x="67.31" y="104.14"/>
-<instance part="GND131" gate="1" x="71.12" y="101.6"/>
+<instance part="IC2" gate="P" x="35.56" y="127"/>
+<instance part="GND127" gate="1" x="22.86" y="82.55"/>
+<instance part="GND126" gate="1" x="22.86" y="102.87" rot="R180"/>
+<instance part="GND130" gate="1" x="35.56" y="116.84"/>
+<instance part="C5" gate="C" x="39.37" y="137.16"/>
+<instance part="GND131" gate="1" x="43.18" y="134.62"/>
 <instance part="GND128" gate="1" x="53.34" y="31.75" rot="R180"/>
 <instance part="GND129" gate="1" x="53.34" y="11.43"/>
 <instance part="TP1" gate="G$1" x="102.87" y="27.94" rot="R270">
 <attribute name="DESC" x="102.87" y="27.94" size="1.778" layer="96" rot="R270" display="off"/>
 </instance>
-<instance part="TP2" gate="G$1" x="100.33" y="66.04" rot="R270">
-<attribute name="DESC" x="100.33" y="66.04" size="1.778" layer="96" rot="R270" display="off"/>
+<instance part="TP2" gate="G$1" x="72.39" y="99.06" rot="R270">
+<attribute name="DESC" x="72.39" y="99.06" size="1.778" layer="96" rot="R270" display="off"/>
 </instance>
 <instance part="IC6" gate="A" x="49.53" y="-29.21"/>
 <instance part="IC6" gate="P" x="135.89" y="-29.21"/>
@@ -16622,18 +16645,18 @@ BF959 corrected 2008.03.06&lt;br&gt;</description>
 <instance part="GND119" gate="1" x="-21.59" y="-43.18"/>
 <instance part="GND120" gate="1" x="-13.97" y="-38.1"/>
 <instance part="JP3" gate="G$1" x="5.08" y="0" rot="R90"/>
-<instance part="Q1" gate="G$1" x="-27.94" y="85.09">
-<attribute name="OC_FARNELL" x="-27.94" y="85.09" size="1.778" layer="96" display="off"/>
-<attribute name="MF" x="-27.94" y="85.09" size="1.778" layer="96" display="off"/>
-<attribute name="MPN" x="-27.94" y="85.09" size="1.778" layer="96" display="off"/>
+<instance part="Q1" gate="G$1" x="10.16" y="85.09">
+<attribute name="OC_FARNELL" x="10.16" y="85.09" size="1.778" layer="96" display="off"/>
+<attribute name="MF" x="10.16" y="85.09" size="1.778" layer="96" display="off"/>
+<attribute name="MPN" x="10.16" y="85.09" size="1.778" layer="96" display="off"/>
 </instance>
-<instance part="R202" gate="R" x="-25.4" y="96.52" rot="R90"/>
-<instance part="GND139" gate="1" x="-25.4" y="63.5"/>
-<instance part="R203" gate="R" x="-34.29" y="81.28" rot="R90"/>
-<instance part="GND30" gate="1" x="-34.29" y="74.93"/>
-<instance part="GND140" gate="1" x="-43.18" y="74.93"/>
-<instance part="D4" gate="D" x="-43.18" y="81.28" rot="R90"/>
-<instance part="R204" gate="R" x="-50.8" y="85.09" rot="R180"/>
+<instance part="R202" gate="R" x="12.7" y="96.52" rot="R90"/>
+<instance part="GND139" gate="1" x="12.7" y="63.5"/>
+<instance part="R203" gate="R" x="3.81" y="81.28" rot="R90"/>
+<instance part="GND30" gate="1" x="3.81" y="74.93"/>
+<instance part="GND140" gate="1" x="-5.08" y="74.93"/>
+<instance part="D4" gate="D" x="-5.08" y="81.28" rot="R90"/>
+<instance part="R204" gate="R" x="-12.7" y="85.09" rot="R180"/>
 <instance part="Q2" gate="G$1" x="-30.48" y="13.97">
 <attribute name="OC_FARNELL" x="-30.48" y="13.97" size="1.778" layer="96" display="off"/>
 <attribute name="MF" x="-30.48" y="13.97" size="1.778" layer="96" display="off"/>
@@ -16650,27 +16673,27 @@ BF959 corrected 2008.03.06&lt;br&gt;</description>
 <busses>
 </busses>
 <nets>
-<net name="N$70" class="0">
+<net name="SUBOSC1_FEEDBACK" class="0">
 <segment>
 <pinref part="IC2" gate="A" pin="D"/>
-<wire x1="50.8" y1="60.96" x2="46.99" y2="60.96" width="0.1524" layer="91"/>
-<wire x1="46.99" y1="60.96" x2="46.99" y2="45.72" width="0.1524" layer="91"/>
-<wire x1="46.99" y1="45.72" x2="77.47" y2="45.72" width="0.1524" layer="91"/>
-<wire x1="77.47" y1="45.72" x2="77.47" y2="53.34" width="0.1524" layer="91"/>
+<wire x1="22.86" y1="93.98" x2="19.05" y2="93.98" width="0.1524" layer="91"/>
+<wire x1="19.05" y1="93.98" x2="19.05" y2="78.74" width="0.1524" layer="91"/>
+<wire x1="19.05" y1="78.74" x2="49.53" y2="78.74" width="0.1524" layer="91"/>
+<wire x1="49.53" y1="78.74" x2="49.53" y2="86.36" width="0.1524" layer="91"/>
 <pinref part="IC2" gate="A" pin="!Q"/>
-<wire x1="77.47" y1="53.34" x2="76.2" y2="53.34" width="0.1524" layer="91"/>
+<wire x1="49.53" y1="86.36" x2="48.26" y2="86.36" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="GND" class="1">
 <segment>
 <pinref part="IC2" gate="A" pin="R"/>
 <pinref part="GND127" gate="1" pin="GND"/>
-<wire x1="50.8" y1="52.07" x2="50.8" y2="53.34" width="0.1524" layer="91"/>
+<wire x1="22.86" y1="85.09" x2="22.86" y2="86.36" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <pinref part="IC2" gate="A" pin="S"/>
 <pinref part="GND126" gate="1" pin="GND"/>
-<wire x1="50.8" y1="67.31" x2="50.8" y2="66.04" width="0.1524" layer="91"/>
+<wire x1="22.86" y1="100.33" x2="22.86" y2="99.06" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <pinref part="IC2" gate="P" pin="VSS"/>
@@ -16723,7 +16746,7 @@ BF959 corrected 2008.03.06&lt;br&gt;</description>
 <segment>
 <pinref part="Q1" gate="G$1" pin="E"/>
 <pinref part="GND139" gate="1" pin="GND"/>
-<wire x1="-25.4" y1="66.04" x2="-25.4" y2="80.01" width="0.1524" layer="91"/>
+<wire x1="12.7" y1="66.04" x2="12.7" y2="80.01" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <pinref part="R203" gate="R" pin="1"/>
@@ -16750,11 +16773,11 @@ BF959 corrected 2008.03.06&lt;br&gt;</description>
 <net name="SUBOSC_1_OUT" class="0">
 <segment>
 <pinref part="IC2" gate="A" pin="Q"/>
-<wire x1="76.2" y1="66.04" x2="100.33" y2="66.04" width="0.1524" layer="91"/>
-<label x="78.74" y="67.31" size="1.778" layer="95"/>
+<wire x1="48.26" y1="99.06" x2="72.39" y2="99.06" width="0.1524" layer="91"/>
+<label x="60.96" y="100.33" size="1.778" layer="95"/>
 <pinref part="TP2" gate="G$1" pin="1"/>
-<wire x1="100.33" y1="66.04" x2="86.36" y2="66.04" width="0.1524" layer="91"/>
-<junction x="100.33" y="66.04"/>
+<wire x1="72.39" y1="99.06" x2="58.42" y2="99.06" width="0.1524" layer="91"/>
+<junction x="72.39" y="99.06"/>
 </segment>
 <segment>
 <pinref part="IC6" gate="A" pin="A"/>
@@ -16770,11 +16793,11 @@ BF959 corrected 2008.03.06&lt;br&gt;</description>
 </segment>
 <segment>
 <pinref part="R204" gate="R" pin="2"/>
-<wire x1="-54.61" y1="85.09" x2="-86.36" y2="85.09" width="0.1524" layer="91"/>
-<label x="-82.55" y="85.09" size="1.778" layer="95"/>
+<wire x1="-16.51" y1="85.09" x2="-48.26" y2="85.09" width="0.1524" layer="91"/>
+<label x="-44.45" y="85.09" size="1.778" layer="95"/>
 </segment>
 </net>
-<net name="N$107" class="0">
+<net name="SUBOSC2_FEEDBACK" class="0">
 <segment>
 <pinref part="IC2" gate="B" pin="!Q"/>
 <wire x1="78.74" y1="15.24" x2="80.01" y2="15.24" width="0.1524" layer="91"/>
@@ -16828,16 +16851,16 @@ BF959 corrected 2008.03.06&lt;br&gt;</description>
 </segment>
 <segment>
 <pinref part="IC2" gate="P" pin="VDD"/>
-<wire x1="63.5" y1="101.6" x2="63.5" y2="104.14" width="0.1524" layer="91"/>
-<label x="63.5" y="110.49" size="1.778" layer="95"/>
+<wire x1="35.56" y1="134.62" x2="35.56" y2="137.16" width="0.1524" layer="91"/>
+<label x="35.56" y="143.51" size="1.778" layer="95"/>
 <pinref part="C5" gate="C" pin="1"/>
-<wire x1="63.5" y1="104.14" x2="63.5" y2="109.22" width="0.1524" layer="91"/>
-<junction x="63.5" y="104.14"/>
+<wire x1="35.56" y1="137.16" x2="35.56" y2="142.24" width="0.1524" layer="91"/>
+<junction x="35.56" y="137.16"/>
 </segment>
 <segment>
 <pinref part="R202" gate="R" pin="2"/>
-<wire x1="-25.4" y1="100.33" x2="-25.4" y2="111.76" width="0.1524" layer="91"/>
-<label x="-25.4" y="106.68" size="1.778" layer="95"/>
+<wire x1="12.7" y1="100.33" x2="12.7" y2="111.76" width="0.1524" layer="91"/>
+<label x="12.7" y="106.68" size="1.778" layer="95"/>
 </segment>
 <segment>
 <pinref part="R8" gate="R" pin="2"/>
@@ -16974,26 +16997,24 @@ BF959 corrected 2008.03.06&lt;br&gt;</description>
 <segment>
 <pinref part="Q1" gate="G$1" pin="B"/>
 <pinref part="R203" gate="R" pin="2"/>
-<wire x1="-30.48" y1="85.09" x2="-34.29" y2="85.09" width="0.1524" layer="91"/>
+<wire x1="7.62" y1="85.09" x2="3.81" y2="85.09" width="0.1524" layer="91"/>
 <pinref part="D4" gate="D" pin="-"/>
-<wire x1="-34.29" y1="85.09" x2="-43.18" y2="85.09" width="0.1524" layer="91"/>
+<wire x1="3.81" y1="85.09" x2="-5.08" y2="85.09" width="0.1524" layer="91"/>
 <pinref part="R204" gate="R" pin="1"/>
-<wire x1="-43.18" y1="85.09" x2="-46.99" y2="85.09" width="0.1524" layer="91"/>
-<junction x="-43.18" y="85.09"/>
-<junction x="-34.29" y="85.09"/>
+<wire x1="-5.08" y1="85.09" x2="-8.89" y2="85.09" width="0.1524" layer="91"/>
+<junction x="-5.08" y="85.09"/>
+<junction x="3.81" y="85.09"/>
 </segment>
 </net>
 <net name="SUBCLOCK_1" class="0">
 <segment>
-<wire x1="50.8" y1="58.42" x2="1.27" y2="58.42" width="0.1524" layer="91"/>
-<label x="1.27" y="58.42" size="1.778" layer="95"/>
+<label x="16.51" y="91.44" size="1.778" layer="95" rot="R90"/>
 <pinref part="Q1" gate="G$1" pin="C"/>
 <pinref part="R202" gate="R" pin="1"/>
-<wire x1="-25.4" y1="92.71" x2="-25.4" y2="91.44" width="0.1524" layer="91"/>
-<junction x="-25.4" y="91.44"/>
-<wire x1="-25.4" y1="91.44" x2="-25.4" y2="90.17" width="0.1524" layer="91"/>
-<wire x1="-25.4" y1="91.44" x2="1.27" y2="91.44" width="0.1524" layer="91"/>
-<wire x1="1.27" y1="91.44" x2="1.27" y2="58.42" width="0.1524" layer="91"/>
+<wire x1="12.7" y1="92.71" x2="12.7" y2="91.44" width="0.1524" layer="91"/>
+<junction x="12.7" y="91.44"/>
+<wire x1="12.7" y1="91.44" x2="12.7" y2="90.17" width="0.1524" layer="91"/>
+<wire x1="12.7" y1="91.44" x2="22.86" y2="91.44" width="0.1524" layer="91"/>
 <pinref part="IC2" gate="A" pin="CLK"/>
 </segment>
 </net>
