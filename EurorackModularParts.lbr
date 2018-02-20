@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.025" unitdist="inch" unit="inch" style="lines" multiple="1" display="yes" altdistance="0.025" altunitdist="inch" altunit="inch"/>
+<grid distance="0.1" unitdist="mm" unit="mm" style="lines" multiple="1" display="yes" altdistance="0.025" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="2" name="Route2" color="1" fill="3" visible="yes" active="yes"/>
@@ -942,14 +942,26 @@ NS Package M08A</description>
 <hole x="-7.875" y="-1.59" drill="1.85"/>
 <hole x="7.875" y="1.59" drill="1.85"/>
 <hole x="7.875" y="-1.59" drill="1.85"/>
-<pad name="1" x="-4.7" y="0" drill="1.85"/>
-<pad name="2" x="0" y="0" drill="1.85"/>
-<pad name="3" x="4.7" y="0" drill="1.85"/>
+<pad name="1" x="-4.7" y="0" drill="1.85" shape="long" rot="R90"/>
+<pad name="2" x="0" y="0" drill="1.85" shape="long" rot="R90"/>
+<pad name="3" x="4.7" y="0" drill="1.85" shape="long" rot="R90"/>
 <wire x1="-7.875" y1="4.065" x2="7.875" y2="4.065" width="0.127" layer="21"/>
 <wire x1="7.875" y1="4.065" x2="7.875" y2="-4.065" width="0.127" layer="21"/>
 <wire x1="7.875" y1="-4.065" x2="-7.875" y2="-4.065" width="0.127" layer="21"/>
 <wire x1="-7.875" y1="-4.065" x2="-7.875" y2="4.065" width="0.127" layer="21"/>
 <circle x="0" y="0" radius="3" width="0.001" layer="255"/>
+<wire x1="-5.3" y1="2" x2="-5.3" y2="-2" width="0.127" layer="46"/>
+<wire x1="-5.3" y1="-2" x2="-4.1" y2="-2" width="0.127" layer="46"/>
+<wire x1="-4.1" y1="-2" x2="-4.1" y2="2" width="0.127" layer="46"/>
+<wire x1="-4.1" y1="2" x2="-5.3" y2="2" width="0.127" layer="46"/>
+<wire x1="-0.6" y1="2" x2="-0.6" y2="-2" width="0.127" layer="46"/>
+<wire x1="-0.6" y1="-2" x2="0.6" y2="-2" width="0.127" layer="46"/>
+<wire x1="0.6" y1="-2" x2="0.6" y2="2" width="0.127" layer="46"/>
+<wire x1="0.6" y1="2" x2="-0.6" y2="2" width="0.127" layer="46"/>
+<wire x1="4.1" y1="2" x2="4.1" y2="-2" width="0.127" layer="46"/>
+<wire x1="4.1" y1="-2" x2="5.3" y2="-2" width="0.127" layer="46"/>
+<wire x1="5.3" y1="-2" x2="5.3" y2="2" width="0.127" layer="46"/>
+<wire x1="5.3" y1="2" x2="4.1" y2="2" width="0.127" layer="46"/>
 </package>
 <package name="SOT95P290X145-5N">
 <smd name="1" x="-1.2954" y="0.9398" dx="1.27" dy="0.5588" layer="1"/>
