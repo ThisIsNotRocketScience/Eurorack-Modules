@@ -983,10 +983,10 @@ NS Package M08A</description>
 <element name="R27" library="OPL" package="R0603" value="12k" x="39.37" y="6.35" rot="R180"/>
 <element name="R28" library="OPL" package="R0603" value="100k" x="44.7675" y="2.8575" rot="R90"/>
 <element name="R29" library="OPL" package="R0603" value="100k" x="45.72" y="6.6675"/>
-<element name="C41" library="OPL" package="C0603" value="3.3n" x="45.72" y="16.51"/>
-<element name="C42" library="OPL" package="C0603" value="3.3n" x="41.91" y="1.905"/>
-<element name="C43" library="OPL" package="C0603" value="3.3n" x="45.72" y="5.08"/>
-<element name="C44" library="OPL" package="C0603" value="3.3n" x="40.3225" y="67.945" rot="R180"/>
+<element name="C41" library="OPL" package="C0603" value="33p" x="45.72" y="16.51"/>
+<element name="C42" library="OPL" package="C0603" value="33p" x="41.91" y="1.905"/>
+<element name="C43" library="OPL" package="C0603" value="33p" x="45.72" y="5.08"/>
+<element name="C44" library="OPL" package="C0603" value="33p" x="40.3225" y="67.945" rot="R180"/>
 <element name="IC2" library="EurorackModularParts" package="SO14" value="TL074D" x="40.9575" y="95.5675"/>
 <element name="C45" library="OPL" package="C0603" value="100n" x="40.9575" y="90.17" rot="R270"/>
 <element name="C46" library="OPL" package="C0603" value="100n" x="40.1955" y="102.5525" rot="R270"/>
@@ -996,8 +996,8 @@ NS Package M08A</description>
 <element name="R33" library="OPL" package="R0603" value="100k" x="44.1325" y="90.4875"/>
 <element name="R34" library="OPL" package="R0603" value="51k" x="37.465" y="103.8225"/>
 <element name="R35" library="OPL" package="R0603" value="100k" x="37.465" y="100.6475" rot="R180"/>
-<element name="C47" library="OPL" package="C0603" value="3.3n" x="44.1325" y="89.2175"/>
-<element name="C48" library="OPL" package="C0603" value="3.3n" x="37.465" y="102.235" rot="R180"/>
+<element name="C47" library="OPL" package="C0603" value="33p" x="44.1325" y="89.2175"/>
+<element name="C48" library="OPL" package="C0603" value="33p" x="37.465" y="102.235" rot="R180"/>
 <element name="U$7" library="EurorackModularParts" package="3.5MM-JACK-SWITCH-13MM-INPUT" value="PJ-341" x="30.48" y="99.06">
 <attribute name="DESC" value="Length 1" x="30.48" y="99.06" size="1.778" layer="27" display="off"/>
 <attribute name="MPN" value="PJ-341" x="30.48" y="99.06" size="1.778" layer="27" display="off"/>
@@ -1073,7 +1073,7 @@ NS Package M08A</description>
 <element name="R55" library="OPL" package="R0603" value="56" x="54.102" y="15.0495" rot="R180"/>
 <element name="R56" library="OPL" package="R0603" value="100k" x="18.8595" y="12.827" rot="R180"/>
 <element name="R57" library="OPL" package="R0603" value="51k" x="18.923" y="16.0655"/>
-<element name="C55" library="OPL" package="C0603" value="3.3n" x="18.8595" y="14.4145" rot="R180"/>
+<element name="C55" library="OPL" package="C0603" value="33p" x="18.8595" y="14.4145" rot="R180"/>
 <element name="R58" library="OPL" package="R0603" value="56" x="52.578" y="52.8955"/>
 <element name="U$16" library="EurorackModularParts" package="3.5MM-JACK-SWITCH-13MM-OUTPUT" value="PJ-341" x="53.34" y="45.72">
 <attribute name="MPN" value="PJ-341" x="53.34" y="45.72" size="1.778" layer="27" display="off"/>

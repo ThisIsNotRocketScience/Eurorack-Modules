@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.05" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
+<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="no" active="no"/>
 <layer number="2" name="Route2" color="1" fill="3" visible="no" active="no"/>
@@ -3631,10 +3631,10 @@ BF959 corrected 2008.03.06&lt;br&gt;</description>
 <part name="R29" library="OPL" deviceset="R*" device="-0603" value="100k"/>
 <part name="SUPPLY4" library="SparkFun-Aesthetics" deviceset="5V" device=""/>
 <part name="SUPPLY5" library="SparkFun-Aesthetics" deviceset="5V" device=""/>
-<part name="C41" library="OPL" deviceset="C*" device="-0603" value="3.3n"/>
-<part name="C42" library="OPL" deviceset="C*" device="-0603" value="3.3n"/>
-<part name="C43" library="OPL" deviceset="C*" device="-0603" value="3.3n"/>
-<part name="C44" library="OPL" deviceset="C*" device="-0603" value="3.3n"/>
+<part name="C41" library="OPL" deviceset="C*" device="-0603" value="33p"/>
+<part name="C42" library="OPL" deviceset="C*" device="-0603" value="33p"/>
+<part name="C43" library="OPL" deviceset="C*" device="-0603" value="33p"/>
+<part name="C44" library="OPL" deviceset="C*" device="-0603" value="33p"/>
 <part name="IC2" library="EurorackModularParts" deviceset="TL074" device="D"/>
 <part name="C45" library="OPL" deviceset="C*" device="-0603" value="100n"/>
 <part name="C46" library="OPL" deviceset="C*" device="-0603" value="100n"/>
@@ -3647,8 +3647,8 @@ BF959 corrected 2008.03.06&lt;br&gt;</description>
 <part name="R33" library="OPL" deviceset="R*" device="-0603" value="100k"/>
 <part name="R34" library="OPL" deviceset="R*" device="-0603" value="51k"/>
 <part name="R35" library="OPL" deviceset="R*" device="-0603" value="100k"/>
-<part name="C47" library="OPL" deviceset="C*" device="-0603" value="3.3n"/>
-<part name="C48" library="OPL" deviceset="C*" device="-0603" value="3.3n"/>
+<part name="C47" library="OPL" deviceset="C*" device="-0603" value="33p"/>
+<part name="C48" library="OPL" deviceset="C*" device="-0603" value="33p"/>
 <part name="GND48" library="SparkFun-Aesthetics" deviceset="GND" device=""/>
 <part name="GND49" library="SparkFun-Aesthetics" deviceset="GND" device=""/>
 <part name="GND50" library="SparkFun-Aesthetics" deviceset="GND" device=""/>
@@ -3744,7 +3744,7 @@ BF959 corrected 2008.03.06&lt;br&gt;</description>
 <part name="R55" library="OPL" deviceset="R*" device="-0603" value="56"/>
 <part name="R56" library="OPL" deviceset="R*" device="-0603" value="100k"/>
 <part name="R57" library="OPL" deviceset="R*" device="-0603" value="51k"/>
-<part name="C55" library="OPL" deviceset="C*" device="-0603" value="3.3n"/>
+<part name="C55" library="OPL" deviceset="C*" device="-0603" value="33p"/>
 <part name="GND66" library="SparkFun-Aesthetics" deviceset="GND" device=""/>
 <part name="R58" library="OPL" deviceset="R*" device="-0603" value="56"/>
 <part name="U$16" library="EurorackModularParts" deviceset="AUDIO-JACK" device="OUTPUT" value="PJ-341">
