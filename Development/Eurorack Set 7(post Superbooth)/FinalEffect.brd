@@ -3092,7 +3092,7 @@ design rules under a new name.</description>
 <wire x1="44.004" y1="15.887" x2="42.811" y2="15.887" width="0.2032" layer="1"/>
 <wire x1="42.811" y1="15.887" x2="42.037" y2="15.113" width="0.2032" layer="1"/>
 </signal>
-<signal name="N$60">
+<signal name="LEFT_BEFORE_CAP">
 <contactref element="U$48" pad="P$28"/>
 <contactref element="C29" pad="+"/>
 <wire x1="12.826" y1="21.526" x2="13.652" y2="21.526" width="0.2032" layer="1"/>
@@ -3306,7 +3306,7 @@ design rules under a new name.</description>
 <wire x1="20.828" y1="17.653" x2="20.828" y2="12.954" width="0.2032" layer="1"/>
 <wire x1="20.828" y1="12.954" x2="23.749" y2="10.033" width="0.2032" layer="1"/>
 </signal>
-<signal name="N$74">
+<signal name="LEFT_POST_OPAMP">
 <contactref element="IC1" pad="8"/>
 <contactref element="R56" pad="2"/>
 <contactref element="R58" pad="1"/>
@@ -3351,7 +3351,7 @@ design rules under a new name.</description>
 <wire x1="47.244" y1="9.398" x2="53.158" y2="9.398" width="0.2032" layer="1"/>
 <wire x1="53.158" y1="9.398" x2="54.61" y2="10.85" width="0.2032" layer="1"/>
 </signal>
-<signal name="N$79">
+<signal name="LEFT_AFTER_CAP">
 <contactref element="R59" pad="2"/>
 <contactref element="C29" pad="-"/>
 <wire x1="22.45" y1="21.591" x2="21.21" y2="21.591" width="0.2032" layer="1"/>
@@ -3371,7 +3371,7 @@ design rules under a new name.</description>
 <wire x1="27.024" y1="1.417" x2="27.024" y2="1.504" width="0.2032" layer="1"/>
 <wire x1="27.024" y1="1.504" x2="27.004" y2="1.524" width="0.2032" layer="1"/>
 </signal>
-<signal name="N$80">
+<signal name="LEFT_PRE_OPAMP">
 <contactref element="R59" pad="1"/>
 <contactref element="IC1" pad="9"/>
 <contactref element="R58" pad="2"/>
@@ -3379,7 +3379,7 @@ design rules under a new name.</description>
 <wire x1="28.371" y1="2.715" x2="28.548" y2="2.792" width="0.2032" layer="1"/>
 <wire x1="28.548" y1="2.792" x2="28.548" y2="1.417" width="0.2032" layer="1"/>
 </signal>
-<signal name="N$82">
+<signal name="LEFT_TO_JACK">
 <contactref element="R56" pad="1"/>
 <contactref element="U$37" pad="TIP@3"/>
 <wire x1="38.392" y1="9.402" x2="43.002" y2="9.402" width="0.2032" layer="1"/>
