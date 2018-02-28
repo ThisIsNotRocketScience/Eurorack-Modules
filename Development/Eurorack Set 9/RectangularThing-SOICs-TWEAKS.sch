@@ -6,36 +6,36 @@
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.05" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
+<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
 <layers>
-<layer number="1" name="Top" color="4" fill="1" visible="yes" active="no"/>
-<layer number="2" name="Route2" color="1" fill="3" visible="yes" active="no"/>
-<layer number="3" name="Route3" color="4" fill="3" visible="yes" active="no"/>
-<layer number="4" name="Route4" color="1" fill="4" visible="yes" active="no"/>
-<layer number="5" name="Route5" color="4" fill="4" visible="yes" active="no"/>
-<layer number="6" name="Route6" color="1" fill="8" visible="yes" active="no"/>
-<layer number="7" name="Route7" color="4" fill="8" visible="yes" active="no"/>
-<layer number="8" name="Route8" color="1" fill="2" visible="yes" active="no"/>
-<layer number="9" name="Route9" color="4" fill="2" visible="yes" active="no"/>
-<layer number="10" name="Route10" color="1" fill="7" visible="yes" active="no"/>
-<layer number="11" name="Route11" color="4" fill="7" visible="yes" active="no"/>
-<layer number="12" name="Route12" color="1" fill="5" visible="yes" active="no"/>
-<layer number="13" name="Route13" color="4" fill="5" visible="yes" active="no"/>
-<layer number="14" name="Route14" color="1" fill="6" visible="yes" active="no"/>
-<layer number="15" name="Route15" color="4" fill="6" visible="yes" active="no"/>
-<layer number="16" name="Bottom" color="1" fill="1" visible="yes" active="no"/>
-<layer number="17" name="Pads" color="2" fill="1" visible="yes" active="no"/>
-<layer number="18" name="Vias" color="2" fill="1" visible="yes" active="no"/>
-<layer number="19" name="Unrouted" color="6" fill="1" visible="yes" active="no"/>
-<layer number="20" name="Dimension" color="15" fill="1" visible="yes" active="no"/>
-<layer number="21" name="tPlace" color="7" fill="1" visible="yes" active="no"/>
-<layer number="22" name="bPlace" color="7" fill="1" visible="yes" active="no"/>
-<layer number="23" name="tOrigins" color="15" fill="1" visible="yes" active="no"/>
-<layer number="24" name="bOrigins" color="15" fill="1" visible="yes" active="no"/>
-<layer number="25" name="tNames" color="13" fill="1" visible="yes" active="no"/>
-<layer number="26" name="bNames" color="7" fill="1" visible="yes" active="no"/>
-<layer number="27" name="tValues" color="7" fill="1" visible="yes" active="no"/>
-<layer number="28" name="bValues" color="7" fill="1" visible="yes" active="no"/>
+<layer number="1" name="Top" color="4" fill="1" visible="no" active="no"/>
+<layer number="2" name="Route2" color="1" fill="3" visible="no" active="no"/>
+<layer number="3" name="Route3" color="4" fill="3" visible="no" active="no"/>
+<layer number="4" name="Route4" color="1" fill="4" visible="no" active="no"/>
+<layer number="5" name="Route5" color="4" fill="4" visible="no" active="no"/>
+<layer number="6" name="Route6" color="1" fill="8" visible="no" active="no"/>
+<layer number="7" name="Route7" color="4" fill="8" visible="no" active="no"/>
+<layer number="8" name="Route8" color="1" fill="2" visible="no" active="no"/>
+<layer number="9" name="Route9" color="4" fill="2" visible="no" active="no"/>
+<layer number="10" name="Route10" color="1" fill="7" visible="no" active="no"/>
+<layer number="11" name="Route11" color="4" fill="7" visible="no" active="no"/>
+<layer number="12" name="Route12" color="1" fill="5" visible="no" active="no"/>
+<layer number="13" name="Route13" color="4" fill="5" visible="no" active="no"/>
+<layer number="14" name="Route14" color="1" fill="6" visible="no" active="no"/>
+<layer number="15" name="Route15" color="4" fill="6" visible="no" active="no"/>
+<layer number="16" name="Bottom" color="1" fill="1" visible="no" active="no"/>
+<layer number="17" name="Pads" color="2" fill="1" visible="no" active="no"/>
+<layer number="18" name="Vias" color="2" fill="1" visible="no" active="no"/>
+<layer number="19" name="Unrouted" color="6" fill="1" visible="no" active="no"/>
+<layer number="20" name="Dimension" color="15" fill="1" visible="no" active="no"/>
+<layer number="21" name="tPlace" color="7" fill="1" visible="no" active="no"/>
+<layer number="22" name="bPlace" color="7" fill="1" visible="no" active="no"/>
+<layer number="23" name="tOrigins" color="15" fill="1" visible="no" active="no"/>
+<layer number="24" name="bOrigins" color="15" fill="1" visible="no" active="no"/>
+<layer number="25" name="tNames" color="13" fill="1" visible="no" active="no"/>
+<layer number="26" name="bNames" color="7" fill="1" visible="no" active="no"/>
+<layer number="27" name="tValues" color="7" fill="1" visible="no" active="no"/>
+<layer number="28" name="bValues" color="7" fill="1" visible="no" active="no"/>
 <layer number="29" name="tStop" color="7" fill="3" visible="no" active="no"/>
 <layer number="30" name="bStop" color="7" fill="6" visible="no" active="no"/>
 <layer number="31" name="tCream" color="7" fill="4" visible="no" active="no"/>
@@ -44,8 +44,8 @@
 <layer number="34" name="bFinish" color="6" fill="6" visible="no" active="no"/>
 <layer number="35" name="tGlue" color="7" fill="4" visible="no" active="no"/>
 <layer number="36" name="bGlue" color="7" fill="5" visible="no" active="no"/>
-<layer number="37" name="tTest" color="7" fill="1" visible="yes" active="no"/>
-<layer number="38" name="bTest" color="7" fill="1" visible="yes" active="no"/>
+<layer number="37" name="tTest" color="7" fill="1" visible="no" active="no"/>
+<layer number="38" name="bTest" color="7" fill="1" visible="no" active="no"/>
 <layer number="39" name="tKeepout" color="4" fill="11" visible="no" active="no"/>
 <layer number="40" name="bKeepout" color="1" fill="11" visible="no" active="no"/>
 <layer number="41" name="tRestrict" color="4" fill="10" visible="no" active="no"/>
@@ -53,19 +53,19 @@
 <layer number="43" name="vRestrict" color="2" fill="10" visible="no" active="no"/>
 <layer number="44" name="Drills" color="7" fill="1" visible="no" active="no"/>
 <layer number="45" name="Holes" color="7" fill="1" visible="no" active="no"/>
-<layer number="46" name="Milling" color="3" fill="1" visible="yes" active="no"/>
-<layer number="47" name="Measures" color="7" fill="1" visible="yes" active="no"/>
-<layer number="48" name="Document" color="7" fill="1" visible="yes" active="no"/>
-<layer number="49" name="Reference" color="7" fill="1" visible="yes" active="no"/>
-<layer number="50" name="dxf" color="7" fill="1" visible="yes" active="no"/>
-<layer number="51" name="tDocu" color="7" fill="1" visible="yes" active="no"/>
-<layer number="52" name="bDocu" color="7" fill="1" visible="yes" active="no"/>
-<layer number="53" name="tGND_GNDA" color="7" fill="9" visible="yes" active="no"/>
-<layer number="54" name="bGND_GNDA" color="1" fill="9" visible="yes" active="no"/>
-<layer number="56" name="wert" color="7" fill="1" visible="yes" active="no"/>
-<layer number="57" name="tCAD" color="7" fill="1" visible="yes" active="no"/>
-<layer number="59" name="tCarbon" color="7" fill="1" visible="yes" active="no"/>
-<layer number="60" name="bCarbon" color="7" fill="1" visible="yes" active="no"/>
+<layer number="46" name="Milling" color="3" fill="1" visible="no" active="no"/>
+<layer number="47" name="Measures" color="7" fill="1" visible="no" active="no"/>
+<layer number="48" name="Document" color="7" fill="1" visible="no" active="no"/>
+<layer number="49" name="Reference" color="7" fill="1" visible="no" active="no"/>
+<layer number="50" name="dxf" color="7" fill="1" visible="no" active="no"/>
+<layer number="51" name="tDocu" color="7" fill="1" visible="no" active="no"/>
+<layer number="52" name="bDocu" color="7" fill="1" visible="no" active="no"/>
+<layer number="53" name="tGND_GNDA" color="7" fill="9" visible="no" active="no"/>
+<layer number="54" name="bGND_GNDA" color="1" fill="9" visible="no" active="no"/>
+<layer number="56" name="wert" color="7" fill="1" visible="no" active="no"/>
+<layer number="57" name="tCAD" color="7" fill="1" visible="no" active="no"/>
+<layer number="59" name="tCarbon" color="7" fill="1" visible="no" active="no"/>
+<layer number="60" name="bCarbon" color="7" fill="1" visible="no" active="no"/>
 <layer number="90" name="Modules" color="5" fill="1" visible="yes" active="yes"/>
 <layer number="91" name="Nets" color="2" fill="1" visible="yes" active="yes"/>
 <layer number="92" name="Busses" color="1" fill="1" visible="yes" active="yes"/>
@@ -6403,10 +6403,10 @@ http://dangerousprototypes.com</description>
 <part name="GND93" library="SparkFun-Aesthetics" deviceset="GND" device=""/>
 <part name="R168" library="OPL" deviceset="R*" device="-0603" value="470"/>
 <part name="GND82" library="SparkFun-Aesthetics" deviceset="GND" device=""/>
-<part name="C55" library="OPL" deviceset="C*" device="-0603" value="0.02uF"/>
+<part name="C55" library="OPL" deviceset="C*" device="-0603" value="20nF"/>
 <part name="R169" library="OPL" deviceset="R*" device="-0603" value="24k"/>
-<part name="C56" library="OPL" deviceset="C*" device="-0603" value="0.02uF"/>
-<part name="C53" library="OPL" deviceset="C*" device="-0603" value="0.039uF"/>
+<part name="C56" library="OPL" deviceset="C*" device="-0603" value="10nF"/>
+<part name="C53" library="OPL" deviceset="C*" device="-0603" value="39nF"/>
 <part name="GND83" library="SparkFun-Aesthetics" deviceset="GND" device=""/>
 <part name="IC14" library="CEM" deviceset="CEM3360" device="SOIC14" value="CEM3360SOIC14"/>
 <part name="GND76" library="SparkFun-Aesthetics" deviceset="GND" device=""/>
@@ -6442,7 +6442,7 @@ http://dangerousprototypes.com</description>
 <part name="R91" library="OPL" deviceset="R*" device="-0603" value="91k"/>
 <part name="R93" library="OPL" deviceset="R*" device="-0603" value="100k"/>
 <part name="R118" library="OPL" deviceset="R*" device="-0603" value="100k"/>
-<part name="R90" library="OPL" deviceset="R*" device="-0603" value="51k"/>
+<part name="R90" library="OPL" deviceset="R*" device="-0603" value="51.1k"/>
 <part name="R120" library="OPL" deviceset="R*" device="-0603" value="100k"/>
 <part name="R121" library="OPL" deviceset="R*" device="-0603" value="1.8k"/>
 <part name="GND115" library="SparkFun-Aesthetics" deviceset="GND" device=""/>
@@ -6472,11 +6472,11 @@ http://dangerousprototypes.com</description>
 <part name="J3" library="EurorackModularParts" deviceset="AUDIO-JACK" device="INPUT" value="PJ-341">
 <attribute name="DESC" value="CV"/>
 </part>
-<part name="C3" library="OPL" deviceset="C*" device="-0603" value="0.01uF"/>
+<part name="C3" library="OPL" deviceset="C*" device="-0603" value="10nF"/>
 <part name="C7" library="OPL" deviceset="C*" device="-0603" value="100nF"/>
 <part name="C10" library="OPL" deviceset="C*" device="-0603" value="1nF C0G"/>
 <part name="C6" library="OPL" deviceset="C*" device="-0603" value="10nF"/>
-<part name="C23" library="OPL" deviceset="C*" device="-0603" value="1nF"/>
+<part name="C23" library="OPL" deviceset="C*" device="-0603" value="1nF C0G"/>
 <part name="R6" library="OPL" deviceset="R*" device="-0603" value="470"/>
 <part name="R18" library="OPL" deviceset="R*" device="-0603" value="1M"/>
 <part name="R7" library="OPL" deviceset="R*" device="-0603" value="100k"/>
@@ -6521,7 +6521,7 @@ http://dangerousprototypes.com</description>
 </part>
 <part name="R146" library="OPL" deviceset="R*" device="-0603" value="100k"/>
 <part name="R140" library="OPL" deviceset="R*" device="-0603" value="100k"/>
-<part name="R145" library="OPL" deviceset="R*" device="-0603" value="50k"/>
+<part name="R145" library="OPL" deviceset="R*" device="-0603" value="51.1k"/>
 <part name="GND21" library="SparkFun-Aesthetics" deviceset="GND" device=""/>
 <part name="GND33" library="SparkFun-Aesthetics" deviceset="GND" device=""/>
 <part name="GND117" library="SparkFun-Aesthetics" deviceset="GND" device=""/>
@@ -6555,10 +6555,10 @@ http://dangerousprototypes.com</description>
 <part name="GND105" library="SparkFun-Aesthetics" deviceset="GND" device=""/>
 <part name="R174" library="OPL" deviceset="R*" device="-0603" value="470"/>
 <part name="GND94" library="SparkFun-Aesthetics" deviceset="GND" device=""/>
-<part name="C60" library="OPL" deviceset="C*" device="-0603" value="0.02uF"/>
+<part name="C60" library="OPL" deviceset="C*" device="-0603" value="20nF"/>
 <part name="R173" library="OPL" deviceset="R*" device="-0603" value="24k"/>
-<part name="C59" library="OPL" deviceset="C*" device="-0603" value="0.02uF"/>
-<part name="C54" library="OPL" deviceset="C*" device="-0603" value="0.039uF"/>
+<part name="C59" library="OPL" deviceset="C*" device="-0603" value="20nF"/>
+<part name="C54" library="OPL" deviceset="C*" device="-0603" value="39nF"/>
 <part name="GND95" library="SparkFun-Aesthetics" deviceset="GND" device=""/>
 <part name="C9" library="OPL" deviceset="C*" device="-0603" value="100nF"/>
 <part name="GND101" library="SparkFun-Aesthetics" deviceset="GND" device=""/>
@@ -6660,12 +6660,12 @@ http://dangerousprototypes.com</description>
 <part name="R27" library="EurorackModularParts" deviceset="POT" device="ZEPHPOT_BIGKNOB" value="10k">
 <attribute name="DESC" value="Coarse 2"/>
 </part>
-<part name="C21" library="OPL" deviceset="C*" device="-0603" value="0.01uF"/>
+<part name="C21" library="OPL" deviceset="C*" device="-0603" value="10nF"/>
 <part name="C19" library="OPL" deviceset="C*" device="-0603" value="100nF"/>
-<part name="C17" library="OPL" deviceset="C*" device="-0603" value="1000pF"/>
-<part name="C18" library="OPL" deviceset="C*" device="-0603" value="0.01uF"/>
-<part name="C16" library="OPL" deviceset="C*" device="-0603" value="0.001uF"/>
-<part name="C15" library="OPL" deviceset="C*" device="-0603" value="0.001uF"/>
+<part name="C17" library="OPL" deviceset="C*" device="-0603" value="1nF C0G"/>
+<part name="C18" library="OPL" deviceset="C*" device="-0603" value="10nF"/>
+<part name="C16" library="OPL" deviceset="C*" device="-0603" value="1nF C0G"/>
+<part name="C15" library="OPL" deviceset="C*" device="-0603" value="1nF C0G"/>
 <part name="R54" library="OPL" deviceset="R*" device="-0603" value="470"/>
 <part name="R55" library="OPL" deviceset="R*" device="-0603" value="1M"/>
 <part name="R56" library="OPL" deviceset="R*" device="-0603" value="100k"/>
@@ -6735,7 +6735,7 @@ http://dangerousprototypes.com</description>
 <part name="R109" library="OPL" deviceset="R*" device="-0603" value="100k"/>
 <part name="R106" library="OPL" deviceset="R*" device="-0603" value="100k"/>
 <part name="R105" library="OPL" deviceset="R*" device="-0603" value="100k"/>
-<part name="R104" library="OPL" deviceset="R*" device="-0603" value="50k"/>
+<part name="R104" library="OPL" deviceset="R*" device="-0603" value="51.1k"/>
 <part name="R165" library="EurorackModularParts" deviceset="POT" device="ZEPHPOT_BIGKNOB" value="10k">
 <attribute name="DESC" value="HP Cutoff"/>
 </part>
@@ -6754,7 +6754,7 @@ http://dangerousprototypes.com</description>
 <part name="C35" library="OPL" deviceset="C*" device="-0603" value="300pF"/>
 <part name="C34" library="OPL" deviceset="C*" device="-0603" value="300pF"/>
 <part name="C33" library="dp_devices" deviceset="CAPACITOR_POL" device="-CASE_B" value="1uF"/>
-<part name="R107" library="OPL" deviceset="R*" device="-0603" value="51k"/>
+<part name="R107" library="OPL" deviceset="R*" device="-0603" value="51.1k"/>
 <part name="R117" library="OPL" deviceset="R*" device="-0603" value="100k"/>
 <part name="R114" library="OPL" deviceset="R*" device="-0603" value="100k"/>
 <part name="R115" library="OPL" deviceset="R*" device="-0603" value="100k"/>
@@ -6781,18 +6781,18 @@ http://dangerousprototypes.com</description>
 <attribute name="DESC" value="LP Cutoff Mod"/>
 </part>
 <part name="GND17" library="SparkFun-Aesthetics" deviceset="GND" device=""/>
-<part name="R188" library="EurorackModularParts" deviceset="TRIMPOT" device="" value="100k">
+<part name="R188" library="EurorackModularParts" deviceset="TRIMPOT" device="" value="20k">
 <attribute name="DESC" value="Osc1: Hi "/>
 </part>
-<part name="R189" library="EurorackModularParts" deviceset="TRIMPOT" device="" value="100k">
+<part name="R189" library="EurorackModularParts" deviceset="TRIMPOT" device="" value="20k">
 <attribute name="DESC" value="Osc2: Hi"/>
 </part>
 <part name="GND51" library="SparkFun-Aesthetics" deviceset="GND" device=""/>
-<part name="R187" library="EurorackModularParts" deviceset="TRIMPOT" device="" value="100k">
+<part name="R187" library="EurorackModularParts" deviceset="TRIMPOT" device="" value="10k">
 <attribute name="DESC" value="Osc2: Scale"/>
 </part>
 <part name="GND50" library="SparkFun-Aesthetics" deviceset="GND" device=""/>
-<part name="R190" library="EurorackModularParts" deviceset="TRIMPOT" device="" value="100k">
+<part name="R190" library="EurorackModularParts" deviceset="TRIMPOT" device="" value="10k">
 <attribute name="DESC" value="Osc1: Scale"/>
 </part>
 <part name="TP8" library="SparkFun-Passives" deviceset="TEST-POINT" device="3X5">
@@ -6858,7 +6858,7 @@ http://dangerousprototypes.com</description>
 <part name="GND137" library="SparkFun-Aesthetics" deviceset="GND" device=""/>
 <part name="R197" library="OPL" deviceset="R*" device="-0603" value="10k"/>
 <part name="R198" library="OPL" deviceset="R*" device="-0603" value="15k"/>
-<part name="R199" library="OPL" deviceset="R*" device="-0603" value="20k"/>
+<part name="R199" library="OPL" deviceset="R*" device="-0603" value="22k"/>
 <part name="GND138" library="SparkFun-Aesthetics" deviceset="GND" device=""/>
 <part name="R200" library="OPL" deviceset="R*" device="-0603" value="100k"/>
 <part name="R201" library="OPL" deviceset="R*" device="-0603" value="100k"/>
@@ -8532,9 +8532,6 @@ http://dangerousprototypes.com</description>
 <pinref part="C21" gate="C" pin="2"/>
 <pinref part="R54" gate="R" pin="2"/>
 <wire x1="97.79" y1="-92.71" x2="99.06" y2="-92.71" width="0.1524" layer="91"/>
-<wire x1="97.79" y1="-92.71" x2="88.9" y2="-92.71" width="0.1524" layer="91"/>
-<junction x="97.79" y="-92.71"/>
-<label x="87.63" y="-95.25" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="N$77" class="0">

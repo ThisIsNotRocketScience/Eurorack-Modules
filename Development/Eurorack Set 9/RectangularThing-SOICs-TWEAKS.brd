@@ -1286,10 +1286,10 @@ design rules under a new name.</description>
 <element name="R170" library="OPL" package="R0603" value="470" x="146.3675" y="54.2925" rot="R270"/>
 <element name="R171" library="OPL" package="R0603" value="470" x="145.0975" y="54.2925" rot="R90"/>
 <element name="R168" library="OPL" package="R0603" value="470" x="143.51" y="65.7225" rot="R90"/>
-<element name="C55" library="OPL" package="C0603" value="0.02uF" x="140.97" y="65.7225" rot="R270"/>
+<element name="C55" library="OPL" package="C0603" value="20nF" x="140.97" y="65.7225" rot="R270"/>
 <element name="R169" library="OPL" package="R0603" value="24k" x="139.065" y="60.0075" rot="R90"/>
-<element name="C56" library="OPL" package="C0603" value="0.02uF" x="145.7325" y="65.0875" rot="R180"/>
-<element name="C53" library="OPL" package="C0603" value="0.039uF" x="149.86" y="65.7225" rot="R270"/>
+<element name="C56" library="OPL" package="C0603" value="10nF" x="145.7325" y="65.0875" rot="R180"/>
+<element name="C53" library="OPL" package="C0603" value="39nF" x="149.86" y="65.7225" rot="R270"/>
 <element name="IC14" library="CEM" package="SO14" value="CEM3360SOIC14" x="145.7325" y="22.86" rot="R180"/>
 <element name="C46" library="OPL" package="C0603" value="5nF" x="140.0175" y="20.955" rot="R90"/>
 <element name="R159" library="OPL" package="R0603" value="47k" x="149.225" y="27.6225"/>
@@ -1314,7 +1314,7 @@ design rules under a new name.</description>
 <element name="R91" library="OPL" package="R0603" value="91k" x="118.4275" y="60.96"/>
 <element name="R93" library="OPL" package="R0603" value="100k" x="118.4275" y="62.23"/>
 <element name="R118" library="OPL" package="R0603" value="100k" x="123.19" y="57.4675" rot="R270"/>
-<element name="R90" library="OPL" package="R0603" value="51k" x="121.92" y="57.4675" rot="R90"/>
+<element name="R90" library="OPL" package="R0603" value="51.1k" x="121.92" y="57.4675" rot="R90"/>
 <element name="R120" library="OPL" package="R0603" value="100k" x="128.5875" y="56.8325" rot="R180"/>
 <element name="R121" library="OPL" package="R0603" value="1.8k" x="128.5875" y="59.3725"/>
 <element name="R122" library="OPL" package="R0603" value="1.8k" x="129.54" y="60.6425" rot="R180"/>
@@ -1347,11 +1347,11 @@ design rules under a new name.</description>
 <attribute name="MPN" value="PJ-341" x="7.62" y="96.52" size="1.778" layer="27" rot="R180" display="off"/>
 <attribute name="DESC" value="CV" x="7.62" y="96.52" size="1.778" layer="27" rot="R180" display="off"/>
 </element>
-<element name="C3" library="OPL" package="C0603" value="0.01uF" x="40.64" y="67.945" rot="R270"/>
+<element name="C3" library="OPL" package="C0603" value="10nF" x="40.64" y="67.945" rot="R270"/>
 <element name="C7" library="OPL" package="C0603" value="100nF" x="45.4025" y="63.5" rot="R90"/>
 <element name="C10" library="OPL" package="C0603" value="1nF C0G" x="47.9425" y="59.69" rot="R90"/>
 <element name="C6" library="OPL" package="C0603" value="10nF" x="44.1325" y="63.5" rot="R270"/>
-<element name="C23" library="OPL" package="C0603" value="1nF" x="60.0075" y="89.2175"/>
+<element name="C23" library="OPL" package="C0603" value="1nF C0G" x="60.0075" y="89.2175"/>
 <element name="R6" library="OPL" package="R0603" value="470" x="40.64" y="64.4525" rot="R90"/>
 <element name="R18" library="OPL" package="R0603" value="1M" x="36.83" y="62.865" rot="R270"/>
 <element name="R7" library="OPL" package="R0603" value="100k" x="39.37" y="64.4525" rot="R270"/>
@@ -1385,7 +1385,7 @@ design rules under a new name.</description>
 </element>
 <element name="R146" library="OPL" package="R0603" value="100k" x="126.365" y="51.7525"/>
 <element name="R140" library="OPL" package="R0603" value="100k" x="126.365" y="53.0225"/>
-<element name="R145" library="OPL" package="R0603" value="50k" x="126.365" y="50.4825"/>
+<element name="R145" library="OPL" package="R0603" value="51.1k" x="126.365" y="50.4825"/>
 <element name="IC17" library="CEM" package="SO16" value="CEM3310SOIC16" x="145.0975" y="81.5975" rot="R180"/>
 <element name="R182" library="EurorackModularParts" package="OG-POTS_ALPS_POT_VERTICAL" value="10k" x="157.48" y="93.98" locked="yes">
 <attribute name="DESC" value="A" x="157.48" y="73.66" size="1.778" layer="27" display="off"/>
@@ -1406,10 +1406,10 @@ design rules under a new name.</description>
 <element name="R175" library="OPL" package="R0603" value="470" x="146.05" y="74.93" rot="R270"/>
 <element name="R176" library="OPL" package="R0603" value="470" x="144.78" y="74.93" rot="R90"/>
 <element name="R174" library="OPL" package="R0603" value="470" x="143.1925" y="87.3125" rot="R90"/>
-<element name="C60" library="OPL" package="C0603" value="0.02uF" x="140.6525" y="87.63" rot="R270"/>
+<element name="C60" library="OPL" package="C0603" value="20nF" x="140.6525" y="87.63" rot="R270"/>
 <element name="R173" library="OPL" package="R0603" value="24k" x="138.7475" y="81.5975" rot="R90"/>
-<element name="C59" library="OPL" package="C0603" value="0.02uF" x="145.415" y="86.6775" rot="R180"/>
-<element name="C54" library="OPL" package="C0603" value="0.039uF" x="149.5425" y="87.3125" rot="R270"/>
+<element name="C59" library="OPL" package="C0603" value="20nF" x="145.415" y="86.6775" rot="R180"/>
+<element name="C54" library="OPL" package="C0603" value="39nF" x="149.5425" y="87.3125" rot="R270"/>
 <element name="C9" library="OPL" package="C0603" value="100nF" x="39.751" y="52.959" rot="R90"/>
 <element name="C43" library="OPL" package="C0603" value="100nF" x="19.939" y="63.754"/>
 <element name="J11" library="EurorackModularParts" package="3.5MM-JACK-SWITCH-13MM-OUTPUT" value="PJ-341" x="157.48" y="30.48" locked="yes">
@@ -1492,12 +1492,12 @@ design rules under a new name.</description>
 <element name="R27" library="EurorackModularParts" package="OG-POTS_ALPS_POT_VERTICAL_WITHBIGKNOB" value="10k" x="43.18" y="10.16" locked="yes" rot="R180">
 <attribute name="DESC" value="Coarse 2" x="43.18" y="10.16" size="1.778" layer="27" rot="R180" display="off"/>
 </element>
-<element name="C21" library="OPL" package="C0603" value="0.01uF" x="68.58" y="64.4525" rot="R180"/>
+<element name="C21" library="OPL" package="C0603" value="10nF" x="68.58" y="64.4525" rot="R180"/>
 <element name="C19" library="OPL" package="C0603" value="100nF" x="72.0725" y="62.865" rot="R90"/>
-<element name="C17" library="OPL" package="C0603" value="1000pF" x="75.8825" y="59.055" rot="R90"/>
-<element name="C18" library="OPL" package="C0603" value="0.01uF" x="73.3425" y="62.865" rot="R270"/>
-<element name="C16" library="OPL" package="C0603" value="0.001uF" x="78.4225" y="58.7375" rot="R180"/>
-<element name="C15" library="OPL" package="C0603" value="0.001uF" x="74.70775" y="47.244" rot="R270"/>
+<element name="C17" library="OPL" package="C0603" value="1nF C0G" x="75.8825" y="59.055" rot="R90"/>
+<element name="C18" library="OPL" package="C0603" value="10nF" x="73.3425" y="62.865" rot="R270"/>
+<element name="C16" library="OPL" package="C0603" value="1nF C0G" x="78.4225" y="58.7375" rot="R180"/>
+<element name="C15" library="OPL" package="C0603" value="1nF C0G" x="74.70775" y="47.244" rot="R270"/>
 <element name="R54" library="OPL" package="R0603" value="470" x="67.945" y="61.9125" rot="R90"/>
 <element name="R55" library="OPL" package="R0603" value="1M" x="64.4525" y="60.325" rot="R270"/>
 <element name="R56" library="OPL" package="R0603" value="100k" x="64.135" y="63.5" rot="R270"/>
@@ -1553,7 +1553,7 @@ design rules under a new name.</description>
 <element name="R109" library="OPL" package="R0603" value="100k" x="124.7775" y="34.925" rot="R180"/>
 <element name="R106" library="OPL" package="R0603" value="100k" x="124.7775" y="33.655" rot="R180"/>
 <element name="R105" library="OPL" package="R0603" value="100k" x="124.7775" y="32.385" rot="R180"/>
-<element name="R104" library="OPL" package="R0603" value="50k" x="124.7775" y="31.115" rot="R180"/>
+<element name="R104" library="OPL" package="R0603" value="51.1k" x="124.7775" y="31.115" rot="R180"/>
 <element name="R165" library="EurorackModularParts" package="OG-POTS_ALPS_POT_VERTICAL_WITHBIGKNOB" value="10k" x="134.62" y="73.66" locked="yes">
 <attribute name="DESC" value="HP Cutoff" x="134.62" y="73.66" size="1.778" layer="27" display="off"/>
 </element>
@@ -1570,7 +1570,7 @@ design rules under a new name.</description>
 <element name="C35" library="OPL" package="C0603" value="300pF" x="122.809" y="45.37075" rot="R90"/>
 <element name="C34" library="OPL" package="C0603" value="300pF" x="121.6025" y="33.9725" rot="R270"/>
 <element name="C33" library="dp_devices" package="CASE_B" value="1uF" x="120.3325" y="29.21"/>
-<element name="R107" library="OPL" package="R0603" value="51k" x="119.0625" y="33.9725" rot="R90"/>
+<element name="R107" library="OPL" package="R0603" value="51.1k" x="119.0625" y="33.9725" rot="R90"/>
 <element name="R117" library="OPL" package="R0603" value="100k" x="121.539" y="45.37075" rot="R90"/>
 <element name="R114" library="OPL" package="R0603" value="100k" x="125.4125" y="41.5925" rot="R270"/>
 <element name="R115" library="OPL" package="R0603" value="100k" x="118.999" y="45.37075" rot="R90"/>
@@ -1592,16 +1592,16 @@ design rules under a new name.</description>
 <element name="R192" library="EurorackModularParts" package="TRIMPOT" value="100k" x="108.585" y="21.2725" rot="MR180">
 <attribute name="DESC" value="LP Cutoff Mod" x="108.585" y="21.2725" size="1.778" layer="28" rot="MR180" display="off"/>
 </element>
-<element name="R188" library="EurorackModularParts" package="TRIMPOT" value="100k" x="54.9275" y="42.8625" rot="MR0">
+<element name="R188" library="EurorackModularParts" package="TRIMPOT" value="20k" x="54.9275" y="42.8625" rot="MR0">
 <attribute name="DESC" value="Osc1: Hi " x="54.9275" y="42.8625" size="1.778" layer="28" rot="MR0" display="off"/>
 </element>
-<element name="R189" library="EurorackModularParts" package="TRIMPOT" value="100k" x="81.28" y="42.545" rot="MR0">
+<element name="R189" library="EurorackModularParts" package="TRIMPOT" value="20k" x="81.28" y="42.545" rot="MR0">
 <attribute name="DESC" value="Osc2: Hi" x="81.28" y="42.545" size="1.778" layer="28" rot="MR0" display="off"/>
 </element>
-<element name="R187" library="EurorackModularParts" package="TRIMPOT" value="100k" x="70.8025" y="42.545" rot="MR0">
+<element name="R187" library="EurorackModularParts" package="TRIMPOT" value="10k" x="70.8025" y="42.545" rot="MR0">
 <attribute name="DESC" value="Osc2: Scale" x="70.8025" y="42.545" size="1.778" layer="28" rot="MR0" display="off"/>
 </element>
-<element name="R190" library="EurorackModularParts" package="TRIMPOT" value="100k" x="44.45" y="42.8625" rot="MR0">
+<element name="R190" library="EurorackModularParts" package="TRIMPOT" value="10k" x="44.45" y="42.8625" rot="MR0">
 <attribute name="DESC" value="Osc1: Scale" x="44.45" y="42.8625" size="1.778" layer="28" rot="MR0" display="off"/>
 </element>
 <element name="TP8" library="SparkFun-Passives" package="PAD.03X.05" value="TEST-POINT3X5" x="120.523" y="55.372" rot="MR270">
@@ -1656,7 +1656,7 @@ design rules under a new name.</description>
 <element name="R196" library="OPL" package="R0603" value="4M7" x="146.05" y="27.6225"/>
 <element name="R197" library="OPL" package="R0603" value="10k" x="144.4625" y="30.48"/>
 <element name="R198" library="OPL" package="R0603" value="15k" x="143.51" y="33.02" rot="R270"/>
-<element name="R199" library="OPL" package="R0603" value="20k" x="2.69875" y="77.31125" rot="R270"/>
+<element name="R199" library="OPL" package="R0603" value="22k" x="2.69875" y="77.31125" rot="R270"/>
 <element name="R200" library="OPL" package="R0603" value="100k" x="116.5225" y="17.145" rot="R180"/>
 <element name="R201" library="OPL" package="R0603" value="100k" x="116.5225" y="18.7325"/>
 <element name="Q1" library="transistor" package="SOT23-BEC" value="MMBT3904" x="93.98" y="76.5175" rot="R180">
