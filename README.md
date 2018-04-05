@@ -1,3 +1,5 @@
+View this project on [CADLAB.io](https://cadlab.io/node/837). 
+
 # Eurorack-Modules
 
 This is the central repo for all the "This is not Rocket Science" eurorack modular synth modules.
