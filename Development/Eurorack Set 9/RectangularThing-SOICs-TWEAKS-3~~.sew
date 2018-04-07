@@ -1,0 +1,122 @@
+WINDOW (40.6000 92.4325);	 16 	<nobr>Few WIRE on layer 16 at signal <b>-5V</b></nobr>
+WINDOW (27.3050 55.8800);	 1 	<nobr>Few WIRE on layer 1 at signal <b>-12V</b></nobr>
+WINDOW (60.7695 47.6250);	 1 	<nobr>Few WIRE on layer 1 at signal <b>-12V</b></nobr>
+WINDOW (90.7450 17.5295);	 1 	<nobr>Few WIRE on layer 1 at signal <b>12V</b></nobr>
+WINDOW (2.8575 75.5650);	  1 18	<nobr>Only WIRE on layer  1 on VIA from layer 1 - 16, signal <b>GND</b></nobr>
+WINDOW (9.3663 86.0425);	  1 18	<nobr>Only WIRE on layer  1 on VIA from layer 1 - 16, signal <b>GND</b></nobr>
+WINDOW (11.4300 90.1700);	 16 	<nobr>Few WIRE on layer 16 at signal <b>GND</b></nobr>
+WINDOW (15.5575 79.6925);	  1 18	<nobr>Only WIRE on layer  1 on VIA from layer 1 - 16, signal <b>GND</b></nobr>
+WINDOW (15.8750 92.0750);	 16 	<nobr>Few WIRE on layer 16 at signal <b>GND</b></nobr>
+WINDOW (16.1925 82.5500);	  1 18	<nobr>Only WIRE on layer  1 on VIA from layer 1 - 16, signal <b>GND</b></nobr>
+WINDOW (16.1925 84.4550);	  1 18	<nobr>Only WIRE on layer  1 on VIA from layer 1 - 16, signal <b>GND</b></nobr>
+WINDOW (16.8275 27.3050);	  1 18	<nobr>Only WIRE on layer  1 on VIA from layer 1 - 16, signal <b>GND</b></nobr>
+WINDOW (16.8275 88.9000);	 16 	<nobr>Few WIRE on layer 16 at signal <b>GND</b></nobr>
+WINDOW (17.1450 66.9925);	 16 	<nobr>Few WIRE on layer 16 at signal <b>GND</b></nobr>
+WINDOW (18.7325 26.9875);	  1 18	<nobr>Only WIRE on layer  1 on VIA from layer 1 - 16, signal <b>GND</b></nobr>
+WINDOW (20.7963 72.5487);	  1 18	<nobr>Only WIRE on layer  1 on VIA from layer 1 - 16, signal <b>GND</b></nobr>
+WINDOW (21.5900 71.4375);	  1 18	<nobr>Only WIRE on layer  1 on VIA from layer 1 - 16, signal <b>GND</b></nobr>
+WINDOW (21.7488 63.8175);	 16 	<nobr>Few WIRE on layer 16 at signal <b>GND</b></nobr>
+WINDOW (22.2250 78.4225);	 16 	<nobr>Few WIRE on layer 16 at signal <b>GND</b></nobr>
+WINDOW (24.6063 63.3413);	 16 	<nobr>Few WIRE on layer 16 at signal <b>GND</b></nobr>
+WINDOW (24.7650 28.5750);	 16 	<nobr>Few WIRE on layer 16 at signal <b>GND</b></nobr>
+WINDOW (25.2413 65.7225);	  1 18	<nobr>Only WIRE on layer  1 on VIA from layer 1 - 16, signal <b>GND</b></nobr>
+WINDOW (26.0350 44.7675);	  1 18	<nobr>Only WIRE on layer  1 on VIA from layer 1 - 16, signal <b>GND</b></nobr>
+WINDOW (26.0350 54.2925);	  1 18	<nobr>Only WIRE on layer  1 on VIA from layer 1 - 16, signal <b>GND</b></nobr>
+WINDOW (27.3050 57.1500);	 1 	<nobr>Few WIRE on layer 1 at signal <b>GND</b></nobr>
+WINDOW (27.3050 58.1025);	  1 18	<nobr>Only WIRE on layer  1 on VIA from layer 1 - 16, signal <b>GND</b></nobr>
+WINDOW (39.6875 51.2763);	  1 18	<nobr>Only WIRE on layer  1 on VIA from layer 1 - 16, signal <b>GND</b></nobr>
+WINDOW (40.0050 69.5325);	 16 	<nobr>Few WIRE on layer 16 at signal <b>GND</b></nobr>
+WINDOW (42.8625 62.2300);	 16 	<nobr>Few WIRE on layer 16 at signal <b>GND</b></nobr>
+WINDOW (44.1325 65.0875);	  1 18	<nobr>Only WIRE on layer  1 on VIA from layer 1 - 16, signal <b>GND</b></nobr>
+WINDOW (45.7200 45.4025);	 16 	<nobr>Few WIRE on layer 16 at signal <b>GND</b></nobr>
+WINDOW (46.6725 57.7850);	 16 	<nobr>Few WIRE on layer 16 at signal <b>GND</b></nobr>
+WINDOW (48.5775 61.2775);	 16 	<nobr>Few WIRE on layer 16 at signal <b>GND</b></nobr>
+WINDOW (56.1975 60.0075);	  1 18	<nobr>Only WIRE on layer  1 on VIA from layer 1 - 16, signal <b>GND</b></nobr>
+WINDOW (59.3725 48.8950);	  1 18	<nobr>Only WIRE on layer  1 on VIA from layer 1 - 16, signal <b>GND</b></nobr>
+WINDOW (60.6425 45.4025);	  1 18	<nobr>Only WIRE on layer  1 on VIA from layer 1 - 16, signal <b>GND</b></nobr>
+WINDOW (60.6425 57.1500);	  1 18	<nobr>Only WIRE on layer  1 on VIA from layer 1 - 16, signal <b>GND</b></nobr>
+WINDOW (68.2625 64.4525);	 16 	<nobr>Few WIRE on layer 16 at signal <b>GND</b></nobr>
+WINDOW (70.8025 61.5950);	 16 	<nobr>Few WIRE on layer 16 at signal <b>GND</b></nobr>
+WINDOW (72.3900 45.4025);	 16 	<nobr>Few WIRE on layer 16 at signal <b>GND</b></nobr>
+WINDOW (73.3425 57.4675);	  1 18	<nobr>Only WIRE on layer  1 on VIA from layer 1 - 16, signal <b>GND</b></nobr>
+WINDOW (73.3425 64.6112);	 16 	<nobr>Few WIRE on layer 16 at signal <b>GND</b></nobr>
+WINDOW (75.8825 60.6425);	 16 	<nobr>Few WIRE on layer 16 at signal <b>GND</b></nobr>
+WINDOW (81.5975 62.2300);	 16 	<nobr>Few WIRE on layer 16 at signal <b>GND</b></nobr>
+WINDOW (82.8675 53.0225);	 16 	<nobr>Few WIRE on layer 16 at signal <b>GND</b></nobr>
+WINDOW (87.6300 80.3275);	 16 	<nobr>Few WIRE on layer 16 at signal <b>GND</b></nobr>
+WINDOW (87.9475 61.9125);	  1 18	<nobr>Only WIRE on layer  1 on VIA from layer 1 - 16, signal <b>GND</b></nobr>
+WINDOW (88.2650 47.6250);	  1 18	<nobr>Only WIRE on layer  1 on VIA from layer 1 - 16, signal <b>GND</b></nobr>
+WINDOW (88.2650 58.1025);	  1 18	<nobr>Only WIRE on layer  1 on VIA from layer 1 - 16, signal <b>GND</b></nobr>
+WINDOW (88.9000 64.9288);	 16 	<nobr>Few WIRE on layer 16 at signal <b>GND</b></nobr>
+WINDOW (88.9000 74.7713);	 16 	<nobr>Few WIRE on layer 16 at signal <b>GND</b></nobr>
+WINDOW (90.1700 74.6125);	 16 	<nobr>Few WIRE on layer 16 at signal <b>GND</b></nobr>
+WINDOW (90.4875 25.0825);	 16 	<nobr>Few WIRE on layer 16 at signal <b>GND</b></nobr>
+WINDOW (90.8050 34.6075);	 16 	<nobr>Few WIRE on layer 16 at signal <b>GND</b></nobr>
+WINDOW (90.8050 47.6250);	  1 18	<nobr>Only WIRE on layer  1 on VIA from layer 1 - 16, signal <b>GND</b></nobr>
+WINDOW (91.4400 53.0225);	 16 	<nobr>Few WIRE on layer 16 at signal <b>GND</b></nobr>
+WINDOW (91.4400 65.0875);	 16 	<nobr>Few WIRE on layer 16 at signal <b>GND</b></nobr>
+WINDOW (91.7575 77.4700);	 16 	<nobr>Few WIRE on layer 16 at signal <b>GND</b></nobr>
+WINDOW (92.7100 74.6125);	 16 	<nobr>Few WIRE on layer 16 at signal <b>GND</b></nobr>
+WINDOW (93.6625 17.4625);	 16 	<nobr>Few WIRE on layer 16 at signal <b>GND</b></nobr>
+WINDOW (94.6150 35.5600);	 16 	<nobr>Few WIRE on layer 16 at signal <b>GND</b></nobr>
+WINDOW (94.7738 62.0713);	 16 	<nobr>Few WIRE on layer 16 at signal <b>GND</b></nobr>
+WINDOW (98.4250 58.4200);	 16 	<nobr>Few WIRE on layer 16 at signal <b>GND</b></nobr>
+WINDOW (98.4250 71.7550);	 16 	<nobr>Few WIRE on layer 16 at signal <b>GND</b></nobr>
+WINDOW (99.2188 77.7875);	 16 	<nobr>Few WIRE on layer 16 at signal <b>GND</b></nobr>
+WINDOW (100.6475 80.9625);	  1 18	<nobr>Only WIRE on layer  1 on VIA from layer 1 - 16, signal <b>GND</b></nobr>
+WINDOW (102.5525 43.1800);	 16 	<nobr>Few WIRE on layer 16 at signal <b>GND</b></nobr>
+WINDOW (107.3150 88.9000);	 16 	<nobr>Few WIRE on layer 16 at signal <b>GND</b></nobr>
+WINDOW (113.0300 81.5975);	  1 18	<nobr>Only WIRE on layer  1 on VIA from layer 1 - 16, signal <b>GND</b></nobr>
+WINDOW (117.4750 63.5000);	 1 	<nobr>Few WIRE on layer 1 at signal <b>GND</b></nobr>
+WINDOW (117.4750 64.1350);	 16 	<nobr>Few WIRE on layer 16 at signal <b>GND</b></nobr>
+WINDOW (118.4275 41.5925);	  1 18	<nobr>Only WIRE on layer  1 on VIA from layer 1 - 16, signal <b>GND</b></nobr>
+WINDOW (120.6500 24.7650);	 16 	<nobr>Few WIRE on layer 16 at signal <b>GND</b></nobr>
+WINDOW (120.9675 17.1450);	 16 	<nobr>Few WIRE on layer 16 at signal <b>GND</b></nobr>
+WINDOW (121.2850 65.0875);	  1 18	<nobr>Only WIRE on layer  1 on VIA from layer 1 - 16, signal <b>GND</b></nobr>
+WINDOW (125.7300 55.7213);	 16 	<nobr>Few WIRE on layer 16 at signal <b>GND</b></nobr>
+WINDOW (127.9525 36.1950);	  1 18	<nobr>Only WIRE on layer  1 on VIA from layer 1 - 16, signal <b>GND</b></nobr>
+WINDOW (129.2225 66.6750);	 16 	<nobr>Few WIRE on layer 16 at signal <b>GND</b></nobr>
+WINDOW (129.3812 84.7725);	  1 18	<nobr>Only WIRE on layer  1 on VIA from layer 1 - 16, signal <b>GND</b></nobr>
+WINDOW (130.1750 89.2175);	 16 	<nobr>Few WIRE on layer 16 at signal <b>GND</b></nobr>
+WINDOW (130.3338 59.3725);	 16 	<nobr>Few WIRE on layer 16 at signal <b>GND</b></nobr>
+WINDOW (130.4925 81.5975);	 16 	<nobr>Few WIRE on layer 16 at signal <b>GND</b></nobr>
+WINDOW (134.9375 83.5025);	 16 	<nobr>Few WIRE on layer 16 at signal <b>GND</b></nobr>
+WINDOW (139.7000 22.5425);	 16 	<nobr>Few WIRE on layer 16 at signal <b>GND</b></nobr>
+WINDOW (140.0175 23.1775);	  1 18	<nobr>Only WIRE on layer  1 on VIA from layer 1 - 16, signal <b>GND</b></nobr>
+WINDOW (140.6525 89.2175);	  1 18	<nobr>Only WIRE on layer  1 on VIA from layer 1 - 16, signal <b>GND</b></nobr>
+WINDOW (140.9700 67.6275);	 16 	<nobr>Few WIRE on layer 16 at signal <b>GND</b></nobr>
+WINDOW (141.9225 86.0425);	 16 	<nobr>Few WIRE on layer 16 at signal <b>GND</b></nobr>
+WINDOW (142.2400 64.4525);	 16 	<nobr>Few WIRE on layer 16 at signal <b>GND</b></nobr>
+WINDOW (142.2400 73.1838);	  1 18	<nobr>Only WIRE on layer  1 on VIA from layer 1 - 16, signal <b>GND</b></nobr>
+WINDOW (142.5575 52.7050);	  1 18	<nobr>Only WIRE on layer  1 on VIA from layer 1 - 16, signal <b>GND</b></nobr>
+WINDOW (144.1450 17.1450);	 16 	<nobr>Few WIRE on layer 16 at signal <b>GND</b></nobr>
+WINDOW (145.0975 52.7050);	  1 18	<nobr>Only WIRE on layer  1 on VIA from layer 1 - 16, signal <b>GND</b></nobr>
+WINDOW (145.4150 28.5750);	  1 18	<nobr>Only WIRE on layer  1 on VIA from layer 1 - 16, signal <b>GND</b></nobr>
+WINDOW (145.4150 73.6600);	 16 	<nobr>Few WIRE on layer 16 at signal <b>GND</b></nobr>
+WINDOW (146.0500 30.4800);	  1 18	<nobr>Only WIRE on layer  1 on VIA from layer 1 - 16, signal <b>GND</b></nobr>
+WINDOW (146.0500 89.2175);	  1 18	<nobr>Only WIRE on layer  1 on VIA from layer 1 - 16, signal <b>GND</b></nobr>
+WINDOW (146.3675 52.7050);	  1 18	<nobr>Only WIRE on layer  1 on VIA from layer 1 - 16, signal <b>GND</b></nobr>
+WINDOW (147.0025 77.1525);	 16 	<nobr>Few WIRE on layer 16 at signal <b>GND</b></nobr>
+WINDOW (147.3200 59.3725);	 16 	<nobr>Few WIRE on layer 16 at signal <b>GND</b></nobr>
+WINDOW (148.5900 73.3425);	  1 18	<nobr>Only WIRE on layer  1 on VIA from layer 1 - 16, signal <b>GND</b></nobr>
+WINDOW (149.5425 88.9000);	  1 18	<nobr>Only WIRE on layer  1 on VIA from layer 1 - 16, signal <b>GND</b></nobr>
+WINDOW (149.8600 67.3100);	  1 18	<nobr>Only WIRE on layer  1 on VIA from layer 1 - 16, signal <b>GND</b></nobr>
+WINDOW (150.1775 52.7050);	  1 18	<nobr>Only WIRE on layer  1 on VIA from layer 1 - 16, signal <b>GND</b></nobr>
+WINDOW (150.3363 25.5587);	  1 18	<nobr>Only WIRE on layer  1 on VIA from layer 1 - 16, signal <b>GND</b></nobr>
+WINDOW (150.6538 18.0975);	 16 	<nobr>Few WIRE on layer 16 at signal <b>GND</b></nobr>
+WINDOW (151.1300 27.6225);	 16 	<nobr>Few WIRE on layer 16 at signal <b>GND</b></nobr>
+WINDOW (151.4475 22.5425);	  1 18	<nobr>Only WIRE on layer  1 on VIA from layer 1 - 16, signal <b>GND</b></nobr>
+WINDOW (160.0200 20.3200);	  1 18	<nobr>Only WIRE on layer  1 on VIA from layer 1 - 16, signal <b>GND</b></nobr>
+WINDOW (165.7350 21.9075);	 16 	<nobr>Few WIRE on layer 16 at signal <b>GND</b></nobr>
+WINDOW (167.6400 23.4950);	 16 	<nobr>Few WIRE on layer 16 at signal <b>GND</b></nobr>
+WINDOW (167.9575 21.5900);	 16 	<nobr>Few WIRE on layer 16 at signal <b>GND</b></nobr>
+WINDOW (148.9075 55.2450);	 1 	<nobr>Few WIRE on layer 1 at signal <b>N$1</b></nobr>
+WINDOW (119.0030 63.4325);	 1 	<nobr>Few WIRE on layer 1 at signal <b>N$19</b></nobr>
+WINDOW (123.6940 67.8855);	 1 	<nobr>Few WIRE on layer 1 at signal <b>N$26</b></nobr>
+WINDOW (111.4425 87.3125);	 1 	<nobr>Few WIRE on layer 1 at signal <b>N$78</b></nobr>
+WINDOW (71.1200 38.5763);	 16 	<nobr>Few WIRE on layer 16 at signal <b>PITCH_ENV_2</b></nobr>
+WINDOW (140.6525 79.6925);	 1 	<nobr>Few WIRE on layer 1 at signal <b>S2_IN</b></nobr>
+WINDOW (93.3450 42.2275);	 1 	<nobr>Few WIRE on layer 1 at signal <b>SAWTOOTH_BUF_1</b></nobr>
+WINDOW (94.9325 56.5150);	 1 	<nobr>Few WIRE on layer 1 at signal <b>SAWTOOTH_BUF_2</b></nobr>
+WINDOW (96.5200 74.2950);	  1 18	<nobr>Only WIRE on layer  1 on VIA from layer 1 - 16, signal <b>SUBOSC_1_OUT</b></nobr>
+WINDOW (140.9700 56.5150);	 1 	<nobr>Few WIRE on layer 1 at signal <b>S_IN</b></nobr>

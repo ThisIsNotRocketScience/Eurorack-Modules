@@ -2960,6 +2960,39 @@ or will meet your specific requirements.&lt;p&gt;
 <vertex x="35.56" y="33.02"/>
 </polygon>
 </package>
+<package name="ALPS_POT_SQUAREHOLES">
+<circle x="0" y="0" radius="2.54" width="0.2032" layer="51"/>
+<wire x1="-4.295" y1="5.46" x2="4.295" y2="5.46" width="0.127" layer="51"/>
+<wire x1="4.295" y1="5.46" x2="4.295" y2="-4.33" width="0.127" layer="51"/>
+<wire x1="4.295" y1="-4.33" x2="-4.295" y2="-4.33" width="0.127" layer="51"/>
+<wire x1="-4.295" y1="-4.33" x2="-4.295" y2="5.46" width="0.127" layer="51"/>
+<wire x1="1.1" y1="-0.625" x2="-1.1" y2="-0.625" width="0.2032" layer="51" curve="239.208901"/>
+<wire x1="2.45" y1="-0.625" x2="-2.425" y2="-0.625" width="0.2032" layer="51"/>
+<pad name="P$1" x="-2.5" y="-7.5" drill="1" rot="R90"/>
+<pad name="P$2" x="0" y="-7.5" drill="1" rot="R90"/>
+<pad name="P$3" x="2.58" y="-7.5" drill="1" rot="R90"/>
+<text x="0" y="-1.905" size="1.27" layer="27" align="top-center">&gt;VALUE</text>
+<circle x="0" y="0" radius="6" width="1" layer="21"/>
+<circle x="0" y="0" radius="4.75" width="0.002540625" layer="255"/>
+<text x="0" y="7.62" size="1.778" layer="254" align="bottom-center">&gt;DESC</text>
+<rectangle x1="-2" y1="4" x2="2" y2="6" layer="41"/>
+<rectangle x1="-2" y1="4" x2="2" y2="6" layer="21"/>
+<text x="0" y="0" size="2.032" layer="25" ratio="10" rot="SR0" align="center">&gt;NAME</text>
+<text x="0" y="-2.54" size="1.27" layer="21" ratio="10" rot="SR0" align="center">&gt;VALUE</text>
+<circle x="0" y="0" radius="6.5" width="0.127" layer="51"/>
+<wire x1="-5.65" y1="-0.7" x2="-5.65" y2="0.7" width="0.127" layer="46"/>
+<wire x1="-5.65" y1="0.7" x2="-3.85" y2="0.7" width="0.127" layer="46"/>
+<wire x1="-3.85" y1="0.7" x2="-3.85" y2="-0.7" width="0.127" layer="46"/>
+<wire x1="-3.85" y1="-0.7" x2="-5.65" y2="-0.7" width="0.127" layer="46"/>
+<wire x1="3.85" y1="-0.7" x2="3.85" y2="0.7" width="0.127" layer="46"/>
+<wire x1="3.85" y1="0.7" x2="5.65" y2="0.7" width="0.127" layer="46"/>
+<wire x1="5.65" y1="0.7" x2="5.65" y2="-0.7" width="0.127" layer="46"/>
+<wire x1="5.65" y1="-0.7" x2="3.85" y2="-0.7" width="0.127" layer="46"/>
+<smd name="P$4" x="-4.75" y="0" dx="2.5" dy="2" layer="1"/>
+<smd name="P$5" x="4.75" y="0" dx="2.5" dy="2" layer="1"/>
+<smd name="P$6" x="-4.75" y="0" dx="2.5" dy="2" layer="16"/>
+<smd name="P$7" x="4.75" y="0" dx="2.5" dy="2" layer="16"/>
+</package>
 </packages>
 <symbols>
 <symbol name="EURORACK_PANEL">
@@ -4134,6 +4167,16 @@ MAX13331</text>
 </technologies>
 </device>
 <device name="ZEPHPOT_BIGKNOB" package="OG-POTS_ALPS_POT_VERTICAL_WITHBIGKNOB">
+<connects>
+<connect gate="G$1" pin="A" pad="P$3"/>
+<connect gate="G$1" pin="E" pad="P$1"/>
+<connect gate="G$1" pin="S" pad="P$2"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="SQUAREHOLE_SMALLKNOB" package="ALPS_POT_SQUAREHOLES">
 <connects>
 <connect gate="G$1" pin="A" pad="P$3"/>
 <connect gate="G$1" pin="E" pad="P$1"/>
