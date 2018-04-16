@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="12" unitdist="mil" unit="mil" style="lines" multiple="1" display="yes" altdistance="0.025" altunitdist="inch" altunit="inch"/>
+<grid distance="0.25" unitdist="mm" unit="mm" style="lines" multiple="1" display="yes" altdistance="0.025" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="2" name="Route2" color="1" fill="3" visible="no" active="no"/>
@@ -1961,18 +1961,18 @@
 <wire x1="-0.3048" y1="5.0038" x2="-2.0066" y2="5.0038" width="0.1524" layer="51"/>
 <wire x1="-2.0066" y1="5.0038" x2="-2.0066" y2="-5.0038" width="0.1524" layer="51"/>
 <wire x1="0.3048" y1="5.0038" x2="-0.3048" y2="5.0038" width="0" layer="51" curve="-180"/>
-<text x="-3.302" y="4.8768" size="1.27" layer="51" ratio="6" rot="SR0">*</text>
 <wire x1="-1.2954" y1="-5.0038" x2="1.2954" y2="-5.0038" width="0.1524" layer="21"/>
 <wire x1="1.2954" y1="5.0038" x2="0.3048" y2="5.0038" width="0.1524" layer="21"/>
 <wire x1="0.3048" y1="5.0038" x2="-0.3048" y2="5.0038" width="0.1524" layer="21"/>
 <wire x1="-0.3048" y1="5.0038" x2="-1.2954" y2="5.0038" width="0.1524" layer="21"/>
 <wire x1="0.3048" y1="5.0038" x2="-0.3048" y2="5.0038" width="0" layer="21" curve="-180"/>
-<wire x1="3.9624" y1="-2.9972" x2="3.9624" y2="-3.3528" width="0.1524" layer="21"/>
-<wire x1="3.9624" y1="-3.3528" x2="3.7084" y2="-3.3528" width="0.1524" layer="21"/>
-<wire x1="3.7084" y1="-3.3528" x2="3.7084" y2="-2.9972" width="0.1524" layer="21"/>
-<text x="-3.302" y="4.8768" size="1.27" layer="21" ratio="6" rot="SR0">*</text>
-<text x="-4.6228" y="5.588" size="2.0828" layer="25" ratio="10" rot="SR0">&gt;NAME</text>
-<text x="-5.6134" y="-7.5184" size="2.0828" layer="27" ratio="10" rot="SR0">&gt;VALUE</text>
+<text x="0" y="0" size="1.27" layer="25" ratio="10" rot="SR90" align="center">&gt;NAME</text>
+<text x="0" y="-5.33" size="0.6" layer="27" ratio="10" rot="SR0" align="top-center">&gt;VALUE</text>
+<wire x1="-1.25" y1="4" x2="-1.25" y2="5.5" width="0.127" layer="21"/>
+<wire x1="-1.25" y1="5.5" x2="-4" y2="5.5" width="0.127" layer="21"/>
+<wire x1="-4" y1="5.5" x2="-4" y2="4" width="0.127" layer="21"/>
+<wire x1="-4" y1="4" x2="-1.25" y2="4" width="0.127" layer="21"/>
+<rectangle x1="-4" y1="4" x2="-1.25" y2="5.5" layer="21"/>
 </package>
 <package name="QFN50P250X450X100-21N">
 <smd name="1" x="-0.254" y="2.2098" dx="0.3048" dy="0.8128" layer="1" rot="R180"/>

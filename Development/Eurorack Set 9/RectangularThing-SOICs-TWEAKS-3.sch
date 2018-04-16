@@ -725,19 +725,18 @@ NS Package M08A</description>
 <rectangle x1="-0.88" y1="2" x2="-0.39" y2="3.1" layer="51"/>
 <rectangle x1="-2.15" y1="2" x2="-1.66" y2="3.1" layer="51"/>
 <wire x1="-2.54" y1="1.27" x2="-2.54" y2="-1.27" width="0.127" layer="21"/>
-<wire x1="-2.54" y1="-1.27" x2="-2.54" y2="-4.445" width="0.127" layer="21"/>
+<wire x1="-2.54" y1="-1.27" x2="-2.54" y2="-3.965" width="0.127" layer="21"/>
 <wire x1="2.54" y1="-1.27" x2="2.54" y2="1.27" width="0.127" layer="21"/>
 <wire x1="-2.54" y1="1.27" x2="2.54" y2="1.27" width="0.127" layer="21"/>
 <wire x1="2.54" y1="-1.27" x2="-1.27" y2="-1.27" width="0.127" layer="21"/>
 <wire x1="-1.27" y1="-1.27" x2="-2.54" y2="-1.27" width="0.127" layer="21"/>
-<wire x1="-1.27" y1="-1.27" x2="-1.27" y2="-5.715" width="0.127" layer="21"/>
-<wire x1="-1.27" y1="-5.715" x2="-2.54" y2="-5.715" width="0.127" layer="21"/>
-<wire x1="-2.54" y1="-5.715" x2="-2.54" y2="-4.445" width="0.127" layer="21"/>
+<wire x1="-1.27" y1="-1.27" x2="-1.27" y2="-3.965" width="0.127" layer="21"/>
+<wire x1="-1.27" y1="-3.965" x2="-2.54" y2="-3.965" width="0.127" layer="21"/>
 <polygon width="0.127" layer="21">
-<vertex x="-2.54" y="-1.27"/>
+<vertex x="-3.04" y="-1.27"/>
 <vertex x="-1.27" y="-1.27"/>
-<vertex x="-1.27" y="-5.715"/>
-<vertex x="-2.54" y="-5.715"/>
+<vertex x="-1.27" y="-3.965"/>
+<vertex x="-3.04" y="-3.965"/>
 </polygon>
 </package>
 <package name="POWER_16_SHROUDED_NOTEXT">
@@ -6826,6 +6825,7 @@ http://dangerousprototypes.com</description>
 <part name="GND149" library="SparkFun-Aesthetics" deviceset="GND" device=""/>
 <part name="GND150" library="SparkFun-Aesthetics" deviceset="GND" device=""/>
 <part name="JP5" library="SparkFun-Connectors" deviceset="M03" device="1X03_NO_SILK" value="1x3pin header"/>
+<part name="GND147" library="SparkFun-Aesthetics" deviceset="GND" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -6973,7 +6973,8 @@ http://dangerousprototypes.com</description>
 <instance part="C13" gate="C" x="429.26" y="6.35" rot="R90"/>
 <instance part="C22" gate="C" x="429.26" y="-1.27" rot="R90"/>
 <instance part="GND69" gate="1" x="431.8" y="2.54" rot="R90"/>
-<instance part="IC7" gate="VR2" x="450.85" y="-30.48"/>
+<instance part="IC7" gate="VR2" x="100.33" y="-7.62"/>
+<instance part="GND147" gate="1" x="110.49" y="-11.43" rot="R90"/>
 </instances>
 <busses>
 </busses>
@@ -7145,6 +7146,19 @@ http://dangerousprototypes.com</description>
 <pinref part="C22" gate="C" pin="2"/>
 <pinref part="GND69" gate="1" pin="GND"/>
 <junction x="429.26" y="2.54"/>
+</segment>
+<segment>
+<pinref part="IC7" gate="VR2" pin="-IN"/>
+<wire x1="92.71" y1="-10.16" x2="92.71" y2="-15.24" width="0.1524" layer="91"/>
+<wire x1="92.71" y1="-15.24" x2="107.95" y2="-15.24" width="0.1524" layer="91"/>
+<pinref part="IC7" gate="VR2" pin="OUT"/>
+<wire x1="107.95" y1="-15.24" x2="107.95" y2="-11.43" width="0.1524" layer="91"/>
+<pinref part="IC7" gate="VR2" pin="+IN"/>
+<wire x1="107.95" y1="-11.43" x2="107.95" y2="-7.62" width="0.1524" layer="91"/>
+<wire x1="92.71" y1="-5.08" x2="92.71" y2="-10.16" width="0.1524" layer="91"/>
+<junction x="92.71" y="-10.16"/>
+<pinref part="GND147" gate="1" pin="GND"/>
+<junction x="107.95" y="-11.43"/>
 </segment>
 </net>
 <net name="12V" class="1">
