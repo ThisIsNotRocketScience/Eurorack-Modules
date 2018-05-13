@@ -2430,8 +2430,8 @@ We've spent an enormous amount of time creating and checking these footprints an
 <part name="GND8" library="SparkFun-Aesthetics" deviceset="GND" device=""/>
 <part name="R1" library="OPL" deviceset="R*" device="-0603" value="100K 0.1%"/>
 <part name="R3" library="OPL" deviceset="R*" device="-0603" value="100K"/>
-<part name="R4" library="OPL" deviceset="R*" device="-0603" value="100k 0.1%"/>
-<part name="R5" library="OPL" deviceset="R*" device="-0603" value="100k 0.1%"/>
+<part name="R4" library="OPL" deviceset="R*" device="-0603" value="100K 0.1%"/>
+<part name="R5" library="OPL" deviceset="R*" device="-0603" value="100K 0.1%"/>
 <part name="R10" library="OPL" deviceset="R*" device="-0603" value="56"/>
 <part name="GND2" library="SparkFun-Aesthetics" deviceset="GND" device=""/>
 <part name="GND3" library="SparkFun-Aesthetics" deviceset="GND" device=""/>
@@ -2447,7 +2447,7 @@ We've spent an enormous amount of time creating and checking these footprints an
 <attribute name="DESC" value="Input 1C"/>
 </part>
 <part name="U$8" library="EurorackModularParts" deviceset="POT" device="SQUAREHOLE_SMALLKNOB" value="10KB"/>
-<part name="R2" library="OPL" deviceset="R*" device="-0603" value="49.9k"/>
+<part name="R2" library="OPL" deviceset="R*" device="-0603" value="49.9K"/>
 <part name="GND6" library="SparkFun-Aesthetics" deviceset="GND" device=""/>
 <part name="GND7" library="SparkFun-Aesthetics" deviceset="GND" device=""/>
 <part name="GND9" library="SparkFun-Aesthetics" deviceset="GND" device=""/>
@@ -2601,8 +2601,8 @@ We've spent an enormous amount of time creating and checking these footprints an
 <part name="GND59" library="SparkFun-Aesthetics" deviceset="GND" device=""/>
 <part name="R50" library="OPL" deviceset="R*" device="-0603" value="100K 0.1%"/>
 <part name="R51" library="OPL" deviceset="R*" device="-0603" value="100K"/>
-<part name="R52" library="OPL" deviceset="R*" device="-0603" value="100k 0.1%"/>
-<part name="R53" library="OPL" deviceset="R*" device="-0603" value="100k 0.1%"/>
+<part name="R52" library="OPL" deviceset="R*" device="-0603" value="100K 0.1%"/>
+<part name="R53" library="OPL" deviceset="R*" device="-0603" value="100K 0.1%"/>
 <part name="R54" library="OPL" deviceset="R*" device="-0603" value="56"/>
 <part name="GND60" library="SparkFun-Aesthetics" deviceset="GND" device=""/>
 <part name="GND61" library="SparkFun-Aesthetics" deviceset="GND" device=""/>
@@ -2618,7 +2618,7 @@ We've spent an enormous amount of time creating and checking these footprints an
 <attribute name="DESC" value="Input 2C"/>
 </part>
 <part name="U$29" library="EurorackModularParts" deviceset="POT" device="SQUAREHOLE_SMALLKNOB" value="10KB"/>
-<part name="R57" library="OPL" deviceset="R*" device="-0603" value="49.9k"/>
+<part name="R57" library="OPL" deviceset="R*" device="-0603" value="49.9K"/>
 <part name="GND62" library="SparkFun-Aesthetics" deviceset="GND" device=""/>
 <part name="GND63" library="SparkFun-Aesthetics" deviceset="GND" device=""/>
 <part name="GND64" library="SparkFun-Aesthetics" deviceset="GND" device=""/>
@@ -2693,8 +2693,8 @@ We've spent an enormous amount of time creating and checking these footprints an
 <part name="C42" library="OPL" deviceset="C*" device="-0603" value="100nF"/>
 <part name="GND50" library="SparkFun-Aesthetics" deviceset="GND" device=""/>
 <part name="GND74" library="SparkFun-Aesthetics" deviceset="GND" device=""/>
-<part name="R149" library="OPL" deviceset="R*" device="-0603" value="100k"/>
-<part name="R147" library="OPL" deviceset="R*" device="-0603" value="100k"/>
+<part name="R149" library="OPL" deviceset="R*" device="-0603" value="100K"/>
+<part name="R147" library="OPL" deviceset="R*" device="-0603" value="100K"/>
 <part name="U2" library="FarnellThings" deviceset="LM4040DIM3-5.0" device="">
 <attribute name="MF" value="TEXAS INSTRUMENTS"/>
 <attribute name="OC_FARNELL" value="9778330"/>

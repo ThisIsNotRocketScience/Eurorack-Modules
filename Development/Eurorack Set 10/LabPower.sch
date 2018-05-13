@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.05" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
+<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="no" active="no"/>
 <layer number="2" name="Route2" color="1" fill="3" visible="no" active="no"/>
@@ -2659,8 +2659,8 @@ http://dangerousprototypes.com</description>
 <part name="J5" library="dp_devices" deviceset="CON_DC_M" device="-DC_PTH2" value="powerconn"/>
 <part name="R1" library="EurorackModularParts" deviceset="TRIMPOT" device="" value="20k"/>
 <part name="R2" library="EurorackModularParts" deviceset="TRIMPOT" device="" value="100k"/>
-<part name="R3" library="EurorackModularParts" deviceset="TRIMPOT" device="" value="20k"/>
-<part name="R4" library="EurorackModularParts" deviceset="TRIMPOT" device="" value="20k"/>
+<part name="R3" library="EurorackModularParts" deviceset="TRIMPOT" device="" value="100k"/>
+<part name="R4" library="EurorackModularParts" deviceset="TRIMPOT" device="" value="100k"/>
 <part name="J6" library="EurorackModularParts" deviceset="AUDIO-JACK" device="OUTPUT" value="PJ-341"/>
 <part name="J7" library="EurorackModularParts" deviceset="AUDIO-JACK" device="OUTPUT" value="PJ-341"/>
 <part name="J8" library="EurorackModularParts" deviceset="AUDIO-JACK" device="OUTPUT" value="PJ-341"/>
@@ -2740,7 +2740,7 @@ http://dangerousprototypes.com</description>
 <attribute name="MPN" value=""/>
 <attribute name="OC_FARNELL" value="unknown"/>
 </part>
-<part name="C16" library="OPL" deviceset="C*" device="-0603" value="100nF">
+<part name="C16" library="OPL" deviceset="C*" device="-0603" value="100n">
 <attribute name="MF" value="AVX"/>
 <attribute name="MPN" value="06035C104KAT2A"/>
 <attribute name="OC_FARNELL" value="1301804"/>

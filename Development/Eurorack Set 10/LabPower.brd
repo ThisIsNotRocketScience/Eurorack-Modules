@@ -1275,8 +1275,8 @@ design rules under a new name.</description>
 <attribute name="DESC" value="Voltage Balance" x="19.25" y="20.75" size="1.778" layer="27" rot="R180" display="off"/>
 </element>
 <element name="R2" library="EurorackModularParts" package="TRIMPOT" value="100k" x="36" y="56"/>
-<element name="R3" library="EurorackModularParts" package="TRIMPOT" value="20k" x="25.5525" y="56"/>
-<element name="R4" library="EurorackModularParts" package="TRIMPOT" value="20k" x="15" y="56"/>
+<element name="R3" library="EurorackModularParts" package="TRIMPOT" value="100k" x="25.5525" y="56"/>
+<element name="R4" library="EurorackModularParts" package="TRIMPOT" value="100k" x="15" y="56"/>
 <element name="J6" library="EurorackModularParts" package="3.5MM-JACK-SWITCH-13MM-OUTPUT" value="PJ-341" x="41" y="69" rot="R180">
 <attribute name="MPN" value="PJ-341" x="41" y="69" size="1.778" layer="27" rot="R180" display="off"/>
 <attribute name="DESC" value="Output" x="41" y="69" size="1.778" layer="27" rot="R180" display="off"/>
@@ -1345,7 +1345,7 @@ design rules under a new name.</description>
 <attribute name="MPN" value="" x="79.75" y="52.25" size="1.778" layer="27" display="off"/>
 <attribute name="OC_FARNELL" value="unknown" x="79.75" y="52.25" size="1.778" layer="27" display="off"/>
 </element>
-<element name="C16" library="OPL" package="C0603" value="100nF" x="87" y="58" rot="R270">
+<element name="C16" library="OPL" package="C0603" value="100n" x="87" y="58" rot="R270">
 <attribute name="MF" value="AVX" x="81.5" y="67.25" size="1.778" layer="27" rot="R270" display="off"/>
 <attribute name="MPN" value="06035C104KAT2A" x="81.5" y="67.25" size="1.778" layer="27" rot="R270" display="off"/>
 <attribute name="OC_FARNELL" value="1301804" x="81.5" y="67.25" size="1.778" layer="27" rot="R270" display="off"/>
