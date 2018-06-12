@@ -1399,7 +1399,7 @@ design rules under a new name.</description>
 <attribute name="DESC" value="FM" x="7.62" y="10.16" size="1.778" layer="27" display="off"/>
 </element>
 <element name="R89" library="EurorackModularParts" package="ALPS_POT_SQUAREHOLES" value="10k" x="73.66" y="96.52" locked="yes"/>
-<element name="R41" library="OPL" package="R0603" value="100k" x="67.6275" y="89.2175" rot="R90"/>
+<element name="R41" library="OPL" package="R0603" value="200k" x="67.6275" y="89.2175" rot="R90"/>
 <element name="R40" library="OPL" package="R0603" value="100k" x="87.4395" y="87.63" rot="R180"/>
 <element name="J6" library="EurorackModularParts" package="3.5MM-JACK-SWITCH-13MM-INPUT" value="PJ-341" x="86.36" y="96.52" locked="yes" rot="R180">
 <attribute name="MPN" value="PJ-341" x="86.36" y="96.52" size="1.778" layer="27" rot="R180" display="off"/>
@@ -1471,7 +1471,7 @@ design rules under a new name.</description>
 <element name="R50" library="OPL" package="R0603" value="100k" x="61.9125" y="60.325" rot="R90"/>
 <element name="R52" library="OPL" package="R0603" value="1M" x="63.1825" y="60.325" rot="R90"/>
 <element name="R76" library="EurorackModularParts" package="ALPS_POT_SQUAREHOLES" value="10k" x="73.66" y="10.16" locked="yes" rot="R180"/>
-<element name="R28" library="OPL" package="R0603" value="100k" x="68.58" y="17.145" rot="R270"/>
+<element name="R28" library="OPL" package="R0603" value="200k" x="68.58" y="17.145" rot="R270"/>
 <element name="R30" library="OPL" package="R0603" value="100k" x="81.915" y="17.4625" rot="R180"/>
 <element name="J5" library="EurorackModularParts" package="3.5MM-JACK-SWITCH-13MM-INPUT" value="PJ-341" x="86.36" y="10.16" locked="yes">
 <attribute name="DESC" value="PWM" x="0" y="-30.48" size="1.778" layer="27" display="off"/>
@@ -1494,7 +1494,7 @@ design rules under a new name.</description>
 <element name="IC8" library="CEM" package="QFN24" value="CEM3320_UNFOLDEDQFN" x="120.65" y="39.6875" rot="R270"/>
 <element name="R113" library="OPL" package="R0603" value="1.8k" x="126.365" y="38.735"/>
 <element name="R108" library="OPL" package="R0603" value="100k" x="120.3325" y="33.9725" rot="R270"/>
-<element name="R_BIAS_HP" library="OPL" package="R0603" value="200k" x="126.365" y="37.465"/>
+<element name="R_BIAS_HP" library="OPL" package="R0603" value="100k" x="126.365" y="37.465"/>
 <element name="R111" library="OPL" package="R0603" value="1.8k" x="126.365" y="36.195"/>
 <element name="R109" library="OPL" package="R0603" value="100k" x="124.7775" y="34.925" rot="R180"/>
 <element name="R106" library="OPL" package="R0603" value="100k" x="124.7775" y="33.655" rot="R180"/>
