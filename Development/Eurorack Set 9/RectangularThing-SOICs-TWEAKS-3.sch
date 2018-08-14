@@ -1037,6 +1037,59 @@ NS Package M08A</description>
 <wire x1="-2.5" y1="4.5" x2="-1" y2="6" width="0.127" layer="22" curve="-90"/>
 <wire x1="-1" y1="6" x2="1" y2="6" width="0.127" layer="22"/>
 </package>
+<package name="3.5MM-JACK-SWITCH-13MM-NOHOLES">
+<wire x1="-4.2" y1="-1.25" x2="-3.2" y2="-1.25" width="0" layer="46"/>
+<wire x1="-3.2" y1="-1.25" x2="-3.2" y2="1.25" width="0" layer="46"/>
+<wire x1="-3.2" y1="1.25" x2="-4.2" y2="1.25" width="0" layer="46"/>
+<wire x1="-4.2" y1="1.25" x2="-4.2" y2="-1.25" width="0" layer="46"/>
+<wire x1="3.2" y1="-1.25" x2="4.2" y2="-1.25" width="0" layer="46"/>
+<wire x1="4.2" y1="-1.25" x2="4.2" y2="1.25" width="0" layer="46"/>
+<wire x1="4.2" y1="1.25" x2="3.2" y2="1.25" width="0" layer="46"/>
+<wire x1="3.2" y1="1.25" x2="3.2" y2="-1.25" width="0" layer="46"/>
+<wire x1="1.25" y1="4" x2="1.25" y2="5" width="0" layer="46"/>
+<wire x1="1.25" y1="5" x2="-1.25" y2="5" width="0" layer="46"/>
+<wire x1="-1.25" y1="5" x2="-1.25" y2="4" width="0" layer="46"/>
+<wire x1="-1.25" y1="4" x2="1.25" y2="4" width="0" layer="46"/>
+<wire x1="1.25" y1="-4" x2="1.25" y2="-3" width="0" layer="46"/>
+<wire x1="1.25" y1="-3" x2="-1.25" y2="-3" width="0" layer="46"/>
+<wire x1="-1.25" y1="-3" x2="-1.25" y2="-4" width="0" layer="46"/>
+<wire x1="-1.25" y1="-4" x2="1.25" y2="-4" width="0" layer="46"/>
+<circle x="0" y="0" radius="4" width="0.0254" layer="255"/>
+<smd name="RING_T@3" x="-3.7" y="0" dx="3.85" dy="1.95" layer="1" roundness="100" rot="R90" cream="no"/>
+<smd name="SWITCH_T@3" x="3.7" y="0" dx="3.85" dy="1.95" layer="1" roundness="100" rot="R90" cream="no"/>
+<smd name="SECOND_T@3" x="0" y="-3.5" dx="3.85" dy="1.95" layer="1" roundness="100" rot="R180" cream="no"/>
+<smd name="TIP_T@3" x="0" y="4.5" dx="3.85" dy="1.95" layer="1" roundness="100" rot="R180" cream="no"/>
+<smd name="TIP_B@1" x="0" y="4.5" dx="3.85" dy="1.95" layer="16" roundness="100" cream="no"/>
+<smd name="RING_B@1" x="-3.7" y="0" dx="3.85" dy="1.95" layer="16" roundness="100" rot="R90" cream="no"/>
+<smd name="SWITCH_B@1" x="3.7" y="0" dx="3.85" dy="1.95" layer="16" roundness="100" rot="R90" cream="no"/>
+<smd name="SECOND_B@1" x="0" y="-3.5" dx="3.85" dy="1.95" layer="16" roundness="100" cream="no"/>
+<text x="0" y="0" size="1.27" layer="22" rot="SMR45" align="center">&gt;DESC</text>
+</package>
+<package name="MULTICOMP1MS-ONOFFON_NOHOLES">
+<wire x1="-7.875" y1="4.065" x2="7.875" y2="4.065" width="0.127" layer="21"/>
+<wire x1="7.875" y1="4.065" x2="7.875" y2="-4.065" width="0.127" layer="21"/>
+<wire x1="7.875" y1="-4.065" x2="-7.875" y2="-4.065" width="0.127" layer="21"/>
+<wire x1="-7.875" y1="-4.065" x2="-7.875" y2="4.065" width="0.127" layer="21"/>
+<circle x="0" y="0" radius="3" width="0.001" layer="255"/>
+<wire x1="-5.3" y1="2" x2="-5.3" y2="-2" width="0.127" layer="46"/>
+<wire x1="-5.3" y1="-2" x2="-4.1" y2="-2" width="0.127" layer="46"/>
+<wire x1="-4.1" y1="-2" x2="-4.1" y2="2" width="0.127" layer="46"/>
+<wire x1="-4.1" y1="2" x2="-5.3" y2="2" width="0.127" layer="46"/>
+<wire x1="-0.6" y1="2" x2="-0.6" y2="-2" width="0.127" layer="46"/>
+<wire x1="-0.6" y1="-2" x2="0.6" y2="-2" width="0.127" layer="46"/>
+<wire x1="0.6" y1="-2" x2="0.6" y2="2" width="0.127" layer="46"/>
+<wire x1="0.6" y1="2" x2="-0.6" y2="2" width="0.127" layer="46"/>
+<wire x1="4.1" y1="2" x2="4.1" y2="-2" width="0.127" layer="46"/>
+<wire x1="4.1" y1="-2" x2="5.3" y2="-2" width="0.127" layer="46"/>
+<wire x1="5.3" y1="-2" x2="5.3" y2="2" width="0.127" layer="46"/>
+<wire x1="5.3" y1="2" x2="4.1" y2="2" width="0.127" layer="46"/>
+<smd name="2_T" x="0" y="0" dx="5.5" dy="2.7" layer="1" roundness="100" rot="R90" cream="no"/>
+<smd name="1_T" x="-4.7" y="0" dx="5.5" dy="2.7" layer="1" roundness="100" rot="R90" cream="no"/>
+<smd name="3_T" x="4.7" y="0" dx="5.5" dy="2.7" layer="1" roundness="100" rot="R90" cream="no"/>
+<smd name="1_B" x="-4.7" y="0" dx="5.5" dy="2.7" layer="16" roundness="100" rot="R90" cream="no"/>
+<smd name="2_B" x="0" y="0" dx="5.5" dy="2.7" layer="16" roundness="100" rot="R90" cream="no"/>
+<smd name="3_B" x="4.7" y="0" dx="5.5" dy="2.7" layer="16" roundness="100" rot="R90" cream="no"/>
+</package>
 </packages>
 <symbols>
 <symbol name="EURORACK_PCB">
@@ -1470,6 +1523,17 @@ NS Package M08A</description>
 </technology>
 </technologies>
 </device>
+<device name="NODRILL" package="3.5MM-JACK-SWITCH-13MM-NOHOLES">
+<connects>
+<connect gate="G$1" pin="RING" pad="RING_B@1 RING_T@3" route="any"/>
+<connect gate="G$1" pin="SECOND" pad="SECOND_B@1 SECOND_T@3" route="any"/>
+<connect gate="G$1" pin="SWITCH" pad="SWITCH_B@1 SWITCH_T@3" route="any"/>
+<connect gate="G$1" pin="TIP" pad="TIP_B@1 TIP_T@3" route="any"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
 </devices>
 </deviceset>
 <deviceset name="ONOFFON" prefix="S">
@@ -1482,6 +1546,16 @@ NS Package M08A</description>
 <connect gate="G$1" pin="CENTER" pad="2"/>
 <connect gate="G$1" pin="ON1" pad="1"/>
 <connect gate="G$1" pin="ON2" pad="3"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="NOHOLES" package="MULTICOMP1MS-ONOFFON_NOHOLES">
+<connects>
+<connect gate="G$1" pin="CENTER" pad="2_B 2_T" route="any"/>
+<connect gate="G$1" pin="ON1" pad="1_B 1_T" route="any"/>
+<connect gate="G$1" pin="ON2" pad="3_B 3_T" route="any"/>
 </connects>
 <technologies>
 <technology name=""/>
@@ -6385,30 +6459,16 @@ http://dangerousprototypes.com</description>
 <part name="GND115" library="SparkFun-Aesthetics" deviceset="GND" device=""/>
 <part name="R122" library="OPL" deviceset="R*" device="-0603" value="1.8k"/>
 <part name="C29" library="dp_devices" deviceset="CAPACITOR_POL" device="-CASE_B" value="1uF"/>
-<part name="J10" library="EurorackModularParts" deviceset="AUDIO-JACK" device="OUTPUT" value="PJ-341">
-<attribute name="DESC" value="Filtered"/>
-</part>
-<part name="J12" library="EurorackModularParts" deviceset="AUDIO-JACK" device="OUTPUT" value="PJ-341">
-<attribute name="DESC" value="Unfiltered"/>
-</part>
-<part name="J13" library="EurorackModularParts" deviceset="AUDIO-JACK" device="OUTPUT" value="PJ-341">
-<attribute name="DESC" value="Envelope"/>
-</part>
+<part name="J10" library="EurorackModularParts" deviceset="AUDIO-JACK" device="NODRILL" value="PJ-341"/>
+<part name="J12" library="EurorackModularParts" deviceset="AUDIO-JACK" device="NODRILL" value="PJ-341"/>
+<part name="J13" library="EurorackModularParts" deviceset="AUDIO-JACK" device="NODRILL" value="PJ-341"/>
 <part name="GND81" library="SparkFun-Aesthetics" deviceset="GND" device=""/>
 <part name="GND80" library="SparkFun-Aesthetics" deviceset="GND" device=""/>
 <part name="GND84" library="SparkFun-Aesthetics" deviceset="GND" device=""/>
-<part name="J2" library="EurorackModularParts" deviceset="AUDIO-JACK" device="INPUT" value="PJ-341">
-<attribute name="DESC" value="Gate"/>
-</part>
-<part name="J8" library="EurorackModularParts" deviceset="AUDIO-JACK" device="INPUT" value="PJ-341">
-<attribute name="DESC" value="Cutoff"/>
-</part>
-<part name="J4" library="EurorackModularParts" deviceset="AUDIO-JACK" device="INPUT" value="PJ-341">
-<attribute name="DESC" value="Sync"/>
-</part>
-<part name="J3" library="EurorackModularParts" deviceset="AUDIO-JACK" device="INPUT" value="PJ-341">
-<attribute name="DESC" value="CV"/>
-</part>
+<part name="J2" library="EurorackModularParts" deviceset="AUDIO-JACK" device="NODRILL" value="PJ-341"/>
+<part name="J8" library="EurorackModularParts" deviceset="AUDIO-JACK" device="NODRILL" value="PJ-341"/>
+<part name="J4" library="EurorackModularParts" deviceset="AUDIO-JACK" device="NODRILL" value="PJ-341"/>
+<part name="J3" library="EurorackModularParts" deviceset="AUDIO-JACK" device="NODRILL" value="PJ-341"/>
 <part name="C3" library="OPL" deviceset="C*" device="-0603" value="10nF"/>
 <part name="C7" library="OPL" deviceset="C*" device="-0603" value="100nF"/>
 <part name="C10" library="OPL" deviceset="C*" device="-0603" value="1nF C0G"/>
@@ -6483,9 +6543,7 @@ http://dangerousprototypes.com</description>
 <part name="C9" library="OPL" deviceset="C*" device="-0603" value="100nF"/>
 <part name="GND101" library="SparkFun-Aesthetics" deviceset="GND" device=""/>
 <part name="C43" library="OPL" deviceset="C*" device="-0603" value="100nF"/>
-<part name="J11" library="EurorackModularParts" deviceset="AUDIO-JACK" device="OUTPUT" value="PJ-341">
-<attribute name="DESC" value="MODEnvelope"/>
-</part>
+<part name="J11" library="EurorackModularParts" deviceset="AUDIO-JACK" device="NODRILL" value="PJ-341"/>
 <part name="GND96" library="SparkFun-Aesthetics" deviceset="GND" device=""/>
 <part name="R150" library="OPL" deviceset="R*" device="-0603" value="100k"/>
 <part name="R155" library="OPL" deviceset="R*" device="-0603" value="100k"/>
@@ -6504,25 +6562,19 @@ http://dangerousprototypes.com</description>
 <part name="R4" library="OPL" deviceset="R*" device="-0603" value="100k"/>
 <part name="R3" library="OPL" deviceset="R*" device="-0603" value="100k"/>
 <part name="GND20" library="SparkFun-Aesthetics" deviceset="GND" device=""/>
-<part name="S1" library="EurorackModularParts" deviceset="ONOFFON" device=""/>
-<part name="J1" library="EurorackModularParts" deviceset="AUDIO-JACK" device="INPUT" value="PJ-341">
-<attribute name="DESC" value="FM"/>
-</part>
+<part name="S1" library="EurorackModularParts" deviceset="ONOFFON" device="NOHOLES" value="ONOFFONNOHOLES"/>
+<part name="J1" library="EurorackModularParts" deviceset="AUDIO-JACK" device="NODRILL" value="PJ-341"/>
 <part name="GND15" library="SparkFun-Aesthetics" deviceset="GND" device=""/>
 <part name="GND14" library="SparkFun-Aesthetics" deviceset="GND" device=""/>
 <part name="R89" library="EurorackModularParts" deviceset="POT" device="SQUAREHOLE_SMALLKNOB" value="10k"/>
 <part name="R41" library="OPL" deviceset="R*" device="-0603" value="200k"/>
 <part name="GND34" library="SparkFun-Aesthetics" deviceset="GND" device=""/>
 <part name="R40" library="OPL" deviceset="R*" device="-0603" value="100k"/>
-<part name="J6" library="EurorackModularParts" deviceset="AUDIO-JACK" device="INPUT" value="PJ-341">
-<attribute name="DESC" value="PWM"/>
-</part>
+<part name="J6" library="EurorackModularParts" deviceset="AUDIO-JACK" device="NODRILL" value="PJ-341"/>
 <part name="S2" library="zephod-components" deviceset="SWITCH_W_LED_PB6149L-X-102" device="YELLOW"/>
 <part name="R2" library="OPL" deviceset="R*" device="-0603" value="1k"/>
 <part name="GND13" library="SparkFun-Aesthetics" deviceset="GND" device=""/>
-<part name="J7" library="EurorackModularParts" deviceset="AUDIO-JACK" device="OUTPUT" value="PJ-341">
-<attribute name="DESC" value="Oscs"/>
-</part>
+<part name="J7" library="EurorackModularParts" deviceset="AUDIO-JACK" device="NODRILL" value="PJ-341"/>
 <part name="GND73" library="SparkFun-Aesthetics" deviceset="GND" device=""/>
 <part name="IC12" library="EurorackModularParts" deviceset="TL072" device=""/>
 <part name="IC13" library="EurorackModularParts" deviceset="TL072" device=""/>
@@ -6599,10 +6651,8 @@ http://dangerousprototypes.com</description>
 <part name="R28" library="OPL" deviceset="R*" device="-0603" value="200k"/>
 <part name="GND36" library="SparkFun-Aesthetics" deviceset="GND" device=""/>
 <part name="R30" library="OPL" deviceset="R*" device="-0603" value="100k"/>
-<part name="J5" library="EurorackModularParts" deviceset="AUDIO-JACK" device="INPUT" value="PJ-341">
-<attribute name="DESC" value="PWM"/>
-</part>
-<part name="S3" library="EurorackModularParts" deviceset="ONOFFON" device=""/>
+<part name="J5" library="EurorackModularParts" deviceset="AUDIO-JACK" device="NODRILL" value="PJ-341"/>
+<part name="S3" library="EurorackModularParts" deviceset="ONOFFON" device="NOHOLES" value="ONOFFONNOHOLES"/>
 <part name="GND128" library="SparkFun-Aesthetics" deviceset="GND" device=""/>
 <part name="GND129" library="SparkFun-Aesthetics" deviceset="GND" device=""/>
 <part name="R10" library="OPL" deviceset="R*" device="-0603" value="100k"/>
@@ -6696,7 +6746,7 @@ http://dangerousprototypes.com</description>
 <part name="GND132" library="SparkFun-Aesthetics" deviceset="GND" device=""/>
 <part name="JP2" library="SparkFun-Connectors" deviceset="M03X2" device="NO_SILK" value="2x3pin header"/>
 <part name="JP1" library="SparkFun-Connectors" deviceset="M03" device="1X03_NO_SILK" value="1x3pin header"/>
-<part name="J9" library="EurorackModularParts" deviceset="AUDIO-JACK" device="INPUT" value="PJ-341"/>
+<part name="J9" library="EurorackModularParts" deviceset="AUDIO-JACK" device="NODRILL" value="PJ-341"/>
 <part name="GND74" library="SparkFun-Aesthetics" deviceset="GND" device=""/>
 <part name="IC11" library="EurorackModularParts" deviceset="TL072" device=""/>
 <part name="C41" library="OPL" deviceset="C*" device="-0603" value="100nF"/>
@@ -6808,13 +6858,9 @@ http://dangerousprototypes.com</description>
 <part name="R15" library="OPL" deviceset="R*" device="-0603" value="100k"/>
 <part name="R53" library="OPL" deviceset="R*" device="-0603" value="100k"/>
 <part name="R57" library="OPL" deviceset="R*" device="-0603" value="100k"/>
-<part name="J15" library="EurorackModularParts" deviceset="AUDIO-JACK" device="INPUT" value="PJ-341">
-<attribute name="DESC" value="PitchMod"/>
-</part>
+<part name="J15" library="EurorackModularParts" deviceset="AUDIO-JACK" device="NODRILL" value="PJ-341"/>
 <part name="GND56" library="SparkFun-Aesthetics" deviceset="GND" device=""/>
-<part name="J16" library="EurorackModularParts" deviceset="AUDIO-JACK" device="INPUT" value="PJ-341">
-<attribute name="DESC" value="Cutoff"/>
-</part>
+<part name="J16" library="EurorackModularParts" deviceset="AUDIO-JACK" device="NODRILL" value="PJ-341"/>
 <part name="GND57" library="SparkFun-Aesthetics" deviceset="GND" device=""/>
 <part name="GND58" library="SparkFun-Aesthetics" deviceset="GND" device=""/>
 <part name="IC5" library="EurorackModularParts" deviceset="TL072" device=""/>

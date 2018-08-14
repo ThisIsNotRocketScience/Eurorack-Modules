@@ -53,7 +53,7 @@
 <layer number="43" name="vRestrict" color="2" fill="10" visible="no" active="yes"/>
 <layer number="44" name="Drills" color="7" fill="1" visible="no" active="yes"/>
 <layer number="45" name="Holes" color="7" fill="1" visible="no" active="yes"/>
-<layer number="46" name="Milling" color="3" fill="1" visible="no" active="yes"/>
+<layer number="46" name="Milling" color="3" fill="1" visible="yes" active="yes"/>
 <layer number="47" name="Measures" color="7" fill="1" visible="no" active="yes"/>
 <layer number="48" name="Document" color="7" fill="1" visible="no" active="yes"/>
 <layer number="49" name="Reference" color="7" fill="1" visible="no" active="yes"/>
@@ -512,7 +512,7 @@ Library created by Rob Kam of a few CEM music synthesizer ICs. More info about t
 <smd name="P$7" x="4.75" y="0" dx="2.5" dy="2" layer="16" cream="no"/>
 <text x="0" y="2.032" size="1.016" layer="21" rot="R180" align="center">&gt;DESC</text>
 </package>
-<package name="3.5MM-JACK-SWITCH-13MM-OUTPUT">
+<package name="3.5MM-JACK-SWITCH-13MM-NOHOLES">
 <wire x1="-4.2" y1="-1.25" x2="-3.2" y2="-1.25" width="0" layer="46"/>
 <wire x1="-3.2" y1="-1.25" x2="-3.2" y2="1.25" width="0" layer="46"/>
 <wire x1="-3.2" y1="1.25" x2="-4.2" y2="1.25" width="0" layer="46"/>
@@ -529,76 +529,18 @@ Library created by Rob Kam of a few CEM music synthesizer ICs. More info about t
 <wire x1="1.25" y1="-3" x2="-1.25" y2="-3" width="0" layer="46"/>
 <wire x1="-1.25" y1="-3" x2="-1.25" y2="-4" width="0" layer="46"/>
 <wire x1="-1.25" y1="-4" x2="1.25" y2="-4" width="0" layer="46"/>
-<circle x="0" y="0" radius="5.08" width="0.1" layer="51"/>
-<circle x="0" y="0" radius="6.35" width="0.1" layer="51"/>
-<circle x="0" y="0" radius="7.62" width="0.1" layer="51"/>
-<circle x="0" y="0" radius="5.7" width="0.8" layer="21"/>
-<circle x="0" y="0" radius="4.8" width="0.6" layer="21"/>
-<circle x="0" y="0" radius="3.6" width="0.2" layer="21"/>
-<circle x="0" y="0" radius="4.1" width="0.4" layer="21"/>
-<circle x="0" y="0" radius="2.9" width="0.1" layer="21"/>
-<circle x="0" y="0" radius="2" width="0.1" layer="21"/>
-<circle x="0" y="0" radius="1" width="0.1" layer="21"/>
 <circle x="0" y="0" radius="4" width="0.0254" layer="255"/>
-<text x="0" y="6.35" size="1.778" layer="254" align="bottom-center">&gt;DESC</text>
-<wire x1="-4.5" y1="5.6" x2="4.5" y2="5.6" width="0.127" layer="51"/>
-<wire x1="4.5" y1="5.6" x2="4.5" y2="-5" width="0.127" layer="51"/>
-<wire x1="4.5" y1="-5" x2="-4.5" y2="-5" width="0.127" layer="51"/>
-<wire x1="-4.5" y1="-5" x2="-4.5" y2="5.6" width="0.127" layer="51"/>
-<rectangle x1="-4.5" y1="-5" x2="4.5" y2="5.6" layer="39"/>
-<pad name="RING@3" x="-3.7" y="0" drill="0.8" diameter="1.9304" shape="long" rot="R90"/>
-<pad name="SWITCH@3" x="3.7" y="0" drill="0.8" diameter="1.9304" shape="long" rot="R90"/>
-<pad name="SECOND@3" x="0" y="-3.5" drill="0.8" diameter="1.9304" shape="long" rot="R180"/>
-<pad name="TIP@3" x="0" y="4.5" drill="0.8" diameter="1.9304" shape="long" rot="R180"/>
-<text x="0" y="0" size="2.032" layer="25" ratio="10" rot="SR0" align="center">&gt;NAME</text>
+<smd name="RING_T@3" x="-3.7" y="0" dx="3.85" dy="1.95" layer="1" roundness="100" rot="R90" cream="no"/>
+<smd name="SWITCH_T@3" x="3.7" y="0" dx="3.85" dy="1.95" layer="1" roundness="100" rot="R90" cream="no"/>
+<smd name="SECOND_T@3" x="0" y="-3.5" dx="3.85" dy="1.95" layer="1" roundness="100" rot="R180" cream="no"/>
+<smd name="TIP_T@3" x="0" y="4.5" dx="3.85" dy="1.95" layer="1" roundness="100" rot="R180" cream="no"/>
+<smd name="TIP_B@1" x="0" y="4.5" dx="3.85" dy="1.95" layer="16" roundness="100" cream="no"/>
+<smd name="RING_B@1" x="-3.7" y="0" dx="3.85" dy="1.95" layer="16" roundness="100" rot="R90" cream="no"/>
+<smd name="SWITCH_B@1" x="3.7" y="0" dx="3.85" dy="1.95" layer="16" roundness="100" rot="R90" cream="no"/>
+<smd name="SECOND_B@1" x="0" y="-3.5" dx="3.85" dy="1.95" layer="16" roundness="100" cream="no"/>
+<text x="0" y="0" size="1.27" layer="22" rot="SMR45" align="center">&gt;DESC</text>
 </package>
-<package name="3.5MM-JACK-SWITCH-13MM-INPUT">
-<wire x1="-4.2" y1="-1.25" x2="-3.2" y2="-1.25" width="0" layer="46"/>
-<wire x1="-3.2" y1="-1.25" x2="-3.2" y2="1.25" width="0" layer="46"/>
-<wire x1="-3.2" y1="1.25" x2="-4.2" y2="1.25" width="0" layer="46"/>
-<wire x1="-4.2" y1="1.25" x2="-4.2" y2="-1.25" width="0" layer="46"/>
-<wire x1="3.2" y1="-1.25" x2="4.2" y2="-1.25" width="0" layer="46"/>
-<wire x1="4.2" y1="-1.25" x2="4.2" y2="1.25" width="0" layer="46"/>
-<wire x1="4.2" y1="1.25" x2="3.2" y2="1.25" width="0" layer="46"/>
-<wire x1="3.2" y1="1.25" x2="3.2" y2="-1.25" width="0" layer="46"/>
-<wire x1="1.25" y1="4" x2="1.25" y2="5" width="0" layer="46"/>
-<wire x1="1.25" y1="5" x2="-1.25" y2="5" width="0" layer="46"/>
-<wire x1="-1.25" y1="5" x2="-1.25" y2="4" width="0" layer="46"/>
-<wire x1="-1.25" y1="4" x2="1.25" y2="4" width="0" layer="46"/>
-<wire x1="1.25" y1="-4" x2="1.25" y2="-3" width="0" layer="46"/>
-<wire x1="1.25" y1="-3" x2="-1.25" y2="-3" width="0" layer="46"/>
-<wire x1="-1.25" y1="-3" x2="-1.25" y2="-4" width="0" layer="46"/>
-<wire x1="-1.25" y1="-4" x2="1.25" y2="-4" width="0" layer="46"/>
-<circle x="0" y="0" radius="5.08" width="0.127" layer="51"/>
-<circle x="0" y="0" radius="6.35" width="0.127" layer="51"/>
-<circle x="0" y="0" radius="7.62" width="0.127" layer="51"/>
-<circle x="0" y="0" radius="4.2" width="0.6" layer="21"/>
-<circle x="0" y="0" radius="5" width="0.4" layer="21"/>
-<circle x="0" y="0" radius="5.6" width="0.2" layer="21"/>
-<circle x="0" y="0" radius="6" width="0.1" layer="21"/>
-<circle x="0" y="0" radius="3" width="1.2" layer="21"/>
-<circle x="0" y="0" radius="1.5" width="2" layer="21"/>
-<circle x="0" y="0" radius="4" width="0.0254" layer="255"/>
-<text x="0" y="6.35" size="1.778" layer="254" align="bottom-center">&gt;DESC</text>
-<wire x1="-4.5" y1="5.6" x2="4.5" y2="5.6" width="0.127" layer="51"/>
-<wire x1="4.5" y1="5.6" x2="4.5" y2="-5" width="0.127" layer="51"/>
-<wire x1="4.5" y1="-5" x2="-4.5" y2="-5" width="0.127" layer="51"/>
-<wire x1="-4.5" y1="-5" x2="-4.5" y2="5.6" width="0.127" layer="51"/>
-<rectangle x1="-4.5" y1="-5" x2="4.5" y2="5.6" layer="39"/>
-<pad name="TIP@3" x="0" y="4.5" drill="0.8" diameter="1.9304" shape="long"/>
-<pad name="SWITCH@3" x="3.7" y="0" drill="0.8" diameter="1.9304" shape="long" rot="R90"/>
-<pad name="RING@3" x="-3.7" y="0" drill="0.8" diameter="1.9304" shape="long" rot="R90"/>
-<pad name="SECOND@3" x="0" y="-3.5" drill="0.8" diameter="1.9304" shape="long" rot="R180"/>
-<text x="0" y="0" size="2.032" layer="25" ratio="10" rot="SR0" align="center">&gt;NAME</text>
-</package>
-<package name="MULTICOMP1MS-ONOFFON">
-<hole x="-7.875" y="1.59" drill="1.85"/>
-<hole x="-7.875" y="-1.59" drill="1.85"/>
-<hole x="7.875" y="1.59" drill="1.85"/>
-<hole x="7.875" y="-1.59" drill="1.85"/>
-<pad name="1" x="-4.7" y="0" drill="1.85" shape="long" rot="R90"/>
-<pad name="2" x="0" y="0" drill="1.85" shape="long" rot="R90"/>
-<pad name="3" x="4.7" y="0" drill="1.85" shape="long" rot="R90"/>
+<package name="MULTICOMP1MS-ONOFFON_NOHOLES">
 <wire x1="-7.875" y1="4.065" x2="7.875" y2="4.065" width="0.127" layer="21"/>
 <wire x1="7.875" y1="4.065" x2="7.875" y2="-4.065" width="0.127" layer="21"/>
 <wire x1="7.875" y1="-4.065" x2="-7.875" y2="-4.065" width="0.127" layer="21"/>
@@ -616,6 +558,12 @@ Library created by Rob Kam of a few CEM music synthesizer ICs. More info about t
 <wire x1="4.1" y1="-2" x2="5.3" y2="-2" width="0.127" layer="46"/>
 <wire x1="5.3" y1="-2" x2="5.3" y2="2" width="0.127" layer="46"/>
 <wire x1="5.3" y1="2" x2="4.1" y2="2" width="0.127" layer="46"/>
+<smd name="2_T" x="0" y="0" dx="5.5" dy="2.7" layer="1" roundness="100" rot="R90" cream="no"/>
+<smd name="1_T" x="-4.7" y="0" dx="5.5" dy="2.7" layer="1" roundness="100" rot="R90" cream="no"/>
+<smd name="3_T" x="4.7" y="0" dx="5.5" dy="2.7" layer="1" roundness="100" rot="R90" cream="no"/>
+<smd name="1_B" x="-4.7" y="0" dx="5.5" dy="2.7" layer="16" roundness="100" rot="R90" cream="no"/>
+<smd name="2_B" x="0" y="0" dx="5.5" dy="2.7" layer="16" roundness="100" rot="R90" cream="no"/>
+<smd name="3_B" x="4.7" y="0" dx="5.5" dy="2.7" layer="16" roundness="100" rot="R90" cream="no"/>
 </package>
 <package name="SO08">
 <description>&lt;b&gt;Small Outline Package 8&lt;/b&gt;&lt;br&gt;
@@ -1360,34 +1308,13 @@ design rules under a new name.</description>
 <element name="R121" library="OPL" package="R0603" value="1.8k" x="128.5875" y="59.3725"/>
 <element name="R122" library="OPL" package="R0603" value="1.8k" x="129.54" y="60.6425" rot="R180"/>
 <element name="C29" library="dp_devices" package="CASE_B" value="1uF" x="118.11" y="55.88" rot="R270"/>
-<element name="J10" library="EurorackModularParts" package="3.5MM-JACK-SWITCH-13MM-OUTPUT" value="PJ-341" x="175.26" y="10.16" locked="yes" rot="R180">
-<attribute name="MPN" value="PJ-341" x="175.26" y="10.16" size="1.778" layer="27" rot="R180" display="off"/>
-<attribute name="DESC" value="Filtered" x="175.26" y="10.16" size="1.778" layer="27" rot="R180" display="off"/>
-</element>
-<element name="J12" library="EurorackModularParts" package="3.5MM-JACK-SWITCH-13MM-OUTPUT" value="PJ-341" x="165.1" y="10.16" locked="yes" rot="R180">
-<attribute name="MPN" value="PJ-341" x="165.1" y="10.16" size="1.778" layer="27" rot="R180" display="off"/>
-<attribute name="DESC" value="Unfiltered" x="165.1" y="10.16" size="1.778" layer="27" rot="R180" display="off"/>
-</element>
-<element name="J13" library="EurorackModularParts" package="3.5MM-JACK-SWITCH-13MM-OUTPUT" value="PJ-341" x="172.72" y="27.94">
-<attribute name="MPN" value="PJ-341" x="172.72" y="27.94" size="1.778" layer="27" display="off"/>
-<attribute name="DESC" value="Envelope" x="172.72" y="27.94" size="1.778" layer="27" display="off"/>
-</element>
-<element name="J2" library="EurorackModularParts" package="3.5MM-JACK-SWITCH-13MM-INPUT" value="PJ-341" x="7.62" y="68.58" locked="yes">
-<attribute name="MPN" value="PJ-341" x="7.62" y="68.58" size="1.778" layer="27" display="off"/>
-<attribute name="DESC" value="Gate" x="7.62" y="68.58" size="1.778" layer="27" display="off"/>
-</element>
-<element name="J8" library="EurorackModularParts" package="3.5MM-JACK-SWITCH-13MM-INPUT" value="PJ-341" x="132.08" y="96.52" locked="yes" rot="R180">
-<attribute name="MPN" value="PJ-341" x="132.08" y="96.52" size="1.778" layer="27" rot="R180" display="off"/>
-<attribute name="DESC" value="Cutoff" x="132.08" y="96.52" size="1.778" layer="27" rot="R180" display="off"/>
-</element>
-<element name="J4" library="EurorackModularParts" package="3.5MM-JACK-SWITCH-13MM-INPUT" value="PJ-341" x="58.42" y="96.52" locked="yes" rot="R180">
-<attribute name="MPN" value="PJ-341" x="58.42" y="96.52" size="1.778" layer="27" rot="R180" display="off"/>
-<attribute name="DESC" value="Sync" x="58.42" y="96.52" size="1.778" layer="27" rot="R180" display="off"/>
-</element>
-<element name="J3" library="EurorackModularParts" package="3.5MM-JACK-SWITCH-13MM-INPUT" value="PJ-341" x="7.62" y="96.52" locked="yes" rot="R180">
-<attribute name="MPN" value="PJ-341" x="7.62" y="96.52" size="1.778" layer="27" rot="R180" display="off"/>
-<attribute name="DESC" value="CV" x="7.62" y="96.52" size="1.778" layer="27" rot="R180" display="off"/>
-</element>
+<element name="J10" library="EurorackModularParts" package="3.5MM-JACK-SWITCH-13MM-NOHOLES" value="PJ-341" x="175.26" y="10.16" locked="yes" rot="R180"/>
+<element name="J12" library="EurorackModularParts" package="3.5MM-JACK-SWITCH-13MM-NOHOLES" value="PJ-341" x="165.1" y="10.16" locked="yes" rot="R180"/>
+<element name="J13" library="EurorackModularParts" package="3.5MM-JACK-SWITCH-13MM-NOHOLES" value="PJ-341" x="172.72" y="27.94"/>
+<element name="J2" library="EurorackModularParts" package="3.5MM-JACK-SWITCH-13MM-NOHOLES" value="PJ-341" x="7.62" y="68.58" locked="yes"/>
+<element name="J8" library="EurorackModularParts" package="3.5MM-JACK-SWITCH-13MM-NOHOLES" value="PJ-341" x="132.08" y="96.52" locked="yes" rot="R180"/>
+<element name="J4" library="EurorackModularParts" package="3.5MM-JACK-SWITCH-13MM-NOHOLES" value="PJ-341" x="58.42" y="96.52" locked="yes" rot="R180"/>
+<element name="J3" library="EurorackModularParts" package="3.5MM-JACK-SWITCH-13MM-NOHOLES" value="PJ-341" x="7.62" y="96.52" locked="yes" rot="R180"/>
 <element name="C3" library="OPL" package="C0603" value="10nF" x="40.64" y="67.945" rot="R270"/>
 <element name="C7" library="OPL" package="C0603" value="100nF" x="45.4025" y="63.5" rot="R90"/>
 <element name="C10" library="OPL" package="C0603" value="1nF C0G" x="47.9425" y="59.69" rot="R90"/>
@@ -1452,10 +1379,7 @@ design rules under a new name.</description>
 <element name="C54" library="OPL" package="C0603" value="39nF" x="149.5425" y="87.3125" rot="R270"/>
 <element name="C9" library="OPL" package="C0603" value="100nF" x="39.751" y="52.959" rot="R90"/>
 <element name="C43" library="OPL" package="C0603" value="100nF" x="19.939" y="63.754"/>
-<element name="J11" library="EurorackModularParts" package="3.5MM-JACK-SWITCH-13MM-OUTPUT" value="PJ-341" x="157.48" y="27.94">
-<attribute name="MPN" value="PJ-341" x="127" y="-63.5" size="1.778" layer="27" display="off"/>
-<attribute name="DESC" value="MODEnvelope" x="127" y="-63.5" size="1.778" layer="27" display="off"/>
-</element>
+<element name="J11" library="EurorackModularParts" package="3.5MM-JACK-SWITCH-13MM-NOHOLES" value="PJ-341" x="157.48" y="27.94"/>
 <element name="R150" library="OPL" package="R0603" value="100k" x="118.11" y="83.82" rot="R270"/>
 <element name="R155" library="OPL" package="R0603" value="100k" x="119.6975" y="85.4075" rot="R270"/>
 <element name="R136" library="EurorackModularParts" package="ALPS_POT_SQUAREHOLES" value="10k" x="109.22" y="33.02" locked="yes">
@@ -1473,26 +1397,17 @@ design rules under a new name.</description>
 </element>
 <element name="R4" library="OPL" package="R0603" value="100k" x="21.971" y="33.147"/>
 <element name="R3" library="OPL" package="R0603" value="100k" x="18.542" y="33.147"/>
-<element name="S1" library="EurorackModularParts" package="MULTICOMP1MS-ONOFFON" value="ONOFFON" x="7.62" y="40.64" locked="yes" rot="R90"/>
-<element name="J1" library="EurorackModularParts" package="3.5MM-JACK-SWITCH-13MM-INPUT" value="PJ-341" x="7.62" y="10.16" locked="yes">
-<attribute name="MPN" value="PJ-341" x="7.62" y="10.16" size="1.778" layer="27" display="off"/>
-<attribute name="DESC" value="FM" x="7.62" y="10.16" size="1.778" layer="27" display="off"/>
-</element>
+<element name="S1" library="EurorackModularParts" package="MULTICOMP1MS-ONOFFON_NOHOLES" value="ONOFFONNOHOLES" x="7.62" y="40.64" locked="yes" rot="R90"/>
+<element name="J1" library="EurorackModularParts" package="3.5MM-JACK-SWITCH-13MM-NOHOLES" value="PJ-341" x="7.62" y="10.16" locked="yes"/>
 <element name="R89" library="EurorackModularParts" package="ALPS_POT_SQUAREHOLES" value="10k" x="73.66" y="96.52" locked="yes">
 <attribute name="DESC" value="Osc1 PWM" x="73.66" y="96.52" size="1.778" layer="27" display="off"/>
 </element>
 <element name="R41" library="OPL" package="R0603" value="200k" x="67.6275" y="89.2175" rot="R90"/>
 <element name="R40" library="OPL" package="R0603" value="100k" x="87.4395" y="87.63" rot="R180"/>
-<element name="J6" library="EurorackModularParts" package="3.5MM-JACK-SWITCH-13MM-INPUT" value="PJ-341" x="86.36" y="96.52" locked="yes" rot="R180">
-<attribute name="MPN" value="PJ-341" x="86.36" y="96.52" size="1.778" layer="27" rot="R180" display="off"/>
-<attribute name="DESC" value="PWM" x="86.36" y="96.52" size="1.778" layer="27" rot="R180" display="off"/>
-</element>
+<element name="J6" library="EurorackModularParts" package="3.5MM-JACK-SWITCH-13MM-NOHOLES" value="PJ-341" x="86.36" y="96.52" locked="yes" rot="R180"/>
 <element name="S2" library="zephod-components" package="PB6149L" value="SWITCH_W_LED_PB6149L-X-102YELLOW" x="7.62" y="81.28" locked="yes" rot="R180"/>
 <element name="R2" library="OPL" package="R0603" value="1k" x="8.6995" y="86.868"/>
-<element name="J7" library="EurorackModularParts" package="3.5MM-JACK-SWITCH-13MM-OUTPUT" value="PJ-341" x="142.24" y="10.16" locked="yes">
-<attribute name="MPN" value="PJ-341" x="142.24" y="10.16" size="1.778" layer="27" display="off"/>
-<attribute name="DESC" value="Oscs" x="142.24" y="10.16" size="1.778" layer="27" display="off"/>
-</element>
+<element name="J7" library="EurorackModularParts" package="3.5MM-JACK-SWITCH-13MM-NOHOLES" value="PJ-341" x="142.24" y="10.16" locked="yes"/>
 <element name="IC12" library="EurorackModularParts" package="SO08" value="TL072" x="20.955" y="75.565" rot="R270"/>
 <element name="IC13" library="EurorackModularParts" package="SO08" value="TL072" x="20.955" y="67.6275" rot="R270"/>
 <element name="C50" library="OPL" package="C0603" value="100nF" x="23.1775" y="71.4375"/>
@@ -1555,11 +1470,8 @@ design rules under a new name.</description>
 </element>
 <element name="R28" library="OPL" package="R0603" value="200k" x="68.58" y="17.145" rot="R270"/>
 <element name="R30" library="OPL" package="R0603" value="100k" x="81.915" y="17.4625" rot="R180"/>
-<element name="J5" library="EurorackModularParts" package="3.5MM-JACK-SWITCH-13MM-INPUT" value="PJ-341" x="86.36" y="10.16" locked="yes">
-<attribute name="DESC" value="PWM" x="0" y="-30.48" size="1.778" layer="27" display="off"/>
-<attribute name="MPN" value="PJ-341" x="0" y="-30.48" size="1.778" layer="27" display="off"/>
-</element>
-<element name="S3" library="EurorackModularParts" package="MULTICOMP1MS-ONOFFON" value="ONOFFON" x="58.42" y="10.16" locked="yes"/>
+<element name="J5" library="EurorackModularParts" package="3.5MM-JACK-SWITCH-13MM-NOHOLES" value="PJ-341" x="86.36" y="10.16" locked="yes"/>
+<element name="S3" library="EurorackModularParts" package="MULTICOMP1MS-ONOFFON_NOHOLES" value="ONOFFONNOHOLES" x="58.42" y="10.16" locked="yes"/>
 <element name="R10" library="OPL" package="R0603" value="100k" x="39.6875" y="28.575" rot="R90"/>
 <element name="R62" library="OPL" package="R0603" value="10k" x="55.88" y="28.575" rot="R90"/>
 <element name="R44" library="OPL" package="R0603" value="51k" x="41.275" y="28.575" rot="R90"/>
@@ -1647,10 +1559,7 @@ design rules under a new name.</description>
 <element name="C25" library="OPL" package="C0603" value="100nF" x="90.4875" y="52.22875" rot="R180"/>
 <element name="JP2" library="SparkFun-Connectors" package="2X3-NS" value="2x3pin header" x="95.25" y="28.575" rot="MR180"/>
 <element name="JP1" library="SparkFun-Connectors" package="1X03_NO_SILK" value="1x3pin header" x="80.9625" y="83.82" rot="MR180"/>
-<element name="J9" library="EurorackModularParts" package="3.5MM-JACK-SWITCH-13MM-INPUT" value="PJ-341" x="152.4" y="10.16" locked="yes">
-<attribute name="MPN" value="PJ-341" x="152.4" y="10.16" size="1.778" layer="27" display="off"/>
-<attribute name="DESC" value="Input" x="152.4" y="10.16" size="1.778" layer="27" display="off"/>
-</element>
+<element name="J9" library="EurorackModularParts" package="3.5MM-JACK-SWITCH-13MM-NOHOLES" value="PJ-341" x="152.4" y="10.16" locked="yes"/>
 <element name="IC11" library="EurorackModularParts" package="SO08" value="TL072" x="120.65" y="20.955" rot="R270"/>
 <element name="C41" library="OPL" package="C0603" value="100nF" x="122.555" y="24.765"/>
 <element name="C40" library="OPL" package="C0603" value="100nF" x="118.745" y="17.145"/>
@@ -1735,14 +1644,8 @@ design rules under a new name.</description>
 <element name="R15" library="OPL" package="R0603" value="100k" x="66.04" y="89.2175" rot="R90"/>
 <element name="R53" library="OPL" package="R0603" value="100k" x="67.31" y="17.145" rot="R90"/>
 <element name="R57" library="OPL" package="R0603" value="100k" x="31.4325" y="89.8525"/>
-<element name="J15" library="EurorackModularParts" package="3.5MM-JACK-SWITCH-13MM-INPUT" value="PJ-341" x="114.3" y="10.16" locked="yes">
-<attribute name="MPN" value="PJ-341" x="114.3" y="10.16" size="1.778" layer="27" display="off"/>
-<attribute name="DESC" value="PitchMod" x="114.3" y="10.16" size="1.778" layer="27" display="off"/>
-</element>
-<element name="J16" library="EurorackModularParts" package="3.5MM-JACK-SWITCH-13MM-INPUT" value="PJ-341" x="142.24" y="96.52" rot="R180">
-<attribute name="MPN" value="PJ-341" x="157.63875" y="80.01" size="1.778" layer="27" rot="R180" display="off"/>
-<attribute name="DESC" value="Cutoff" x="157.63875" y="80.01" size="1.778" layer="27" rot="R180" display="off"/>
-</element>
+<element name="J15" library="EurorackModularParts" package="3.5MM-JACK-SWITCH-13MM-NOHOLES" value="PJ-341" x="114.3" y="10.16" locked="yes"/>
+<element name="J16" library="EurorackModularParts" package="3.5MM-JACK-SWITCH-13MM-NOHOLES" value="PJ-341" x="142.24" y="96.52" rot="R180"/>
 <element name="IC5" library="EurorackModularParts" package="SO08" value="TL072" x="130.4925" y="85.4075" rot="R270"/>
 <element name="R58" library="OPL" package="R0603" value="100k" x="135.5725" y="85.4075" rot="R90"/>
 <element name="R59" library="OPL" package="R0603" value="100k" x="137.16" y="85.4075" rot="R270"/>
@@ -1807,9 +1710,9 @@ design rules under a new name.</description>
 <contactref element="C36" pad="2"/>
 <contactref element="C37" pad="2"/>
 <contactref element="R121" pad="2"/>
-<contactref element="J12" pad="RING@3"/>
-<contactref element="J10" pad="RING@3"/>
-<contactref element="J13" pad="RING@3"/>
+<contactref element="J12" pad="RING_B@1" route="any" routetag="G$1.RING"/>
+<contactref element="J10" pad="RING_B@1" route="any" routetag="G$1.RING"/>
+<contactref element="J13" pad="RING_B@1" route="any" routetag="G$1.RING"/>
 <contactref element="C10" pad="2"/>
 <contactref element="R20" pad="1"/>
 <contactref element="C3" pad="1"/>
@@ -1820,8 +1723,8 @@ design rules under a new name.</description>
 <contactref element="R24" pad="P$1"/>
 <contactref element="R74" pad="P$1"/>
 <contactref element="R60" pad="P$1"/>
-<contactref element="J4" pad="SWITCH@3"/>
-<contactref element="J8" pad="SWITCH@3"/>
+<contactref element="J4" pad="SWITCH_B@1" route="any" routetag="G$1.SWITCH"/>
+<contactref element="J8" pad="SWITCH_B@1" route="any" routetag="G$1.SWITCH"/>
 <contactref element="R137" pad="P$1"/>
 <contactref element="IC17" pad="14"/>
 <contactref element="R166" pad="2"/>
@@ -1836,18 +1739,18 @@ design rules under a new name.</description>
 <contactref element="C54" pad="1"/>
 <contactref element="C9" pad="1"/>
 <contactref element="C43" pad="2"/>
-<contactref element="J11" pad="RING@3"/>
-<contactref element="J4" pad="RING@3"/>
-<contactref element="J8" pad="RING@3"/>
-<contactref element="J2" pad="RING@3"/>
-<contactref element="J3" pad="RING@3"/>
+<contactref element="J11" pad="RING_B@1" route="any" routetag="G$1.RING"/>
+<contactref element="J4" pad="RING_B@1" route="any" routetag="G$1.RING"/>
+<contactref element="J8" pad="RING_B@1" route="any" routetag="G$1.RING"/>
+<contactref element="J2" pad="RING_B@1" route="any" routetag="G$1.RING"/>
+<contactref element="J3" pad="RING_B@1" route="any" routetag="G$1.RING"/>
 <contactref element="R142" pad="P$1"/>
 <contactref element="R1" pad="P$1"/>
-<contactref element="J1" pad="SWITCH@3"/>
-<contactref element="J1" pad="RING@3"/>
+<contactref element="J1" pad="SWITCH_B@1" route="any" routetag="G$1.SWITCH"/>
+<contactref element="J1" pad="RING_B@1" route="any" routetag="G$1.RING"/>
 <contactref element="R89" pad="P$1"/>
 <contactref element="R2" pad="2"/>
-<contactref element="J7" pad="RING@3"/>
+<contactref element="J7" pad="RING_B@1" route="any" routetag="G$1.RING"/>
 <contactref element="IC13" pad="3"/>
 <contactref element="IC13" pad="5"/>
 <contactref element="C50" pad="1"/>
@@ -1903,7 +1806,7 @@ design rules under a new name.</description>
 <contactref element="IC6" pad="6"/>
 <contactref element="C32" pad="2"/>
 <contactref element="C25" pad="1"/>
-<contactref element="J9" pad="RING@3"/>
+<contactref element="J9" pad="RING_B@1" route="any" routetag="G$1.RING"/>
 <contactref element="C41" pad="1"/>
 <contactref element="C40" pad="2"/>
 <contactref element="C2" pad="1"/>
@@ -1927,8 +1830,8 @@ design rules under a new name.</description>
 <contactref element="C8" pad="1"/>
 <contactref element="IC18" pad="3"/>
 <contactref element="IC18" pad="5"/>
-<contactref element="J6" pad="SWITCH@3"/>
-<contactref element="J5" pad="SWITCH@3"/>
+<contactref element="J6" pad="SWITCH_B@1" route="any" routetag="G$1.SWITCH"/>
+<contactref element="J5" pad="SWITCH_B@1" route="any" routetag="G$1.SWITCH"/>
 <contactref element="C65" pad="1"/>
 <contactref element="C66" pad="1"/>
 <contactref element="C38" pad="1"/>
@@ -2184,9 +2087,9 @@ design rules under a new name.</description>
 <wire x1="149.5425" y1="25.46" x2="149.64125" y2="25.55875" width="0.508" layer="1"/>
 <wire x1="149.64125" y1="25.55875" x2="150.33625" y2="25.55875" width="0.508" layer="1"/>
 <via x="150.33625" y="25.55875" extent="1-16" drill="0.3048"/>
-<contactref element="J15" pad="RING@3"/>
-<contactref element="J16" pad="SWITCH@3"/>
-<contactref element="J16" pad="RING@3"/>
+<contactref element="J15" pad="RING_B@1" route="any" routetag="G$1.RING"/>
+<contactref element="J16" pad="SWITCH_B@1" route="any" routetag="G$1.SWITCH"/>
+<contactref element="J16" pad="RING_B@1" route="any" routetag="G$1.RING"/>
 <contactref element="IC5" pad="5"/>
 <contactref element="C13" pad="1"/>
 <contactref element="C22" pad="2"/>
@@ -2264,6 +2167,25 @@ design rules under a new name.</description>
 <wire x1="91.90125" y1="56.8475" x2="92.23375" y2="56.515" width="0.508" layer="1"/>
 <via x="92.23375" y="56.515" extent="1-16" drill="0.3048"/>
 <wire x1="92.23375" y1="56.515" x2="92.55125" y2="56.515" width="0.508" layer="16"/>
+<contactref element="J3" pad="RING_T@3" route="any" routetag="G$1.RING"/>
+<contactref element="J4" pad="RING_T@3" route="any" routetag="G$1.RING"/>
+<contactref element="J4" pad="SWITCH_T@3" route="any" routetag="G$1.SWITCH"/>
+<contactref element="J6" pad="SWITCH_T@3" route="any" routetag="G$1.SWITCH"/>
+<contactref element="J2" pad="RING_T@3" route="any" routetag="G$1.RING"/>
+<contactref element="J1" pad="RING_T@3" route="any" routetag="G$1.RING"/>
+<contactref element="J1" pad="SWITCH_T@3" route="any" routetag="G$1.SWITCH"/>
+<contactref element="J5" pad="SWITCH_T@3" route="any" routetag="G$1.SWITCH"/>
+<contactref element="J15" pad="RING_T@3" route="any" routetag="G$1.RING"/>
+<contactref element="J7" pad="RING_T@3" route="any" routetag="G$1.RING"/>
+<contactref element="J9" pad="RING_T@3" route="any" routetag="G$1.RING"/>
+<contactref element="J12" pad="RING_T@3" route="any" routetag="G$1.RING"/>
+<contactref element="J10" pad="RING_T@3" route="any" routetag="G$1.RING"/>
+<contactref element="J13" pad="RING_T@3" route="any" routetag="G$1.RING"/>
+<contactref element="J11" pad="RING_T@3" route="any" routetag="G$1.RING"/>
+<contactref element="J16" pad="RING_T@3" route="any" routetag="G$1.RING"/>
+<contactref element="J16" pad="SWITCH_T@3" route="any" routetag="G$1.SWITCH"/>
+<contactref element="J8" pad="RING_T@3" route="any" routetag="G$1.RING"/>
+<contactref element="J8" pad="SWITCH_T@3" route="any" routetag="G$1.SWITCH"/>
 </signal>
 <signal name="N$1">
 <contactref element="IC16" pad="15"/>
@@ -3070,7 +2992,7 @@ design rules under a new name.</description>
 <signal name="AMPENVELOPEOUT">
 <contactref element="IC16" pad="2"/>
 <contactref element="R169" pad="2"/>
-<contactref element="J13" pad="TIP@3"/>
+<contactref element="J13" pad="TIP_B@1" route="any" routetag="G$1.TIP"/>
 <contactref element="IC12" pad="5"/>
 <contactref element="R198" pad="1"/>
 <wire x1="139.065" y1="60.7695" x2="148.082" y2="60.7695" width="0.3048" layer="1"/>
@@ -3133,6 +3055,7 @@ design rules under a new name.</description>
 <wire x1="147.6375" y1="31.4325" x2="145.415" y2="33.655" width="0.3048" layer="1"/>
 <wire x1="145.415" y1="33.655" x2="143.637" y2="33.655" width="0.3048" layer="1"/>
 <wire x1="143.637" y1="33.655" x2="143.51" y2="33.782" width="0.3048" layer="1"/>
+<contactref element="J13" pad="TIP_T@3" route="any" routetag="G$1.TIP"/>
 </signal>
 <signal name="GATE_IN">
 <contactref element="IC16" pad="4"/>
@@ -3995,15 +3918,16 @@ design rules under a new name.</description>
 </signal>
 <signal name="HARDSYNC_IN">
 <contactref element="C23" pad="2"/>
-<contactref element="J4" pad="TIP@3"/>
+<contactref element="J4" pad="TIP_B@1" route="any" routetag="G$1.TIP"/>
 <wire x1="58.42" y1="92.02" x2="60.96" y2="89.8525" width="0.3048" layer="16"/>
 <wire x1="60.96" y1="89.8525" x2="61.595" y2="89.2175" width="0.3048" layer="16"/>
 <via x="61.595" y="89.2175" extent="1-16" drill="0.3048"/>
 <wire x1="61.595" y1="89.2175" x2="60.7695" y2="89.2175" width="0.3048" layer="1"/>
+<contactref element="J4" pad="TIP_T@3" route="any" routetag="G$1.TIP"/>
 </signal>
 <signal name="SAWTOOTH_OUT_1">
 <contactref element="IC3" pad="8"/>
-<contactref element="S3" pad="2"/>
+<contactref element="S3" pad="2_B" route="any" routetag="G$1.CENTER"/>
 <contactref element="C68" pad="+"/>
 <via x="51.435" y="28.2575" extent="1-16" drill="0.3048"/>
 <wire x1="51.435" y1="28.2575" x2="51.435" y2="31.115" width="0.3048" layer="16"/>
@@ -4074,6 +3998,7 @@ design rules under a new name.</description>
 <via x="55.245" y="14.605" extent="1-16" drill="0.3048"/>
 <wire x1="55.245" y1="14.605" x2="55.245" y2="13.335" width="0.3048" layer="16"/>
 <wire x1="55.245" y1="13.335" x2="58.42" y2="10.16" width="0.3048" layer="16"/>
+<contactref element="S3" pad="2_T" route="any" routetag="G$1.CENTER"/>
 </signal>
 <signal name="N$43">
 <contactref element="IC3" pad="1"/>
@@ -4195,7 +4120,7 @@ design rules under a new name.</description>
 <signal name="CV_RACK">
 <contactref element="J14" pad="13"/>
 <contactref element="J14" pad="14"/>
-<contactref element="J3" pad="SWITCH@3"/>
+<contactref element="J3" pad="SWITCH_B@1" route="any" routetag="G$1.SWITCH"/>
 <wire x1="3.92" y1="96.52" x2="3.81" y2="96.52" width="0.3048" layer="1"/>
 <wire x1="3.81" y1="96.52" x2="0.9525" y2="93.6625" width="0.3048" layer="1"/>
 <wire x1="0.9525" y1="93.6625" x2="0.9525" y2="59.055" width="0.3048" layer="1"/>
@@ -4206,11 +4131,12 @@ design rules under a new name.</description>
 <wire x1="12.7" y1="46.0375" x2="13.97" y2="44.7675" width="0.3048" layer="1"/>
 <wire x1="13.97" y1="44.7675" x2="16.1925" y2="44.7675" width="0.3048" layer="1"/>
 <wire x1="16.1925" y1="44.7675" x2="18.7325" y2="44.7675" width="0.3048" layer="1"/>
+<contactref element="J3" pad="SWITCH_T@3" route="any" routetag="G$1.SWITCH"/>
 </signal>
 <signal name="GATE_RACK">
 <contactref element="J14" pad="15"/>
 <contactref element="J14" pad="16"/>
-<contactref element="J2" pad="SWITCH@3"/>
+<contactref element="J2" pad="SWITCH_B@1" route="any" routetag="G$1.SWITCH"/>
 <wire x1="18.7325" y1="42.2275" x2="16.1925" y2="42.2275" width="0.3048" layer="1"/>
 <wire x1="16.1925" y1="42.2275" x2="14.9225" y2="42.2275" width="0.3048" layer="1"/>
 <wire x1="14.9225" y1="42.2275" x2="11.7475" y2="45.4025" width="0.3048" layer="1"/>
@@ -4223,16 +4149,18 @@ design rules under a new name.</description>
 <wire x1="9.525" y1="58.42" x2="11.1125" y2="60.0075" width="0.3048" layer="1"/>
 <wire x1="11.1125" y1="60.0075" x2="11.1125" y2="68.3725" width="0.3048" layer="1"/>
 <wire x1="11.1125" y1="68.3725" x2="11.32" y2="68.58" width="0.3048" layer="1"/>
+<contactref element="J2" pad="SWITCH_T@3" route="any" routetag="G$1.SWITCH"/>
 </signal>
 <signal name="MAIN_CV">
-<contactref element="J3" pad="TIP@3"/>
+<contactref element="J3" pad="TIP_B@1" route="any" routetag="G$1.TIP"/>
 <contactref element="R14" pad="1"/>
 <wire x1="7.62" y1="92.02" x2="13.4705" y2="92.02" width="0.3048" layer="1"/>
 <wire x1="13.4705" y1="92.02" x2="15.4305" y2="93.98" width="0.3048" layer="1"/>
+<contactref element="J3" pad="TIP_T@3" route="any" routetag="G$1.TIP"/>
 </signal>
 <signal name="OSCSUM">
-<contactref element="J7" pad="TIP@3"/>
-<contactref element="J9" pad="SWITCH@3"/>
+<contactref element="J7" pad="TIP_B@1" route="any" routetag="G$1.TIP"/>
+<contactref element="J9" pad="SWITCH_B@1" route="any" routetag="G$1.SWITCH"/>
 <contactref element="R13" pad="2"/>
 <wire x1="19.8755" y1="21.59" x2="19.8755" y2="16.7005" width="0.3048" layer="1"/>
 <wire x1="19.8755" y1="16.7005" x2="18.0975" y2="14.9225" width="0.3048" layer="1"/>
@@ -4259,6 +4187,8 @@ design rules under a new name.</description>
 <wire x1="96.52" y1="4.445" x2="98.7425" y2="6.6675" width="0.3048" layer="1"/>
 <wire x1="98.7425" y1="6.6675" x2="104.4575" y2="6.6675" width="0.3048" layer="1"/>
 <wire x1="104.4575" y1="6.6675" x2="106.9975" y2="4.1275" width="0.3048" layer="1"/>
+<contactref element="J7" pad="TIP_T@3" route="any" routetag="G$1.TIP"/>
+<contactref element="J9" pad="SWITCH_T@3" route="any" routetag="G$1.SWITCH"/>
 </signal>
 <signal name="MIXER_POSTSUM">
 <contactref element="R12" pad="2"/>
@@ -4581,7 +4511,7 @@ design rules under a new name.</description>
 <signal name="MODENVOUT">
 <contactref element="IC17" pad="2"/>
 <contactref element="R173" pad="2"/>
-<contactref element="J11" pad="TIP@3"/>
+<contactref element="J11" pad="TIP_B@1" route="any" routetag="G$1.TIP"/>
 <contactref element="R193" pad="P$3"/>
 <contactref element="R194" pad="P$3"/>
 <contactref element="R192" pad="P$3"/>
@@ -4593,7 +4523,7 @@ design rules under a new name.</description>
 <via x="141.9225" y="35.8775" extent="1-16" drill="0.3048"/>
 <wire x1="141.9225" y1="35.8775" x2="138.1125" y2="35.8775" width="0.3048" layer="1"/>
 <wire x1="138.1125" y1="35.8775" x2="130.175" y2="27.94" width="0.3048" layer="1"/>
-<contactref element="J15" pad="SWITCH@3"/>
+<contactref element="J15" pad="SWITCH_B@1" route="any" routetag="G$1.SWITCH"/>
 <wire x1="157.48" y1="32.44" x2="147.9" y2="32.44" width="0.3048" layer="1"/>
 <wire x1="147.9" y1="32.44" x2="144.4625" y2="35.8775" width="0.3048" layer="1"/>
 <wire x1="118" y1="10.16" x2="114.3" y2="10.16" width="0.3048" layer="1"/>
@@ -4655,6 +4585,8 @@ design rules under a new name.</description>
 <wire x1="105.41" y1="19.685" x2="111.125" y2="19.685" width="0.3048" layer="1"/>
 <wire x1="106.52125" y1="77.47" x2="106.52125" y2="78.4225" width="0.3048" layer="1"/>
 <wire x1="106.52125" y1="78.4225" x2="105.41" y2="79.53375" width="0.3048" layer="1"/>
+<contactref element="J15" pad="SWITCH_T@3" route="any" routetag="G$1.SWITCH"/>
+<contactref element="J11" pad="TIP_T@3" route="any" routetag="G$1.TIP"/>
 </signal>
 <signal name="PITCH_ENV">
 <contactref element="R7" pad="1"/>
@@ -4756,7 +4688,7 @@ design rules under a new name.</description>
 </signal>
 <signal name="N$41">
 <contactref element="R4" pad="2"/>
-<contactref element="S1" pad="2"/>
+<contactref element="S1" pad="2_B" route="any" routetag="G$1.CENTER"/>
 <contactref element="IC1" pad="1"/>
 <wire x1="22.5425" y1="30.54" x2="22.5425" y2="32.9565" width="0.3048" layer="1"/>
 <wire x1="22.5425" y1="32.9565" x2="22.733" y2="33.147" width="0.3048" layer="1"/>
@@ -4765,6 +4697,7 @@ design rules under a new name.</description>
 <wire x1="7.62" y1="40.64" x2="9.8425" y2="40.64" width="0.3048" layer="1"/>
 <wire x1="9.8425" y1="40.64" x2="12.7" y2="37.7825" width="0.3048" layer="1"/>
 <wire x1="12.7" y1="37.7825" x2="20.32" y2="37.7825" width="0.3048" layer="1"/>
+<contactref element="S1" pad="2_T" route="any" routetag="G$1.CENTER"/>
 </signal>
 <signal name="N$66">
 <contactref element="R4" pad="1"/>
@@ -4791,15 +4724,16 @@ design rules under a new name.</description>
 <signal name="N$82">
 <contactref element="R3" pad="1"/>
 <contactref element="R1" pad="P$3"/>
-<contactref element="J1" pad="TIP@3"/>
+<contactref element="J1" pad="TIP_B@1" route="any" routetag="G$1.TIP"/>
 <wire x1="14.9225" y1="22.6225" x2="14.9225" y2="30.2895" width="0.3048" layer="1"/>
 <wire x1="14.9225" y1="30.2895" x2="17.78" y2="33.147" width="0.3048" layer="1"/>
 <wire x1="10.2" y1="17.9" x2="10.2" y2="17.24" width="0.3048" layer="1"/>
 <wire x1="10.2" y1="17.24" x2="7.62" y2="14.66" width="0.3048" layer="1"/>
 <wire x1="14.9225" y1="22.6225" x2="10.2" y2="17.9" width="0.3048" layer="1"/>
+<contactref element="J1" pad="TIP_T@3" route="any" routetag="G$1.TIP"/>
 </signal>
 <signal name="LINEAR_FM_IN">
-<contactref element="S1" pad="1"/>
+<contactref element="S1" pad="1_B" route="any" routetag="G$1.ON1"/>
 <contactref element="C7" pad="2"/>
 <contactref element="C19" pad="2"/>
 <wire x1="45.4025" y1="64.262" x2="51.943" y2="64.262" width="0.3048" layer="1"/>
@@ -4831,9 +4765,10 @@ design rules under a new name.</description>
 <via x="11.7475" y="40.005" extent="1-16" drill="0.3048"/>
 <wire x1="11.7475" y1="40.005" x2="12.065" y2="40.005" width="0.3048" layer="1"/>
 <wire x1="12.065" y1="40.005" x2="12.3825" y2="40.3225" width="0.3048" layer="1"/>
+<contactref element="S1" pad="1_T" route="any" routetag="G$1.ON1"/>
 </signal>
 <signal name="EXP_FM_IN">
-<contactref element="S1" pad="3"/>
+<contactref element="S1" pad="3_B" route="any" routetag="G$1.ON2"/>
 <contactref element="R17" pad="1"/>
 <via x="1.905" y="56.515" extent="1-16" drill="0.3048"/>
 <wire x1="1.905" y1="56.515" x2="3.4925" y2="58.1025" width="0.3048" layer="16"/>
@@ -4847,6 +4782,7 @@ design rules under a new name.</description>
 <via x="2.54" y="45.4025" extent="1-16" drill="0.3048"/>
 <wire x1="2.54" y1="45.4025" x2="7.5575" y2="45.4025" width="0.3048" layer="16"/>
 <wire x1="7.5575" y1="45.4025" x2="7.62" y2="45.34" width="0.3048" layer="16"/>
+<contactref element="S1" pad="3_T" route="any" routetag="G$1.ON2"/>
 </signal>
 <signal name="N$83">
 <contactref element="R89" pad="P$2"/>
@@ -4860,18 +4796,20 @@ design rules under a new name.</description>
 </signal>
 <signal name="N$85">
 <contactref element="R40" pad="1"/>
-<contactref element="J6" pad="TIP@3"/>
+<contactref element="J6" pad="TIP_B@1" route="any" routetag="G$1.TIP"/>
 <wire x1="86.36" y1="92.02" x2="86.36" y2="91.7575" width="0.3048" layer="1"/>
 <wire x1="86.36" y1="91.7575" x2="88.265" y2="89.8525" width="0.3048" layer="1"/>
 <wire x1="88.265" y1="89.8525" x2="88.265" y2="87.6935" width="0.3048" layer="1"/>
 <wire x1="88.265" y1="87.6935" x2="88.2015" y2="87.63" width="0.3048" layer="1"/>
+<contactref element="J6" pad="TIP_T@3" route="any" routetag="G$1.TIP"/>
 </signal>
 <signal name="N$86">
-<contactref element="J2" pad="TIP@3"/>
+<contactref element="J2" pad="TIP_B@1" route="any" routetag="G$1.TIP"/>
 <wire x1="7.62" y1="73.08" x2="7.62" y2="73.8825" width="0.3048" layer="1"/>
 <contactref element="D6" pad="ANODE"/>
 <wire x1="6.9825" y1="75.2325" x2="7.62" y2="75.2325" width="0.3048" layer="1"/>
 <wire x1="7.62" y1="75.2325" x2="7.62" y2="73.08" width="0.3048" layer="1"/>
+<contactref element="J2" pad="TIP_T@3" route="any" routetag="G$1.TIP"/>
 </signal>
 <signal name="GATELED">
 <contactref element="IC12" pad="7"/>
@@ -5070,9 +5008,10 @@ design rules under a new name.</description>
 </signal>
 <signal name="N$103">
 <contactref element="R30" pad="1"/>
-<contactref element="J5" pad="TIP@3"/>
+<contactref element="J5" pad="TIP_B@1" route="any" routetag="G$1.TIP"/>
 <wire x1="82.677" y1="17.4625" x2="83.5575" y2="17.4625" width="0.3048" layer="1"/>
 <wire x1="83.5575" y1="17.4625" x2="86.36" y2="14.66" width="0.3048" layer="1"/>
+<contactref element="J5" pad="TIP_T@3" route="any" routetag="G$1.TIP"/>
 </signal>
 <signal name="N$104">
 <contactref element="R27" pad="P$2"/>
@@ -5188,7 +5127,7 @@ design rules under a new name.</description>
 </signal>
 <signal name="HARDSYNC_2_IN">
 <contactref element="C15" pad="2"/>
-<contactref element="S3" pad="3"/>
+<contactref element="S3" pad="3_B" route="any" routetag="G$1.ON2"/>
 <wire x1="74.70775" y1="46.482" x2="74.70775" y2="43.08475" width="0.3048" layer="1"/>
 <via x="75.2475" y="42.545" extent="1-16" drill="0.3048"/>
 <wire x1="75.2475" y1="42.545" x2="75.2475" y2="39.6875" width="0.3048" layer="16"/>
@@ -5213,6 +5152,7 @@ design rules under a new name.</description>
 <wire x1="58.57875" y1="30.95625" x2="60.0075" y2="30.95625" width="0.3048" layer="1"/>
 <wire x1="60.0075" y1="30.95625" x2="60.6425" y2="31.59125" width="0.3048" layer="1"/>
 <wire x1="60.6425" y1="31.59125" x2="62.07125" y2="31.59125" width="0.3048" layer="1"/>
+<contactref element="S3" pad="3_T" route="any" routetag="G$1.ON2"/>
 </signal>
 <signal name="PWM_2_IN">
 <contactref element="IC4" pad="5"/>
@@ -5283,7 +5223,7 @@ design rules under a new name.</description>
 </signal>
 <signal name="SOFTSYNC_2_IN">
 <contactref element="C16" pad="1"/>
-<contactref element="S3" pad="1"/>
+<contactref element="S3" pad="1_B" route="any" routetag="G$1.ON1"/>
 <wire x1="84.455" y1="20.0025" x2="71.755" y2="20.0025" width="0.3048" layer="1"/>
 <via x="71.755" y="20.0025" extent="1-16" drill="0.3048"/>
 <wire x1="71.755" y1="20.0025" x2="69.85" y2="20.0025" width="0.3048" layer="16"/>
@@ -5326,6 +5266,7 @@ design rules under a new name.</description>
 <via x="77.31125" y="60.80125" extent="1-16" drill="0.3048"/>
 <wire x1="77.31125" y1="60.80125" x2="77.31125" y2="59.97575" width="0.3048" layer="1"/>
 <wire x1="77.31125" y1="59.97575" x2="77.1525" y2="59.817" width="0.3048" layer="1"/>
+<contactref element="S3" pad="1_T" route="any" routetag="G$1.ON1"/>
 </signal>
 <signal name="TRIANGLE_OUT_2">
 <contactref element="IC4" pad="10"/>
@@ -6051,12 +5992,13 @@ design rules under a new name.</description>
 <wire x1="125.095" y1="85.9155" x2="123.5075" y2="85.9155" width="0.3048" layer="1"/>
 </signal>
 <signal name="CUTOFF_IN_INV">
-<contactref element="J8" pad="TIP@3"/>
+<contactref element="J8" pad="TIP_B@1" route="any" routetag="G$1.TIP"/>
 <contactref element="R201" pad="1"/>
 <wire x1="123.5075" y1="87.4395" x2="123.5075" y2="89.2175" width="0.3048" layer="1"/>
 <wire x1="123.5075" y1="89.2175" x2="126.365" y2="92.075" width="0.3048" layer="1"/>
 <wire x1="126.365" y1="92.075" x2="132.025" y2="92.075" width="0.3048" layer="1"/>
 <wire x1="132.025" y1="92.075" x2="132.08" y2="92.02" width="0.3048" layer="1"/>
+<contactref element="J8" pad="TIP_T@3" route="any" routetag="G$1.TIP"/>
 </signal>
 <signal name="N$149">
 <contactref element="Q1" pad="B"/>
@@ -6232,7 +6174,7 @@ design rules under a new name.</description>
 <wire x1="143.1925" y1="27.432" x2="143.002" y2="27.6225" width="0.3048" layer="1"/>
 </signal>
 <signal name="PREBLOCK_FILTER_IN">
-<contactref element="J9" pad="TIP@3"/>
+<contactref element="J9" pad="TIP_B@1" route="any" routetag="G$1.TIP"/>
 <contactref element="C64" pad="+"/>
 <contactref element="R67" pad="1"/>
 <wire x1="152.4" y1="14.66" x2="156.4725" y2="14.66" width="0.3048" layer="1"/>
@@ -6245,6 +6187,7 @@ design rules under a new name.</description>
 <wire x1="130.175" y1="8.5725" x2="130.175" y2="9.7155" width="0.3048" layer="1"/>
 <wire x1="132.385" y1="7.62" x2="131.1875" y2="7.62" width="0.3048" layer="1"/>
 <wire x1="131.1875" y1="7.62" x2="131.1575" y2="7.59" width="0.3048" layer="1"/>
+<contactref element="J9" pad="TIP_T@3" route="any" routetag="G$1.TIP"/>
 </signal>
 <signal name="MAIN_CV_SUMLINE">
 <contactref element="R68" pad="2"/>
@@ -6375,20 +6318,22 @@ design rules under a new name.</description>
 <wire x1="114.34" y1="90.5275" x2="115.57" y2="91.7575" width="0.3048" layer="1"/>
 </signal>
 <signal name="N$39">
-<contactref element="J15" pad="TIP@3"/>
+<contactref element="J15" pad="TIP_B@1" route="any" routetag="G$1.TIP"/>
 <contactref element="R191" pad="P$3"/>
 <wire x1="114.3" y1="14.66" x2="114.5625" y2="14.9225" width="0.3048" layer="1"/>
 <wire x1="114.5625" y1="14.9225" x2="124.7775" y2="14.9225" width="0.3048" layer="1"/>
 <wire x1="124.7775" y1="14.9225" x2="126.365" y2="13.335" width="0.3048" layer="1"/>
 <wire x1="126.365" y1="13.335" x2="126.6825" y2="13.335" width="0.3048" layer="1"/>
+<contactref element="J15" pad="TIP_T@3" route="any" routetag="G$1.TIP"/>
 </signal>
 <signal name="CUTOFF_HP_IN_INV">
-<contactref element="J16" pad="TIP@3"/>
+<contactref element="J16" pad="TIP_B@1" route="any" routetag="G$1.TIP"/>
 <contactref element="R59" pad="1"/>
 <wire x1="137.16" y1="86.1695" x2="137.16" y2="89.8525" width="0.3048" layer="1"/>
 <wire x1="137.16" y1="89.8525" x2="139.3825" y2="92.075" width="0.3048" layer="1"/>
 <wire x1="139.3825" y1="92.075" x2="142.185" y2="92.075" width="0.3048" layer="1"/>
 <wire x1="142.185" y1="92.075" x2="142.24" y2="92.02" width="0.3048" layer="1"/>
+<contactref element="J16" pad="TIP_T@3" route="any" routetag="G$1.TIP"/>
 </signal>
 <signal name="N$56">
 <contactref element="R59" pad="2"/>
@@ -6563,18 +6508,20 @@ design rules under a new name.</description>
 <wire x1="164.465" y1="23.8125" x2="164.465" y2="25.1425" width="0.3048" layer="1"/>
 </signal>
 <signal name="N$80">
-<contactref element="J10" pad="TIP@3"/>
+<contactref element="J10" pad="TIP_B@1" route="any" routetag="G$1.TIP"/>
 <contactref element="R84" pad="2"/>
 <wire x1="171.45" y1="16.7005" x2="171.45" y2="13.97" width="0.3048" layer="1"/>
 <wire x1="171.45" y1="13.97" x2="175.26" y2="10.16" width="0.3048" layer="1"/>
 <wire x1="175.26" y1="10.16" x2="175.26" y2="5.66" width="0.3048" layer="1"/>
+<contactref element="J10" pad="TIP_T@3" route="any" routetag="G$1.TIP"/>
 </signal>
 <signal name="N$91">
 <contactref element="R85" pad="2"/>
-<contactref element="J12" pad="TIP@3"/>
+<contactref element="J12" pad="TIP_B@1" route="any" routetag="G$1.TIP"/>
 <wire x1="165.1" y1="5.66" x2="165.1" y2="10.16" width="0.3048" layer="1"/>
 <wire x1="165.1" y1="10.16" x2="160.9725" y2="14.2875" width="0.3048" layer="1"/>
 <wire x1="160.9725" y1="14.2875" x2="160.9725" y2="16.0655" width="0.3048" layer="1"/>
+<contactref element="J12" pad="TIP_T@3" route="any" routetag="G$1.TIP"/>
 </signal>
 <signal name="PULSE_BUF_1">
 <contactref element="IC20" pad="2"/>
@@ -6840,12 +6787,12 @@ design rules under a new name.</description>
 <approved hash="19,1,17eb203bf9f43a83"/>
 <approved hash="19,1,1b26158d29a03750"/>
 <approved hash="19,1,4e46b90aa04b6fb5"/>
-<approved hash="19,1,7819dffdb817b667"/>
 <approved hash="19,1,db89d7984b6dc601"/>
+<approved hash="19,1,7819dffdb817b667"/>
 <approved hash="19,16,0e3a391e3fe508c1"/>
 <approved hash="19,16,8c323b163a148d30"/>
-<approved hash="19,16,543d291928045520"/>
 <approved hash="19,16,d6352b112df5d0d1"/>
+<approved hash="19,16,543d291928045520"/>
 <approved hash="19,16,cf1e78fa771ac0fe"/>
 <approved hash="19,16,4f2e78ca650b52ef"/>
 <approved hash="19,16,70ad38c925346d50"/>

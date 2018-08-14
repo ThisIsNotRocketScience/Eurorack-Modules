@@ -29,10 +29,10 @@
 <layer number="19" name="Unrouted" color="6" fill="1" visible="no" active="yes"/>
 <layer number="20" name="Dimension" color="15" fill="1" visible="yes" active="yes"/>
 <layer number="21" name="tPlace" color="7" fill="1" visible="yes" active="yes"/>
-<layer number="22" name="bPlace" color="7" fill="1" visible="no" active="yes"/>
-<layer number="23" name="tOrigins" color="15" fill="1" visible="no" active="yes"/>
-<layer number="24" name="bOrigins" color="15" fill="1" visible="no" active="yes"/>
-<layer number="25" name="tNames" color="13" fill="1" visible="yes" active="yes"/>
+<layer number="22" name="bPlace" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="23" name="tOrigins" color="15" fill="1" visible="yes" active="yes"/>
+<layer number="24" name="bOrigins" color="15" fill="1" visible="yes" active="yes"/>
+<layer number="25" name="tNames" color="9" fill="1" visible="yes" active="yes"/>
 <layer number="26" name="bNames" color="10" fill="1" visible="no" active="yes"/>
 <layer number="27" name="tValues" color="7" fill="1" visible="no" active="yes"/>
 <layer number="28" name="bValues" color="7" fill="1" visible="no" active="yes"/>
@@ -157,6 +157,7 @@
 </layers>
 <board>
 <plain>
+<text x="30.375" y="25.375" size="1.778" layer="25" align="center">U$1</text>
 </plain>
 <libraries>
 <library name="OPL">
@@ -1774,13 +1775,15 @@ NS Package M08A</description>
 <attribute name="MPN" value="" x="16.875" y="78.75" size="1.778" layer="27" rot="R180" display="off"/>
 <attribute name="MF" value="" x="16.875" y="78.75" size="1.778" layer="27" rot="R180" display="off"/>
 </element>
-<element name="IC8" library="FarnellThings" package="QFN50P250X350X100-17N" value="74HC595BQ" x="12.75" y="88.625" rot="R180">
+<element name="IC8" library="FarnellThings" package="QFN50P250X350X100-17N" value="74HC595BQ" x="12.75" y="88.625" smashed="yes" rot="R180">
 <attribute name="OC_FARNELL" value="2164850" x="12.75" y="88.625" size="1.778" layer="27" rot="R180" display="off"/>
 <attribute name="MPN" value="74HC595BQ" x="12.75" y="88.625" size="1.778" layer="27" rot="R180" display="off"/>
 <attribute name="MF" value="NXP" x="12.75" y="88.625" size="1.778" layer="27" rot="R180" display="off"/>
 <attribute name="PACKAGE" value="QFN-16" x="12.75" y="88.625" size="1.778" layer="27" rot="R180" display="off"/>
 <attribute name="SUPPLIER" value="NXP" x="12.75" y="88.625" size="1.778" layer="27" rot="R180" display="off"/>
 <attribute name="OC_NEWARK" value="43W8000" x="12.75" y="88.625" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="NAME" x="12.625" y="89" size="1" layer="25" ratio="10" rot="SR180" align="bottom-center"/>
+<attribute name="VALUE" x="12.75" y="91.875" size="1" layer="27" ratio="10" rot="SR180" align="top-center"/>
 </element>
 <element name="C22" library="OPL" package="C0603" value="100nF" x="13.125" y="84.875" rot="R180">
 <attribute name="OC_FARNELL" value="1759017" x="13.125" y="84.875" size="1.778" layer="27" rot="R180" display="off"/>
