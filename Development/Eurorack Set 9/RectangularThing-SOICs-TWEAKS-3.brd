@@ -8,7 +8,7 @@
 </settings>
 <grid distance="6.25" unitdist="mil" unit="mm" style="dots" multiple="1" display="yes" altdistance="0.025" altunitdist="inch" altunit="inch"/>
 <layers>
-<layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
+<layer number="1" name="Top" color="4" fill="1" visible="no" active="yes"/>
 <layer number="2" name="Route2" color="1" fill="3" visible="no" active="no"/>
 <layer number="3" name="Route3" color="4" fill="3" visible="no" active="no"/>
 <layer number="4" name="Route4" color="1" fill="4" visible="no" active="no"/>
@@ -23,16 +23,16 @@
 <layer number="13" name="Route13" color="4" fill="5" visible="no" active="no"/>
 <layer number="14" name="Route14" color="1" fill="6" visible="no" active="no"/>
 <layer number="15" name="Route15" color="4" fill="6" visible="no" active="no"/>
-<layer number="16" name="Bottom" color="1" fill="1" visible="yes" active="yes"/>
-<layer number="17" name="Pads" color="2" fill="1" visible="yes" active="yes"/>
-<layer number="18" name="Vias" color="2" fill="1" visible="yes" active="yes"/>
+<layer number="16" name="Bottom" color="1" fill="1" visible="no" active="yes"/>
+<layer number="17" name="Pads" color="2" fill="1" visible="no" active="yes"/>
+<layer number="18" name="Vias" color="2" fill="1" visible="no" active="yes"/>
 <layer number="19" name="Unrouted" color="6" fill="1" visible="yes" active="yes"/>
 <layer number="20" name="Dimension" color="15" fill="1" visible="yes" active="yes"/>
 <layer number="21" name="tPlace" color="7" fill="1" visible="yes" active="yes"/>
-<layer number="22" name="bPlace" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="22" name="bPlace" color="7" fill="1" visible="no" active="yes"/>
 <layer number="23" name="tOrigins" color="15" fill="1" visible="yes" active="yes"/>
 <layer number="24" name="bOrigins" color="15" fill="1" visible="no" active="yes"/>
-<layer number="25" name="tNames" color="13" fill="1" visible="no" active="yes"/>
+<layer number="25" name="tNames" color="13" fill="1" visible="yes" active="yes"/>
 <layer number="26" name="bNames" color="7" fill="1" visible="no" active="yes"/>
 <layer number="27" name="tValues" color="7" fill="1" visible="no" active="yes"/>
 <layer number="28" name="bValues" color="7" fill="1" visible="no" active="yes"/>
@@ -301,6 +301,7 @@ Library created by Rob Kam of a few CEM music synthesizer ICs. More info about t
 <vertex x="0.127" y="-0.381"/>
 <vertex x="-0.127" y="-0.381"/>
 </polygon>
+<text x="0" y="0" size="0.762" layer="25" align="center">&gt;NAME</text>
 </package>
 <package name="SO14">
 <description>&lt;b&gt;Small Outline Package 14&lt;/b&gt;</description>
@@ -539,6 +540,14 @@ Library created by Rob Kam of a few CEM music synthesizer ICs. More info about t
 <smd name="SWITCH_B@1" x="3.7" y="0" dx="3.85" dy="1.95" layer="16" roundness="100" rot="R90" cream="no"/>
 <smd name="SECOND_B@1" x="0" y="-3.5" dx="3.85" dy="1.95" layer="16" roundness="100" cream="no"/>
 <text x="0" y="0" size="1.27" layer="22" rot="SMR45" align="center">&gt;DESC</text>
+<wire x1="-4.25" y1="1.75" x2="-4.25" y2="5" width="0.127" layer="21"/>
+<wire x1="-4.25" y1="5" x2="-1.75" y2="5" width="0.127" layer="21"/>
+<wire x1="1.75" y1="5" x2="4.25" y2="5" width="0.127" layer="21"/>
+<wire x1="4.25" y1="5" x2="4.25" y2="1.75" width="0.127" layer="21"/>
+<wire x1="4.25" y1="-1.75" x2="4.25" y2="-4" width="0.127" layer="21"/>
+<wire x1="4.25" y1="-4" x2="1.75" y2="-4" width="0.127" layer="21"/>
+<wire x1="-1.75" y1="-4" x2="-4.25" y2="-4" width="0.127" layer="21"/>
+<wire x1="-4.25" y1="-4" x2="-4.25" y2="-1.75" width="0.127" layer="21"/>
 </package>
 <package name="MULTICOMP1MS-ONOFFON_NOHOLES">
 <wire x1="-7.875" y1="4.065" x2="7.875" y2="4.065" width="0.127" layer="21"/>
@@ -720,6 +729,7 @@ NS Package M08A</description>
 <circle x="0" y="0" radius="3.556" width="1" layer="21"/>
 <circle x="0" y="0" radius="4.3942" width="0.254" layer="21"/>
 <circle x="0" y="0" radius="3" width="0.0254" layer="255"/>
+<text x="0" y="0" size="1.27" layer="25" align="center">&gt;NAME</text>
 </package>
 <package name="3.2-NOMARKINGS-SMALLSAFEZONE">
 <circle x="0" y="0" radius="2.1" width="1.1" layer="39"/>
@@ -790,7 +800,7 @@ Based on the following sources:
 <smd name="7" x="3.81" y="-3.0734" dx="0.6604" dy="2.032" layer="1"/>
 <smd name="8" x="3.81" y="3.0734" dx="0.6604" dy="2.032" layer="1"/>
 <text x="-3.556" y="-0.635" size="1.27" layer="27" ratio="10">&gt;VALUE</text>
-<text x="-4.699" y="-1.778" size="1.27" layer="25" ratio="10" rot="R90">&gt;NAME</text>
+<text x="0" y="0" size="1.27" layer="25" ratio="10" align="center">&gt;NAME</text>
 <rectangle x1="-0.254" y1="1.9558" x2="0.254" y2="3.0988" layer="51"/>
 <rectangle x1="-4.064" y1="-3.0988" x2="-3.556" y2="-1.9558" layer="51"/>
 <rectangle x1="-2.794" y1="-3.0988" x2="-2.286" y2="-1.9558" layer="51"/>
@@ -837,7 +847,7 @@ Based on the following sources:
 <smd name="8" x="4.445" y="-3.0734" dx="0.6604" dy="2.032" layer="1"/>
 <smd name="9" x="4.445" y="3.0734" dx="0.6604" dy="2.032" layer="1"/>
 <text x="-4.064" y="-0.635" size="1.27" layer="27" ratio="10">&gt;VALUE</text>
-<text x="-5.461" y="-2.032" size="1.27" layer="25" ratio="10" rot="R90">&gt;NAME</text>
+<text x="0" y="0" size="1.27" layer="25" ratio="10" align="center">&gt;NAME</text>
 <rectangle x1="-0.889" y1="1.9558" x2="-0.381" y2="3.0988" layer="51"/>
 <rectangle x1="-4.699" y1="-3.0988" x2="-4.191" y2="-1.9558" layer="51"/>
 <rectangle x1="-3.429" y1="-3.0988" x2="-2.921" y2="-1.9558" layer="51"/>
@@ -995,7 +1005,7 @@ http://dangerousprototypes.com</description>
 <circle x="0" y="0" radius="1.95" width="0.1016" layer="51"/>
 <smd name="-" x="-1.6" y="0" dx="2.2" dy="1.4" layer="1"/>
 <smd name="+" x="1.6" y="0" dx="2.2" dy="1.4" layer="1"/>
-<text x="-2.15" y="2.3" size="1.27" layer="25" ratio="10">&gt;NAME</text>
+<text x="0" y="0" size="0.762" layer="25" ratio="10" align="center">&gt;NAME</text>
 <text x="-2.15" y="-3.5925" size="1.27" layer="27" ratio="10">&gt;VALUE</text>
 <rectangle x1="-2.3" y1="-0.35" x2="-1.85" y2="0.35" layer="51"/>
 <rectangle x1="1.9" y1="-0.35" x2="2.3" y2="0.35" layer="51"/>
@@ -1033,6 +1043,7 @@ http://dangerousprototypes.com</description>
 <wire x1="-0.4" y1="0.1" x2="-0.4" y2="-0.1" width="0.127" layer="21"/>
 <wire x1="-0.5" y1="0" x2="-0.7" y2="0" width="0.127" layer="21"/>
 <wire x1="-0.7" y1="0" x2="-0.7" y2="-0.4" width="0.127" layer="21"/>
+<text x="0" y="0" size="0.508" layer="25" align="center">&gt;NAME</text>
 </package>
 </packages>
 </library>

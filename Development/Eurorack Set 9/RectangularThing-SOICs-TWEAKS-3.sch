@@ -195,30 +195,6 @@ PCB width:
 <circle x="7.5" y="114.5" radius="1.5" width="0.0254" layer="255"/>
 <wire x1="0" y1="0" x2="4" y2="4" width="0.127" layer="51"/>
 </package>
-<package name="EURORACK12HPPCB">
-<wire x1="0.5" y1="105.5" x2="0.5" y2="1" width="0.127" layer="20"/>
-<wire x1="0.5" y1="1" x2="1.5" y2="0" width="0.127" layer="20" curve="90"/>
-<wire x1="1.5" y1="0" x2="59.12" y2="0" width="0.127" layer="20"/>
-<wire x1="59.12" y1="0" x2="60.12" y2="1" width="0.127" layer="20" curve="90"/>
-<wire x1="60.12" y1="1" x2="60.12" y2="105.5" width="0.127" layer="20"/>
-<wire x1="60.12" y1="105.5" x2="59.12" y2="106.5" width="0.127" layer="20" curve="90"/>
-<wire x1="59.12" y1="106.5" x2="1.5" y2="106.5" width="0.127" layer="20"/>
-<wire x1="1.5" y1="106.5" x2="0.5" y2="105.5" width="0.127" layer="20" curve="90"/>
-<wire x1="0" y1="-11" x2="60.62" y2="-11" width="0" layer="255"/>
-<wire x1="60.62" y1="-11" x2="60.62" y2="117.5" width="0" layer="255"/>
-<wire x1="60.62" y1="117.5" x2="0" y2="117.5" width="0" layer="255"/>
-<wire x1="0" y1="117.5" x2="0" y2="-11" width="0" layer="255"/>
-<text x="1.5" y="113" size="1.27" layer="51">12HP eurorack pcb template</text>
-<text x="28.5" y="111" size="1.27" layer="51">PCB width: 
-59.62</text>
-<text x="28.5" y="108" size="1.27" layer="51">halve = 29,81</text>
-<wire x1="30.31" y1="107" x2="30.31" y2="-11" width="0.127" layer="51"/>
-<circle x="7.5" y="-8" radius="1.5" width="0.0254" layer="255"/>
-<circle x="7.5" y="114.5" radius="1.5" width="0.0254" layer="255"/>
-<wire x1="0" y1="0" x2="4" y2="4" width="0.127" layer="51"/>
-<circle x="53.22" y="-8" radius="1.5" width="0.0254" layer="255"/>
-<circle x="53.22" y="114.5" radius="1.5" width="0.0254" layer="255"/>
-</package>
 <package name="EURORACK6HPPCB">
 <wire x1="0.5" y1="105.5" x2="0.5" y2="1" width="0.127" layer="20"/>
 <wire x1="0.5" y1="1" x2="1.5" y2="0" width="0.127" layer="20" curve="90"/>
@@ -1064,6 +1040,14 @@ NS Package M08A</description>
 <smd name="SWITCH_B@1" x="3.7" y="0" dx="3.85" dy="1.95" layer="16" roundness="100" rot="R90" cream="no"/>
 <smd name="SECOND_B@1" x="0" y="-3.5" dx="3.85" dy="1.95" layer="16" roundness="100" cream="no"/>
 <text x="0" y="0" size="1.27" layer="22" rot="SMR45" align="center">&gt;DESC</text>
+<wire x1="-4.25" y1="1.75" x2="-4.25" y2="5" width="0.127" layer="21"/>
+<wire x1="-4.25" y1="5" x2="-1.75" y2="5" width="0.127" layer="21"/>
+<wire x1="1.75" y1="5" x2="4.25" y2="5" width="0.127" layer="21"/>
+<wire x1="4.25" y1="5" x2="4.25" y2="1.75" width="0.127" layer="21"/>
+<wire x1="4.25" y1="-1.75" x2="4.25" y2="-4" width="0.127" layer="21"/>
+<wire x1="4.25" y1="-4" x2="1.75" y2="-4" width="0.127" layer="21"/>
+<wire x1="-1.75" y1="-4" x2="-4.25" y2="-4" width="0.127" layer="21"/>
+<wire x1="-4.25" y1="-4" x2="-4.25" y2="-1.75" width="0.127" layer="21"/>
 </package>
 <package name="MULTICOMP1MS-ONOFFON_NOHOLES">
 <wire x1="-7.875" y1="4.065" x2="7.875" y2="4.065" width="0.127" layer="21"/>
@@ -1089,6 +1073,30 @@ NS Package M08A</description>
 <smd name="1_B" x="-4.7" y="0" dx="5.5" dy="2.7" layer="16" roundness="100" rot="R90" cream="no"/>
 <smd name="2_B" x="0" y="0" dx="5.5" dy="2.7" layer="16" roundness="100" rot="R90" cream="no"/>
 <smd name="3_B" x="4.7" y="0" dx="5.5" dy="2.7" layer="16" roundness="100" rot="R90" cream="no"/>
+</package>
+<package name="EURORACK12HPPCB">
+<wire x1="1.25" y1="0" x2="59.5" y2="0" width="0.127" layer="20"/>
+<wire x1="59.5" y1="0" x2="60.5" y2="1" width="0.127" layer="20" curve="90"/>
+<wire x1="60.5" y1="1" x2="60.5" y2="105.5" width="0.127" layer="20"/>
+<wire x1="60.5" y1="105.5" x2="59.5" y2="106.5" width="0.127" layer="20" curve="90"/>
+<wire x1="59.5" y1="106.5" x2="1.25" y2="106.5" width="0.127" layer="20"/>
+<wire x1="1.25" y1="106.5" x2="0.25" y2="105.5" width="0.127" layer="20" curve="90"/>
+<wire x1="0.25" y1="105.5" x2="0.25" y2="1" width="0.127" layer="20"/>
+<wire x1="0.25" y1="1" x2="1.25" y2="0" width="0.127" layer="20" curve="90"/>
+<wire x1="0" y1="-11" x2="60.62" y2="-11" width="0" layer="255"/>
+<wire x1="60.62" y1="-11" x2="60.62" y2="117.5" width="0" layer="255"/>
+<wire x1="60.62" y1="117.5" x2="0" y2="117.5" width="0" layer="255"/>
+<wire x1="0" y1="117.5" x2="0" y2="-11" width="0" layer="255"/>
+<text x="1.5" y="113" size="1.27" layer="51">12HP eurorack pcb template</text>
+<text x="28.5" y="111" size="1.27" layer="51">PCB width: 
+59.62</text>
+<text x="28.5" y="108" size="1.27" layer="51">halve = 29,81</text>
+<wire x1="30.31" y1="107" x2="30.31" y2="-11" width="0.127" layer="51"/>
+<circle x="7.5" y="-8" radius="1.6" width="0.0254" layer="255"/>
+<circle x="7.5" y="114.5" radius="1.6" width="0.0254" layer="255"/>
+<wire x1="0" y1="0" x2="4" y2="4" width="0.127" layer="51"/>
+<circle x="53.22" y="-8" radius="1.6" width="0.0254" layer="255"/>
+<circle x="53.22" y="114.5" radius="1.6" width="0.0254" layer="255"/>
 </package>
 </packages>
 <symbols>
@@ -1894,6 +1902,7 @@ Library created by Rob Kam of a few CEM music synthesizer ICs. More info about t
 <vertex x="0.127" y="-0.381"/>
 <vertex x="-0.127" y="-0.381"/>
 </polygon>
+<text x="0" y="0" size="0.762" layer="25" align="center">&gt;NAME</text>
 </package>
 </packages>
 <symbols>
@@ -2776,18 +2785,18 @@ We've spent an enormous amount of time creating and checking these footprints an
 </packages>
 <symbols>
 <symbol name="R">
-<wire x1="-1.27" y1="0.635" x2="1.27" y2="0.635" width="0.0508" layer="94"/>
-<wire x1="1.27" y1="0.635" x2="1.27" y2="0" width="0.0508" layer="94"/>
-<wire x1="1.27" y1="0" x2="1.27" y2="-0.635" width="0.0508" layer="94"/>
-<wire x1="1.27" y1="-0.635" x2="-1.27" y2="-0.635" width="0.0508" layer="94"/>
-<wire x1="-1.27" y1="-0.635" x2="-1.27" y2="0" width="0.0508" layer="94"/>
-<wire x1="-1.27" y1="0.635" x2="-1.27" y2="0" width="0.0508" layer="94"/>
+<wire x1="-1.27" y1="0.381" x2="1.27" y2="0.381" width="0.0508" layer="94"/>
+<wire x1="1.27" y1="0.381" x2="1.27" y2="0" width="0.0508" layer="94"/>
+<wire x1="1.27" y1="0" x2="1.27" y2="-0.381" width="0.0508" layer="94"/>
+<wire x1="1.27" y1="-0.381" x2="-1.27" y2="-0.381" width="0.0508" layer="94"/>
+<wire x1="-1.27" y1="-0.381" x2="-1.27" y2="0" width="0.0508" layer="94"/>
+<wire x1="-1.27" y1="0.381" x2="-1.27" y2="0" width="0.0508" layer="94"/>
 <wire x1="-1.27" y1="0" x2="-2.54" y2="0" width="0.1524" layer="94"/>
 <wire x1="1.27" y1="0" x2="2.54" y2="0" width="0.1524" layer="94"/>
 <pin name="1" x="-3.81" y="0" visible="off" length="short"/>
 <pin name="2" x="3.81" y="0" visible="off" length="short" rot="R180"/>
-<text x="0" y="0.762" size="0.762" layer="95" font="vector" ratio="10" align="bottom-center">&gt;NAME</text>
-<text x="0" y="-0.762" size="0.762" layer="96" font="vector" ratio="10" align="top-center">&gt;VALUE</text>
+<text x="-1.524" y="0.254" size="0.762" layer="95" font="vector" ratio="10" align="bottom-right">&gt;NAME</text>
+<text x="1.524" y="0.254" size="0.762" layer="96" font="vector" ratio="10">&gt;VALUE</text>
 </symbol>
 <symbol name="D">
 <wire x1="0" y1="-0.762" x2="0" y2="0" width="0.254" layer="94"/>
@@ -2939,6 +2948,7 @@ We've spent an enormous amount of time creating and checking these footprints an
 <circle x="0" y="0" radius="3.556" width="1" layer="21"/>
 <circle x="0" y="0" radius="4.3942" width="0.254" layer="21"/>
 <circle x="0" y="0" radius="3" width="0.0254" layer="255"/>
+<text x="0" y="0" size="1.27" layer="25" align="center">&gt;NAME</text>
 </package>
 <package name="2,8">
 <description>&lt;b&gt;MOUNTING HOLE&lt;/b&gt; 2.8 mm with drill center</description>
@@ -3441,7 +3451,7 @@ Based on the following sources:
 <smd name="7" x="3.81" y="-3.0734" dx="0.6604" dy="2.032" layer="1"/>
 <smd name="8" x="3.81" y="3.0734" dx="0.6604" dy="2.032" layer="1"/>
 <text x="-3.556" y="-0.635" size="1.27" layer="27" ratio="10">&gt;VALUE</text>
-<text x="-4.699" y="-1.778" size="1.27" layer="25" ratio="10" rot="R90">&gt;NAME</text>
+<text x="0" y="0" size="1.27" layer="25" ratio="10" align="center">&gt;NAME</text>
 <rectangle x1="-0.254" y1="1.9558" x2="0.254" y2="3.0988" layer="51"/>
 <rectangle x1="-4.064" y1="-3.0988" x2="-3.556" y2="-1.9558" layer="51"/>
 <rectangle x1="-2.794" y1="-3.0988" x2="-2.286" y2="-1.9558" layer="51"/>
@@ -3515,7 +3525,7 @@ Based on the following sources:
 <smd name="8" x="4.445" y="-3.0734" dx="0.6604" dy="2.032" layer="1"/>
 <smd name="9" x="4.445" y="3.0734" dx="0.6604" dy="2.032" layer="1"/>
 <text x="-4.064" y="-0.635" size="1.27" layer="27" ratio="10">&gt;VALUE</text>
-<text x="-5.461" y="-2.032" size="1.27" layer="25" ratio="10" rot="R90">&gt;NAME</text>
+<text x="0" y="0" size="1.27" layer="25" ratio="10" align="center">&gt;NAME</text>
 <rectangle x1="-0.889" y1="1.9558" x2="-0.381" y2="3.0988" layer="51"/>
 <rectangle x1="-4.699" y1="-3.0988" x2="-4.191" y2="-1.9558" layer="51"/>
 <rectangle x1="-3.429" y1="-3.0988" x2="-2.921" y2="-1.9558" layer="51"/>
@@ -6217,7 +6227,7 @@ http://dangerousprototypes.com</description>
 <circle x="0" y="0" radius="1.95" width="0.1016" layer="51"/>
 <smd name="-" x="-1.6" y="0" dx="2.2" dy="1.4" layer="1"/>
 <smd name="+" x="1.6" y="0" dx="2.2" dy="1.4" layer="1"/>
-<text x="-2.15" y="2.3" size="1.27" layer="25" ratio="10">&gt;NAME</text>
+<text x="0" y="0" size="0.762" layer="25" ratio="10" align="center">&gt;NAME</text>
 <text x="-2.15" y="-3.5925" size="1.27" layer="27" ratio="10">&gt;VALUE</text>
 <rectangle x1="-2.3" y1="-0.35" x2="-1.85" y2="0.35" layer="51"/>
 <rectangle x1="1.9" y1="-0.35" x2="2.3" y2="0.35" layer="51"/>
@@ -6315,6 +6325,7 @@ http://dangerousprototypes.com</description>
 <wire x1="-0.4" y1="0.1" x2="-0.4" y2="-0.1" width="0.127" layer="21"/>
 <wire x1="-0.5" y1="0" x2="-0.7" y2="0" width="0.127" layer="21"/>
 <wire x1="-0.7" y1="0" x2="-0.7" y2="-0.4" width="0.127" layer="21"/>
+<text x="0" y="0" size="0.508" layer="25" align="center">&gt;NAME</text>
 </package>
 </packages>
 <symbols>
@@ -11549,7 +11560,7 @@ http://dangerousprototypes.com</description>
 <segment>
 <label x="-19.05" y="-16.51" size="1.778" layer="95"/>
 <pinref part="IC6" gate="A" pin="X1"/>
-<wire x1="36.83" y1="-16.51" x2="-26.67" y2="-16.51" width="0.1524" layer="91"/>
+<wire x1="36.83" y1="-16.51" x2="-19.05" y2="-16.51" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <wire x1="7.62" y1="5.08" x2="35.56" y2="5.08" width="0.1524" layer="91"/>
@@ -11578,7 +11589,7 @@ http://dangerousprototypes.com</description>
 <segment>
 <pinref part="IC6" gate="A" pin="Z1"/>
 <label x="-8.89" y="-31.75" size="1.778" layer="95"/>
-<wire x1="-38.1" y1="-31.75" x2="36.83" y2="-31.75" width="0.1524" layer="91"/>
+<wire x1="-20.32" y1="-31.75" x2="36.83" y2="-31.75" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <wire x1="7.62" y1="0" x2="35.56" y2="0" width="0.1524" layer="91"/>
@@ -11611,8 +11622,8 @@ http://dangerousprototypes.com</description>
 <pinref part="IC6" gate="A" pin="Z0"/>
 <wire x1="36.83" y1="-29.21" x2="13.97" y2="-29.21" width="0.1524" layer="91"/>
 <label x="16.51" y="-29.21" size="1.778" layer="95"/>
-<label x="-30.48" y="-21.59" size="1.778" layer="95"/>
-<wire x1="13.97" y1="-21.59" x2="-29.21" y2="-21.59" width="0.1524" layer="91"/>
+<label x="-20.32" y="-21.59" size="1.778" layer="95"/>
+<wire x1="13.97" y1="-21.59" x2="-19.05" y2="-21.59" width="0.1524" layer="91"/>
 <junction x="13.97" y="-21.59"/>
 </segment>
 </net>
