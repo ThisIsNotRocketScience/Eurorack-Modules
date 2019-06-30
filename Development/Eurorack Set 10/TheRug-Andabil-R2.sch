@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.05" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
+<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="no" active="no"/>
 <layer number="2" name="Route2" color="1" fill="3" visible="no" active="no"/>
@@ -2595,7 +2595,7 @@ We've spent an enormous amount of time creating and checking these footprints an
 <attribute name="DESC" value="2: C"/>
 </part>
 <part name="U$29" library="EurorackModularParts" deviceset="POT" device="SQUAREHOLE_SMALLKNOB" value="10KB">
-<attribute name="DESC" value="Offset 2"/>
+<attribute name="DESC" value="2: Offset"/>
 </part>
 <part name="R57" library="OPL" deviceset="R*" device="-0603" value="49.9K"/>
 <part name="GND62" library="SparkFun-Aesthetics" deviceset="GND" device=""/>
@@ -2631,7 +2631,7 @@ We've spent an enormous amount of time creating and checking these footprints an
 <part name="R71" library="OPL" deviceset="R*" device="-0603" value="100K"/>
 <part name="R72" library="OPL" deviceset="R*" device="-0603" value="100K"/>
 <part name="U$31" library="EurorackModularParts" deviceset="POT" device="SQUAREHOLE_SMALLKNOB" value="10KB">
-<attribute name="DESC" value="Amp 2"/>
+<attribute name="DESC" value="2: C Amp"/>
 </part>
 <part name="GND50" library="SparkFun-Aesthetics" deviceset="GND" device=""/>
 <part name="R149" library="OPL" deviceset="R*" device="-0603" value="100K"/>
@@ -2964,11 +2964,11 @@ We've spent an enormous amount of time creating and checking these footprints an
 <instance part="GND29" gate="1" x="109.22" y="102.87" rot="R90"/>
 <instance part="IC3" gate="P" x="100.33" y="105.41"/>
 <instance part="IC2" gate="A" x="-59.69" y="205.74"/>
-<instance part="IC2" gate="B" x="8.89" y="63.5"/>
+<instance part="IC3" gate="B" x="8.89" y="63.5"/>
 <instance part="IC2" gate="C" x="-96.52" y="134.62" rot="MR180"/>
 <instance part="IC2" gate="D" x="152.4" y="-21.59"/>
 <instance part="IC3" gate="A" x="246.38" y="199.39"/>
-<instance part="IC3" gate="B" x="297.18" y="41.91"/>
+<instance part="IC2" gate="B" x="297.18" y="41.91"/>
 <instance part="IC3" gate="C" x="208.28" y="105.41" rot="MR180"/>
 <instance part="IC3" gate="D" x="207.01" y="-19.05"/>
 <instance part="U$38" gate="G$1" x="176.53" y="-21.59" rot="R180"/>
@@ -3428,7 +3428,7 @@ We've spent an enormous amount of time creating and checking these footprints an
 <pinref part="IC2" gate="A" pin="OUT"/>
 <junction x="-52.07" y="205.74"/>
 <wire x1="-46.99" y1="66.04" x2="1.27" y2="66.04" width="0.1524" layer="91"/>
-<pinref part="IC2" gate="B" pin="+IN"/>
+<pinref part="IC3" gate="B" pin="+IN"/>
 </segment>
 </net>
 <net name="N$8" class="0">
@@ -3657,7 +3657,7 @@ We've spent an enormous amount of time creating and checking these footprints an
 <pinref part="IC3" gate="A" pin="OUT"/>
 <junction x="254" y="199.39"/>
 <wire x1="259.08" y1="44.45" x2="289.56" y2="44.45" width="0.1524" layer="91"/>
-<pinref part="IC3" gate="B" pin="+IN"/>
+<pinref part="IC2" gate="B" pin="+IN"/>
 </segment>
 </net>
 <net name="N$68" class="0">
@@ -3784,7 +3784,7 @@ We've spent an enormous amount of time creating and checking these footprints an
 <wire x1="288.29" y1="30.48" x2="288.29" y2="27.94" width="0.1524" layer="91"/>
 <junction x="288.29" y="30.48"/>
 <wire x1="288.29" y1="33.02" x2="288.29" y2="39.37" width="0.1524" layer="91"/>
-<pinref part="IC3" gate="B" pin="-IN"/>
+<pinref part="IC2" gate="B" pin="-IN"/>
 <wire x1="288.29" y1="39.37" x2="289.56" y2="39.37" width="0.1524" layer="91"/>
 <junction x="288.29" y="33.02"/>
 </segment>
@@ -3792,7 +3792,7 @@ We've spent an enormous amount of time creating and checking these footprints an
 <net name="N$81" class="0">
 <segment>
 <wire x1="304.8" y1="41.91" x2="311.15" y2="41.91" width="0.1524" layer="91"/>
-<pinref part="IC3" gate="B" pin="OUT"/>
+<pinref part="IC2" gate="B" pin="OUT"/>
 <pinref part="D_2NEG" gate="LED" pin="+"/>
 <wire x1="302.26" y1="33.02" x2="311.15" y2="33.02" width="0.1524" layer="91"/>
 <wire x1="311.15" y1="33.02" x2="311.15" y2="41.91" width="0.1524" layer="91"/>
@@ -4022,7 +4022,7 @@ We've spent an enormous amount of time creating and checking these footprints an
 <pinref part="D_1NEG" gate="LED" pin="-"/>
 <pinref part="D_1POS" gate="LED" pin="+"/>
 <wire x1="0" y1="44.45" x2="0" y2="60.96" width="0.1524" layer="91"/>
-<pinref part="IC2" gate="B" pin="-IN"/>
+<pinref part="IC3" gate="B" pin="-IN"/>
 <wire x1="0" y1="60.96" x2="1.27" y2="60.96" width="0.1524" layer="91"/>
 <junction x="0" y="44.45"/>
 </segment>
@@ -4037,7 +4037,7 @@ We've spent an enormous amount of time creating and checking these footprints an
 <junction x="22.86" y="44.45"/>
 <pinref part="D_1NEG" gate="LED" pin="+"/>
 <pinref part="D_1POS" gate="LED" pin="-"/>
-<pinref part="IC2" gate="B" pin="OUT"/>
+<pinref part="IC3" gate="B" pin="OUT"/>
 </segment>
 </net>
 </nets>
