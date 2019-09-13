@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
+<grid distance="0.05" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="no" active="no"/>
 <layer number="2" name="Route2" color="1" fill="3" visible="no" active="no"/>
@@ -2814,7 +2814,7 @@ We've spent an enormous amount of time creating and checking these footprints an
 <instance part="R2" gate="R" x="-85.09" y="146.05"/>
 <instance part="GND6" gate="1" x="-160.02" y="139.7"/>
 <instance part="GND7" gate="1" x="-129.54" y="137.16"/>
-<instance part="GND9" gate="1" x="-121.92" y="119.38"/>
+<instance part="GND9" gate="1" x="-118.11" y="139.7" rot="R90"/>
 <instance part="GND10" gate="1" x="-36.83" y="152.4"/>
 <instance part="GND12" gate="1" x="-34.29" y="114.3"/>
 <instance part="R6" gate="R" x="-43.18" y="167.64"/>
@@ -2884,7 +2884,7 @@ We've spent an enormous amount of time creating and checking these footprints an
 <instance part="R57" gate="R" x="220.98" y="105.41"/>
 <instance part="GND62" gate="1" x="146.05" y="113.03"/>
 <instance part="GND63" gate="1" x="176.53" y="113.03"/>
-<instance part="GND64" gate="1" x="184.15" y="85.09"/>
+<instance part="GND64" gate="1" x="189.23" y="110.49" rot="R90"/>
 <instance part="GND65" gate="1" x="267.97" y="144.78"/>
 <instance part="GND66" gate="1" x="270.51" y="105.41"/>
 <instance part="R58" gate="R" x="262.89" y="161.29"/>
@@ -3031,11 +3031,6 @@ We've spent an enormous amount of time creating and checking these footprints an
 <wire x1="-129.54" y1="139.7" x2="-129.54" y2="143.51" width="0.1524" layer="91"/>
 </segment>
 <segment>
-<pinref part="GND9" gate="1" pin="GND"/>
-<wire x1="-121.92" y1="124.46" x2="-121.92" y2="121.92" width="0.1524" layer="91"/>
-<pinref part="U$7" gate="G$1" pin="A"/>
-</segment>
-<segment>
 <pinref part="U$4" gate="G$1" pin="RING"/>
 <pinref part="GND13" gate="1" pin="GND"/>
 <wire x1="29.21" y1="203.2" x2="29.21" y2="205.74" width="0.1524" layer="91"/>
@@ -3089,11 +3084,6 @@ We've spent an enormous amount of time creating and checking these footprints an
 <pinref part="U$28" gate="G$1" pin="SWITCH"/>
 <pinref part="GND63" gate="1" pin="GND"/>
 <wire x1="176.53" y1="115.57" x2="176.53" y2="116.84" width="0.1524" layer="91"/>
-</segment>
-<segment>
-<pinref part="GND64" gate="1" pin="GND"/>
-<wire x1="184.15" y1="95.25" x2="184.15" y2="87.63" width="0.1524" layer="91"/>
-<pinref part="U$31" gate="G$1" pin="A"/>
 </segment>
 <segment>
 <pinref part="U$20" gate="G$1" pin="RING"/>
@@ -3216,6 +3206,16 @@ We've spent an enormous amount of time creating and checking these footprints an
 <segment>
 <pinref part="R40" gate="R" pin="2"/>
 <pinref part="GND41" gate="1" pin="GND"/>
+</segment>
+<segment>
+<pinref part="U$7" gate="G$1" pin="E"/>
+<pinref part="GND9" gate="1" pin="GND"/>
+<wire x1="-120.65" y1="139.7" x2="-121.92" y2="139.7" width="0.1524" layer="91"/>
+</segment>
+<segment>
+<pinref part="U$31" gate="G$1" pin="E"/>
+<pinref part="GND64" gate="1" pin="GND"/>
+<wire x1="186.69" y1="110.49" x2="184.15" y2="110.49" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="12V" class="1">
@@ -3454,12 +3454,13 @@ We've spent an enormous amount of time creating and checking these footprints an
 <net name="N$4" class="0">
 <segment>
 <pinref part="U$6" gate="G$1" pin="TIP"/>
-<wire x1="-127" y1="146.05" x2="-121.92" y2="146.05" width="0.1524" layer="91"/>
-<wire x1="-121.92" y1="146.05" x2="-121.92" y2="139.7" width="0.1524" layer="91"/>
-<junction x="-121.92" y="146.05"/>
 <pinref part="R23" gate="R" pin="1"/>
-<wire x1="-121.92" y1="146.05" x2="-111.76" y2="146.05" width="0.1524" layer="91"/>
-<pinref part="U$7" gate="G$1" pin="E"/>
+<wire x1="-127" y1="146.05" x2="-125.73" y2="146.05" width="0.1524" layer="91"/>
+<wire x1="-125.73" y1="146.05" x2="-111.76" y2="146.05" width="0.1524" layer="91"/>
+<wire x1="-125.73" y1="146.05" x2="-125.73" y2="124.46" width="0.1524" layer="91"/>
+<pinref part="U$7" gate="G$1" pin="A"/>
+<wire x1="-125.73" y1="124.46" x2="-121.92" y2="124.46" width="0.1524" layer="91"/>
+<junction x="-125.73" y="146.05"/>
 </segment>
 </net>
 <net name="N$5" class="0">
@@ -3683,12 +3684,13 @@ We've spent an enormous amount of time creating and checking these footprints an
 <net name="N$70" class="0">
 <segment>
 <pinref part="U$28" gate="G$1" pin="TIP"/>
-<wire x1="179.07" y1="119.38" x2="184.15" y2="119.38" width="0.1524" layer="91"/>
-<wire x1="184.15" y1="119.38" x2="184.15" y2="110.49" width="0.1524" layer="91"/>
-<junction x="184.15" y="119.38"/>
 <pinref part="R72" gate="R" pin="1"/>
-<wire x1="184.15" y1="119.38" x2="193.04" y2="119.38" width="0.1524" layer="91"/>
-<pinref part="U$31" gate="G$1" pin="E"/>
+<wire x1="179.07" y1="119.38" x2="180.34" y2="119.38" width="0.1524" layer="91"/>
+<wire x1="180.34" y1="119.38" x2="193.04" y2="119.38" width="0.1524" layer="91"/>
+<wire x1="180.34" y1="119.38" x2="180.34" y2="95.25" width="0.1524" layer="91"/>
+<pinref part="U$31" gate="G$1" pin="A"/>
+<wire x1="180.34" y1="95.25" x2="184.15" y2="95.25" width="0.1524" layer="91"/>
+<junction x="180.34" y="119.38"/>
 </segment>
 </net>
 <net name="N$71" class="0">
