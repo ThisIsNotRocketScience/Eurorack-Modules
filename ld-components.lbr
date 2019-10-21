@@ -1157,10 +1157,10 @@ Source: INTERNATIONAL RECTIFIER, irg4bc15ud-s.pdf</description>
 <pad name="3" x="-1.25" y="2.71" drill="1"/>
 <pad name="4" x="1.25" y="2.71" drill="1"/>
 <pad name="1" x="1.25" y="4.71" drill="1"/>
-<wire x1="-6.1" y1="5.27" x2="6.1" y2="5.27" width="0.127" layer="51"/>
-<wire x1="6.1" y1="5.27" x2="6.1" y2="-10.28" width="0.127" layer="51"/>
-<wire x1="6.1" y1="-10.28" x2="-6.1" y2="-10.28" width="0.127" layer="51"/>
-<wire x1="-6.1" y1="-10.28" x2="-6.1" y2="5.27" width="0.127" layer="51"/>
+<wire x1="-6.1" y1="5.27" x2="6.1" y2="5.27" width="0.127" layer="21"/>
+<wire x1="6.1" y1="5.27" x2="6.1" y2="-10.28" width="0.127" layer="21"/>
+<wire x1="6.1" y1="-10.28" x2="-6.1" y2="-10.28" width="0.127" layer="21"/>
+<wire x1="-6.1" y1="-10.28" x2="-6.1" y2="5.27" width="0.127" layer="21"/>
 <text x="-6.35" y="-12.7" size="1.27" layer="21">&gt;NAME</text>
 </package>
 <package name="PEC16-4F-S">
