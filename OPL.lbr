@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.01" unitdist="inch" unit="inch" style="lines" multiple="1" display="yes" altdistance="0.01" altunitdist="inch" altunit="inch"/>
+<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="16" name="Bottom" color="1" fill="1" visible="yes" active="yes"/>
@@ -2055,6 +2055,29 @@ Source: RS Component / BUORNS</description>
 <smd name="1" x="-0.889" y="0" dx="1.016" dy="1.397" layer="1" roundness="25"/>
 <smd name="2" x="0.889" y="0" dx="1.016" dy="1.397" layer="1" roundness="25"/>
 </package>
+<package name="8040">
+<smd name="P$1" x="0" y="3" dx="7.7" dy="2.2" layer="1"/>
+<smd name="P$2" x="0" y="-3" dx="7.7" dy="2.2" layer="1"/>
+<text x="0" y="0" size="1.27" layer="21" align="center">&gt;VALUE</text>
+<wire x1="-3.9" y1="4.2" x2="-3.9" y2="-4.2" width="0.127" layer="21"/>
+<wire x1="-3.9" y1="-4.2" x2="3.9" y2="-4.2" width="0.127" layer="21"/>
+<wire x1="3.9" y1="-4.2" x2="3.9" y2="4.2" width="0.127" layer="21"/>
+<wire x1="3.9" y1="4.2" x2="-3.9" y2="4.2" width="0.127" layer="21"/>
+</package>
+<package name="C3216">
+<smd name="P$1" x="-1.4478" y="0" dx="1.6002" dy="0.889" layer="1" rot="R90"/>
+<smd name="P$2" x="1.4478" y="0" dx="1.6002" dy="0.889" layer="1" rot="R90"/>
+<wire x1="-2.032" y1="0.889" x2="-2.032" y2="-0.889" width="0.127" layer="21"/>
+<wire x1="-2.032" y1="-0.889" x2="2.032" y2="-0.889" width="0.127" layer="21"/>
+<wire x1="2.032" y1="-0.889" x2="2.032" y2="0.889" width="0.127" layer="21"/>
+<wire x1="2.032" y1="0.889" x2="-2.032" y2="0.889" width="0.127" layer="21"/>
+<wire x1="-0.762" y1="0" x2="-0.254" y2="0" width="0.127" layer="21"/>
+<wire x1="-0.254" y1="0.381" x2="-0.254" y2="0" width="0.127" layer="21"/>
+<wire x1="-0.254" y1="0" x2="-0.254" y2="-0.381" width="0.127" layer="21"/>
+<wire x1="0.254" y1="0.381" x2="0.254" y2="0" width="0.127" layer="21"/>
+<wire x1="0.254" y1="0" x2="0.254" y2="-0.381" width="0.127" layer="21"/>
+<wire x1="0.254" y1="0" x2="0.762" y2="0" width="0.127" layer="21"/>
+</package>
 </packages>
 <symbols>
 <symbol name="C">
@@ -3519,6 +3542,15 @@ Source: RS Component / BUORNS</description>
 <technology name=""/>
 </technologies>
 </device>
+<device name="-1206" package="C3216">
+<connects>
+<connect gate="C" pin="1" pad="P$1"/>
+<connect gate="C" pin="2" pad="P$2"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
 </devices>
 </deviceset>
 <deviceset name="C-POLAR*" prefix="C" uservalue="yes">
@@ -4700,6 +4732,15 @@ http://www.ti.com/lit/ds/symlink/lm386.pdf</description>
 <connects>
 <connect gate="L" pin="1" pad="1"/>
 <connect gate="L" pin="2" pad="2"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="-8040" package="8040">
+<connects>
+<connect gate="L" pin="1" pad="P$1"/>
+<connect gate="L" pin="2" pad="P$2"/>
 </connects>
 <technologies>
 <technology name=""/>
