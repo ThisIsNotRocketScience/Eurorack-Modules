@@ -456,41 +456,31 @@
 <class number="0" name="default" width="0" drill="0">
 </class>
 </classes>
-<designrules name="default">
-<description language="de">&lt;b&gt;EAGLE Design Rules&lt;/b&gt;
-&lt;p&gt;
-Die Standard-Design-Rules sind so gewählt, dass sie für 
-die meisten Anwendungen passen. Sollte ihre Platine 
-besondere Anforderungen haben, treffen Sie die erforderlichen
-Einstellungen hier und speichern die Design Rules unter 
-einem neuen Namen ab.</description>
-<description language="en">&lt;b&gt;EAGLE Design Rules&lt;/b&gt;
-&lt;p&gt;
-The default Design Rules have been set to cover
-a wide range of applications. Your particular design
-may have different requirements, so please make the
-necessary adjustments and save your customized
-design rules under a new name.</description>
+<designrules name="dirt_cheap_dirty_boards.v1">
+<description language="en">&lt;b&gt;Dirty Cheap Dirty Board Design Rules&lt;/b&gt;
+&lt;br&gt;
+&lt;br&gt;Min width/Spacing: 5/5mil
+&lt;br&gt;Min diameter of finished hole 12mil</description>
 <param name="layerSetup" value="(1*16)"/>
-<param name="mtCopper" value="0.035mm 0.035mm 0.035mm 0.035mm 0.035mm 0.035mm 0.035mm 0.035mm 0.035mm 0.035mm 0.035mm 0.035mm 0.035mm 0.035mm 0.035mm 0.035mm"/>
-<param name="mtIsolate" value="1.5mm 0.15mm 0.2mm 0.15mm 0.2mm 0.15mm 0.2mm 0.15mm 0.2mm 0.15mm 0.2mm 0.15mm 0.2mm 0.15mm 0.2mm"/>
-<param name="mdWireWire" value="8mil"/>
-<param name="mdWirePad" value="8mil"/>
-<param name="mdWireVia" value="8mil"/>
-<param name="mdPadPad" value="8mil"/>
-<param name="mdPadVia" value="8mil"/>
-<param name="mdViaVia" value="8mil"/>
-<param name="mdSmdPad" value="8mil"/>
-<param name="mdSmdVia" value="8mil"/>
-<param name="mdSmdSmd" value="8mil"/>
+<param name="mtCopper" value="0.035mm 0.0175mm 0.035mm 0.035mm 0.035mm 0.035mm 0.035mm 0.035mm 0.035mm 0.035mm 0.035mm 0.035mm 0.035mm 0.035mm 0.0175mm 0.035mm"/>
+<param name="mtIsolate" value="1.5mm 1.1mm 0.2mm 0.15mm 0.2mm 0.15mm 0.2mm 0.15mm 0.2mm 0.15mm 0.2mm 0.15mm 0.2mm 0.15mm 0.2mm"/>
+<param name="mdWireWire" value="5mil"/>
+<param name="mdWirePad" value="5mil"/>
+<param name="mdWireVia" value="5mil"/>
+<param name="mdPadPad" value="5mil"/>
+<param name="mdPadVia" value="5mil"/>
+<param name="mdViaVia" value="5mil"/>
+<param name="mdSmdPad" value="0mil"/>
+<param name="mdSmdVia" value="0mil"/>
+<param name="mdSmdSmd" value="0mil"/>
 <param name="mdViaViaSameLayer" value="8mil"/>
 <param name="mnLayersViaInSmd" value="2"/>
-<param name="mdCopperDimension" value="40mil"/>
-<param name="mdDrill" value="8mil"/>
+<param name="mdCopperDimension" value="10mil"/>
+<param name="mdDrill" value="10mil"/>
 <param name="mdSmdStop" value="0mil"/>
-<param name="msWidth" value="10mil"/>
-<param name="msDrill" value="24mil"/>
-<param name="msMicroVia" value="9.99mm"/>
+<param name="msWidth" value="5mil"/>
+<param name="msDrill" value="12mil"/>
+<param name="msMicroVia" value="12mil"/>
 <param name="msBlindViaRatio" value="0.5"/>
 <param name="rvPadTop" value="0.25"/>
 <param name="rvPadInner" value="0.25"/>
@@ -505,9 +495,9 @@ design rules under a new name.</description>
 <param name="rlMaxPadInner" value="20mil"/>
 <param name="rlMinPadBottom" value="10mil"/>
 <param name="rlMaxPadBottom" value="20mil"/>
-<param name="rlMinViaOuter" value="8mil"/>
+<param name="rlMinViaOuter" value="6mil"/>
 <param name="rlMaxViaOuter" value="20mil"/>
-<param name="rlMinViaInner" value="8mil"/>
+<param name="rlMinViaInner" value="6mil"/>
 <param name="rlMaxViaInner" value="20mil"/>
 <param name="rlMinMicroViaOuter" value="4mil"/>
 <param name="rlMaxMicroViaOuter" value="20mil"/>
@@ -515,16 +505,16 @@ design rules under a new name.</description>
 <param name="rlMaxMicroViaInner" value="20mil"/>
 <param name="psTop" value="-1"/>
 <param name="psBottom" value="-1"/>
-<param name="psFirst" value="-1"/>
+<param name="psFirst" value="0"/>
 <param name="psElongationLong" value="100"/>
 <param name="psElongationOffset" value="100"/>
 <param name="mvStopFrame" value="1"/>
 <param name="mvCreamFrame" value="0"/>
-<param name="mlMinStopFrame" value="4mil"/>
-<param name="mlMaxStopFrame" value="4mil"/>
+<param name="mlMinStopFrame" value="2mil"/>
+<param name="mlMaxStopFrame" value="2mil"/>
 <param name="mlMinCreamFrame" value="0mil"/>
 <param name="mlMaxCreamFrame" value="0mil"/>
-<param name="mlViaStopLimit" value="0mil"/>
+<param name="mlViaStopLimit" value="25mil"/>
 <param name="srRoundness" value="0"/>
 <param name="srMinRoundness" value="0mil"/>
 <param name="srMaxRoundness" value="0mil"/>
@@ -535,7 +525,7 @@ design rules under a new name.</description>
 <param name="checkGrid" value="0"/>
 <param name="checkAngle" value="0"/>
 <param name="checkFont" value="1"/>
-<param name="checkRestrict" value="1"/>
+<param name="checkRestrict" value="0"/>
 <param name="useDiameter" value="13"/>
 <param name="maxErrors" value="50"/>
 </designrules>
@@ -637,56 +627,69 @@ design rules under a new name.</description>
 </autorouter>
 <elements>
 <element name="PCB1" library="EurorackModularParts" package="EURORACK36HP" value="EURORACK_PCB36HP_10CM" x="0" y="0"/>
-<element name="R1" library="EurorackModularParts" package="ALPS_POT_SQUAREHOLES" value="" x="45.72" y="76.2">
-<attribute name="DESC" value="Gain" x="45.72" y="76.2" size="1.778" layer="27" display="off"/>
+<element name="R1" library="EurorackModularParts" package="ALPS_POT_SQUAREHOLES" value="" x="30.48" y="91.44">
+<attribute name="DESC" value="Gain" x="30.48" y="91.44" size="1.778" layer="27" display="off"/>
 </element>
-<element name="R2" library="EurorackModularParts" package="ALPS_POT_SQUAREHOLES" value="" x="45.72" y="55.88">
-<attribute name="DESC" value="Tone" x="45.72" y="55.88" size="1.778" layer="27" display="off"/>
+<element name="R2" library="EurorackModularParts" package="ALPS_POT_SQUAREHOLES" value="" x="30.48" y="66.04">
+<attribute name="DESC" value="Tone" x="30.48" y="66.04" size="1.778" layer="27" display="off"/>
 </element>
-<element name="R3" library="EurorackModularParts" package="ALPS_POT_SQUAREHOLES" value="" x="45.72" y="35.56">
-<attribute name="DESC" value="Drive" x="45.72" y="35.56" size="1.778" layer="27" display="off"/>
+<element name="R3" library="EurorackModularParts" package="ALPS_POT_SQUAREHOLES" value="" x="30.48" y="40.64">
+<attribute name="DESC" value="Drive" x="30.48" y="40.64" size="1.778" layer="27" display="off"/>
 </element>
 <element name="J1" library="EurorackModularParts" package="3.5MM-JACK-SWITCH-13MM-NOHOLES" value="JACK" x="10.16" y="91.44">
 <attribute name="DESC" value="Master Input" x="10.16" y="91.44" size="1.778" layer="27" display="off"/>
 </element>
-<element name="J2" library="EurorackModularParts" package="POWER_16_SHROUDED" value="POWERSHROUDED" x="25.4" y="86.36" rot="MR270"/>
-<element name="D1" library="OPL" package="DO-214AC" value="" x="45.72" y="86.36"/>
-<element name="D2" library="OPL" package="DO-214AC" value="" x="45.72" y="91.44" rot="R180"/>
-<element name="C1" library="OPL" package="C0603" value="" x="-25.4" y="-30.48" rot="R180"/>
-<element name="C2" library="OPL" package="C0603" value="" x="-20.32" y="-30.48" rot="R180"/>
-<element name="C3" library="EurorackModularParts" package="CASE-A_3216" value="" x="-25.4" y="-35.56"/>
-<element name="C4" library="EurorackModularParts" package="CASE-A_3216" value="" x="-15.24" y="-35.56"/>
+<element name="J2" library="EurorackModularParts" package="POWER_16_SHROUDED" value="POWERSHROUDED" x="10.16" y="50.8" rot="MR270"/>
+<element name="D1" library="OPL" package="DO-214AC" value="" x="10.16" y="25.4"/>
+<element name="D2" library="OPL" package="DO-214AC" value="" x="10.16" y="30.48" rot="R180"/>
+<element name="C1" library="OPL" package="C0603" value="" x="15.24" y="25.4" rot="R270"/>
+<element name="C2" library="OPL" package="C0603" value="" x="15.24" y="30.48" rot="R270"/>
+<element name="C3" library="EurorackModularParts" package="CASE-A_3216" value="" x="20.32" y="25.4" rot="R90"/>
+<element name="C4" library="EurorackModularParts" package="CASE-A_3216" value="" x="20.32" y="30.48" rot="R90"/>
 <element name="J3" library="EurorackModularParts" package="3.5MM-JACK-SWITCH-13MM-NOHOLES" value="JACK" x="172.72" y="10.16">
 <attribute name="DESC" value="Master Output" x="157.48" y="30.48" size="1.778" layer="27" display="off"/>
 </element>
-<element name="J4" library="EurorackModularParts" package="3.5MM-JACK-SWITCH-13MM-NOHOLES" value="JACK" x="101.6" y="55.88">
-<attribute name="DESC" value="Input" x="86.36" y="71.12" size="1.778" layer="27" display="off"/>
+<element name="J4" library="EurorackModularParts" package="3.5MM-JACK-SWITCH-13MM-NOHOLES" value="JACK" x="55.88" y="10.16">
+<attribute name="DESC" value="Input B" x="40.64" y="25.4" size="1.778" layer="27" display="off"/>
 </element>
-<element name="J5" library="EurorackModularParts" package="3.5MM-JACK-SWITCH-13MM-NOHOLES" value="JACK" x="-5.08" y="-45.72">
-<attribute name="DESC" value="Input" x="-20.32" y="-30.48" size="1.778" layer="27" display="off"/>
+<element name="J5" library="EurorackModularParts" package="3.5MM-JACK-SWITCH-13MM-NOHOLES" value="JACK" x="66.04" y="15.24">
+<attribute name="DESC" value="Difference B" x="50.8" y="30.48" size="1.778" layer="27" display="off"/>
 </element>
-<element name="J6" library="EurorackModularParts" package="3.5MM-JACK-SWITCH-13MM-NOHOLES" value="JACK" x="-66.04" y="-96.52">
-<attribute name="DESC" value="Input A" x="-81.28" y="-81.28" size="1.778" layer="27" display="off"/>
+<element name="J6" library="EurorackModularParts" package="3.5MM-JACK-SWITCH-13MM-NOHOLES" value="JACK" x="20.32" y="10.16">
+<attribute name="DESC" value="Input A" x="5.08" y="25.4" size="1.778" layer="27" display="off"/>
 </element>
-<element name="J7" library="EurorackModularParts" package="3.5MM-JACK-SWITCH-13MM-NOHOLES" value="JACK" x="35.56" y="10.16">
-<attribute name="DESC" value="Output A" x="-10.16" y="25.4" size="1.778" layer="27" display="off"/>
+<element name="J7" library="EurorackModularParts" package="3.5MM-JACK-SWITCH-13MM-NOHOLES" value="JACK" x="40.64" y="10.16">
+<attribute name="DESC" value="Output A" x="-5.08" y="25.4" size="1.778" layer="27" display="off"/>
 </element>
-<element name="J8" library="EurorackModularParts" package="3.5MM-JACK-SWITCH-13MM-NOHOLES" value="JACK" x="45.72" y="10.16">
-<attribute name="DESC" value="Difference A" x="0" y="40.64" size="1.778" layer="27" display="off"/>
+<element name="J8" library="EurorackModularParts" package="3.5MM-JACK-SWITCH-13MM-NOHOLES" value="JACK" x="30.48" y="15.24">
+<attribute name="DESC" value="Difference A" x="-15.24" y="45.72" size="1.778" layer="27" display="off"/>
 </element>
-<element name="J9" library="EurorackModularParts" package="3.5MM-JACK-SWITCH-13MM-NOHOLES" value="JACK" x="-50.8" y="-111.76">
-<attribute name="DESC" value="Input" x="-127" y="-81.28" size="1.778" layer="27" display="off"/>
+<element name="J9" library="EurorackModularParts" package="3.5MM-JACK-SWITCH-13MM-NOHOLES" value="JACK" x="76.2" y="10.16">
+<attribute name="DESC" value="Output B" x="0" y="40.64" size="1.778" layer="27" display="off"/>
+</element>
+<element name="J10" library="EurorackModularParts" package="3.5MM-JACK-SWITCH-13MM-NOHOLES" value="JACK" x="172.72" y="20.32">
+<attribute name="DESC" value="Master Difference" x="172.72" y="20.32" size="1.778" layer="27" display="off"/>
+</element>
+<element name="J11" library="EurorackModularParts" package="3.5MM-JACK-SWITCH-13MM-NOHOLES" value="JACK" x="91.44" y="10.16">
+<attribute name="DESC" value="Input C" x="71.12" y="30.48" size="1.778" layer="27" display="off"/>
+</element>
+<element name="J12" library="EurorackModularParts" package="3.5MM-JACK-SWITCH-13MM-NOHOLES" value="JACK" x="101.6" y="15.24">
+<attribute name="DESC" value="Difference C" x="66.04" y="50.8" size="1.778" layer="27" display="off"/>
+</element>
+<element name="J13" library="EurorackModularParts" package="3.5MM-JACK-SWITCH-13MM-NOHOLES" value="JACK" x="111.76" y="10.16">
+<attribute name="DESC" value="Output C" x="60.96" y="60.96" size="1.778" layer="27" display="off"/>
+</element>
+<element name="J14" library="EurorackModularParts" package="3.5MM-JACK-SWITCH-13MM-NOHOLES" value="JACK" x="127" y="10.16">
+<attribute name="DESC" value="Input D" x="106.68" y="25.4" size="1.778" layer="27" display="off"/>
+</element>
+<element name="J15" library="EurorackModularParts" package="3.5MM-JACK-SWITCH-13MM-NOHOLES" value="JACK" x="137.16" y="15.24">
+<attribute name="DESC" value="Difference D" x="101.6" y="45.72" size="1.778" layer="27" display="off"/>
+</element>
+<element name="J16" library="EurorackModularParts" package="3.5MM-JACK-SWITCH-13MM-NOHOLES" value="JACK" x="147.32" y="10.16">
+<attribute name="DESC" value="Output D" x="96.52" y="55.88" size="1.778" layer="27" display="off"/>
 </element>
 </elements>
 <signals>
-<signal name="N$1">
-<polygon width="0.2286" layer="1">
-<vertex x="0" y="101.6"/>
-<vertex x="30.48" y="101.6"/>
-<vertex x="30.48" y="66.04"/>
-<vertex x="0" y="66.04"/>
-</polygon>
-</signal>
 <signal name="GND">
 <contactref element="J2" pad="5"/>
 <contactref element="J2" pad="4"/>
@@ -698,43 +701,123 @@ design rules under a new name.</description>
 <contactref element="C2" pad="2"/>
 <contactref element="C1" pad="1"/>
 <contactref element="C3" pad="-"/>
-<wire x1="26.67" y1="90.17" x2="26.67" y2="92.71" width="0" layer="19" extent="1-1"/>
-<wire x1="24.13" y1="92.71" x2="26.67" y2="92.71" width="0" layer="19" extent="1-1"/>
-<wire x1="24.13" y1="90.17" x2="26.67" y2="90.17" width="0" layer="19" extent="1-1"/>
-<wire x1="26.67" y1="87.63" x2="26.67" y2="90.17" width="0" layer="19" extent="1-1"/>
-<wire x1="24.13" y1="87.63" x2="24.13" y2="90.17" width="0" layer="19" extent="1-1"/>
-<wire x1="-21.082" y1="-30.48" x2="24.13" y2="87.63" width="0" layer="19" extent="1-1"/>
-<wire x1="-24.638" y1="-30.48" x2="-21.082" y2="-30.48" width="0" layer="19" extent="1-1"/>
-<wire x1="-24.13" y1="-35.56" x2="-24.638" y2="-30.48" width="0" layer="19" extent="1-1"/>
-<wire x1="-16.51" y1="-35.56" x2="-21.082" y2="-30.48" width="0" layer="19" extent="1-1"/>
+<contactref element="J9" pad="RING_T@3" route="any" routetag="G$1.RING"/>
+<contactref element="J9" pad="RING_B@1" route="any" routetag="G$1.RING"/>
+<contactref element="J5" pad="RING_T@3" route="any" routetag="G$1.RING"/>
+<contactref element="J5" pad="RING_B@1" route="any" routetag="G$1.RING"/>
+<contactref element="J4" pad="RING_T@3" route="any" routetag="G$1.RING"/>
+<contactref element="J4" pad="RING_B@1" route="any" routetag="G$1.RING"/>
+<contactref element="J8" pad="RING_T@3" route="any" routetag="G$1.RING"/>
+<contactref element="J8" pad="RING_B@1" route="any" routetag="G$1.RING"/>
+<contactref element="J7" pad="RING_T@3" route="any" routetag="G$1.RING"/>
+<contactref element="J7" pad="RING_B@1" route="any" routetag="G$1.RING"/>
+<contactref element="J6" pad="RING_T@3" route="any" routetag="G$1.RING"/>
+<contactref element="J6" pad="RING_B@1" route="any" routetag="G$1.RING"/>
+<contactref element="J1" pad="RING_T@3" route="any" routetag="G$1.RING"/>
+<contactref element="J1" pad="RING_B@1" route="any" routetag="G$1.RING"/>
+<contactref element="J10" pad="RING_T@3" route="any" routetag="G$1.RING"/>
+<contactref element="J10" pad="RING_B@1" route="any" routetag="G$1.RING"/>
+<contactref element="J3" pad="RING_T@3" route="any" routetag="G$1.RING"/>
+<contactref element="J3" pad="RING_B@1" route="any" routetag="G$1.RING"/>
+<contactref element="J1" pad="SWITCH_B@1" route="any" routetag="G$1.SWITCH"/>
+<contactref element="J1" pad="SWITCH_T@3" route="any" routetag="G$1.SWITCH"/>
+<contactref element="J13" pad="RING_T@3" route="any" routetag="G$1.RING"/>
+<contactref element="J13" pad="RING_B@1" route="any" routetag="G$1.RING"/>
+<contactref element="J12" pad="RING_T@3" route="any" routetag="G$1.RING"/>
+<contactref element="J12" pad="RING_B@1" route="any" routetag="G$1.RING"/>
+<contactref element="J11" pad="RING_T@3" route="any" routetag="G$1.RING"/>
+<contactref element="J11" pad="RING_B@1" route="any" routetag="G$1.RING"/>
+<contactref element="J16" pad="RING_T@3" route="any" routetag="G$1.RING"/>
+<contactref element="J16" pad="RING_B@1" route="any" routetag="G$1.RING"/>
+<contactref element="J15" pad="RING_T@3" route="any" routetag="G$1.RING"/>
+<contactref element="J15" pad="RING_B@1" route="any" routetag="G$1.RING"/>
+<contactref element="J14" pad="RING_T@3" route="any" routetag="G$1.RING"/>
+<contactref element="J14" pad="RING_B@1" route="any" routetag="G$1.RING"/>
+<polygon width="0.2286" layer="1">
+<vertex x="-10.16" y="111.76"/>
+<vertex x="193.04" y="111.76"/>
+<vertex x="193.04" y="0"/>
+<vertex x="-10.16" y="0"/>
+</polygon>
 </signal>
 <signal name="N$2">
 <contactref element="J2" pad="9"/>
 <contactref element="J2" pad="10"/>
 <contactref element="D1" pad="1"/>
-<wire x1="26.67" y1="85.09" x2="43.72" y2="86.36" width="0" layer="19" extent="1-1"/>
-<wire x1="24.13" y1="85.09" x2="26.67" y2="85.09" width="0" layer="19" extent="1-1"/>
+<wire x1="8.89" y1="49.53" x2="11.43" y2="49.53" width="0" layer="19" extent="1-1"/>
+<wire x1="8.16" y1="25.4" x2="8.89" y2="49.53" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="12V">
 <contactref element="D1" pad="2"/>
 <contactref element="C3" pad="+"/>
 <contactref element="C1" pad="2"/>
-<wire x1="-26.162" y1="-30.48" x2="47.72" y2="86.36" width="0" layer="19" extent="1-1"/>
-<wire x1="-26.67" y1="-35.56" x2="-26.162" y2="-30.48" width="0" layer="19" extent="1-1"/>
+<wire x1="15.24" y1="24.638" x2="20.32" y2="24.13" width="0" layer="19" extent="1-1"/>
+<wire x1="12.16" y1="25.4" x2="15.24" y2="24.638" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="N$3">
 <contactref element="J2" pad="2"/>
 <contactref element="J2" pad="1"/>
 <contactref element="D2" pad="2"/>
-<wire x1="26.67" y1="95.25" x2="43.72" y2="91.44" width="0" layer="19" extent="1-1"/>
-<wire x1="24.13" y1="95.25" x2="26.67" y2="95.25" width="0" layer="19" extent="1-1"/>
+<wire x1="8.89" y1="59.69" x2="11.43" y2="59.69" width="0" layer="19" extent="1-1"/>
+<wire x1="8.16" y1="30.48" x2="8.89" y2="59.69" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="-12V">
 <contactref element="D2" pad="1"/>
 <contactref element="C4" pad="-"/>
 <contactref element="C2" pad="1"/>
-<wire x1="-19.558" y1="-30.48" x2="47.72" y2="91.44" width="0" layer="19" extent="1-1"/>
-<wire x1="-13.97" y1="-35.56" x2="-19.558" y2="-30.48" width="0" layer="19" extent="1-1"/>
+<wire x1="15.24" y1="31.242" x2="20.32" y2="31.75" width="0" layer="19" extent="1-1"/>
+<wire x1="12.16" y1="30.48" x2="15.24" y2="31.242" width="0" layer="19" extent="1-1"/>
+</signal>
+<signal name="MASTERINPUT">
+<contactref element="J1" pad="TIP_B@1" route="any" routetag="G$1.TIP"/>
+<contactref element="J1" pad="TIP_T@3" route="any" routetag="G$1.TIP"/>
+<contactref element="J6" pad="SWITCH_B@1" route="any" routetag="G$1.SWITCH"/>
+<contactref element="J6" pad="SWITCH_T@3" route="any" routetag="G$1.SWITCH"/>
+<wire x1="24.02" y1="10.16" x2="10.16" y2="95.94" width="0" layer="19" extent="16-16"/>
+</signal>
+<signal name="OUTPUT_A">
+<contactref element="J7" pad="TIP_B@1" route="any" routetag="G$1.TIP"/>
+<contactref element="J7" pad="TIP_T@3" route="any" routetag="G$1.TIP"/>
+<contactref element="J4" pad="SWITCH_B@1" route="any" routetag="G$1.SWITCH"/>
+<contactref element="J4" pad="SWITCH_T@3" route="any" routetag="G$1.SWITCH"/>
+<wire x1="40.64" y1="14.66" x2="59.58" y2="10.16" width="0" layer="19" extent="16-16"/>
+</signal>
+<signal name="OUTPUT_B">
+<contactref element="J9" pad="TIP_B@1" route="any" routetag="G$1.TIP"/>
+<contactref element="J9" pad="TIP_T@3" route="any" routetag="G$1.TIP"/>
+<contactref element="J11" pad="SWITCH_B@1" route="any" routetag="G$1.SWITCH"/>
+<contactref element="J11" pad="SWITCH_T@3" route="any" routetag="G$1.SWITCH"/>
+<wire x1="76.2" y1="14.66" x2="95.14" y2="10.16" width="0" layer="19" extent="16-16"/>
+</signal>
+<signal name="OUTPUT_C">
+<contactref element="J13" pad="TIP_B@1" route="any" routetag="G$1.TIP"/>
+<contactref element="J13" pad="TIP_T@3" route="any" routetag="G$1.TIP"/>
+<contactref element="J14" pad="SWITCH_B@1" route="any" routetag="G$1.SWITCH"/>
+<contactref element="J14" pad="SWITCH_T@3" route="any" routetag="G$1.SWITCH"/>
+<wire x1="111.76" y1="14.66" x2="130.7" y2="10.16" width="0" layer="19" extent="16-16"/>
+</signal>
+<signal name="OUTPUT_D">
+<contactref element="J16" pad="TIP_B@1" route="any" routetag="G$1.TIP"/>
+<contactref element="J16" pad="TIP_T@3" route="any" routetag="G$1.TIP"/>
+<contactref element="J3" pad="TIP_B@1" route="any" routetag="G$1.TIP"/>
+<contactref element="J3" pad="TIP_T@3" route="any" routetag="G$1.TIP"/>
+<wire x1="147.32" y1="14.66" x2="172.72" y2="14.66" width="0" layer="19" extent="16-16"/>
+</signal>
+<signal name="INPUT_A">
+<contactref element="J6" pad="TIP_B@1" route="any" routetag="G$1.TIP"/>
+<contactref element="J6" pad="TIP_T@3" route="any" routetag="G$1.TIP"/>
+</signal>
+<signal name="INPUT_B">
+<contactref element="J4" pad="TIP_B@1" route="any" routetag="G$1.TIP"/>
+<contactref element="J4" pad="TIP_T@3" route="any" routetag="G$1.TIP"/>
+</signal>
+<signal name="INPUT_C">
+<contactref element="J11" pad="TIP_B@1" route="any" routetag="G$1.TIP"/>
+<contactref element="J11" pad="TIP_T@3" route="any" routetag="G$1.TIP"/>
+</signal>
+<signal name="INPUT_D">
+<contactref element="J14" pad="TIP_B@1" route="any" routetag="G$1.TIP"/>
+<contactref element="J14" pad="TIP_T@3" route="any" routetag="G$1.TIP"/>
 </signal>
 </signals>
 </board>
