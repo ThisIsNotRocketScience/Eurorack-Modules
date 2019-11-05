@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="25" unitdist="mil" unit="mil" style="dots" multiple="1" display="yes" altdistance="5" altunitdist="mil" altunit="mil"/>
+<grid distance="100" unitdist="mil" unit="mil" style="dots" multiple="1" display="yes" altdistance="5" altunitdist="mil" altunit="mil"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="2" name="Route2" color="16" fill="1" visible="no" active="no"/>
@@ -32,10 +32,10 @@
 <layer number="22" name="bPlace" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="23" name="tOrigins" color="15" fill="1" visible="yes" active="yes"/>
 <layer number="24" name="bOrigins" color="15" fill="1" visible="yes" active="yes"/>
-<layer number="25" name="tNames" color="7" fill="1" visible="no" active="yes"/>
+<layer number="25" name="tNames" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="26" name="bNames" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="27" name="tValues" color="7" fill="1" visible="yes" active="yes"/>
-<layer number="28" name="bValues" color="7" fill="1" visible="no" active="yes"/>
+<layer number="28" name="bValues" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="29" name="tStop" color="7" fill="3" visible="no" active="yes"/>
 <layer number="30" name="bStop" color="7" fill="6" visible="no" active="yes"/>
 <layer number="31" name="tCream" color="7" fill="4" visible="no" active="yes"/>
@@ -154,7 +154,7 @@
 <layer number="249" name="Edge" color="7" fill="1" visible="no" active="yes"/>
 <layer number="250" name="Descript" color="3" fill="1" visible="no" active="no"/>
 <layer number="251" name="SMDround" color="12" fill="11" visible="no" active="no"/>
-<layer number="254" name="Paneldesc" color="14" fill="1" visible="yes" active="yes"/>
+<layer number="254" name="Paneldesc" color="14" fill="1" visible="no" active="yes"/>
 <layer number="255" name="Panel" color="14" fill="1" visible="yes" active="yes"/>
 </layers>
 <board>
@@ -1409,14 +1409,10 @@ design rules under a new name.</description>
 <param name="slThermalsForVias" value="0"/>
 <param name="dpMaxLengthDifference" value="10mm"/>
 <param name="dpGapFactor" value="2.5"/>
+<param name="checkGrid" value="0"/>
 <param name="checkAngle" value="0"/>
 <param name="checkFont" value="1"/>
 <param name="checkRestrict" value="1"/>
-<param name="checkStop" value="0"/>
-<param name="checkValues" value="0"/>
-<param name="checkNames" value="1"/>
-<param name="checkWireStubs" value="1"/>
-<param name="checkPolygonWidth" value="0"/>
 <param name="useDiameter" value="13"/>
 <param name="maxErrors" value="50"/>
 </designrules>
@@ -1600,26 +1596,21 @@ design rules under a new name.</description>
 <attribute name="POPULARITY" value="92" x="29.845" y="93.345" size="1.778" layer="27" display="off"/>
 <attribute name="VALUE" x="26.035" y="90.17" size="1.27" layer="27"/>
 </element>
-<element name="DIST+1:R22" library="EurorackModularParts" package="ALPS_POT_SQUAREHOLES" value="10KB" x="40.64" y="40.64" smashed="yes">
-<attribute name="DESC" value="Tone" x="40.64" y="42.672" size="1.016" layer="21" rot="R180" align="center"/>
-<attribute name="DESC" value="Tone" x="40.64" y="48.26" size="1.778" layer="254" align="bottom-center"/>
-<attribute name="NAME" x="40.64" y="40.64" size="2.032" layer="25" ratio="10" rot="SR0" align="center"/>
-<attribute name="VALUE" x="40.64" y="38.1" size="1.27" layer="21" ratio="10" align="center"/>
-<attribute name="VALUE" x="40.64" y="38.735" size="1.27" layer="27" align="top-center"/>
+<element name="DIST+1:R22" library="EurorackModularParts" package="ALPS_POT_SQUAREHOLES" value="10KB" x="38.1" y="40.64" smashed="yes">
+<attribute name="DESC" value="Tone" x="38.1" y="42.672" size="1.016" layer="21" rot="R180" align="center"/>
+<attribute name="NAME" x="38.1" y="40.64" size="2.032" layer="25" ratio="10" rot="SR0" align="center"/>
+<attribute name="VALUE" x="38.1" y="38.1" size="1.27" layer="21" ratio="10" align="center"/>
+<attribute name="VALUE" x="38.1" y="38.735" size="1.27" layer="27" align="top-center"/>
 </element>
 <element name="DIST+1:R23" library="EurorackModularParts" package="ALPS_POT_SQUAREHOLES" value="1MC" x="40.64" y="60.96" smashed="yes">
 <attribute name="DESC" value="Distortion" x="40.64" y="62.992" size="1.016" layer="21" rot="R180" align="center"/>
-<attribute name="DESC" value="Distortion" x="40.64" y="68.58" size="1.778" layer="254" align="bottom-center"/>
 <attribute name="NAME" x="40.64" y="60.96" size="2.032" layer="25" ratio="10" rot="SR0" align="center"/>
 <attribute name="VALUE" x="40.64" y="58.42" size="1.27" layer="21" ratio="10" align="center"/>
-<attribute name="VALUE" x="40.64" y="59.055" size="1.27" layer="27" align="top-center"/>
 </element>
-<element name="DIST+1:R24" library="EurorackModularParts" package="ALPS_POT_SQUAREHOLES" value="10K" x="40.64" y="81.28" smashed="yes">
-<attribute name="DESC" value="Volume" x="40.64" y="83.312" size="1.016" layer="21" rot="R180" align="center"/>
-<attribute name="DESC" value="Volume" x="40.64" y="88.9" size="1.778" layer="254" align="bottom-center"/>
-<attribute name="NAME" x="40.64" y="81.28" size="2.032" layer="25" ratio="10" rot="SR0" align="center"/>
-<attribute name="VALUE" x="40.64" y="78.74" size="1.27" layer="21" ratio="10" align="center"/>
-<attribute name="VALUE" x="40.64" y="79.375" size="1.27" layer="27" align="top-center"/>
+<element name="DIST+1:R24" library="EurorackModularParts" package="ALPS_POT_SQUAREHOLES" value="10K" x="33.02" y="81.28" smashed="yes">
+<attribute name="DESC" value="Volume" x="33.02" y="83.312" size="1.016" layer="21" rot="R180" align="center"/>
+<attribute name="NAME" x="33.02" y="81.28" size="2.032" layer="25" ratio="10" rot="SR0" align="center"/>
+<attribute name="VALUE" x="33.02" y="78.74" size="1.27" layer="21" ratio="10" align="center"/>
 </element>
 <element name="DIST+1:R25" library="OPL" package="R0603" value="10K" x="30.48" y="65.405" smashed="yes" rot="R90">
 <attribute name="NAME" x="30.48" y="65.405" size="0.508" layer="25" ratio="11" rot="R90" align="center"/>
@@ -1675,17 +1666,13 @@ design rules under a new name.</description>
 </element>
 <element name="FUZZFACE1:R42" library="EurorackModularParts" package="ALPS_POT_SQUAREHOLES" value="500KA" x="91.44" y="68.58" smashed="yes">
 <attribute name="DESC" value="Volume" x="91.44" y="70.612" size="1.016" layer="21" rot="R180" align="center"/>
-<attribute name="DESC" value="Volume" x="91.44" y="76.2" size="1.778" layer="254" align="bottom-center"/>
 <attribute name="NAME" x="91.44" y="68.58" size="2.032" layer="25" ratio="10" rot="SR0" align="center"/>
 <attribute name="VALUE" x="91.44" y="66.04" size="1.27" layer="21" ratio="10" align="center"/>
-<attribute name="VALUE" x="91.44" y="66.675" size="1.27" layer="27" align="top-center"/>
 </element>
 <element name="FUZZFACE1:R43" library="EurorackModularParts" package="ALPS_POT_SQUAREHOLES" value="1KB" x="91.44" y="43.18" smashed="yes">
 <attribute name="DESC" value="Distortion" x="91.44" y="45.212" size="1.016" layer="21" rot="R180" align="center"/>
-<attribute name="DESC" value="Distortion" x="91.44" y="50.8" size="1.778" layer="254" align="bottom-center"/>
 <attribute name="NAME" x="91.44" y="43.18" size="2.032" layer="25" ratio="10" rot="SR0" align="center"/>
 <attribute name="VALUE" x="91.44" y="40.64" size="1.27" layer="21" ratio="10" align="center"/>
-<attribute name="VALUE" x="91.44" y="41.275" size="1.27" layer="27" align="top-center"/>
 </element>
 <element name="FUZZFACE1:R44" library="OPL" package="R0603" value="8.2K" x="86.36" y="281.94" smashed="yes">
 <attribute name="NAME" x="86.36" y="281.94" size="0.508" layer="25" ratio="11" align="center"/>
@@ -1703,62 +1690,48 @@ design rules under a new name.</description>
 <attribute name="NAME" x="87.63" y="30.48" size="1.27" layer="25" rot="R270"/>
 <attribute name="VALUE" x="78.74" y="30.48" size="1.27" layer="27" rot="R270"/>
 </element>
-<element name="J10" library="EurorackModularParts" package="3.5MM-JACK-SWITCH-13MM-NOHOLES" value="JACK" x="174.625" y="81.28" smashed="yes">
-<attribute name="DESC" value="Master Difference" x="174.625" y="81.28" size="1.27" layer="22" rot="SMR45" align="center"/>
-<attribute name="DESC" value="Master Difference" x="169.625" y="87.28" size="1.27" layer="254" align="center-left"/>
+<element name="J10" library="EurorackModularParts" package="3.5MM-JACK-SWITCH-13MM-NOHOLES" value="JACK" x="175.26" y="68.58" smashed="yes">
+<attribute name="DESC" value="Master Difference" x="175.26" y="68.58" size="1.27" layer="22" rot="SMR45" align="center"/>
 </element>
 <element name="J11" library="EurorackModularParts" package="3.5MM-JACK-SWITCH-13MM-NOHOLES" value="JACK" x="81.28" y="100.965" smashed="yes">
 <attribute name="DESC" value="Input C" x="81.28" y="100.965" size="1.27" layer="22" rot="SMR45" align="center"/>
-<attribute name="DESC" value="Input C" x="76.28" y="106.965" size="1.27" layer="254" align="center-left"/>
 </element>
 <element name="J12" library="EurorackModularParts" package="3.5MM-JACK-SWITCH-13MM-NOHOLES" value="JACK" x="91.44" y="98.425" smashed="yes">
 <attribute name="DESC" value="Difference C" x="91.44" y="98.425" size="1.27" layer="22" rot="SMR45" align="center"/>
-<attribute name="DESC" value="Difference C" x="86.44" y="104.425" size="1.27" layer="254" align="center-left"/>
 </element>
 <element name="J13" library="EurorackModularParts" package="3.5MM-JACK-SWITCH-13MM-NOHOLES" value="JACK" x="101.6" y="100.965" smashed="yes">
 <attribute name="DESC" value="Output C" x="101.6" y="100.965" size="1.27" layer="22" rot="SMR45" align="center"/>
-<attribute name="DESC" value="Output C" x="96.6" y="106.965" size="1.27" layer="254" align="center-left"/>
 </element>
 <element name="J14" library="EurorackModularParts" package="3.5MM-JACK-SWITCH-13MM-NOHOLES" value="JACK" x="116.84" y="100.965" smashed="yes">
 <attribute name="DESC" value="Input D" x="116.84" y="100.965" size="1.27" layer="22" rot="SMR45" align="center"/>
-<attribute name="DESC" value="Input D" x="111.84" y="106.965" size="1.27" layer="254" align="center-left"/>
 </element>
 <element name="J15" library="EurorackModularParts" package="3.5MM-JACK-SWITCH-13MM-NOHOLES" value="JACK" x="127" y="98.425" smashed="yes">
 <attribute name="DESC" value="Difference D" x="127" y="98.425" size="1.27" layer="22" rot="SMR45" align="center"/>
-<attribute name="DESC" value="Difference D" x="122" y="104.425" size="1.27" layer="254" align="center-left"/>
 </element>
 <element name="J16" library="EurorackModularParts" package="3.5MM-JACK-SWITCH-13MM-NOHOLES" value="JACK" x="137.16" y="100.965" smashed="yes">
 <attribute name="DESC" value="Output D " x="137.16" y="100.965" size="1.27" layer="22" rot="SMR45" align="center"/>
-<attribute name="DESC" value="Output D " x="132.16" y="106.965" size="1.27" layer="254" align="center-left"/>
 </element>
 <element name="J2" library="EurorackModularParts" package="POWER_16_SHROUDED" value="POWERSHROUDED" x="76.2" y="16.51" smashed="yes" rot="MR90"/>
-<element name="J3" library="EurorackModularParts" package="3.5MM-JACK-SWITCH-13MM-NOHOLES" value="JACK" x="174.625" y="58.42" smashed="yes">
-<attribute name="DESC" value="Master Output" x="174.625" y="58.42" size="1.27" layer="22" rot="SMR45" align="center"/>
-<attribute name="DESC" value="Master Output" x="169.625" y="64.42" size="1.27" layer="254" align="center-left"/>
+<element name="J3" library="EurorackModularParts" package="3.5MM-JACK-SWITCH-13MM-NOHOLES" value="JACK" x="175.26" y="55.88" smashed="yes">
+<attribute name="DESC" value="Master Output" x="175.26" y="55.88" size="1.27" layer="22" rot="SMR45" align="center"/>
 </element>
 <element name="J4" library="EurorackModularParts" package="3.5MM-JACK-SWITCH-13MM-NOHOLES" value="JACK" x="45.72" y="100.965" smashed="yes">
 <attribute name="DESC" value="Input B" x="45.72" y="100.965" size="1.27" layer="22" rot="SMR45" align="center"/>
-<attribute name="DESC" value="Input B" x="40.72" y="106.965" size="1.27" layer="254" align="center-left"/>
 </element>
 <element name="J5" library="EurorackModularParts" package="3.5MM-JACK-SWITCH-13MM-NOHOLES" value="JACK" x="55.88" y="98.425" smashed="yes">
 <attribute name="DESC" value="Difference B" x="55.88" y="98.425" size="1.27" layer="22" rot="SMR45" align="center"/>
-<attribute name="DESC" value="Difference B" x="50.88" y="104.425" size="1.27" layer="254" align="center-left"/>
 </element>
 <element name="J6" library="EurorackModularParts" package="3.5MM-JACK-SWITCH-13MM-NOHOLES" value="JACK" x="10.16" y="100.965" smashed="yes">
 <attribute name="DESC" value="Input A" x="10.16" y="100.965" size="1.27" layer="22" rot="SMR45" align="center"/>
-<attribute name="DESC" value="Input A" x="5.16" y="106.965" size="1.27" layer="254" align="center-left"/>
 </element>
 <element name="J7" library="EurorackModularParts" package="3.5MM-JACK-SWITCH-13MM-NOHOLES" value="JACK" x="30.48" y="100.965" smashed="yes">
 <attribute name="DESC" value="Output A" x="30.48" y="100.965" size="1.27" layer="22" rot="SMR45" align="center"/>
-<attribute name="DESC" value="Output A" x="25.48" y="106.965" size="1.27" layer="254" align="center-left"/>
 </element>
 <element name="J8" library="EurorackModularParts" package="3.5MM-JACK-SWITCH-13MM-NOHOLES" value="JACK" x="20.32" y="98.425" smashed="yes">
 <attribute name="DESC" value="Difference A" x="20.32" y="98.425" size="1.27" layer="22" rot="SMR45" align="center"/>
-<attribute name="DESC" value="Difference A" x="15.32" y="104.425" size="1.27" layer="254" align="center-left"/>
 </element>
 <element name="J9" library="EurorackModularParts" package="3.5MM-JACK-SWITCH-13MM-NOHOLES" value="JACK" x="66.04" y="100.965" smashed="yes">
 <attribute name="DESC" value="Output B" x="66.04" y="100.965" size="1.27" layer="22" rot="SMR45" align="center"/>
-<attribute name="DESC" value="Output B" x="61.04" y="106.965" size="1.27" layer="254" align="center-left"/>
 </element>
 <element name="MUFF1:C1" library="adafruit" package="153CLV-0505" value="1uF" x="171.45" y="248.92" smashed="yes">
 <attribute name="NAME" x="168.71" y="251.9" size="1.27" layer="25"/>
@@ -1900,26 +1873,20 @@ design rules under a new name.</description>
 <attribute name="NAME" x="252.73" y="223.52" size="0.508" layer="25" ratio="11" align="center"/>
 <attribute name="VALUE" x="251.333" y="222.2025" size="0.508" layer="27" ratio="10"/>
 </element>
-<element name="MUFF1:R69" library="EurorackModularParts" package="ALPS_POT_SQUAREHOLES" value="100KB" x="116.84" y="78.74" smashed="yes">
-<attribute name="DESC" value="Volume" x="116.84" y="80.772" size="1.016" layer="21" rot="R180" align="center"/>
-<attribute name="DESC" value="Volume" x="116.84" y="86.36" size="1.778" layer="254" align="bottom-center"/>
-<attribute name="NAME" x="116.84" y="78.74" size="2.032" layer="25" ratio="10" rot="SR0" align="center"/>
-<attribute name="VALUE" x="116.84" y="76.2" size="1.27" layer="21" ratio="10" align="center"/>
-<attribute name="VALUE" x="116.84" y="76.835" size="1.27" layer="27" align="top-center"/>
+<element name="MUFF1:R69" library="EurorackModularParts" package="ALPS_POT_SQUAREHOLES" value="100KB" x="119.38" y="78.74" smashed="yes">
+<attribute name="DESC" value="Volume" x="119.38" y="80.772" size="1.016" layer="21" rot="R180" align="center"/>
+<attribute name="NAME" x="119.38" y="78.74" size="2.032" layer="25" ratio="10" rot="SR0" align="center"/>
+<attribute name="VALUE" x="119.38" y="76.2" size="1.27" layer="21" ratio="10" align="center"/>
 </element>
-<element name="MUFF1:R70" library="EurorackModularParts" package="ALPS_POT_SQUAREHOLES" value="100KB" x="116.84" y="33.02" smashed="yes">
-<attribute name="DESC" value="Tone" x="116.84" y="35.052" size="1.016" layer="21" rot="R180" align="center"/>
-<attribute name="DESC" value="Tone" x="116.84" y="40.64" size="1.778" layer="254" align="bottom-center"/>
-<attribute name="NAME" x="116.84" y="33.02" size="2.032" layer="25" ratio="10" rot="SR0" align="center"/>
-<attribute name="VALUE" x="116.84" y="30.48" size="1.27" layer="21" ratio="10" align="center"/>
-<attribute name="VALUE" x="116.84" y="31.115" size="1.27" layer="27" align="top-center"/>
+<element name="MUFF1:R70" library="EurorackModularParts" package="ALPS_POT_SQUAREHOLES" value="100KB" x="119.38" y="33.02" smashed="yes">
+<attribute name="DESC" value="Tone" x="119.38" y="35.052" size="1.016" layer="21" rot="R180" align="center"/>
+<attribute name="NAME" x="119.38" y="33.02" size="2.032" layer="25" ratio="10" rot="SR0" align="center"/>
+<attribute name="VALUE" x="119.38" y="30.48" size="1.27" layer="21" ratio="10" align="center"/>
 </element>
 <element name="MUFF1:R71" library="EurorackModularParts" package="ALPS_POT_SQUAREHOLES" value="100KB" x="116.84" y="55.88" smashed="yes">
 <attribute name="DESC" value="Distortion" x="116.84" y="57.912" size="1.016" layer="21" rot="R180" align="center"/>
-<attribute name="DESC" value="Distortion" x="116.84" y="63.5" size="1.778" layer="254" align="bottom-center"/>
 <attribute name="NAME" x="116.84" y="55.88" size="2.032" layer="25" ratio="10" rot="SR0" align="center"/>
 <attribute name="VALUE" x="116.84" y="53.34" size="1.27" layer="21" ratio="10" align="center"/>
-<attribute name="VALUE" x="116.84" y="53.975" size="1.27" layer="27" align="top-center"/>
 </element>
 <element name="MUFF1:T1" library="transistor-neu-to92" package="SOT23-BEC" value="2n3904" x="148.59" y="247.65" smashed="yes">
 <attribute name="NAME" x="146.685" y="249.555" size="1.27" layer="25"/>
@@ -1995,26 +1962,20 @@ design rules under a new name.</description>
 <attribute name="POPULARITY" value="0" x="-92.71" y="0" size="1.778" layer="27" rot="R270" display="off"/>
 <attribute name="VALUE" x="-95.885" y="1.905" size="1.27" layer="27" rot="R270"/>
 </element>
-<element name="RAT1:R29" library="EurorackModularParts" package="ALPS_POT_SQUAREHOLES" value="100KA" x="66.04" y="78.74" smashed="yes">
-<attribute name="DESC" value="Volume" x="66.04" y="80.772" size="1.016" layer="21" rot="R180" align="center"/>
-<attribute name="DESC" value="Volume" x="66.04" y="86.36" size="1.778" layer="254" align="bottom-center"/>
-<attribute name="NAME" x="66.04" y="78.74" size="2.032" layer="25" ratio="10" rot="SR0" align="center"/>
-<attribute name="VALUE" x="66.04" y="76.2" size="1.27" layer="21" ratio="10" align="center"/>
-<attribute name="VALUE" x="66.04" y="76.835" size="1.27" layer="27" align="top-center"/>
+<element name="RAT1:R29" library="EurorackModularParts" package="ALPS_POT_SQUAREHOLES" value="100KA" x="63.5" y="78.74" smashed="yes">
+<attribute name="DESC" value="Volume" x="63.5" y="80.772" size="1.016" layer="21" rot="R180" align="center"/>
+<attribute name="NAME" x="63.5" y="78.74" size="2.032" layer="25" ratio="10" rot="SR0" align="center"/>
+<attribute name="VALUE" x="63.5" y="76.2" size="1.27" layer="21" ratio="10" align="center"/>
 </element>
-<element name="RAT1:R30" library="EurorackModularParts" package="ALPS_POT_SQUAREHOLES" value="100KA" x="66.04" y="33.02" smashed="yes">
-<attribute name="DESC" value="Tone" x="66.04" y="35.052" size="1.016" layer="21" rot="R180" align="center"/>
-<attribute name="DESC" value="Tone" x="66.04" y="40.64" size="1.778" layer="254" align="bottom-center"/>
-<attribute name="NAME" x="66.04" y="33.02" size="2.032" layer="25" ratio="10" rot="SR0" align="center"/>
-<attribute name="VALUE" x="66.04" y="30.48" size="1.27" layer="21" ratio="10" align="center"/>
-<attribute name="VALUE" x="66.04" y="31.115" size="1.27" layer="27" align="top-center"/>
+<element name="RAT1:R30" library="EurorackModularParts" package="ALPS_POT_SQUAREHOLES" value="100KA" x="63.5" y="33.02" smashed="yes">
+<attribute name="DESC" value="Tone" x="63.5" y="35.052" size="1.016" layer="21" rot="R180" align="center"/>
+<attribute name="NAME" x="63.5" y="33.02" size="2.032" layer="25" ratio="10" rot="SR0" align="center"/>
+<attribute name="VALUE" x="63.5" y="30.48" size="1.27" layer="21" ratio="10" align="center"/>
 </element>
 <element name="RAT1:R31" library="EurorackModularParts" package="ALPS_POT_SQUAREHOLES" value="100KA" x="66.04" y="55.88" smashed="yes">
 <attribute name="DESC" value="Distortion" x="66.04" y="57.912" size="1.016" layer="21" rot="R180" align="center"/>
-<attribute name="DESC" value="Distortion" x="66.04" y="63.5" size="1.778" layer="254" align="bottom-center"/>
 <attribute name="NAME" x="66.04" y="55.88" size="2.032" layer="25" ratio="10" rot="SR0" align="center"/>
 <attribute name="VALUE" x="66.04" y="53.34" size="1.27" layer="21" ratio="10" align="center"/>
-<attribute name="VALUE" x="66.04" y="53.975" size="1.27" layer="27" align="top-center"/>
 </element>
 <element name="RAT1:R32" library="OPL" package="R0603" value="1M" x="-77.47" y="-6.35" smashed="yes" rot="R90">
 <attribute name="NAME" x="-77.47" y="-6.35" size="0.508" layer="25" ratio="11" rot="R90" align="center"/>
@@ -2054,7 +2015,6 @@ design rules under a new name.</description>
 </element>
 <element name="U$13" library="FenixBase" package="POWERTESTPAD" value="VOLTAGETESTPAD" x="91.44" y="35.56" smashed="yes">
 <attribute name="DESC" value="12V" x="91.44" y="33.81" size="0.5" layer="21" align="top-center"/>
-<attribute name="DESC" value="12V" x="91.44" y="33.81" size="0.5" layer="22" rot="MR0" align="top-center"/>
 </element>
 <element name="RAT1:C28" library="adafruit" package="153CLV-0505" value="1uF" x="-92.71" y="13.335" smashed="yes" rot="R270">
 <attribute name="NAME" x="-89.73" y="16.075" size="1.27" layer="25" rot="R270"/>
@@ -2096,15 +2056,12 @@ design rules under a new name.</description>
 </element>
 <element name="J17" library="EurorackModularParts" package="3.5MM-JACK-SWITCH-13MM-NOHOLES" value="JACK" x="152.4" y="100.965" smashed="yes">
 <attribute name="DESC" value="Input E" x="152.4" y="100.965" size="1.27" layer="22" rot="SMR45" align="center"/>
-<attribute name="DESC" value="Input E" x="147.4" y="106.965" size="1.27" layer="254" align="center-left"/>
 </element>
 <element name="J18" library="EurorackModularParts" package="3.5MM-JACK-SWITCH-13MM-NOHOLES" value="JACK" x="162.56" y="98.425" smashed="yes">
 <attribute name="DESC" value="Difference E" x="162.56" y="98.425" size="1.27" layer="22" rot="SMR45" align="center"/>
-<attribute name="DESC" value="Difference E" x="157.56" y="104.425" size="1.27" layer="254" align="center-left"/>
 </element>
 <element name="J19" library="EurorackModularParts" package="3.5MM-JACK-SWITCH-13MM-NOHOLES" value="JACK" x="172.72" y="100.965" smashed="yes">
 <attribute name="DESC" value="Output E" x="172.72" y="100.965" size="1.27" layer="22" rot="SMR45" align="center"/>
-<attribute name="DESC" value="Output E" x="167.72" y="106.965" size="1.27" layer="254" align="center-left"/>
 </element>
 <element name="IC2" library="EurorackModularParts" package="TSSOP14" value="TL074TSSOP14" x="207.01" y="154.94" smashed="yes">
 <attribute name="NAME" x="204.41" y="154.94" size="1.016" layer="25" ratio="10" rot="R90" align="bottom-center"/>
@@ -2228,19 +2185,15 @@ design rules under a new name.</description>
 </element>
 <element name="U$41" library="FenixBase" package="POWERTESTPAD" value="VOLTAGETESTPAD" x="96.52" y="43.18" smashed="yes">
 <attribute name="DESC" value="-12V" x="96.52" y="41.43" size="0.5" layer="21" align="top-center"/>
-<attribute name="DESC" value="-12V" x="96.52" y="41.43" size="0.5" layer="22" rot="MR0" align="top-center"/>
 </element>
 <element name="U$42" library="FenixBase" package="POWERTESTPAD" value="VOLTAGETESTPAD" x="88.9" y="35.56" smashed="yes">
 <attribute name="DESC" value="9V" x="88.9" y="33.81" size="0.5" layer="21" align="top-center"/>
-<attribute name="DESC" value="9V" x="88.9" y="33.81" size="0.5" layer="22" rot="MR0" align="top-center"/>
 </element>
 <element name="U$43" library="FenixBase" package="POWERTESTPAD" value="VOLTAGETESTPAD" x="83.82" y="35.56" smashed="yes">
 <attribute name="DESC" value="GND" x="83.82" y="33.81" size="0.5" layer="21" align="top-center"/>
-<attribute name="DESC" value="GND" x="83.82" y="33.81" size="0.5" layer="22" rot="MR0" align="top-center"/>
 </element>
 <element name="U$44" library="FenixBase" package="POWERTESTPAD" value="VOLTAGETESTPAD" x="86.36" y="35.56" smashed="yes">
 <attribute name="DESC" value="4.5V" x="86.36" y="33.81" size="0.5" layer="21" align="top-center"/>
-<attribute name="DESC" value="4.5V" x="86.36" y="33.81" size="0.5" layer="22" rot="MR0" align="top-center"/>
 </element>
 <element name="U$48" library="FenixBase" package="GROUNDLOOP" value="GNDLOOP" x="177.8" y="5.08" smashed="yes" rot="R180"/>
 <element name="U$49" library="FenixBase" package="GROUNDLOOP" value="GNDLOOP" x="177.8" y="97.79" smashed="yes"/>
@@ -2373,10 +2326,8 @@ design rules under a new name.</description>
 </element>
 <element name="R69" library="EurorackModularParts" package="ALPS_POT_SQUAREHOLES" value="100K Linear" x="20.32" y="43.18" smashed="yes">
 <attribute name="DESC" value="Drive" x="20.32" y="45.212" size="1.016" layer="21" rot="R180" align="center"/>
-<attribute name="DESC" value="Drive" x="20.32" y="50.8" size="1.778" layer="254" align="bottom-center"/>
 <attribute name="NAME" x="20.32" y="43.18" size="2.032" layer="25" ratio="10" rot="SR0" align="center"/>
 <attribute name="VALUE" x="20.32" y="40.64" size="1.27" layer="21" ratio="10" align="center"/>
-<attribute name="VALUE" x="20.32" y="41.275" size="1.27" layer="27" align="top-center"/>
 </element>
 <element name="C13" library="OPL" package="C0603" value="100n" x="-7.62" y="330.2" smashed="yes">
 <attribute name="NAME" x="-7.62" y="330.2" size="0.508" layer="25" ratio="11" align="center"/>
@@ -2408,7 +2359,6 @@ design rules under a new name.</description>
 </element>
 <element name="J20" library="EurorackModularParts" package="3.5MM-JACK-SWITCH-13MM-NOHOLES" value="JACK" x="6.985" y="30.48" smashed="yes">
 <attribute name="DESC" value="Master Input" x="6.985" y="30.48" size="1.27" layer="22" rot="SMR45" align="center"/>
-<attribute name="DESC" value="Master Input" x="1.985" y="36.48" size="1.27" layer="254" align="center-left"/>
 </element>
 <element name="U$68" library="SparkFun-Connectors" package="2X3-SHROUDED" value="HEADPHONE" x="15.875" y="55.245" smashed="yes" rot="MR180">
 <attribute name="NAME" x="12.954" y="63.627" size="0.4064" layer="104" rot="MR180"/>
@@ -2424,7 +2374,6 @@ design rules under a new name.</description>
 </element>
 <element name="J21" library="EurorackModularParts" package="3.5MM-JACK-SWITCH-13MM-NOHOLES" value="JACK" x="6.985" y="43.18" smashed="yes">
 <attribute name="DESC" value="Drive CV" x="6.985" y="43.18" size="1.27" layer="22" rot="SMR45" align="center"/>
-<attribute name="DESC" value="Drive CV" x="1.985" y="49.18" size="1.27" layer="254" align="center-left"/>
 </element>
 <element name="U$70" library="adafruit" package="TC33X" value="100k" x="-20.32" y="307.34" smashed="yes">
 <attribute name="NAME" x="-22.225" y="305.435" size="1.27" layer="25" rot="R90"/>
@@ -2487,12 +2436,10 @@ design rules under a new name.</description>
 <attribute name="NAME" x="-43.18" y="330.2" size="0.508" layer="25" ratio="11" align="center"/>
 <attribute name="VALUE" x="-44.577" y="328.8825" size="0.508" layer="27" ratio="10"/>
 </element>
-<element name="R109" library="EurorackModularParts" package="ALPS_POT_SQUAREHOLES" value="" x="162.56" y="71.12" smashed="yes">
-<attribute name="DESC" value="Post-gain" x="162.56" y="73.152" size="1.016" layer="21" rot="R180" align="center"/>
-<attribute name="DESC" value="Post-gain" x="162.56" y="78.74" size="1.778" layer="254" align="bottom-center"/>
-<attribute name="NAME" x="162.56" y="71.12" size="2.032" layer="25" ratio="10" rot="SR0" align="center"/>
-<attribute name="VALUE" x="162.56" y="68.58" size="1.27" layer="21" ratio="10" align="center"/>
-<attribute name="VALUE" x="162.56" y="69.215" size="1.27" layer="27" align="top-center"/>
+<element name="R109" library="EurorackModularParts" package="ALPS_POT_SQUAREHOLES" value="" x="162.56" y="68.58" smashed="yes">
+<attribute name="DESC" value="Post-gain" x="162.56" y="70.612" size="1.016" layer="21" rot="R180" align="center"/>
+<attribute name="NAME" x="162.56" y="68.58" size="2.032" layer="25" ratio="10" rot="SR0" align="center"/>
+<attribute name="VALUE" x="162.56" y="66.04" size="1.27" layer="21" ratio="10" align="center"/>
 </element>
 <element name="U$111" library="adafruit" package="TC33X" value="100k" x="-33.02" y="358.14" smashed="yes">
 <attribute name="NAME" x="-34.925" y="356.235" size="1.27" layer="25" rot="R90"/>
@@ -2516,17 +2463,13 @@ design rules under a new name.</description>
 </element>
 <element name="R49" library="EurorackModularParts" package="ALPS_POT_SQUAREHOLES" value="100KB Lin" x="142.24" y="60.96" smashed="yes">
 <attribute name="DESC" value="Mod" x="142.24" y="62.992" size="1.016" layer="21" rot="R180" align="center"/>
-<attribute name="DESC" value="Mod" x="142.24" y="68.58" size="1.778" layer="254" align="bottom-center"/>
 <attribute name="NAME" x="142.24" y="60.96" size="2.032" layer="25" ratio="10" rot="SR0" align="center"/>
 <attribute name="VALUE" x="142.24" y="58.42" size="1.27" layer="21" ratio="10" align="center"/>
-<attribute name="VALUE" x="142.24" y="59.055" size="1.27" layer="27" align="top-center"/>
 </element>
-<element name="R50" library="EurorackModularParts" package="ALPS_POT_SQUAREHOLES" value="10KB Lin" x="142.24" y="40.64" smashed="yes">
-<attribute name="DESC" value="Level" x="142.24" y="42.672" size="1.016" layer="21" rot="R180" align="center"/>
-<attribute name="DESC" value="Level" x="142.24" y="48.26" size="1.778" layer="254" align="bottom-center"/>
-<attribute name="NAME" x="142.24" y="40.64" size="2.032" layer="25" ratio="10" rot="SR0" align="center"/>
-<attribute name="VALUE" x="142.24" y="38.1" size="1.27" layer="21" ratio="10" align="center"/>
-<attribute name="VALUE" x="142.24" y="38.735" size="1.27" layer="27" align="top-center"/>
+<element name="R50" library="EurorackModularParts" package="ALPS_POT_SQUAREHOLES" value="10KB Lin" x="144.78" y="40.64" smashed="yes">
+<attribute name="DESC" value="Level" x="144.78" y="42.672" size="1.016" layer="21" rot="R180" align="center"/>
+<attribute name="NAME" x="144.78" y="40.64" size="2.032" layer="25" ratio="10" rot="SR0" align="center"/>
+<attribute name="VALUE" x="144.78" y="38.1" size="1.27" layer="21" ratio="10" align="center"/>
 </element>
 <element name="IC8" library="EurorackModularParts" package="TSSOP14" value="TL074TSSOP14" x="-35.56" y="198.12" smashed="yes">
 <attribute name="NAME" x="-38.16" y="198.12" size="1.016" layer="25" ratio="10" rot="R90" align="bottom-center"/>
@@ -2790,13 +2733,11 @@ design rules under a new name.</description>
 <attribute name="NAME" x="-52.705" y="170.815" size="1.27" layer="25" rot="R90"/>
 <attribute name="VALUE" x="-47.625" y="170.815" size="1.27" layer="27" rot="R90"/>
 </element>
-<element name="J22" library="EurorackModularParts" package="3.5MM-JACK-SWITCH-13MM-NOHOLES" value="JACK" x="137.16" y="81.28" smashed="yes">
-<attribute name="DESC" value="Mod" x="137.16" y="81.28" size="1.27" layer="22" rot="SMR45" align="center"/>
-<attribute name="DESC" value="Mod" x="132.16" y="87.28" size="1.27" layer="254" align="center-left"/>
+<element name="J22" library="EurorackModularParts" package="3.5MM-JACK-SWITCH-13MM-NOHOLES" value="JACK" x="144.78" y="81.28" smashed="yes">
+<attribute name="DESC" value="Mod" x="144.78" y="81.28" size="1.27" layer="22" rot="SMR45" align="center"/>
 </element>
-<element name="J23" library="EurorackModularParts" package="3.5MM-JACK-SWITCH-13MM-NOHOLES" value="JACK" x="147.32" y="81.28" smashed="yes">
-<attribute name="DESC" value="Bias" x="147.32" y="81.28" size="1.27" layer="22" rot="SMR45" align="center"/>
-<attribute name="DESC" value="Bias" x="142.32" y="87.28" size="1.27" layer="254" align="center-left"/>
+<element name="J23" library="EurorackModularParts" package="3.5MM-JACK-SWITCH-13MM-NOHOLES" value="JACK" x="154.94" y="81.28" smashed="yes">
+<attribute name="DESC" value="Bias" x="154.94" y="81.28" size="1.27" layer="22" rot="SMR45" align="center"/>
 </element>
 <element name="R87" library="OPL" package="R0603" value="1k" x="-33.02" y="152.4" smashed="yes">
 <attribute name="NAME" x="-33.02" y="152.4" size="0.508" layer="25" ratio="11" align="center"/>
@@ -2869,24 +2810,20 @@ design rules under a new name.</description>
 <attribute name="NAME" x="-30.48" y="20.955" size="0.508" layer="25" ratio="11" align="center"/>
 <attribute name="VALUE" x="-31.877" y="19.6375" size="0.508" layer="27" ratio="10"/>
 </element>
-<element name="R114" library="EurorackModularParts" package="ALPS_POT_SQUAREHOLES" value="10k" x="162.56" y="45.72" smashed="yes">
-<attribute name="DESC" value="Wet/Dry" x="162.56" y="47.752" size="1.016" layer="21" rot="R180" align="center"/>
-<attribute name="DESC" value="Wet/Dry" x="162.56" y="53.34" size="1.778" layer="254" align="bottom-center"/>
-<attribute name="NAME" x="162.56" y="45.72" size="2.032" layer="25" ratio="10" rot="SR0" align="center"/>
-<attribute name="VALUE" x="162.56" y="43.18" size="1.27" layer="21" ratio="10" align="center"/>
-<attribute name="VALUE" x="162.56" y="43.815" size="1.27" layer="27" align="top-center"/>
+<element name="R114" library="EurorackModularParts" package="ALPS_POT_SQUAREHOLES" value="10k" x="162.56" y="43.18" smashed="yes">
+<attribute name="DESC" value="Wet/Dry" x="162.56" y="45.212" size="1.016" layer="21" rot="R180" align="center"/>
+<attribute name="NAME" x="162.56" y="43.18" size="2.032" layer="25" ratio="10" rot="SR0" align="center"/>
+<attribute name="VALUE" x="162.56" y="40.64" size="1.27" layer="21" ratio="10" align="center"/>
 </element>
 <element name="R115" library="OPL" package="R0603" value="14k" x="-101.6" y="-50.8" smashed="yes">
 <attribute name="NAME" x="-101.6" y="-50.8" size="0.508" layer="25" ratio="11" align="center"/>
 <attribute name="VALUE" x="-102.997" y="-52.1175" size="0.508" layer="27" ratio="10"/>
 </element>
-<element name="J25" library="EurorackModularParts" package="3.5MM-JACK-SWITCH-13MM-NOHOLES" value="JACK" x="174.625" y="45.72" smashed="yes">
-<attribute name="DESC" value="Wet/Dry" x="174.625" y="45.72" size="1.27" layer="22" rot="SMR45" align="center"/>
-<attribute name="DESC" value="Wet/Dry" x="169.625" y="51.72" size="1.27" layer="254" align="center-left"/>
+<element name="J25" library="EurorackModularParts" package="3.5MM-JACK-SWITCH-13MM-NOHOLES" value="JACK" x="175.26" y="43.18" smashed="yes">
+<attribute name="DESC" value="Wet/Dry" x="175.26" y="43.18" size="1.27" layer="22" rot="SMR45" align="center"/>
 </element>
-<element name="J26" library="EurorackModularParts" package="3.5MM-JACK-SWITCH-13MM-NOHOLES" value="JACK" x="174.625" y="30.48" smashed="yes">
-<attribute name="DESC" value="Cross Output" x="174.625" y="30.48" size="1.27" layer="22" rot="SMR45" align="center"/>
-<attribute name="DESC" value="Cross Output" x="169.625" y="36.48" size="1.27" layer="254" align="center-left"/>
+<element name="J26" library="EurorackModularParts" package="3.5MM-JACK-SWITCH-13MM-NOHOLES" value="JACK" x="175.26" y="30.48" smashed="yes">
+<attribute name="DESC" value="Cross Output" x="175.26" y="30.48" size="1.27" layer="22" rot="SMR45" align="center"/>
 </element>
 <element name="D15" library="FenixBase" package="SOT-323" value="BAS16W" x="-20.32" y="81.28" smashed="yes">
 <attribute name="NAME" x="-20.32" y="81.28" size="0.508" layer="25" align="center"/>
@@ -2901,13 +2838,11 @@ design rules under a new name.</description>
 <attribute name="NAME" x="26.67" y="77.47" size="0.762" layer="25" ratio="10" rot="SR90" align="center"/>
 <attribute name="VALUE" x="26.892" y="76.505" size="0.635" layer="27" ratio="10" rot="R90"/>
 </element>
-<element name="J1" library="EurorackModularParts" package="3.5MM-JACK-SWITCH-13MM-NOHOLES" value="JACK" x="175.26" y="68.58" smashed="yes">
-<attribute name="DESC" value="VCA2in" x="175.26" y="68.58" size="1.27" layer="22" rot="SMR45" align="center"/>
-<attribute name="DESC" value="Master Input" x="170.26" y="74.58" size="1.27" layer="254" align="center-left"/>
+<element name="J1" library="EurorackModularParts" package="3.5MM-JACK-SWITCH-13MM-NOHOLES" value="JACK" x="175.26" y="81.28" smashed="yes">
+<attribute name="DESC" value="VCA2in" x="175.26" y="81.28" size="1.27" layer="22" rot="SMR45" align="center"/>
 </element>
 <element name="J24" library="EurorackModularParts" package="3.5MM-JACK-SWITCH-13MM-NOHOLES" value="JACK" x="6.985" y="55.88" smashed="yes">
 <attribute name="DESC" value="Envelope Out" x="6.985" y="55.88" size="1.27" layer="22" rot="SMR45" align="center"/>
-<attribute name="DESC" value="Master Input" x="1.985" y="61.88" size="1.27" layer="254" align="center-left"/>
 </element>
 </elements>
 <signals>
@@ -3107,14 +3042,14 @@ design rules under a new name.</description>
 <contactref element="J1" pad="RING_T@3" route="any" routetag="G$1.RING"/>
 <contactref element="J24" pad="RING_B@1" route="any" routetag="G$1.RING"/>
 <contactref element="J24" pad="RING_T@3" route="any" routetag="G$1.RING"/>
-<wire x1="171.56" y1="68.58" x2="170.925" y2="81.28" width="0" layer="19" extent="16-16"/>
-<wire x1="170.925" y1="58.42" x2="171.56" y2="68.58" width="0" layer="19" extent="16-16"/>
-<wire x1="160.06" y1="63.62" x2="170.925" y2="58.42" width="0" layer="19" extent="16-16"/>
-<wire x1="170.925" y1="45.72" x2="170.925" y2="58.42" width="0" layer="19" extent="16-16"/>
-<wire x1="178.325" y1="45.72" x2="170.925" y2="45.72" width="0" layer="19" extent="1-16"/>
-<wire x1="160.06" y1="38.22" x2="170.925" y2="45.72" width="0" layer="19" extent="16-16"/>
-<wire x1="170.925" y1="30.48" x2="160.06" y2="38.22" width="0" layer="19" extent="16-16"/>
-<wire x1="176.53" y1="97.79" x2="170.925" y2="81.28" width="0" layer="19" extent="16-16"/>
+<wire x1="171.56" y1="81.28" x2="171.56" y2="68.58" width="0" layer="19" extent="16-16"/>
+<wire x1="171.56" y1="55.88" x2="171.56" y2="81.28" width="0" layer="19" extent="16-16"/>
+<wire x1="160.06" y1="61.08" x2="171.56" y2="55.88" width="0" layer="19" extent="16-16"/>
+<wire x1="171.56" y1="43.18" x2="171.56" y2="55.88" width="0" layer="19" extent="16-16"/>
+<wire x1="178.96" y1="43.18" x2="171.56" y2="43.18" width="0" layer="19" extent="1-16"/>
+<wire x1="160.06" y1="35.68" x2="171.56" y2="43.18" width="0" layer="19" extent="16-16"/>
+<wire x1="171.56" y1="30.48" x2="160.06" y2="35.68" width="0" layer="19" extent="16-16"/>
+<wire x1="176.53" y1="97.79" x2="171.56" y2="68.58" width="0" layer="19" extent="16-16"/>
 <wire x1="179.07" y1="97.79" x2="176.53" y2="97.79" width="0" layer="19" extent="1-1"/>
 <wire x1="169.02" y1="100.965" x2="176.53" y2="97.79" width="0" layer="19" extent="16-16"/>
 <wire x1="158.86" y1="98.425" x2="169.02" y2="100.965" width="0" layer="19" extent="16-16"/>
@@ -3140,7 +3075,7 @@ design rules under a new name.</description>
 <wire x1="34.29" y1="69.977" x2="27.32" y2="70.165" width="0" layer="19" extent="1-1"/>
 <wire x1="36.83" y1="71.12" x2="34.29" y2="69.977" width="0" layer="19" extent="1-1"/>
 <wire x1="36.83" y1="68.58" x2="36.83" y2="71.12" width="0" layer="19" extent="1-1"/>
-<wire x1="38.14" y1="73.78" x2="36.83" y2="71.12" width="0" layer="19" extent="1-1"/>
+<wire x1="30.52" y1="73.78" x2="36.83" y2="71.12" width="0" layer="19" extent="1-1"/>
 <wire x1="34.29" y1="66.167" x2="36.83" y2="68.58" width="0" layer="19" extent="1-1"/>
 <wire x1="26.162" y1="55.88" x2="34.29" y2="66.167" width="0" layer="19" extent="1-1"/>
 <wire x1="21.463" y1="55.88" x2="26.162" y2="55.88" width="0" layer="19" extent="1-1"/>
@@ -3155,18 +3090,18 @@ design rules under a new name.</description>
 <wire x1="3.285" y1="30.48" x2="3.285" y2="43.18" width="0" layer="19" extent="16-16"/>
 <wire x1="10.685" y1="30.48" x2="3.285" y2="30.48" width="0" layer="19" extent="16-16"/>
 <wire x1="17.82" y1="35.68" x2="10.685" y2="30.48" width="0" layer="19" extent="16-16"/>
-<wire x1="151.02" y1="81.28" x2="158.86" y2="98.425" width="0" layer="19" extent="16-16"/>
-<wire x1="143.62" y1="81.28" x2="151.02" y2="81.28" width="0" layer="19" extent="16-16"/>
-<wire x1="133.46" y1="81.28" x2="143.62" y2="81.28" width="0" layer="19" extent="16-16"/>
-<wire x1="139.74" y1="33.14" x2="160.06" y2="38.22" width="0" layer="19" extent="1-1"/>
-<wire x1="143.51" y1="15.24" x2="139.74" y2="33.14" width="0" layer="19" extent="1-1"/>
+<wire x1="158.64" y1="81.28" x2="158.86" y2="98.425" width="0" layer="19" extent="16-16"/>
+<wire x1="151.24" y1="81.28" x2="158.64" y2="81.28" width="0" layer="19" extent="16-16"/>
+<wire x1="141.08" y1="81.28" x2="151.24" y2="81.28" width="0" layer="19" extent="16-16"/>
+<wire x1="142.28" y1="33.14" x2="160.06" y2="35.68" width="0" layer="19" extent="1-1"/>
+<wire x1="143.51" y1="15.24" x2="142.28" y2="33.14" width="0" layer="19" extent="1-1"/>
 <wire x1="146.05" y1="5.08" x2="143.51" y2="15.24" width="0" layer="19" extent="1-1"/>
-<wire x1="139.74" y1="53.46" x2="139.74" y2="33.14" width="0" layer="19" extent="1-1"/>
-<wire x1="114.34" y1="71.24" x2="133.46" y2="81.28" width="0" layer="19" extent="16-16"/>
+<wire x1="139.74" y1="53.46" x2="142.28" y2="33.14" width="0" layer="19" extent="1-1"/>
+<wire x1="116.88" y1="71.24" x2="141.08" y2="81.28" width="0" layer="19" extent="16-16"/>
 <wire x1="3.81" y1="5.08" x2="3.285" y2="30.48" width="0" layer="19" extent="16-16"/>
 <wire x1="6.35" y1="5.08" x2="3.81" y2="5.08" width="0" layer="19" extent="1-1"/>
-<wire x1="63.54" y1="71.24" x2="38.14" y2="73.78" width="0" layer="19" extent="1-1"/>
-<wire x1="176.53" y1="5.08" x2="170.925" y2="30.48" width="0" layer="19" extent="16-16"/>
+<wire x1="61" y1="71.24" x2="30.52" y2="73.78" width="0" layer="19" extent="1-1"/>
+<wire x1="176.53" y1="5.08" x2="171.56" y2="30.48" width="0" layer="19" extent="16-16"/>
 <wire x1="179.07" y1="5.08" x2="176.53" y2="5.08" width="0" layer="19" extent="1-1"/>
 <wire x1="-21.082" y1="76.2" x2="3.285" y2="55.88" width="0" layer="19" extent="1-16"/>
 <wire x1="-42.84" y1="88.9" x2="-21.082" y2="76.2" width="0" layer="19" extent="1-1"/>
@@ -3366,8 +3301,8 @@ design rules under a new name.</description>
 <wire x1="32.385" y1="89.535" x2="-10.795" y2="75.8222" width="0" layer="19" extent="1-1"/>
 <wire x1="86.1" y1="32.74" x2="36.83" y2="15.24" width="0" layer="19" extent="1-1"/>
 <wire x1="91.44" y1="34.81" x2="86.1" y2="32.74" width="0" layer="19" extent="1-16"/>
-<wire x1="144.82" y1="33.14" x2="91.44" y2="34.81" width="0" layer="19" extent="16-16"/>
-<wire x1="233.68" y1="36.4522" x2="144.82" y2="33.14" width="0" layer="19" extent="1-1"/>
+<wire x1="147.36" y1="33.14" x2="91.44" y2="34.81" width="0" layer="19" extent="16-16"/>
+<wire x1="233.68" y1="36.4522" x2="147.36" y2="33.14" width="0" layer="19" extent="1-1"/>
 <wire x1="231.902" y1="7.62" x2="233.68" y2="36.4522" width="0" layer="19" extent="1-1"/>
 <wire x1="236.982" y1="113.03" x2="233.68" y2="36.4522" width="0" layer="19" extent="1-1"/>
 <wire x1="207.01" y1="152.0222" x2="236.982" y2="113.03" width="0" layer="19" extent="1-1"/>
@@ -3539,16 +3474,16 @@ design rules under a new name.</description>
 <contactref element="DIST+1:R24" pad="P$3"/>
 <contactref element="DIST+1:R22" pad="P$3"/>
 <contactref element="DIST+1:JP1" pad="2"/>
-<wire x1="28.575" y1="78.867" x2="43.22" y2="73.78" width="0" layer="19" extent="1-1"/>
+<wire x1="28.575" y1="78.867" x2="35.6" y2="73.78" width="0" layer="19" extent="1-1"/>
 <wire x1="29.845" y1="81.915" x2="28.575" y2="78.867" width="0" layer="19" extent="1-1"/>
-<wire x1="43.22" y1="33.14" x2="43.22" y2="73.78" width="0" layer="19" extent="1-1"/>
+<wire x1="40.68" y1="33.14" x2="35.6" y2="73.78" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="DIST+1:N$36">
 <contactref element="DIST+1:R22" pad="P$2"/>
 <contactref element="DIST+1:R22" pad="P$1"/>
 <contactref element="DIST+1:R28" pad="1"/>
-<wire x1="38.14" y1="33.14" x2="32.385" y2="77.343" width="0" layer="19" extent="1-1"/>
-<wire x1="40.64" y1="33.14" x2="38.14" y2="33.14" width="0" layer="19" extent="1-1"/>
+<wire x1="35.6" y1="33.14" x2="32.385" y2="77.343" width="0" layer="19" extent="1-1"/>
+<wire x1="38.1" y1="33.14" x2="35.6" y2="33.14" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="DIST+1:N$81">
 <contactref element="DIST+1:IC5" pad="7"/>
@@ -3640,13 +3575,13 @@ design rules under a new name.</description>
 <contactref element="RAT1:D1" pad="CATHODE"/>
 <wire x1="-102.87" y1="-14.29" x2="-105.395" y2="-14.29" width="0" layer="19" extent="1-1"/>
 <wire x1="-104.14" y1="-2.667" x2="-105.395" y2="-14.29" width="0" layer="19" extent="1-1"/>
-<wire x1="63.54" y1="25.52" x2="-104.14" y2="-2.667" width="0" layer="19" extent="1-1"/>
-<wire x1="66.04" y1="25.52" x2="63.54" y2="25.52" width="0" layer="19" extent="1-1"/>
+<wire x1="61" y1="25.52" x2="-104.14" y2="-2.667" width="0" layer="19" extent="1-1"/>
+<wire x1="63.5" y1="25.52" x2="61" y2="25.52" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="RAT1:N$46">
 <contactref element="RAT1:R30" pad="P$3"/>
 <contactref element="RAT1:R38" pad="1"/>
-<wire x1="-77.343" y1="-2.54" x2="68.62" y2="25.52" width="0" layer="19" extent="1-1"/>
+<wire x1="-77.343" y1="-2.54" x2="66.08" y2="25.52" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="RAT1:N$49">
 <contactref element="RAT1:R38" pad="2"/>
@@ -3672,7 +3607,7 @@ design rules under a new name.</description>
 <signal name="RAT1:N$52">
 <contactref element="RAT1:R29" pad="P$3"/>
 <contactref element="RAT1:C28" pad="-"/>
-<wire x1="-92.71" y1="15.535" x2="68.62" y2="71.24" width="0" layer="19" extent="1-1"/>
+<wire x1="-92.71" y1="15.535" x2="66.08" y2="71.24" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="FUZZFACE1:N$54">
 <contactref element="FUZZFACE1:R41" pad="2"/>
@@ -3851,19 +3786,19 @@ design rules under a new name.</description>
 <contactref element="MUFF1:R70" pad="P$1"/>
 <contactref element="MUFF1:C55" pad="2"/>
 <wire x1="201.422" y1="261.62" x2="42.672" y2="200.66" width="0" layer="19" extent="1-1"/>
-<wire x1="114.34" y1="25.52" x2="42.672" y2="200.66" width="0" layer="19" extent="1-1"/>
+<wire x1="116.88" y1="25.52" x2="42.672" y2="200.66" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="MUFF1:N$75">
 <contactref element="MUFF1:R70" pad="P$3"/>
 <contactref element="MUFF1:C52" pad="2"/>
 <contactref element="MUFF1:R64" pad="1"/>
-<wire x1="119.42" y1="25.52" x2="36.068" y2="200.66" width="0" layer="19" extent="1-1"/>
+<wire x1="121.96" y1="25.52" x2="36.068" y2="200.66" width="0" layer="19" extent="1-1"/>
 <wire x1="216.662" y1="261.62" x2="36.068" y2="200.66" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="MUFF1:N$73">
 <contactref element="MUFF1:R70" pad="P$2"/>
 <contactref element="MUFF1:C53" pad="1"/>
-<wire x1="116.84" y1="25.52" x2="212.598" y2="238.76" width="0" layer="19" extent="1-1"/>
+<wire x1="119.38" y1="25.52" x2="212.598" y2="238.76" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="MUFF1:N$77">
 <contactref element="MUFF1:C53" pad="2"/>
@@ -3889,7 +3824,7 @@ design rules under a new name.</description>
 <signal name="MUFF1:N$80">
 <contactref element="MUFF1:C54" pad="2"/>
 <contactref element="MUFF1:R69" pad="P$3"/>
-<wire x1="119.42" y1="71.24" x2="206.502" y2="261.62" width="0" layer="19" extent="1-1"/>
+<wire x1="121.96" y1="71.24" x2="206.502" y2="261.62" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="MUFF1:N$84">
 <contactref element="MUFF1:R71" pad="P$1"/>
@@ -4014,7 +3949,7 @@ design rules under a new name.</description>
 <contactref element="J10" pad="TIP_T@3" route="any" routetag="G$1.TIP"/>
 <contactref element="J10" pad="TIP_B@1" route="any" routetag="G$1.TIP"/>
 <wire x1="235.458" y1="29.21" x2="235.63" y2="36.4522" width="0" layer="19" extent="1-1"/>
-<wire x1="174.625" y1="85.78" x2="235.63" y2="36.4522" width="0" layer="19" extent="1-1"/>
+<wire x1="175.26" y1="73.08" x2="235.63" y2="36.4522" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="N$39">
 <contactref element="R21" pad="1"/>
@@ -4253,7 +4188,7 @@ design rules under a new name.</description>
 <contactref element="J1" pad="SWITCH_T@3" route="any" routetag="G$1.SWITCH"/>
 <contactref element="J24" pad="TIP_T@3" route="any" routetag="G$1.TIP"/>
 <contactref element="J24" pad="TIP_B@1" route="any" routetag="G$1.TIP"/>
-<wire x1="6.985" y1="60.38" x2="178.96" y2="68.58" width="0" layer="19" extent="1-16"/>
+<wire x1="6.985" y1="60.38" x2="178.96" y2="81.28" width="0" layer="19" extent="1-16"/>
 <wire x1="-21.082" y1="71.12" x2="6.985" y2="60.38" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="N$62">
@@ -4343,7 +4278,7 @@ design rules under a new name.</description>
 <signal name="N$117">
 <contactref element="R107" pad="1"/>
 <contactref element="R109" pad="P$2"/>
-<wire x1="-43.942" y1="335.28" x2="162.56" y2="63.62" width="0" layer="19" extent="1-1"/>
+<wire x1="-43.942" y1="335.28" x2="162.56" y2="61.08" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="VCA_OUTPUT2">
 <contactref element="R104" pad="2"/>
@@ -4352,8 +4287,8 @@ design rules under a new name.</description>
 <contactref element="J3" pad="TIP_B@1" route="any" routetag="G$1.TIP"/>
 <contactref element="R89" pad="2"/>
 <contactref element="R91" pad="1"/>
-<wire x1="231.902" y1="29.21" x2="174.625" y2="62.92" width="0" layer="19" extent="1-1"/>
-<wire x1="-69.342" y1="147.32" x2="174.625" y2="62.92" width="0" layer="19" extent="1-1"/>
+<wire x1="231.902" y1="29.21" x2="175.26" y2="60.38" width="0" layer="19" extent="1-1"/>
+<wire x1="-69.342" y1="147.32" x2="175.26" y2="60.38" width="0" layer="19" extent="1-1"/>
 <wire x1="-77.978" y1="147.32" x2="-69.342" y2="147.32" width="0" layer="19" extent="1-1"/>
 <wire x1="-32.258" y1="335.28" x2="-69.342" y2="147.32" width="0" layer="19" extent="1-1"/>
 </signal>
@@ -4367,7 +4302,7 @@ design rules under a new name.</description>
 <signal name="N$5">
 <contactref element="U$22" pad="P$2"/>
 <contactref element="DIST+1:R24" pad="P$2"/>
-<wire x1="36.83" y1="10.16" x2="40.64" y2="73.78" width="0" layer="19" extent="1-1"/>
+<wire x1="36.83" y1="10.16" x2="33.02" y2="73.78" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="INPUT_B">
 <contactref element="J4" pad="TIP_T@3" route="any" routetag="G$1.TIP"/>
@@ -4387,7 +4322,7 @@ design rules under a new name.</description>
 <signal name="N$12">
 <contactref element="U$22" pad="P$6"/>
 <contactref element="RAT1:R29" pad="P$2"/>
-<wire x1="39.37" y1="10.16" x2="66.04" y2="71.24" width="0" layer="19" extent="1-1"/>
+<wire x1="39.37" y1="10.16" x2="63.5" y2="71.24" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="OUTPUT_B">
 <contactref element="U$22" pad="P$5"/>
@@ -4458,7 +4393,7 @@ design rules under a new name.</description>
 <signal name="N$11">
 <contactref element="U$22" pad="P$14"/>
 <contactref element="MUFF1:R69" pad="P$2"/>
-<wire x1="143.51" y1="10.16" x2="116.84" y2="71.24" width="0" layer="19" extent="1-1"/>
+<wire x1="143.51" y1="10.16" x2="119.38" y2="71.24" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="N$63">
 <contactref element="U$74" pad="P$3"/>
@@ -4500,7 +4435,7 @@ design rules under a new name.</description>
 <contactref element="R49" pad="P$3"/>
 <contactref element="J22" pad="TIP_T@3" route="any" routetag="G$1.TIP"/>
 <contactref element="J22" pad="TIP_B@1" route="any" routetag="G$1.TIP"/>
-<wire x1="144.82" y1="53.46" x2="137.16" y2="85.78" width="0" layer="19" extent="1-1"/>
+<wire x1="144.82" y1="53.46" x2="144.78" y2="85.78" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="N$67">
 <contactref element="R58" pad="1"/>
@@ -4516,7 +4451,7 @@ design rules under a new name.</description>
 <signal name="N$68">
 <contactref element="R50" pad="P$2"/>
 <contactref element="R58" pad="2"/>
-<wire x1="-62.738" y1="162.56" x2="142.24" y2="33.14" width="0" layer="19" extent="1-1"/>
+<wire x1="-62.738" y1="162.56" x2="144.78" y2="33.14" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="N$69">
 <contactref element="U$74" pad="P$1"/>
@@ -4764,7 +4699,7 @@ design rules under a new name.</description>
 <contactref element="R61" pad="2"/>
 <contactref element="J23" pad="TIP_T@3" route="any" routetag="G$1.TIP"/>
 <contactref element="J23" pad="TIP_B@1" route="any" routetag="G$1.TIP"/>
-<wire x1="-47.498" y1="162.56" x2="147.32" y2="85.78" width="0" layer="19" extent="1-1"/>
+<wire x1="-47.498" y1="162.56" x2="154.94" y2="85.78" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="N$97">
 <contactref element="R89" pad="1"/>
@@ -4785,14 +4720,14 @@ design rules under a new name.</description>
 <contactref element="J26" pad="TIP_B@1" route="any" routetag="G$1.TIP"/>
 <contactref element="J26" pad="TIP_T@3" route="any" routetag="G$1.TIP"/>
 <contactref element="IC6" pad="14"/>
-<wire x1="231.73" y1="42.2878" x2="174.625" y2="34.98" width="0" layer="19" extent="1-16"/>
-<wire x1="-99.822" y1="-43.18" x2="174.625" y2="34.98" width="0" layer="19" extent="1-16"/>
+<wire x1="231.73" y1="42.2878" x2="175.26" y2="34.98" width="0" layer="19" extent="1-16"/>
+<wire x1="-99.822" y1="-43.18" x2="175.26" y2="34.98" width="0" layer="19" extent="1-16"/>
 </signal>
 <signal name="CV_IN">
 <contactref element="R112" pad="2"/>
 <contactref element="J25" pad="TIP_B@1" route="any" routetag="G$1.TIP"/>
 <contactref element="J25" pad="TIP_T@3" route="any" routetag="G$1.TIP"/>
-<wire x1="-34.798" y1="20.955" x2="174.625" y2="50.22" width="0" layer="19" extent="1-16"/>
+<wire x1="-34.798" y1="20.955" x2="175.26" y2="47.68" width="0" layer="19" extent="1-16"/>
 </signal>
 <signal name="INPUT_WS">
 <contactref element="R85" pad="2"/>
@@ -4876,27 +4811,20 @@ design rules under a new name.</description>
 <signal name="N$26">
 <contactref element="R114" pad="P$3"/>
 <contactref element="R115" pad="2"/>
-<wire x1="-100.838" y1="-50.8" x2="165.14" y2="38.22" width="0" layer="19" extent="1-1"/>
+<wire x1="-100.838" y1="-50.8" x2="165.14" y2="35.68" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="N$27">
 <contactref element="R113" pad="2"/>
 <contactref element="R114" pad="P$2"/>
-<wire x1="-29.718" y1="20.955" x2="162.56" y2="38.22" width="0" layer="19" extent="1-1"/>
+<wire x1="-29.718" y1="20.955" x2="162.56" y2="35.68" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="VCA_CV_IN2">
 <contactref element="R109" pad="P$3"/>
 <contactref element="J1" pad="TIP_T@3" route="any" routetag="G$1.TIP"/>
 <contactref element="J1" pad="TIP_B@1" route="any" routetag="G$1.TIP"/>
-<wire x1="165.14" y1="63.62" x2="175.26" y2="73.08" width="0" layer="19" extent="1-1"/>
+<wire x1="165.14" y1="61.08" x2="175.26" y2="85.78" width="0" layer="19" extent="1-1"/>
 </signal>
 </signals>
-<mfgpreviewcolors>
-<mfgpreviewcolor name="soldermaskcolor" color="0xC8008000"/>
-<mfgpreviewcolor name="silkscreencolor" color="0xFFFEFEFE"/>
-<mfgpreviewcolor name="backgroundcolor" color="0xFF282828"/>
-<mfgpreviewcolor name="coppercolor" color="0xFFFFBF00"/>
-<mfgpreviewcolor name="substratecolor" color="0xFF786E46"/>
-</mfgpreviewcolors>
 </board>
 </drawing>
 </eagle>
