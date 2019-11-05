@@ -1,10 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="9.5.1">
+<eagle version="7.7.0">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
-<setting keepoldvectorfont="yes"/>
 <setting verticaltext="up"/>
 </settings>
 <grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
@@ -1283,9 +1282,9 @@ NS Package M08A</description>
 <circle x="0" y="0" radius="5.6796125" width="0.127" layer="255"/>
 </package>
 <package name="EURORACK36HP_5STOMP">
-<wire x1="178.5" y1="103" x2="2.844003125" y2="103" width="0.127" layer="20"/>
-<wire x1="2.844003125" y1="103" x2="0.34400625" y2="100.49609375" width="0.127" layer="20" curve="90.089525"/>
-<wire x1="0.34400625" y1="100.49609375" x2="0.34400625" y2="91.595" width="0.127" layer="20"/>
+<wire x1="178.5" y1="108.08" x2="2.844003125" y2="108.08" width="0.127" layer="20"/>
+<wire x1="2.844003125" y1="108.08" x2="0.34400625" y2="105.57609375" width="0.127" layer="20" curve="90.089525"/>
+<wire x1="0.34400625" y1="105.57609375" x2="0.34400625" y2="91.595" width="0.127" layer="20"/>
 <wire x1="0.34400625" y1="91.595" x2="2.84400625" y2="89.095" width="0.127" layer="20" curve="90"/>
 <wire x1="2.84400625" y1="89.095" x2="21.5" y2="89.095" width="0.127" layer="20"/>
 <wire x1="21.5" y1="89.095" x2="24" y2="86.595" width="0.127" layer="20" curve="-90"/>
@@ -1298,8 +1297,8 @@ NS Package M08A</description>
 <wire x1="2.996003125" y1="3" x2="7.64838125" y2="3" width="0.127" layer="20"/>
 <wire x1="175.5" y1="3" x2="178.5" y2="3" width="0.127" layer="20"/>
 <wire x1="178.5" y1="3" x2="181" y2="5.5" width="0.127" layer="20" curve="90"/>
-<wire x1="181" y1="5.5" x2="181" y2="100.5" width="0.127" layer="20"/>
-<wire x1="181" y1="100.5" x2="178.5" y2="103" width="0.127" layer="20" curve="90"/>
+<wire x1="181" y1="5.5" x2="181" y2="105.58" width="0.127" layer="20"/>
+<wire x1="181" y1="105.58" x2="178.5" y2="108.08" width="0.127" layer="20" curve="90"/>
 <wire x1="0" y1="-11" x2="182.54" y2="-11" width="0" layer="255"/>
 <wire x1="182.54" y1="-11" x2="182.54" y2="117.5" width="0" layer="255"/>
 <wire x1="182.54" y1="117.5" x2="0" y2="117.5" width="0" layer="255"/>
