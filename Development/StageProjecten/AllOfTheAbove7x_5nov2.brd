@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="100" unitdist="mil" unit="mil" style="dots" multiple="1" display="yes" altdistance="5" altunitdist="mil" altunit="mil"/>
+<grid distance="25" unitdist="mil" unit="mil" style="dots" multiple="1" display="yes" altdistance="5" altunitdist="mil" altunit="mil"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="2" name="Route2" color="16" fill="1" visible="no" active="no"/>
@@ -32,10 +32,10 @@
 <layer number="22" name="bPlace" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="23" name="tOrigins" color="15" fill="1" visible="yes" active="yes"/>
 <layer number="24" name="bOrigins" color="15" fill="1" visible="yes" active="yes"/>
-<layer number="25" name="tNames" color="7" fill="1" visible="yes" active="yes"/>
-<layer number="26" name="bNames" color="7" fill="1" visible="yes" active="yes"/>
-<layer number="27" name="tValues" color="7" fill="1" visible="yes" active="yes"/>
-<layer number="28" name="bValues" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="25" name="tNames" color="7" fill="1" visible="no" active="yes"/>
+<layer number="26" name="bNames" color="7" fill="1" visible="no" active="yes"/>
+<layer number="27" name="tValues" color="7" fill="1" visible="no" active="yes"/>
+<layer number="28" name="bValues" color="7" fill="1" visible="no" active="yes"/>
 <layer number="29" name="tStop" color="7" fill="3" visible="no" active="yes"/>
 <layer number="30" name="bStop" color="7" fill="6" visible="no" active="yes"/>
 <layer number="31" name="tCream" color="7" fill="4" visible="no" active="yes"/>
@@ -1513,1336 +1513,1336 @@ design rules under a new name.</description>
 </pass>
 </autorouter>
 <elements>
-<element name="C1" library="OPL" package="C0603" value="100n" x="129.54" y="356.87" smashed="yes">
+<element name="C1" library="OPL" package="C0603" value="100n" x="129.54" y="356.87">
 <attribute name="NAME" x="129.54" y="356.87" size="0.508" layer="25" ratio="11" align="center"/>
 <attribute name="VALUE" x="129.54" y="355.9175" size="0.508" layer="27" ratio="10" align="top-center"/>
 </element>
-<element name="C2" library="OPL" package="C0603" value="100n" x="125.73" y="341.63" smashed="yes">
+<element name="C2" library="OPL" package="C0603" value="100n" x="125.73" y="341.63">
 <attribute name="NAME" x="125.73" y="341.63" size="0.508" layer="25" ratio="11" align="center"/>
 <attribute name="VALUE" x="125.73" y="340.6775" size="0.508" layer="27" ratio="10" align="top-center"/>
 </element>
-<element name="C3" library="EurorackModularParts" package="CASE-A_3216" value="10u" x="153.67" y="341.63" smashed="yes">
+<element name="C3" library="EurorackModularParts" package="CASE-A_3216" value="10u" x="153.67" y="341.63">
 <attribute name="NAME" x="153.67" y="341.63" size="0.762" layer="25" ratio="10" rot="SR0" align="center"/>
 <attribute name="VALUE" x="152.07" y="340.138" size="0.635" layer="27" ratio="10"/>
 </element>
-<element name="C4" library="EurorackModularParts" package="CASE-A_3216" value="10u" x="147.32" y="341.63" smashed="yes">
+<element name="C4" library="EurorackModularParts" package="CASE-A_3216" value="10u" x="147.32" y="341.63">
 <attribute name="NAME" x="147.32" y="341.63" size="0.762" layer="25" ratio="10" rot="SR0" align="center"/>
 <attribute name="VALUE" x="145.72" y="340.138" size="0.635" layer="27" ratio="10"/>
 </element>
-<element name="C5" library="OPL" package="C0603" value="100n" x="-45.72" y="248.285" smashed="yes" rot="R270">
+<element name="C5" library="OPL" package="C0603" value="100n" x="-45.72" y="248.285" rot="R270">
 <attribute name="NAME" x="-45.72" y="248.285" size="0.508" layer="25" ratio="11" rot="R270" align="center"/>
 <attribute name="VALUE" x="-46.6725" y="248.285" size="0.508" layer="27" ratio="10" rot="R270" align="top-center"/>
 </element>
-<element name="C6" library="OPL" package="C0603" value="100n" x="118.11" y="341.63" smashed="yes">
+<element name="C6" library="OPL" package="C0603" value="100n" x="118.11" y="341.63">
 <attribute name="NAME" x="118.11" y="341.63" size="0.508" layer="25" ratio="11" align="center"/>
 <attribute name="VALUE" x="118.11" y="340.6775" size="0.508" layer="27" ratio="10" align="top-center"/>
 </element>
-<element name="C7" library="EurorackModularParts" package="CASE-A_3216" value="10u" x="-45.72" y="254.635" smashed="yes" rot="R270">
+<element name="C7" library="EurorackModularParts" package="CASE-A_3216" value="10u" x="-45.72" y="254.635" rot="R270">
 <attribute name="NAME" x="-45.72" y="254.635" size="0.762" layer="25" ratio="10" rot="SR270" align="center"/>
 <attribute name="VALUE" x="-47.212" y="256.235" size="0.635" layer="27" ratio="10" rot="R270"/>
 </element>
-<element name="C8" library="EurorackModularParts" package="CASE-A_3216" value="10u" x="134.62" y="341.63" smashed="yes">
+<element name="C8" library="EurorackModularParts" package="CASE-A_3216" value="10u" x="134.62" y="341.63">
 <attribute name="NAME" x="134.62" y="341.63" size="0.762" layer="25" ratio="10" rot="SR0" align="center"/>
 <attribute name="VALUE" x="133.02" y="340.138" size="0.635" layer="27" ratio="10"/>
 </element>
-<element name="D1" library="OPL" package="DO-214AC" value="1n4001" x="167.64" y="341.63" smashed="yes">
+<element name="D1" library="OPL" package="DO-214AC" value="1n4001" x="167.64" y="341.63">
 <attribute name="NAME" x="167.64" y="341.63" size="0.762" layer="25" ratio="11" align="center"/>
 <attribute name="VALUE" x="165.735" y="341.63" size="0.635" layer="27" ratio="10"/>
 </element>
-<element name="D2" library="OPL" package="DO-214AC" value="1n4001" x="160.02" y="341.63" smashed="yes">
+<element name="D2" library="OPL" package="DO-214AC" value="1n4001" x="160.02" y="341.63">
 <attribute name="NAME" x="160.02" y="341.63" size="0.762" layer="25" ratio="11" align="center"/>
 <attribute name="VALUE" x="158.115" y="341.63" size="0.635" layer="27" ratio="10"/>
 </element>
-<element name="DIST+1:C22" library="OPL" package="C0603" value="1nF" x="34.29" y="65.405" smashed="yes" rot="R90">
-<attribute name="NAME" x="34.29" y="65.405" size="0.508" layer="25" ratio="11" rot="R90" align="center"/>
-<attribute name="VALUE" x="33.9725" y="65.405" size="0.508" layer="27" ratio="10" rot="R90" align="top-center"/>
+<element name="DIST+1:C22" library="OPL" package="C0603" value="1nF" x="43.815" y="85.09">
+<attribute name="NAME" x="43.815" y="85.09" size="0.508" layer="25" ratio="11" align="center"/>
+<attribute name="VALUE" x="43.815" y="85.4075" size="0.508" layer="27" ratio="10" align="top-center"/>
 </element>
-<element name="DIST+1:C23" library="OPL" package="C0603" value="10nF" x="32.385" y="65.405" smashed="yes" rot="R90">
-<attribute name="NAME" x="32.385" y="65.405" size="0.508" layer="25" ratio="11" rot="R90" align="center"/>
-<attribute name="VALUE" x="32.0675" y="65.405" size="0.508" layer="27" ratio="10" rot="R90" align="top-center"/>
+<element name="DIST+1:C23" library="OPL" package="C0603" value="10nF" x="43.815" y="86.995">
+<attribute name="NAME" x="43.815" y="86.995" size="0.508" layer="25" ratio="11" align="center"/>
+<attribute name="VALUE" x="43.815" y="87.3125" size="0.508" layer="27" ratio="10" align="top-center"/>
 </element>
-<element name="DIST+1:C24" library="OPL" package="C0603" value="100n" x="34.29" y="69.215" smashed="yes" rot="R90">
-<attribute name="NAME" x="34.29" y="69.215" size="0.508" layer="25" ratio="11" rot="R90" align="center"/>
-<attribute name="VALUE" x="33.9725" y="69.215" size="0.508" layer="27" ratio="10" rot="R90" align="top-center"/>
+<element name="DIST+1:C24" library="OPL" package="C0603" value="100n" x="47.625" y="85.09">
+<attribute name="NAME" x="47.625" y="85.09" size="0.508" layer="25" ratio="11" align="center"/>
+<attribute name="VALUE" x="47.625" y="85.4075" size="0.508" layer="27" ratio="10" align="top-center"/>
 </element>
-<element name="DIST+1:C25" library="OPL" package="C0603" value="100n" x="30.48" y="78.105" smashed="yes" rot="R90">
-<attribute name="NAME" x="30.48" y="78.105" size="0.508" layer="25" ratio="11" rot="R90" align="center"/>
-<attribute name="VALUE" x="30.1625" y="78.105" size="0.508" layer="27" ratio="10" rot="R90" align="top-center"/>
+<element name="DIST+1:C25" library="OPL" package="C0603" value="100n" x="56.515" y="88.9">
+<attribute name="NAME" x="56.515" y="88.9" size="0.508" layer="25" ratio="11" align="center"/>
+<attribute name="VALUE" x="56.515" y="89.2175" size="0.508" layer="27" ratio="10" align="top-center"/>
 </element>
-<element name="DIST+1:C26" library="OPL" package="C0603" value="47nF" x="28.575" y="65.405" smashed="yes" rot="R90">
-<attribute name="NAME" x="28.575" y="65.405" size="0.508" layer="25" ratio="11" rot="R90" align="center"/>
-<attribute name="VALUE" x="28.2575" y="65.405" size="0.508" layer="27" ratio="10" rot="R90" align="top-center"/>
+<element name="DIST+1:C26" library="OPL" package="C0603" value="47nF" x="43.815" y="90.805">
+<attribute name="NAME" x="43.815" y="90.805" size="0.508" layer="25" ratio="11" align="center"/>
+<attribute name="VALUE" x="43.815" y="91.1225" size="0.508" layer="27" ratio="10" align="top-center"/>
 </element>
-<element name="DIST+1:C27" library="OPL" package="C0603" value="1uF" x="34.29" y="78.105" smashed="yes" rot="R90">
-<attribute name="NAME" x="34.29" y="78.105" size="0.508" layer="25" ratio="11" rot="R90" align="center"/>
-<attribute name="VALUE" x="33.9725" y="78.105" size="0.508" layer="27" ratio="10" rot="R90" align="top-center"/>
+<element name="DIST+1:C27" library="OPL" package="C0603" value="1uF" x="56.515" y="85.09">
+<attribute name="NAME" x="56.515" y="85.09" size="0.508" layer="25" ratio="11" align="center"/>
+<attribute name="VALUE" x="56.515" y="85.4075" size="0.508" layer="27" ratio="10" align="top-center"/>
 </element>
-<element name="DIST+1:C28" library="OPL" package="C0603" value="1nF" x="28.575" y="78.105" smashed="yes" rot="R90">
-<attribute name="NAME" x="28.575" y="78.105" size="0.508" layer="25" ratio="11" rot="R90" align="center"/>
-<attribute name="VALUE" x="28.2575" y="78.105" size="0.508" layer="27" ratio="10" rot="R90" align="top-center"/>
+<element name="DIST+1:C28" library="OPL" package="C0603" value="1nF" x="56.515" y="90.805">
+<attribute name="NAME" x="56.515" y="90.805" size="0.508" layer="25" ratio="11" align="center"/>
+<attribute name="VALUE" x="56.515" y="91.1225" size="0.508" layer="27" ratio="10" align="top-center"/>
 </element>
-<element name="DIST+1:IC5" library="linear" package="SO08" value="UA741D" x="30.48" y="71.755" smashed="yes">
-<attribute name="NAME" x="27.813" y="69.85" size="1.27" layer="25" rot="R90"/>
-<attribute name="POPULARITY" value="0" x="30.48" y="71.755" size="1.778" layer="27" display="off"/>
-<attribute name="VALUE" x="34.417" y="69.85" size="1.27" layer="27" rot="R90"/>
+<element name="DIST+1:IC5" library="linear" package="SO08" value="UA741D" x="50.165" y="88.9" rot="R270">
+<attribute name="NAME" x="48.26" y="91.567" size="1.27" layer="25"/>
+<attribute name="POPULARITY" value="0" x="50.165" y="88.9" size="1.778" layer="27" rot="R270" display="off"/>
+<attribute name="VALUE" x="48.26" y="84.963" size="1.27" layer="27"/>
 </element>
-<element name="DIST+1:JP4" library="pinhead" package="1X03" value="" x="29.845" y="89.535" smashed="yes">
-<attribute name="NAME" x="25.9588" y="91.3638" size="1.27" layer="25" ratio="10"/>
-<attribute name="POPULARITY" value="92" x="29.845" y="89.535" size="1.778" layer="27" display="off"/>
-<attribute name="VALUE" x="26.035" y="86.36" size="1.27" layer="27"/>
+<element name="DIST+1:JP4" library="pinhead" package="1X03" value="" x="67.945" y="89.535" rot="R270">
+<attribute name="NAME" x="69.7738" y="93.4212" size="1.27" layer="25" ratio="10" rot="R270"/>
+<attribute name="POPULARITY" value="92" x="67.945" y="89.535" size="1.778" layer="27" rot="R270" display="off"/>
+<attribute name="VALUE" x="64.77" y="93.345" size="1.27" layer="27" rot="R270"/>
 </element>
-<element name="DIST+1:JP5" library="pinhead" package="1X03" value="" x="29.845" y="93.345" smashed="yes">
-<attribute name="NAME" x="25.9588" y="95.1738" size="1.27" layer="25" ratio="10"/>
-<attribute name="POPULARITY" value="92" x="29.845" y="93.345" size="1.778" layer="27" display="off"/>
-<attribute name="VALUE" x="26.035" y="90.17" size="1.27" layer="27"/>
+<element name="DIST+1:JP5" library="pinhead" package="1X03" value="" x="71.755" y="89.535" rot="R270">
+<attribute name="NAME" x="73.5838" y="93.4212" size="1.27" layer="25" ratio="10" rot="R270"/>
+<attribute name="POPULARITY" value="92" x="71.755" y="89.535" size="1.778" layer="27" rot="R270" display="off"/>
+<attribute name="VALUE" x="68.58" y="93.345" size="1.27" layer="27" rot="R270"/>
 </element>
-<element name="DIST+1:R22" library="EurorackModularParts" package="ALPS_POT_SQUAREHOLES" value="10KB" x="38.1" y="40.64" smashed="yes">
+<element name="DIST+1:R22" library="EurorackModularParts" package="ALPS_POT_SQUAREHOLES" value="10KB" x="38.1" y="40.64" locked="yes">
 <attribute name="DESC" value="Tone" x="38.1" y="42.672" size="1.016" layer="21" rot="R180" align="center"/>
 <attribute name="NAME" x="38.1" y="40.64" size="2.032" layer="25" ratio="10" rot="SR0" align="center"/>
 <attribute name="VALUE" x="38.1" y="38.1" size="1.27" layer="21" ratio="10" align="center"/>
 <attribute name="VALUE" x="38.1" y="38.735" size="1.27" layer="27" align="top-center"/>
 </element>
-<element name="DIST+1:R23" library="EurorackModularParts" package="ALPS_POT_SQUAREHOLES" value="1MC" x="40.64" y="60.96" smashed="yes">
+<element name="DIST+1:R23" library="EurorackModularParts" package="ALPS_POT_SQUAREHOLES" value="1MC" x="40.64" y="60.96" locked="yes">
 <attribute name="DESC" value="Distortion" x="40.64" y="62.992" size="1.016" layer="21" rot="R180" align="center"/>
 <attribute name="NAME" x="40.64" y="60.96" size="2.032" layer="25" ratio="10" rot="SR0" align="center"/>
 <attribute name="VALUE" x="40.64" y="58.42" size="1.27" layer="21" ratio="10" align="center"/>
 </element>
-<element name="DIST+1:R24" library="EurorackModularParts" package="ALPS_POT_SQUAREHOLES" value="10K" x="33.02" y="81.28" smashed="yes">
+<element name="DIST+1:R24" library="EurorackModularParts" package="ALPS_POT_SQUAREHOLES" value="10K" x="33.02" y="81.28" locked="yes">
 <attribute name="DESC" value="Volume" x="33.02" y="83.312" size="1.016" layer="21" rot="R180" align="center"/>
 <attribute name="NAME" x="33.02" y="81.28" size="2.032" layer="25" ratio="10" rot="SR0" align="center"/>
 <attribute name="VALUE" x="33.02" y="78.74" size="1.27" layer="21" ratio="10" align="center"/>
 </element>
-<element name="DIST+1:R25" library="OPL" package="R0603" value="10K" x="30.48" y="65.405" smashed="yes" rot="R90">
-<attribute name="NAME" x="30.48" y="65.405" size="0.508" layer="25" ratio="11" rot="R90" align="center"/>
-<attribute name="VALUE" x="30.5275" y="64.643" size="0.508" layer="27" ratio="10" rot="R90"/>
+<element name="DIST+1:R25" library="OPL" package="R0603" value="10K" x="43.815" y="88.9">
+<attribute name="NAME" x="43.815" y="88.9" size="0.508" layer="25" ratio="11" align="center"/>
+<attribute name="VALUE" x="43.053" y="88.8525" size="0.508" layer="27" ratio="10"/>
 </element>
-<element name="DIST+1:R26" library="OPL" package="R0603" value="4.7K" x="26.67" y="65.405" smashed="yes" rot="R90">
-<attribute name="NAME" x="26.67" y="65.405" size="0.508" layer="25" ratio="11" rot="R90" align="center"/>
-<attribute name="VALUE" x="26.7175" y="64.643" size="0.508" layer="27" ratio="10" rot="R90"/>
+<element name="DIST+1:R26" library="OPL" package="R0603" value="4.7K" x="43.815" y="92.71">
+<attribute name="NAME" x="43.815" y="92.71" size="0.508" layer="25" ratio="11" align="center"/>
+<attribute name="VALUE" x="43.053" y="92.6625" size="0.508" layer="27" ratio="10"/>
 </element>
-<element name="DIST+1:R27" library="OPL" package="R0603" value="1M" x="34.29" y="74.295" smashed="yes" rot="R90">
-<attribute name="NAME" x="34.29" y="74.295" size="0.508" layer="25" ratio="11" rot="R90" align="center"/>
-<attribute name="VALUE" x="34.3375" y="73.533" size="0.508" layer="27" ratio="10" rot="R90"/>
+<element name="DIST+1:R27" library="OPL" package="R0603" value="1M" x="52.705" y="85.09">
+<attribute name="NAME" x="52.705" y="85.09" size="0.508" layer="25" ratio="11" align="center"/>
+<attribute name="VALUE" x="51.943" y="85.0425" size="0.508" layer="27" ratio="10"/>
 </element>
-<element name="DIST+1:R28" library="OPL" package="R0603" value="5.6K" x="32.385" y="78.105" smashed="yes" rot="R90">
-<attribute name="NAME" x="32.385" y="78.105" size="0.508" layer="25" ratio="11" rot="R90" align="center"/>
-<attribute name="VALUE" x="32.4325" y="77.343" size="0.508" layer="27" ratio="10" rot="R90"/>
+<element name="DIST+1:R28" library="OPL" package="R0603" value="5.6K" x="56.515" y="86.995">
+<attribute name="NAME" x="56.515" y="86.995" size="0.508" layer="25" ratio="11" align="center"/>
+<attribute name="VALUE" x="55.753" y="86.9475" size="0.508" layer="27" ratio="10"/>
 </element>
-<element name="FUZZFACE1:C1" library="adafruit" package="153CLV-0505" value="20uF" x="166.37" y="284.48" smashed="yes">
+<element name="FUZZFACE1:C1" library="adafruit" package="153CLV-0505" value="20uF" x="166.37" y="284.48">
 <attribute name="NAME" x="163.63" y="287.46" size="1.27" layer="25"/>
 <attribute name="VALUE" x="163.595" y="280.245" size="1.27" layer="27"/>
 </element>
-<element name="FUZZFACE1:C28" library="adafruit" package="153CLV-0505" value="2.2uF" x="181.61" y="284.48" smashed="yes">
+<element name="FUZZFACE1:C28" library="adafruit" package="153CLV-0505" value="2.2uF" x="181.61" y="284.48">
 <attribute name="NAME" x="178.87" y="287.46" size="1.27" layer="25"/>
 <attribute name="VALUE" x="178.835" y="280.245" size="1.27" layer="27"/>
 </element>
-<element name="FUZZFACE1:C42" library="OPL" package="C0603" value="10nF" x="67.31" y="281.94" smashed="yes">
+<element name="FUZZFACE1:C42" library="OPL" package="C0603" value="10nF" x="67.31" y="281.94">
 <attribute name="NAME" x="67.31" y="281.94" size="0.508" layer="25" ratio="11" align="center"/>
 <attribute name="VALUE" x="67.31" y="280.9875" size="0.508" layer="27" ratio="10" align="top-center"/>
 </element>
-<element name="FUZZFACE1:JP1" library="pinhead" package="1X03" value="" x="130.81" y="277.495" smashed="yes">
+<element name="FUZZFACE1:JP1" library="pinhead" package="1X03" value="" x="130.81" y="277.495">
 <attribute name="NAME" x="126.9238" y="279.3238" size="1.27" layer="25" ratio="10"/>
 <attribute name="POPULARITY" value="92" x="130.81" y="277.495" size="1.778" layer="27" display="off"/>
 <attribute name="VALUE" x="127" y="274.32" size="1.27" layer="27"/>
 </element>
-<element name="FUZZFACE1:JP2" library="pinhead" package="1X03" value="" x="146.05" y="278.765" smashed="yes">
+<element name="FUZZFACE1:JP2" library="pinhead" package="1X03" value="" x="146.05" y="278.765">
 <attribute name="NAME" x="142.1638" y="280.5938" size="1.27" layer="25" ratio="10"/>
 <attribute name="POPULARITY" value="92" x="146.05" y="278.765" size="1.778" layer="27" display="off"/>
 <attribute name="VALUE" x="142.24" y="275.59" size="1.27" layer="27"/>
 </element>
-<element name="FUZZFACE1:Q1" library="transistor-pnp" package="SOT23-BEC" value="MMBT3906LT1SMD" x="147.32" y="283.21" smashed="yes">
+<element name="FUZZFACE1:Q1" library="transistor-pnp" package="SOT23-BEC" value="MMBT3906LT1SMD" x="147.32" y="283.21">
 <attribute name="NAME" x="145.415" y="285.115" size="1.27" layer="25"/>
 <attribute name="POPULARITY" value="6" x="147.32" y="283.21" size="1.778" layer="27" display="off"/>
 <attribute name="VALUE" x="145.415" y="280.035" size="1.27" layer="27"/>
 </element>
-<element name="FUZZFACE1:Q2" library="transistor-pnp" package="SOT23-BEC" value="MMBT3906LT1SMD" x="129.54" y="283.21" smashed="yes">
+<element name="FUZZFACE1:Q2" library="transistor-pnp" package="SOT23-BEC" value="MMBT3906LT1SMD" x="129.54" y="283.21">
 <attribute name="NAME" x="127.635" y="285.115" size="1.27" layer="25"/>
 <attribute name="POPULARITY" value="6" x="129.54" y="283.21" size="1.778" layer="27" display="off"/>
 <attribute name="VALUE" x="127.635" y="280.035" size="1.27" layer="27"/>
 </element>
-<element name="FUZZFACE1:R41" library="OPL" package="R0603" value="100K" x="92.71" y="281.94" smashed="yes">
+<element name="FUZZFACE1:R41" library="OPL" package="R0603" value="100K" x="92.71" y="281.94">
 <attribute name="NAME" x="92.71" y="281.94" size="0.508" layer="25" ratio="11" align="center"/>
 <attribute name="VALUE" x="91.313" y="280.6225" size="0.508" layer="27" ratio="10"/>
 </element>
-<element name="FUZZFACE1:R42" library="EurorackModularParts" package="ALPS_POT_SQUAREHOLES" value="500KA" x="91.44" y="68.58" smashed="yes">
+<element name="FUZZFACE1:R42" library="EurorackModularParts" package="ALPS_POT_SQUAREHOLES" value="500KA" x="91.44" y="68.58" locked="yes">
 <attribute name="DESC" value="Volume" x="91.44" y="70.612" size="1.016" layer="21" rot="R180" align="center"/>
 <attribute name="NAME" x="91.44" y="68.58" size="2.032" layer="25" ratio="10" rot="SR0" align="center"/>
 <attribute name="VALUE" x="91.44" y="66.04" size="1.27" layer="21" ratio="10" align="center"/>
 </element>
-<element name="FUZZFACE1:R43" library="EurorackModularParts" package="ALPS_POT_SQUAREHOLES" value="1KB" x="91.44" y="43.18" smashed="yes">
+<element name="FUZZFACE1:R43" library="EurorackModularParts" package="ALPS_POT_SQUAREHOLES" value="1KB" x="91.44" y="43.18" locked="yes">
 <attribute name="DESC" value="Distortion" x="91.44" y="45.212" size="1.016" layer="21" rot="R180" align="center"/>
 <attribute name="NAME" x="91.44" y="43.18" size="2.032" layer="25" ratio="10" rot="SR0" align="center"/>
 <attribute name="VALUE" x="91.44" y="40.64" size="1.27" layer="21" ratio="10" align="center"/>
 </element>
-<element name="FUZZFACE1:R44" library="OPL" package="R0603" value="8.2K" x="86.36" y="281.94" smashed="yes">
+<element name="FUZZFACE1:R44" library="OPL" package="R0603" value="8.2K" x="86.36" y="281.94">
 <attribute name="NAME" x="86.36" y="281.94" size="0.508" layer="25" ratio="11" align="center"/>
 <attribute name="VALUE" x="84.963" y="280.6225" size="0.508" layer="27" ratio="10"/>
 </element>
-<element name="FUZZFACE1:R45" library="OPL" package="R0603" value="33K" x="80.01" y="281.94" smashed="yes">
+<element name="FUZZFACE1:R45" library="OPL" package="R0603" value="33K" x="80.01" y="281.94">
 <attribute name="NAME" x="80.01" y="281.94" size="0.508" layer="25" ratio="11" align="center"/>
 <attribute name="VALUE" x="78.613" y="280.6225" size="0.508" layer="27" ratio="10"/>
 </element>
-<element name="FUZZFACE1:R46" library="OPL" package="R0603" value="470R" x="73.66" y="281.94" smashed="yes">
+<element name="FUZZFACE1:R46" library="OPL" package="R0603" value="470R" x="73.66" y="281.94">
 <attribute name="NAME" x="73.66" y="281.94" size="0.508" layer="25" ratio="11" align="center"/>
 <attribute name="VALUE" x="72.263" y="280.6225" size="0.508" layer="27" ratio="10"/>
 </element>
-<element name="IC1" library="adafruit@1" package="TO252" value="7809DT" x="83.82" y="27.94" smashed="yes" rot="R180">
+<element name="IC1" library="adafruit@1" package="TO252" value="7809DT" x="83.82" y="27.94" rot="R180">
 <attribute name="NAME" x="87.63" y="30.48" size="1.27" layer="25" rot="R270"/>
 <attribute name="VALUE" x="78.74" y="30.48" size="1.27" layer="27" rot="R270"/>
 </element>
-<element name="J10" library="EurorackModularParts" package="3.5MM-JACK-SWITCH-13MM-NOHOLES" value="JACK" x="175.26" y="68.58" smashed="yes">
+<element name="J10" library="EurorackModularParts" package="3.5MM-JACK-SWITCH-13MM-NOHOLES" value="JACK" x="175.26" y="68.58" locked="yes">
 <attribute name="DESC" value="Master Difference" x="175.26" y="68.58" size="1.27" layer="22" rot="SMR45" align="center"/>
 </element>
-<element name="J11" library="EurorackModularParts" package="3.5MM-JACK-SWITCH-13MM-NOHOLES" value="JACK" x="81.28" y="100.965" smashed="yes">
-<attribute name="DESC" value="Input C" x="81.28" y="100.965" size="1.27" layer="22" rot="SMR45" align="center"/>
+<element name="J11" library="EurorackModularParts" package="3.5MM-JACK-SWITCH-13MM-NOHOLES" value="JACK" x="81.28" y="101.6" locked="yes">
+<attribute name="DESC" value="Input C" x="81.28" y="101.6" size="1.27" layer="22" rot="SMR45" align="center"/>
 </element>
-<element name="J12" library="EurorackModularParts" package="3.5MM-JACK-SWITCH-13MM-NOHOLES" value="JACK" x="91.44" y="98.425" smashed="yes">
-<attribute name="DESC" value="Difference C" x="91.44" y="98.425" size="1.27" layer="22" rot="SMR45" align="center"/>
+<element name="J12" library="EurorackModularParts" package="3.5MM-JACK-SWITCH-13MM-NOHOLES" value="JACK" x="91.44" y="99.06" locked="yes">
+<attribute name="DESC" value="Difference C" x="91.44" y="99.06" size="1.27" layer="22" rot="SMR45" align="center"/>
 </element>
-<element name="J13" library="EurorackModularParts" package="3.5MM-JACK-SWITCH-13MM-NOHOLES" value="JACK" x="101.6" y="100.965" smashed="yes">
-<attribute name="DESC" value="Output C" x="101.6" y="100.965" size="1.27" layer="22" rot="SMR45" align="center"/>
+<element name="J13" library="EurorackModularParts" package="3.5MM-JACK-SWITCH-13MM-NOHOLES" value="JACK" x="101.6" y="101.6" locked="yes">
+<attribute name="DESC" value="Output C" x="101.6" y="101.6" size="1.27" layer="22" rot="SMR45" align="center"/>
 </element>
-<element name="J14" library="EurorackModularParts" package="3.5MM-JACK-SWITCH-13MM-NOHOLES" value="JACK" x="116.84" y="100.965" smashed="yes">
-<attribute name="DESC" value="Input D" x="116.84" y="100.965" size="1.27" layer="22" rot="SMR45" align="center"/>
+<element name="J14" library="EurorackModularParts" package="3.5MM-JACK-SWITCH-13MM-NOHOLES" value="JACK" x="116.84" y="101.6" locked="yes">
+<attribute name="DESC" value="Input D" x="116.84" y="101.6" size="1.27" layer="22" rot="SMR45" align="center"/>
 </element>
-<element name="J15" library="EurorackModularParts" package="3.5MM-JACK-SWITCH-13MM-NOHOLES" value="JACK" x="127" y="98.425" smashed="yes">
-<attribute name="DESC" value="Difference D" x="127" y="98.425" size="1.27" layer="22" rot="SMR45" align="center"/>
+<element name="J15" library="EurorackModularParts" package="3.5MM-JACK-SWITCH-13MM-NOHOLES" value="JACK" x="127" y="99.06" locked="yes">
+<attribute name="DESC" value="Difference D" x="127" y="99.06" size="1.27" layer="22" rot="SMR45" align="center"/>
 </element>
-<element name="J16" library="EurorackModularParts" package="3.5MM-JACK-SWITCH-13MM-NOHOLES" value="JACK" x="137.16" y="100.965" smashed="yes">
-<attribute name="DESC" value="Output D " x="137.16" y="100.965" size="1.27" layer="22" rot="SMR45" align="center"/>
+<element name="J16" library="EurorackModularParts" package="3.5MM-JACK-SWITCH-13MM-NOHOLES" value="JACK" x="137.16" y="101.6" locked="yes">
+<attribute name="DESC" value="Output D " x="137.16" y="101.6" size="1.27" layer="22" rot="SMR45" align="center"/>
 </element>
-<element name="J2" library="EurorackModularParts" package="POWER_16_SHROUDED" value="POWERSHROUDED" x="76.2" y="16.51" smashed="yes" rot="MR90"/>
-<element name="J3" library="EurorackModularParts" package="3.5MM-JACK-SWITCH-13MM-NOHOLES" value="JACK" x="175.26" y="55.88" smashed="yes">
+<element name="J2" library="EurorackModularParts" package="POWER_16_SHROUDED" value="POWERSHROUDED" x="76.835" y="17.145" rot="MR90"/>
+<element name="J3" library="EurorackModularParts" package="3.5MM-JACK-SWITCH-13MM-NOHOLES" value="JACK" x="175.26" y="55.88" locked="yes">
 <attribute name="DESC" value="Master Output" x="175.26" y="55.88" size="1.27" layer="22" rot="SMR45" align="center"/>
 </element>
-<element name="J4" library="EurorackModularParts" package="3.5MM-JACK-SWITCH-13MM-NOHOLES" value="JACK" x="45.72" y="100.965" smashed="yes">
-<attribute name="DESC" value="Input B" x="45.72" y="100.965" size="1.27" layer="22" rot="SMR45" align="center"/>
+<element name="J4" library="EurorackModularParts" package="3.5MM-JACK-SWITCH-13MM-NOHOLES" value="JACK" x="45.72" y="101.6" locked="yes">
+<attribute name="DESC" value="Input B" x="45.72" y="101.6" size="1.27" layer="22" rot="SMR45" align="center"/>
 </element>
-<element name="J5" library="EurorackModularParts" package="3.5MM-JACK-SWITCH-13MM-NOHOLES" value="JACK" x="55.88" y="98.425" smashed="yes">
-<attribute name="DESC" value="Difference B" x="55.88" y="98.425" size="1.27" layer="22" rot="SMR45" align="center"/>
+<element name="J5" library="EurorackModularParts" package="3.5MM-JACK-SWITCH-13MM-NOHOLES" value="JACK" x="55.88" y="99.06" locked="yes">
+<attribute name="DESC" value="Difference B" x="55.88" y="99.06" size="1.27" layer="22" rot="SMR45" align="center"/>
 </element>
-<element name="J6" library="EurorackModularParts" package="3.5MM-JACK-SWITCH-13MM-NOHOLES" value="JACK" x="10.16" y="100.965" smashed="yes">
-<attribute name="DESC" value="Input A" x="10.16" y="100.965" size="1.27" layer="22" rot="SMR45" align="center"/>
+<element name="J6" library="EurorackModularParts" package="3.5MM-JACK-SWITCH-13MM-NOHOLES" value="JACK" x="10.16" y="101.6" locked="yes">
+<attribute name="DESC" value="Input A" x="10.16" y="101.6" size="1.27" layer="22" rot="SMR45" align="center"/>
 </element>
-<element name="J7" library="EurorackModularParts" package="3.5MM-JACK-SWITCH-13MM-NOHOLES" value="JACK" x="30.48" y="100.965" smashed="yes">
-<attribute name="DESC" value="Output A" x="30.48" y="100.965" size="1.27" layer="22" rot="SMR45" align="center"/>
+<element name="J7" library="EurorackModularParts" package="3.5MM-JACK-SWITCH-13MM-NOHOLES" value="JACK" x="30.48" y="101.6" locked="yes">
+<attribute name="DESC" value="Output A" x="30.48" y="101.6" size="1.27" layer="22" rot="SMR45" align="center"/>
 </element>
-<element name="J8" library="EurorackModularParts" package="3.5MM-JACK-SWITCH-13MM-NOHOLES" value="JACK" x="20.32" y="98.425" smashed="yes">
-<attribute name="DESC" value="Difference A" x="20.32" y="98.425" size="1.27" layer="22" rot="SMR45" align="center"/>
+<element name="J8" library="EurorackModularParts" package="3.5MM-JACK-SWITCH-13MM-NOHOLES" value="JACK" x="20.32" y="99.06" locked="yes">
+<attribute name="DESC" value="Difference A" x="20.32" y="99.06" size="1.27" layer="22" rot="SMR45" align="center"/>
 </element>
-<element name="J9" library="EurorackModularParts" package="3.5MM-JACK-SWITCH-13MM-NOHOLES" value="JACK" x="66.04" y="100.965" smashed="yes">
-<attribute name="DESC" value="Output B" x="66.04" y="100.965" size="1.27" layer="22" rot="SMR45" align="center"/>
+<element name="J9" library="EurorackModularParts" package="3.5MM-JACK-SWITCH-13MM-NOHOLES" value="JACK" x="66.04" y="101.6" locked="yes">
+<attribute name="DESC" value="Output B" x="66.04" y="101.6" size="1.27" layer="22" rot="SMR45" align="center"/>
 </element>
-<element name="MUFF1:C1" library="adafruit" package="153CLV-0505" value="1uF" x="171.45" y="248.92" smashed="yes">
+<element name="MUFF1:C1" library="adafruit" package="153CLV-0505" value="1uF" x="171.45" y="248.92">
 <attribute name="NAME" x="168.71" y="251.9" size="1.27" layer="25"/>
 <attribute name="VALUE" x="168.675" y="244.685" size="1.27" layer="27"/>
 </element>
-<element name="MUFF1:C2" library="adafruit" package="153CLV-0505" value="1uF" x="160.02" y="248.92" smashed="yes">
+<element name="MUFF1:C2" library="adafruit" package="153CLV-0505" value="1uF" x="160.02" y="248.92">
 <attribute name="NAME" x="157.28" y="251.9" size="1.27" layer="25"/>
 <attribute name="VALUE" x="157.245" y="244.685" size="1.27" layer="27"/>
 </element>
-<element name="MUFF1:C28" library="adafruit" package="153CLV-0505" value="1uF" x="182.88" y="248.92" smashed="yes">
+<element name="MUFF1:C28" library="adafruit" package="153CLV-0505" value="1uF" x="182.88" y="248.92">
 <attribute name="NAME" x="180.14" y="251.9" size="1.27" layer="25"/>
 <attribute name="VALUE" x="180.105" y="244.685" size="1.27" layer="27"/>
 </element>
-<element name="MUFF1:C44" library="OPL" package="C0603" value="470pF" x="247.65" y="223.52" smashed="yes">
+<element name="MUFF1:C44" library="OPL" package="C0603" value="470pF" x="247.65" y="223.52">
 <attribute name="NAME" x="247.65" y="223.52" size="0.508" layer="25" ratio="11" align="center"/>
 <attribute name="VALUE" x="247.65" y="222.5675" size="0.508" layer="27" ratio="10" align="top-center"/>
 </element>
-<element name="MUFF1:C45" library="OPL" package="C0603" value="1uF" x="241.3" y="261.62" smashed="yes">
+<element name="MUFF1:C45" library="OPL" package="C0603" value="1uF" x="241.3" y="261.62">
 <attribute name="NAME" x="241.3" y="261.62" size="0.508" layer="25" ratio="11" align="center"/>
 <attribute name="VALUE" x="241.3" y="260.6675" size="0.508" layer="27" ratio="10" align="top-center"/>
 </element>
-<element name="MUFF1:C46" library="OPL" package="C0603" value="100nF" x="236.22" y="261.62" smashed="yes">
+<element name="MUFF1:C46" library="OPL" package="C0603" value="100nF" x="236.22" y="261.62">
 <attribute name="NAME" x="236.22" y="261.62" size="0.508" layer="25" ratio="11" align="center"/>
 <attribute name="VALUE" x="236.22" y="260.6675" size="0.508" layer="27" ratio="10" align="top-center"/>
 </element>
-<element name="MUFF1:C47" library="OPL" package="C0603" value="470pF" x="231.14" y="261.62" smashed="yes">
+<element name="MUFF1:C47" library="OPL" package="C0603" value="470pF" x="231.14" y="261.62">
 <attribute name="NAME" x="231.14" y="261.62" size="0.508" layer="25" ratio="11" align="center"/>
 <attribute name="VALUE" x="231.14" y="260.6675" size="0.508" layer="27" ratio="10" align="top-center"/>
 </element>
-<element name="MUFF1:C49" library="OPL" package="C0603" value="100nF" x="226.06" y="261.62" smashed="yes">
+<element name="MUFF1:C49" library="OPL" package="C0603" value="100nF" x="226.06" y="261.62">
 <attribute name="NAME" x="226.06" y="261.62" size="0.508" layer="25" ratio="11" align="center"/>
 <attribute name="VALUE" x="226.06" y="260.6675" size="0.508" layer="27" ratio="10" align="top-center"/>
 </element>
-<element name="MUFF1:C50" library="OPL" package="C0603" value="470pF" x="220.98" y="261.62" smashed="yes">
+<element name="MUFF1:C50" library="OPL" package="C0603" value="470pF" x="220.98" y="261.62">
 <attribute name="NAME" x="220.98" y="261.62" size="0.508" layer="25" ratio="11" align="center"/>
 <attribute name="VALUE" x="220.98" y="260.6675" size="0.508" layer="27" ratio="10" align="top-center"/>
 </element>
-<element name="MUFF1:C52" library="OPL" package="C0603" value="4nF" x="215.9" y="261.62" smashed="yes">
+<element name="MUFF1:C52" library="OPL" package="C0603" value="4nF" x="215.9" y="261.62">
 <attribute name="NAME" x="215.9" y="261.62" size="0.508" layer="25" ratio="11" align="center"/>
 <attribute name="VALUE" x="215.9" y="260.6675" size="0.508" layer="27" ratio="10" align="top-center"/>
 </element>
-<element name="MUFF1:C53" library="OPL" package="C0603" value="100nF" x="213.36" y="238.76" smashed="yes">
+<element name="MUFF1:C53" library="OPL" package="C0603" value="100nF" x="213.36" y="238.76">
 <attribute name="NAME" x="213.36" y="238.76" size="0.508" layer="25" ratio="11" align="center"/>
 <attribute name="VALUE" x="213.36" y="237.8075" size="0.508" layer="27" ratio="10" align="top-center"/>
 </element>
-<element name="MUFF1:C54" library="OPL" package="C0603" value="100nF" x="205.74" y="261.62" smashed="yes">
+<element name="MUFF1:C54" library="OPL" package="C0603" value="100nF" x="205.74" y="261.62">
 <attribute name="NAME" x="205.74" y="261.62" size="0.508" layer="25" ratio="11" align="center"/>
 <attribute name="VALUE" x="205.74" y="260.6675" size="0.508" layer="27" ratio="10" align="top-center"/>
 </element>
-<element name="MUFF1:C55" library="OPL" package="C0603" value="10nF" x="200.66" y="261.62" smashed="yes">
+<element name="MUFF1:C55" library="OPL" package="C0603" value="10nF" x="200.66" y="261.62">
 <attribute name="NAME" x="200.66" y="261.62" size="0.508" layer="25" ratio="11" align="center"/>
 <attribute name="VALUE" x="200.66" y="260.6675" size="0.508" layer="27" ratio="10" align="top-center"/>
 </element>
-<element name="MUFF1:R47" library="OPL" package="R0603" value="39K" x="123.19" y="200.66" smashed="yes">
+<element name="MUFF1:R47" library="OPL" package="R0603" value="39K" x="123.19" y="200.66">
 <attribute name="NAME" x="123.19" y="200.66" size="0.508" layer="25" ratio="11" align="center"/>
 <attribute name="VALUE" x="121.793" y="199.3425" size="0.508" layer="27" ratio="10"/>
 </element>
-<element name="MUFF1:R48" library="OPL" package="R0603" value="47K" x="118.11" y="200.66" smashed="yes">
+<element name="MUFF1:R48" library="OPL" package="R0603" value="47K" x="118.11" y="200.66">
 <attribute name="NAME" x="118.11" y="200.66" size="0.508" layer="25" ratio="11" align="center"/>
 <attribute name="VALUE" x="116.713" y="199.3425" size="0.508" layer="27" ratio="10"/>
 </element>
-<element name="MUFF1:R49" library="OPL" package="R0603" value="470K" x="113.03" y="200.66" smashed="yes">
+<element name="MUFF1:R49" library="OPL" package="R0603" value="470K" x="113.03" y="200.66">
 <attribute name="NAME" x="113.03" y="200.66" size="0.508" layer="25" ratio="11" align="center"/>
 <attribute name="VALUE" x="111.633" y="199.3425" size="0.508" layer="27" ratio="10"/>
 </element>
-<element name="MUFF1:R50" library="OPL" package="R0603" value="100R" x="107.95" y="200.66" smashed="yes">
+<element name="MUFF1:R50" library="OPL" package="R0603" value="100R" x="107.95" y="200.66">
 <attribute name="NAME" x="107.95" y="200.66" size="0.508" layer="25" ratio="11" align="center"/>
 <attribute name="VALUE" x="106.553" y="199.3425" size="0.508" layer="27" ratio="10"/>
 </element>
-<element name="MUFF1:R51" library="OPL" package="R0603" value="10K" x="102.87" y="200.66" smashed="yes">
+<element name="MUFF1:R51" library="OPL" package="R0603" value="10K" x="102.87" y="200.66">
 <attribute name="NAME" x="102.87" y="200.66" size="0.508" layer="25" ratio="11" align="center"/>
 <attribute name="VALUE" x="101.473" y="199.3425" size="0.508" layer="27" ratio="10"/>
 </element>
-<element name="MUFF1:R52" library="OPL" package="R0603" value="1K" x="97.79" y="200.66" smashed="yes">
+<element name="MUFF1:R52" library="OPL" package="R0603" value="1K" x="97.79" y="200.66">
 <attribute name="NAME" x="97.79" y="200.66" size="0.508" layer="25" ratio="11" align="center"/>
 <attribute name="VALUE" x="96.393" y="199.3425" size="0.508" layer="27" ratio="10"/>
 </element>
-<element name="MUFF1:R53" library="OPL" package="R0603" value="10K" x="92.71" y="200.66" smashed="yes">
+<element name="MUFF1:R53" library="OPL" package="R0603" value="10K" x="92.71" y="200.66">
 <attribute name="NAME" x="92.71" y="200.66" size="0.508" layer="25" ratio="11" align="center"/>
 <attribute name="VALUE" x="91.313" y="199.3425" size="0.508" layer="27" ratio="10"/>
 </element>
-<element name="MUFF1:R54" library="OPL" package="R0603" value="100K" x="87.63" y="200.66" smashed="yes">
+<element name="MUFF1:R54" library="OPL" package="R0603" value="100K" x="87.63" y="200.66">
 <attribute name="NAME" x="87.63" y="200.66" size="0.508" layer="25" ratio="11" align="center"/>
 <attribute name="VALUE" x="86.233" y="199.3425" size="0.508" layer="27" ratio="10"/>
 </element>
-<element name="MUFF1:R55" library="OPL" package="R0603" value="150R" x="82.55" y="200.66" smashed="yes">
+<element name="MUFF1:R55" library="OPL" package="R0603" value="150R" x="82.55" y="200.66">
 <attribute name="NAME" x="82.55" y="200.66" size="0.508" layer="25" ratio="11" align="center"/>
 <attribute name="VALUE" x="81.153" y="199.3425" size="0.508" layer="27" ratio="10"/>
 </element>
-<element name="MUFF1:R56" library="OPL" package="R0603" value="470K" x="77.47" y="200.66" smashed="yes">
+<element name="MUFF1:R56" library="OPL" package="R0603" value="470K" x="77.47" y="200.66">
 <attribute name="NAME" x="77.47" y="200.66" size="0.508" layer="25" ratio="11" align="center"/>
 <attribute name="VALUE" x="76.073" y="199.3425" size="0.508" layer="27" ratio="10"/>
 </element>
-<element name="MUFF1:R57" library="OPL" package="R0603" value="10K" x="72.39" y="200.66" smashed="yes">
+<element name="MUFF1:R57" library="OPL" package="R0603" value="10K" x="72.39" y="200.66">
 <attribute name="NAME" x="72.39" y="200.66" size="0.508" layer="25" ratio="11" align="center"/>
 <attribute name="VALUE" x="70.993" y="199.3425" size="0.508" layer="27" ratio="10"/>
 </element>
-<element name="MUFF1:R58" library="OPL" package="R0603" value="10K" x="67.31" y="200.66" smashed="yes">
+<element name="MUFF1:R58" library="OPL" package="R0603" value="10K" x="67.31" y="200.66">
 <attribute name="NAME" x="67.31" y="200.66" size="0.508" layer="25" ratio="11" align="center"/>
 <attribute name="VALUE" x="65.913" y="199.3425" size="0.508" layer="27" ratio="10"/>
 </element>
-<element name="MUFF1:R59" library="OPL" package="R0603" value="100K" x="62.23" y="200.66" smashed="yes">
+<element name="MUFF1:R59" library="OPL" package="R0603" value="100K" x="62.23" y="200.66">
 <attribute name="NAME" x="62.23" y="200.66" size="0.508" layer="25" ratio="11" align="center"/>
 <attribute name="VALUE" x="60.833" y="199.3425" size="0.508" layer="27" ratio="10"/>
 </element>
-<element name="MUFF1:R60" library="OPL" package="R0603" value="150R" x="57.15" y="200.66" smashed="yes">
+<element name="MUFF1:R60" library="OPL" package="R0603" value="150R" x="57.15" y="200.66">
 <attribute name="NAME" x="57.15" y="200.66" size="0.508" layer="25" ratio="11" align="center"/>
 <attribute name="VALUE" x="55.753" y="199.3425" size="0.508" layer="27" ratio="10"/>
 </element>
-<element name="MUFF1:R61" library="OPL" package="R0603" value="470K" x="52.07" y="200.66" smashed="yes">
+<element name="MUFF1:R61" library="OPL" package="R0603" value="470K" x="52.07" y="200.66">
 <attribute name="NAME" x="52.07" y="200.66" size="0.508" layer="25" ratio="11" align="center"/>
 <attribute name="VALUE" x="50.673" y="199.3425" size="0.508" layer="27" ratio="10"/>
 </element>
-<element name="MUFF1:R62" library="OPL" package="R0603" value="10K" x="46.99" y="200.66" smashed="yes">
+<element name="MUFF1:R62" library="OPL" package="R0603" value="10K" x="46.99" y="200.66">
 <attribute name="NAME" x="46.99" y="200.66" size="0.508" layer="25" ratio="11" align="center"/>
 <attribute name="VALUE" x="45.593" y="199.3425" size="0.508" layer="27" ratio="10"/>
 </element>
-<element name="MUFF1:R63" library="OPL" package="R0603" value="39K" x="41.91" y="200.66" smashed="yes">
+<element name="MUFF1:R63" library="OPL" package="R0603" value="39K" x="41.91" y="200.66">
 <attribute name="NAME" x="41.91" y="200.66" size="0.508" layer="25" ratio="11" align="center"/>
 <attribute name="VALUE" x="40.513" y="199.3425" size="0.508" layer="27" ratio="10"/>
 </element>
-<element name="MUFF1:R64" library="OPL" package="R0603" value="22K" x="36.83" y="200.66" smashed="yes">
+<element name="MUFF1:R64" library="OPL" package="R0603" value="22K" x="36.83" y="200.66">
 <attribute name="NAME" x="36.83" y="200.66" size="0.508" layer="25" ratio="11" align="center"/>
 <attribute name="VALUE" x="35.433" y="199.3425" size="0.508" layer="27" ratio="10"/>
 </element>
-<element name="MUFF1:R65" library="OPL" package="R0603" value="100K" x="31.75" y="200.66" smashed="yes">
+<element name="MUFF1:R65" library="OPL" package="R0603" value="100K" x="31.75" y="200.66">
 <attribute name="NAME" x="31.75" y="200.66" size="0.508" layer="25" ratio="11" align="center"/>
 <attribute name="VALUE" x="30.353" y="199.3425" size="0.508" layer="27" ratio="10"/>
 </element>
-<element name="MUFF1:R66" library="OPL" package="R0603" value="430K" x="26.67" y="200.66" smashed="yes">
+<element name="MUFF1:R66" library="OPL" package="R0603" value="430K" x="26.67" y="200.66">
 <attribute name="NAME" x="26.67" y="200.66" size="0.508" layer="25" ratio="11" align="center"/>
 <attribute name="VALUE" x="25.273" y="199.3425" size="0.508" layer="27" ratio="10"/>
 </element>
-<element name="MUFF1:R67" library="OPL" package="R0603" value="15K" x="257.81" y="223.52" smashed="yes">
+<element name="MUFF1:R67" library="OPL" package="R0603" value="15K" x="257.81" y="223.52">
 <attribute name="NAME" x="257.81" y="223.52" size="0.508" layer="25" ratio="11" align="center"/>
 <attribute name="VALUE" x="256.413" y="222.2025" size="0.508" layer="27" ratio="10"/>
 </element>
-<element name="MUFF1:R68" library="OPL" package="R0603" value="3.3K" x="252.73" y="223.52" smashed="yes">
+<element name="MUFF1:R68" library="OPL" package="R0603" value="3.3K" x="252.73" y="223.52">
 <attribute name="NAME" x="252.73" y="223.52" size="0.508" layer="25" ratio="11" align="center"/>
 <attribute name="VALUE" x="251.333" y="222.2025" size="0.508" layer="27" ratio="10"/>
 </element>
-<element name="MUFF1:R69" library="EurorackModularParts" package="ALPS_POT_SQUAREHOLES" value="100KB" x="119.38" y="78.74" smashed="yes">
+<element name="MUFF1:R69" library="EurorackModularParts" package="ALPS_POT_SQUAREHOLES" value="100KB" x="119.38" y="78.74" locked="yes">
 <attribute name="DESC" value="Volume" x="119.38" y="80.772" size="1.016" layer="21" rot="R180" align="center"/>
 <attribute name="NAME" x="119.38" y="78.74" size="2.032" layer="25" ratio="10" rot="SR0" align="center"/>
 <attribute name="VALUE" x="119.38" y="76.2" size="1.27" layer="21" ratio="10" align="center"/>
 </element>
-<element name="MUFF1:R70" library="EurorackModularParts" package="ALPS_POT_SQUAREHOLES" value="100KB" x="119.38" y="33.02" smashed="yes">
+<element name="MUFF1:R70" library="EurorackModularParts" package="ALPS_POT_SQUAREHOLES" value="100KB" x="119.38" y="33.02" locked="yes">
 <attribute name="DESC" value="Tone" x="119.38" y="35.052" size="1.016" layer="21" rot="R180" align="center"/>
 <attribute name="NAME" x="119.38" y="33.02" size="2.032" layer="25" ratio="10" rot="SR0" align="center"/>
 <attribute name="VALUE" x="119.38" y="30.48" size="1.27" layer="21" ratio="10" align="center"/>
 </element>
-<element name="MUFF1:R71" library="EurorackModularParts" package="ALPS_POT_SQUAREHOLES" value="100KB" x="116.84" y="55.88" smashed="yes">
+<element name="MUFF1:R71" library="EurorackModularParts" package="ALPS_POT_SQUAREHOLES" value="100KB" x="116.84" y="55.88" locked="yes">
 <attribute name="DESC" value="Distortion" x="116.84" y="57.912" size="1.016" layer="21" rot="R180" align="center"/>
 <attribute name="NAME" x="116.84" y="55.88" size="2.032" layer="25" ratio="10" rot="SR0" align="center"/>
 <attribute name="VALUE" x="116.84" y="53.34" size="1.27" layer="21" ratio="10" align="center"/>
 </element>
-<element name="MUFF1:T1" library="transistor-neu-to92" package="SOT23-BEC" value="2n3904" x="148.59" y="247.65" smashed="yes">
+<element name="MUFF1:T1" library="transistor-neu-to92" package="SOT23-BEC" value="2n3904" x="148.59" y="247.65">
 <attribute name="NAME" x="146.685" y="249.555" size="1.27" layer="25"/>
 <attribute name="POPULARITY" value="0" x="148.59" y="247.65" size="1.778" layer="27" display="off"/>
 <attribute name="VALUE" x="146.685" y="244.475" size="1.27" layer="27"/>
 </element>
-<element name="MUFF1:T2" library="transistor-neu-to92" package="SOT23-BEC" value="2n3904" x="138.43" y="247.65" smashed="yes">
+<element name="MUFF1:T2" library="transistor-neu-to92" package="SOT23-BEC" value="2n3904" x="138.43" y="247.65">
 <attribute name="NAME" x="136.525" y="249.555" size="1.27" layer="25"/>
 <attribute name="POPULARITY" value="0" x="138.43" y="247.65" size="1.778" layer="27" display="off"/>
 <attribute name="VALUE" x="136.525" y="244.475" size="1.27" layer="27"/>
 </element>
-<element name="MUFF1:T3" library="transistor-neu-to92" package="SOT23-BEC" value="2n3904" x="128.27" y="247.65" smashed="yes">
+<element name="MUFF1:T3" library="transistor-neu-to92" package="SOT23-BEC" value="2n3904" x="128.27" y="247.65">
 <attribute name="NAME" x="126.365" y="249.555" size="1.27" layer="25"/>
 <attribute name="POPULARITY" value="0" x="128.27" y="247.65" size="1.778" layer="27" display="off"/>
 <attribute name="VALUE" x="126.365" y="244.475" size="1.27" layer="27"/>
 </element>
-<element name="MUFF1:T4" library="transistor-neu-to92" package="SOT23-BEC" value="2n3904" x="118.11" y="247.65" smashed="yes">
+<element name="MUFF1:T4" library="transistor-neu-to92" package="SOT23-BEC" value="2n3904" x="118.11" y="247.65">
 <attribute name="NAME" x="116.205" y="249.555" size="1.27" layer="25"/>
 <attribute name="POPULARITY" value="0" x="118.11" y="247.65" size="1.778" layer="27" display="off"/>
 <attribute name="VALUE" x="116.205" y="244.475" size="1.27" layer="27"/>
 </element>
-<element name="PCB1" library="EurorackModularParts" package="EURORACK36HP_5STOMP" value="EURORACK_PCB5STOMP" x="0" y="0" smashed="yes"/>
-<element name="RAT1:C29" library="OPL" package="C0603" value="22nF" x="-109.22" y="12.7" smashed="yes" rot="R180">
+<element name="PCB1" library="EurorackModularParts" package="EURORACK36HP_5STOMP" value="EURORACK_PCB5STOMP" x="0" y="0" locked="yes"/>
+<element name="RAT1:C29" library="OPL" package="C0603" value="22nF" x="-109.22" y="12.7" rot="R180">
 <attribute name="NAME" x="-109.22" y="12.7" size="0.508" layer="25" ratio="11" rot="R180" align="center"/>
 <attribute name="VALUE" x="-109.22" y="13.6525" size="0.508" layer="27" ratio="10" rot="R180" align="top-center"/>
 </element>
-<element name="RAT1:C30" library="OPL" package="C0603" value="1nF" x="-105.41" y="20.955" smashed="yes" rot="R90">
+<element name="RAT1:C30" library="OPL" package="C0603" value="1nF" x="-105.41" y="20.955" rot="R90">
 <attribute name="NAME" x="-105.41" y="20.955" size="0.508" layer="25" ratio="11" rot="R90" align="center"/>
 <attribute name="VALUE" x="-104.4575" y="20.955" size="0.508" layer="27" ratio="10" rot="R90" align="top-center"/>
 </element>
-<element name="RAT1:C31" library="OPL" package="C0603" value="100pF" x="-113.665" y="26.035" smashed="yes" rot="R270">
+<element name="RAT1:C31" library="OPL" package="C0603" value="100pF" x="-113.665" y="26.035" rot="R270">
 <attribute name="NAME" x="-113.665" y="26.035" size="0.508" layer="25" ratio="11" rot="R270" align="center"/>
 <attribute name="VALUE" x="-114.6175" y="26.035" size="0.508" layer="27" ratio="10" rot="R270" align="top-center"/>
 </element>
-<element name="RAT1:C35" library="OPL" package="C0603" value="3.3nF" x="-82.55" y="-5.715" smashed="yes" rot="R90">
+<element name="RAT1:C35" library="OPL" package="C0603" value="3.3nF" x="-82.55" y="-5.715" rot="R90">
 <attribute name="NAME" x="-82.55" y="-5.715" size="0.508" layer="25" ratio="11" rot="R90" align="center"/>
 <attribute name="VALUE" x="-81.5975" y="-5.715" size="0.508" layer="27" ratio="10" rot="R90" align="top-center"/>
 </element>
-<element name="RAT1:C36" library="OPL" package="C0603" value="22nF" x="-82.55" y="-9.525" smashed="yes" rot="R90">
+<element name="RAT1:C36" library="OPL" package="C0603" value="22nF" x="-82.55" y="-9.525" rot="R90">
 <attribute name="NAME" x="-82.55" y="-9.525" size="0.508" layer="25" ratio="11" rot="R90" align="center"/>
 <attribute name="VALUE" x="-81.5975" y="-9.525" size="0.508" layer="27" ratio="10" rot="R90" align="top-center"/>
 </element>
-<element name="RAT1:C38" library="OPL" package="C0603" value="100n" x="-100.33" y="27.94" smashed="yes" rot="R270">
+<element name="RAT1:C38" library="OPL" package="C0603" value="100n" x="-100.33" y="27.94" rot="R270">
 <attribute name="NAME" x="-100.33" y="27.94" size="0.508" layer="25" ratio="11" rot="R270" align="center"/>
 <attribute name="VALUE" x="-101.2825" y="27.94" size="0.508" layer="27" ratio="10" rot="R270" align="top-center"/>
 </element>
-<element name="RAT1:C39" library="OPL" package="C0603" value="100n" x="-110.49" y="29.21" smashed="yes" rot="R270">
+<element name="RAT1:C39" library="OPL" package="C0603" value="100n" x="-110.49" y="29.21" rot="R270">
 <attribute name="NAME" x="-110.49" y="29.21" size="0.508" layer="25" ratio="11" rot="R270" align="center"/>
 <attribute name="VALUE" x="-111.4425" y="29.21" size="0.508" layer="27" ratio="10" rot="R270" align="top-center"/>
 </element>
-<element name="RAT1:IC6" library="linear" package="SO08" value="UA741D" x="-106.045" y="27.305" smashed="yes">
+<element name="RAT1:IC6" library="linear" package="SO08" value="UA741D" x="-106.045" y="27.305">
 <attribute name="NAME" x="-108.712" y="25.4" size="1.27" layer="25" rot="R90"/>
 <attribute name="POPULARITY" value="0" x="-106.045" y="27.305" size="1.778" layer="27" display="off"/>
 <attribute name="VALUE" x="-102.108" y="25.4" size="1.27" layer="27" rot="R90"/>
 </element>
-<element name="RAT1:JP1" library="pinhead" package="1X03" value="" x="-109.855" y="8.89" smashed="yes" rot="R180">
+<element name="RAT1:JP1" library="pinhead" package="1X03" value="" x="-109.855" y="8.89" rot="R180">
 <attribute name="NAME" x="-105.9688" y="7.0612" size="1.27" layer="25" ratio="10" rot="R180"/>
 <attribute name="POPULARITY" value="92" x="-109.855" y="8.89" size="1.778" layer="27" rot="R180" display="off"/>
 <attribute name="VALUE" x="-106.045" y="12.065" size="1.27" layer="27" rot="R180"/>
 </element>
-<element name="RAT1:JP2" library="pinhead" package="1X03" value="" x="-109.855" y="38.735" smashed="yes" rot="R270">
+<element name="RAT1:JP2" library="pinhead" package="1X03" value="" x="-109.855" y="38.735" rot="R270">
 <attribute name="NAME" x="-108.0262" y="42.6212" size="1.27" layer="25" ratio="10" rot="R270"/>
 <attribute name="POPULARITY" value="92" x="-109.855" y="38.735" size="1.778" layer="27" rot="R270" display="off"/>
 <attribute name="VALUE" x="-113.03" y="42.545" size="1.27" layer="27" rot="R270"/>
 </element>
-<element name="RAT1:JP3" library="pinhead" package="1X03" value="" x="-100.33" y="15.875" smashed="yes">
+<element name="RAT1:JP3" library="pinhead" package="1X03" value="" x="-100.33" y="15.875">
 <attribute name="NAME" x="-104.2162" y="17.7038" size="1.27" layer="25" ratio="10"/>
 <attribute name="POPULARITY" value="92" x="-100.33" y="15.875" size="1.778" layer="27" display="off"/>
 <attribute name="VALUE" x="-104.14" y="12.7" size="1.27" layer="27"/>
 </element>
-<element name="RAT1:Q1" library="transistor-fet" package="SOT23" value="SST201" x="-92.71" y="0" smashed="yes" rot="R270">
+<element name="RAT1:Q1" library="transistor-fet" package="SOT23" value="SST201" x="-92.71" y="0" rot="R270">
 <attribute name="NAME" x="-90.805" y="1.905" size="1.27" layer="25" rot="R270"/>
 <attribute name="POPULARITY" value="0" x="-92.71" y="0" size="1.778" layer="27" rot="R270" display="off"/>
 <attribute name="VALUE" x="-95.885" y="1.905" size="1.27" layer="27" rot="R270"/>
 </element>
-<element name="RAT1:R29" library="EurorackModularParts" package="ALPS_POT_SQUAREHOLES" value="100KA" x="63.5" y="78.74" smashed="yes">
+<element name="RAT1:R29" library="EurorackModularParts" package="ALPS_POT_SQUAREHOLES" value="100KA" x="63.5" y="78.74" locked="yes">
 <attribute name="DESC" value="Volume" x="63.5" y="80.772" size="1.016" layer="21" rot="R180" align="center"/>
 <attribute name="NAME" x="63.5" y="78.74" size="2.032" layer="25" ratio="10" rot="SR0" align="center"/>
 <attribute name="VALUE" x="63.5" y="76.2" size="1.27" layer="21" ratio="10" align="center"/>
 </element>
-<element name="RAT1:R30" library="EurorackModularParts" package="ALPS_POT_SQUAREHOLES" value="100KA" x="63.5" y="33.02" smashed="yes">
+<element name="RAT1:R30" library="EurorackModularParts" package="ALPS_POT_SQUAREHOLES" value="100KA" x="63.5" y="33.02" locked="yes">
 <attribute name="DESC" value="Tone" x="63.5" y="35.052" size="1.016" layer="21" rot="R180" align="center"/>
 <attribute name="NAME" x="63.5" y="33.02" size="2.032" layer="25" ratio="10" rot="SR0" align="center"/>
 <attribute name="VALUE" x="63.5" y="30.48" size="1.27" layer="21" ratio="10" align="center"/>
 </element>
-<element name="RAT1:R31" library="EurorackModularParts" package="ALPS_POT_SQUAREHOLES" value="100KA" x="66.04" y="55.88" smashed="yes">
+<element name="RAT1:R31" library="EurorackModularParts" package="ALPS_POT_SQUAREHOLES" value="100KA" x="66.04" y="55.88" locked="yes">
 <attribute name="DESC" value="Distortion" x="66.04" y="57.912" size="1.016" layer="21" rot="R180" align="center"/>
 <attribute name="NAME" x="66.04" y="55.88" size="2.032" layer="25" ratio="10" rot="SR0" align="center"/>
 <attribute name="VALUE" x="66.04" y="53.34" size="1.27" layer="21" ratio="10" align="center"/>
 </element>
-<element name="RAT1:R32" library="OPL" package="R0603" value="1M" x="-77.47" y="-6.35" smashed="yes" rot="R90">
+<element name="RAT1:R32" library="OPL" package="R0603" value="1M" x="-77.47" y="-6.35" rot="R90">
 <attribute name="NAME" x="-77.47" y="-6.35" size="0.508" layer="25" ratio="11" rot="R90" align="center"/>
 <attribute name="VALUE" x="-76.1525" y="-7.747" size="0.508" layer="27" ratio="10" rot="R90"/>
 </element>
-<element name="RAT1:R33" library="OPL" package="R0603" value="1K" x="-99.695" y="20.955" smashed="yes" rot="R180">
+<element name="RAT1:R33" library="OPL" package="R0603" value="1K" x="-99.695" y="20.955" rot="R180">
 <attribute name="NAME" x="-99.695" y="20.955" size="0.508" layer="25" ratio="11" rot="R180" align="center"/>
 <attribute name="VALUE" x="-98.298" y="22.2725" size="0.508" layer="27" ratio="10" rot="R180"/>
 </element>
-<element name="RAT1:R34" library="OPL" package="R0603" value="1M" x="-107.315" y="5.08" smashed="yes" rot="R270">
+<element name="RAT1:R34" library="OPL" package="R0603" value="1M" x="-107.315" y="5.08" rot="R270">
 <attribute name="NAME" x="-107.315" y="5.08" size="0.508" layer="25" ratio="11" rot="R270" align="center"/>
 <attribute name="VALUE" x="-108.6325" y="6.477" size="0.508" layer="27" ratio="10" rot="R270"/>
 </element>
-<element name="RAT1:R35" library="OPL" package="R0603" value="560R" x="-115.57" y="26.035" smashed="yes" rot="R90">
+<element name="RAT1:R35" library="OPL" package="R0603" value="560R" x="-115.57" y="26.035" rot="R90">
 <attribute name="NAME" x="-115.57" y="26.035" size="0.508" layer="25" ratio="11" rot="R90" align="center"/>
 <attribute name="VALUE" x="-114.2525" y="24.638" size="0.508" layer="27" ratio="10" rot="R90"/>
 </element>
-<element name="RAT1:R36" library="OPL" package="R0603" value="47R" x="-115.57" y="30.48" smashed="yes" rot="R270">
+<element name="RAT1:R36" library="OPL" package="R0603" value="47R" x="-115.57" y="30.48" rot="R270">
 <attribute name="NAME" x="-115.57" y="30.48" size="0.508" layer="25" ratio="11" rot="R270" align="center"/>
 <attribute name="VALUE" x="-116.8875" y="31.877" size="0.508" layer="27" ratio="10" rot="R270"/>
 </element>
-<element name="RAT1:R37" library="OPL" package="R0603" value="1K" x="-104.14" y="-1.905" smashed="yes" rot="R270">
+<element name="RAT1:R37" library="OPL" package="R0603" value="1K" x="-104.14" y="-1.905" rot="R270">
 <attribute name="NAME" x="-104.14" y="-1.905" size="0.508" layer="25" ratio="11" rot="R270" align="center"/>
 <attribute name="VALUE" x="-105.4575" y="-0.508" size="0.508" layer="27" ratio="10" rot="R270"/>
 </element>
-<element name="RAT1:R38" library="OPL" package="R0603" value="1.5K" x="-78.105" y="-2.54" smashed="yes" rot="R180">
+<element name="RAT1:R38" library="OPL" package="R0603" value="1.5K" x="-78.105" y="-2.54" rot="R180">
 <attribute name="NAME" x="-78.105" y="-2.54" size="0.508" layer="25" ratio="11" rot="R180" align="center"/>
 <attribute name="VALUE" x="-76.708" y="-1.2225" size="0.508" layer="27" ratio="10" rot="R180"/>
 </element>
-<element name="RAT1:R39" library="OPL" package="R0603" value="1M" x="-96.52" y="-6.985" smashed="yes">
+<element name="RAT1:R39" library="OPL" package="R0603" value="1M" x="-96.52" y="-6.985">
 <attribute name="NAME" x="-96.52" y="-6.985" size="0.508" layer="25" ratio="11" align="center"/>
 <attribute name="VALUE" x="-97.917" y="-8.3025" size="0.508" layer="27" ratio="10"/>
 </element>
-<element name="RAT1:R40" library="OPL" package="R0603" value="10K" x="-97.155" y="-2.54" smashed="yes">
+<element name="RAT1:R40" library="OPL" package="R0603" value="10K" x="-97.155" y="-2.54">
 <attribute name="NAME" x="-97.155" y="-2.54" size="0.508" layer="25" ratio="11" align="center"/>
 <attribute name="VALUE" x="-98.552" y="-3.8575" size="0.508" layer="27" ratio="10"/>
 </element>
-<element name="U$13" library="FenixBase" package="POWERTESTPAD" value="VOLTAGETESTPAD" x="91.44" y="35.56" smashed="yes">
+<element name="U$13" library="FenixBase" package="POWERTESTPAD" value="VOLTAGETESTPAD" x="91.44" y="35.56">
 <attribute name="DESC" value="12V" x="91.44" y="33.81" size="0.5" layer="21" align="top-center"/>
 </element>
-<element name="RAT1:C28" library="adafruit" package="153CLV-0505" value="1uF" x="-92.71" y="13.335" smashed="yes" rot="R270">
+<element name="RAT1:C28" library="adafruit" package="153CLV-0505" value="1uF" x="-92.71" y="13.335" rot="R270">
 <attribute name="NAME" x="-89.73" y="16.075" size="1.27" layer="25" rot="R270"/>
 <attribute name="VALUE" x="-96.945" y="16.11" size="1.27" layer="27" rot="R270"/>
 </element>
-<element name="RAT1:C1" library="adafruit" package="153CLV-0505" value="4.7uF" x="-105.41" y="36.83" smashed="yes" rot="R270">
+<element name="RAT1:C1" library="adafruit" package="153CLV-0505" value="4.7uF" x="-105.41" y="36.83" rot="R270">
 <attribute name="NAME" x="-102.43" y="39.57" size="1.27" layer="25" rot="R270"/>
 <attribute name="VALUE" x="-109.645" y="39.605" size="1.27" layer="27" rot="R270"/>
 </element>
-<element name="RAT1:C2" library="adafruit" package="153CLV-0505" value="2.2uF" x="-115.57" y="36.83" smashed="yes" rot="R270">
+<element name="RAT1:C2" library="adafruit" package="153CLV-0505" value="2.2uF" x="-115.57" y="36.83" rot="R270">
 <attribute name="NAME" x="-112.59" y="39.57" size="1.27" layer="25" rot="R270"/>
 <attribute name="VALUE" x="-119.805" y="39.605" size="1.27" layer="27" rot="R270"/>
 </element>
-<element name="RAT1:C3" library="adafruit" package="153CLV-0505" value="4.7uF" x="-115.57" y="19.685" smashed="yes" rot="R90">
+<element name="RAT1:C3" library="adafruit" package="153CLV-0505" value="4.7uF" x="-115.57" y="19.685" rot="R90">
 <attribute name="NAME" x="-118.55" y="16.945" size="1.27" layer="25" rot="R90"/>
 <attribute name="VALUE" x="-111.335" y="16.91" size="1.27" layer="27" rot="R90"/>
 </element>
-<element name="DIST+1:JP6" library="pinhead" package="1X03" value="" x="29.845" y="85.725" smashed="yes">
-<attribute name="NAME" x="25.9588" y="87.5538" size="1.27" layer="25" ratio="10"/>
-<attribute name="POPULARITY" value="92" x="29.845" y="85.725" size="1.778" layer="27" display="off"/>
-<attribute name="VALUE" x="26.035" y="82.55" size="1.27" layer="27"/>
+<element name="DIST+1:JP6" library="pinhead" package="1X03" value="" x="64.135" y="89.535" rot="R270">
+<attribute name="NAME" x="65.9638" y="93.4212" size="1.27" layer="25" ratio="10" rot="R270"/>
+<attribute name="POPULARITY" value="92" x="64.135" y="89.535" size="1.778" layer="27" rot="R270" display="off"/>
+<attribute name="VALUE" x="60.96" y="93.345" size="1.27" layer="27" rot="R270"/>
 </element>
-<element name="DIST+1:R72" library="OPL" package="R0603" value="1M" x="-105.41" y="261.62" smashed="yes">
+<element name="DIST+1:R72" library="OPL" package="R0603" value="1M" x="-105.41" y="261.62">
 <attribute name="NAME" x="-105.41" y="261.62" size="0.508" layer="25" ratio="11" align="center"/>
 <attribute name="VALUE" x="-106.807" y="260.3025" size="0.508" layer="27" ratio="10"/>
 </element>
-<element name="U$22" library="EurorackModularParts" package="BYPASSBOARD" value="5STOMPBOARD" x="5.08" y="0" smashed="yes"/>
-<element name="MUFF1:D1" library="FenixBase" package="SOT-323" value="BAS16W" x="255.27" y="166.37" smashed="yes">
+<element name="U$22" library="EurorackModularParts" package="BYPASSBOARD" value="5STOMPBOARD" x="5.08" y="0" locked="yes"/>
+<element name="MUFF1:D1" library="FenixBase" package="SOT-323" value="BAS16W" x="255.27" y="166.37">
 <attribute name="NAME" x="255.27" y="166.37" size="0.508" layer="25" align="center"/>
 </element>
-<element name="MUFF1:D2" library="FenixBase" package="SOT-323" value="BAS16W" x="251.46" y="166.37" smashed="yes">
+<element name="MUFF1:D2" library="FenixBase" package="SOT-323" value="BAS16W" x="251.46" y="166.37">
 <attribute name="NAME" x="251.46" y="166.37" size="0.508" layer="25" align="center"/>
 </element>
-<element name="MUFF1:D3" library="FenixBase" package="SOT-323" value="BAS16W" x="247.65" y="166.37" smashed="yes">
+<element name="MUFF1:D3" library="FenixBase" package="SOT-323" value="BAS16W" x="247.65" y="166.37">
 <attribute name="NAME" x="247.65" y="166.37" size="0.508" layer="25" align="center"/>
 </element>
-<element name="MUFF1:D4" library="FenixBase" package="SOT-323" value="BAS16W" x="243.84" y="166.37" smashed="yes">
+<element name="MUFF1:D4" library="FenixBase" package="SOT-323" value="BAS16W" x="243.84" y="166.37">
 <attribute name="NAME" x="243.84" y="166.37" size="0.508" layer="25" align="center"/>
 </element>
-<element name="J17" library="EurorackModularParts" package="3.5MM-JACK-SWITCH-13MM-NOHOLES" value="JACK" x="152.4" y="100.965" smashed="yes">
-<attribute name="DESC" value="Input E" x="152.4" y="100.965" size="1.27" layer="22" rot="SMR45" align="center"/>
+<element name="J17" library="EurorackModularParts" package="3.5MM-JACK-SWITCH-13MM-NOHOLES" value="JACK" x="152.4" y="101.6" locked="yes">
+<attribute name="DESC" value="Input E" x="152.4" y="101.6" size="1.27" layer="22" rot="SMR45" align="center"/>
 </element>
-<element name="J18" library="EurorackModularParts" package="3.5MM-JACK-SWITCH-13MM-NOHOLES" value="JACK" x="162.56" y="98.425" smashed="yes">
-<attribute name="DESC" value="Difference E" x="162.56" y="98.425" size="1.27" layer="22" rot="SMR45" align="center"/>
+<element name="J18" library="EurorackModularParts" package="3.5MM-JACK-SWITCH-13MM-NOHOLES" value="JACK" x="162.56" y="99.06" locked="yes">
+<attribute name="DESC" value="Difference E" x="162.56" y="99.06" size="1.27" layer="22" rot="SMR45" align="center"/>
 </element>
-<element name="J19" library="EurorackModularParts" package="3.5MM-JACK-SWITCH-13MM-NOHOLES" value="JACK" x="172.72" y="100.965" smashed="yes">
-<attribute name="DESC" value="Output E" x="172.72" y="100.965" size="1.27" layer="22" rot="SMR45" align="center"/>
+<element name="J19" library="EurorackModularParts" package="3.5MM-JACK-SWITCH-13MM-NOHOLES" value="JACK" x="172.72" y="101.6" locked="yes">
+<attribute name="DESC" value="Output E" x="172.72" y="101.6" size="1.27" layer="22" rot="SMR45" align="center"/>
 </element>
-<element name="IC2" library="EurorackModularParts" package="TSSOP14" value="TL074TSSOP14" x="207.01" y="154.94" smashed="yes">
+<element name="IC2" library="EurorackModularParts" package="TSSOP14" value="TL074TSSOP14" x="207.01" y="154.94">
 <attribute name="NAME" x="204.41" y="154.94" size="1.016" layer="25" ratio="10" rot="R90" align="bottom-center"/>
 <attribute name="VALUE" x="209.61" y="154.94" size="1.016" layer="27" ratio="10" rot="R90" align="top-center"/>
 </element>
-<element name="C9" library="OPL" package="C0603" value="100n" x="236.22" y="113.03" smashed="yes">
+<element name="C9" library="OPL" package="C0603" value="100n" x="236.22" y="113.03">
 <attribute name="NAME" x="236.22" y="113.03" size="0.508" layer="25" ratio="11" align="center"/>
 <attribute name="VALUE" x="236.22" y="112.0775" size="0.508" layer="27" ratio="10" align="top-center"/>
 </element>
-<element name="C10" library="OPL" package="C0603" value="100n" x="236.22" y="110.49" smashed="yes">
+<element name="C10" library="OPL" package="C0603" value="100n" x="236.22" y="110.49">
 <attribute name="NAME" x="236.22" y="110.49" size="0.508" layer="25" ratio="11" align="center"/>
 <attribute name="VALUE" x="236.22" y="109.5375" size="0.508" layer="27" ratio="10" align="top-center"/>
 </element>
-<element name="R1" library="OPL" package="R0603" value="100k" x="236.22" y="107.95" smashed="yes">
+<element name="R1" library="OPL" package="R0603" value="100k" x="236.22" y="107.95">
 <attribute name="NAME" x="236.22" y="107.95" size="0.508" layer="25" ratio="11" align="center"/>
 <attribute name="VALUE" x="234.823" y="106.6325" size="0.508" layer="27" ratio="10"/>
 </element>
-<element name="R2" library="OPL" package="R0603" value="100k" x="236.22" y="105.41" smashed="yes">
+<element name="R2" library="OPL" package="R0603" value="100k" x="236.22" y="105.41">
 <attribute name="NAME" x="236.22" y="105.41" size="0.508" layer="25" ratio="11" align="center"/>
 <attribute name="VALUE" x="234.823" y="104.0925" size="0.508" layer="27" ratio="10"/>
 </element>
-<element name="R3" library="OPL" package="R0603" value="100k" x="236.22" y="102.87" smashed="yes">
+<element name="R3" library="OPL" package="R0603" value="100k" x="236.22" y="102.87">
 <attribute name="NAME" x="236.22" y="102.87" size="0.508" layer="25" ratio="11" align="center"/>
 <attribute name="VALUE" x="234.823" y="101.5525" size="0.508" layer="27" ratio="10"/>
 </element>
-<element name="R4" library="OPL" package="R0603" value="100k" x="236.22" y="100.33" smashed="yes">
+<element name="R4" library="OPL" package="R0603" value="100k" x="236.22" y="100.33">
 <attribute name="NAME" x="236.22" y="100.33" size="0.508" layer="25" ratio="11" align="center"/>
 <attribute name="VALUE" x="234.823" y="99.0125" size="0.508" layer="27" ratio="10"/>
 </element>
-<element name="R5" library="OPL" package="R0603" value="100k" x="243.84" y="96.52" smashed="yes">
+<element name="R5" library="OPL" package="R0603" value="100k" x="243.84" y="96.52">
 <attribute name="NAME" x="243.84" y="96.52" size="0.508" layer="25" ratio="11" align="center"/>
 <attribute name="VALUE" x="242.443" y="95.2025" size="0.508" layer="27" ratio="10"/>
 </element>
-<element name="R6" library="OPL" package="R0603" value="100k" x="236.22" y="86.36" smashed="yes">
+<element name="R6" library="OPL" package="R0603" value="100k" x="236.22" y="86.36">
 <attribute name="NAME" x="236.22" y="86.36" size="0.508" layer="25" ratio="11" align="center"/>
 <attribute name="VALUE" x="234.823" y="85.0425" size="0.508" layer="27" ratio="10"/>
 </element>
-<element name="R7" library="OPL" package="R0603" value="100k" x="241.3" y="86.36" smashed="yes">
+<element name="R7" library="OPL" package="R0603" value="100k" x="241.3" y="86.36">
 <attribute name="NAME" x="241.3" y="86.36" size="0.508" layer="25" ratio="11" align="center"/>
 <attribute name="VALUE" x="239.903" y="85.0425" size="0.508" layer="27" ratio="10"/>
 </element>
-<element name="R8" library="OPL" package="R0603" value="100k" x="236.22" y="82.55" smashed="yes">
+<element name="R8" library="OPL" package="R0603" value="100k" x="236.22" y="82.55">
 <attribute name="NAME" x="236.22" y="82.55" size="0.508" layer="25" ratio="11" align="center"/>
 <attribute name="VALUE" x="234.823" y="81.2325" size="0.508" layer="27" ratio="10"/>
 </element>
-<element name="R9" library="OPL" package="R0603" value="100k" x="231.14" y="68.58" smashed="yes">
+<element name="R9" library="OPL" package="R0603" value="100k" x="231.14" y="68.58">
 <attribute name="NAME" x="231.14" y="68.58" size="0.508" layer="25" ratio="11" align="center"/>
 <attribute name="VALUE" x="229.743" y="67.2625" size="0.508" layer="27" ratio="10"/>
 </element>
-<element name="R10" library="OPL" package="R0603" value="100k" x="236.22" y="68.58" smashed="yes">
+<element name="R10" library="OPL" package="R0603" value="100k" x="236.22" y="68.58">
 <attribute name="NAME" x="236.22" y="68.58" size="0.508" layer="25" ratio="11" align="center"/>
 <attribute name="VALUE" x="234.823" y="67.2625" size="0.508" layer="27" ratio="10"/>
 </element>
-<element name="R11" library="OPL" package="R0603" value="100k" x="231.14" y="64.77" smashed="yes">
+<element name="R11" library="OPL" package="R0603" value="100k" x="231.14" y="64.77">
 <attribute name="NAME" x="231.14" y="64.77" size="0.508" layer="25" ratio="11" align="center"/>
 <attribute name="VALUE" x="229.743" y="63.4525" size="0.508" layer="27" ratio="10"/>
 </element>
-<element name="R12" library="OPL" package="R0603" value="100k" x="236.22" y="64.77" smashed="yes">
+<element name="R12" library="OPL" package="R0603" value="100k" x="236.22" y="64.77">
 <attribute name="NAME" x="236.22" y="64.77" size="0.508" layer="25" ratio="11" align="center"/>
 <attribute name="VALUE" x="234.823" y="63.4525" size="0.508" layer="27" ratio="10"/>
 </element>
-<element name="R13" library="OPL" package="R0603" value="100k" x="231.14" y="50.8" smashed="yes">
+<element name="R13" library="OPL" package="R0603" value="100k" x="231.14" y="50.8">
 <attribute name="NAME" x="231.14" y="50.8" size="0.508" layer="25" ratio="11" align="center"/>
 <attribute name="VALUE" x="229.743" y="49.4825" size="0.508" layer="27" ratio="10"/>
 </element>
-<element name="R14" library="OPL" package="R0603" value="100k" x="236.22" y="50.8" smashed="yes">
+<element name="R14" library="OPL" package="R0603" value="100k" x="236.22" y="50.8">
 <attribute name="NAME" x="236.22" y="50.8" size="0.508" layer="25" ratio="11" align="center"/>
 <attribute name="VALUE" x="234.823" y="49.4825" size="0.508" layer="27" ratio="10"/>
 </element>
-<element name="R15" library="OPL" package="R0603" value="100k" x="231.14" y="46.99" smashed="yes">
+<element name="R15" library="OPL" package="R0603" value="100k" x="231.14" y="46.99">
 <attribute name="NAME" x="231.14" y="46.99" size="0.508" layer="25" ratio="11" align="center"/>
 <attribute name="VALUE" x="229.743" y="45.6725" size="0.508" layer="27" ratio="10"/>
 </element>
-<element name="R16" library="OPL" package="R0603" value="100k" x="236.22" y="46.99" smashed="yes">
+<element name="R16" library="OPL" package="R0603" value="100k" x="236.22" y="46.99">
 <attribute name="NAME" x="236.22" y="46.99" size="0.508" layer="25" ratio="11" align="center"/>
 <attribute name="VALUE" x="234.823" y="45.6725" size="0.508" layer="27" ratio="10"/>
 </element>
-<element name="IC6" library="EurorackModularParts" package="TSSOP14" value="TL074TSSOP14" x="233.68" y="39.37" smashed="yes">
+<element name="IC6" library="EurorackModularParts" package="TSSOP14" value="TL074TSSOP14" x="233.68" y="39.37">
 <attribute name="NAME" x="231.08" y="39.37" size="1.016" layer="25" ratio="10" rot="R90" align="bottom-center"/>
 <attribute name="VALUE" x="236.28" y="39.37" size="1.016" layer="27" ratio="10" rot="R90" align="top-center"/>
 </element>
-<element name="R17" library="OPL" package="R0603" value="100k" x="231.14" y="33.02" smashed="yes">
+<element name="R17" library="OPL" package="R0603" value="100k" x="231.14" y="33.02">
 <attribute name="NAME" x="231.14" y="33.02" size="0.508" layer="25" ratio="11" align="center"/>
 <attribute name="VALUE" x="229.743" y="31.7025" size="0.508" layer="27" ratio="10"/>
 </element>
-<element name="R18" library="OPL" package="R0603" value="100k" x="236.22" y="33.02" smashed="yes">
+<element name="R18" library="OPL" package="R0603" value="100k" x="236.22" y="33.02">
 <attribute name="NAME" x="236.22" y="33.02" size="0.508" layer="25" ratio="11" align="center"/>
 <attribute name="VALUE" x="234.823" y="31.7025" size="0.508" layer="27" ratio="10"/>
 </element>
-<element name="R19" library="OPL" package="R0603" value="100k" x="231.14" y="29.21" smashed="yes">
+<element name="R19" library="OPL" package="R0603" value="100k" x="231.14" y="29.21">
 <attribute name="NAME" x="231.14" y="29.21" size="0.508" layer="25" ratio="11" align="center"/>
 <attribute name="VALUE" x="229.743" y="27.8925" size="0.508" layer="27" ratio="10"/>
 </element>
-<element name="R20" library="OPL" package="R0603" value="100k" x="236.22" y="29.21" smashed="yes">
+<element name="R20" library="OPL" package="R0603" value="100k" x="236.22" y="29.21">
 <attribute name="NAME" x="236.22" y="29.21" size="0.508" layer="25" ratio="11" align="center"/>
 <attribute name="VALUE" x="234.823" y="27.8925" size="0.508" layer="27" ratio="10"/>
 </element>
-<element name="R21" library="OPL" package="R0603" value="100k" x="231.14" y="15.24" smashed="yes">
+<element name="R21" library="OPL" package="R0603" value="100k" x="231.14" y="15.24">
 <attribute name="NAME" x="231.14" y="15.24" size="0.508" layer="25" ratio="11" align="center"/>
 <attribute name="VALUE" x="229.743" y="13.9225" size="0.508" layer="27" ratio="10"/>
 </element>
-<element name="R22" library="OPL" package="R0603" value="100k" x="236.22" y="15.24" smashed="yes">
+<element name="R22" library="OPL" package="R0603" value="100k" x="236.22" y="15.24">
 <attribute name="NAME" x="236.22" y="15.24" size="0.508" layer="25" ratio="11" align="center"/>
 <attribute name="VALUE" x="234.823" y="13.9225" size="0.508" layer="27" ratio="10"/>
 </element>
-<element name="R23" library="OPL" package="R0603" value="100k" x="231.14" y="11.43" smashed="yes">
+<element name="R23" library="OPL" package="R0603" value="100k" x="231.14" y="11.43">
 <attribute name="NAME" x="231.14" y="11.43" size="0.508" layer="25" ratio="11" align="center"/>
 <attribute name="VALUE" x="229.743" y="10.1125" size="0.508" layer="27" ratio="10"/>
 </element>
-<element name="R24" library="OPL" package="R0603" value="100k" x="236.22" y="11.43" smashed="yes">
+<element name="R24" library="OPL" package="R0603" value="100k" x="236.22" y="11.43">
 <attribute name="NAME" x="236.22" y="11.43" size="0.508" layer="25" ratio="11" align="center"/>
 <attribute name="VALUE" x="234.823" y="10.1125" size="0.508" layer="27" ratio="10"/>
 </element>
-<element name="C11" library="OPL" package="C0603" value="100n" x="231.14" y="7.62" smashed="yes">
+<element name="C11" library="OPL" package="C0603" value="100n" x="231.14" y="7.62">
 <attribute name="NAME" x="231.14" y="7.62" size="0.508" layer="25" ratio="11" align="center"/>
 <attribute name="VALUE" x="231.14" y="6.6675" size="0.508" layer="27" ratio="10" align="top-center"/>
 </element>
-<element name="C12" library="OPL" package="C0603" value="100n" x="231.14" y="3.81" smashed="yes">
+<element name="C12" library="OPL" package="C0603" value="100n" x="231.14" y="3.81">
 <attribute name="NAME" x="231.14" y="3.81" size="0.508" layer="25" ratio="11" align="center"/>
 <attribute name="VALUE" x="231.14" y="2.8575" size="0.508" layer="27" ratio="10" align="top-center"/>
 </element>
-<element name="U$41" library="FenixBase" package="POWERTESTPAD" value="VOLTAGETESTPAD" x="96.52" y="43.18" smashed="yes">
+<element name="U$41" library="FenixBase" package="POWERTESTPAD" value="VOLTAGETESTPAD" x="96.52" y="43.18">
 <attribute name="DESC" value="-12V" x="96.52" y="41.43" size="0.5" layer="21" align="top-center"/>
 </element>
-<element name="U$42" library="FenixBase" package="POWERTESTPAD" value="VOLTAGETESTPAD" x="88.9" y="35.56" smashed="yes">
+<element name="U$42" library="FenixBase" package="POWERTESTPAD" value="VOLTAGETESTPAD" x="88.9" y="35.56">
 <attribute name="DESC" value="9V" x="88.9" y="33.81" size="0.5" layer="21" align="top-center"/>
 </element>
-<element name="U$43" library="FenixBase" package="POWERTESTPAD" value="VOLTAGETESTPAD" x="83.82" y="35.56" smashed="yes">
+<element name="U$43" library="FenixBase" package="POWERTESTPAD" value="VOLTAGETESTPAD" x="83.82" y="35.56">
 <attribute name="DESC" value="GND" x="83.82" y="33.81" size="0.5" layer="21" align="top-center"/>
 </element>
-<element name="U$44" library="FenixBase" package="POWERTESTPAD" value="VOLTAGETESTPAD" x="86.36" y="35.56" smashed="yes">
+<element name="U$44" library="FenixBase" package="POWERTESTPAD" value="VOLTAGETESTPAD" x="86.36" y="35.56">
 <attribute name="DESC" value="4.5V" x="86.36" y="33.81" size="0.5" layer="21" align="top-center"/>
 </element>
-<element name="U$48" library="FenixBase" package="GROUNDLOOP" value="GNDLOOP" x="177.8" y="5.08" smashed="yes" rot="R180"/>
-<element name="U$49" library="FenixBase" package="GROUNDLOOP" value="GNDLOOP" x="177.8" y="97.79" smashed="yes"/>
-<element name="U$50" library="FenixBase" package="GROUNDLOOP" value="GNDLOOP" x="5.08" y="5.08" smashed="yes" rot="R180"/>
-<element name="R25" library="OPL" package="R0603" value="100k" x="91.44" y="38.1" smashed="yes">
+<element name="U$48" library="FenixBase" package="GROUNDLOOP" value="GNDLOOP" x="177.8" y="5.08" locked="yes" rot="R180"/>
+<element name="U$49" library="FenixBase" package="GROUNDLOOP" value="GNDLOOP" x="177.8" y="97.79" locked="yes"/>
+<element name="U$50" library="FenixBase" package="GROUNDLOOP" value="GNDLOOP" x="5.08" y="5.08" locked="yes" rot="R180"/>
+<element name="R25" library="OPL" package="R0603" value="100k" x="91.44" y="38.1">
 <attribute name="NAME" x="91.44" y="38.1" size="0.508" layer="25" ratio="11" align="center"/>
 <attribute name="VALUE" x="90.043" y="36.7825" size="0.508" layer="27" ratio="10"/>
 </element>
-<element name="R26" library="OPL" package="R0603" value="100k" x="86.36" y="40.64" smashed="yes">
+<element name="R26" library="OPL" package="R0603" value="100k" x="86.36" y="40.64">
 <attribute name="NAME" x="86.36" y="40.64" size="0.508" layer="25" ratio="11" align="center"/>
 <attribute name="VALUE" x="84.963" y="39.3225" size="0.508" layer="27" ratio="10"/>
 </element>
-<element name="RAT1:D1" library="FenixBase" package="SOT-323" value="BAS16W" x="-102.87" y="-15.24" smashed="yes">
+<element name="RAT1:D1" library="FenixBase" package="SOT-323" value="BAS16W" x="-102.87" y="-15.24">
 <attribute name="NAME" x="-102.87" y="-15.24" size="0.508" layer="25" align="center"/>
 </element>
-<element name="RAT1:D2" library="FenixBase" package="SOT-323" value="BAS16W" x="-106.045" y="-15.24" smashed="yes" rot="R180">
+<element name="RAT1:D2" library="FenixBase" package="SOT-323" value="BAS16W" x="-106.045" y="-15.24" rot="R180">
 <attribute name="NAME" x="-106.045" y="-15.24" size="0.508" layer="25" rot="R180" align="center"/>
 </element>
-<element name="R27" library="OPL" package="R0603" value="1M" x="22.225" y="55.88" smashed="yes">
-<attribute name="NAME" x="22.225" y="55.88" size="0.508" layer="25" ratio="11" align="center"/>
-<attribute name="VALUE" x="21.463" y="55.8325" size="0.508" layer="27" ratio="10"/>
+<element name="R27" library="OPL" package="R0603" value="1M" x="27.305" y="55.245">
+<attribute name="NAME" x="27.305" y="55.245" size="0.508" layer="25" ratio="11" align="center"/>
+<attribute name="VALUE" x="26.543" y="55.1975" size="0.508" layer="27" ratio="10"/>
 </element>
-<element name="R28" library="OPL" package="R0603" value="150K" x="25.4" y="55.88" smashed="yes" rot="R180">
-<attribute name="NAME" x="25.4" y="55.88" size="0.508" layer="25" ratio="11" rot="R180" align="center"/>
-<attribute name="VALUE" x="26.797" y="57.1975" size="0.508" layer="27" ratio="10" rot="R180"/>
+<element name="R28" library="OPL" package="R0603" value="150K" x="30.48" y="55.245" rot="R180">
+<attribute name="NAME" x="30.48" y="55.245" size="0.508" layer="25" ratio="11" rot="R180" align="center"/>
+<attribute name="VALUE" x="31.877" y="56.5625" size="0.508" layer="27" ratio="10" rot="R180"/>
 </element>
-<element name="C23" library="OPL" package="C0603" value="10pF" x="25.4" y="48.26" smashed="yes" rot="R180">
-<attribute name="NAME" x="25.4" y="48.26" size="0.508" layer="25" ratio="11" rot="R180" align="center"/>
-<attribute name="VALUE" x="25.4" y="49.2125" size="0.508" layer="27" ratio="10" rot="R180" align="top-center"/>
+<element name="C23" library="OPL" package="C0603" value="10pF" x="30.48" y="47.625" rot="R180">
+<attribute name="NAME" x="30.48" y="47.625" size="0.508" layer="25" ratio="11" rot="R180" align="center"/>
+<attribute name="VALUE" x="30.48" y="48.5775" size="0.508" layer="27" ratio="10" rot="R180" align="top-center"/>
 </element>
-<element name="C24" library="OPL" package="C0603" value="47pF" x="-25.4" y="71.12" smashed="yes">
+<element name="C24" library="OPL" package="C0603" value="47pF" x="-25.4" y="71.12">
 <attribute name="NAME" x="-25.4" y="71.12" size="0.508" layer="25" ratio="11" align="center"/>
 <attribute name="VALUE" x="-25.4" y="70.1675" size="0.508" layer="27" ratio="10" align="top-center"/>
 </element>
-<element name="R29" library="OPL" package="R0603" value="10K" x="-30.48" y="81.28" smashed="yes">
+<element name="R29" library="OPL" package="R0603" value="10K" x="-30.48" y="81.28">
 <attribute name="NAME" x="-30.48" y="81.28" size="0.508" layer="25" ratio="11" align="center"/>
 <attribute name="VALUE" x="-31.877" y="79.9625" size="0.508" layer="27" ratio="10"/>
 </element>
-<element name="R30" library="OPL" package="R0603" value="470R" x="28.575" y="52.705" smashed="yes" rot="R90">
-<attribute name="NAME" x="28.575" y="52.705" size="0.508" layer="25" ratio="11" rot="R90" align="center"/>
-<attribute name="VALUE" x="29.8925" y="51.308" size="0.508" layer="27" ratio="10" rot="R90"/>
+<element name="R30" library="OPL" package="R0603" value="470R" x="33.655" y="52.07" rot="R90">
+<attribute name="NAME" x="33.655" y="52.07" size="0.508" layer="25" ratio="11" rot="R90" align="center"/>
+<attribute name="VALUE" x="34.9725" y="50.673" size="0.508" layer="27" ratio="10" rot="R90"/>
 </element>
-<element name="R31" library="OPL" package="R0603" value="1K" x="-30.48" y="86.36" smashed="yes">
+<element name="R31" library="OPL" package="R0603" value="1K" x="-30.48" y="86.36">
 <attribute name="NAME" x="-30.48" y="86.36" size="0.508" layer="25" ratio="11" align="center"/>
 <attribute name="VALUE" x="-31.877" y="85.0425" size="0.508" layer="27" ratio="10"/>
 </element>
-<element name="C26" library="OPL" package="C0603" value="100n" x="2.54" y="330.2" smashed="yes">
+<element name="C26" library="OPL" package="C0603" value="100n" x="2.54" y="330.2">
 <attribute name="NAME" x="2.54" y="330.2" size="0.508" layer="25" ratio="11" align="center"/>
 <attribute name="VALUE" x="2.54" y="329.2475" size="0.508" layer="27" ratio="10" align="top-center"/>
 </element>
-<element name="C27" library="OPL" package="C0603" value="100n" x="2.54" y="327.66" smashed="yes">
+<element name="C27" library="OPL" package="C0603" value="100n" x="2.54" y="327.66">
 <attribute name="NAME" x="2.54" y="327.66" size="0.508" layer="25" ratio="11" align="center"/>
 <attribute name="VALUE" x="2.54" y="326.7075" size="0.508" layer="27" ratio="10" align="top-center"/>
 </element>
-<element name="C28" library="adafruit@1" package="153CLV-0505" value="10uF" x="23.495" y="59.69" smashed="yes">
-<attribute name="NAME" x="20.755" y="62.67" size="1.27" layer="25"/>
-<attribute name="VALUE" x="21.355" y="59.265" size="1.27" layer="27"/>
+<element name="C28" library="adafruit@1" package="153CLV-0505" value="10uF" x="28.575" y="59.055">
+<attribute name="NAME" x="25.835" y="62.035" size="1.27" layer="25"/>
+<attribute name="VALUE" x="26.435" y="58.63" size="1.27" layer="27"/>
 </element>
-<element name="C29" library="adafruit@1" package="153CLV-0505" value="10uF" x="23.495" y="52.07" smashed="yes">
-<attribute name="NAME" x="20.755" y="55.05" size="1.27" layer="25"/>
-<attribute name="VALUE" x="21.355" y="51.645" size="1.27" layer="27"/>
+<element name="C29" library="adafruit@1" package="153CLV-0505" value="10uF" x="28.575" y="51.435">
+<attribute name="NAME" x="25.835" y="54.415" size="1.27" layer="25"/>
+<attribute name="VALUE" x="26.435" y="51.01" size="1.27" layer="27"/>
 </element>
-<element name="R32" library="OPL" package="R0603" value="100K" x="-25.4" y="86.36" smashed="yes">
+<element name="R32" library="OPL" package="R0603" value="100K" x="-25.4" y="86.36">
 <attribute name="NAME" x="-25.4" y="86.36" size="0.508" layer="25" ratio="11" align="center"/>
 <attribute name="VALUE" x="-26.797" y="85.0425" size="0.508" layer="27" ratio="10"/>
 </element>
-<element name="R33" library="OPL" package="R0603" value="100K" x="-20.32" y="86.36" smashed="yes">
+<element name="R33" library="OPL" package="R0603" value="100K" x="-20.32" y="86.36">
 <attribute name="NAME" x="-20.32" y="86.36" size="0.508" layer="25" ratio="11" align="center"/>
 <attribute name="VALUE" x="-21.717" y="85.0425" size="0.508" layer="27" ratio="10"/>
 </element>
-<element name="R34" library="OPL" package="R0603" value="100k" x="-30.48" y="91.44" smashed="yes">
+<element name="R34" library="OPL" package="R0603" value="100k" x="-30.48" y="91.44">
 <attribute name="NAME" x="-30.48" y="91.44" size="0.508" layer="25" ratio="11" align="center"/>
 <attribute name="VALUE" x="-31.877" y="90.1225" size="0.508" layer="27" ratio="10"/>
 </element>
-<element name="R35" library="OPL" package="R0603" value="4.7K" x="-43.18" y="314.96" smashed="yes">
+<element name="R35" library="OPL" package="R0603" value="4.7K" x="-43.18" y="314.96">
 <attribute name="NAME" x="-43.18" y="314.96" size="0.508" layer="25" ratio="11" align="center"/>
 <attribute name="VALUE" x="-44.577" y="313.6425" size="0.508" layer="27" ratio="10"/>
 </element>
-<element name="R36" library="OPL" package="R0603" value="10R" x="-38.1" y="314.96" smashed="yes">
+<element name="R36" library="OPL" package="R0603" value="10R" x="-38.1" y="314.96">
 <attribute name="NAME" x="-38.1" y="314.96" size="0.508" layer="25" ratio="11" align="center"/>
 <attribute name="VALUE" x="-39.497" y="313.6425" size="0.508" layer="27" ratio="10"/>
 </element>
-<element name="IC5" library="ota" package="SO16" value="LM13700M" x="-27.94" y="327.66" smashed="yes">
+<element name="IC5" library="ota" package="SO16" value="LM13700M" x="-27.94" y="327.66">
 <attribute name="NAME" x="-27.94" y="327.66" size="1.778" layer="25" align="center"/>
 </element>
-<element name="R37" library="OPL" package="R0603" value="10R" x="-33.02" y="314.96" smashed="yes">
+<element name="R37" library="OPL" package="R0603" value="10R" x="-33.02" y="314.96">
 <attribute name="NAME" x="-33.02" y="314.96" size="0.508" layer="25" ratio="11" align="center"/>
 <attribute name="VALUE" x="-34.417" y="313.6425" size="0.508" layer="27" ratio="10"/>
 </element>
-<element name="R38" library="OPL" package="R0603" value="100K" x="-43.18" y="309.88" smashed="yes">
+<element name="R38" library="OPL" package="R0603" value="100K" x="-43.18" y="309.88">
 <attribute name="NAME" x="-43.18" y="309.88" size="0.508" layer="25" ratio="11" align="center"/>
 <attribute name="VALUE" x="-44.577" y="308.5625" size="0.508" layer="27" ratio="10"/>
 </element>
-<element name="R39" library="OPL" package="R0603" value="100K" x="-38.1" y="309.88" smashed="yes">
+<element name="R39" library="OPL" package="R0603" value="100K" x="-38.1" y="309.88">
 <attribute name="NAME" x="-38.1" y="309.88" size="0.508" layer="25" ratio="11" align="center"/>
 <attribute name="VALUE" x="-39.497" y="308.5625" size="0.508" layer="27" ratio="10"/>
 </element>
-<element name="R40" library="OPL" package="R0603" value="100K" x="-33.02" y="309.88" smashed="yes">
+<element name="R40" library="OPL" package="R0603" value="100K" x="-33.02" y="309.88">
 <attribute name="NAME" x="-33.02" y="309.88" size="0.508" layer="25" ratio="11" align="center"/>
 <attribute name="VALUE" x="-34.417" y="308.5625" size="0.508" layer="27" ratio="10"/>
 </element>
-<element name="R41" library="OPL" package="R0603" value="1K" x="-43.18" y="304.8" smashed="yes">
+<element name="R41" library="OPL" package="R0603" value="1K" x="-43.18" y="304.8">
 <attribute name="NAME" x="-43.18" y="304.8" size="0.508" layer="25" ratio="11" align="center"/>
 <attribute name="VALUE" x="-44.577" y="303.4825" size="0.508" layer="27" ratio="10"/>
 </element>
-<element name="C22" library="OPL" package="C0603" value="10pF" x="-33.02" y="299.72" smashed="yes">
+<element name="C22" library="OPL" package="C0603" value="10pF" x="-33.02" y="299.72">
 <attribute name="NAME" x="-33.02" y="299.72" size="0.508" layer="25" ratio="11" align="center"/>
 <attribute name="VALUE" x="-33.02" y="298.7675" size="0.508" layer="27" ratio="10" align="top-center"/>
 </element>
-<element name="Q1" library="transistor-pnp" package="SOT23-BEC" value="MMBT3906LT1SMD" x="-22.86" y="314.96" smashed="yes">
+<element name="Q1" library="transistor-pnp" package="SOT23-BEC" value="MMBT3906LT1SMD" x="-22.86" y="314.96">
 <attribute name="NAME" x="-24.765" y="316.865" size="1.27" layer="25"/>
 <attribute name="POPULARITY" value="6" x="-60.96" y="289.56" size="1.778" layer="27" display="off"/>
 <attribute name="VALUE" x="-24.765" y="311.785" size="1.27" layer="27"/>
 </element>
-<element name="R42" library="OPL" package="R0603" value="10K" x="-38.1" y="304.8" smashed="yes">
+<element name="R42" library="OPL" package="R0603" value="10K" x="-38.1" y="304.8">
 <attribute name="NAME" x="-38.1" y="304.8" size="0.508" layer="25" ratio="11" align="center"/>
 <attribute name="VALUE" x="-39.497" y="303.4825" size="0.508" layer="27" ratio="10"/>
 </element>
-<element name="R43" library="OPL" package="R0603" value="100K" x="-33.02" y="304.8" smashed="yes">
+<element name="R43" library="OPL" package="R0603" value="100K" x="-33.02" y="304.8">
 <attribute name="NAME" x="-33.02" y="304.8" size="0.508" layer="25" ratio="11" align="center"/>
 <attribute name="VALUE" x="-34.417" y="303.4825" size="0.508" layer="27" ratio="10"/>
 </element>
-<element name="R44" library="OPL" package="R0603" value="100K" x="-43.18" y="299.72" smashed="yes">
+<element name="R44" library="OPL" package="R0603" value="100K" x="-43.18" y="299.72">
 <attribute name="NAME" x="-43.18" y="299.72" size="0.508" layer="25" ratio="11" align="center"/>
 <attribute name="VALUE" x="-44.577" y="298.4025" size="0.508" layer="27" ratio="10"/>
 </element>
-<element name="R45" library="OPL" package="R0603" value="330K" x="-38.1" y="299.72" smashed="yes">
+<element name="R45" library="OPL" package="R0603" value="330K" x="-38.1" y="299.72">
 <attribute name="NAME" x="-38.1" y="299.72" size="0.508" layer="25" ratio="11" align="center"/>
 <attribute name="VALUE" x="-39.497" y="298.4025" size="0.508" layer="27" ratio="10"/>
 </element>
-<element name="R69" library="EurorackModularParts" package="ALPS_POT_SQUAREHOLES" value="100K Linear" x="20.32" y="43.18" smashed="yes">
+<element name="R69" library="EurorackModularParts" package="ALPS_POT_SQUAREHOLES" value="100K Linear" x="20.32" y="43.18" locked="yes">
 <attribute name="DESC" value="Drive" x="20.32" y="45.212" size="1.016" layer="21" rot="R180" align="center"/>
 <attribute name="NAME" x="20.32" y="43.18" size="2.032" layer="25" ratio="10" rot="SR0" align="center"/>
 <attribute name="VALUE" x="20.32" y="40.64" size="1.27" layer="21" ratio="10" align="center"/>
 </element>
-<element name="C13" library="OPL" package="C0603" value="100n" x="-7.62" y="330.2" smashed="yes">
+<element name="C13" library="OPL" package="C0603" value="100n" x="-7.62" y="330.2">
 <attribute name="NAME" x="-7.62" y="330.2" size="0.508" layer="25" ratio="11" align="center"/>
 <attribute name="VALUE" x="-7.62" y="329.2475" size="0.508" layer="27" ratio="10" align="top-center"/>
 </element>
-<element name="C14" library="OPL" package="C0603" value="100n" x="-7.62" y="327.66" smashed="yes">
+<element name="C14" library="OPL" package="C0603" value="100n" x="-7.62" y="327.66">
 <attribute name="NAME" x="-7.62" y="327.66" size="0.508" layer="25" ratio="11" align="center"/>
 <attribute name="VALUE" x="-7.62" y="326.7075" size="0.508" layer="27" ratio="10" align="top-center"/>
 </element>
-<element name="C15" library="OPL" package="C0603" value="100n" x="-2.54" y="330.2" smashed="yes">
+<element name="C15" library="OPL" package="C0603" value="100n" x="-2.54" y="330.2">
 <attribute name="NAME" x="-2.54" y="330.2" size="0.508" layer="25" ratio="11" align="center"/>
 <attribute name="VALUE" x="-2.54" y="329.2475" size="0.508" layer="27" ratio="10" align="top-center"/>
 </element>
-<element name="C16" library="OPL" package="C0603" value="100n" x="-2.54" y="327.66" smashed="yes">
+<element name="C16" library="OPL" package="C0603" value="100n" x="-2.54" y="327.66">
 <attribute name="NAME" x="-2.54" y="327.66" size="0.508" layer="25" ratio="11" align="center"/>
 <attribute name="VALUE" x="-2.54" y="326.7075" size="0.508" layer="27" ratio="10" align="top-center"/>
 </element>
-<element name="C17" library="adafruit@1" package="153CLV-0505" value="10uF" x="-40.64" y="88.9" smashed="yes">
+<element name="C17" library="adafruit@1" package="153CLV-0505" value="10uF" x="-40.64" y="88.9">
 <attribute name="NAME" x="-43.38" y="91.88" size="1.27" layer="25"/>
 <attribute name="VALUE" x="-43.415" y="84.665" size="1.27" layer="27"/>
 </element>
-<element name="R46" library="OPL" package="R0603" value="330K" x="-20.32" y="76.2" smashed="yes">
+<element name="R46" library="OPL" package="R0603" value="330K" x="-20.32" y="76.2">
 <attribute name="NAME" x="-20.32" y="76.2" size="0.508" layer="25" ratio="11" align="center"/>
 <attribute name="VALUE" x="-21.717" y="74.8825" size="0.508" layer="27" ratio="10"/>
 </element>
-<element name="R47" library="OPL" package="R0603" value="1K" x="-20.32" y="71.12" smashed="yes">
+<element name="R47" library="OPL" package="R0603" value="1K" x="-20.32" y="71.12">
 <attribute name="NAME" x="-20.32" y="71.12" size="0.508" layer="25" ratio="11" align="center"/>
 <attribute name="VALUE" x="-21.717" y="69.8025" size="0.508" layer="27" ratio="10"/>
 </element>
-<element name="J20" library="EurorackModularParts" package="3.5MM-JACK-SWITCH-13MM-NOHOLES" value="JACK" x="6.985" y="30.48" smashed="yes">
-<attribute name="DESC" value="Master Input" x="6.985" y="30.48" size="1.27" layer="22" rot="SMR45" align="center"/>
+<element name="J20" library="EurorackModularParts" package="3.5MM-JACK-SWITCH-13MM-NOHOLES" value="JACK" x="7.62" y="30.48" locked="yes">
+<attribute name="DESC" value="Master Input" x="7.62" y="30.48" size="1.27" layer="22" rot="SMR45" align="center"/>
 </element>
-<element name="U$68" library="SparkFun-Connectors" package="2X3-SHROUDED" value="HEADPHONE" x="15.875" y="55.245" smashed="yes" rot="MR180">
-<attribute name="NAME" x="12.954" y="63.627" size="0.4064" layer="104" rot="MR180"/>
-<attribute name="VALUE" x="12.954" y="47.371" size="0.4064" layer="28" font="vector" rot="MR180"/>
+<element name="U$68" library="SparkFun-Connectors" package="2X3-SHROUDED" value="HEADPHONE" x="17.78" y="54.61" rot="MR180">
+<attribute name="NAME" x="14.859" y="62.992" size="0.4064" layer="104" rot="MR180"/>
+<attribute name="VALUE" x="14.859" y="46.736" size="0.4064" layer="28" font="vector" rot="MR180"/>
 </element>
-<element name="R48" library="OPL" package="R0603" value="100k" x="-25.4" y="91.44" smashed="yes">
+<element name="R48" library="OPL" package="R0603" value="100k" x="-25.4" y="91.44">
 <attribute name="NAME" x="-25.4" y="91.44" size="0.508" layer="25" ratio="11" align="center"/>
 <attribute name="VALUE" x="-26.797" y="90.1225" size="0.508" layer="27" ratio="10"/>
 </element>
-<element name="C18" library="OPL" package="C0603" value="10pF" x="-20.32" y="91.44" smashed="yes">
+<element name="C18" library="OPL" package="C0603" value="10pF" x="-20.32" y="91.44">
 <attribute name="NAME" x="-20.32" y="91.44" size="0.508" layer="25" ratio="11" align="center"/>
 <attribute name="VALUE" x="-20.32" y="90.4875" size="0.508" layer="27" ratio="10" align="top-center"/>
 </element>
-<element name="J21" library="EurorackModularParts" package="3.5MM-JACK-SWITCH-13MM-NOHOLES" value="JACK" x="6.985" y="43.18" smashed="yes">
-<attribute name="DESC" value="Drive CV" x="6.985" y="43.18" size="1.27" layer="22" rot="SMR45" align="center"/>
+<element name="J21" library="EurorackModularParts" package="3.5MM-JACK-SWITCH-13MM-NOHOLES" value="JACK" x="7.62" y="43.18" locked="yes">
+<attribute name="DESC" value="Drive CV" x="7.62" y="43.18" size="1.27" layer="22" rot="SMR45" align="center"/>
 </element>
-<element name="U$70" library="adafruit" package="TC33X" value="100k" x="-20.32" y="307.34" smashed="yes">
+<element name="U$70" library="adafruit" package="TC33X" value="100k" x="-20.32" y="307.34">
 <attribute name="NAME" x="-22.225" y="305.435" size="1.27" layer="25" rot="R90"/>
 <attribute name="VALUE" x="-17.145" y="305.435" size="1.27" layer="27" rot="R90"/>
 </element>
-<element name="U$71" library="adafruit" package="TC33X" value="100k" x="-12.7" y="307.34" smashed="yes">
+<element name="U$71" library="adafruit" package="TC33X" value="100k" x="-12.7" y="307.34">
 <attribute name="NAME" x="-14.605" y="305.435" size="1.27" layer="25" rot="R90"/>
 <attribute name="VALUE" x="-9.525" y="305.435" size="1.27" layer="27" rot="R90"/>
 </element>
-<element name="R98" library="OPL" package="R0603" value="4.7K" x="-33.02" y="350.52" smashed="yes">
+<element name="R98" library="OPL" package="R0603" value="4.7K" x="-33.02" y="350.52">
 <attribute name="NAME" x="-33.02" y="350.52" size="0.508" layer="25" ratio="11" align="center"/>
 <attribute name="VALUE" x="-34.417" y="349.2025" size="0.508" layer="27" ratio="10"/>
 </element>
-<element name="R99" library="OPL" package="R0603" value="10R" x="-33.02" y="345.44" smashed="yes">
+<element name="R99" library="OPL" package="R0603" value="10R" x="-33.02" y="345.44">
 <attribute name="NAME" x="-33.02" y="345.44" size="0.508" layer="25" ratio="11" align="center"/>
 <attribute name="VALUE" x="-34.417" y="344.1225" size="0.508" layer="27" ratio="10"/>
 </element>
-<element name="R100" library="OPL" package="R0603" value="10R" x="-38.1" y="345.44" smashed="yes">
+<element name="R100" library="OPL" package="R0603" value="10R" x="-38.1" y="345.44">
 <attribute name="NAME" x="-38.1" y="345.44" size="0.508" layer="25" ratio="11" align="center"/>
 <attribute name="VALUE" x="-39.497" y="344.1225" size="0.508" layer="27" ratio="10"/>
 </element>
-<element name="R101" library="OPL" package="R0603" value="100K" x="-38.1" y="350.52" smashed="yes">
+<element name="R101" library="OPL" package="R0603" value="100K" x="-38.1" y="350.52">
 <attribute name="NAME" x="-38.1" y="350.52" size="0.508" layer="25" ratio="11" align="center"/>
 <attribute name="VALUE" x="-39.497" y="349.2025" size="0.508" layer="27" ratio="10"/>
 </element>
-<element name="R102" library="OPL" package="R0603" value="100K" x="-33.02" y="340.36" smashed="yes">
+<element name="R102" library="OPL" package="R0603" value="100K" x="-33.02" y="340.36">
 <attribute name="NAME" x="-33.02" y="340.36" size="0.508" layer="25" ratio="11" align="center"/>
 <attribute name="VALUE" x="-34.417" y="339.0425" size="0.508" layer="27" ratio="10"/>
 </element>
-<element name="R103" library="OPL" package="R0603" value="100K" x="-38.1" y="335.28" smashed="yes">
+<element name="R103" library="OPL" package="R0603" value="100K" x="-38.1" y="335.28">
 <attribute name="NAME" x="-38.1" y="335.28" size="0.508" layer="25" ratio="11" align="center"/>
 <attribute name="VALUE" x="-39.497" y="333.9625" size="0.508" layer="27" ratio="10"/>
 </element>
-<element name="R104" library="OPL" package="R0603" value="1K" x="-33.02" y="335.28" smashed="yes">
+<element name="R104" library="OPL" package="R0603" value="1K" x="-33.02" y="335.28">
 <attribute name="NAME" x="-33.02" y="335.28" size="0.508" layer="25" ratio="11" align="center"/>
 <attribute name="VALUE" x="-34.417" y="333.9625" size="0.508" layer="27" ratio="10"/>
 </element>
-<element name="C44" library="OPL" package="C0603" value="10pF" x="-38.1" y="340.36" smashed="yes">
+<element name="C44" library="OPL" package="C0603" value="10pF" x="-38.1" y="340.36">
 <attribute name="NAME" x="-38.1" y="340.36" size="0.508" layer="25" ratio="11" align="center"/>
 <attribute name="VALUE" x="-38.1" y="339.4075" size="0.508" layer="27" ratio="10" align="top-center"/>
 </element>
-<element name="Q3" library="transistor-pnp" package="SOT23-BEC" value="MMBT3906LT1SMD" x="-22.86" y="347.98" smashed="yes">
+<element name="Q3" library="transistor-pnp" package="SOT23-BEC" value="MMBT3906LT1SMD" x="-22.86" y="347.98">
 <attribute name="NAME" x="-24.765" y="349.885" size="1.27" layer="25"/>
 <attribute name="POPULARITY" value="6" x="-170.18" y="238.76" size="1.778" layer="27" display="off"/>
 <attribute name="VALUE" x="-24.765" y="344.805" size="1.27" layer="27"/>
 </element>
-<element name="R105" library="OPL" package="R0603" value="10K" x="-43.18" y="350.52" smashed="yes">
+<element name="R105" library="OPL" package="R0603" value="10K" x="-43.18" y="350.52">
 <attribute name="NAME" x="-43.18" y="350.52" size="0.508" layer="25" ratio="11" align="center"/>
 <attribute name="VALUE" x="-44.577" y="349.2025" size="0.508" layer="27" ratio="10"/>
 </element>
-<element name="R106" library="OPL" package="R0603" value="100K" x="-43.18" y="345.44" smashed="yes">
+<element name="R106" library="OPL" package="R0603" value="100K" x="-43.18" y="345.44">
 <attribute name="NAME" x="-43.18" y="345.44" size="0.508" layer="25" ratio="11" align="center"/>
 <attribute name="VALUE" x="-44.577" y="344.1225" size="0.508" layer="27" ratio="10"/>
 </element>
-<element name="R107" library="OPL" package="R0603" value="100K" x="-43.18" y="335.28" smashed="yes">
+<element name="R107" library="OPL" package="R0603" value="100K" x="-43.18" y="335.28">
 <attribute name="NAME" x="-43.18" y="335.28" size="0.508" layer="25" ratio="11" align="center"/>
 <attribute name="VALUE" x="-44.577" y="333.9625" size="0.508" layer="27" ratio="10"/>
 </element>
-<element name="R108" library="OPL" package="R0603" value="330K" x="-43.18" y="330.2" smashed="yes">
+<element name="R108" library="OPL" package="R0603" value="330K" x="-43.18" y="330.2">
 <attribute name="NAME" x="-43.18" y="330.2" size="0.508" layer="25" ratio="11" align="center"/>
 <attribute name="VALUE" x="-44.577" y="328.8825" size="0.508" layer="27" ratio="10"/>
 </element>
-<element name="R109" library="EurorackModularParts" package="ALPS_POT_SQUAREHOLES" value="" x="162.56" y="68.58" smashed="yes">
+<element name="R109" library="EurorackModularParts" package="ALPS_POT_SQUAREHOLES" value="" x="162.56" y="68.58" locked="yes">
 <attribute name="DESC" value="Post-gain" x="162.56" y="70.612" size="1.016" layer="21" rot="R180" align="center"/>
 <attribute name="NAME" x="162.56" y="68.58" size="2.032" layer="25" ratio="10" rot="SR0" align="center"/>
 <attribute name="VALUE" x="162.56" y="66.04" size="1.27" layer="21" ratio="10" align="center"/>
 </element>
-<element name="U$111" library="adafruit" package="TC33X" value="100k" x="-33.02" y="358.14" smashed="yes">
+<element name="U$111" library="adafruit" package="TC33X" value="100k" x="-33.02" y="358.14">
 <attribute name="NAME" x="-34.925" y="356.235" size="1.27" layer="25" rot="R90"/>
 <attribute name="VALUE" x="-29.845" y="356.235" size="1.27" layer="27" rot="R90"/>
 </element>
-<element name="U$112" library="adafruit" package="TC33X" value="100k" x="-40.64" y="358.14" smashed="yes">
+<element name="U$112" library="adafruit" package="TC33X" value="100k" x="-40.64" y="358.14">
 <attribute name="NAME" x="-42.545" y="356.235" size="1.27" layer="25" rot="R90"/>
 <attribute name="VALUE" x="-37.465" y="356.235" size="1.27" layer="27" rot="R90"/>
 </element>
-<element name="IC3" library="EurorackModularParts" package="TSSOP14" value="TL074TSSOP14" x="-10.795" y="78.74" smashed="yes">
+<element name="IC3" library="EurorackModularParts" package="TSSOP14" value="TL074TSSOP14" x="-10.795" y="78.74">
 <attribute name="NAME" x="-13.395" y="78.74" size="1.016" layer="25" ratio="10" rot="R90" align="bottom-center"/>
 <attribute name="VALUE" x="-8.195" y="78.74" size="1.016" layer="27" ratio="10" rot="R90" align="top-center"/>
 </element>
-<element name="IC4" library="EurorackModularParts" package="TSSOP14" value="TL074TSSOP14" x="-17.78" y="327.66" smashed="yes">
+<element name="IC4" library="EurorackModularParts" package="TSSOP14" value="TL074TSSOP14" x="-17.78" y="327.66">
 <attribute name="NAME" x="-20.38" y="327.66" size="1.016" layer="25" ratio="10" rot="R90" align="bottom-center"/>
 <attribute name="VALUE" x="-15.18" y="327.66" size="1.016" layer="27" ratio="10" rot="R90" align="top-center"/>
 </element>
-<element name="U$23" library="EurorackModularParts" package="HEADPHONEHOLE_GAP" value="HEADPHONEHOLE_BIGGAP" x="10.16" y="76.2" smashed="yes" rot="R180"/>
-<element name="WSOUT" library="FenixBase" package="FENIXINTERNALCONNECTIONPAD" value="SIGNALOUT" x="-43.18" y="172.72" smashed="yes">
+<element name="U$23" library="EurorackModularParts" package="HEADPHONEHOLE_GAP" value="HEADPHONEHOLE_BIGGAP" x="10.16" y="76.2" rot="R180"/>
+<element name="WSOUT" library="FenixBase" package="FENIXINTERNALCONNECTIONPAD" value="SIGNALOUT" x="-43.18" y="172.72">
 <attribute name="NAME" x="-43.942" y="172.72" size="0.762" layer="52" rot="R90" align="center-left"/>
 </element>
-<element name="R49" library="EurorackModularParts" package="ALPS_POT_SQUAREHOLES" value="100KB Lin" x="142.24" y="60.96" smashed="yes">
+<element name="R49" library="EurorackModularParts" package="ALPS_POT_SQUAREHOLES" value="100KB Lin" x="142.24" y="60.96" locked="yes">
 <attribute name="DESC" value="Mod" x="142.24" y="62.992" size="1.016" layer="21" rot="R180" align="center"/>
 <attribute name="NAME" x="142.24" y="60.96" size="2.032" layer="25" ratio="10" rot="SR0" align="center"/>
 <attribute name="VALUE" x="142.24" y="58.42" size="1.27" layer="21" ratio="10" align="center"/>
 </element>
-<element name="R50" library="EurorackModularParts" package="ALPS_POT_SQUAREHOLES" value="10KB Lin" x="144.78" y="40.64" smashed="yes">
+<element name="R50" library="EurorackModularParts" package="ALPS_POT_SQUAREHOLES" value="10KB Lin" x="144.78" y="40.64" locked="yes">
 <attribute name="DESC" value="Level" x="144.78" y="42.672" size="1.016" layer="21" rot="R180" align="center"/>
 <attribute name="NAME" x="144.78" y="40.64" size="2.032" layer="25" ratio="10" rot="SR0" align="center"/>
 <attribute name="VALUE" x="144.78" y="38.1" size="1.27" layer="21" ratio="10" align="center"/>
 </element>
-<element name="IC8" library="EurorackModularParts" package="TSSOP14" value="TL074TSSOP14" x="-35.56" y="198.12" smashed="yes">
+<element name="IC8" library="EurorackModularParts" package="TSSOP14" value="TL074TSSOP14" x="-35.56" y="198.12">
 <attribute name="NAME" x="-38.16" y="198.12" size="1.016" layer="25" ratio="10" rot="R90" align="bottom-center"/>
 <attribute name="VALUE" x="-32.96" y="198.12" size="1.016" layer="27" ratio="10" rot="R90" align="top-center"/>
 </element>
-<element name="IC9" library="EurorackModularParts" package="TSSOP14" value="TL074TSSOP14" x="-81.28" y="182.88" smashed="yes">
+<element name="IC9" library="EurorackModularParts" package="TSSOP14" value="TL074TSSOP14" x="-81.28" y="182.88">
 <attribute name="NAME" x="-83.88" y="182.88" size="1.016" layer="25" ratio="10" rot="R90" align="bottom-center"/>
 <attribute name="VALUE" x="-78.68" y="182.88" size="1.016" layer="27" ratio="10" rot="R90" align="top-center"/>
 </element>
-<element name="U$74" library="FenixBase" package="SOT23" value="BAT54S" x="-48.26" y="165.1" smashed="yes"/>
-<element name="R51" library="OPL" package="R0603" value="14" x="-43.18" y="167.64" smashed="yes">
+<element name="U$74" library="FenixBase" package="SOT23" value="BAT54S" x="-48.26" y="165.1"/>
+<element name="R51" library="OPL" package="R0603" value="14" x="-43.18" y="167.64">
 <attribute name="NAME" x="-43.18" y="167.64" size="0.508" layer="25" ratio="11" align="center"/>
 <attribute name="VALUE" x="-44.577" y="166.3225" size="0.508" layer="27" ratio="10"/>
 </element>
-<element name="D3" library="FenixBase" package="SOT-323" value="BAS16W" x="-78.74" y="165.1" smashed="yes">
+<element name="D3" library="FenixBase" package="SOT-323" value="BAS16W" x="-78.74" y="165.1">
 <attribute name="NAME" x="-78.74" y="165.1" size="0.508" layer="25" align="center"/>
 </element>
-<element name="D4" library="FenixBase" package="SOT-323" value="BAS16W" x="-76.2" y="165.1" smashed="yes">
+<element name="D4" library="FenixBase" package="SOT-323" value="BAS16W" x="-76.2" y="165.1">
 <attribute name="NAME" x="-76.2" y="165.1" size="0.508" layer="25" align="center"/>
 </element>
-<element name="D5" library="FenixBase" package="SOT-323" value="BAS16W" x="-73.66" y="165.1" smashed="yes">
+<element name="D5" library="FenixBase" package="SOT-323" value="BAS16W" x="-73.66" y="165.1">
 <attribute name="NAME" x="-73.66" y="165.1" size="0.508" layer="25" align="center"/>
 </element>
-<element name="D6" library="FenixBase" package="SOT-323" value="BAS16W" x="-71.12" y="165.1" smashed="yes">
+<element name="D6" library="FenixBase" package="SOT-323" value="BAS16W" x="-71.12" y="165.1">
 <attribute name="NAME" x="-71.12" y="165.1" size="0.508" layer="25" align="center"/>
 </element>
-<element name="D7" library="FenixBase" package="SOT-323" value="BAS16W" x="-68.58" y="165.1" smashed="yes">
+<element name="D7" library="FenixBase" package="SOT-323" value="BAS16W" x="-68.58" y="165.1">
 <attribute name="NAME" x="-68.58" y="165.1" size="0.508" layer="25" align="center"/>
 </element>
-<element name="D8" library="FenixBase" package="SOT-323" value="BAS16W" x="-66.04" y="165.1" smashed="yes">
+<element name="D8" library="FenixBase" package="SOT-323" value="BAS16W" x="-66.04" y="165.1">
 <attribute name="NAME" x="-66.04" y="165.1" size="0.508" layer="25" align="center"/>
 </element>
-<element name="D9" library="FenixBase" package="SOT-323" value="BAS16W" x="-63.5" y="165.1" smashed="yes">
+<element name="D9" library="FenixBase" package="SOT-323" value="BAS16W" x="-63.5" y="165.1">
 <attribute name="NAME" x="-63.5" y="165.1" size="0.508" layer="25" align="center"/>
 </element>
-<element name="D10" library="FenixBase" package="SOT-323" value="BAS16W" x="-60.96" y="165.1" smashed="yes">
+<element name="D10" library="FenixBase" package="SOT-323" value="BAS16W" x="-60.96" y="165.1">
 <attribute name="NAME" x="-60.96" y="165.1" size="0.508" layer="25" align="center"/>
 </element>
-<element name="D11" library="FenixBase" package="SOT-323" value="BAS16W" x="-58.42" y="165.1" smashed="yes">
+<element name="D11" library="FenixBase" package="SOT-323" value="BAS16W" x="-58.42" y="165.1">
 <attribute name="NAME" x="-58.42" y="165.1" size="0.508" layer="25" align="center"/>
 </element>
-<element name="D12" library="FenixBase" package="SOT-323" value="BAS16W" x="-55.88" y="165.1" smashed="yes">
+<element name="D12" library="FenixBase" package="SOT-323" value="BAS16W" x="-55.88" y="165.1">
 <attribute name="NAME" x="-55.88" y="165.1" size="0.508" layer="25" align="center"/>
 </element>
-<element name="D13" library="FenixBase" package="SOT-323" value="BAS16W" x="-53.34" y="165.1" smashed="yes">
+<element name="D13" library="FenixBase" package="SOT-323" value="BAS16W" x="-53.34" y="165.1">
 <attribute name="NAME" x="-53.34" y="165.1" size="0.508" layer="25" align="center"/>
 </element>
-<element name="IC10" library="ota" package="SO16" value="LM13700M" x="-38.1" y="185.42" smashed="yes">
+<element name="IC10" library="ota" package="SO16" value="LM13700M" x="-38.1" y="185.42">
 <attribute name="NAME" x="-38.1" y="185.42" size="1.778" layer="25" align="center"/>
 </element>
-<element name="C19" library="OPL" package="C0603" value="100n" x="-38.1" y="147.32" smashed="yes">
+<element name="C19" library="OPL" package="C0603" value="100n" x="-38.1" y="147.32">
 <attribute name="NAME" x="-38.1" y="147.32" size="0.508" layer="25" ratio="11" align="center"/>
 <attribute name="VALUE" x="-38.1" y="146.3675" size="0.508" layer="27" ratio="10" align="top-center"/>
 </element>
-<element name="C20" library="OPL" package="C0603" value="100n" x="-33.02" y="147.32" smashed="yes">
+<element name="C20" library="OPL" package="C0603" value="100n" x="-33.02" y="147.32">
 <attribute name="NAME" x="-33.02" y="147.32" size="0.508" layer="25" ratio="11" align="center"/>
 <attribute name="VALUE" x="-33.02" y="146.3675" size="0.508" layer="27" ratio="10" align="top-center"/>
 </element>
-<element name="C21" library="OPL" package="C0603" value="100n" x="-83.82" y="142.24" smashed="yes">
+<element name="C21" library="OPL" package="C0603" value="100n" x="-83.82" y="142.24">
 <attribute name="NAME" x="-83.82" y="142.24" size="0.508" layer="25" ratio="11" align="center"/>
 <attribute name="VALUE" x="-83.82" y="141.2875" size="0.508" layer="27" ratio="10" align="top-center"/>
 </element>
-<element name="C25" library="OPL" package="C0603" value="100n" x="-78.74" y="142.24" smashed="yes">
+<element name="C25" library="OPL" package="C0603" value="100n" x="-78.74" y="142.24">
 <attribute name="NAME" x="-78.74" y="142.24" size="0.508" layer="25" ratio="11" align="center"/>
 <attribute name="VALUE" x="-78.74" y="141.2875" size="0.508" layer="27" ratio="10" align="top-center"/>
 </element>
-<element name="C30" library="OPL" package="C0603" value="100n" x="-73.66" y="142.24" smashed="yes">
+<element name="C30" library="OPL" package="C0603" value="100n" x="-73.66" y="142.24">
 <attribute name="NAME" x="-73.66" y="142.24" size="0.508" layer="25" ratio="11" align="center"/>
 <attribute name="VALUE" x="-73.66" y="141.2875" size="0.508" layer="27" ratio="10" align="top-center"/>
 </element>
-<element name="C31" library="OPL" package="C0603" value="100n" x="-68.58" y="142.24" smashed="yes">
+<element name="C31" library="OPL" package="C0603" value="100n" x="-68.58" y="142.24">
 <attribute name="NAME" x="-68.58" y="142.24" size="0.508" layer="25" ratio="11" align="center"/>
 <attribute name="VALUE" x="-68.58" y="141.2875" size="0.508" layer="27" ratio="10" align="top-center"/>
 </element>
-<element name="C32" library="OPL" package="C0603" value="33p" x="-63.5" y="142.24" smashed="yes">
+<element name="C32" library="OPL" package="C0603" value="33p" x="-63.5" y="142.24">
 <attribute name="NAME" x="-63.5" y="142.24" size="0.508" layer="25" ratio="11" align="center"/>
 <attribute name="VALUE" x="-63.5" y="141.2875" size="0.508" layer="27" ratio="10" align="top-center"/>
 </element>
-<element name="C33" library="OPL" package="C0603" value="220p" x="-58.42" y="142.24" smashed="yes">
+<element name="C33" library="OPL" package="C0603" value="220p" x="-58.42" y="142.24">
 <attribute name="NAME" x="-58.42" y="142.24" size="0.508" layer="25" ratio="11" align="center"/>
 <attribute name="VALUE" x="-58.42" y="141.2875" size="0.508" layer="27" ratio="10" align="top-center"/>
 </element>
-<element name="C34" library="OPL" package="C0603" value="33p" x="-53.34" y="142.24" smashed="yes">
+<element name="C34" library="OPL" package="C0603" value="33p" x="-53.34" y="142.24">
 <attribute name="NAME" x="-53.34" y="142.24" size="0.508" layer="25" ratio="11" align="center"/>
 <attribute name="VALUE" x="-53.34" y="141.2875" size="0.508" layer="27" ratio="10" align="top-center"/>
 </element>
-<element name="C35" library="OPL" package="C0603" value="33p" x="-48.26" y="142.24" smashed="yes">
+<element name="C35" library="OPL" package="C0603" value="33p" x="-48.26" y="142.24">
 <attribute name="NAME" x="-48.26" y="142.24" size="0.508" layer="25" ratio="11" align="center"/>
 <attribute name="VALUE" x="-48.26" y="141.2875" size="0.508" layer="27" ratio="10" align="top-center"/>
 </element>
-<element name="C36" library="OPL" package="C0603" value="33p" x="-43.18" y="142.24" smashed="yes">
+<element name="C36" library="OPL" package="C0603" value="33p" x="-43.18" y="142.24">
 <attribute name="NAME" x="-43.18" y="142.24" size="0.508" layer="25" ratio="11" align="center"/>
 <attribute name="VALUE" x="-43.18" y="141.2875" size="0.508" layer="27" ratio="10" align="top-center"/>
 </element>
-<element name="C37" library="OPL" package="C0603" value="33p" x="-38.1" y="142.24" smashed="yes">
+<element name="C37" library="OPL" package="C0603" value="33p" x="-38.1" y="142.24">
 <attribute name="NAME" x="-38.1" y="142.24" size="0.508" layer="25" ratio="11" align="center"/>
 <attribute name="VALUE" x="-38.1" y="141.2875" size="0.508" layer="27" ratio="10" align="top-center"/>
 </element>
-<element name="C38" library="OPL" package="C0603" value="100n" x="-33.02" y="142.24" smashed="yes">
+<element name="C38" library="OPL" package="C0603" value="100n" x="-33.02" y="142.24">
 <attribute name="NAME" x="-33.02" y="142.24" size="0.508" layer="25" ratio="11" align="center"/>
 <attribute name="VALUE" x="-33.02" y="141.2875" size="0.508" layer="27" ratio="10" align="top-center"/>
 </element>
-<element name="C39" library="OPL" package="C0603" value="680n" x="-83.82" y="137.16" smashed="yes">
+<element name="C39" library="OPL" package="C0603" value="680n" x="-83.82" y="137.16">
 <attribute name="NAME" x="-83.82" y="137.16" size="0.508" layer="25" ratio="11" align="center"/>
 <attribute name="VALUE" x="-83.82" y="136.2075" size="0.508" layer="27" ratio="10" align="top-center"/>
 </element>
-<element name="R52" library="OPL" package="R0603" value="470K" x="-38.1" y="167.64" smashed="yes">
+<element name="R52" library="OPL" package="R0603" value="470K" x="-38.1" y="167.64">
 <attribute name="NAME" x="-38.1" y="167.64" size="0.508" layer="25" ratio="11" align="center"/>
 <attribute name="VALUE" x="-39.497" y="166.3225" size="0.508" layer="27" ratio="10"/>
 </element>
-<element name="R53" library="OPL" package="R0603" value="4K7" x="-33.02" y="167.64" smashed="yes">
+<element name="R53" library="OPL" package="R0603" value="4K7" x="-33.02" y="167.64">
 <attribute name="NAME" x="-33.02" y="167.64" size="0.508" layer="25" ratio="11" align="center"/>
 <attribute name="VALUE" x="-34.417" y="166.3225" size="0.508" layer="27" ratio="10"/>
 </element>
-<element name="R54" library="OPL" package="R0603" value="100" x="-83.82" y="162.56" smashed="yes">
+<element name="R54" library="OPL" package="R0603" value="100" x="-83.82" y="162.56">
 <attribute name="NAME" x="-83.82" y="162.56" size="0.508" layer="25" ratio="11" align="center"/>
 <attribute name="VALUE" x="-85.217" y="161.2425" size="0.508" layer="27" ratio="10"/>
 </element>
-<element name="R55" library="OPL" package="R0603" value="100" x="-78.74" y="162.56" smashed="yes">
+<element name="R55" library="OPL" package="R0603" value="100" x="-78.74" y="162.56">
 <attribute name="NAME" x="-78.74" y="162.56" size="0.508" layer="25" ratio="11" align="center"/>
 <attribute name="VALUE" x="-80.137" y="161.2425" size="0.508" layer="27" ratio="10"/>
 </element>
-<element name="R56" library="OPL" package="R0603" value="470K" x="-73.66" y="162.56" smashed="yes">
+<element name="R56" library="OPL" package="R0603" value="470K" x="-73.66" y="162.56">
 <attribute name="NAME" x="-73.66" y="162.56" size="0.508" layer="25" ratio="11" align="center"/>
 <attribute name="VALUE" x="-75.057" y="161.2425" size="0.508" layer="27" ratio="10"/>
 </element>
-<element name="R57" library="OPL" package="R0603" value="22K" x="-68.58" y="162.56" smashed="yes">
+<element name="R57" library="OPL" package="R0603" value="22K" x="-68.58" y="162.56">
 <attribute name="NAME" x="-68.58" y="162.56" size="0.508" layer="25" ratio="11" align="center"/>
 <attribute name="VALUE" x="-69.977" y="161.2425" size="0.508" layer="27" ratio="10"/>
 </element>
-<element name="R58" library="OPL" package="R0603" value="33K" x="-63.5" y="162.56" smashed="yes">
+<element name="R58" library="OPL" package="R0603" value="33K" x="-63.5" y="162.56">
 <attribute name="NAME" x="-63.5" y="162.56" size="0.508" layer="25" ratio="11" align="center"/>
 <attribute name="VALUE" x="-64.897" y="161.2425" size="0.508" layer="27" ratio="10"/>
 </element>
-<element name="R59" library="OPL" package="R0603" value="4M7" x="-58.42" y="162.56" smashed="yes">
+<element name="R59" library="OPL" package="R0603" value="4M7" x="-58.42" y="162.56">
 <attribute name="NAME" x="-58.42" y="162.56" size="0.508" layer="25" ratio="11" align="center"/>
 <attribute name="VALUE" x="-59.817" y="161.2425" size="0.508" layer="27" ratio="10"/>
 </element>
-<element name="R60" library="OPL" package="R0603" value="10K" x="-53.34" y="162.56" smashed="yes">
+<element name="R60" library="OPL" package="R0603" value="10K" x="-53.34" y="162.56">
 <attribute name="NAME" x="-53.34" y="162.56" size="0.508" layer="25" ratio="11" align="center"/>
 <attribute name="VALUE" x="-54.737" y="161.2425" size="0.508" layer="27" ratio="10"/>
 </element>
-<element name="R61" library="OPL" package="R0603" value="47K" x="-48.26" y="162.56" smashed="yes">
+<element name="R61" library="OPL" package="R0603" value="47K" x="-48.26" y="162.56">
 <attribute name="NAME" x="-48.26" y="162.56" size="0.508" layer="25" ratio="11" align="center"/>
 <attribute name="VALUE" x="-49.657" y="161.2425" size="0.508" layer="27" ratio="10"/>
 </element>
-<element name="R62" library="OPL" package="R0603" value="33K" x="-43.18" y="162.56" smashed="yes">
+<element name="R62" library="OPL" package="R0603" value="33K" x="-43.18" y="162.56">
 <attribute name="NAME" x="-43.18" y="162.56" size="0.508" layer="25" ratio="11" align="center"/>
 <attribute name="VALUE" x="-44.577" y="161.2425" size="0.508" layer="27" ratio="10"/>
 </element>
-<element name="R63" library="OPL" package="R0603" value="33K" x="-38.1" y="162.56" smashed="yes">
+<element name="R63" library="OPL" package="R0603" value="33K" x="-38.1" y="162.56">
 <attribute name="NAME" x="-38.1" y="162.56" size="0.508" layer="25" ratio="11" align="center"/>
 <attribute name="VALUE" x="-39.497" y="161.2425" size="0.508" layer="27" ratio="10"/>
 </element>
-<element name="R64" library="OPL" package="R0603" value="100K" x="-33.02" y="162.56" smashed="yes">
+<element name="R64" library="OPL" package="R0603" value="100K" x="-33.02" y="162.56">
 <attribute name="NAME" x="-33.02" y="162.56" size="0.508" layer="25" ratio="11" align="center"/>
 <attribute name="VALUE" x="-34.417" y="161.2425" size="0.508" layer="27" ratio="10"/>
 </element>
-<element name="R65" library="OPL" package="R0603" value="100K" x="-83.82" y="157.48" smashed="yes">
+<element name="R65" library="OPL" package="R0603" value="100K" x="-83.82" y="157.48">
 <attribute name="NAME" x="-83.82" y="157.48" size="0.508" layer="25" ratio="11" align="center"/>
 <attribute name="VALUE" x="-85.217" y="156.1625" size="0.508" layer="27" ratio="10"/>
 </element>
-<element name="R66" library="OPL" package="R0603" value="100K" x="-78.74" y="157.48" smashed="yes">
+<element name="R66" library="OPL" package="R0603" value="100K" x="-78.74" y="157.48">
 <attribute name="NAME" x="-78.74" y="157.48" size="0.508" layer="25" ratio="11" align="center"/>
 <attribute name="VALUE" x="-80.137" y="156.1625" size="0.508" layer="27" ratio="10"/>
 </element>
-<element name="R67" library="OPL" package="R0603" value="100K" x="-73.66" y="157.48" smashed="yes">
+<element name="R67" library="OPL" package="R0603" value="100K" x="-73.66" y="157.48">
 <attribute name="NAME" x="-73.66" y="157.48" size="0.508" layer="25" ratio="11" align="center"/>
 <attribute name="VALUE" x="-75.057" y="156.1625" size="0.508" layer="27" ratio="10"/>
 </element>
-<element name="R68" library="OPL" package="R0603" value="100K" x="-68.58" y="157.48" smashed="yes">
+<element name="R68" library="OPL" package="R0603" value="100K" x="-68.58" y="157.48">
 <attribute name="NAME" x="-68.58" y="157.48" size="0.508" layer="25" ratio="11" align="center"/>
 <attribute name="VALUE" x="-69.977" y="156.1625" size="0.508" layer="27" ratio="10"/>
 </element>
-<element name="R70" library="OPL" package="R0603" value="100" x="-63.5" y="157.48" smashed="yes">
+<element name="R70" library="OPL" package="R0603" value="100" x="-63.5" y="157.48">
 <attribute name="NAME" x="-63.5" y="157.48" size="0.508" layer="25" ratio="11" align="center"/>
 <attribute name="VALUE" x="-64.897" y="156.1625" size="0.508" layer="27" ratio="10"/>
 </element>
-<element name="R71" library="OPL" package="R0603" value="100K" x="-58.42" y="157.48" smashed="yes">
+<element name="R71" library="OPL" package="R0603" value="100K" x="-58.42" y="157.48">
 <attribute name="NAME" x="-58.42" y="157.48" size="0.508" layer="25" ratio="11" align="center"/>
 <attribute name="VALUE" x="-59.817" y="156.1625" size="0.508" layer="27" ratio="10"/>
 </element>
-<element name="R72" library="OPL" package="R0603" value="10K" x="-53.34" y="157.48" smashed="yes">
+<element name="R72" library="OPL" package="R0603" value="10K" x="-53.34" y="157.48">
 <attribute name="NAME" x="-53.34" y="157.48" size="0.508" layer="25" ratio="11" align="center"/>
 <attribute name="VALUE" x="-54.737" y="156.1625" size="0.508" layer="27" ratio="10"/>
 </element>
-<element name="R73" library="OPL" package="R0603" value="220K" x="-48.26" y="157.48" smashed="yes">
+<element name="R73" library="OPL" package="R0603" value="220K" x="-48.26" y="157.48">
 <attribute name="NAME" x="-48.26" y="157.48" size="0.508" layer="25" ratio="11" align="center"/>
 <attribute name="VALUE" x="-49.657" y="156.1625" size="0.508" layer="27" ratio="10"/>
 </element>
-<element name="R74" library="OPL" package="R0603" value="10K" x="-43.18" y="157.48" smashed="yes">
+<element name="R74" library="OPL" package="R0603" value="10K" x="-43.18" y="157.48">
 <attribute name="NAME" x="-43.18" y="157.48" size="0.508" layer="25" ratio="11" align="center"/>
 <attribute name="VALUE" x="-44.577" y="156.1625" size="0.508" layer="27" ratio="10"/>
 </element>
-<element name="R75" library="OPL" package="R0603" value="6K8" x="-38.1" y="157.48" smashed="yes">
+<element name="R75" library="OPL" package="R0603" value="6K8" x="-38.1" y="157.48">
 <attribute name="NAME" x="-38.1" y="157.48" size="0.508" layer="25" ratio="11" align="center"/>
 <attribute name="VALUE" x="-39.497" y="156.1625" size="0.508" layer="27" ratio="10"/>
 </element>
-<element name="R76" library="OPL" package="R0603" value="100K" x="-33.02" y="157.48" smashed="yes">
+<element name="R76" library="OPL" package="R0603" value="100K" x="-33.02" y="157.48">
 <attribute name="NAME" x="-33.02" y="157.48" size="0.508" layer="25" ratio="11" align="center"/>
 <attribute name="VALUE" x="-34.417" y="156.1625" size="0.508" layer="27" ratio="10"/>
 </element>
-<element name="R77" library="OPL" package="R0603" value="33K" x="-83.82" y="152.4" smashed="yes">
+<element name="R77" library="OPL" package="R0603" value="33K" x="-83.82" y="152.4">
 <attribute name="NAME" x="-83.82" y="152.4" size="0.508" layer="25" ratio="11" align="center"/>
 <attribute name="VALUE" x="-85.217" y="151.0825" size="0.508" layer="27" ratio="10"/>
 </element>
-<element name="R78" library="OPL" package="R0603" value="100K" x="-78.74" y="152.4" smashed="yes">
+<element name="R78" library="OPL" package="R0603" value="100K" x="-78.74" y="152.4">
 <attribute name="NAME" x="-78.74" y="152.4" size="0.508" layer="25" ratio="11" align="center"/>
 <attribute name="VALUE" x="-80.137" y="151.0825" size="0.508" layer="27" ratio="10"/>
 </element>
-<element name="D14" library="FenixBase" package="SOT-323" value="BAS16W" x="-50.8" y="165.1" smashed="yes">
+<element name="D14" library="FenixBase" package="SOT-323" value="BAS16W" x="-50.8" y="165.1">
 <attribute name="NAME" x="-50.8" y="165.1" size="0.508" layer="25" align="center"/>
 </element>
-<element name="R79" library="OPL" package="R0603" value="33K" x="-73.66" y="152.4" smashed="yes">
+<element name="R79" library="OPL" package="R0603" value="33K" x="-73.66" y="152.4">
 <attribute name="NAME" x="-73.66" y="152.4" size="0.508" layer="25" ratio="11" align="center"/>
 <attribute name="VALUE" x="-75.057" y="151.0825" size="0.508" layer="27" ratio="10"/>
 </element>
-<element name="R80" library="OPL" package="R0603" value="100K" x="-68.58" y="152.4" smashed="yes">
+<element name="R80" library="OPL" package="R0603" value="100K" x="-68.58" y="152.4">
 <attribute name="NAME" x="-68.58" y="152.4" size="0.508" layer="25" ratio="11" align="center"/>
 <attribute name="VALUE" x="-69.977" y="151.0825" size="0.508" layer="27" ratio="10"/>
 </element>
-<element name="R81" library="OPL" package="R0603" value="33K" x="-63.5" y="152.4" smashed="yes">
+<element name="R81" library="OPL" package="R0603" value="33K" x="-63.5" y="152.4">
 <attribute name="NAME" x="-63.5" y="152.4" size="0.508" layer="25" ratio="11" align="center"/>
 <attribute name="VALUE" x="-64.897" y="151.0825" size="0.508" layer="27" ratio="10"/>
 </element>
-<element name="R82" library="OPL" package="R0603" value="33K" x="-58.42" y="152.4" smashed="yes">
+<element name="R82" library="OPL" package="R0603" value="33K" x="-58.42" y="152.4">
 <attribute name="NAME" x="-58.42" y="152.4" size="0.508" layer="25" ratio="11" align="center"/>
 <attribute name="VALUE" x="-59.817" y="151.0825" size="0.508" layer="27" ratio="10"/>
 </element>
-<element name="R83" library="OPL" package="R0603" value="100K" x="-53.34" y="152.4" smashed="yes">
+<element name="R83" library="OPL" package="R0603" value="100K" x="-53.34" y="152.4">
 <attribute name="NAME" x="-53.34" y="152.4" size="0.508" layer="25" ratio="11" align="center"/>
 <attribute name="VALUE" x="-54.737" y="151.0825" size="0.508" layer="27" ratio="10"/>
 </element>
-<element name="R84" library="OPL" package="R0603" value="100K" x="-48.26" y="152.4" smashed="yes">
+<element name="R84" library="OPL" package="R0603" value="100K" x="-48.26" y="152.4">
 <attribute name="NAME" x="-48.26" y="152.4" size="0.508" layer="25" ratio="11" align="center"/>
 <attribute name="VALUE" x="-49.657" y="151.0825" size="0.508" layer="27" ratio="10"/>
 </element>
-<element name="C40" library="OPL" package="C0603" value="33p FIX" x="-78.74" y="137.16" smashed="yes">
+<element name="C40" library="OPL" package="C0603" value="33p FIX" x="-78.74" y="137.16">
 <attribute name="NAME" x="-78.74" y="137.16" size="0.508" layer="25" ratio="11" align="center"/>
 <attribute name="VALUE" x="-78.74" y="136.2075" size="0.508" layer="27" ratio="10" align="top-center"/>
 </element>
-<element name="C41" library="OPL" package="C0603" value="33p FIX" x="-73.66" y="137.16" smashed="yes">
+<element name="C41" library="OPL" package="C0603" value="33p FIX" x="-73.66" y="137.16">
 <attribute name="NAME" x="-73.66" y="137.16" size="0.508" layer="25" ratio="11" align="center"/>
 <attribute name="VALUE" x="-73.66" y="136.2075" size="0.508" layer="27" ratio="10" align="top-center"/>
 </element>
-<element name="T1" library="transistor" package="SOT23-BEC" value="3906" x="-58.42" y="175.26" smashed="yes">
+<element name="T1" library="transistor" package="SOT23-BEC" value="3906" x="-58.42" y="175.26">
 <attribute name="NAME" x="-58.42" y="175.26" size="0.635" layer="25" align="center"/>
 <attribute name="VALUE" x="-60.325" y="172.085" size="1.27" layer="27"/>
 </element>
-<element name="R85" library="OPL" package="R0603" value="27k" x="-43.18" y="152.4" smashed="yes">
+<element name="R85" library="OPL" package="R0603" value="27k" x="-43.18" y="152.4">
 <attribute name="NAME" x="-43.18" y="152.4" size="0.508" layer="25" ratio="11" align="center"/>
 <attribute name="VALUE" x="-44.577" y="151.0825" size="0.508" layer="27" ratio="10"/>
 </element>
-<element name="R86" library="OPL" package="R0603" value="150k" x="-38.1" y="152.4" smashed="yes">
+<element name="R86" library="OPL" package="R0603" value="150k" x="-38.1" y="152.4">
 <attribute name="NAME" x="-38.1" y="152.4" size="0.508" layer="25" ratio="11" align="center"/>
 <attribute name="VALUE" x="-39.497" y="151.0825" size="0.508" layer="27" ratio="10"/>
 </element>
-<element name="U$92" library="FenixBase" package="TESTPAD_DUAL_PTH" value="TESTPOINT_DUAL_PTH" x="-83.82" y="165.1" smashed="yes"/>
-<element name="U$93" library="adafruit" package="TC33X" value="50K" x="-50.8" y="172.72" smashed="yes">
+<element name="U$92" library="FenixBase" package="TESTPAD_DUAL_PTH" value="TESTPOINT_DUAL_PTH" x="-83.82" y="165.1"/>
+<element name="U$93" library="adafruit" package="TC33X" value="50K" x="-50.8" y="172.72">
 <attribute name="DESC" value="Offset" x="-198.12" y="33.02" size="1.778" layer="27" display="off"/>
 <attribute name="NAME" x="-52.705" y="170.815" size="1.27" layer="25" rot="R90"/>
 <attribute name="VALUE" x="-47.625" y="170.815" size="1.27" layer="27" rot="R90"/>
 </element>
-<element name="J22" library="EurorackModularParts" package="3.5MM-JACK-SWITCH-13MM-NOHOLES" value="JACK" x="144.78" y="81.28" smashed="yes">
+<element name="J22" library="EurorackModularParts" package="3.5MM-JACK-SWITCH-13MM-NOHOLES" value="JACK" x="144.78" y="81.28" locked="yes">
 <attribute name="DESC" value="Mod" x="144.78" y="81.28" size="1.27" layer="22" rot="SMR45" align="center"/>
 </element>
-<element name="J23" library="EurorackModularParts" package="3.5MM-JACK-SWITCH-13MM-NOHOLES" value="JACK" x="154.94" y="81.28" smashed="yes">
+<element name="J23" library="EurorackModularParts" package="3.5MM-JACK-SWITCH-13MM-NOHOLES" value="JACK" x="154.94" y="81.28" locked="yes">
 <attribute name="DESC" value="Bias" x="154.94" y="81.28" size="1.27" layer="22" rot="SMR45" align="center"/>
 </element>
-<element name="R87" library="OPL" package="R0603" value="1k" x="-33.02" y="152.4" smashed="yes">
+<element name="R87" library="OPL" package="R0603" value="1k" x="-33.02" y="152.4">
 <attribute name="NAME" x="-33.02" y="152.4" size="0.508" layer="25" ratio="11" align="center"/>
 <attribute name="VALUE" x="-34.417" y="151.0825" size="0.508" layer="27" ratio="10"/>
 </element>
-<element name="R88" library="OPL" package="R0603" value="1k" x="-83.82" y="147.32" smashed="yes">
+<element name="R88" library="OPL" package="R0603" value="1k" x="-83.82" y="147.32">
 <attribute name="NAME" x="-83.82" y="147.32" size="0.508" layer="25" ratio="11" align="center"/>
 <attribute name="VALUE" x="-85.217" y="146.0025" size="0.508" layer="27" ratio="10"/>
 </element>
-<element name="R89" library="OPL" package="R0603" value="200k" x="-78.74" y="147.32" smashed="yes">
+<element name="R89" library="OPL" package="R0603" value="200k" x="-78.74" y="147.32">
 <attribute name="NAME" x="-78.74" y="147.32" size="0.508" layer="25" ratio="11" align="center"/>
 <attribute name="VALUE" x="-80.137" y="146.0025" size="0.508" layer="27" ratio="10"/>
 </element>
-<element name="R90" library="OPL" package="R0603" value="200k" x="-73.66" y="147.32" smashed="yes">
+<element name="R90" library="OPL" package="R0603" value="200k" x="-73.66" y="147.32">
 <attribute name="NAME" x="-73.66" y="147.32" size="0.508" layer="25" ratio="11" align="center"/>
 <attribute name="VALUE" x="-75.057" y="146.0025" size="0.508" layer="27" ratio="10"/>
 </element>
-<element name="R91" library="OPL" package="R0603" value="47k" x="-68.58" y="147.32" smashed="yes">
+<element name="R91" library="OPL" package="R0603" value="47k" x="-68.58" y="147.32">
 <attribute name="NAME" x="-68.58" y="147.32" size="0.508" layer="25" ratio="11" align="center"/>
 <attribute name="VALUE" x="-69.977" y="146.0025" size="0.508" layer="27" ratio="10"/>
 </element>
-<element name="-12V" library="FenixBase" package="FENIXINTERNALCONNECTIONPAD" value="POWER-12V" x="-81.28" y="132.08" smashed="yes">
+<element name="-12V" library="FenixBase" package="FENIXINTERNALCONNECTIONPAD" value="POWER-12V" x="-81.28" y="132.08">
 <attribute name="NAME" x="-82.042" y="132.08" size="0.762" layer="52" rot="R90" align="center-left"/>
 </element>
-<element name="12V" library="FenixBase" package="FENIXINTERNALCONNECTIONPAD" value="POWER12V" x="-83.82" y="127" smashed="yes">
+<element name="12V" library="FenixBase" package="FENIXINTERNALCONNECTIONPAD" value="POWER12V" x="-83.82" y="127">
 <attribute name="NAME" x="-84.582" y="127" size="0.762" layer="52" rot="R90" align="center-left"/>
 </element>
-<element name="GND" library="FenixBase" package="FENIXINTERNALCONNECTIONPAD" value="POWERGND" x="-83.82" y="132.08" smashed="yes">
+<element name="GND" library="FenixBase" package="FENIXINTERNALCONNECTIONPAD" value="POWERGND" x="-83.82" y="132.08">
 <attribute name="NAME" x="-84.582" y="132.08" size="0.762" layer="52" rot="R90" align="center-left"/>
 </element>
-<element name="DIST+1:D3" library="diode" package="DO35-10" value="1N4148DO35-10" x="41.91" y="68.58" smashed="yes" rot="R180">
-<attribute name="NAME" x="44.069" y="67.31" size="1.27" layer="25" ratio="10" rot="R180"/>
-<attribute name="POPULARITY" value="21" x="41.91" y="68.58" size="1.778" layer="27" rot="R180" display="off"/>
-<attribute name="VALUE" x="92.964" y="152.527" size="1.27" layer="27" ratio="10" rot="R180"/>
+<element name="DIST+1:D3" library="diode" package="DO35-10" value="1N4148DO35-10" x="51.435" y="75.565" rot="R270">
+<attribute name="NAME" x="52.705" y="77.724" size="1.27" layer="25" ratio="10" rot="R270"/>
+<attribute name="POPULARITY" value="21" x="51.435" y="75.565" size="1.778" layer="27" rot="R270" display="off"/>
+<attribute name="VALUE" x="-32.512" y="126.619" size="1.27" layer="27" ratio="10" rot="R270"/>
 </element>
-<element name="DIST+1:D4" library="diode" package="DO35-10" value="1N4148DO35-10" x="41.91" y="71.12" smashed="yes">
-<attribute name="NAME" x="39.751" y="72.39" size="1.27" layer="25" ratio="10"/>
-<attribute name="POPULARITY" value="21" x="41.91" y="71.12" size="1.778" layer="27" display="off"/>
-<attribute name="VALUE" x="39.751" y="68.453" size="1.27" layer="27" ratio="10"/>
+<element name="DIST+1:D4" library="diode" package="DO35-10" value="1N4148DO35-10" x="54.61" y="75.565" rot="R90">
+<attribute name="NAME" x="53.34" y="73.406" size="1.27" layer="25" ratio="10" rot="R90"/>
+<attribute name="POPULARITY" value="21" x="54.61" y="75.565" size="1.778" layer="27" rot="R90" display="off"/>
+<attribute name="VALUE" x="57.277" y="73.406" size="1.27" layer="27" ratio="10" rot="R90"/>
 </element>
-<element name="DIST+1:D1" library="FenixBase" package="SOT-323" value="BAS16W" x="26.67" y="69.215" smashed="yes" rot="R180">
-<attribute name="NAME" x="26.67" y="69.215" size="0.508" layer="25" rot="R180" align="center"/>
+<element name="DIST+1:D1" library="FenixBase" package="SOT-323" value="BAS16W" x="47.625" y="92.71" rot="R90">
+<attribute name="NAME" x="47.625" y="92.71" size="0.508" layer="25" rot="R90" align="center"/>
 </element>
-<element name="DIST+1:D2" library="FenixBase" package="SOT-323" value="BAS16W" x="26.67" y="73.025" smashed="yes">
-<attribute name="NAME" x="26.67" y="73.025" size="0.508" layer="25" align="center"/>
+<element name="DIST+1:D2" library="FenixBase" package="SOT-323" value="BAS16W" x="51.435" y="92.71" rot="R270">
+<attribute name="NAME" x="51.435" y="92.71" size="0.508" layer="25" rot="R270" align="center"/>
 </element>
-<element name="DIST+1:JP1" library="pinhead@1" package="1X03" value="" x="29.845" y="81.915" smashed="yes">
-<attribute name="NAME" x="25.9588" y="83.7438" size="1.27" layer="25" ratio="10"/>
-<attribute name="POPULARITY" value="92" x="29.845" y="81.915" size="1.778" layer="27" display="off"/>
-<attribute name="VALUE" x="26.035" y="78.74" size="1.27" layer="27"/>
+<element name="DIST+1:JP1" library="pinhead@1" package="1X03" value="" x="60.325" y="89.535" rot="R270">
+<attribute name="NAME" x="62.1538" y="93.4212" size="1.27" layer="25" ratio="10" rot="R270"/>
+<attribute name="POPULARITY" value="92" x="60.325" y="89.535" size="1.778" layer="27" rot="R270" display="off"/>
+<attribute name="VALUE" x="57.15" y="93.345" size="1.27" layer="27" rot="R270"/>
 </element>
-<element name="R110" library="OPL" package="R0603" value="47k" x="-99.06" y="-43.18" smashed="yes">
+<element name="R110" library="OPL" package="R0603" value="47k" x="-99.06" y="-43.18">
 <attribute name="NAME" x="-99.06" y="-43.18" size="0.508" layer="25" ratio="11" align="center"/>
 <attribute name="VALUE" x="-100.457" y="-44.4975" size="0.508" layer="27" ratio="10"/>
 </element>
-<element name="Q4" library="transistor-pnp" package="SOT23-BEC" value="MMBT3906LT1SMD" x="-116.84" y="-45.72" smashed="yes">
+<element name="Q4" library="transistor-pnp" package="SOT23-BEC" value="MMBT3906LT1SMD" x="-116.84" y="-45.72">
 <attribute name="NAME" x="-118.745" y="-43.815" size="1.27" layer="25"/>
 <attribute name="POPULARITY" value="6" x="-116.84" y="-20.32" size="1.778" layer="27" display="off"/>
 <attribute name="VALUE" x="-118.745" y="-48.895" size="1.27" layer="27"/>
 </element>
-<element name="R111" library="OPL" package="R0603" value="2.2k" x="-40.64" y="20.955" smashed="yes">
+<element name="R111" library="OPL" package="R0603" value="2.2k" x="-40.64" y="20.955">
 <attribute name="NAME" x="-40.64" y="20.955" size="0.508" layer="25" ratio="11" align="center"/>
 <attribute name="VALUE" x="-42.037" y="19.6375" size="0.508" layer="27" ratio="10"/>
 </element>
-<element name="R112" library="OPL" package="R0603" value="18k" x="-35.56" y="20.955" smashed="yes">
+<element name="R112" library="OPL" package="R0603" value="18k" x="-35.56" y="20.955">
 <attribute name="NAME" x="-35.56" y="20.955" size="0.508" layer="25" ratio="11" align="center"/>
 <attribute name="VALUE" x="-36.957" y="19.6375" size="0.508" layer="27" ratio="10"/>
 </element>
-<element name="R113" library="OPL" package="R0603" value="18k" x="-30.48" y="20.955" smashed="yes">
+<element name="R113" library="OPL" package="R0603" value="18k" x="-30.48" y="20.955">
 <attribute name="NAME" x="-30.48" y="20.955" size="0.508" layer="25" ratio="11" align="center"/>
 <attribute name="VALUE" x="-31.877" y="19.6375" size="0.508" layer="27" ratio="10"/>
 </element>
-<element name="R114" library="EurorackModularParts" package="ALPS_POT_SQUAREHOLES" value="10k" x="162.56" y="43.18" smashed="yes">
+<element name="R114" library="EurorackModularParts" package="ALPS_POT_SQUAREHOLES" value="10k" x="162.56" y="43.18" locked="yes">
 <attribute name="DESC" value="Wet/Dry" x="162.56" y="45.212" size="1.016" layer="21" rot="R180" align="center"/>
 <attribute name="NAME" x="162.56" y="43.18" size="2.032" layer="25" ratio="10" rot="SR0" align="center"/>
 <attribute name="VALUE" x="162.56" y="40.64" size="1.27" layer="21" ratio="10" align="center"/>
 </element>
-<element name="R115" library="OPL" package="R0603" value="14k" x="-101.6" y="-50.8" smashed="yes">
+<element name="R115" library="OPL" package="R0603" value="14k" x="-101.6" y="-50.8">
 <attribute name="NAME" x="-101.6" y="-50.8" size="0.508" layer="25" ratio="11" align="center"/>
 <attribute name="VALUE" x="-102.997" y="-52.1175" size="0.508" layer="27" ratio="10"/>
 </element>
-<element name="J25" library="EurorackModularParts" package="3.5MM-JACK-SWITCH-13MM-NOHOLES" value="JACK" x="175.26" y="43.18" smashed="yes">
+<element name="J25" library="EurorackModularParts" package="3.5MM-JACK-SWITCH-13MM-NOHOLES" value="JACK" x="175.26" y="43.18" locked="yes">
 <attribute name="DESC" value="Wet/Dry" x="175.26" y="43.18" size="1.27" layer="22" rot="SMR45" align="center"/>
 </element>
-<element name="J26" library="EurorackModularParts" package="3.5MM-JACK-SWITCH-13MM-NOHOLES" value="JACK" x="175.26" y="30.48" smashed="yes">
+<element name="J26" library="EurorackModularParts" package="3.5MM-JACK-SWITCH-13MM-NOHOLES" value="JACK" x="175.26" y="30.48" locked="yes">
 <attribute name="DESC" value="Cross Output" x="175.26" y="30.48" size="1.27" layer="22" rot="SMR45" align="center"/>
 </element>
-<element name="D15" library="FenixBase" package="SOT-323" value="BAS16W" x="-20.32" y="81.28" smashed="yes">
+<element name="D15" library="FenixBase" package="SOT-323" value="BAS16W" x="-20.32" y="81.28">
 <attribute name="NAME" x="-20.32" y="81.28" size="0.508" layer="25" align="center"/>
 </element>
-<element name="D17" library="FenixBase" package="SOT-323" value="BAS16W" x="-27.94" y="314.96" smashed="yes">
+<element name="D17" library="FenixBase" package="SOT-323" value="BAS16W" x="-27.94" y="314.96">
 <attribute name="NAME" x="-27.94" y="314.96" size="0.508" layer="25" align="center"/>
 </element>
-<element name="D18" library="FenixBase" package="SOT-323" value="BAS16W" x="-43.18" y="340.36" smashed="yes">
+<element name="D18" library="FenixBase" package="SOT-323" value="BAS16W" x="-43.18" y="340.36">
 <attribute name="NAME" x="-43.18" y="340.36" size="0.508" layer="25" align="center"/>
 </element>
-<element name="DIST+1:C7" library="EurorackModularParts" package="CASE-A_3216" value="10uF" x="26.67" y="77.47" smashed="yes" rot="R90">
-<attribute name="NAME" x="26.67" y="77.47" size="0.762" layer="25" ratio="10" rot="SR90" align="center"/>
-<attribute name="VALUE" x="26.892" y="76.505" size="0.635" layer="27" ratio="10" rot="R90"/>
+<element name="DIST+1:C7" library="EurorackModularParts" package="CASE-A_3216" value="10uF" x="55.88" y="92.71">
+<attribute name="NAME" x="55.88" y="92.71" size="0.762" layer="25" ratio="10" rot="SR0" align="center"/>
+<attribute name="VALUE" x="54.915" y="92.488" size="0.635" layer="27" ratio="10"/>
 </element>
-<element name="J1" library="EurorackModularParts" package="3.5MM-JACK-SWITCH-13MM-NOHOLES" value="JACK" x="175.26" y="81.28" smashed="yes">
+<element name="J1" library="EurorackModularParts" package="3.5MM-JACK-SWITCH-13MM-NOHOLES" value="JACK" x="175.26" y="81.28" locked="yes">
 <attribute name="DESC" value="VCA2in" x="175.26" y="81.28" size="1.27" layer="22" rot="SMR45" align="center"/>
 </element>
-<element name="J24" library="EurorackModularParts" package="3.5MM-JACK-SWITCH-13MM-NOHOLES" value="JACK" x="6.985" y="55.88" smashed="yes">
-<attribute name="DESC" value="Envelope Out" x="6.985" y="55.88" size="1.27" layer="22" rot="SMR45" align="center"/>
+<element name="J24" library="EurorackModularParts" package="3.5MM-JACK-SWITCH-13MM-NOHOLES" value="JACK" x="7.62" y="55.88" locked="yes">
+<attribute name="DESC" value="Envelope Out" x="7.62" y="55.88" size="1.27" layer="22" rot="SMR45" align="center"/>
 </element>
 </elements>
 <signals>
@@ -3051,46 +3051,46 @@ design rules under a new name.</description>
 <wire x1="171.56" y1="30.48" x2="160.06" y2="35.68" width="0" layer="19" extent="16-16"/>
 <wire x1="176.53" y1="97.79" x2="171.56" y2="68.58" width="0" layer="19" extent="16-16"/>
 <wire x1="179.07" y1="97.79" x2="176.53" y2="97.79" width="0" layer="19" extent="1-1"/>
-<wire x1="169.02" y1="100.965" x2="176.53" y2="97.79" width="0" layer="19" extent="16-16"/>
-<wire x1="158.86" y1="98.425" x2="169.02" y2="100.965" width="0" layer="19" extent="16-16"/>
-<wire x1="148.7" y1="100.965" x2="158.86" y2="98.425" width="0" layer="19" extent="16-16"/>
-<wire x1="133.46" y1="100.965" x2="148.7" y2="100.965" width="0" layer="19" extent="16-16"/>
-<wire x1="123.3" y1="98.425" x2="133.46" y2="100.965" width="0" layer="19" extent="16-16"/>
-<wire x1="113.14" y1="100.965" x2="123.3" y2="98.425" width="0" layer="19" extent="16-16"/>
-<wire x1="97.9" y1="100.965" x2="113.14" y2="100.965" width="0" layer="19" extent="16-16"/>
-<wire x1="87.74" y1="98.425" x2="97.9" y2="100.965" width="0" layer="19" extent="16-16"/>
-<wire x1="77.58" y1="100.965" x2="87.74" y2="98.425" width="0" layer="19" extent="16-16"/>
-<wire x1="62.34" y1="100.965" x2="77.58" y2="100.965" width="0" layer="19" extent="16-16"/>
-<wire x1="52.18" y1="98.425" x2="62.34" y2="100.965" width="0" layer="19" extent="16-16"/>
-<wire x1="42.02" y1="100.965" x2="52.18" y2="98.425" width="0" layer="19" extent="16-16"/>
-<wire x1="26.78" y1="100.965" x2="42.02" y2="100.965" width="0" layer="19" extent="16-16"/>
-<wire x1="27.305" y1="93.345" x2="26.78" y2="100.965" width="0" layer="19" extent="16-16"/>
-<wire x1="16.62" y1="98.425" x2="26.78" y2="100.965" width="0" layer="19" extent="16-16"/>
-<wire x1="6.46" y1="100.965" x2="16.62" y2="98.425" width="0" layer="19" extent="16-16"/>
-<wire x1="26.67" y1="78.74" x2="27.305" y2="93.345" width="0" layer="19" extent="1-1"/>
-<wire x1="28.575" y1="77.343" x2="26.67" y2="78.74" width="0" layer="19" extent="1-1"/>
-<wire x1="30.48" y1="78.867" x2="28.575" y2="77.343" width="0" layer="19" extent="1-1"/>
-<wire x1="26.67" y1="73.975" x2="28.575" y2="77.343" width="0" layer="19" extent="1-1"/>
-<wire x1="27.32" y1="70.165" x2="26.67" y2="73.975" width="0" layer="19" extent="1-1"/>
-<wire x1="34.29" y1="69.977" x2="27.32" y2="70.165" width="0" layer="19" extent="1-1"/>
-<wire x1="36.83" y1="71.12" x2="34.29" y2="69.977" width="0" layer="19" extent="1-1"/>
-<wire x1="36.83" y1="68.58" x2="36.83" y2="71.12" width="0" layer="19" extent="1-1"/>
-<wire x1="30.52" y1="73.78" x2="36.83" y2="71.12" width="0" layer="19" extent="1-1"/>
-<wire x1="34.29" y1="66.167" x2="36.83" y2="68.58" width="0" layer="19" extent="1-1"/>
-<wire x1="26.162" y1="55.88" x2="34.29" y2="66.167" width="0" layer="19" extent="1-1"/>
-<wire x1="21.463" y1="55.88" x2="26.162" y2="55.88" width="0" layer="19" extent="1-1"/>
-<wire x1="21.295" y1="52.07" x2="21.463" y2="55.88" width="0" layer="19" extent="1-1"/>
-<wire x1="17.145" y1="55.245" x2="21.463" y2="55.88" width="0" layer="19" extent="1-1"/>
-<wire x1="14.605" y1="55.245" x2="17.145" y2="55.245" width="0" layer="19" extent="1-1"/>
-<wire x1="26.162" y1="48.26" x2="21.295" y2="52.07" width="0" layer="19" extent="1-1"/>
-<wire x1="3.285" y1="55.88" x2="14.605" y2="55.245" width="0" layer="19" extent="16-16"/>
-<wire x1="38.14" y1="53.46" x2="26.162" y2="55.88" width="0" layer="19" extent="1-1"/>
+<wire x1="169.02" y1="101.6" x2="176.53" y2="97.79" width="0" layer="19" extent="16-16"/>
+<wire x1="158.86" y1="99.06" x2="169.02" y2="101.6" width="0" layer="19" extent="16-16"/>
+<wire x1="148.7" y1="101.6" x2="158.86" y2="99.06" width="0" layer="19" extent="16-16"/>
+<wire x1="133.46" y1="101.6" x2="148.7" y2="101.6" width="0" layer="19" extent="16-16"/>
+<wire x1="123.3" y1="99.06" x2="133.46" y2="101.6" width="0" layer="19" extent="16-16"/>
+<wire x1="113.14" y1="101.6" x2="123.3" y2="99.06" width="0" layer="19" extent="16-16"/>
+<wire x1="97.9" y1="101.6" x2="113.14" y2="101.6" width="0" layer="19" extent="16-16"/>
+<wire x1="87.74" y1="99.06" x2="97.9" y2="101.6" width="0" layer="19" extent="16-16"/>
+<wire x1="77.58" y1="101.6" x2="87.74" y2="99.06" width="0" layer="19" extent="16-16"/>
+<wire x1="62.34" y1="101.6" x2="77.58" y2="101.6" width="0" layer="19" extent="16-16"/>
+<wire x1="52.18" y1="99.06" x2="62.34" y2="101.6" width="0" layer="19" extent="16-16"/>
+<wire x1="42.02" y1="101.6" x2="52.18" y2="99.06" width="0" layer="19" extent="16-16"/>
+<wire x1="26.78" y1="101.6" x2="42.02" y2="101.6" width="0" layer="19" extent="16-16"/>
+<wire x1="71.755" y1="92.075" x2="26.78" y2="101.6" width="0" layer="19" extent="16-16"/>
+<wire x1="16.62" y1="99.06" x2="26.78" y2="101.6" width="0" layer="19" extent="16-16"/>
+<wire x1="6.46" y1="101.6" x2="16.62" y2="99.06" width="0" layer="19" extent="16-16"/>
+<wire x1="57.15" y1="92.71" x2="71.755" y2="92.075" width="0" layer="19" extent="1-1"/>
+<wire x1="55.753" y1="90.805" x2="57.15" y2="92.71" width="0" layer="19" extent="1-1"/>
+<wire x1="57.277" y1="88.9" x2="55.753" y2="90.805" width="0" layer="19" extent="1-1"/>
+<wire x1="52.385" y1="92.71" x2="55.753" y2="90.805" width="0" layer="19" extent="1-1"/>
+<wire x1="48.575" y1="92.06" x2="52.385" y2="92.71" width="0" layer="19" extent="1-1"/>
+<wire x1="48.387" y1="85.09" x2="48.575" y2="92.06" width="0" layer="19" extent="1-1"/>
+<wire x1="54.61" y1="70.485" x2="48.387" y2="85.09" width="0" layer="19" extent="1-1"/>
+<wire x1="51.435" y1="70.485" x2="54.61" y2="70.485" width="0" layer="19" extent="1-1"/>
+<wire x1="30.52" y1="73.78" x2="54.61" y2="70.485" width="0" layer="19" extent="1-1"/>
+<wire x1="44.577" y1="85.09" x2="51.435" y2="70.485" width="0" layer="19" extent="1-1"/>
+<wire x1="31.242" y1="55.245" x2="44.577" y2="85.09" width="0" layer="19" extent="1-1"/>
+<wire x1="26.543" y1="55.245" x2="31.242" y2="55.245" width="0" layer="19" extent="1-1"/>
+<wire x1="26.375" y1="51.435" x2="26.543" y2="55.245" width="0" layer="19" extent="1-1"/>
+<wire x1="19.05" y1="54.61" x2="26.543" y2="55.245" width="0" layer="19" extent="1-1"/>
+<wire x1="16.51" y1="54.61" x2="19.05" y2="54.61" width="0" layer="19" extent="1-1"/>
+<wire x1="31.242" y1="47.625" x2="26.375" y2="51.435" width="0" layer="19" extent="1-1"/>
+<wire x1="3.92" y1="55.88" x2="16.51" y2="54.61" width="0" layer="19" extent="16-16"/>
+<wire x1="38.14" y1="53.46" x2="31.242" y2="55.245" width="0" layer="19" extent="1-1"/>
 <wire x1="40.64" y1="53.46" x2="38.14" y2="53.46" width="0" layer="19" extent="1-1"/>
-<wire x1="3.285" y1="43.18" x2="3.285" y2="55.88" width="0" layer="19" extent="16-16"/>
-<wire x1="3.285" y1="30.48" x2="3.285" y2="43.18" width="0" layer="19" extent="16-16"/>
-<wire x1="10.685" y1="30.48" x2="3.285" y2="30.48" width="0" layer="19" extent="16-16"/>
-<wire x1="17.82" y1="35.68" x2="10.685" y2="30.48" width="0" layer="19" extent="16-16"/>
-<wire x1="158.64" y1="81.28" x2="158.86" y2="98.425" width="0" layer="19" extent="16-16"/>
+<wire x1="3.92" y1="43.18" x2="3.92" y2="55.88" width="0" layer="19" extent="16-16"/>
+<wire x1="3.92" y1="30.48" x2="3.92" y2="43.18" width="0" layer="19" extent="16-16"/>
+<wire x1="11.32" y1="30.48" x2="3.92" y2="30.48" width="0" layer="19" extent="16-16"/>
+<wire x1="17.82" y1="35.68" x2="11.32" y2="30.48" width="0" layer="19" extent="16-16"/>
+<wire x1="158.64" y1="81.28" x2="158.86" y2="99.06" width="0" layer="19" extent="16-16"/>
 <wire x1="151.24" y1="81.28" x2="158.64" y2="81.28" width="0" layer="19" extent="16-16"/>
 <wire x1="141.08" y1="81.28" x2="151.24" y2="81.28" width="0" layer="19" extent="16-16"/>
 <wire x1="142.28" y1="33.14" x2="160.06" y2="35.68" width="0" layer="19" extent="1-1"/>
@@ -3098,21 +3098,21 @@ design rules under a new name.</description>
 <wire x1="146.05" y1="5.08" x2="143.51" y2="15.24" width="0" layer="19" extent="1-1"/>
 <wire x1="139.74" y1="53.46" x2="142.28" y2="33.14" width="0" layer="19" extent="1-1"/>
 <wire x1="116.88" y1="71.24" x2="141.08" y2="81.28" width="0" layer="19" extent="16-16"/>
-<wire x1="3.81" y1="5.08" x2="3.285" y2="30.48" width="0" layer="19" extent="16-16"/>
+<wire x1="3.81" y1="5.08" x2="3.92" y2="30.48" width="0" layer="19" extent="16-16"/>
 <wire x1="6.35" y1="5.08" x2="3.81" y2="5.08" width="0" layer="19" extent="1-1"/>
 <wire x1="61" y1="71.24" x2="30.52" y2="73.78" width="0" layer="19" extent="1-1"/>
 <wire x1="176.53" y1="5.08" x2="171.56" y2="30.48" width="0" layer="19" extent="16-16"/>
 <wire x1="179.07" y1="5.08" x2="176.53" y2="5.08" width="0" layer="19" extent="1-1"/>
-<wire x1="-21.082" y1="76.2" x2="3.285" y2="55.88" width="0" layer="19" extent="1-16"/>
+<wire x1="-21.082" y1="76.2" x2="3.92" y2="55.88" width="0" layer="19" extent="1-16"/>
 <wire x1="-42.84" y1="88.9" x2="-21.082" y2="76.2" width="0" layer="19" extent="1-1"/>
 <wire x1="39.37" y1="5.08" x2="6.35" y2="5.08" width="0" layer="19" extent="1-1"/>
-<wire x1="74.93" y1="10.16" x2="39.37" y2="5.08" width="0" layer="19" extent="1-1"/>
-<wire x1="77.47" y1="10.16" x2="74.93" y2="10.16" width="0" layer="19" extent="1-1"/>
-<wire x1="77.47" y1="12.7" x2="77.47" y2="10.16" width="0" layer="19" extent="1-1"/>
-<wire x1="77.47" y1="15.24" x2="77.47" y2="12.7" width="0" layer="19" extent="1-1"/>
-<wire x1="74.93" y1="15.24" x2="77.47" y2="15.24" width="0" layer="19" extent="1-1"/>
-<wire x1="74.93" y1="12.7" x2="74.93" y2="10.16" width="0" layer="19" extent="1-1"/>
-<wire x1="83.82" y1="25.44" x2="77.47" y2="15.24" width="0" layer="19" extent="1-1"/>
+<wire x1="75.565" y1="10.795" x2="39.37" y2="5.08" width="0" layer="19" extent="1-1"/>
+<wire x1="78.105" y1="10.795" x2="75.565" y2="10.795" width="0" layer="19" extent="1-1"/>
+<wire x1="78.105" y1="13.335" x2="78.105" y2="10.795" width="0" layer="19" extent="1-1"/>
+<wire x1="78.105" y1="15.875" x2="78.105" y2="13.335" width="0" layer="19" extent="1-1"/>
+<wire x1="75.565" y1="15.875" x2="78.105" y2="15.875" width="0" layer="19" extent="1-1"/>
+<wire x1="75.565" y1="13.335" x2="75.565" y2="10.795" width="0" layer="19" extent="1-1"/>
+<wire x1="83.82" y1="25.44" x2="78.105" y2="15.875" width="0" layer="19" extent="1-1"/>
 <wire x1="83.82" y1="34.81" x2="83.82" y2="25.44" width="0" layer="19" extent="1-16"/>
 <wire x1="85.598" y1="40.64" x2="83.82" y2="35.56" width="0" layer="19" extent="1-1"/>
 <wire x1="230.378" y1="7.62" x2="179.07" y2="5.08" width="0" layer="19" extent="1-1"/>
@@ -3214,16 +3214,16 @@ design rules under a new name.</description>
 <contactref element="U$22" pad="P$1"/>
 <contactref element="J4" pad="SWITCH_B@1" route="any" routetag="G$1.SWITCH"/>
 <contactref element="J4" pad="SWITCH_T@3" route="any" routetag="G$1.SWITCH"/>
-<wire x1="30.48" y1="105.465" x2="49.42" y2="100.965" width="0" layer="19" extent="1-16"/>
-<wire x1="36.83" y1="5.08" x2="49.42" y2="100.965" width="0" layer="19" extent="16-16"/>
-<wire x1="236.982" y1="102.87" x2="49.42" y2="100.965" width="0" layer="19" extent="1-16"/>
+<wire x1="30.48" y1="106.1" x2="49.42" y2="101.6" width="0" layer="19" extent="1-16"/>
+<wire x1="36.83" y1="5.08" x2="49.42" y2="101.6" width="0" layer="19" extent="16-16"/>
+<wire x1="236.982" y1="102.87" x2="49.42" y2="101.6" width="0" layer="19" extent="1-16"/>
 </signal>
 <signal name="INPUT_A">
 <contactref element="J6" pad="TIP_B@1" route="any" routetag="G$1.TIP"/>
 <contactref element="J6" pad="TIP_T@3" route="any" routetag="G$1.TIP"/>
 <contactref element="U$22" pad="P$3"/>
 <contactref element="R2" pad="2"/>
-<wire x1="36.83" y1="7.62" x2="10.16" y2="105.465" width="0" layer="19" extent="16-16"/>
+<wire x1="36.83" y1="7.62" x2="10.16" y2="106.1" width="0" layer="19" extent="16-16"/>
 <wire x1="236.982" y1="105.41" x2="36.83" y2="7.62" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="INPUT_C">
@@ -3231,7 +3231,7 @@ design rules under a new name.</description>
 <contactref element="J11" pad="TIP_T@3" route="any" routetag="G$1.TIP"/>
 <contactref element="U$22" pad="P$11"/>
 <contactref element="R10" pad="2"/>
-<wire x1="109.22" y1="7.62" x2="81.28" y2="105.465" width="0" layer="19" extent="16-16"/>
+<wire x1="109.22" y1="7.62" x2="81.28" y2="106.1" width="0" layer="19" extent="16-16"/>
 <wire x1="236.982" y1="68.58" x2="109.22" y2="7.62" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="12V">
@@ -3296,9 +3296,9 @@ design rules under a new name.</description>
 <wire x1="-83.058" y1="142.24" x2="-72.898" y2="142.24" width="0" layer="19" extent="1-1"/>
 <wire x1="-83.82" y1="127" x2="-83.058" y2="142.24" width="0" layer="19" extent="1-16"/>
 <wire x1="-10.795" y1="75.8222" x2="-37.338" y2="147.32" width="0" layer="19" extent="1-1"/>
-<wire x1="10.685" y1="43.18" x2="-10.795" y2="75.8222" width="0" layer="19" extent="1-16"/>
-<wire x1="36.83" y1="15.24" x2="10.685" y2="43.18" width="0" layer="19" extent="16-16"/>
-<wire x1="32.385" y1="89.535" x2="-10.795" y2="75.8222" width="0" layer="19" extent="1-1"/>
+<wire x1="11.32" y1="43.18" x2="-10.795" y2="75.8222" width="0" layer="19" extent="1-16"/>
+<wire x1="36.83" y1="15.24" x2="11.32" y2="43.18" width="0" layer="19" extent="16-16"/>
+<wire x1="67.945" y1="86.995" x2="-10.795" y2="75.8222" width="0" layer="19" extent="1-1"/>
 <wire x1="86.1" y1="32.74" x2="36.83" y2="15.24" width="0" layer="19" extent="1-1"/>
 <wire x1="91.44" y1="34.81" x2="86.1" y2="32.74" width="0" layer="19" extent="1-16"/>
 <wire x1="147.36" y1="33.14" x2="91.44" y2="34.81" width="0" layer="19" extent="16-16"/>
@@ -3366,8 +3366,8 @@ design rules under a new name.</description>
 <wire x1="-81.28" y1="185.7978" x2="-72.898" y2="162.56" width="0" layer="19" extent="1-1"/>
 <wire x1="-33.782" y1="147.32" x2="-49.8" y2="170.895" width="0" layer="19" extent="1-1"/>
 <wire x1="-10.795" y1="81.6578" x2="-33.782" y2="147.32" width="0" layer="19" extent="1-1"/>
-<wire x1="32.385" y1="93.345" x2="-10.795" y2="81.6578" width="0" layer="19" extent="1-1"/>
-<wire x1="96.52" y1="43.18" x2="32.385" y2="93.345" width="0" layer="19" extent="1-1"/>
+<wire x1="71.755" y1="86.995" x2="-10.795" y2="81.6578" width="0" layer="19" extent="1-1"/>
+<wire x1="96.52" y1="43.18" x2="71.755" y2="86.995" width="0" layer="19" extent="1-1"/>
 <wire x1="-110.49" y1="29.972" x2="-81.28" y2="132.08" width="0" layer="19" extent="1-16"/>
 <wire x1="-97.79" y1="15.875" x2="-110.49" y2="29.972" width="0" layer="19" extent="1-1"/>
 <wire x1="233.68" y1="42.2878" x2="96.52" y2="42.43" width="0" layer="19" extent="1-16"/>
@@ -3379,15 +3379,15 @@ design rules under a new name.</description>
 <contactref element="J2" pad="9"/>
 <contactref element="J2" pad="10"/>
 <contactref element="D1" pad="1"/>
-<wire x1="77.47" y1="17.78" x2="165.64" y2="341.63" width="0" layer="19" extent="1-1"/>
-<wire x1="74.93" y1="17.78" x2="77.47" y2="17.78" width="0" layer="19" extent="1-1"/>
+<wire x1="78.105" y1="18.415" x2="165.64" y2="341.63" width="0" layer="19" extent="1-1"/>
+<wire x1="75.565" y1="18.415" x2="78.105" y2="18.415" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="N$3">
 <contactref element="J2" pad="1"/>
 <contactref element="J2" pad="2"/>
 <contactref element="D2" pad="2"/>
-<wire x1="77.47" y1="7.62" x2="162.02" y2="341.63" width="0" layer="19" extent="1-1"/>
-<wire x1="74.93" y1="7.62" x2="77.47" y2="7.62" width="0" layer="19" extent="1-1"/>
+<wire x1="78.105" y1="8.255" x2="162.02" y2="341.63" width="0" layer="19" extent="1-1"/>
+<wire x1="75.565" y1="8.255" x2="78.105" y2="8.255" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="9V">
 <contactref element="IC1" pad="2"/>
@@ -3419,70 +3419,70 @@ design rules under a new name.</description>
 <wire x1="148.27" y1="282.11" x2="148.59" y2="278.765" width="0" layer="19" extent="1-1"/>
 <wire x1="168.57" y1="284.48" x2="148.27" y2="282.11" width="0" layer="19" extent="1-1"/>
 <wire x1="258.572" y1="223.52" x2="168.57" y2="284.48" width="0" layer="19" extent="1-1"/>
-<wire x1="27.305" y1="89.535" x2="27.432" y2="200.66" width="0" layer="19" extent="1-1"/>
-<wire x1="88.94" y1="61.08" x2="27.305" y2="89.535" width="0" layer="19" extent="1-1"/>
+<wire x1="67.945" y1="92.075" x2="27.432" y2="200.66" width="0" layer="19" extent="1-1"/>
+<wire x1="88.94" y1="61.08" x2="67.945" y2="92.075" width="0" layer="19" extent="1-1"/>
 <wire x1="92.202" y1="38.1" x2="88.94" y2="61.08" width="0" layer="19" extent="1-1"/>
 <wire x1="88.94" y1="35.68" x2="92.202" y2="38.1" width="0" layer="19" extent="1-1"/>
 <wire x1="88.9" y1="35.56" x2="88.94" y2="35.68" width="0" layer="19" extent="1-1"/>
 <wire x1="81.54" y1="32.74" x2="88.9" y2="34.81" width="0" layer="19" extent="1-16"/>
-<wire x1="-109.855" y1="41.275" x2="27.305" y2="89.535" width="0" layer="19" extent="1-1"/>
+<wire x1="-109.855" y1="41.275" x2="67.945" y2="92.075" width="0" layer="19" extent="1-1"/>
 <wire x1="-93.81" y1="0.95" x2="-109.855" y2="41.275" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="DIST+1:N$20">
 <contactref element="DIST+1:C23" pad="2"/>
 <contactref element="DIST+1:R25" pad="2"/>
-<wire x1="30.48" y1="66.167" x2="32.385" y2="66.167" width="0" layer="19" extent="1-1"/>
+<wire x1="44.577" y1="88.9" x2="44.577" y2="86.995" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="DIST+1:N$21">
 <contactref element="DIST+1:R25" pad="1"/>
 <contactref element="DIST+1:IC5" pad="3"/>
 <contactref element="DIST+1:JP6" pad="2"/>
-<wire x1="31.115" y1="69.155" x2="29.845" y2="85.725" width="0" layer="19" extent="1-1"/>
-<wire x1="30.48" y1="64.643" x2="31.115" y2="69.155" width="0" layer="19" extent="1-1"/>
+<wire x1="47.565" y1="88.265" x2="64.135" y2="89.535" width="0" layer="19" extent="1-1"/>
+<wire x1="43.053" y1="88.9" x2="47.565" y2="88.265" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="DIST+1:N$22">
 <contactref element="DIST+1:C26" pad="2"/>
 <contactref element="DIST+1:R27" pad="1"/>
 <contactref element="DIST+1:IC5" pad="2"/>
-<wire x1="29.845" y1="69.155" x2="34.29" y2="73.533" width="0" layer="19" extent="1-1"/>
-<wire x1="28.575" y1="66.167" x2="29.845" y2="69.155" width="0" layer="19" extent="1-1"/>
+<wire x1="47.565" y1="89.535" x2="51.943" y2="85.09" width="0" layer="19" extent="1-1"/>
+<wire x1="44.577" y1="90.805" x2="47.565" y2="89.535" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="DIST+1:N$23">
 <contactref element="DIST+1:C26" pad="1"/>
 <contactref element="DIST+1:R26" pad="1"/>
-<wire x1="26.67" y1="64.643" x2="28.575" y2="64.643" width="0" layer="19" extent="1-1"/>
+<wire x1="43.053" y1="92.71" x2="43.053" y2="90.805" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="DIST+1:N$32">
 <contactref element="DIST+1:C27" pad="1"/>
 <contactref element="DIST+1:R27" pad="2"/>
 <contactref element="DIST+1:IC5" pad="6"/>
-<wire x1="34.29" y1="75.057" x2="34.29" y2="77.343" width="0" layer="19" extent="1-1"/>
-<wire x1="31.115" y1="74.355" x2="34.29" y2="75.057" width="0" layer="19" extent="1-1"/>
+<wire x1="53.467" y1="85.09" x2="55.753" y2="85.09" width="0" layer="19" extent="1-1"/>
+<wire x1="52.765" y1="88.265" x2="53.467" y2="85.09" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="DIST+1:N$33">
 <contactref element="DIST+1:R26" pad="2"/>
 <contactref element="DIST+1:R23" pad="P$3"/>
-<wire x1="26.67" y1="66.167" x2="43.22" y2="53.46" width="0" layer="19" extent="1-1"/>
+<wire x1="44.577" y1="92.71" x2="43.22" y2="53.46" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="DIST+1:N$35">
 <contactref element="DIST+1:C27" pad="2"/>
 <contactref element="DIST+1:R28" pad="2"/>
-<wire x1="32.385" y1="78.867" x2="34.29" y2="78.867" width="0" layer="19" extent="1-1"/>
+<wire x1="57.277" y1="86.995" x2="57.277" y2="85.09" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="DIST+1:N$34">
 <contactref element="DIST+1:C28" pad="2"/>
 <contactref element="DIST+1:R24" pad="P$3"/>
 <contactref element="DIST+1:R22" pad="P$3"/>
 <contactref element="DIST+1:JP1" pad="2"/>
-<wire x1="28.575" y1="78.867" x2="35.6" y2="73.78" width="0" layer="19" extent="1-1"/>
-<wire x1="29.845" y1="81.915" x2="28.575" y2="78.867" width="0" layer="19" extent="1-1"/>
+<wire x1="57.277" y1="90.805" x2="35.6" y2="73.78" width="0" layer="19" extent="1-1"/>
+<wire x1="60.325" y1="89.535" x2="57.277" y2="90.805" width="0" layer="19" extent="1-1"/>
 <wire x1="40.68" y1="33.14" x2="35.6" y2="73.78" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="DIST+1:N$36">
 <contactref element="DIST+1:R22" pad="P$2"/>
 <contactref element="DIST+1:R22" pad="P$1"/>
 <contactref element="DIST+1:R28" pad="1"/>
-<wire x1="35.6" y1="33.14" x2="32.385" y2="77.343" width="0" layer="19" extent="1-1"/>
+<wire x1="35.6" y1="33.14" x2="55.753" y2="86.995" width="0" layer="19" extent="1-1"/>
 <wire x1="38.1" y1="33.14" x2="35.6" y2="33.14" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="DIST+1:N$81">
@@ -3490,16 +3490,16 @@ design rules under a new name.</description>
 <contactref element="DIST+1:JP4" pad="2"/>
 <contactref element="DIST+1:C25" pad="1"/>
 <contactref element="DIST+1:C7" pad="+"/>
-<wire x1="30.48" y1="77.343" x2="29.845" y2="89.535" width="0" layer="19" extent="1-1"/>
-<wire x1="29.845" y1="74.355" x2="30.48" y2="77.343" width="0" layer="19" extent="1-1"/>
-<wire x1="26.67" y1="76.2" x2="29.845" y2="74.355" width="0" layer="19" extent="1-1"/>
+<wire x1="55.753" y1="88.9" x2="67.945" y2="89.535" width="0" layer="19" extent="1-1"/>
+<wire x1="52.765" y1="89.535" x2="55.753" y2="88.9" width="0" layer="19" extent="1-1"/>
+<wire x1="54.61" y1="92.71" x2="52.765" y2="89.535" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="DIST+1:N$82">
 <contactref element="DIST+1:IC5" pad="4"/>
 <contactref element="DIST+1:JP5" pad="2"/>
 <contactref element="DIST+1:C24" pad="1"/>
-<wire x1="32.385" y1="69.155" x2="29.845" y2="93.345" width="0" layer="19" extent="1-1"/>
-<wire x1="34.29" y1="68.453" x2="32.385" y2="69.155" width="0" layer="19" extent="1-1"/>
+<wire x1="47.565" y1="86.995" x2="71.755" y2="89.535" width="0" layer="19" extent="1-1"/>
+<wire x1="46.863" y1="85.09" x2="47.565" y2="86.995" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="RAT1:N$37">
 <contactref element="RAT1:C29" pad="2"/>
@@ -3849,7 +3849,7 @@ design rules under a new name.</description>
 <signal name="DIST+1:TO4.5V">
 <contactref element="DIST+1:R72" pad="1"/>
 <contactref element="DIST+1:JP6" pad="1"/>
-<wire x1="27.305" y1="85.725" x2="-106.172" y2="261.62" width="0" layer="19" extent="1-1"/>
+<wire x1="64.135" y1="92.075" x2="-106.172" y2="261.62" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="N$8">
 <contactref element="U$22" pad="P$12"/>
@@ -3868,7 +3868,7 @@ design rules under a new name.</description>
 <contactref element="IC2" pad="1"/>
 <contactref element="J8" pad="TIP_T@3" route="any" routetag="G$1.TIP"/>
 <contactref element="J8" pad="TIP_B@1" route="any" routetag="G$1.TIP"/>
-<wire x1="205.06" y1="152.0222" x2="20.32" y2="102.925" width="0" layer="19" extent="1-1"/>
+<wire x1="205.06" y1="152.0222" x2="20.32" y2="103.56" width="0" layer="19" extent="1-1"/>
 <wire x1="235.458" y1="100.33" x2="205.06" y2="152.0222" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="N$19">
@@ -3904,7 +3904,7 @@ design rules under a new name.</description>
 <contactref element="IC2" pad="8"/>
 <contactref element="J12" pad="TIP_T@3" route="any" routetag="G$1.TIP"/>
 <contactref element="J12" pad="TIP_B@1" route="any" routetag="G$1.TIP"/>
-<wire x1="208.96" y1="157.8578" x2="91.44" y2="102.925" width="0" layer="19" extent="1-1"/>
+<wire x1="208.96" y1="157.8578" x2="91.44" y2="103.56" width="0" layer="19" extent="1-1"/>
 <wire x1="235.458" y1="64.77" x2="208.96" y2="157.8578" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="N$29">
@@ -3926,7 +3926,7 @@ design rules under a new name.</description>
 <contactref element="IC2" pad="14"/>
 <contactref element="J15" pad="TIP_T@3" route="any" routetag="G$1.TIP"/>
 <contactref element="J15" pad="TIP_B@1" route="any" routetag="G$1.TIP"/>
-<wire x1="205.06" y1="157.8578" x2="127" y2="102.925" width="0" layer="19" extent="1-1"/>
+<wire x1="205.06" y1="157.8578" x2="127" y2="103.56" width="0" layer="19" extent="1-1"/>
 <wire x1="235.458" y1="46.99" x2="205.06" y2="157.8578" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="N$34">
@@ -3971,7 +3971,7 @@ design rules under a new name.</description>
 <contactref element="J18" pad="TIP_T@3" route="any" routetag="G$1.TIP"/>
 <contactref element="J18" pad="TIP_B@1" route="any" routetag="G$1.TIP"/>
 <wire x1="231.73" y1="36.4522" x2="235.458" y2="11.43" width="0" layer="19" extent="1-1"/>
-<wire x1="162.56" y1="102.925" x2="231.73" y2="36.4522" width="0" layer="19" extent="1-1"/>
+<wire x1="162.56" y1="103.56" x2="231.73" y2="36.4522" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="4.5V">
 <contactref element="U$44" pad="P$1" route="any" routetag="G$1.VOLTAGE"/>
@@ -3992,27 +3992,27 @@ design rules under a new name.</description>
 <contactref element="J6" pad="SWITCH_T@3" route="any" routetag="G$1.SWITCH"/>
 <contactref element="R18" pad="2"/>
 <contactref element="R90" pad="2"/>
-<wire x1="-72.898" y1="147.32" x2="13.86" y2="100.965" width="0" layer="19" extent="1-16"/>
+<wire x1="-72.898" y1="147.32" x2="13.86" y2="101.6" width="0" layer="19" extent="1-16"/>
 <wire x1="-42.418" y1="304.8" x2="-72.898" y2="147.32" width="0" layer="19" extent="1-1"/>
-<wire x1="236.982" y1="33.02" x2="13.86" y2="100.965" width="0" layer="19" extent="1-16"/>
+<wire x1="236.982" y1="33.02" x2="13.86" y2="101.6" width="0" layer="19" extent="1-16"/>
 </signal>
 <signal name="N$14">
 <contactref element="R28" pad="2"/>
 <contactref element="C23" pad="2"/>
 <contactref element="C28" pad="+"/>
 <contactref element="IC3" pad="3"/>
-<wire x1="24.638" y1="55.88" x2="25.695" y2="59.69" width="0" layer="19" extent="1-1"/>
-<wire x1="24.638" y1="48.26" x2="24.638" y2="55.88" width="0" layer="19" extent="1-1"/>
-<wire x1="-11.445" y1="75.8222" x2="25.695" y2="59.69" width="0" layer="19" extent="1-1"/>
+<wire x1="29.718" y1="55.245" x2="30.775" y2="59.055" width="0" layer="19" extent="1-1"/>
+<wire x1="29.718" y1="47.625" x2="29.718" y2="55.245" width="0" layer="19" extent="1-1"/>
+<wire x1="-11.445" y1="75.8222" x2="30.775" y2="59.055" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="GUITAR_IN">
 <contactref element="R27" pad="2"/>
 <contactref element="C28" pad="-"/>
 <contactref element="U$68" pad="6"/>
 <contactref element="U$68" pad="5"/>
-<wire x1="21.295" y1="59.69" x2="22.987" y2="55.88" width="0" layer="19" extent="1-1"/>
-<wire x1="17.145" y1="57.785" x2="21.295" y2="59.69" width="0" layer="19" extent="1-1"/>
-<wire x1="14.605" y1="57.785" x2="17.145" y2="57.785" width="0" layer="19" extent="1-1"/>
+<wire x1="26.375" y1="59.055" x2="28.067" y2="55.245" width="0" layer="19" extent="1-1"/>
+<wire x1="19.05" y1="57.15" x2="26.375" y2="59.055" width="0" layer="19" extent="1-1"/>
+<wire x1="16.51" y1="57.15" x2="19.05" y2="57.15" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="N$17">
 <contactref element="R31" pad="1"/>
@@ -4029,8 +4029,8 @@ design rules under a new name.</description>
 <contactref element="R30" pad="2"/>
 <contactref element="IC3" pad="2"/>
 <wire x1="-24.638" y1="71.12" x2="-12.095" y2="75.8222" width="0" layer="19" extent="1-1"/>
-<wire x1="28.575" y1="53.467" x2="-24.638" y2="71.12" width="0" layer="19" extent="1-1"/>
-<wire x1="-31.242" y1="81.28" x2="28.575" y2="53.467" width="0" layer="19" extent="1-1"/>
+<wire x1="33.655" y1="52.832" x2="-24.638" y2="71.12" width="0" layer="19" extent="1-1"/>
+<wire x1="-31.242" y1="81.28" x2="33.655" y2="52.832" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="GUITAR_OUT">
 <contactref element="R31" pad="2"/>
@@ -4040,7 +4040,7 @@ design rules under a new name.</description>
 <signal name="N$45">
 <contactref element="R30" pad="1"/>
 <contactref element="C29" pad="+"/>
-<wire x1="25.695" y1="52.07" x2="28.575" y2="51.943" width="0" layer="19" extent="1-1"/>
+<wire x1="30.775" y1="51.435" x2="33.655" y2="51.308" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="N$46">
 <contactref element="R33" pad="2"/>
@@ -4060,7 +4060,7 @@ design rules under a new name.</description>
 <contactref element="R34" pad="1"/>
 <contactref element="J20" pad="TIP_T@3" route="any" routetag="G$1.TIP"/>
 <contactref element="J20" pad="TIP_B@1" route="any" routetag="G$1.TIP"/>
-<wire x1="6.985" y1="34.98" x2="-31.242" y2="91.44" width="0" layer="19" extent="1-1"/>
+<wire x1="7.62" y1="34.98" x2="-31.242" y2="91.44" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="N$48">
 <contactref element="IC5" pad="4"/>
@@ -4150,7 +4150,7 @@ design rules under a new name.</description>
 <contactref element="R69" pad="P$3"/>
 <contactref element="J21" pad="TIP_T@3" route="any" routetag="G$1.TIP"/>
 <contactref element="J21" pad="TIP_B@1" route="any" routetag="G$1.TIP"/>
-<wire x1="6.985" y1="47.68" x2="22.9" y2="35.68" width="0" layer="19" extent="1-1"/>
+<wire x1="7.62" y1="47.68" x2="22.9" y2="35.68" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="N$59">
 <contactref element="R44" pad="1"/>
@@ -4188,8 +4188,8 @@ design rules under a new name.</description>
 <contactref element="J1" pad="SWITCH_T@3" route="any" routetag="G$1.SWITCH"/>
 <contactref element="J24" pad="TIP_T@3" route="any" routetag="G$1.TIP"/>
 <contactref element="J24" pad="TIP_B@1" route="any" routetag="G$1.TIP"/>
-<wire x1="6.985" y1="60.38" x2="178.96" y2="81.28" width="0" layer="19" extent="1-16"/>
-<wire x1="-21.082" y1="71.12" x2="6.985" y2="60.38" width="0" layer="19" extent="1-1"/>
+<wire x1="7.62" y1="60.38" x2="178.96" y2="81.28" width="0" layer="19" extent="1-16"/>
+<wire x1="-21.082" y1="71.12" x2="7.62" y2="60.38" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="N$62">
 <contactref element="R48" pad="1"/>
@@ -4296,8 +4296,8 @@ design rules under a new name.</description>
 <contactref element="U$22" pad="P$4"/>
 <contactref element="DIST+1:C22" pad="1"/>
 <contactref element="DIST+1:C23" pad="1"/>
-<wire x1="32.385" y1="64.643" x2="34.29" y2="64.643" width="0" layer="19" extent="1-1"/>
-<wire x1="36.83" y1="12.7" x2="34.29" y2="64.643" width="0" layer="19" extent="1-1"/>
+<wire x1="43.053" y1="86.995" x2="43.053" y2="85.09" width="0" layer="19" extent="1-1"/>
+<wire x1="36.83" y1="12.7" x2="43.053" y2="85.09" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="N$5">
 <contactref element="U$22" pad="P$2"/>
@@ -4309,8 +4309,8 @@ design rules under a new name.</description>
 <contactref element="J4" pad="TIP_B@1" route="any" routetag="G$1.TIP"/>
 <contactref element="U$22" pad="P$7"/>
 <contactref element="R6" pad="2"/>
-<wire x1="39.37" y1="12.7" x2="45.72" y2="105.465" width="0" layer="19" extent="1-1"/>
-<wire x1="236.982" y1="86.36" x2="45.72" y2="105.465" width="0" layer="19" extent="1-1"/>
+<wire x1="39.37" y1="12.7" x2="45.72" y2="106.1" width="0" layer="19" extent="1-1"/>
+<wire x1="236.982" y1="86.36" x2="45.72" y2="106.1" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="N$7">
 <contactref element="U$22" pad="P$8"/>
@@ -4331,9 +4331,9 @@ design rules under a new name.</description>
 <contactref element="R7" pad="2"/>
 <contactref element="J11" pad="SWITCH_B@1" route="any" routetag="G$1.SWITCH"/>
 <contactref element="J11" pad="SWITCH_T@3" route="any" routetag="G$1.SWITCH"/>
-<wire x1="66.04" y1="105.465" x2="84.98" y2="100.965" width="0" layer="19" extent="1-16"/>
-<wire x1="39.37" y1="15.24" x2="66.04" y2="105.465" width="0" layer="19" extent="1-1"/>
-<wire x1="242.062" y1="86.36" x2="84.98" y2="100.965" width="0" layer="19" extent="1-16"/>
+<wire x1="66.04" y1="106.1" x2="84.98" y2="101.6" width="0" layer="19" extent="1-16"/>
+<wire x1="39.37" y1="15.24" x2="66.04" y2="106.1" width="0" layer="19" extent="1-1"/>
+<wire x1="242.062" y1="86.36" x2="84.98" y2="101.6" width="0" layer="19" extent="1-16"/>
 </signal>
 <signal name="N$118">
 <contactref element="R4" pad="2"/>
@@ -4347,7 +4347,7 @@ design rules under a new name.</description>
 <contactref element="IC2" pad="7"/>
 <contactref element="J5" pad="TIP_T@3" route="any" routetag="G$1.TIP"/>
 <contactref element="J5" pad="TIP_B@1" route="any" routetag="G$1.TIP"/>
-<wire x1="208.96" y1="152.0222" x2="55.88" y2="102.925" width="0" layer="19" extent="1-1"/>
+<wire x1="208.96" y1="152.0222" x2="55.88" y2="103.56" width="0" layer="19" extent="1-1"/>
 <wire x1="235.458" y1="82.55" x2="208.96" y2="152.0222" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="N$9">
@@ -4362,16 +4362,16 @@ design rules under a new name.</description>
 <contactref element="R11" pad="2"/>
 <contactref element="J14" pad="SWITCH_B@1" route="any" routetag="G$1.SWITCH"/>
 <contactref element="J14" pad="SWITCH_T@3" route="any" routetag="G$1.SWITCH"/>
-<wire x1="101.6" y1="105.465" x2="120.54" y2="100.965" width="0" layer="19" extent="1-16"/>
-<wire x1="109.22" y1="5.08" x2="120.54" y2="100.965" width="0" layer="19" extent="16-16"/>
-<wire x1="231.902" y1="64.77" x2="120.54" y2="100.965" width="0" layer="19" extent="1-16"/>
+<wire x1="101.6" y1="106.1" x2="120.54" y2="101.6" width="0" layer="19" extent="1-16"/>
+<wire x1="109.22" y1="5.08" x2="120.54" y2="101.6" width="0" layer="19" extent="16-16"/>
+<wire x1="231.902" y1="64.77" x2="120.54" y2="101.6" width="0" layer="19" extent="1-16"/>
 </signal>
 <signal name="INPUT_D">
 <contactref element="J14" pad="TIP_T@3" route="any" routetag="G$1.TIP"/>
 <contactref element="J14" pad="TIP_B@1" route="any" routetag="G$1.TIP"/>
 <contactref element="U$22" pad="P$15"/>
 <contactref element="R14" pad="2"/>
-<wire x1="143.51" y1="7.62" x2="116.84" y2="105.465" width="0" layer="19" extent="1-1"/>
+<wire x1="143.51" y1="7.62" x2="116.84" y2="106.1" width="0" layer="19" extent="1-1"/>
 <wire x1="236.982" y1="50.8" x2="143.51" y2="7.62" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="OUTPUT_D">
@@ -4381,9 +4381,9 @@ design rules under a new name.</description>
 <contactref element="R15" pad="2"/>
 <contactref element="J17" pad="SWITCH_B@1" route="any" routetag="G$1.SWITCH"/>
 <contactref element="J17" pad="SWITCH_T@3" route="any" routetag="G$1.SWITCH"/>
-<wire x1="156.1" y1="100.965" x2="137.16" y2="105.465" width="0" layer="19" extent="1-16"/>
-<wire x1="231.902" y1="46.99" x2="156.1" y2="100.965" width="0" layer="19" extent="1-16"/>
-<wire x1="143.51" y1="5.08" x2="156.1" y2="100.965" width="0" layer="19" extent="16-16"/>
+<wire x1="156.1" y1="101.6" x2="137.16" y2="106.1" width="0" layer="19" extent="1-16"/>
+<wire x1="231.902" y1="46.99" x2="156.1" y2="101.6" width="0" layer="19" extent="1-16"/>
+<wire x1="143.51" y1="5.08" x2="156.1" y2="101.6" width="0" layer="19" extent="16-16"/>
 </signal>
 <signal name="N$10">
 <contactref element="U$22" pad="P$16"/>
@@ -4749,7 +4749,7 @@ design rules under a new name.</description>
 <contactref element="J17" pad="TIP_B@1" route="any" routetag="G$1.TIP"/>
 <contactref element="R22" pad="2"/>
 <wire x1="146.05" y1="12.7" x2="236.982" y2="15.24" width="0" layer="19" extent="1-1"/>
-<wire x1="152.4" y1="105.465" x2="146.05" y2="12.7" width="0" layer="19" extent="1-1"/>
+<wire x1="152.4" y1="106.1" x2="146.05" y2="12.7" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="OUTPUT_E">
 <contactref element="U$22" pad="P$17"/>
@@ -4758,22 +4758,22 @@ design rules under a new name.</description>
 <contactref element="R23" pad="2"/>
 <contactref element="R98" pad="1"/>
 <wire x1="146.05" y1="15.24" x2="231.902" y2="11.43" width="0" layer="19" extent="1-1"/>
-<wire x1="172.72" y1="105.465" x2="146.05" y2="15.24" width="0" layer="19" extent="1-1"/>
-<wire x1="-33.782" y1="350.52" x2="172.72" y2="105.465" width="0" layer="19" extent="1-1"/>
+<wire x1="172.72" y1="106.1" x2="146.05" y2="15.24" width="0" layer="19" extent="1-1"/>
+<wire x1="-33.782" y1="350.52" x2="172.72" y2="106.1" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="DIST+1:N$2">
 <contactref element="DIST+1:D3" pad="C"/>
 <contactref element="DIST+1:D4" pad="A"/>
 <contactref element="DIST+1:JP1" pad="3"/>
-<wire x1="46.99" y1="68.58" x2="46.99" y2="71.12" width="0" layer="19" extent="1-1"/>
-<wire x1="32.385" y1="81.915" x2="46.99" y2="71.12" width="0" layer="19" extent="1-1"/>
+<wire x1="51.435" y1="80.645" x2="54.61" y2="80.645" width="0" layer="19" extent="1-1"/>
+<wire x1="60.325" y1="86.995" x2="54.61" y2="80.645" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="DIST+1:N$3">
 <contactref element="DIST+1:D2" pad="ANODE"/>
 <contactref element="DIST+1:D1" pad="CATHODE"/>
 <contactref element="DIST+1:JP1" pad="1"/>
-<wire x1="26.02" y1="72.075" x2="27.305" y2="81.915" width="0" layer="19" extent="1-1"/>
-<wire x1="26.67" y1="68.265" x2="26.02" y2="72.075" width="0" layer="19" extent="1-1"/>
+<wire x1="50.485" y1="93.36" x2="60.325" y2="92.075" width="0" layer="19" extent="1-1"/>
+<wire x1="46.675" y1="92.71" x2="50.485" y2="93.36" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="OTA_OUT">
 <contactref element="R110" pad="2"/>
