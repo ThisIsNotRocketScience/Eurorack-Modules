@@ -1,9 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="7.7.0">
+<eagle version="9.5.1">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
+<setting keepoldvectorfont="yes"/>
 <setting verticaltext="up"/>
 </settings>
 <grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
@@ -18498,27 +18499,34 @@ We've spent an enormous amount of time creating and checking these footprints an
 <moduleinst name="DIST+1" module="DIST+" x="2.54" y="213.36">
 <attribute name="NAME" x="2.54" y="213.36" size="2.032" layer="95" align="bottom-center"/>
 <attribute name="NAME" x="2.54" y="213.36" size="2.032" layer="95" align="bottom-center"/>
+<attribute name="NAME" x="2.54" y="213.36" size="2.032" layer="95" align="bottom-center"/>
 </moduleinst>
 <moduleinst name="RAT1" module="RAT" x="43.18" y="213.36">
+<attribute name="NAME" x="43.18" y="213.36" size="2.032" layer="95" align="bottom-center"/>
 <attribute name="NAME" x="43.18" y="213.36" size="2.032" layer="95" align="bottom-center"/>
 <attribute name="NAME" x="43.18" y="213.36" size="2.032" layer="95" align="bottom-center"/>
 </moduleinst>
 <moduleinst name="FUZZFACE1" module="FUZZFACE" x="85.09" y="213.36">
 <attribute name="NAME" x="85.09" y="213.36" size="2.032" layer="95" align="bottom-center"/>
 <attribute name="NAME" x="85.09" y="213.36" size="2.032" layer="95" align="bottom-center"/>
+<attribute name="NAME" x="85.09" y="213.36" size="2.032" layer="95" align="bottom-center"/>
 </moduleinst>
 <moduleinst name="MUFF1" module="MUFF" x="123.19" y="213.36">
+<attribute name="NAME" x="123.19" y="213.36" size="2.032" layer="95" align="bottom-center"/>
 <attribute name="NAME" x="123.19" y="213.36" size="2.032" layer="95" align="bottom-center"/>
 <attribute name="NAME" x="123.19" y="213.36" size="2.032" layer="95" align="bottom-center"/>
 </moduleinst>
 <moduleinst name="WAVESHAPER1" module="WAVESHAPER" x="162.56" y="212.09">
 <attribute name="NAME" x="162.56" y="212.09" size="2.032" layer="95" align="bottom-center"/>
+<attribute name="NAME" x="162.56" y="212.09" size="2.032" layer="95" align="bottom-center"/>
 </moduleinst>
 <moduleinst name="VCA1" module="VCA" x="234.95" y="208.28">
 <attribute name="NAME" x="234.95" y="208.28" size="2.032" layer="95" align="bottom-center"/>
 <attribute name="NAME" x="234.95" y="208.28" size="2.032" layer="95" align="bottom-center"/>
+<attribute name="NAME" x="234.95" y="208.28" size="2.032" layer="95" align="bottom-center"/>
 </moduleinst>
 <moduleinst name="INPUTS1" module="INPUTS" x="-72.39" y="195.58">
+<attribute name="NAME" x="-72.39" y="195.58" size="2.032" layer="95" align="bottom-center"/>
 <attribute name="NAME" x="-72.39" y="195.58" size="2.032" layer="95" align="bottom-center"/>
 <attribute name="NAME" x="-72.39" y="195.58" size="2.032" layer="95" align="bottom-center"/>
 </moduleinst>
@@ -19922,15 +19930,6 @@ We've spent an enormous amount of time creating and checking these footprints an
 </nets>
 </sheet>
 </sheets>
-<errors>
-<approved hash="101,1@WAVESHAPER,167.64,208.28,IC3BUF1,E,,,,"/>
-<approved hash="101,1@WAVESHAPER,167.64,182.88,IC3BUF2,E,,,,"/>
-<approved hash="113,1@DIST+,58.6571,30.6112,JP4,,,,,"/>
-<approved hash="113,1@DIST+,49.7671,63.6312,JP5,,,,,"/>
-<approved hash="113,1@DIST+,35.4288,31.5129,JP6,,,,,"/>
-<approved hash="113,1@RAT,38.3371,29.3412,JP2,,,,,"/>
-<approved hash="113,1@RAT,38.3371,58.5512,JP3,,,,,"/>
-</errors>
 </schematic>
 </drawing>
 <compatibility>
