@@ -1,10 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="9.5.1">
+<eagle version="7.7.0">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
-<setting keepoldvectorfont="yes"/>
 <setting verticaltext="up"/>
 </settings>
 <grid distance="25" unitdist="mil" unit="mil" style="dots" multiple="1" display="yes" altdistance="5" altunitdist="mil" altunit="mil"/>
@@ -1323,11 +1322,11 @@ diameter 2 mm, horizontal, grid 10.16 mm</description>
 </package>
 </packages>
 </library>
-<library name="transistor-neu-to92" urn="urn:adsk.eagle:library:397">
+<library name="transistor-neu-to92@1">
 <description>&lt;b&gt;NPN Transistors&lt;/b&gt;&lt;p&gt;
 &lt;author&gt;Created by librarian@cadsoft.de&lt;/author&gt;</description>
 <packages>
-<package name="TO92-EBC" urn="urn:adsk.eagle:footprint:28681/1" library_version="5">
+<package name="TO92-EBC">
 <description>&lt;b&gt;TO-92&lt;/b&gt; Pads In Line E B C from top&lt;p&gt;</description>
 <wire x1="-2.095" y1="-2.921" x2="2.095" y2="-2.921" width="0.127" layer="21"/>
 <wire x1="-2.413" y1="-0.1341" x2="2.413" y2="-0.1341" width="0.127" layer="21" curve="-129.583345"/>
@@ -1349,14 +1348,6 @@ diameter 2 mm, horizontal, grid 10.16 mm</description>
 <text x="-2.54" y="-4.572" size="1.27" layer="27" ratio="10">&gt;VALUE</text>
 </package>
 </packages>
-<packages3d>
-<package3d name="TO92-EBC" urn="urn:adsk.eagle:package:28763/2" type="model" library_version="5">
-<description>TO-92 Pads In Line E B C from top</description>
-<packageinstances>
-<packageinstance name="TO92-EBC"/>
-</packageinstances>
-</package3d>
-</packages3d>
 </library>
 </libraries>
 <attributes>
@@ -2880,12 +2871,12 @@ design rules under a new name.</description>
 <attribute name="NAME" x="67.31" y="93.98" size="0.762" layer="25" ratio="10" rot="SR0" align="center"/>
 <attribute name="VALUE" x="65.71" y="92.488" size="0.635" layer="27" ratio="10"/>
 </element>
-<element name="FUZZ1:T1" library="transistor-neu-to92" library_urn="urn:adsk.eagle:library:397" package="TO92-EBC" package3d_urn="urn:adsk.eagle:package:28763/2" value="" x="84.455" y="85.09" smashed="yes" rot="R270">
+<element name="FUZZ1:T1" library="transistor-neu-to92@1" package="TO92-EBC" value="" x="84.455" y="85.09" smashed="yes" rot="R270">
 <attribute name="NAME" x="86.233" y="87.63" size="1.27" layer="25" ratio="10" rot="R270"/>
 <attribute name="POPULARITY" value="7" x="84.455" y="85.09" size="1.778" layer="27" rot="R270" display="off"/>
 <attribute name="VALUE" x="79.883" y="87.63" size="1.27" layer="27" ratio="10" rot="R270"/>
 </element>
-<element name="FUZZ1:T2" library="transistor-neu-to92" library_urn="urn:adsk.eagle:library:397" package="TO92-EBC" package3d_urn="urn:adsk.eagle:package:28763/2" value="" x="84.455" y="78.105" smashed="yes" rot="R270">
+<element name="FUZZ1:T2" library="transistor-neu-to92@1" package="TO92-EBC" value="" x="84.455" y="78.105" smashed="yes" rot="R270">
 <attribute name="NAME" x="86.233" y="80.645" size="1.27" layer="25" ratio="10" rot="R270"/>
 <attribute name="POPULARITY" value="7" x="84.455" y="78.105" size="1.778" layer="27" rot="R270" display="off"/>
 <attribute name="VALUE" x="79.883" y="80.645" size="1.27" layer="27" ratio="10" rot="R270"/>
@@ -4888,21 +4879,4 @@ design rules under a new name.</description>
 </mfgpreviewcolors>
 </board>
 </drawing>
-<compatibility>
-<note version="8.2" severity="warning">
-Since Version 8.2, EAGLE supports online libraries. The ids
-of those online libraries will not be understood (or retained)
-with this version.
-</note>
-<note version="8.3" severity="warning">
-Since Version 8.3, EAGLE supports URNs for individual library
-assets (packages, symbols, and devices). The URNs of those assets
-will not be understood (or retained) with this version.
-</note>
-<note version="8.3" severity="warning">
-Since Version 8.3, EAGLE supports the association of 3D packages
-with devices in libraries, schematics, and board files. Those 3D
-packages will not be understood (or retained) with this version.
-</note>
-</compatibility>
 </eagle>
