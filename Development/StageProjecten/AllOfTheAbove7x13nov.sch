@@ -1,10 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="9.5.1">
+<eagle version="7.7.0">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
-<setting keepoldvectorfont="yes"/>
 <setting verticaltext="up"/>
 </settings>
 <grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
@@ -14432,7 +14431,7 @@ grid 5.08 mm</description>
 <variantdefs>
 </variantdefs>
 <classes>
-<class number="0" name="default" width="0" drill="0">
+<class number="0" name="default" width="0.254" drill="0">
 </class>
 <class number="1" name="power" width="0.381" drill="0">
 </class>
@@ -14721,7 +14720,7 @@ grid 5.08 mm</description>
 <wire x1="26.67" y1="40.64" x2="27.94" y2="40.64" width="0.1524" layer="91"/>
 </segment>
 </net>
-<net name="N$21" class="0">
+<net name="ACIDVI" class="0">
 <segment>
 <pinref part="R25" gate="R" pin="1"/>
 <wire x1="38.1" y1="40.64" x2="36.83" y2="40.64" width="0.1524" layer="91"/>
@@ -14832,7 +14831,7 @@ grid 5.08 mm</description>
 <wire x1="58.42" y1="31.75" x2="55.88" y2="31.75" width="0.1524" layer="91"/>
 </segment>
 </net>
-<net name="N$81" class="0">
+<net name="ACIDPL" class="0">
 <segment>
 <pinref part="IC5" gate="A" pin="V+"/>
 <pinref part="JP4" gate="A" pin="2"/>
@@ -14847,7 +14846,7 @@ grid 5.08 mm</description>
 <junction x="46.99" y="29.21"/>
 </segment>
 </net>
-<net name="N$82" class="0">
+<net name="ACIDNE" class="0">
 <segment>
 <pinref part="IC5" gate="A" pin="V-"/>
 <pinref part="JP5" gate="A" pin="2"/>
@@ -15228,7 +15227,7 @@ grid 5.08 mm</description>
 <wire x1="29.21" y1="16.51" x2="29.21" y2="19.05" width="0.1524" layer="91"/>
 </segment>
 </net>
-<net name="N$37" class="0">
+<net name="CLIPVI" class="0">
 <segment>
 <pinref part="C29" gate="C" pin="2"/>
 <pinref part="R33" gate="R" pin="1"/>
@@ -15250,7 +15249,7 @@ grid 5.08 mm</description>
 <junction x="22.86" y="41.91"/>
 </segment>
 </net>
-<net name="N$39" class="0">
+<net name="CLIPPL" class="0">
 <segment>
 <pinref part="IC6" gate="A" pin="V+"/>
 <wire x1="29.21" y1="36.83" x2="29.21" y2="27.94" width="0.1524" layer="91"/>
@@ -15265,7 +15264,7 @@ grid 5.08 mm</description>
 <junction x="33.02" y="27.94"/>
 </segment>
 </net>
-<net name="N$40" class="0">
+<net name="CLIPNE" class="0">
 <segment>
 <pinref part="IC6" gate="A" pin="V-"/>
 <wire x1="29.21" y1="52.07" x2="29.21" y2="54.61" width="0.1524" layer="91"/>
@@ -17422,7 +17421,7 @@ grid 5.08 mm</description>
 <junction x="71.12" y="66.04"/>
 </segment>
 </net>
-<net name="GND" class="0">
+<net name="GND" class="1">
 <segment>
 <pinref part="GND12" gate="1" pin="GND"/>
 <pinref part="R27" gate="R" pin="1"/>
@@ -17575,7 +17574,7 @@ grid 5.08 mm</description>
 <pinref part="GND96" gate="1" pin="GND"/>
 </segment>
 </net>
-<net name="12V" class="0">
+<net name="12V" class="1">
 <segment>
 <pinref part="C26" gate="C" pin="2"/>
 <pinref part="U$39" gate="G$1" pin="12V"/>
@@ -17625,7 +17624,7 @@ grid 5.08 mm</description>
 <pinref part="U$112" gate="G$1" pin="E"/>
 </segment>
 </net>
-<net name="-12V" class="0">
+<net name="-12V" class="1">
 <segment>
 <pinref part="C27" gate="C" pin="1"/>
 <pinref part="U$40" gate="G$1" pin="-12V"/>
@@ -18658,7 +18657,7 @@ grid 5.08 mm</description>
 <busses>
 </busses>
 <nets>
-<net name="GND" class="0">
+<net name="GND" class="1">
 <segment>
 <pinref part="J9" gate="G$1" pin="RING"/>
 <pinref part="GND6" gate="1" pin="GND"/>
@@ -18906,7 +18905,7 @@ grid 5.08 mm</description>
 <junction x="74.93" y="124.46"/>
 </segment>
 </net>
-<net name="12V" class="0">
+<net name="12V" class="1">
 <segment>
 <pinref part="U$22" gate="G$6" pin="12V"/>
 <pinref part="U$16" gate="G$1" pin="12V"/>
@@ -18958,7 +18957,7 @@ grid 5.08 mm</description>
 <wire x1="111.76" y1="124.46" x2="144.78" y2="124.46" width="0.1524" layer="91"/>
 </segment>
 </net>
-<net name="9V" class="0">
+<net name="9V" class="1">
 <segment>
 <portref moduleinst="ACID1" port="9V"/>
 <pinref part="U$21" gate="G$1" pin="9V"/>
@@ -18979,7 +18978,7 @@ grid 5.08 mm</description>
 <pinref part="U$25" gate="G$1" pin="9V"/>
 </segment>
 </net>
-<net name="-12V" class="0">
+<net name="-12V" class="1">
 <segment>
 <portref moduleinst="CLIP1" port="-12V"/>
 <pinref part="U$27" gate="G$1" pin="-12V"/>
@@ -19208,7 +19207,7 @@ grid 5.08 mm</description>
 <wire x1="143.51" y1="148.59" x2="144.78" y2="148.59" width="0.1524" layer="91"/>
 </segment>
 </net>
-<net name="4.5V" class="0">
+<net name="4.5V" class="1">
 <segment>
 <portref moduleinst="ACID1" port="+4.5V"/>
 <wire x1="175.26" y1="187.96" x2="190.5" y2="187.96" width="0.1524" layer="91"/>
@@ -20040,7 +20039,7 @@ grid 5.08 mm</description>
 <busses>
 </busses>
 <nets>
-<net name="12V" class="0">
+<net name="12V" class="1">
 <segment>
 <pinref part="C30" gate="C" pin="2"/>
 <pinref part="U$81" gate="G$1" pin="12V"/>
@@ -20075,7 +20074,7 @@ grid 5.08 mm</description>
 <pinref part="U$91" gate="G$1" pin="12V"/>
 </segment>
 </net>
-<net name="-12V" class="0">
+<net name="-12V" class="1">
 <segment>
 <pinref part="IC9" gate="P" pin="V-"/>
 <pinref part="U$75" gate="G$1" pin="-12V"/>
@@ -20114,7 +20113,7 @@ grid 5.08 mm</description>
 <pinref part="U$90" gate="G$1" pin="-12V"/>
 </segment>
 </net>
-<net name="GND" class="0">
+<net name="GND" class="1">
 <segment>
 <pinref part="C30" gate="C" pin="1"/>
 <pinref part="C31" gate="C" pin="2"/>
@@ -20974,7 +20973,7 @@ grid 5.08 mm</description>
 <busses>
 </busses>
 <nets>
-<net name="GND" class="0">
+<net name="GND" class="1">
 <segment>
 <pinref part="J2" gate="G$1" pin="GND"/>
 <pinref part="GND1" gate="1" pin="GND"/>
@@ -21047,7 +21046,7 @@ grid 5.08 mm</description>
 <pinref part="D1" gate="D" pin="+"/>
 </segment>
 </net>
-<net name="12V" class="0">
+<net name="12V" class="1">
 <segment>
 <pinref part="U$1" gate="G$1" pin="12V"/>
 <pinref part="D1" gate="D" pin="-"/>
@@ -21087,7 +21086,7 @@ grid 5.08 mm</description>
 <wire x1="20.32" y1="41.91" x2="17.78" y2="41.91" width="0.1524" layer="91"/>
 </segment>
 </net>
-<net name="-12V" class="0">
+<net name="-12V" class="1">
 <segment>
 <pinref part="U$2" gate="G$1" pin="-12V"/>
 <pinref part="D2" gate="D" pin="+"/>
@@ -21107,7 +21106,7 @@ grid 5.08 mm</description>
 <pinref part="U$46" gate="G$1" pin="-12V"/>
 </segment>
 </net>
-<net name="9V" class="0">
+<net name="9V" class="1">
 <segment>
 <pinref part="IC1" gate="A1" pin="VO"/>
 <pinref part="U$9" gate="G$1" pin="9V"/>
@@ -21129,7 +21128,7 @@ grid 5.08 mm</description>
 <pinref part="U$51" gate="G$1" pin="9V"/>
 </segment>
 </net>
-<net name="4.5V" class="0">
+<net name="4.5V" class="1">
 <segment>
 <pinref part="U$44" gate="G$1" pin="VOLTAGE"/>
 <wire x1="148.59" y1="52.07" x2="148.59" y2="46.99" width="0.1524" layer="91"/>
