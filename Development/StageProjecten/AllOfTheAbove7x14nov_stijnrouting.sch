@@ -14475,19 +14475,19 @@ grid 5.08 mm</description>
 <attribute name="DESC" value="Tone"/>
 </part>
 <part name="IC5" library="linear" deviceset="*741" device="D" technology="UA"/>
-<part name="JP4" library="pinhead" deviceset="PINHD-1X3" device=""/>
+<part name="JP4" library="pinhead" deviceset="PINHD-1X3" device="" value="ACID+"/>
 <part name="U$39" library="FenixBase" deviceset="12V" device=""/>
 <part name="U$40" library="FenixBase" deviceset="9V" device=""/>
-<part name="JP5" library="pinhead" deviceset="PINHD-1X3" device=""/>
+<part name="JP5" library="pinhead" deviceset="PINHD-1X3" device="" value="ACID-"/>
 <part name="GND62" library="FenixBase" deviceset="GND" device=""/>
 <part name="U$24" library="FenixBase" deviceset="-12V" device=""/>
-<part name="JP6" library="pinhead" deviceset="PINHD-1X3" device=""/>
+<part name="JP6" library="pinhead" deviceset="PINHD-1X3" device="" value="ACIDBIAS"/>
 <part name="R72" library="OPL" deviceset="R*" device="-0603" value="1M"/>
 <part name="D3" library="diode" deviceset="1N4148" device="DO35-10"/>
 <part name="D4" library="diode" deviceset="1N4148" device="DO35-10"/>
 <part name="D1" library="FenixBase" deviceset="BAS16W" device=""/>
 <part name="D2" library="FenixBase" deviceset="BAS16W" device=""/>
-<part name="JP1" library="pinhead@1" deviceset="PINHD-1X3" device=""/>
+<part name="JP1" library="pinhead@1" deviceset="PINHD-1X3" device="" value="GERMANIUMSELECTOR"/>
 <part name="GND1" library="FenixBase" deviceset="GND" device=""/>
 <part name="GND2" library="FenixBase" deviceset="GND" device=""/>
 <part name="C7" library="EurorackModularParts" deviceset="C-POLAR*" device="-A" value="10uF"/>
@@ -14585,8 +14585,8 @@ grid 5.08 mm</description>
 <attribute name="NAME" x="45.72" y="67.945" size="1.778" layer="95"/>
 <attribute name="VALUE" x="45.72" y="54.61" size="1.778" layer="96"/>
 </instance>
-<instance part="GND62" gate="1" x="35.56" y="64.77" smashed="yes" rot="R270">
-<attribute name="VALUE" x="34.29" y="64.77" size="0.762" layer="96" rot="R270" align="top-center"/>
+<instance part="GND62" gate="1" x="40.64" y="68.58" smashed="yes" rot="R180">
+<attribute name="VALUE" x="40.64" y="69.85" size="0.762" layer="96" rot="R180" align="top-center"/>
 </instance>
 <instance part="U$24" gate="G$1" x="46.99" y="59.69" smashed="yes" rot="R270"/>
 <instance part="JP6" gate="A" x="36.83" y="29.21" smashed="yes" rot="MR270">
@@ -14679,7 +14679,7 @@ grid 5.08 mm</description>
 <pinref part="GND62" gate="1" pin="GND"/>
 <wire x1="49.53" y1="64.77" x2="40.64" y2="64.77" width="0.1524" layer="91"/>
 <pinref part="C24" gate="C" pin="2"/>
-<wire x1="40.64" y1="64.77" x2="38.1" y2="64.77" width="0.1524" layer="91"/>
+<wire x1="40.64" y1="64.77" x2="40.64" y2="66.04" width="0.1524" layer="91"/>
 <wire x1="40.64" y1="60.96" x2="40.64" y2="64.77" width="0.1524" layer="91"/>
 <junction x="40.64" y="64.77"/>
 </segment>
@@ -14934,16 +14934,16 @@ grid 5.08 mm</description>
 <part name="GND52" library="FenixBase" deviceset="GND" device=""/>
 <part name="R33" library="OPL" deviceset="R*" device="-0603" value="1K"/>
 <part name="C30" library="OPL" deviceset="C*" device="-0603" value="1nF"/>
-<part name="JP1" library="pinhead" deviceset="PINHD-1X3" device=""/>
+<part name="JP1" library="pinhead" deviceset="PINHD-1X3" device="" value="CLIPBIAS"/>
 <part name="IC6" library="linear" deviceset="*741" device="D" technology="UA"/>
 <part name="GND53" library="FenixBase" deviceset="GND" device=""/>
-<part name="JP2" library="pinhead" deviceset="PINHD-1X3" device=""/>
-<part name="JP3" library="pinhead" deviceset="PINHD-1X3" device=""/>
+<part name="JP2" library="pinhead" deviceset="PINHD-1X3" device="" value="CLIP+"/>
+<part name="JP3" library="pinhead" deviceset="PINHD-1X3" device="" value="CLIP-"/>
 <part name="GND54" library="FenixBase" deviceset="GND" device=""/>
 <part name="U$28" library="FenixBase" deviceset="-12V" device=""/>
 <part name="R34" library="OPL" deviceset="R*" device="-0603" value="1M"/>
 <part name="U$29" library="FenixBase" deviceset="12V" device=""/>
-<part name="U$30" library="FenixBase" deviceset="9V" device=""/>
+<part name="U$30" library="FenixBase" deviceset="9V" device="" value="CLIP+"/>
 <part name="C31" library="OPL" deviceset="C*" device="-0603" value="100pF"/>
 <part name="R35" library="OPL" deviceset="R*" device="-0603" value="560R"/>
 <part name="R36" library="OPL" deviceset="R*" device="-0603" value="47R"/>
@@ -16721,7 +16721,7 @@ grid 5.08 mm</description>
 <part name="GND106" library="FenixBase" deviceset="GND" device=""/>
 <part name="R107" library="OPL" deviceset="R*" device="-0603" value="100K"/>
 <part name="R108" library="OPL" deviceset="R*" device="-0603" value="330K"/>
-<part name="R109" library="EurorackModularParts" deviceset="POT" device="SQUAREHOLE_SMALLKNOB">
+<part name="R109" library="EurorackModularParts" deviceset="POT" device="SQUAREHOLE_SMALLKNOB" value="10kA">
 <attribute name="DESC" value="Post-gain"/>
 </part>
 <part name="GND107" library="FenixBase" deviceset="GND" device=""/>
@@ -21149,6 +21149,48 @@ grid 5.08 mm</description>
 </nets>
 </sheet>
 </sheets>
+<errors>
+<approved hash="101,1,187.96,15.24,IC5BUF1,E,,,,"/>
+<approved hash="101,1,44.45,127,IC5BUF2,E,,,,"/>
+<approved hash="101,3,152.4,17.78,IC10BUF1,E,,,,"/>
+<approved hash="101,3,152.4,1.27,IC10BUF2,E,,,,"/>
+<approved hash="104,2,71.12,238.76,IC2P,V+,12V,,,"/>
+<approved hash="104,2,71.12,223.52,IC2P,V-,-12V,,,"/>
+<approved hash="104,2,157.48,38.1,IC6P,V+,12V,,,"/>
+<approved hash="104,2,157.48,22.86,IC6P,V-,-12V,,,"/>
+<approved hash="202,1,151.13,66.04,IC5OTA1,I_DIODE,,,,"/>
+<approved hash="202,1,43.18,189.23,IC5OTA2,I_DIODE,,,,"/>
+<approved hash="104,1,78.74,95.25,IC3P,V+,12V,,,"/>
+<approved hash="104,1,78.74,80.01,IC3P,V-,-12V,,,"/>
+<approved hash="104,1,201.93,50.8,IC4P,V+,12V,,,"/>
+<approved hash="104,1,201.93,35.56,IC4P,V-,-12V,,,"/>
+<approved hash="104,3,191.77,21.59,IC8P,V+,12V,,,"/>
+<approved hash="104,3,191.77,6.35,IC8P,V-,-12V,,,"/>
+<approved hash="104,3,182.88,21.59,IC9P,V+,12V,,,"/>
+<approved hash="104,3,182.88,6.35,IC9P,V-,-12V,,,"/>
+<approved hash="202,3,92.71,72.39,IC10OTA1,I_DIODE,,,,"/>
+<approved hash="202,3,276.86,123.19,IC10OTA2,I_DIODE,,,,"/>
+<approved hash="104,2,60.96,238.76,IC7P,V+,12V,,,"/>
+<approved hash="104,2,60.96,223.52,IC7P,V-,-12V,,,"/>
+<approved hash="104,1@ACID,43.18,35.56,IC5,V+,ACIDPL,,,"/>
+<approved hash="104,1@ACID,43.18,50.8,IC5,V-,ACIDNE,,,"/>
+<approved hash="104,1@CLIP,29.21,36.83,IC6,V+,CLIPPL,,,"/>
+<approved hash="104,1@CLIP,29.21,52.07,IC6,V-,CLIPNE,,,"/>
+<approved hash="113,1@FUZZ,26.0435,49.2337,T1,,,,,"/>
+<approved hash="113,1@FUZZ,43.8235,55.5837,T2,,,,,"/>
+<approved hash="118,1@ACID,57.15,26.67,Net,12V,,,,"/>
+<approved hash="118,1@ACID,17.78,31.115,Net,GND,,,,"/>
+<approved hash="118,1@ACID,48.26,59.69,Net,-12V,,,,"/>
+<approved hash="118,1@ACID,57.15,31.75,Net,9V,,,,"/>
+<approved hash="118,1@CLIP,43.18,25.4,Net,12V,,,,"/>
+<approved hash="118,1@CLIP,2.54,32.385,Net,GND,,,,"/>
+<approved hash="118,1@CLIP,36.83,59.69,Net,-12V,,,,"/>
+<approved hash="118,1@CLIP,43.18,30.48,Net,9V,,,,"/>
+<approved hash="118,1@FUZZ,25.4,42.545,Net,9V,,,,"/>
+<approved hash="118,1@FUZZ,25.4,73.66,Net,GND,,,,"/>
+<approved hash="118,1@CREAM,138.43,55.88,Net,9V,,,,"/>
+<approved hash="118,1@CREAM,25.4,20.955,Net,GND,,,,"/>
+</errors>
 </schematic>
 </drawing>
 <compatibility>
