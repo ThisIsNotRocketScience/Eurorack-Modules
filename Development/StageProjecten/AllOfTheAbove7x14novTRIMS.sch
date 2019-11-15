@@ -7,7 +7,7 @@
 <setting keepoldvectorfont="yes"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.05" unitdist="inch" unit="inch" style="lines" multiple="1" display="yes" altdistance="0.01" altunitdist="inch" altunit="inch"/>
+<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="no" active="no"/>
 <layer number="2" name="Route2" color="16" fill="1" visible="no" active="no"/>
@@ -14454,7 +14454,7 @@ grid 5.08 mm</description>
 <part name="R23" library="EurorackModularParts" deviceset="POT" device="SQUAREHOLE_SMALLKNOB" value="1MC">
 <attribute name="DESC" value="Distortion"/>
 </part>
-<part name="R24" library="EurorackModularParts" deviceset="POT" device="SQUAREHOLE_SMALLKNOB" value="10K">
+<part name="R24" library="EurorackModularParts" deviceset="POT" device="SQUAREHOLE_SMALLKNOB" value="10KA">
 <attribute name="DESC" value="Volume"/>
 </part>
 <part name="R25" library="OPL" deviceset="R*" device="-0603" value="10K"/>
@@ -16662,7 +16662,7 @@ grid 5.08 mm</description>
 <part name="GND58" library="FenixBase" deviceset="GND" device=""/>
 <part name="R44" library="OPL" deviceset="R*" device="-0603" value="100K"/>
 <part name="R45" library="OPL" deviceset="R*" device="-0603" value="330K"/>
-<part name="R69" library="EurorackModularParts" deviceset="POT" device="SQUAREHOLE_SMALLKNOB" value="100K Linear">
+<part name="R69" library="EurorackModularParts" deviceset="POT" device="SQUAREHOLE_SMALLKNOB" value="100KB">
 <attribute name="DESC" value="Drive"/>
 </part>
 <part name="GND59" library="FenixBase" deviceset="GND" device=""/>
@@ -16722,7 +16722,7 @@ grid 5.08 mm</description>
 <part name="GND106" library="FenixBase" deviceset="GND" device=""/>
 <part name="R107" library="OPL" deviceset="R*" device="-0603" value="100K"/>
 <part name="R108" library="OPL" deviceset="R*" device="-0603" value="330K"/>
-<part name="R109" library="EurorackModularParts" deviceset="POT" device="SQUAREHOLE_SMALLKNOB" value="10kA">
+<part name="R109" library="EurorackModularParts" deviceset="POT" device="SQUAREHOLE_SMALLKNOB" value="100KB">
 <attribute name="DESC" value="Post-gain"/>
 </part>
 <part name="GND107" library="FenixBase" deviceset="GND" device=""/>
@@ -16735,10 +16735,10 @@ grid 5.08 mm</description>
 <part name="IC3" library="EurorackModularParts" deviceset="TL074" device="TSSOP14"/>
 <part name="IC4" library="EurorackModularParts" deviceset="TL074" device="TSSOP14"/>
 <part name="U$23" library="EurorackModularParts" deviceset="HEADPHONEHOLE" device="_BIGGAP"/>
-<part name="R49" library="EurorackModularParts" deviceset="POT" device="SQUAREHOLE_SMALLKNOB" value="100KB Lin">
+<part name="R49" library="EurorackModularParts" deviceset="POT" device="SQUAREHOLE_SMALLKNOB" value="100KB">
 <attribute name="DESC" value="Mod"/>
 </part>
-<part name="R50" library="EurorackModularParts" deviceset="POT" device="SQUAREHOLE_SMALLKNOB" value="10KB Lin">
+<part name="R50" library="EurorackModularParts" deviceset="POT" device="SQUAREHOLE_SMALLKNOB" value="10KB">
 <attribute name="DESC" value="Level"/>
 </part>
 <part name="IC8" library="EurorackModularParts" deviceset="TL074" device="TSSOP14" value="TL074TSSOP14"/>
@@ -16874,7 +16874,7 @@ grid 5.08 mm</description>
 <part name="R112" library="OPL" deviceset="R*" device="-0603" value="18k"/>
 <part name="GND98" library="FenixBase" deviceset="GND" device=""/>
 <part name="R113" library="OPL" deviceset="R*" device="-0603" value="18k"/>
-<part name="R114" library="EurorackModularParts" deviceset="POT" device="SQUAREHOLE_SMALLKNOB" value="10k">
+<part name="R114" library="EurorackModularParts" deviceset="POT" device="SQUAREHOLE_SMALLKNOB" value="10KB">
 <attribute name="DESC" value="Wet/Dry"/>
 </part>
 <part name="U$14" library="FenixBase" deviceset="12V" device=""/>
