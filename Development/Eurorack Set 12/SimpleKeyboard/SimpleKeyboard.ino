@@ -106,7 +106,30 @@ void setup() {
 
   Keyboard.begin();
   
-  Serial.begin(115200);
+  Serial.begin(31250);
+}
+
+
+void NoteOn(int idx)
+{
+  Serial.write(0x90);
+  Serial.write(idx);
+  Serial.write(127);  
+};
+
+void NoteOff(int idx)
+{
+  Serial.write(0x80);
+  Serial.write(idx);
+  Serial.write(127);  
+};
+
+void Panic()
+{
+  for (int i =0 ;i<128;i++)
+  {
+    NoteOff(i);
+  }
 }
 void WinKey()
 {
@@ -144,10 +167,18 @@ void readMatrix()
           Keyboard.press(sendkeys[colIndex][rowIndex]);
           timepressed[colIndex][rowIndex] = current;
           repeats[colIndex][rowIndex] = 0;
+          if (midinote[colIndex][rowIndex] > -1)
+          {
+            NoteOn(midinote[colIndex][rowIndex]);
+          }
         }
        else
        {
         Keyboard.release(sendkeys[colIndex][rowIndex]);
+          if (midinote[colIndex][rowIndex] > -1)
+          {
+            NoteOff(midinote[colIndex][rowIndex]);
+          }
          
        }
       }
