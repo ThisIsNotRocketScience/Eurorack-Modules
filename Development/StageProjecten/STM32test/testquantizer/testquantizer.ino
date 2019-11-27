@@ -19,10 +19,79 @@ float Quantize(float inp)
   voltOutput = midiOutput / 12.0f;
 }
 
+
+#define DEBOUNCE 4
+
+class Quantizer
+{
+  int Result;
+  int LastToggle;
+  int ToggleSame ;
+  int LastInput;
+  
+public:  
+  
+  Quantizer()
+  {
+    Result = 0;
+    LastToggle = 1;
+    ToggleSame = 0;
+    LastInput = 0;
+  }
+  
+  void FeedValue(int V)
+  {
+    LastInput = Result;
+  }
+  
+  void Trigger()
+  {
+    Result = Quantize(LastInput);
+  }
+
+  void Release()
+  {
+    // nothing here for now..
+  }
+  
+  void SetToggle(int T)
+  {
+    if (LastToggle != T)
+    {
+      LastToggle = T;
+      ToggleSame = 0;
+    }
+    else
+    {
+
+      if (ToggleSame == DEBOUNCE)
+      {
+        if (T == 0) Trigger();else Release();
+      }
+      else
+      {
+         ToggleSame++;
+      }
+    }
+  }
+
+  int GetResult()
+  {
+    return Result;    
+  }
+  
+};
+
+Quantizer Channels[4];
+
 void loop() {
+
   buttonState = digitalRead(pushButton);
   analogInput = analogRead(A0);
 
+  
+
+  
   if(buttonState == 0 && loopCounter < 1) {
     loopCounter++;
 
