@@ -7754,7 +7754,7 @@ Based on the following sources:
 <wire x1="40.64" y1="20.32" x2="45.72" y2="20.32" width="0.1524" layer="91"/>
 </segment>
 </net>
-<net name="N$79" class="0">
+<net name="RESET" class="0">
 <segment>
 <pinref part="IC2" gate="RESET" pin="NRST"/>
 <pinref part="K1" gate="K" pin="A0"/>
