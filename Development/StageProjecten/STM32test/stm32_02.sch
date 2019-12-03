@@ -5331,6 +5331,10 @@ BF959 corrected 2008.03.06&lt;br&gt;</description>
 <circle x="15.2" y="-0.5" radius="3" width="0.127" layer="51"/>
 <circle x="15.2" y="-29" radius="3" width="0.127" layer="51"/>
 <circle x="-15.2" y="-29" radius="3" width="0.127" layer="51"/>
+<wire x1="-15.71" y1="-4.35" x2="15.71" y2="-4.35" width="0.127" layer="21"/>
+<wire x1="15.71" y1="-4.35" x2="15.71" y2="-21.05" width="0.127" layer="21"/>
+<wire x1="15.71" y1="-21.05" x2="-15.71" y2="-21.05" width="0.127" layer="21"/>
+<wire x1="-15.71" y1="-21.05" x2="-15.71" y2="-4.35" width="0.127" layer="21"/>
 </package>
 </packages>
 <symbols>
@@ -7863,13 +7867,6 @@ Based on the following sources:
 <label x="165.1" y="45.72" size="1.778" layer="95"/>
 </segment>
 </net>
-<net name="BTN_IN2" class="0">
-<segment>
-<pinref part="IC2" gate="PORTA_H" pin="PA8"/>
-<wire x1="120.65" y1="38.1" x2="114.3" y2="38.1" width="0.1524" layer="91"/>
-<label x="110.49" y="38.1" size="1.778" layer="95"/>
-</segment>
-</net>
 <net name="BTN_IN3" class="0">
 <segment>
 <pinref part="IC2" gate="PORTA_H" pin="PA9"/>
@@ -7879,9 +7876,9 @@ Based on the following sources:
 </net>
 <net name="BTN_IN4" class="0">
 <segment>
-<pinref part="IC2" gate="PORTA_H" pin="PA10"/>
-<wire x1="120.65" y1="33.02" x2="114.3" y2="33.02" width="0.1524" layer="91"/>
-<label x="110.49" y="33.02" size="1.778" layer="95"/>
+<pinref part="IC2" gate="PORTA_H" pin="PA8"/>
+<wire x1="120.65" y1="38.1" x2="114.3" y2="38.1" width="0.1524" layer="91"/>
+<label x="110.49" y="38.1" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="GATE_OUT1" class="0">
@@ -8062,6 +8059,13 @@ Based on the following sources:
 <pinref part="D14" gate="LED" pin="-"/>
 <pinref part="R77" gate="R" pin="1"/>
 <wire x1="243.84" y1="26.67" x2="243.84" y2="27.94" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="BTN_IN2" class="0">
+<segment>
+<pinref part="IC2" gate="PORTA_H" pin="PA10"/>
+<wire x1="120.65" y1="33.02" x2="114.3" y2="33.02" width="0.1524" layer="91"/>
+<label x="110.49" y="33.02" size="1.778" layer="95"/>
 </segment>
 </net>
 </nets>
