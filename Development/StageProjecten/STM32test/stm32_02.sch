@@ -856,26 +856,6 @@ PCB width:
 <circle x="53.22" y="-8" radius="1.6" width="0.0254" layer="255"/>
 <circle x="53.22" y="114.5" radius="1.6" width="0.0254" layer="255"/>
 </package>
-<package name="EURORACK6HPPCB">
-<wire x1="0.5" y1="105.5" x2="0.5" y2="1" width="0.127" layer="20"/>
-<wire x1="0.5" y1="1" x2="1.5" y2="0" width="0.127" layer="20" curve="90"/>
-<wire x1="1.5" y1="0" x2="28.64" y2="0" width="0.127" layer="20"/>
-<wire x1="28.64" y1="0" x2="29.64" y2="1" width="0.127" layer="20" curve="90"/>
-<wire x1="29.64" y1="1" x2="29.64" y2="105.5" width="0.127" layer="20"/>
-<wire x1="29.64" y1="105.5" x2="28.64" y2="106.5" width="0.127" layer="20" curve="90"/>
-<wire x1="28.64" y1="106.5" x2="1.5" y2="106.5" width="0.127" layer="20"/>
-<wire x1="1.5" y1="106.5" x2="0.5" y2="105.5" width="0.127" layer="20" curve="90"/>
-<wire x1="0" y1="-11" x2="30.14" y2="-11" width="0" layer="255"/>
-<wire x1="30.14" y1="-11" x2="30.14" y2="117.5" width="0" layer="255"/>
-<wire x1="30.14" y1="117.5" x2="0" y2="117.5" width="0" layer="255"/>
-<wire x1="0" y1="117.5" x2="0" y2="-11" width="0" layer="255"/>
-<text x="0.5" y="115" size="1.27" layer="51">6HP front template</text>
-<wire x1="10.075" y1="130" x2="10.075" y2="-20" width="0" layer="51"/>
-<wire x1="20.15" y1="130" x2="20.15" y2="-20" width="0" layer="51"/>
-<circle x="7.5" y="-8" radius="1.5" width="0.0254" layer="255"/>
-<circle x="7.5" y="114.5" radius="1.5" width="0.0254" layer="255"/>
-<wire x1="0" y1="0" x2="4" y2="4" width="0.127" layer="51"/>
-</package>
 <package name="EURORACK2HPPCB">
 <wire x1="0.5" y1="105.5" x2="0.5" y2="1" width="0.127" layer="20"/>
 <wire x1="0.5" y1="1" x2="1.5" y2="0" width="0.127" layer="20" curve="90"/>
@@ -1260,6 +1240,26 @@ PCB width:
 <circle x="0" y="0" radius="2.7" width="0.05" layer="21"/>
 <text x="0" y="0" size="0.762" layer="25" ratio="10" rot="SR270" align="center">&gt;NAME</text>
 <wire x1="1.27" y1="1.27" x2="1.27" y2="-1.27" width="0.508" layer="25"/>
+</package>
+<package name="EURORACK6HPPCB">
+<wire x1="-0.008" y1="105.5" x2="-0.008" y2="1" width="0.127" layer="20"/>
+<wire x1="-0.008" y1="1" x2="0.992" y2="0" width="0.127" layer="20" curve="90"/>
+<wire x1="0.992" y1="0" x2="29.148" y2="0" width="0.127" layer="20"/>
+<wire x1="29.148" y1="0" x2="30.148" y2="1" width="0.127" layer="20" curve="90"/>
+<wire x1="30.148" y1="1" x2="30.148" y2="105.5" width="0.127" layer="20"/>
+<wire x1="30.148" y1="105.5" x2="29.148" y2="106.5" width="0.127" layer="20" curve="90"/>
+<wire x1="29.148" y1="106.5" x2="0.992" y2="106.5" width="0.127" layer="20"/>
+<wire x1="0.992" y1="106.5" x2="-0.008" y2="105.5" width="0.127" layer="20" curve="90"/>
+<wire x1="0" y1="-11" x2="30.14" y2="-11" width="0" layer="255"/>
+<wire x1="30.14" y1="-11" x2="30.14" y2="117.5" width="0" layer="255"/>
+<wire x1="30.14" y1="117.5" x2="0" y2="117.5" width="0" layer="255"/>
+<wire x1="0" y1="117.5" x2="0" y2="-11" width="0" layer="255"/>
+<text x="0.5" y="115" size="1.27" layer="51">6HP front template</text>
+<wire x1="10.075" y1="130" x2="10.075" y2="-20" width="0" layer="51"/>
+<wire x1="20.15" y1="130" x2="20.15" y2="-20" width="0" layer="51"/>
+<circle x="7.5" y="-8" radius="1.5" width="0.0254" layer="255"/>
+<circle x="7.5" y="114.5" radius="1.5" width="0.0254" layer="255"/>
+<wire x1="0" y1="0" x2="4" y2="4" width="0.127" layer="51"/>
 </package>
 </packages>
 <symbols>
@@ -2543,18 +2543,21 @@ Source: http://www.onsemi.co.jp .. LM137M-D.PDF</description>
 <rectangle x1="1.3843" y1="-3.1623" x2="3.2385" y2="-2.2987" layer="51" rot="R270"/>
 <text x="0" y="0" size="1.0668" layer="25" ratio="10" rot="SR0" align="center">&gt;NAME</text>
 </package>
-<package name="FCI61729">
-<pad name="P$1" x="-6.02" y="0" drill="2.3"/>
-<pad name="P$2" x="6.02" y="0" drill="2.3"/>
-<pad name="2" x="-1.25" y="4.71" drill="1"/>
-<pad name="3" x="-1.25" y="2.71" drill="1"/>
-<pad name="4" x="1.25" y="2.71" drill="1"/>
-<pad name="1" x="1.25" y="4.71" drill="1"/>
-<wire x1="-6.1" y1="5.27" x2="6.1" y2="5.27" width="0.127" layer="21"/>
-<wire x1="6.1" y1="5.27" x2="6.1" y2="-10.28" width="0.127" layer="21"/>
-<wire x1="6.1" y1="-10.28" x2="-6.1" y2="-10.28" width="0.127" layer="21"/>
-<wire x1="-6.1" y1="-10.28" x2="-6.1" y2="5.27" width="0.127" layer="21"/>
-<text x="-6.35" y="-12.7" size="1.27" layer="21">&gt;NAME</text>
+<package name="USB_B_VERT">
+<pad name="3" x="-1.25" y="-1.6" drill="0.92"/>
+<pad name="4" x="1.25" y="-1.6" drill="0.92"/>
+<pad name="1" x="1.25" y="1.6" drill="0.92"/>
+<pad name="2" x="-1.25" y="1.6" drill="0.92"/>
+<pad name="G1" x="-6.2" y="-0.9" drill="2.3"/>
+<pad name="G2" x="6.2" y="-0.9" drill="2.3"/>
+<wire x1="-6" y1="5.5" x2="6" y2="5.5" width="0.127" layer="21"/>
+<wire x1="6" y1="5.5" x2="6" y2="-5.5" width="0.127" layer="21"/>
+<wire x1="6" y1="-5.5" x2="-6" y2="-5.5" width="0.127" layer="21"/>
+<wire x1="-6" y1="-5.5" x2="-6" y2="5.5" width="0.127" layer="21"/>
+<wire x1="-6.5" y1="6" x2="-6.5" y2="-6" width="0.127" layer="255"/>
+<wire x1="-6.5" y1="-6" x2="6.5" y2="-6" width="0.127" layer="255"/>
+<wire x1="6.5" y1="-6" x2="6.5" y2="6" width="0.127" layer="255"/>
+<wire x1="6.5" y1="6" x2="-6.5" y2="6" width="0.127" layer="255"/>
 </package>
 </packages>
 <symbols>
@@ -2635,21 +2638,18 @@ Source: http://www.st.com/stonline/products/literature/ds/7194/ld1117axx.pdf</de
 </device>
 </devices>
 </deviceset>
-<deviceset name="USB-B-FEMALE" prefix="X">
-<description>&lt;b&gt;USB type B receptacle&lt;/b&gt;
-&lt;p&gt;
-FCI 61729-59796</description>
+<deviceset name="USB_B_FEMALE_VERT">
 <gates>
 <gate name="G$1" symbol="USB-4" x="0" y="0"/>
 </gates>
 <devices>
-<device name="" package="FCI61729">
+<device name="" package="USB_B_VERT">
 <connects>
 <connect gate="G$1" pin="D+" pad="3"/>
 <connect gate="G$1" pin="D-" pad="2"/>
 <connect gate="G$1" pin="GND" pad="4"/>
-<connect gate="G$1" pin="GND1" pad="P$1"/>
-<connect gate="G$1" pin="GND2" pad="P$2"/>
+<connect gate="G$1" pin="GND1" pad="G1"/>
+<connect gate="G$1" pin="GND2" pad="G2"/>
 <connect gate="G$1" pin="VBUS" pad="1"/>
 </connects>
 <technologies>
@@ -5331,10 +5331,10 @@ BF959 corrected 2008.03.06&lt;br&gt;</description>
 <circle x="15.2" y="-0.5" radius="3" width="0.127" layer="51"/>
 <circle x="15.2" y="-29" radius="3" width="0.127" layer="51"/>
 <circle x="-15.2" y="-29" radius="3" width="0.127" layer="51"/>
-<wire x1="-15.71" y1="-4.35" x2="15.71" y2="-4.35" width="0.127" layer="21"/>
-<wire x1="15.71" y1="-4.35" x2="15.71" y2="-21.05" width="0.127" layer="21"/>
-<wire x1="15.71" y1="-21.05" x2="-15.71" y2="-21.05" width="0.127" layer="21"/>
-<wire x1="-15.71" y1="-21.05" x2="-15.71" y2="-4.35" width="0.127" layer="21"/>
+<wire x1="-15.71" y1="-4.35" x2="15.71" y2="-4.35" width="0.127" layer="255"/>
+<wire x1="15.71" y1="-4.35" x2="15.71" y2="-21.05" width="0.127" layer="255"/>
+<wire x1="15.71" y1="-21.05" x2="-15.71" y2="-21.05" width="0.127" layer="255"/>
+<wire x1="-15.71" y1="-21.05" x2="-15.71" y2="-4.35" width="0.127" layer="255"/>
 </package>
 </packages>
 <symbols>
@@ -6629,7 +6629,7 @@ Based on the following sources:
 <part name="S3" library="zephod-components" deviceset="SWITCH_W_LED_PB6149L-X-102" device="BLUE"/>
 <part name="X1" library="OPL" deviceset="CRYSTAL*" device="-0500290P1"/>
 <part name="S4" library="zephod-components" deviceset="SWITCH_W_LED_PB6149L-X-102" device="BLUE"/>
-<part name="X2" library="ld-components" deviceset="USB-B-FEMALE" device=""/>
+<part name="X2" library="ld-components" deviceset="USB_B_FEMALE_VERT" device=""/>
 <part name="R72" library="OPL" deviceset="R*" device="-0603" value="1.5k"/>
 <part name="U$48" library="FenixBase" deviceset="3.3V" device=""/>
 <part name="GND66" library="FenixBase" deviceset="GND" device=""/>

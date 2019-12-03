@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="1" unitdist="mm" unit="mm" style="lines" multiple="1" display="yes" altdistance="5" altunitdist="mil" altunit="mil"/>
+<grid distance="50" unitdist="mil" unit="mil" style="lines" multiple="1" display="yes" altdistance="5" altunitdist="mil" altunit="mil"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="2" name="Route2" color="16" fill="1" visible="no" active="yes"/>
@@ -70,6 +70,7 @@
 <layer number="96" name="Values" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="97" name="Info" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="98" name="Guide" color="6" fill="1" visible="yes" active="yes"/>
+<layer number="255" name="Panel" color="16" fill="1" visible="yes" active="yes"/>
 </layers>
 <library>
 <packages>
@@ -94,10 +95,10 @@
 <circle x="15.2" y="-0.5" radius="3" width="0.127" layer="51"/>
 <circle x="15.2" y="-29" radius="3" width="0.127" layer="51"/>
 <circle x="-15.2" y="-29" radius="3" width="0.127" layer="51"/>
-<wire x1="-15.71" y1="-4.35" x2="15.71" y2="-4.35" width="0.127" layer="21"/>
-<wire x1="15.71" y1="-4.35" x2="15.71" y2="-21.05" width="0.127" layer="21"/>
-<wire x1="15.71" y1="-21.05" x2="-15.71" y2="-21.05" width="0.127" layer="21"/>
-<wire x1="-15.71" y1="-21.05" x2="-15.71" y2="-4.35" width="0.127" layer="21"/>
+<wire x1="-15.71" y1="-4.35" x2="15.71" y2="-4.35" width="0.127" layer="255"/>
+<wire x1="15.71" y1="-4.35" x2="15.71" y2="-21.05" width="0.127" layer="255"/>
+<wire x1="15.71" y1="-21.05" x2="-15.71" y2="-21.05" width="0.127" layer="255"/>
+<wire x1="-15.71" y1="-21.05" x2="-15.71" y2="-4.35" width="0.127" layer="255"/>
 </package>
 </packages>
 <symbols>
