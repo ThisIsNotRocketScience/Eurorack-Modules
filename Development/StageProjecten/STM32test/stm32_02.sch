@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="9.5.1">
+<eagle version="9.5.2">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.05" unitdist="inch" unit="inch" style="lines" multiple="1" display="yes" altdistance="0.01" altunitdist="inch" altunit="inch"/>
+<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="no" active="no"/>
 <layer number="2" name="Route2" color="1" fill="3" visible="no" active="no"/>
@@ -7980,24 +7980,6 @@ Based on the following sources:
 <wire x1="261.62" y1="38.1" x2="267.97" y2="38.1" width="0.1524" layer="91"/>
 </segment>
 </net>
-<net name="LED_IN3" class="0">
-<segment>
-<pinref part="IC9" gate="A" pin="QF"/>
-<label x="262.89" y="33.02" size="1.778" layer="95"/>
-<pinref part="R75" gate="R" pin="2"/>
-<wire x1="261.62" y1="33.02" x2="279.4" y2="33.02" width="0.1524" layer="91"/>
-<wire x1="279.4" y1="33.02" x2="279.4" y2="26.67" width="0.1524" layer="91"/>
-</segment>
-</net>
-<net name="LED_IN4" class="0">
-<segment>
-<pinref part="IC9" gate="A" pin="QE"/>
-<label x="262.89" y="35.56" size="1.778" layer="95"/>
-<pinref part="R74" gate="R" pin="2"/>
-<wire x1="261.62" y1="35.56" x2="284.48" y2="35.56" width="0.1524" layer="91"/>
-<wire x1="284.48" y1="35.56" x2="284.48" y2="26.67" width="0.1524" layer="91"/>
-</segment>
-</net>
 <net name="N$59" class="0">
 <segment>
 <pinref part="D6" gate="LED" pin="-"/>
@@ -8077,6 +8059,24 @@ Based on the following sources:
 </net>
 <net name="LED_IN1" class="0">
 <segment>
+<pinref part="IC9" gate="A" pin="QE"/>
+<label x="262.89" y="35.56" size="1.778" layer="95"/>
+<pinref part="R74" gate="R" pin="2"/>
+<wire x1="261.62" y1="35.56" x2="284.48" y2="35.56" width="0.1524" layer="91"/>
+<wire x1="284.48" y1="35.56" x2="284.48" y2="26.67" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="LED_IN2" class="0">
+<segment>
+<pinref part="IC9" gate="A" pin="QF"/>
+<label x="262.89" y="33.02" size="1.778" layer="95"/>
+<pinref part="R75" gate="R" pin="2"/>
+<wire x1="261.62" y1="33.02" x2="279.4" y2="33.02" width="0.1524" layer="91"/>
+<wire x1="279.4" y1="33.02" x2="279.4" y2="26.67" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="LED_IN3" class="0">
+<segment>
 <pinref part="IC9" gate="A" pin="QG"/>
 <label x="262.89" y="30.48" size="1.778" layer="95"/>
 <pinref part="R76" gate="R" pin="2"/>
@@ -8084,7 +8084,7 @@ Based on the following sources:
 <wire x1="274.32" y1="30.48" x2="274.32" y2="26.67" width="0.1524" layer="91"/>
 </segment>
 </net>
-<net name="LED_IN2" class="0">
+<net name="LED_IN4" class="0">
 <segment>
 <pinref part="IC9" gate="A" pin="QH"/>
 <wire x1="261.62" y1="27.94" x2="269.24" y2="27.94" width="0.1524" layer="91"/>
