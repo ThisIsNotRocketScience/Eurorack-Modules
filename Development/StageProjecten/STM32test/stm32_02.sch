@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="9.5.2">
+<eagle version="9.5.1">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
@@ -6705,6 +6705,7 @@ Based on the following sources:
 <part name="C38" library="OPL" deviceset="C*" device="-0603" value="100nF"/>
 <part name="R4" library="OPL" deviceset="R*" device="-0603" value="20r"/>
 <part name="R9" library="OPL" deviceset="R*" device="-0603" value="20r"/>
+<part name="D7" library="OPL" deviceset="D*" device="-SMA"/>
 </parts>
 <sheets>
 <sheet>
@@ -6799,6 +6800,10 @@ Based on the following sources:
 <instance part="GND63" gate="1" x="67.31" y="6.35" smashed="yes">
 <attribute name="VALUE" x="67.31" y="5.08" size="0.762" layer="96" align="top-center"/>
 </instance>
+<instance part="D7" gate="D" x="35.56" y="45.72" smashed="yes" rot="R270">
+<attribute name="NAME" x="36.576" y="45.212" size="0.762" layer="95" ratio="10" rot="R270" align="bottom-center"/>
+<attribute name="VALUE" x="34.544" y="45.212" size="0.762" layer="96" ratio="10" rot="R270" align="top-center"/>
+</instance>
 </instances>
 <busses>
 </busses>
@@ -6820,6 +6825,8 @@ Based on the following sources:
 <pinref part="C1" gate="C" pin="1"/>
 <wire x1="35.56" y1="36.83" x2="35.56" y2="38.1" width="0.1524" layer="91"/>
 <junction x="35.56" y="38.1"/>
+<pinref part="D7" gate="D" pin="-"/>
+<wire x1="35.56" y1="41.91" x2="35.56" y2="38.1" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <pinref part="U$39" gate="G$1" pin="12V"/>
@@ -6951,6 +6958,14 @@ Based on the following sources:
 <pinref part="U$42" gate="G$1" pin="-5V"/>
 <pinref part="U$38" gate="G$1" pin="VOLTAGE"/>
 <wire x1="58.42" y1="8.89" x2="58.42" y2="10.16" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="5V" class="0">
+<segment>
+<pinref part="D7" gate="D" pin="+"/>
+<wire x1="35.56" y1="49.53" x2="27.94" y2="49.53" width="0.1524" layer="91"/>
+<wire x1="27.94" y1="49.53" x2="27.94" y2="48.26" width="0.1524" layer="91"/>
+<label x="30.48" y="50.8" size="1.778" layer="95"/>
 </segment>
 </net>
 </nets>
@@ -7493,15 +7508,11 @@ Based on the following sources:
 <junction x="102.87" y="48.26"/>
 </segment>
 <segment>
-<pinref part="X2" gate="G$1" pin="VBUS"/>
-<wire x1="113.03" y1="21.59" x2="114.3" y2="21.59" width="0.1524" layer="91"/>
-<wire x1="114.3" y1="21.59" x2="114.3" y2="29.21" width="0.1524" layer="91"/>
 <pinref part="R72" gate="R" pin="2"/>
 <wire x1="118.11" y1="27.94" x2="118.11" y2="29.21" width="0.1524" layer="91"/>
 <wire x1="118.11" y1="29.21" x2="114.3" y2="29.21" width="0.1524" layer="91"/>
 <pinref part="U$48" gate="G$1" pin="3.3V"/>
 <wire x1="114.3" y1="29.21" x2="114.3" y2="30.48" width="0.1524" layer="91"/>
-<junction x="114.3" y="29.21"/>
 </segment>
 <segment>
 <pinref part="BOOT0" gate="A" pin="1"/>
@@ -8091,6 +8102,13 @@ Based on the following sources:
 <label x="262.89" y="27.94" size="1.778" layer="95"/>
 <pinref part="R77" gate="R" pin="2"/>
 <wire x1="269.24" y1="27.94" x2="269.24" y2="26.67" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="5V" class="0">
+<segment>
+<pinref part="X2" gate="G$1" pin="VBUS"/>
+<wire x1="113.03" y1="21.59" x2="114.3" y2="21.59" width="0.1524" layer="91"/>
+<label x="111.76" y="22.86" size="1.778" layer="95"/>
 </segment>
 </net>
 </nets>
