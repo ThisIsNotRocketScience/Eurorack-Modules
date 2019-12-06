@@ -6825,8 +6825,8 @@ Based on the following sources:
 <pinref part="C1" gate="C" pin="1"/>
 <wire x1="35.56" y1="36.83" x2="35.56" y2="38.1" width="0.1524" layer="91"/>
 <junction x="35.56" y="38.1"/>
-<pinref part="D7" gate="D" pin="-"/>
 <wire x1="35.56" y1="41.91" x2="35.56" y2="38.1" width="0.1524" layer="91"/>
+<pinref part="D7" gate="D" pin="-"/>
 </segment>
 <segment>
 <pinref part="U$39" gate="G$1" pin="12V"/>
@@ -6962,10 +6962,10 @@ Based on the following sources:
 </net>
 <net name="5V" class="0">
 <segment>
-<pinref part="D7" gate="D" pin="+"/>
 <wire x1="35.56" y1="49.53" x2="27.94" y2="49.53" width="0.1524" layer="91"/>
 <wire x1="27.94" y1="49.53" x2="27.94" y2="48.26" width="0.1524" layer="91"/>
 <label x="30.48" y="50.8" size="1.778" layer="95"/>
+<pinref part="D7" gate="D" pin="+"/>
 </segment>
 </net>
 </nets>

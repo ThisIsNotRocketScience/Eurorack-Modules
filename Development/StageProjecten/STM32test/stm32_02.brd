@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="9.5.2">
+<eagle version="9.5.1">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
@@ -2101,6 +2101,10 @@ design rules under a new name.</description>
 <attribute name="NAME" x="26.82875" y="46.0375" size="0.508" layer="25" ratio="11" align="center"/>
 <attribute name="VALUE" x="25.43175" y="44.72" size="0.508" layer="27" ratio="10"/>
 </element>
+<element name="D7" library="OPL" package="DO-214AC" value="" x="2.69875" y="-12.54125" smashed="yes">
+<attribute name="NAME" x="2.69875" y="-12.54125" size="0.762" layer="25" ratio="11" align="center"/>
+<attribute name="VALUE" x="0.79375" y="-12.54125" size="0.635" layer="27" ratio="10"/>
+</element>
 </elements>
 <signals>
 <signal name="12V" class="1">
@@ -2143,9 +2147,11 @@ design rules under a new name.</description>
 <wire x1="52.3875" y1="48.73625" x2="52.3875" y2="51.7525" width="0.254" layer="1"/>
 <wire x1="51.6255" y1="48.73625" x2="52.3875" y2="48.73625" width="0.254" layer="1"/>
 <wire x1="51.6255" y1="45.56125" x2="52.3875" y2="45.56125" width="0.254" layer="1"/>
+<contactref element="D7" pad="2"/>
 <wire x1="23.8125" y1="73.8505" x2="36.83" y2="73.8505" width="0" layer="19" extent="1-1"/>
 <wire x1="51.6255" y1="51.91125" x2="36.83" y2="72.4503" width="0" layer="19" extent="1-1"/>
 <wire x1="33.655" y1="37.08375" x2="51.6255" y2="42.38625" width="0" layer="19" extent="1-1"/>
+<wire x1="4.69875" y1="-12.54125" x2="31.59125" y2="1.42875" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="-12V" class="1">
 <contactref element="D2" pad="1"/>
@@ -2497,7 +2503,6 @@ design rules under a new name.</description>
 <contactref element="U$44" pad="P$1"/>
 <contactref element="C29" pad="+"/>
 <contactref element="C28" pad="2"/>
-<contactref element="X2" pad="1"/>
 <contactref element="R72" pad="2"/>
 <contactref element="BOOT0" pad="1"/>
 <contactref element="R73" pad="2"/>
@@ -2631,8 +2636,7 @@ design rules under a new name.</description>
 <wire x1="5.715" y1="68.92925" x2="8.89" y2="68.92925" width="0" layer="19" extent="1-1"/>
 <wire x1="5.04" y1="57.27" x2="5.715" y2="68.92925" width="0" layer="19" extent="1-1"/>
 <wire x1="20.28" y1="57.27" x2="5.04" y2="57.27" width="0" layer="19" extent="1-1"/>
-<wire x1="22.5625" y1="50.97125" x2="20.28" y2="57.27" width="0" layer="19" extent="1-1"/>
-<wire x1="23.0505" y1="46.0375" x2="22.5625" y2="50.97125" width="0" layer="19" extent="1-1"/>
+<wire x1="23.0505" y1="46.0375" x2="20.28" y2="57.27" width="0" layer="19" extent="1-1"/>
 <wire x1="30.98125" y1="43.4975" x2="23.0505" y2="46.0375" width="0" layer="19" extent="1-1"/>
 <wire x1="38.735" y1="51.562" x2="35.52825" y2="49.68875" width="0" layer="19" extent="1-1"/>
 <wire x1="35.2025" y1="57.27" x2="38.735" y2="51.562" width="0" layer="19" extent="1-1"/>
@@ -4228,6 +4232,11 @@ design rules under a new name.</description>
 <wire x1="11.43" y1="84.0587" x2="11.43" y2="87.4141" width="0.2032" layer="1"/>
 <wire x1="11.6608" y1="69.8579" x2="11.6608" y2="83.8279" width="0.2032" layer="1"/>
 <wire x1="11.6608" y1="83.8279" x2="11.43" y2="84.0587" width="0.2032" layer="1"/>
+</signal>
+<signal name="5V">
+<contactref element="X2" pad="1"/>
+<contactref element="D7" pad="1"/>
+<wire x1="0.69875" y1="-12.54125" x2="22.5625" y2="50.97125" width="0" layer="19" extent="1-1"/>
 </signal>
 </signals>
 <mfgpreviewcolors>
