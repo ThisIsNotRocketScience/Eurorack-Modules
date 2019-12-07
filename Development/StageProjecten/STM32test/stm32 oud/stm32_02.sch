@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="9.5.2">
+<eagle version="9.5.1">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.05" unitdist="inch" unit="inch" style="lines" multiple="1" display="yes" altdistance="0.01" altunitdist="inch" altunit="inch"/>
+<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="no" active="no"/>
 <layer number="2" name="Route2" color="1" fill="3" visible="no" active="no"/>
@@ -2437,11 +2437,6 @@ PCB width:
 <text x="-0.254" y="1.27" size="1.27" layer="94" align="center">&gt;DESC</text>
 <text x="-3.556" y="3.302" size="0.508" layer="94">voltage testpad</text>
 </symbol>
-<symbol name="5V">
-<pin name="5V" x="0" y="0" visible="off" length="short" direction="sup" rot="R90"/>
-<text x="0" y="4.064" size="0.762" layer="94" align="center">5V</text>
-<circle x="0" y="4.064" radius="1.397" width="0.254" layer="94"/>
-</symbol>
 </symbols>
 <devicesets>
 <deviceset name="12V">
@@ -2518,18 +2513,6 @@ PCB width:
 <technology name="">
 <attribute name="DESC" value="volt" constant="no"/>
 </technology>
-</technologies>
-</device>
-</devices>
-</deviceset>
-<deviceset name="5V">
-<gates>
-<gate name="G$1" symbol="5V" x="0" y="0"/>
-</gates>
-<devices>
-<device name="">
-<technologies>
-<technology name=""/>
 </technologies>
 </device>
 </devices>
@@ -6624,6 +6607,10 @@ Based on the following sources:
 <part name="U$41" library="FenixBase" deviceset="3.3V" device=""/>
 <part name="U$42" library="FenixBase" deviceset="-5V" device=""/>
 <part name="U$4" library="FenixBase" deviceset="-12V" device=""/>
+<part name="U$43" library="FenixBase" deviceset="VOLTAGETESTPAD" device="">
+<attribute name="DESC" value="GND"/>
+</part>
+<part name="GND63" library="FenixBase" deviceset="GND" device=""/>
 <part name="U$44" library="oled" deviceset="4PIN_OLED" device=""/>
 <part name="R70" library="OPL" deviceset="R*" device="-0603" value="2k"/>
 <part name="R71" library="OPL" deviceset="R*" device="-0603" value="2k"/>
@@ -6641,6 +6628,7 @@ Based on the following sources:
 <part name="S4" library="zephod-components" deviceset="SWITCH_W_LED_PB6149L-X-102" device="BLUE"/>
 <part name="X2" library="ld-components" deviceset="USB_B_FEMALE_VERT" device=""/>
 <part name="R72" library="OPL" deviceset="R*" device="-0603" value="1.5k"/>
+<part name="U$48" library="FenixBase" deviceset="3.3V" device=""/>
 <part name="GND66" library="FenixBase" deviceset="GND" device=""/>
 <part name="SJ1" library="jumper" library_urn="urn:adsk.eagle:library:252" deviceset="SJ" device="" package3d_urn="urn:adsk.eagle:package:15471/1"/>
 <part name="BOOT0" library="pinhead" library_urn="urn:adsk.eagle:library:325" deviceset="PINHD-1X3" device="" package3d_urn="urn:adsk.eagle:package:22458/2"/>
@@ -6718,9 +6706,6 @@ Based on the following sources:
 <part name="R4" library="OPL" deviceset="R*" device="-0603" value="20r"/>
 <part name="R9" library="OPL" deviceset="R*" device="-0603" value="20r"/>
 <part name="D7" library="OPL" deviceset="D*" device="-SMA"/>
-<part name="U$55" library="FenixBase" deviceset="5V" device=""/>
-<part name="U$48" library="FenixBase" deviceset="5V" device=""/>
-<part name="U$43" library="FenixBase" deviceset="3.3V" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -6809,11 +6794,16 @@ Based on the following sources:
 <instance part="U$41" gate="G$1" x="49.53" y="8.89" smashed="yes" rot="R180"/>
 <instance part="U$42" gate="G$1" x="58.42" y="8.89" smashed="yes"/>
 <instance part="U$4" gate="G$1" x="73.66" y="39.37" smashed="yes" rot="R180"/>
-<instance part="D7" gate="D" x="35.56" y="43.18" smashed="yes" rot="R270">
-<attribute name="NAME" x="36.576" y="42.672" size="0.762" layer="95" ratio="10" rot="R270" align="bottom-center"/>
-<attribute name="VALUE" x="34.544" y="42.672" size="0.762" layer="96" ratio="10" rot="R270" align="top-center"/>
+<instance part="U$43" gate="G$1" x="67.31" y="15.24" smashed="yes">
+<attribute name="DESC" x="67.056" y="16.51" size="1.27" layer="94" align="center"/>
 </instance>
-<instance part="U$55" gate="G$1" x="35.56" y="48.26" smashed="yes"/>
+<instance part="GND63" gate="1" x="67.31" y="6.35" smashed="yes">
+<attribute name="VALUE" x="67.31" y="5.08" size="0.762" layer="96" align="top-center"/>
+</instance>
+<instance part="D7" gate="D" x="35.56" y="45.72" smashed="yes" rot="R270">
+<attribute name="NAME" x="36.576" y="45.212" size="0.762" layer="95" ratio="10" rot="R270" align="bottom-center"/>
+<attribute name="VALUE" x="34.544" y="45.212" size="0.762" layer="96" ratio="10" rot="R270" align="top-center"/>
+</instance>
 </instances>
 <busses>
 </busses>
@@ -6835,8 +6825,8 @@ Based on the following sources:
 <pinref part="C1" gate="C" pin="1"/>
 <wire x1="35.56" y1="36.83" x2="35.56" y2="38.1" width="0.1524" layer="91"/>
 <junction x="35.56" y="38.1"/>
+<wire x1="35.56" y1="41.91" x2="35.56" y2="38.1" width="0.1524" layer="91"/>
 <pinref part="D7" gate="D" pin="-"/>
-<wire x1="35.56" y1="39.37" x2="35.56" y2="38.1" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <pinref part="U$39" gate="G$1" pin="12V"/>
@@ -6923,6 +6913,11 @@ Based on the following sources:
 <wire x1="90.17" y1="6.35" x2="90.17" y2="5.08" width="0.1524" layer="91"/>
 <pinref part="GND3" gate="1" pin="GND"/>
 </segment>
+<segment>
+<pinref part="GND63" gate="1" pin="GND"/>
+<pinref part="U$43" gate="G$1" pin="VOLTAGE"/>
+<wire x1="67.31" y1="8.89" x2="67.31" y2="10.16" width="0.1524" layer="91"/>
+</segment>
 </net>
 <net name="3.3V" class="1">
 <segment>
@@ -6967,9 +6962,10 @@ Based on the following sources:
 </net>
 <net name="5V" class="0">
 <segment>
+<wire x1="35.56" y1="49.53" x2="27.94" y2="49.53" width="0.1524" layer="91"/>
+<wire x1="27.94" y1="49.53" x2="27.94" y2="48.26" width="0.1524" layer="91"/>
+<label x="30.48" y="50.8" size="1.778" layer="95"/>
 <pinref part="D7" gate="D" pin="+"/>
-<pinref part="U$55" gate="G$1" pin="5V"/>
-<wire x1="35.56" y1="46.99" x2="35.56" y2="48.26" width="0.1524" layer="91"/>
 </segment>
 </net>
 </nets>
@@ -7088,6 +7084,7 @@ Based on the following sources:
 <attribute name="NAME" x="117.856" y="22.606" size="0.762" layer="95" font="vector" ratio="10" rot="R90" align="bottom-right"/>
 <attribute name="VALUE" x="119.634" y="24.13" size="1.778" layer="96" ratio="10" rot="R90" align="center"/>
 </instance>
+<instance part="U$48" gate="G$1" x="114.3" y="30.48" smashed="yes"/>
 <instance part="GND66" gate="1" x="114.3" y="1.27" smashed="yes">
 <attribute name="VALUE" x="114.3" y="0" size="0.762" layer="96" align="top-center"/>
 </instance>
@@ -7250,8 +7247,6 @@ Based on the following sources:
 <attribute name="NAME" x="128.016" y="19.304" size="0.762" layer="95" font="vector" ratio="10" align="bottom-right"/>
 <attribute name="VALUE" x="129.54" y="17.526" size="1.778" layer="96" ratio="10" align="center"/>
 </instance>
-<instance part="U$48" gate="G$1" x="114.3" y="29.21" smashed="yes"/>
-<instance part="U$43" gate="G$1" x="118.11" y="29.21" smashed="yes"/>
 </instances>
 <busses>
 </busses>
@@ -7513,6 +7508,13 @@ Based on the following sources:
 <junction x="102.87" y="48.26"/>
 </segment>
 <segment>
+<pinref part="R72" gate="R" pin="2"/>
+<wire x1="118.11" y1="27.94" x2="118.11" y2="29.21" width="0.1524" layer="91"/>
+<wire x1="118.11" y1="29.21" x2="114.3" y2="29.21" width="0.1524" layer="91"/>
+<pinref part="U$48" gate="G$1" pin="3.3V"/>
+<wire x1="114.3" y1="29.21" x2="114.3" y2="30.48" width="0.1524" layer="91"/>
+</segment>
+<segment>
 <pinref part="BOOT0" gate="A" pin="1"/>
 <pinref part="U$49" gate="G$1" pin="3.3V"/>
 <wire x1="58.42" y1="13.97" x2="57.15" y2="13.97" width="0.1524" layer="91"/>
@@ -7566,11 +7568,6 @@ Based on the following sources:
 <wire x1="114.3" y1="73.66" x2="104.14" y2="73.66" width="0.1524" layer="91"/>
 <pinref part="U$54" gate="G$1" pin="3.3V"/>
 <wire x1="104.14" y1="74.93" x2="104.14" y2="73.66" width="0.1524" layer="91"/>
-</segment>
-<segment>
-<pinref part="R72" gate="R" pin="2"/>
-<pinref part="U$43" gate="G$1" pin="3.3V"/>
-<wire x1="118.11" y1="27.94" x2="118.11" y2="29.21" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$63" class="0">
@@ -8111,8 +8108,7 @@ Based on the following sources:
 <segment>
 <pinref part="X2" gate="G$1" pin="VBUS"/>
 <wire x1="113.03" y1="21.59" x2="114.3" y2="21.59" width="0.1524" layer="91"/>
-<wire x1="114.3" y1="21.59" x2="114.3" y2="29.21" width="0.1524" layer="91"/>
-<pinref part="U$48" gate="G$1" pin="5V"/>
+<label x="111.76" y="22.86" size="1.778" layer="95"/>
 </segment>
 </net>
 </nets>
