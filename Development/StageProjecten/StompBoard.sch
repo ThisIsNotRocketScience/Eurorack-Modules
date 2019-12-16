@@ -1,12 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="7.7.0">
+<eagle version="9.5.2">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
+<setting keepoldvectorfont="yes"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.05" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
+<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="no" active="no"/>
 <layer number="2" name="Route2" color="1" fill="3" visible="no" active="no"/>
@@ -468,104 +469,6 @@
 </deviceset>
 </devicesets>
 </library>
-<library name="switch">
-<description>&lt;b&gt;Switches&lt;/b&gt;&lt;p&gt;
-Marquardt, Siemens, C&amp;K, ITT, and others&lt;p&gt;
-&lt;author&gt;Created by librarian@cadsoft.de&lt;/author&gt;</description>
-<packages>
-<package name="3PDT">
-<description>&lt;b&gt;3PDT 9 pin footswitch&lt;/b&gt; SF17020F-0302-21R-L&lt;p&gt;
-Source: 3PDT.jpg</description>
-<wire x1="-9.8" y1="8.8" x2="9.8" y2="8.8" width="0.1524" layer="21"/>
-<wire x1="9.8" y1="-8.8" x2="-9.8" y2="-8.8" width="0.1524" layer="21"/>
-<wire x1="9.8" y1="8.8" x2="9.8" y2="-8.8" width="0.1524" layer="21"/>
-<wire x1="-9.8" y1="-8.8" x2="-9.8" y2="8.8" width="0.1524" layer="21"/>
-<pad name="1" x="-5.3" y="4.8" drill="2.3" diameter="3.1"/>
-<text x="-8.89" y="9.525" size="1.778" layer="25" ratio="10">&gt;NAME</text>
-<text x="-9.525" y="-11.43" size="1.778" layer="27" ratio="10">&gt;VALUE</text>
-<pad name="2" x="0" y="4.8" drill="2.3" diameter="3.1"/>
-<pad name="3" x="5.3" y="4.8" drill="2.3" diameter="3.1"/>
-<pad name="4" x="-5.3" y="0" drill="2.3" diameter="3.1"/>
-<pad name="5" x="0" y="0" drill="2.3" diameter="3.1"/>
-<pad name="6" x="5.3" y="0" drill="2.3" diameter="3.1"/>
-<pad name="7" x="-5.3" y="-4.8" drill="2.3" diameter="3.1"/>
-<pad name="8" x="0" y="-4.8" drill="2.3" diameter="3.1"/>
-<pad name="9" x="5.3" y="-4.8" drill="2.3" diameter="3.1"/>
-<circle x="0" y="0" radius="8" width="0.2032" layer="51"/>
-<circle x="0" y="0" radius="7" width="0.2032" layer="51"/>
-<circle x="0" y="0" radius="5" width="0.2032" layer="51"/>
-<wire x1="-1" y1="-5.925" x2="-1" y2="-5" width="0.2032" layer="51"/>
-<wire x1="-1" y1="-5" x2="1" y2="-5" width="0.2032" layer="51"/>
-<wire x1="1" y1="-5" x2="1" y2="-5.9" width="0.2032" layer="51"/>
-<wire x1="1" y1="-5.925" x2="-1" y2="-5.925" width="0.2032" layer="51" curve="340.840541"/>
-</package>
-</packages>
-<symbols>
-<symbol name="U_3L">
-<wire x1="0" y1="-3.175" x2="0" y2="-1.905" width="0.254" layer="94"/>
-<wire x1="0" y1="-1.905" x2="-1.905" y2="3.175" width="0.254" layer="94"/>
-<wire x1="1.27" y1="2.54" x2="2.54" y2="2.54" width="0.254" layer="94"/>
-<wire x1="2.54" y1="2.54" x2="2.54" y2="3.175" width="0.254" layer="94"/>
-<wire x1="-2.54" y1="2.54" x2="-1.27" y2="2.54" width="0.254" layer="94"/>
-<wire x1="-2.54" y1="2.54" x2="-2.54" y2="3.175" width="0.254" layer="94"/>
-<wire x1="10.16" y1="-3.175" x2="10.16" y2="-1.905" width="0.254" layer="94"/>
-<wire x1="10.16" y1="-1.905" x2="8.255" y2="3.175" width="0.254" layer="94"/>
-<wire x1="11.43" y1="2.54" x2="12.7" y2="2.54" width="0.254" layer="94"/>
-<wire x1="12.7" y1="2.54" x2="12.7" y2="3.175" width="0.254" layer="94"/>
-<wire x1="7.62" y1="2.54" x2="8.89" y2="2.54" width="0.254" layer="94"/>
-<wire x1="7.62" y1="2.54" x2="7.62" y2="3.175" width="0.254" layer="94"/>
-<wire x1="9.398" y1="0" x2="-5.08" y2="0" width="0.254" layer="94" style="shortdash"/>
-<wire x1="-5.08" y1="1.651" x2="-5.08" y2="-1.778" width="0.254" layer="94"/>
-<text x="-7.62" y="1.27" size="1.778" layer="95" rot="R180">&gt;NAME</text>
-<text x="-7.62" y="-2.54" size="1.778" layer="96" rot="R180">&gt;VALUE</text>
-<pin name="P1" x="0" y="-5.08" visible="pad" length="short" direction="pas" rot="R90"/>
-<pin name="S1" x="2.54" y="5.08" visible="pad" length="short" direction="pas" rot="R270"/>
-<pin name="O1" x="-2.54" y="5.08" visible="pad" length="short" direction="pas" rot="R270"/>
-<pin name="P2" x="10.16" y="-5.08" visible="pad" length="short" direction="pas" rot="R90"/>
-<pin name="S2" x="12.7" y="5.08" visible="pad" length="short" direction="pas" rot="R270"/>
-<pin name="O2" x="7.62" y="5.08" visible="pad" length="short" direction="pas" rot="R270"/>
-<wire x1="20.32" y1="-3.175" x2="20.32" y2="-1.905" width="0.254" layer="94"/>
-<wire x1="20.32" y1="-1.905" x2="18.415" y2="3.175" width="0.254" layer="94"/>
-<wire x1="21.59" y1="2.54" x2="22.86" y2="2.54" width="0.254" layer="94"/>
-<wire x1="22.86" y1="2.54" x2="22.86" y2="3.175" width="0.254" layer="94"/>
-<wire x1="17.78" y1="2.54" x2="19.05" y2="2.54" width="0.254" layer="94"/>
-<wire x1="17.78" y1="2.54" x2="17.78" y2="3.175" width="0.254" layer="94"/>
-<wire x1="19.558" y1="0" x2="10.16" y2="0" width="0.254" layer="94" style="shortdash"/>
-<pin name="P3" x="20.32" y="-5.08" visible="pad" length="short" direction="pas" rot="R90"/>
-<pin name="S3" x="22.86" y="5.08" visible="pad" length="short" direction="pas" rot="R270"/>
-<pin name="O3" x="17.78" y="5.08" visible="pad" length="short" direction="pas" rot="R270"/>
-<wire x1="-5.08" y1="1.651" x2="-4.191" y2="1.651" width="0.254" layer="94"/>
-<wire x1="-5.842" y1="-1.778" x2="-5.08" y2="-1.778" width="0.254" layer="94"/>
-</symbol>
-</symbols>
-<devicesets>
-<deviceset name="3PDT" prefix="S">
-<description>&lt;b&gt;3PDT 9 pin footswitch&lt;/b&gt; SF17020F-0302-21R-L&lt;p&gt;
-Source: 3PDT.jpg</description>
-<gates>
-<gate name="G$1" symbol="U_3L" x="0" y="0"/>
-</gates>
-<devices>
-<device name="" package="3PDT">
-<connects>
-<connect gate="G$1" pin="O1" pad="1"/>
-<connect gate="G$1" pin="O2" pad="4"/>
-<connect gate="G$1" pin="O3" pad="7"/>
-<connect gate="G$1" pin="P1" pad="2"/>
-<connect gate="G$1" pin="P2" pad="5"/>
-<connect gate="G$1" pin="P3" pad="8"/>
-<connect gate="G$1" pin="S1" pad="3"/>
-<connect gate="G$1" pin="S2" pad="6"/>
-<connect gate="G$1" pin="S3" pad="9"/>
-</connects>
-<technologies>
-<technology name=""/>
-</technologies>
-</device>
-</devices>
-</deviceset>
-</devicesets>
-</library>
 <library name="OPL">
 <packages>
 <package name="R0603">
@@ -695,6 +598,118 @@ Source: 3PDT.jpg</description>
 </deviceset>
 </devicesets>
 </library>
+<library name="switch">
+<description>&lt;b&gt;Switches&lt;/b&gt;&lt;p&gt;
+Marquardt, Siemens, C&amp;K, ITT, and others&lt;p&gt;
+&lt;author&gt;Created by librarian@cadsoft.de&lt;/author&gt;</description>
+<packages>
+<package name="3PDT" urn="urn:adsk.eagle:footprint:27656/1" locally_modified="yes">
+<description>&lt;b&gt;3PDT 9 pin footswitch&lt;/b&gt; SF17020F-0302-21R-L&lt;p&gt;
+Source: 3PDT.jpg</description>
+<wire x1="-8.8" y1="9.8" x2="8.8" y2="9.8" width="0.1524" layer="21"/>
+<wire x1="8.8" y1="-9.8" x2="-8.8" y2="-9.8" width="0.1524" layer="21"/>
+<wire x1="8.8" y1="9.8" x2="8.8" y2="-9.8" width="0.1524" layer="21"/>
+<wire x1="-8.8" y1="-9.8" x2="-8.8" y2="9.8" width="0.1524" layer="21"/>
+<wire x1="-1" y1="-5.925" x2="-1" y2="-5" width="0.2032" layer="51"/>
+<wire x1="-1" y1="-5" x2="1" y2="-5" width="0.2032" layer="51"/>
+<wire x1="1" y1="-5" x2="1" y2="-5.9" width="0.2032" layer="51"/>
+<wire x1="1" y1="-5.925" x2="-1" y2="-5.925" width="0.2032" layer="51" curve="340.840541"/>
+<pad name="1" x="-4.8" y="5.3" drill="2.3" diameter="3.1"/>
+<pad name="2" x="0" y="5.3" drill="2.3" diameter="3.1"/>
+<pad name="3" x="4.8" y="5.3" drill="2.3" diameter="3.1"/>
+<pad name="4" x="-4.8" y="0" drill="2.3" diameter="3.1"/>
+<pad name="5" x="0" y="0" drill="2.3" diameter="3.1"/>
+<pad name="6" x="4.8" y="0" drill="2.3" diameter="3.1"/>
+<pad name="7" x="-4.8" y="-5.3" drill="2.3" diameter="3.1"/>
+<pad name="8" x="0" y="-5.3" drill="2.3" diameter="3.1"/>
+<pad name="9" x="4.8" y="-5.3" drill="2.3" diameter="3.1"/>
+<text x="-8.89" y="10.525" size="1.778" layer="25" ratio="10">&gt;NAME</text>
+<text x="-9.525" y="-12.43" size="1.778" layer="27" ratio="10">&gt;VALUE</text>
+<circle x="0" y="0" radius="8" width="0.2032" layer="51"/>
+<circle x="0" y="0" radius="7" width="0.2032" layer="51"/>
+<circle x="0" y="0" radius="5" width="0.2032" layer="51"/>
+</package>
+</packages>
+<packages3d>
+<package3d name="3PDT" urn="urn:adsk.eagle:package:27755/1" type="box">
+<description>3PDT 9 pin footswitch SF17020F-0302-21R-L
+Source: 3PDT.jpg</description>
+<packageinstances>
+<packageinstance name="3PDT"/>
+</packageinstances>
+</package3d>
+</packages3d>
+<symbols>
+<symbol name="U_3L">
+<wire x1="0" y1="-3.175" x2="0" y2="-1.905" width="0.254" layer="94"/>
+<wire x1="0" y1="-1.905" x2="-1.905" y2="3.175" width="0.254" layer="94"/>
+<wire x1="1.27" y1="2.54" x2="2.54" y2="2.54" width="0.254" layer="94"/>
+<wire x1="2.54" y1="2.54" x2="2.54" y2="3.175" width="0.254" layer="94"/>
+<wire x1="-2.54" y1="2.54" x2="-1.27" y2="2.54" width="0.254" layer="94"/>
+<wire x1="-2.54" y1="2.54" x2="-2.54" y2="3.175" width="0.254" layer="94"/>
+<wire x1="10.16" y1="-3.175" x2="10.16" y2="-1.905" width="0.254" layer="94"/>
+<wire x1="10.16" y1="-1.905" x2="8.255" y2="3.175" width="0.254" layer="94"/>
+<wire x1="11.43" y1="2.54" x2="12.7" y2="2.54" width="0.254" layer="94"/>
+<wire x1="12.7" y1="2.54" x2="12.7" y2="3.175" width="0.254" layer="94"/>
+<wire x1="7.62" y1="2.54" x2="8.89" y2="2.54" width="0.254" layer="94"/>
+<wire x1="7.62" y1="2.54" x2="7.62" y2="3.175" width="0.254" layer="94"/>
+<wire x1="9.398" y1="0" x2="-5.08" y2="0" width="0.254" layer="94" style="shortdash"/>
+<wire x1="-5.08" y1="1.651" x2="-5.08" y2="-1.778" width="0.254" layer="94"/>
+<wire x1="20.32" y1="-3.175" x2="20.32" y2="-1.905" width="0.254" layer="94"/>
+<wire x1="20.32" y1="-1.905" x2="18.415" y2="3.175" width="0.254" layer="94"/>
+<wire x1="21.59" y1="2.54" x2="22.86" y2="2.54" width="0.254" layer="94"/>
+<wire x1="22.86" y1="2.54" x2="22.86" y2="3.175" width="0.254" layer="94"/>
+<wire x1="17.78" y1="2.54" x2="19.05" y2="2.54" width="0.254" layer="94"/>
+<wire x1="17.78" y1="2.54" x2="17.78" y2="3.175" width="0.254" layer="94"/>
+<wire x1="19.558" y1="0" x2="10.16" y2="0" width="0.254" layer="94" style="shortdash"/>
+<wire x1="-5.08" y1="1.651" x2="-4.191" y2="1.651" width="0.254" layer="94"/>
+<wire x1="-5.842" y1="-1.778" x2="-5.08" y2="-1.778" width="0.254" layer="94"/>
+<text x="-7.62" y="1.27" size="1.778" layer="95" rot="R180">&gt;NAME</text>
+<text x="-7.62" y="-2.54" size="1.778" layer="96" rot="R180">&gt;VALUE</text>
+<pin name="P1" x="0" y="-5.08" visible="pad" length="short" direction="pas" rot="R90"/>
+<pin name="S1" x="2.54" y="5.08" visible="pad" length="short" direction="pas" rot="R270"/>
+<pin name="O1" x="-2.54" y="5.08" visible="pad" length="short" direction="pas" rot="R270"/>
+<pin name="P2" x="10.16" y="-5.08" visible="pad" length="short" direction="pas" rot="R90"/>
+<pin name="S2" x="12.7" y="5.08" visible="pad" length="short" direction="pas" rot="R270"/>
+<pin name="O2" x="7.62" y="5.08" visible="pad" length="short" direction="pas" rot="R270"/>
+<pin name="P3" x="20.32" y="-5.08" visible="pad" length="short" direction="pas" rot="R90"/>
+<pin name="S3" x="22.86" y="5.08" visible="pad" length="short" direction="pas" rot="R270"/>
+<pin name="O3" x="17.78" y="5.08" visible="pad" length="short" direction="pas" rot="R270"/>
+</symbol>
+</symbols>
+<devicesets>
+<deviceset name="3PDT" prefix="S">
+<description>&lt;b&gt;3PDT 9 pin footswitch&lt;/b&gt; SF17020F-0302-21R-L&lt;p&gt;
+Source: 3PDT.jpg</description>
+<gates>
+<gate name="G$1" symbol="U_3L" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="3PDT">
+<connects>
+<connect gate="G$1" pin="O1" pad="1"/>
+<connect gate="G$1" pin="O2" pad="4"/>
+<connect gate="G$1" pin="O3" pad="7"/>
+<connect gate="G$1" pin="P1" pad="2"/>
+<connect gate="G$1" pin="P2" pad="5"/>
+<connect gate="G$1" pin="P3" pad="8"/>
+<connect gate="G$1" pin="S1" pad="3"/>
+<connect gate="G$1" pin="S2" pad="6"/>
+<connect gate="G$1" pin="S3" pad="9"/>
+</connects>
+<package3dinstances>
+<package3dinstance package3d_urn="urn:adsk.eagle:package:27755/1"/>
+</package3dinstances>
+<technologies>
+<technology name="">
+<attribute name="POPULARITY" value="2" constant="no"/>
+</technology>
+</technologies>
+</device>
+</devices>
+</deviceset>
+</devicesets>
+</library>
 </libraries>
 <attributes>
 </attributes>
@@ -707,27 +722,27 @@ Source: 3PDT.jpg</description>
 </class>
 </classes>
 <parts>
-<part name="S1" library="switch" deviceset="3PDT" device=""/>
+<part name="S1" library="switch" deviceset="3PDT" device="" package3d_urn="urn:adsk.eagle:package:27755/1"/>
 <part name="D1" library="EurorackModularParts" deviceset="LED*" device="3MM"/>
 <part name="R1" library="OPL" deviceset="R*" device="-0603" value="2k"/>
 <part name="GND1" library="FenixBase" deviceset="GND" device=""/>
 <part name="U$1" library="FenixBase" deviceset="12V" device=""/>
-<part name="S2" library="switch" deviceset="3PDT" device=""/>
+<part name="S2" library="switch" deviceset="3PDT" device="" package3d_urn="urn:adsk.eagle:package:27755/1"/>
 <part name="D2" library="EurorackModularParts" deviceset="LED*" device="3MM"/>
 <part name="R2" library="OPL" deviceset="R*" device="-0603" value="2k"/>
 <part name="GND2" library="FenixBase" deviceset="GND" device=""/>
 <part name="U$2" library="FenixBase" deviceset="12V" device=""/>
-<part name="S3" library="switch" deviceset="3PDT" device=""/>
+<part name="S3" library="switch" deviceset="3PDT" device="" package3d_urn="urn:adsk.eagle:package:27755/1"/>
 <part name="D3" library="EurorackModularParts" deviceset="LED*" device="3MM"/>
 <part name="R3" library="OPL" deviceset="R*" device="-0603" value="2k"/>
 <part name="GND3" library="FenixBase" deviceset="GND" device=""/>
 <part name="U$3" library="FenixBase" deviceset="12V" device=""/>
-<part name="S4" library="switch" deviceset="3PDT" device=""/>
+<part name="S4" library="switch" deviceset="3PDT" device="" package3d_urn="urn:adsk.eagle:package:27755/1"/>
 <part name="D4" library="EurorackModularParts" deviceset="LED*" device="3MM"/>
 <part name="R4" library="OPL" deviceset="R*" device="-0603" value="2k"/>
 <part name="GND4" library="FenixBase" deviceset="GND" device=""/>
 <part name="U$4" library="FenixBase" deviceset="12V" device=""/>
-<part name="S5" library="switch" deviceset="3PDT" device=""/>
+<part name="S5" library="switch" deviceset="3PDT" device="" package3d_urn="urn:adsk.eagle:package:27755/1"/>
 <part name="D5" library="EurorackModularParts" deviceset="LED*" device="3MM"/>
 <part name="R5" library="OPL" deviceset="R*" device="-0603" value="2k"/>
 <part name="GND5" library="FenixBase" deviceset="GND" device=""/>
@@ -741,39 +756,106 @@ Source: 3PDT.jpg</description>
 <plain>
 </plain>
 <instances>
-<instance part="S1" gate="G$1" x="2.54" y="-33.02"/>
-<instance part="D1" gate="LED" x="20.32" y="-17.78" rot="R270"/>
-<instance part="R1" gate="R" x="20.32" y="-10.16" rot="R90"/>
-<instance part="GND1" gate="1" x="22.86" y="-40.64"/>
-<instance part="U$1" gate="G$1" x="20.32" y="0"/>
-<instance part="S2" gate="G$1" x="54.61" y="-33.02"/>
-<instance part="D2" gate="LED" x="72.39" y="-17.78" rot="R270"/>
-<instance part="R2" gate="R" x="72.39" y="-10.16" rot="R90"/>
-<instance part="GND2" gate="1" x="74.93" y="-40.64"/>
-<instance part="U$2" gate="G$1" x="72.39" y="0"/>
-<instance part="S3" gate="G$1" x="99.06" y="-31.75"/>
-<instance part="D3" gate="LED" x="116.84" y="-16.51" rot="R270"/>
-<instance part="R3" gate="R" x="116.84" y="-8.89" rot="R90"/>
-<instance part="GND3" gate="1" x="119.38" y="-39.37"/>
-<instance part="U$3" gate="G$1" x="116.84" y="1.27"/>
-<instance part="S4" gate="G$1" x="151.13" y="-29.21"/>
-<instance part="D4" gate="LED" x="168.91" y="-13.97" rot="R270"/>
-<instance part="R4" gate="R" x="168.91" y="-6.35" rot="R90"/>
-<instance part="GND4" gate="1" x="171.45" y="-36.83"/>
-<instance part="U$4" gate="G$1" x="168.91" y="2.54"/>
-<instance part="S5" gate="G$1" x="199.39" y="-29.21"/>
-<instance part="D5" gate="LED" x="217.17" y="-13.97" rot="R270"/>
-<instance part="R5" gate="R" x="217.17" y="-6.35" rot="R90"/>
-<instance part="GND5" gate="1" x="219.71" y="-36.83"/>
-<instance part="U$5" gate="G$1" x="217.17" y="3.81"/>
-<instance part="U$6" gate="SWITCH1" x="0" y="53.34"/>
-<instance part="U$6" gate="G$6" x="-35.56" y="-24.13"/>
-<instance part="U$7" gate="G$1" x="-35.56" y="-6.35"/>
-<instance part="GND6" gate="1" x="-35.56" y="-34.29"/>
-<instance part="U$6" gate="SWITCH2" x="58.42" y="54.61"/>
-<instance part="U$6" gate="SWITCH3" x="116.84" y="54.61"/>
-<instance part="U$6" gate="SWITCH4" x="6.35" y="27.94"/>
-<instance part="U$6" gate="SWITCH5" x="66.04" y="27.94"/>
+<instance part="S1" gate="G$1" x="2.54" y="-33.02" smashed="yes">
+<attribute name="NAME" x="-5.08" y="-31.75" size="1.778" layer="95" rot="R180"/>
+<attribute name="VALUE" x="-5.08" y="-35.56" size="1.778" layer="96" rot="R180"/>
+</instance>
+<instance part="D1" gate="LED" x="20.32" y="-17.78" smashed="yes" rot="R270">
+<attribute name="NAME" x="23.114" y="-15.5702" size="0.762" layer="95" ratio="10" rot="R90" align="bottom-right"/>
+<attribute name="VALUE" x="24.0792" y="-15.5194" size="0.762" layer="96" ratio="10" rot="R270" align="top-left"/>
+</instance>
+<instance part="R1" gate="R" x="20.32" y="-10.16" smashed="yes" rot="R90">
+<attribute name="NAME" x="20.066" y="-11.684" size="0.762" layer="95" font="vector" ratio="10" rot="R90" align="bottom-right"/>
+<attribute name="VALUE" x="21.844" y="-10.16" size="1.778" layer="96" ratio="10" rot="R90" align="center"/>
+</instance>
+<instance part="GND1" gate="1" x="22.86" y="-40.64" smashed="yes">
+<attribute name="VALUE" x="22.86" y="-41.91" size="0.762" layer="96" align="top-center"/>
+</instance>
+<instance part="U$1" gate="G$1" x="20.32" y="0" smashed="yes"/>
+<instance part="S2" gate="G$1" x="54.61" y="-33.02" smashed="yes">
+<attribute name="NAME" x="46.99" y="-31.75" size="1.778" layer="95" rot="R180"/>
+<attribute name="VALUE" x="46.99" y="-35.56" size="1.778" layer="96" rot="R180"/>
+</instance>
+<instance part="D2" gate="LED" x="72.39" y="-17.78" smashed="yes" rot="R270">
+<attribute name="NAME" x="75.184" y="-15.5702" size="0.762" layer="95" ratio="10" rot="R90" align="bottom-right"/>
+<attribute name="VALUE" x="76.1492" y="-15.5194" size="0.762" layer="96" ratio="10" rot="R270" align="top-left"/>
+</instance>
+<instance part="R2" gate="R" x="72.39" y="-10.16" smashed="yes" rot="R90">
+<attribute name="NAME" x="72.136" y="-11.684" size="0.762" layer="95" font="vector" ratio="10" rot="R90" align="bottom-right"/>
+<attribute name="VALUE" x="73.914" y="-10.16" size="1.778" layer="96" ratio="10" rot="R90" align="center"/>
+</instance>
+<instance part="GND2" gate="1" x="74.93" y="-40.64" smashed="yes">
+<attribute name="VALUE" x="74.93" y="-41.91" size="0.762" layer="96" align="top-center"/>
+</instance>
+<instance part="U$2" gate="G$1" x="72.39" y="0" smashed="yes"/>
+<instance part="S3" gate="G$1" x="99.06" y="-31.75" smashed="yes">
+<attribute name="NAME" x="91.44" y="-30.48" size="1.778" layer="95" rot="R180"/>
+<attribute name="VALUE" x="91.44" y="-34.29" size="1.778" layer="96" rot="R180"/>
+</instance>
+<instance part="D3" gate="LED" x="116.84" y="-16.51" smashed="yes" rot="R270">
+<attribute name="NAME" x="119.634" y="-14.3002" size="0.762" layer="95" ratio="10" rot="R90" align="bottom-right"/>
+<attribute name="VALUE" x="120.5992" y="-14.2494" size="0.762" layer="96" ratio="10" rot="R270" align="top-left"/>
+</instance>
+<instance part="R3" gate="R" x="116.84" y="-8.89" smashed="yes" rot="R90">
+<attribute name="NAME" x="116.586" y="-10.414" size="0.762" layer="95" font="vector" ratio="10" rot="R90" align="bottom-right"/>
+<attribute name="VALUE" x="118.364" y="-8.89" size="1.778" layer="96" ratio="10" rot="R90" align="center"/>
+</instance>
+<instance part="GND3" gate="1" x="119.38" y="-39.37" smashed="yes">
+<attribute name="VALUE" x="119.38" y="-40.64" size="0.762" layer="96" align="top-center"/>
+</instance>
+<instance part="U$3" gate="G$1" x="116.84" y="1.27" smashed="yes"/>
+<instance part="S4" gate="G$1" x="151.13" y="-29.21" smashed="yes">
+<attribute name="NAME" x="143.51" y="-27.94" size="1.778" layer="95" rot="R180"/>
+<attribute name="VALUE" x="143.51" y="-31.75" size="1.778" layer="96" rot="R180"/>
+</instance>
+<instance part="D4" gate="LED" x="168.91" y="-13.97" smashed="yes" rot="R270">
+<attribute name="NAME" x="171.704" y="-11.7602" size="0.762" layer="95" ratio="10" rot="R90" align="bottom-right"/>
+<attribute name="VALUE" x="172.6692" y="-11.7094" size="0.762" layer="96" ratio="10" rot="R270" align="top-left"/>
+</instance>
+<instance part="R4" gate="R" x="168.91" y="-6.35" smashed="yes" rot="R90">
+<attribute name="NAME" x="168.656" y="-7.874" size="0.762" layer="95" font="vector" ratio="10" rot="R90" align="bottom-right"/>
+<attribute name="VALUE" x="170.434" y="-6.35" size="1.778" layer="96" ratio="10" rot="R90" align="center"/>
+</instance>
+<instance part="GND4" gate="1" x="171.45" y="-36.83" smashed="yes">
+<attribute name="VALUE" x="171.45" y="-38.1" size="0.762" layer="96" align="top-center"/>
+</instance>
+<instance part="U$4" gate="G$1" x="168.91" y="2.54" smashed="yes"/>
+<instance part="S5" gate="G$1" x="199.39" y="-29.21" smashed="yes">
+<attribute name="NAME" x="191.77" y="-27.94" size="1.778" layer="95" rot="R180"/>
+<attribute name="VALUE" x="191.77" y="-31.75" size="1.778" layer="96" rot="R180"/>
+</instance>
+<instance part="D5" gate="LED" x="217.17" y="-13.97" smashed="yes" rot="R270">
+<attribute name="NAME" x="219.964" y="-11.7602" size="0.762" layer="95" ratio="10" rot="R90" align="bottom-right"/>
+<attribute name="VALUE" x="220.9292" y="-11.7094" size="0.762" layer="96" ratio="10" rot="R270" align="top-left"/>
+</instance>
+<instance part="R5" gate="R" x="217.17" y="-6.35" smashed="yes" rot="R90">
+<attribute name="NAME" x="216.916" y="-7.874" size="0.762" layer="95" font="vector" ratio="10" rot="R90" align="bottom-right"/>
+<attribute name="VALUE" x="218.694" y="-6.35" size="1.778" layer="96" ratio="10" rot="R90" align="center"/>
+</instance>
+<instance part="GND5" gate="1" x="219.71" y="-36.83" smashed="yes">
+<attribute name="VALUE" x="219.71" y="-38.1" size="0.762" layer="96" align="top-center"/>
+</instance>
+<instance part="U$5" gate="G$1" x="217.17" y="3.81" smashed="yes"/>
+<instance part="U$6" gate="SWITCH1" x="0" y="53.34" smashed="yes">
+<attribute name="NAME" x="-7.62" y="46.99" size="1.778" layer="94" align="top-left"/>
+</instance>
+<instance part="U$6" gate="G$6" x="-35.56" y="-24.13" smashed="yes"/>
+<instance part="U$7" gate="G$1" x="-35.56" y="-6.35" smashed="yes"/>
+<instance part="GND6" gate="1" x="-35.56" y="-34.29" smashed="yes">
+<attribute name="VALUE" x="-35.56" y="-35.56" size="0.762" layer="96" align="top-center"/>
+</instance>
+<instance part="U$6" gate="SWITCH2" x="58.42" y="54.61" smashed="yes">
+<attribute name="NAME" x="50.8" y="48.26" size="1.778" layer="94" align="top-left"/>
+</instance>
+<instance part="U$6" gate="SWITCH3" x="116.84" y="54.61" smashed="yes">
+<attribute name="NAME" x="109.22" y="48.26" size="1.778" layer="94" align="top-left"/>
+</instance>
+<instance part="U$6" gate="SWITCH4" x="6.35" y="27.94" smashed="yes">
+<attribute name="NAME" x="-1.27" y="21.59" size="1.778" layer="94" align="top-left"/>
+</instance>
+<instance part="U$6" gate="SWITCH5" x="66.04" y="27.94" smashed="yes">
+<attribute name="NAME" x="58.42" y="21.59" size="1.778" layer="94" align="top-left"/>
+</instance>
 </instances>
 <busses>
 </busses>
@@ -1200,4 +1282,16 @@ Source: 3PDT.jpg</description>
 </sheets>
 </schematic>
 </drawing>
+<compatibility>
+<note version="8.3" severity="warning">
+Since Version 8.3, EAGLE supports URNs for individual library
+assets (packages, symbols, and devices). The URNs of those assets
+will not be understood (or retained) with this version.
+</note>
+<note version="8.3" severity="warning">
+Since Version 8.3, EAGLE supports the association of 3D packages
+with devices in libraries, schematics, and board files. Those 3D
+packages will not be understood (or retained) with this version.
+</note>
+</compatibility>
 </eagle>
