@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
+<grid distance="0.05" unitdist="inch" unit="inch" style="lines" multiple="1" display="yes" altdistance="0.01" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="no" active="no"/>
 <layer number="2" name="Route2" color="16" fill="1" visible="no" active="no"/>
@@ -2450,6 +2450,28 @@ PCB width:
 <wire x1="1" y1="-2.5" x2="-1" y2="-2.5" width="0.127" layer="22"/>
 <wire x1="-1" y1="-2.5" x2="-1.25" y2="-2.25" width="0.127" layer="22" curve="-90"/>
 </package>
+<package name="GROUNDLOOP">
+<pad name="P$1" x="1.27" y="0" drill="0.8" shape="offset" rot="R270"/>
+<pad name="P$2" x="-1.27" y="0" drill="0.8" shape="offset" rot="R270"/>
+<wire x1="0.635" y1="0" x2="-0.635" y2="0" width="0.127" layer="21"/>
+<wire x1="-0.635" y1="0" x2="-0.635" y2="-1.27" width="0.127" layer="21"/>
+<wire x1="-0.635" y1="-1.27" x2="0.635" y2="-1.27" width="0.127" layer="21"/>
+<wire x1="0.635" y1="-1.27" x2="0.635" y2="0" width="0.127" layer="21"/>
+<rectangle x1="-0.635" y1="-1.27" x2="0.635" y2="0" layer="21" rot="R180"/>
+<rectangle x1="-0.3175" y1="-3.81" x2="0.3175" y2="-1.27" layer="21" rot="R180"/>
+<rectangle x1="-2.54" y1="-2.54" x2="2.54" y2="-2.2225" layer="21" rot="R180"/>
+<rectangle x1="-1.905" y1="-3.175" x2="1.905" y2="-2.8575" layer="21" rot="R180"/>
+<rectangle x1="-1.27" y1="-3.81" x2="1.27" y2="-3.4925" layer="21" rot="R180"/>
+<rectangle x1="-0.3175" y1="-3.81" x2="0.3175" y2="-1.27" layer="22"/>
+<rectangle x1="-2.54" y1="-2.54" x2="2.54" y2="-2.2225" layer="22"/>
+<rectangle x1="-1.905" y1="-3.175" x2="1.905" y2="-2.8575" layer="22"/>
+<rectangle x1="-1.27" y1="-3.81" x2="1.27" y2="-3.4925" layer="22"/>
+<wire x1="-0.635" y1="0" x2="0.635" y2="0" width="0.127" layer="22"/>
+<wire x1="0.635" y1="0" x2="0.635" y2="-1.27" width="0.127" layer="22"/>
+<wire x1="0.635" y1="-1.27" x2="-0.635" y2="-1.27" width="0.127" layer="22"/>
+<wire x1="-0.635" y1="-1.27" x2="-0.635" y2="0" width="0.127" layer="22"/>
+<rectangle x1="-0.635" y1="-1.27" x2="0.635" y2="0" layer="22"/>
+</package>
 </packages>
 <symbols>
 <symbol name="12V">
@@ -2492,6 +2514,21 @@ PCB width:
 <pin name="5V" x="0" y="0" visible="off" length="short" direction="sup" rot="R90"/>
 <text x="0" y="4.064" size="0.762" layer="94" align="center">5V</text>
 <circle x="0" y="4.064" radius="1.397" width="0.254" layer="94"/>
+</symbol>
+<symbol name="GROUNDPOINT">
+<pin name="P$1" x="0" y="5.08" visible="off" length="middle" rot="R270"/>
+<wire x1="-5.08" y1="0" x2="5.08" y2="0" width="0.254" layer="94"/>
+<wire x1="-4.572" y1="-1.016" x2="4.572" y2="-1.016" width="0.254" layer="94"/>
+<wire x1="-4.064" y1="-2.032" x2="4.064" y2="-2.032" width="0.254" layer="94"/>
+<wire x1="-3.556" y1="-3.048" x2="-2.54" y2="-3.048" width="0.254" layer="94"/>
+<wire x1="-2.54" y1="-3.048" x2="2.54" y2="-3.048" width="0.254" layer="94"/>
+<wire x1="2.54" y1="-3.048" x2="3.556" y2="-3.048" width="0.254" layer="94"/>
+<wire x1="-2.54" y1="-3.048" x2="-2.54" y2="-3.556" width="0.254" layer="94"/>
+<wire x1="-2.54" y1="-3.556" x2="-0.508" y2="-5.588" width="0.254" layer="94" curve="90"/>
+<wire x1="-0.508" y1="-5.588" x2="0.508" y2="-5.588" width="0.254" layer="94"/>
+<wire x1="0.508" y1="-5.588" x2="2.54" y2="-3.556" width="0.254" layer="94" curve="90"/>
+<wire x1="2.54" y1="-3.556" x2="2.54" y2="-3.048" width="0.254" layer="94"/>
+<text x="0" y="-3.556" size="1.27" layer="94" align="top-center">GND</text>
 </symbol>
 </symbols>
 <devicesets>
@@ -2579,6 +2616,21 @@ PCB width:
 </gates>
 <devices>
 <device name="">
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="GNDLOOP">
+<gates>
+<gate name="G$1" symbol="GROUNDPOINT" x="0" y="-5.08"/>
+</gates>
+<devices>
+<device name="" package="GROUNDLOOP">
+<connects>
+<connect gate="G$1" pin="P$1" pad="P$1 P$2"/>
+</connects>
 <technologies>
 <technology name=""/>
 </technologies>
@@ -6787,6 +6839,8 @@ Based on the following sources:
 <part name="U$57" library="FenixBase" deviceset="3.3V" device=""/>
 <part name="GND80" library="FenixBase" deviceset="GND" device=""/>
 <part name="C39" library="OPL" deviceset="C*" device="-0603" value="100nF"/>
+<part name="U$59" library="FenixBase" deviceset="GNDLOOP" device=""/>
+<part name="GND81" library="FenixBase" deviceset="GND" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -6883,6 +6937,10 @@ Based on the following sources:
 <instance part="C39" gate="C" x="71.12" y="31.75" smashed="yes" rot="R90">
 <attribute name="NAME" x="70.866" y="31.1785" size="0.635" layer="95" ratio="10" rot="R90" align="bottom-right"/>
 <attribute name="VALUE" x="70.866" y="32.3215" size="0.635" layer="96" ratio="10" rot="R90"/>
+</instance>
+<instance part="U$59" gate="G$1" x="15.24" y="5.08" smashed="yes"/>
+<instance part="GND81" gate="1" x="7.62" y="5.08" smashed="yes">
+<attribute name="VALUE" x="7.62" y="3.81" size="0.762" layer="96" align="top-center"/>
 </instance>
 </instances>
 <busses>
@@ -6999,6 +7057,13 @@ Based on the following sources:
 <pinref part="U1" gate="A" pin="CATHODE"/>
 <wire x1="90.17" y1="6.35" x2="90.17" y2="5.08" width="0.1524" layer="91"/>
 <pinref part="GND3" gate="1" pin="GND"/>
+</segment>
+<segment>
+<pinref part="U$59" gate="G$1" pin="P$1"/>
+<wire x1="7.62" y1="11.43" x2="15.24" y2="11.43" width="0.1524" layer="91"/>
+<wire x1="15.24" y1="11.43" x2="15.24" y2="10.16" width="0.1524" layer="91"/>
+<pinref part="GND81" gate="1" pin="GND"/>
+<wire x1="7.62" y1="7.62" x2="7.62" y2="11.43" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="3.3V" class="1">
