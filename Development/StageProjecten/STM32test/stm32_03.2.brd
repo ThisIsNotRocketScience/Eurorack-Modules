@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="9.5.2">
+<eagle version="9.5.1">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
@@ -1908,16 +1908,20 @@ design rules under a new name.</description>
 </element>
 <element name="PCB1" library="EurorackModularParts" package="EURORACK12HPPCB" value="EURORACK_PCB12HP" x="0" y="0" smashed="yes"/>
 <element name="U$7" library="FenixBase" package="POWERTESTPAD" value="VOLTAGETESTPAD" x="36.03625" y="1.42875" smashed="yes" rot="R180">
-<attribute name="DESC" value="12v" x="36.03625" y="1.42875" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="DESC" value="12v" x="36.03625" y="3.17875" size="0.5" layer="21" rot="R180" align="top-center"/>
+<attribute name="DESC" value="12v" x="36.03625" y="3.17875" size="0.5" layer="22" rot="MR180" align="top-center"/>
 </element>
 <element name="U$8" library="FenixBase" package="POWERTESTPAD" value="VOLTAGETESTPAD" x="24.765" y="1.42875" smashed="yes" rot="R180">
-<attribute name="DESC" value="-12v" x="24.765" y="1.42875" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="DESC" value="-12v" x="24.765" y="3.17875" size="0.5" layer="21" rot="R180" align="top-center"/>
+<attribute name="DESC" value="-12v" x="24.765" y="3.17875" size="0.5" layer="22" rot="MR180" align="top-center"/>
 </element>
 <element name="U$37" library="FenixBase" package="POWERTESTPAD" value="VOLTAGETESTPAD" x="5.08" y="62.865" smashed="yes" rot="R180">
-<attribute name="DESC" value="3.3v" x="5.08" y="62.865" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="DESC" value="3.3v" x="5.08" y="64.615" size="0.5" layer="21" rot="R180" align="top-center"/>
+<attribute name="DESC" value="3.3v" x="5.08" y="64.615" size="0.5" layer="22" rot="MR180" align="top-center"/>
 </element>
 <element name="U$38" library="FenixBase" package="POWERTESTPAD" value="VOLTAGETESTPAD" x="55.72125" y="62.865" smashed="yes" rot="R180">
-<attribute name="DESC" value="-5v" x="55.72125" y="62.865" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="DESC" value="-5v" x="55.72125" y="64.615" size="0.5" layer="21" rot="R180" align="top-center"/>
+<attribute name="DESC" value="-5v" x="55.72125" y="64.615" size="0.5" layer="22" rot="MR180" align="top-center"/>
 </element>
 <element name="U$44" library="oled" package="1.3_4PIN_OLED" value="4PIN_OLED" x="30.375" y="101" locked="yes" smashed="yes" rot="MR0"/>
 <element name="R70" library="OPL" package="R0603" value="2k" x="28.2575" y="102.71125" smashed="yes">
