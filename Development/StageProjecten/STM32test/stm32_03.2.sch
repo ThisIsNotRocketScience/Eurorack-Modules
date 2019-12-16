@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.05" unitdist="inch" unit="inch" style="lines" multiple="1" display="yes" altdistance="0.01" altunitdist="inch" altunit="inch"/>
+<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="no" active="no"/>
 <layer number="2" name="Route2" color="16" fill="1" visible="no" active="no"/>
@@ -5430,7 +5430,7 @@ BF959 corrected 2008.03.06&lt;br&gt;</description>
 </library>
 <library name="oled">
 <packages>
-<package name="1.3_4PIN_OLED">
+<package name="1.3_4PIN_OLED_DRILLS">
 <pad name="P$1" x="-3.81" y="0" drill="0.8" shape="square"/>
 <pad name="P$2" x="-1.27" y="0" drill="0.6"/>
 <pad name="P$3" x="1.27" y="0" drill="0.6"/>
@@ -5455,6 +5455,10 @@ BF959 corrected 2008.03.06&lt;br&gt;</description>
 <wire x1="15.71" y1="-4.35" x2="15.71" y2="-21.05" width="0.127" layer="255"/>
 <wire x1="15.71" y1="-21.05" x2="-15.71" y2="-21.05" width="0.127" layer="255"/>
 <wire x1="-15.71" y1="-21.05" x2="-15.71" y2="-4.35" width="0.127" layer="255"/>
+<circle x="-15.2" y="-29" radius="1.5" width="0.127" layer="255"/>
+<circle x="15.2" y="-29" radius="1.5" width="0.127" layer="255"/>
+<circle x="15.2" y="-0.5" radius="1.5" width="0.127" layer="255"/>
+<circle x="-15.2" y="-0.5" radius="1.5" width="0.127" layer="255"/>
 </package>
 </packages>
 <symbols>
@@ -5471,12 +5475,12 @@ BF959 corrected 2008.03.06&lt;br&gt;</description>
 </symbol>
 </symbols>
 <devicesets>
-<deviceset name="4PIN_OLED">
+<deviceset name="4PIN_OLED_DRILLS">
 <gates>
 <gate name="G$1" symbol="4PIN_OLED" x="0" y="0"/>
 </gates>
 <devices>
-<device name="" package="1.3_4PIN_OLED">
+<device name="" package="1.3_4PIN_OLED_DRILLS">
 <connects>
 <connect gate="G$1" pin="GND" pad="P$2"/>
 <connect gate="G$1" pin="SCL" pad="P$3"/>
@@ -6557,7 +6561,7 @@ Based on the following sources:
 <part name="R21" library="OPL" deviceset="R*" device="-0603" value="33k"/>
 <part name="C16" library="OPL" deviceset="C*" device="-0603" value="3.3nF"/>
 <part name="U$18" library="FenixBase" deviceset="3.3V" device=""/>
-<part name="C17" library="OPL" deviceset="C*" device="-0603"/>
+<part name="C17" library="OPL" deviceset="C*" device="-0603" value="100nF"/>
 <part name="J6" library="EurorackModularParts" deviceset="AUDIO-JACK_SMALLSYMBOL" device="NODRILL" value="JACK">
 <attribute name="DESC" value="GATE_IN1"/>
 </part>
@@ -6727,7 +6731,7 @@ Based on the following sources:
 <part name="U$41" library="FenixBase" deviceset="3.3V" device=""/>
 <part name="U$42" library="FenixBase" deviceset="-5V" device=""/>
 <part name="U$4" library="FenixBase" deviceset="-12V" device=""/>
-<part name="U$44" library="oled" deviceset="4PIN_OLED" device=""/>
+<part name="U$44" library="oled" deviceset="4PIN_OLED_DRILLS" device=""/>
 <part name="R70" library="OPL" deviceset="R*" device="-0603" value="2k"/>
 <part name="R71" library="OPL" deviceset="R*" device="-0603" value="2k"/>
 <part name="U$45" library="FenixBase" deviceset="3.3V" device=""/>

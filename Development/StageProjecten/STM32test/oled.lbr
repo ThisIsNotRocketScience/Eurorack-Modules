@@ -9,7 +9,7 @@
 <grid distance="50" unitdist="mil" unit="mil" style="lines" multiple="1" display="yes" altdistance="5" altunitdist="mil" altunit="mil"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
-<layer number="2" name="Route2" color="16" fill="1" visible="no" active="yes"/>
+<layer number="2" name="Route2" color="16" fill="1" visible="yes" active="yes"/>
 <layer number="3" name="Route3" color="17" fill="1" visible="no" active="yes"/>
 <layer number="4" name="Route4" color="18" fill="1" visible="no" active="yes"/>
 <layer number="5" name="Route5" color="19" fill="1" visible="no" active="yes"/>
@@ -100,6 +100,36 @@
 <wire x1="15.71" y1="-21.05" x2="-15.71" y2="-21.05" width="0.127" layer="255"/>
 <wire x1="-15.71" y1="-21.05" x2="-15.71" y2="-4.35" width="0.127" layer="255"/>
 </package>
+<package name="1.3_4PIN_OLED_DRILLS">
+<pad name="P$1" x="-3.81" y="0" drill="0.8" shape="square"/>
+<pad name="P$2" x="-1.27" y="0" drill="0.6"/>
+<pad name="P$3" x="1.27" y="0" drill="0.6"/>
+<pad name="P$4" x="3.81" y="0" drill="0.6"/>
+<wire x1="-17.7" y1="2" x2="-17.7" y2="-31.5" width="0.127" layer="21"/>
+<wire x1="-17.7" y1="-31.5" x2="17.7" y2="-31.5" width="0.127" layer="21"/>
+<wire x1="17.7" y1="-31.5" x2="17.7" y2="2" width="0.127" layer="21"/>
+<wire x1="17.7" y1="2" x2="-17.7" y2="2" width="0.127" layer="21"/>
+<hole x="-15.2" y="-0.5" drill="3"/>
+<hole x="15.2" y="-0.5" drill="3"/>
+<hole x="-15.2" y="-29" drill="3"/>
+<hole x="15.2" y="-29" drill="3"/>
+<wire x1="-14.71" y1="-5.35" x2="14.71" y2="-5.35" width="0.127" layer="21"/>
+<wire x1="14.71" y1="-5.35" x2="14.71" y2="-20.05" width="0.127" layer="21"/>
+<wire x1="14.71" y1="-20.05" x2="-14.71" y2="-20.05" width="0.127" layer="21"/>
+<wire x1="-14.71" y1="-20.05" x2="-14.71" y2="-5.35" width="0.127" layer="21"/>
+<circle x="-15.2" y="-0.5" radius="3" width="0.127" layer="51"/>
+<circle x="15.2" y="-0.5" radius="3" width="0.127" layer="51"/>
+<circle x="15.2" y="-29" radius="3" width="0.127" layer="51"/>
+<circle x="-15.2" y="-29" radius="3" width="0.127" layer="51"/>
+<wire x1="-15.71" y1="-4.35" x2="15.71" y2="-4.35" width="0.127" layer="255"/>
+<wire x1="15.71" y1="-4.35" x2="15.71" y2="-21.05" width="0.127" layer="255"/>
+<wire x1="15.71" y1="-21.05" x2="-15.71" y2="-21.05" width="0.127" layer="255"/>
+<wire x1="-15.71" y1="-21.05" x2="-15.71" y2="-4.35" width="0.127" layer="255"/>
+<circle x="-15.2" y="-29" radius="1.5" width="0.127" layer="255"/>
+<circle x="15.2" y="-29" radius="1.5" width="0.127" layer="255"/>
+<circle x="15.2" y="-0.5" radius="1.5" width="0.127" layer="255"/>
+<circle x="-15.2" y="-0.5" radius="1.5" width="0.127" layer="255"/>
+</package>
 </packages>
 <symbols>
 <symbol name="4PIN_OLED">
@@ -121,6 +151,24 @@
 </gates>
 <devices>
 <device name="" package="1.3_4PIN_OLED">
+<connects>
+<connect gate="G$1" pin="GND" pad="P$2"/>
+<connect gate="G$1" pin="SCL" pad="P$3"/>
+<connect gate="G$1" pin="SDA" pad="P$4"/>
+<connect gate="G$1" pin="VDD" pad="P$1"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="4PIN_OLED_DRILLS">
+<gates>
+<gate name="G$1" symbol="4PIN_OLED" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="1.3_4PIN_OLED_DRILLS">
 <connects>
 <connect gate="G$1" pin="GND" pad="P$2"/>
 <connect gate="G$1" pin="SCL" pad="P$3"/>
