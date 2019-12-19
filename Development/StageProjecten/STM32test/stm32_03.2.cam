@@ -220,6 +220,28 @@
                     "name": "Silkscreen Bottom",
                     "polarity": "positive",
                     "type": "gerber_layer"
+                },
+                {
+                    "advanced_options": {
+                        "mirror": true,
+                        "offset_x": 0,
+                        "offset_y": 0,
+                        "rotate": false,
+                        "upside_down": false
+                    },
+                    "board_outline": false,
+                    "config": {
+                        "description": "Other",
+                        "file_function": "Other"
+                    },
+                    "filename_format": "FrontPanelMirror.gko",
+                    "layers": [
+                        255
+                    ],
+                    "milling": false,
+                    "name": "",
+                    "polarity": "positive",
+                    "type": "gerber_layer"
                 }
             ],
             "version": "RS274X"
@@ -273,7 +295,7 @@
             ]
         }
     ],
-    "timestamp": "2019-12-16T14:29:08",
+    "timestamp": "2019-12-16T23:46:36",
     "type": "EAGLE CAM job",
     "units": "metric",
     "version": "9.2.0"
