@@ -16325,12 +16325,12 @@ We've spent an enormous amount of time creating and checking these footprints an
 <part name="U$104" library="adafruit" deviceset="TRIMPOT" device="TC33X" value="50k">
 <attribute name="DESC" value="VCA Trim"/>
 </part>
-<part name="C47" library="EurorackModularParts" deviceset="C-POLAR*" device="-A" value="10uF"/>
 <part name="GND126" library="FenixBase" deviceset="GND" device=""/>
 <part name="R126" library="OPL" deviceset="R*" device="-0603" value="1K"/>
 <part name="C48" library="EurorackModularParts" deviceset="C-POLAR*" device="-A" value="10u"/>
 <part name="C49" library="OPL" deviceset="C*" device="-0603" value="100n"/>
 <part name="GND127" library="FenixBase" deviceset="GND" device=""/>
+<part name="C50" library="OPL" deviceset="C*" device="-0603" value="22uF"/>
 </parts>
 <sheets>
 <sheet>
@@ -16825,12 +16825,8 @@ We've spent an enormous amount of time creating and checking these footprints an
 <attribute name="VALUE" x="220.98" y="99.06" size="0.762" layer="96" rot="R270"/>
 <attribute name="DESC" x="222.25" y="100.33" size="1.778" layer="96" rot="R270" display="off"/>
 </instance>
-<instance part="C47" gate="C" x="232.41" y="105.41" smashed="yes" rot="R270">
-<attribute name="NAME" x="232.664" y="107.061" size="0.762" layer="95" ratio="10" rot="R270" align="bottom-right"/>
-<attribute name="VALUE" x="232.664" y="104.648" size="0.762" layer="96" ratio="10" rot="R270"/>
-</instance>
-<instance part="GND126" gate="1" x="232.41" y="96.52" smashed="yes">
-<attribute name="VALUE" x="232.41" y="95.25" size="0.762" layer="96" align="top-center"/>
+<instance part="GND126" gate="1" x="232.41" y="99.06" smashed="yes">
+<attribute name="VALUE" x="232.41" y="97.79" size="0.762" layer="96" align="top-center"/>
 </instance>
 <instance part="R126" gate="R" x="257.81" y="114.3" smashed="yes" rot="R180">
 <attribute name="NAME" x="259.334" y="114.046" size="0.762" layer="95" font="vector" ratio="10" rot="R180" align="bottom-right"/>
@@ -16846,6 +16842,10 @@ We've spent an enormous amount of time creating and checking these footprints an
 </instance>
 <instance part="GND127" gate="1" x="199.39" y="119.38" smashed="yes">
 <attribute name="VALUE" x="199.39" y="118.11" size="0.762" layer="96" align="top-center"/>
+</instance>
+<instance part="C50" gate="C" x="232.41" y="106.68" smashed="yes" rot="R90">
+<attribute name="NAME" x="232.156" y="106.1085" size="0.635" layer="95" ratio="10" rot="R90" align="bottom-right"/>
+<attribute name="VALUE" x="232.156" y="107.2515" size="0.635" layer="96" ratio="10" rot="R90"/>
 </instance>
 </instances>
 <busses>
@@ -17098,8 +17098,8 @@ We've spent an enormous amount of time creating and checking these footprints an
 </segment>
 <segment>
 <pinref part="GND126" gate="1" pin="GND"/>
-<pinref part="C47" gate="C" pin="2"/>
-<wire x1="232.41" y1="99.06" x2="232.41" y2="100.33" width="0.1524" layer="91"/>
+<wire x1="232.41" y1="101.6" x2="232.41" y2="102.87" width="0.1524" layer="91"/>
+<pinref part="C50" gate="C" pin="1"/>
 </segment>
 <segment>
 <pinref part="C48" gate="C" pin="2"/>
@@ -17735,13 +17735,13 @@ We've spent an enormous amount of time creating and checking these footprints an
 <wire x1="228.6" y1="100.33" x2="228.6" y2="105.41" width="0.1524" layer="91"/>
 <junction x="228.6" y="100.33"/>
 <junction x="228.6" y="105.41"/>
-<pinref part="C47" gate="C" pin="1"/>
 <wire x1="228.6" y1="111.76" x2="232.41" y2="111.76" width="0.1524" layer="91"/>
 <wire x1="232.41" y1="111.76" x2="232.41" y2="110.49" width="0.1524" layer="91"/>
 <junction x="228.6" y="111.76"/>
 <pinref part="U1" gate="B" pin="+IN2"/>
 <wire x1="232.41" y1="111.76" x2="236.22" y2="111.76" width="0.1524" layer="91"/>
 <junction x="232.41" y="111.76"/>
+<pinref part="C50" gate="C" pin="2"/>
 </segment>
 </net>
 <net name="N$123" class="0">
