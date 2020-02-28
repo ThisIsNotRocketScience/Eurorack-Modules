@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.25" unitdist="mm" unit="mm" style="lines" multiple="1" display="yes" altdistance="0.025" altunitdist="inch" altunit="inch"/>
+<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="2" name="Route2" color="1" fill="3" visible="yes" active="yes"/>
@@ -5196,6 +5196,18 @@ MAX3223-MAX3243.pdf</description>
 <text x="-2.032" y="0.9652" size="1.27" layer="51" ratio="6" rot="SR0">*</text>
 <text x="-3.2766" y="-0.635" size="1.27" layer="25" ratio="6" rot="SR0">&gt;Name</text>
 </package>
+<package name="ALPHADUALGANG">
+<pad name="1" x="-2.54" y="-7.62" drill="1"/>
+<pad name="2" x="0" y="-7.62" drill="1"/>
+<pad name="3" x="2.54" y="-7.62" drill="1"/>
+<pad name="4" x="-2.54" y="-10.16" drill="1"/>
+<pad name="5" x="0" y="-10.16" drill="1"/>
+<pad name="6" x="2.54" y="-10.16" drill="1"/>
+<circle x="0" y="0" radius="4" width="0.002540625" layer="255"/>
+<text x="0" y="5" size="1.778" layer="254" align="bottom-center">&gt;DESC</text>
+<text x="0" y="1.27" size="2.032" layer="25" ratio="10" rot="SR0" align="center">&gt;NAME</text>
+<text x="0" y="-1.27" size="1.27" layer="21" ratio="10" rot="SR0" align="center">&gt;VALUE</text>
+</package>
 </packages>
 <symbols>
 <symbol name="EURORACK_PANEL">
@@ -7563,7 +7575,7 @@ or will meet your specific requirements.&lt;p&gt;
 </device>
 </devices>
 </deviceset>
-<deviceset name="STEREOPOT">
+<deviceset name="STEREOPOT" prefix="R">
 <gates>
 <gate name="G$1" symbol="POT" x="10.16" y="0"/>
 <gate name="G$2" symbol="POT" x="-10.16" y="0"/>
@@ -7577,6 +7589,19 @@ or will meet your specific requirements.&lt;p&gt;
 <connect gate="G$2" pin="A" pad="R2_3"/>
 <connect gate="G$2" pin="E" pad="R2_1"/>
 <connect gate="G$2" pin="S" pad="R2_2"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="ALPHA" package="ALPHADUALGANG">
+<connects>
+<connect gate="G$1" pin="A" pad="3"/>
+<connect gate="G$1" pin="E" pad="1"/>
+<connect gate="G$1" pin="S" pad="2"/>
+<connect gate="G$2" pin="A" pad="6"/>
+<connect gate="G$2" pin="E" pad="4"/>
+<connect gate="G$2" pin="S" pad="5"/>
 </connects>
 <technologies>
 <technology name=""/>
