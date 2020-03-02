@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.05" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
+<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="no" active="no"/>
 <layer number="2" name="Route2" color="1" fill="3" visible="no" active="no"/>
@@ -11540,7 +11540,7 @@ Source: http://www.diodes.com/datasheets/ds23001.pdf</description>
 <classes>
 <class number="0" name="default" width="0.508" drill="0">
 </class>
-<class number="1" name="power" width="0.508" drill="0">
+<class number="1" name="power" width="1" drill="0">
 </class>
 <class number="2" name="thin" width="0.254" drill="0">
 </class>
@@ -11736,7 +11736,6 @@ Source: http://www.diodes.com/datasheets/ds23001.pdf</description>
 <pinref part="J2" gate="G$1" pin="GND"/>
 <pinref part="J3" gate="G$1" pin="GND"/>
 <pinref part="J4" gate="G$1" pin="GND"/>
-<pinref part="J4" gate="G$1" pin="GND"/>
 <pinref part="J5" gate="G$1" pin="GND"/>
 <pinref part="J6" gate="G$1" pin="GND"/>
 <wire x1="21.59" y1="-111.76" x2="58.42" y2="-111.76" width="0.1524" layer="91"/>
@@ -11782,7 +11781,6 @@ Source: http://www.diodes.com/datasheets/ds23001.pdf</description>
 <pinref part="J2" gate="G$1" pin="-12V"/>
 <pinref part="J3" gate="G$1" pin="-12V"/>
 <pinref part="J4" gate="G$1" pin="-12V"/>
-<pinref part="J4" gate="G$1" pin="-12V"/>
 <pinref part="J5" gate="G$1" pin="-12V"/>
 <pinref part="J6" gate="G$1" pin="-12V"/>
 <wire x1="21.59" y1="-114.3" x2="58.42" y2="-114.3" width="0.1524" layer="91"/>
@@ -11815,7 +11813,6 @@ Source: http://www.diodes.com/datasheets/ds23001.pdf</description>
 <segment>
 <pinref part="J2" gate="G$1" pin="+12V"/>
 <pinref part="J3" gate="G$1" pin="+12V"/>
-<pinref part="J4" gate="G$1" pin="+12V"/>
 <pinref part="J4" gate="G$1" pin="+12V"/>
 <pinref part="J5" gate="G$1" pin="+12V"/>
 <pinref part="J6" gate="G$1" pin="+12V"/>
@@ -11856,7 +11853,6 @@ Source: http://www.diodes.com/datasheets/ds23001.pdf</description>
 <junction x="147.32" y="-21.59"/>
 <pinref part="J2" gate="G$1" pin="+5V"/>
 <pinref part="J3" gate="G$1" pin="+5V"/>
-<pinref part="J4" gate="G$1" pin="+5V"/>
 <pinref part="J4" gate="G$1" pin="+5V"/>
 <pinref part="J5" gate="G$1" pin="+5V"/>
 <pinref part="J6" gate="G$1" pin="+5V"/>
@@ -11931,7 +11927,6 @@ Source: http://www.diodes.com/datasheets/ds23001.pdf</description>
 <pinref part="J2" gate="G$1" pin="CV"/>
 <pinref part="J3" gate="G$1" pin="CV"/>
 <pinref part="J4" gate="G$1" pin="CV"/>
-<pinref part="J4" gate="G$1" pin="CV"/>
 <pinref part="J5" gate="G$1" pin="CV"/>
 <pinref part="J6" gate="G$1" pin="CV"/>
 <wire x1="21.59" y1="-119.38" x2="58.42" y2="-119.38" width="0.1524" layer="91"/>
@@ -11952,7 +11947,6 @@ Source: http://www.diodes.com/datasheets/ds23001.pdf</description>
 <segment>
 <pinref part="J2" gate="G$1" pin="GATE"/>
 <pinref part="J3" gate="G$1" pin="GATE"/>
-<pinref part="J4" gate="G$1" pin="GATE"/>
 <pinref part="J4" gate="G$1" pin="GATE"/>
 <pinref part="J5" gate="G$1" pin="GATE"/>
 <pinref part="J6" gate="G$1" pin="GATE"/>
