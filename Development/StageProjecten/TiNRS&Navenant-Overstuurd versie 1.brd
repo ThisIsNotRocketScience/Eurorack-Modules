@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="9.5.2">
+<eagle version="9.5.1">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
@@ -3626,6 +3626,14 @@ design rules under a new name.</description>
 <attribute name="NAME" x="33.655" y="44.45" size="0.508" layer="25" ratio="11" rot="R90" align="center"/>
 <attribute name="VALUE" x="34.9725" y="43.053" size="0.508" layer="27" ratio="10" rot="R90"/>
 </element>
+<element name="R128" library="OPL" package="R0603" value="56" x="-0.3175" y="-11.7475" smashed="yes">
+<attribute name="NAME" x="-0.3175" y="-11.7475" size="0.508" layer="25" ratio="11" align="center"/>
+<attribute name="VALUE" x="-1.7145" y="-13.065" size="0.508" layer="27" ratio="10"/>
+</element>
+<element name="R129" library="OPL" package="R0603" value="56" x="-0.3175" y="-14.2875" smashed="yes">
+<attribute name="NAME" x="-0.3175" y="-14.2875" size="0.508" layer="25" ratio="11" align="center"/>
+<attribute name="VALUE" x="-1.7145" y="-15.605" size="0.508" layer="27" ratio="10"/>
+</element>
 </elements>
 <signals>
 <signal name="GND" class="1">
@@ -6362,8 +6370,6 @@ design rules under a new name.</description>
 <signal name="N$38">
 <contactref element="IC6" pad="7"/>
 <contactref element="R20" pad="1"/>
-<contactref element="J10" pad="TIP_T@3" route="any" routetag="G$1.TIP"/>
-<contactref element="J10" pad="TIP_B@1" route="any" routetag="G$1.TIP"/>
 <wire x1="151.5078" y1="71.4825" x2="150.7675" y2="71.4825" width="0.254" layer="1"/>
 <wire x1="149.733" y1="72.517" x2="149.733" y2="73.3425" width="0.254" layer="1"/>
 <wire x1="150.7675" y1="71.4825" x2="149.733" y2="72.517" width="0.254" layer="1"/>
@@ -6383,7 +6389,8 @@ design rules under a new name.</description>
 <wire x1="165.4175" y1="73.9775" x2="170.815" y2="73.9775" width="0.254" layer="16"/>
 <via x="170.815" y="73.9775" extent="1-16" drill="0.3048"/>
 <wire x1="170.815" y1="73.9775" x2="174.3625" y2="73.9775" width="0.254" layer="1"/>
-<wire x1="174.3625" y1="73.9775" x2="175.26" y2="73.08" width="0.254" layer="1"/>
+<contactref element="R129" pad="2"/>
+<wire x1="0.4445" y1="-14.2875" x2="149.733" y2="73.3425" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="N$39">
 <contactref element="R21" pad="1"/>
@@ -8518,8 +8525,6 @@ design rules under a new name.</description>
 </signal>
 <signal name="CROSSFADER_OUT">
 <contactref element="R110" pad="1"/>
-<contactref element="J26" pad="TIP_B@1" route="any" routetag="G$1.TIP"/>
-<contactref element="J26" pad="TIP_T@3" route="any" routetag="G$1.TIP"/>
 <contactref element="IC6" pad="14"/>
 <wire x1="146.8755" y1="65.7225" x2="146.8755" y2="64.643" width="0.254" layer="1"/>
 <wire x1="146.8755" y1="64.643" x2="146.84375" y2="64.61125" width="0.254" layer="1"/>
@@ -8552,12 +8557,10 @@ design rules under a new name.</description>
 <via x="167.9575" y="53.34" extent="1-16" drill="0.3048"/>
 <wire x1="167.9575" y1="53.34" x2="168.91" y2="53.34" width="0.254" layer="1"/>
 <wire x1="168.91" y1="53.34" x2="169.8625" y2="52.3875" width="0.254" layer="1"/>
-<wire x1="169.8625" y1="52.3875" x2="169.8625" y2="35.56" width="0.254" layer="1"/>
-<wire x1="169.8625" y1="35.56" x2="170.4975" y2="34.925" width="0.254" layer="1"/>
-<wire x1="170.4975" y1="34.925" x2="175.205" y2="34.925" width="0.254" layer="1"/>
-<wire x1="175.205" y1="34.925" x2="175.26" y2="34.98" width="0.254" layer="1"/>
 <wire x1="153.035" y1="62.23" x2="154.94" y2="62.23" width="0.254" layer="16"/>
 <wire x1="162.555009375" y1="56.519990625" x2="165.735" y2="53.34" width="0.254" layer="16"/>
+<contactref element="R128" pad="2"/>
+<wire x1="0.4445" y1="-11.7475" x2="145.6722" y2="67.5825" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="CV_IN">
 <contactref element="R112" pad="2"/>
@@ -10453,6 +10456,18 @@ design rules under a new name.</description>
 <wire x1="30.1625" y1="30.1625" x2="30.7975" y2="30.1625" width="0.254" layer="1"/>
 <wire x1="30.7975" y1="30.1625" x2="31.115" y2="30.48" width="0.254" layer="1"/>
 <wire x1="31.115" y1="30.48" x2="31.115" y2="31.5087" width="0.254" layer="1"/>
+</signal>
+<signal name="N$125">
+<contactref element="J26" pad="TIP_T@3" route="any" routetag="G$1.TIP"/>
+<contactref element="J26" pad="TIP_B@1" route="any" routetag="G$1.TIP"/>
+<contactref element="R128" pad="1"/>
+<wire x1="-1.0795" y1="-11.7475" x2="175.26" y2="34.98" width="0" layer="19" extent="1-1"/>
+</signal>
+<signal name="N$126">
+<contactref element="J10" pad="TIP_T@3" route="any" routetag="G$1.TIP"/>
+<contactref element="J10" pad="TIP_B@1" route="any" routetag="G$1.TIP"/>
+<contactref element="R129" pad="1"/>
+<wire x1="-1.0795" y1="-14.2875" x2="175.26" y2="73.08" width="0" layer="19" extent="1-1"/>
 </signal>
 </signals>
 <mfgpreviewcolors>
