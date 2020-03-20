@@ -107,21 +107,22 @@ void setup() {
   Keyboard.begin();
   
   Serial.begin(31250);
+  Serial1.begin(31250);
 }
 
 
 void NoteOn(int idx)
 {
-  Serial.write(0x90);
-  Serial.write(idx);
-  Serial.write(127);  
+  Serial1.write(0x90);
+  Serial1.write(idx);
+  Serial1.write(127);  
 };
 
 void NoteOff(int idx)
 {
-  Serial.write(0x80);
-  Serial.write(idx);
-  Serial.write(127);  
+  Serial1.write(0x80);
+  Serial1.write(idx);
+  Serial1.write(127);  
 };
 
 void Panic()
@@ -169,7 +170,7 @@ void readMatrix()
           repeats[colIndex][rowIndex] = 0;
           if (midinote[colIndex][rowIndex] > -1)
           {
-            NoteOn(midinote[colIndex][rowIndex]);
+            NoteOn(midinote[colIndex][rowIndex]+36);
           }
         }
        else
@@ -177,7 +178,7 @@ void readMatrix()
         Keyboard.release(sendkeys[colIndex][rowIndex]);
           if (midinote[colIndex][rowIndex] > -1)
           {
-            NoteOff(midinote[colIndex][rowIndex]);
+            NoteOff(midinote[colIndex][rowIndex]+36);
           }
          
        }

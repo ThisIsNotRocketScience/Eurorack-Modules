@@ -1,0 +1,28 @@
+Partlist
+
+Exported from ARboard.brd at 02-01-20 17:45
+
+EAGLE Version 9.5.2 Copyright (c) 1988-2019 Autodesk, Inc.
+
+Assembly variant: 
+
+Part     Value             Package              Library              Position (mil)        Orientation
+
+C1       10u               CASE-A_3216          EurorackModularParts (912.5 625)           R90
+C2       100n              C0603                OPL                  (837.5 625)           R270
+C3       22u               C0603                OPL                  (250 487.5)           R270
+D1       BAS16W            SOT-323              FenixBase            (375 387.5)           R0
+D2       BAS16W            SOT-323              FenixBase            (250 612.5)           R90
+D3       BAS16W            SOT-323              FenixBase            (250 362.5)           R270
+JP1                        1X04                 pinhead              (562.5 112.5)         R0
+R1       100k              R0603                OPL                  (412.5 487.5)         R180
+R2       33r               R0603                OPL                  (412.5 587.5)         R0
+R3                         ALPS_POT_SQUAREHOLES EurorackModularParts (562.5 662.5)         R0
+R4       1k                R0603                OPL                  (862.5 487.5)         R180
+SJ1                        SJ                   jumper               (662.5 250)           R90
+SJ2                        SJ                   jumper               (562.5 250)           R90
+SJ3                        SJ                   jumper               (462.5 250)           R90
+TM1      offset            TC33X                adafruit             (850 300)             R0
+TM2      attack            TC33X                adafruit             (112.5 525)           R180
+TM3      release           TC33X                adafruit             (112.5 312.5)         R180
+U1       LM358DR-1110010P1 SOIC8                OPL                  (637.5 512.5)         R0
