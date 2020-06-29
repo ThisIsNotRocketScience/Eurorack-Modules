@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.05" unitdist="inch" unit="inch" style="lines" multiple="1" display="yes" altdistance="0.025" altunitdist="inch" altunit="inch"/>
+<grid distance="0.05" unitdist="inch" unit="mil" style="lines" multiple="1" display="yes" altdistance="0.025" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="2" name="Route2" color="1" fill="3" visible="yes" active="yes"/>
@@ -5597,10 +5597,10 @@ MAX3223-MAX3243.pdf</description>
 <wire x1="0" y1="6.985" x2="88.9" y2="6.985" width="0.127" layer="51"/>
 <wire x1="88.9" y1="6.985" x2="88.9" y2="62.23" width="0.127" layer="51"/>
 <text x="44.45" y="60.96" size="1.27" layer="51" align="center">FENIX POWER BACKPACK</text>
-<pad name="12V@3" x="2.54" y="17.145" drill="0.8" rot="R180"/>
+<pad name="10V@2" x="2.54" y="17.145" drill="0.8" rot="R180"/>
 <pad name="12V@4" x="2.54" y="14.605" drill="0.8" rot="R180"/>
 <pad name="-12V@3" x="2.54" y="9.525" drill="0.8" rot="R180"/>
-<pad name="-12V@4" x="2.54" y="12.065" drill="0.8" rot="R180"/>
+<pad name="-5V@2" x="2.54" y="12.065" drill="0.8" rot="R180"/>
 <pad name="5V@3" x="2.54" y="24.765" drill="0.8" rot="R180"/>
 <pad name="5V@4" x="2.54" y="41.91" drill="0.8"/>
 <pad name="GND@13" x="2.54" y="19.685" drill="0.8" rot="R180"/>
@@ -5625,16 +5625,16 @@ MAX3223-MAX3243.pdf</description>
 <wire x1="85.09" y1="40.64" x2="85.09" y2="60.96" width="0.127" layer="51"/>
 </package>
 <package name="FENIXPOWERBACKPACK_MODULE">
-<wire x1="88.9" y1="62.23" x2="55.245" y2="62.23" width="0.127" layer="21"/>
-<wire x1="55.245" y1="62.23" x2="33.655" y2="62.23" width="0.127" layer="21"/>
-<wire x1="33.655" y1="62.23" x2="0" y2="62.23" width="0.127" layer="21"/>
-<wire x1="0" y1="62.23" x2="0" y2="6.985" width="0.127" layer="21"/>
-<wire x1="0" y1="6.985" x2="88.9" y2="6.985" width="0.127" layer="21"/>
+<wire x1="88.9" y1="62.23" x2="59.055" y2="62.23" width="0.127" layer="21"/>
+<wire x1="59.055" y1="62.23" x2="31.115" y2="62.23" width="0.127" layer="21"/>
+<wire x1="31.115" y1="62.23" x2="-0.762" y2="62.23" width="0.127" layer="21"/>
+<wire x1="-0.762" y1="62.23" x2="-0.762" y2="6.985" width="0.127" layer="21"/>
+<wire x1="-0.762" y1="6.985" x2="88.9" y2="6.985" width="0.127" layer="21"/>
 <wire x1="88.9" y1="6.985" x2="88.9" y2="62.23" width="0.127" layer="21"/>
 <text x="44.45" y="60.96" size="1.27" layer="21" align="center">FENIX POWER BACKPACK</text>
-<wire x1="33.655" y1="62.23" x2="33.655" y2="59.69" width="0.127" layer="21"/>
-<wire x1="33.655" y1="59.69" x2="55.245" y2="59.69" width="0.127" layer="21"/>
-<wire x1="55.245" y1="59.69" x2="55.245" y2="62.23" width="0.127" layer="21"/>
+<wire x1="31.115" y1="62.23" x2="31.115" y2="59.69" width="0.127" layer="21"/>
+<wire x1="31.115" y1="59.69" x2="59.055" y2="59.69" width="0.127" layer="21"/>
+<wire x1="59.055" y1="59.69" x2="59.055" y2="62.23" width="0.127" layer="21"/>
 <wire x1="1.27" y1="40.64" x2="1.27" y2="60.96" width="0.127" layer="21"/>
 <wire x1="1.27" y1="60.96" x2="3.81" y2="60.96" width="0.127" layer="21"/>
 <wire x1="3.81" y1="60.96" x2="6.35" y2="60.96" width="0.127" layer="21"/>
@@ -9021,10 +9021,10 @@ or will meet your specific requirements.&lt;p&gt;
 <devices>
 <device name="" package="FENIXPOWERBACKPACK">
 <connects>
-<connect gate="G$1" pin="-12V" pad="-12V@1 -12V@2 -12V@3 -12V@4"/>
-<connect gate="G$1" pin="-5V" pad="-5V"/>
-<connect gate="G$1" pin="10V" pad="10V"/>
-<connect gate="G$1" pin="12V" pad="12V@1 12V@2 12V@3 12V@4"/>
+<connect gate="G$1" pin="-12V" pad="-12V@1 -12V@2 -12V@3"/>
+<connect gate="G$1" pin="-5V" pad="-5V -5V@2"/>
+<connect gate="G$1" pin="10V" pad="10V 10V@2"/>
+<connect gate="G$1" pin="12V" pad="12V@1 12V@2 12V@4"/>
 <connect gate="G$1" pin="5V" pad="5V@1 5V@2 5V@3 5V@4"/>
 <connect gate="G$1" pin="GND" pad="GND@1 GND@2 GND@3 GND@4 GND@5 GND@6 GND@7 GND@8 GND@9 GND@10 GND@11 GND@12 GND@13 GND@14"/>
 <connect gate="G$1" pin="VIN(18V)" pad="VIN@1 VIN@2 VIN@3 VIN@4"/>
@@ -9035,10 +9035,10 @@ or will meet your specific requirements.&lt;p&gt;
 </device>
 <device name="_MODULE" package="FENIXPOWERBACKPACK">
 <connects>
-<connect gate="G$1" pin="-12V" pad="-12V@1 -12V@2 -12V@3 -12V@4" route="any"/>
-<connect gate="G$1" pin="-5V" pad="-5V"/>
-<connect gate="G$1" pin="10V" pad="10V"/>
-<connect gate="G$1" pin="12V" pad="12V@1 12V@2 12V@3 12V@4" route="any"/>
+<connect gate="G$1" pin="-12V" pad="-12V@1 -12V@2 -12V@3" route="any"/>
+<connect gate="G$1" pin="-5V" pad="-5V -5V@2" route="any"/>
+<connect gate="G$1" pin="10V" pad="10V 10V@2" route="any"/>
+<connect gate="G$1" pin="12V" pad="12V@1 12V@2 12V@4" route="any"/>
 <connect gate="G$1" pin="5V" pad="5V@1 5V@2 5V@3 5V@4" route="any"/>
 <connect gate="G$1" pin="GND" pad="GND@1 GND@2 GND@3 GND@4 GND@5 GND@6 GND@7 GND@8 GND@9 GND@10 GND@11 GND@12 GND@13 GND@14" route="any"/>
 <connect gate="G$1" pin="VIN(18V)" pad="VIN@1 VIN@2 VIN@3 VIN@4"/>
