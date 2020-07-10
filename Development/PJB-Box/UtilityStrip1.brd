@@ -606,7 +606,7 @@ We've spent an enormous amount of time creating and checking these footprints an
 <pad name="1" x="-2.54" y="0" drill="0.8128" diameter="1.6002" shape="octagon"/>
 <pad name="2" x="2.54" y="0" drill="0.8128" diameter="1.6002" shape="octagon"/>
 <text x="-2.54" y="2.54" size="1.27" layer="25" ratio="10">&gt;NAME</text>
-<text x="-2.54" y="-3.81" size="1.27" layer="27" ratio="10">&gt;VALUE</text>
+<text x="0" y="1.524" size="0.762" layer="21" ratio="10" align="center">&gt;VALUE</text>
 </package>
 </packages>
 </library>
