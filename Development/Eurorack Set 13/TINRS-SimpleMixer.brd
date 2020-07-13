@@ -733,7 +733,7 @@ design rules under a new name.</description>
 </element>
 <element name="MIXERCHANNEL1:C5" library="OPL" package="C0603" value="100n" x="-90.17" y="68.58"/>
 <element name="MIXERCHANNEL1:C6" library="OPL" package="C0603" value="100n" x="-91.44" y="66.04"/>
-<element name="MIXERCHANNEL1:IC1" library="EurorackModularParts" package="SO08" value="NE5532D" x="-100.33" y="68.58"/>
+<element name="MIXERCHANNEL1:IC1" library="EurorackModularParts" package="SO08" value="NE5532D" x="-66.04" y="73.66"/>
 <element name="MIXERCHANNEL1:R4" library="OPL" package="R0603" value="4.7k" x="-105.41" y="63.5"/>
 <element name="MIXERCHANNEL1:R6" library="OPL" package="R0603" value="4.7k" x="-106.68" y="60.96"/>
 <element name="MIXERCHANNEL1:R7" library="OPL" package="R0603" value="4.7k" x="-107.95" y="58.42"/>
@@ -777,8 +777,7 @@ design rules under a new name.</description>
 <wire x1="-71.01" y1="97.79" x2="-63.61" y2="97.79" width="0" layer="19" extent="16-16"/>
 <wire x1="-90.932" y1="68.58" x2="-71.01" y2="97.79" width="0" layer="19" extent="1-16"/>
 <wire x1="-90.678" y1="66.04" x2="-90.932" y2="68.58" width="0" layer="19" extent="1-1"/>
-<wire x1="-98.425" y1="71.18" x2="-90.932" y2="68.58" width="0" layer="19" extent="1-1"/>
-<wire x1="-99.695" y1="65.98" x2="-98.425" y2="71.18" width="0" layer="19" extent="1-1"/>
+<wire x1="-65.405" y1="71.06" x2="-64.135" y2="76.26" width="0" layer="19" extent="1-1"/>
 <wire x1="-67.818" y1="-15.24" x2="-24.09" y2="87.75" width="0" layer="19" extent="1-1"/>
 <wire x1="-78.232" y1="-13.97" x2="-67.818" y2="-15.24" width="0" layer="19" extent="1-1"/>
 <wire x1="-76.2" y1="-16.51" x2="-78.232" y2="-13.97" width="0" layer="19" extent="1-1"/>
@@ -789,6 +788,13 @@ design rules under a new name.</description>
 <wire x1="-72.39" y1="-25.4" x2="-72.39" y2="-27.94" width="0" layer="19" extent="1-1"/>
 <wire x1="-69.85" y1="-27.94" x2="-72.39" y2="-27.94" width="0" layer="19" extent="1-1"/>
 <wire x1="-69.85" y1="-25.4" x2="-72.39" y2="-25.4" width="0" layer="19" extent="1-1"/>
+<wire x1="-64.135" y1="76.26" x2="-55.82" y2="76.26" width="0.254" layer="1"/>
+<wire x1="-55.82" y1="76.26" x2="-53.34" y2="78.74" width="0.254" layer="1"/>
+<wire x1="-53.34" y1="78.74" x2="-53.34" y2="77.47" width="0.254" layer="1"/>
+<wire x1="-53.34" y1="77.47" x2="-46.99" y2="76.2" width="0.254" layer="1"/>
+<wire x1="-46.99" y1="76.2" x2="-46.99" y2="69.85" width="0.254" layer="1"/>
+<wire x1="-46.99" y1="69.85" x2="-50.8" y2="68.58" width="0.254" layer="1"/>
+<wire x1="-50.8" y1="68.58" x2="-65.405" y2="71.06" width="0" layer="19" extent="1-16"/>
 </signal>
 <signal name="-12V">
 <contactref element="C2" pad="-"/>
@@ -799,7 +805,7 @@ design rules under a new name.</description>
 <wire x1="-76.708" y1="-13.97" x2="-74.2" y2="-20.32" width="0" layer="19" extent="1-1"/>
 <wire x1="-73.66" y1="-16.51" x2="-76.708" y2="-13.97" width="0" layer="19" extent="1-1"/>
 <wire x1="-89.408" y1="68.58" x2="-74.2" y2="-20.32" width="0" layer="19" extent="1-1"/>
-<wire x1="-98.425" y1="65.98" x2="-89.408" y2="68.58" width="0" layer="19" extent="1-1"/>
+<wire x1="-64.135" y1="71.06" x2="-89.408" y2="68.58" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="12V">
 <contactref element="C1" pad="+"/>
@@ -810,7 +816,7 @@ design rules under a new name.</description>
 <wire x1="-69.342" y1="-15.24" x2="-60.23" y2="-17.78" width="0" layer="19" extent="1-1"/>
 <wire x1="-69.85" y1="-19.05" x2="-69.342" y2="-15.24" width="0" layer="19" extent="1-1"/>
 <wire x1="-92.202" y1="66.04" x2="-60.23" y2="-17.78" width="0" layer="19" extent="1-1"/>
-<wire x1="-102.235" y1="71.18" x2="-92.202" y2="66.04" width="0" layer="19" extent="1-1"/>
+<wire x1="-67.945" y1="76.26" x2="-92.202" y2="66.04" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="N$9">
 <contactref element="J1" pad="9"/>
@@ -833,7 +839,7 @@ design rules under a new name.</description>
 <contactref element="MIXERCHANNEL1:R8" pad="2"/>
 <wire x1="-108.458" y1="55.88" x2="-111.252" y2="53.34" width="0" layer="19" extent="1-1"/>
 <wire x1="-104.648" y1="63.5" x2="-108.458" y2="55.88" width="0" layer="19" extent="1-1"/>
-<wire x1="-100.965" y1="65.98" x2="-104.648" y2="63.5" width="0" layer="19" extent="1-1"/>
+<wire x1="-66.675" y1="71.06" x2="-104.648" y2="63.5" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="MIXERCHANNEL1:N$10">
 <contactref element="MIXERCHANNEL1:J2" pad="TIP_B@1" route="any" routetag="G$1.TIP"/>
@@ -860,8 +866,8 @@ design rules under a new name.</description>
 <contactref element="MIXERCHANNEL1:10KA" pad="P$3"/>
 <contactref element="MIXERCHANNEL1:R9" pad="2"/>
 <contactref element="MIXERCHANNEL1:IC1" pad="1"/>
-<wire x1="-102.235" y1="65.98" x2="-19.01" y2="87.75" width="0" layer="19" extent="1-1"/>
-<wire x1="-109.728" y1="53.34" x2="-102.235" y2="65.98" width="0" layer="19" extent="1-1"/>
+<wire x1="-67.945" y1="71.06" x2="-19.01" y2="87.75" width="0" layer="19" extent="1-1"/>
+<wire x1="-109.728" y1="53.34" x2="-67.945" y2="71.06" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="MIXERCHANNEL1:N$5">
 <contactref element="MIXERCHANNEL1:R5" pad="1"/>
@@ -885,17 +891,17 @@ design rules under a new name.</description>
 <contactref element="MIXERCHANNEL1:R7" pad="1"/>
 <wire x1="-108.712" y1="58.42" x2="-112.268" y2="48.26" width="0" layer="19" extent="1-1"/>
 <wire x1="-105.918" y1="60.96" x2="-108.712" y2="58.42" width="0" layer="19" extent="1-1"/>
-<wire x1="-99.695" y1="71.18" x2="-105.918" y2="60.96" width="0" layer="19" extent="1-1"/>
+<wire x1="-65.405" y1="76.26" x2="-105.918" y2="60.96" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="MIXERCHANNEL1:N$12">
 <contactref element="MIXERCHANNEL1:R10" pad="1"/>
 <contactref element="MIXERCHANNEL1:IC1" pad="7"/>
-<wire x1="-100.965" y1="71.18" x2="-112.522" y2="50.8" width="0" layer="19" extent="1-1"/>
+<wire x1="-66.675" y1="76.26" x2="-112.522" y2="50.8" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="MIXERCHANNEL1:N$13">
 <contactref element="MIXERCHANNEL1:C7" pad="1"/>
 <contactref element="MIXERCHANNEL1:IC1" pad="7"/>
-<wire x1="-100.965" y1="71.18" x2="-113.792" y2="48.26" width="0" layer="19" extent="1-1"/>
+<wire x1="-66.675" y1="76.26" x2="-113.792" y2="48.26" width="0" layer="19" extent="1-1"/>
 </signal>
 </signals>
 </board>
