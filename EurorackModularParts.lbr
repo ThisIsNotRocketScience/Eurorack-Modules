@@ -6,29 +6,29 @@
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.05" unitdist="inch" unit="inch" style="lines" multiple="1" display="yes" altdistance="0.025" altunitdist="inch" altunit="inch"/>
+<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
 <layers>
-<layer number="1" name="Top" color="4" fill="1" visible="no" active="yes"/>
-<layer number="2" name="Route2" color="1" fill="3" visible="no" active="yes"/>
-<layer number="3" name="Route3" color="4" fill="3" visible="no" active="yes"/>
-<layer number="4" name="Route4" color="1" fill="4" visible="no" active="yes"/>
-<layer number="5" name="Route5" color="4" fill="4" visible="no" active="yes"/>
-<layer number="6" name="Route6" color="1" fill="8" visible="no" active="yes"/>
-<layer number="7" name="Route7" color="4" fill="8" visible="no" active="yes"/>
-<layer number="8" name="Route8" color="1" fill="2" visible="no" active="yes"/>
-<layer number="9" name="Route9" color="4" fill="2" visible="no" active="yes"/>
-<layer number="10" name="Route10" color="1" fill="7" visible="no" active="yes"/>
-<layer number="11" name="Route11" color="4" fill="7" visible="no" active="yes"/>
-<layer number="12" name="Route12" color="1" fill="5" visible="no" active="yes"/>
-<layer number="13" name="Route13" color="4" fill="5" visible="no" active="yes"/>
-<layer number="14" name="Route14" color="1" fill="6" visible="no" active="yes"/>
-<layer number="15" name="Route15" color="4" fill="6" visible="no" active="yes"/>
-<layer number="16" name="Bottom" color="1" fill="1" visible="no" active="yes"/>
-<layer number="17" name="Pads" color="2" fill="1" visible="no" active="yes"/>
-<layer number="18" name="Vias" color="2" fill="1" visible="no" active="yes"/>
-<layer number="19" name="Unrouted" color="6" fill="1" visible="no" active="yes"/>
-<layer number="20" name="Dimension" color="15" fill="1" visible="no" active="yes"/>
-<layer number="21" name="tPlace" color="7" fill="1" visible="no" active="yes"/>
+<layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
+<layer number="2" name="Route2" color="1" fill="3" visible="yes" active="yes"/>
+<layer number="3" name="Route3" color="4" fill="3" visible="yes" active="yes"/>
+<layer number="4" name="Route4" color="1" fill="4" visible="yes" active="yes"/>
+<layer number="5" name="Route5" color="4" fill="4" visible="yes" active="yes"/>
+<layer number="6" name="Route6" color="1" fill="8" visible="yes" active="yes"/>
+<layer number="7" name="Route7" color="4" fill="8" visible="yes" active="yes"/>
+<layer number="8" name="Route8" color="1" fill="2" visible="yes" active="yes"/>
+<layer number="9" name="Route9" color="4" fill="2" visible="yes" active="yes"/>
+<layer number="10" name="Route10" color="1" fill="7" visible="yes" active="yes"/>
+<layer number="11" name="Route11" color="4" fill="7" visible="yes" active="yes"/>
+<layer number="12" name="Route12" color="1" fill="5" visible="yes" active="yes"/>
+<layer number="13" name="Route13" color="4" fill="5" visible="yes" active="yes"/>
+<layer number="14" name="Route14" color="1" fill="6" visible="yes" active="yes"/>
+<layer number="15" name="Route15" color="4" fill="6" visible="yes" active="yes"/>
+<layer number="16" name="Bottom" color="1" fill="1" visible="yes" active="yes"/>
+<layer number="17" name="Pads" color="2" fill="1" visible="yes" active="yes"/>
+<layer number="18" name="Vias" color="2" fill="1" visible="yes" active="yes"/>
+<layer number="19" name="Unrouted" color="6" fill="1" visible="yes" active="yes"/>
+<layer number="20" name="Dimension" color="15" fill="1" visible="yes" active="yes"/>
+<layer number="21" name="tPlace" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="22" name="bPlace" color="7" fill="1" visible="no" active="yes"/>
 <layer number="23" name="tOrigins" color="15" fill="1" visible="no" active="yes"/>
 <layer number="24" name="bOrigins" color="15" fill="1" visible="no" active="yes"/>
@@ -66,6 +66,8 @@
 <layer number="57" name="tCAD" color="7" fill="1" visible="no" active="no"/>
 <layer number="59" name="tCarbon" color="7" fill="1" visible="no" active="no"/>
 <layer number="60" name="bCarbon" color="7" fill="1" visible="no" active="no"/>
+<layer number="88" name="SimResults" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="89" name="SimProbes" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="90" name="Modules" color="5" fill="1" visible="yes" active="yes"/>
 <layer number="91" name="Nets" color="2" fill="1" visible="yes" active="yes"/>
 <layer number="92" name="Busses" color="1" fill="1" visible="yes" active="yes"/>
@@ -5628,9 +5630,9 @@ MAX3223-MAX3243.pdf</description>
 <wire x1="88.9" y1="62.23" x2="59.055" y2="62.23" width="0.127" layer="21"/>
 <wire x1="59.055" y1="62.23" x2="31.115" y2="62.23" width="0.127" layer="21"/>
 <wire x1="31.115" y1="62.23" x2="-0.762" y2="62.23" width="0.127" layer="21"/>
-<wire x1="-0.762" y1="62.23" x2="-0.762" y2="6.985" width="0.127" layer="21"/>
-<wire x1="-0.762" y1="6.985" x2="88.9" y2="6.985" width="0.127" layer="21"/>
-<wire x1="88.9" y1="6.985" x2="88.9" y2="62.23" width="0.127" layer="21"/>
+<wire x1="-0.762" y1="62.23" x2="-0.762" y2="5.985" width="0.127" layer="21"/>
+<wire x1="-0.762" y1="5.985" x2="88.9" y2="5.985" width="0.127" layer="21"/>
+<wire x1="88.9" y1="5.985" x2="88.9" y2="62.23" width="0.127" layer="21"/>
 <text x="44.45" y="60.96" size="1.27" layer="21" align="center">FENIX POWER BACKPACK</text>
 <wire x1="31.115" y1="62.23" x2="31.115" y2="59.69" width="0.127" layer="21"/>
 <wire x1="31.115" y1="59.69" x2="59.055" y2="59.69" width="0.127" layer="21"/>
@@ -5675,9 +5677,87 @@ MAX3223-MAX3243.pdf</description>
 <wire x1="87.63" y1="60.96" x2="87.63" y2="40.64" width="0.127" layer="22"/>
 <wire x1="87.63" y1="40.64" x2="85.09" y2="40.64" width="0.127" layer="22"/>
 <wire x1="85.09" y1="40.64" x2="85.09" y2="60.96" width="0.127" layer="22"/>
-<rectangle x1="62.23" y1="16.51" x2="77.47" y2="39.37" layer="51"/>
-<rectangle x1="16.51" y1="34.29" x2="38.1" y2="49.53" layer="51"/>
-<rectangle x1="16.51" y1="11.43" x2="38.1" y2="26.67" layer="51"/>
+<rectangle x1="62.865" y1="20.32" x2="78.105" y2="43.18" layer="51"/>
+<rectangle x1="40.64" y1="20.32" x2="55.88" y2="43.18" layer="51"/>
+<rectangle x1="12.065" y1="20.32" x2="27.305" y2="43.18" layer="51"/>
+</package>
+<package name="BANANAHOLE">
+<circle x="0" y="0" radius="2.55" width="0.127" layer="255"/>
+<circle x="0" y="0" radius="5" width="0.127" layer="51"/>
+</package>
+<package name="BANANABOX">
+<wire x1="0" y1="46" x2="0" y2="4" width="0.127" layer="255"/>
+<wire x1="0" y1="4" x2="4" y2="0" width="0.127" layer="255" curve="90"/>
+<wire x1="4" y1="0" x2="126" y2="0" width="0.127" layer="255"/>
+<wire x1="126" y1="0" x2="130" y2="4" width="0.127" layer="255" curve="90"/>
+<wire x1="130" y1="4" x2="130" y2="46" width="0.127" layer="255"/>
+<wire x1="130" y1="46" x2="126" y2="50" width="0.127" layer="255" curve="90"/>
+<wire x1="126" y1="50" x2="4" y2="50" width="0.127" layer="255"/>
+<wire x1="4" y1="50" x2="0" y2="46" width="0.127" layer="255" curve="90"/>
+<wire x1="4" y1="54" x2="126" y2="54" width="0.127" layer="51"/>
+<wire x1="126" y1="54" x2="134" y2="46" width="0.127" layer="51" curve="-90"/>
+<wire x1="134" y1="46" x2="134" y2="4" width="0.127" layer="51"/>
+<wire x1="134" y1="4" x2="126" y2="-4" width="0.127" layer="51" curve="-90"/>
+<wire x1="126" y1="-4" x2="4" y2="-4" width="0.127" layer="51"/>
+<wire x1="4" y1="-4" x2="-4" y2="4" width="0.127" layer="51" curve="-90"/>
+<wire x1="-4" y1="4" x2="-4" y2="46" width="0.127" layer="51"/>
+<wire x1="-4" y1="46" x2="4" y2="54" width="0.127" layer="51" curve="-90"/>
+<circle x="4" y="46" radius="1.65" width="0.127" layer="255"/>
+<circle x="4" y="4" radius="1.65" width="0.127" layer="255"/>
+<circle x="126" y="4" radius="1.65" width="0.127" layer="255"/>
+<circle x="126" y="46" radius="1.65" width="0.127" layer="255"/>
+<text x="3" y="55" size="1.27" layer="51">BANANA BOX
+Inside size: 130x50mm</text>
+<wire x1="8" y1="50" x2="8" y2="46" width="0.127" layer="51"/>
+<wire x1="8" y1="46" x2="4" y2="42" width="0.127" layer="51" curve="-90"/>
+<wire x1="4" y1="42" x2="0" y2="42" width="0.127" layer="51"/>
+<wire x1="122" y1="0" x2="122" y2="4" width="0.127" layer="51"/>
+<wire x1="122" y1="4" x2="126" y2="8" width="0.127" layer="51" curve="-90"/>
+<wire x1="126" y1="8" x2="130" y2="8" width="0.127" layer="51"/>
+<wire x1="0" y1="8" x2="4" y2="8" width="0.127" layer="51"/>
+<wire x1="4" y1="8" x2="8" y2="4" width="0.127" layer="51" curve="-90"/>
+<wire x1="8" y1="4" x2="8" y2="0" width="0.127" layer="51"/>
+<wire x1="130" y1="42" x2="126" y2="42" width="0.127" layer="51"/>
+<wire x1="126" y1="42" x2="122" y2="46" width="0.127" layer="51" curve="-90"/>
+<wire x1="122" y1="46" x2="122" y2="50" width="0.127" layer="51"/>
+</package>
+<package name="SOT-23-3$1">
+<wire x1="-1.5" y1="0.65" x2="1.5" y2="0.65" width="0.127" layer="21"/>
+<wire x1="1.5" y1="0.65" x2="1.5" y2="-0.65" width="0.127" layer="21"/>
+<wire x1="1.5" y1="-0.65" x2="-1.5" y2="-0.65" width="0.127" layer="21"/>
+<wire x1="-1.5" y1="-0.65" x2="-1.5" y2="0.65" width="0.127" layer="21"/>
+<smd name="3" x="0" y="1.05" dx="0.8" dy="1" layer="1"/>
+<smd name="2" x="0.95" y="-1.05" dx="0.8" dy="1" layer="1" rot="R180"/>
+<smd name="1" x="-0.95" y="-1.05" dx="0.8" dy="1" layer="1" rot="R180"/>
+<text x="-2.896" y="1.916" size="1.27" layer="25" ratio="10">&gt;NAME</text>
+<text x="-3.046" y="-3.2098" size="1.27" layer="27" ratio="10">&gt;VALUE</text>
+</package>
+<package name="FAIRRITE_FERRITE">
+<wire x1="-4.8" y1="1.55" x2="4.8" y2="1.55" width="0.127" layer="21"/>
+<wire x1="4.8" y1="1.55" x2="4.8" y2="-1.55" width="0.127" layer="21"/>
+<wire x1="4.8" y1="-1.55" x2="-4.8" y2="-1.55" width="0.127" layer="21"/>
+<wire x1="-4.8" y1="-1.55" x2="-4.8" y2="1.55" width="0.127" layer="21"/>
+<smd name="P$1" x="-3.75" y="0" dx="1.8" dy="3" layer="1" rot="R90"/>
+<smd name="P$2" x="3.75" y="0" dx="1.8" dy="3" layer="1" rot="R90"/>
+</package>
+<package name="FILMCAP">
+<pad name="P$1" x="-5.08" y="0" drill="1" diameter="1.778"/>
+<pad name="P$2" x="5.08" y="0" drill="1" diameter="1.778"/>
+<wire x1="-5.08" y1="3.175" x2="5.08" y2="3.175" width="0.127" layer="21"/>
+<wire x1="-5.08" y1="-3.175" x2="5.08" y2="-3.175" width="0.127" layer="21"/>
+<wire x1="5.08" y1="-3.175" x2="8.255" y2="0" width="0.127" layer="21" curve="90"/>
+<wire x1="8.255" y1="0" x2="5.08" y2="3.175" width="0.127" layer="21" curve="90"/>
+<wire x1="-5.08" y1="3.175" x2="-8.255" y2="0" width="0.127" layer="21" curve="90"/>
+<wire x1="-8.255" y1="0" x2="-5.08" y2="-3.175" width="0.127" layer="21" curve="90"/>
+<text x="0" y="0" size="1.27" layer="21" rot="R25" align="center">&gt;VALUE</text>
+</package>
+<package name="FERRITE_1812">
+<smd name="P$1" x="-2.1175" y="0" dx="4.22" dy="1.665" layer="1" rot="R90"/>
+<smd name="P$2" x="2.1175" y="0" dx="4.22" dy="1.665" layer="1" rot="R90"/>
+<wire x1="-2.25" y1="1.75" x2="2.25" y2="1.75" width="0.127" layer="21"/>
+<wire x1="2.25" y1="1.75" x2="2.25" y2="-1.75" width="0.127" layer="21"/>
+<wire x1="2.25" y1="-1.75" x2="-2.25" y2="-1.75" width="0.127" layer="21"/>
+<wire x1="-2.25" y1="-1.75" x2="-2.25" y2="1.75" width="0.127" layer="21"/>
 </package>
 </packages>
 <symbols>
@@ -6985,6 +7065,54 @@ Quad VCA</text>
 <wire x1="30.48" y1="5.08" x2="30.48" y2="-2.54" width="0.254" layer="94"/>
 <wire x1="30.48" y1="-2.54" x2="-2.54" y2="-2.54" width="0.254" layer="94"/>
 <wire x1="-2.54" y1="-2.54" x2="-2.54" y2="5.08" width="0.254" layer="94"/>
+</symbol>
+<symbol name="BANANAHOLE">
+<text x="0" y="0" size="1.27" layer="94">BANANAHOLE</text>
+</symbol>
+<symbol name="BANANABOX">
+<text x="0" y="0" size="1.27" layer="94">BANANA BOX</text>
+<wire x1="-2.54" y1="2.54" x2="-2.54" y2="-2.54" width="0.254" layer="94"/>
+<wire x1="-2.54" y1="-2.54" x2="12.7" y2="-2.54" width="0.254" layer="94"/>
+<wire x1="12.7" y1="-2.54" x2="12.7" y2="2.54" width="0.254" layer="94"/>
+<wire x1="12.7" y1="2.54" x2="-2.54" y2="2.54" width="0.254" layer="94"/>
+</symbol>
+<symbol name="TL431">
+<wire x1="-1.778" y1="2.032" x2="1.778" y2="2.032" width="0.254" layer="94"/>
+<wire x1="1.778" y1="2.032" x2="1.778" y2="3.048" width="0.254" layer="94"/>
+<wire x1="-1.778" y1="2.032" x2="-1.778" y2="1.016" width="0.254" layer="94"/>
+<wire x1="2.54" y1="0" x2="0" y2="0" width="0.1524" layer="94"/>
+<wire x1="0" y1="-2.54" x2="0" y2="0" width="0.1524" layer="94"/>
+<wire x1="0" y1="2.54" x2="0" y2="0" width="0.1524" layer="94"/>
+<pin name="CATHODE" x="0" y="5.08" visible="off" length="short" rot="R270"/>
+<pin name="ANODE" x="0" y="-5.08" visible="off" length="short" rot="R90"/>
+<pin name="REF" x="5.08" y="0" visible="off" length="short" rot="R180"/>
+<text x="-2.54" y="-1.524" size="1.778" layer="95" rot="R90">&gt;NAME</text>
+<text x="1.016" y="-4.064" size="1.778" layer="96">&gt;VALUE</text>
+<polygon width="0.254" layer="94">
+<vertex x="0" y="2.032"/>
+<vertex x="-1.778" y="-1.524"/>
+<vertex x="1.778" y="-1.524"/>
+</polygon>
+</symbol>
+<symbol name="FERRITE">
+<pin name="P$1" x="-5.08" y="0" visible="off" length="short"/>
+<pin name="P$2" x="5.08" y="0" visible="off" length="short" rot="R180"/>
+<wire x1="-2.54" y1="1.27" x2="-2.54" y2="-1.27" width="0.254" layer="94"/>
+<wire x1="-2.54" y1="-1.27" x2="2.54" y2="-1.27" width="0.254" layer="94"/>
+<wire x1="2.54" y1="-1.27" x2="2.54" y2="1.27" width="0.254" layer="94"/>
+<wire x1="2.54" y1="1.27" x2="-2.54" y2="1.27" width="0.254" layer="94"/>
+<wire x1="-1.27" y1="0" x2="1.27" y2="0" width="0.254" layer="94"/>
+<text x="-2.54" y="1.778" size="1.27" layer="94">&gt;NAME</text>
+</symbol>
+<symbol name="C-BIGFILM">
+<pin name="P$1" x="-7.62" y="0" visible="off" length="short"/>
+<pin name="P$2" x="7.62" y="0" visible="off" length="short" rot="R180"/>
+<rectangle x1="0.254" y1="-3.302" x2="1.016" y2="3.302" layer="94"/>
+<rectangle x1="-1.016" y1="-3.302" x2="-0.254" y2="3.302" layer="94"/>
+<wire x1="-5.08" y1="0" x2="-0.762" y2="0" width="0.1524" layer="94"/>
+<wire x1="0.762" y1="0" x2="5.08" y2="0" width="0.1524" layer="94"/>
+<text x="-1.27" y="0.254" size="1.27" layer="94" rot="R90">&gt;NAME</text>
+<text x="1.27" y="0.254" size="1.27" layer="94" rot="R90" align="top-left">&gt;VALUE</text>
 </symbol>
 </symbols>
 <devicesets>
@@ -9066,6 +9194,88 @@ or will meet your specific requirements.&lt;p&gt;
 </technologies>
 </device>
 <device name="_MODULE" package="FENIXPOWERBACKPACK_MODULE">
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="BANANAHOLE">
+<gates>
+<gate name="G$1" symbol="BANANAHOLE" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="BANANAHOLE">
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="BANANABOX">
+<gates>
+<gate name="G$1" symbol="BANANABOX" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="BANANABOX">
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="TL431" prefix="U" uservalue="yes">
+<gates>
+<gate name="G$1" symbol="TL431" x="0" y="0"/>
+</gates>
+<devices>
+<device name="SOT23-3" package="SOT-23-3$1">
+<connects>
+<connect gate="G$1" pin="ANODE" pad="3"/>
+<connect gate="G$1" pin="CATHODE" pad="2"/>
+<connect gate="G$1" pin="REF" pad="1"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="FERRITE" prefix="L">
+<gates>
+<gate name="G$1" symbol="FERRITE" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="FAIRRITE_FERRITE">
+<connects>
+<connect gate="G$1" pin="P$1" pad="P$1"/>
+<connect gate="G$1" pin="P$2" pad="P$2"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="_1812" package="FERRITE_1812">
+<connects>
+<connect gate="G$1" pin="P$1" pad="P$1"/>
+<connect gate="G$1" pin="P$2" pad="P$2"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="C-BIGFILM" prefix="C">
+<gates>
+<gate name="G$1" symbol="C-BIGFILM" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="FILMCAP">
+<connects>
+<connect gate="G$1" pin="P$1" pad="P$1"/>
+<connect gate="G$1" pin="P$2" pad="P$2"/>
+</connects>
 <technologies>
 <technology name=""/>
 </technologies>

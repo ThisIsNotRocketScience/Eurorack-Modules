@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="6.4">
+<eagle version="7.7.0">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
@@ -1428,7 +1428,7 @@
 <pin name="1/TX1/T/MISO1" x="-22.86" y="25.4" visible="pin" length="middle"/>
 <pin name="0/RX1/T/MOSI1" x="-22.86" y="27.94" visible="pin" length="middle"/>
 <pin name="GND" x="22.86" y="17.78" visible="pin" length="middle" direction="pwr" rot="R180"/>
-<pin name="3.3V" x="22.86" y="22.86" visible="pin" length="middle" direction="pwr" rot="R180"/>
+<pin name="3.3V" x="22.86" y="22.86" visible="pin" length="middle" rot="R180"/>
 <pin name="23/A9/T/PWM/SDA1" x="-22.86" y="-30.48" visible="pin" length="middle"/>
 <pin name="22/A8/T/PWM/SCL1" x="-22.86" y="-27.94" visible="pin" length="middle"/>
 <pin name="21/A7" x="-22.86" y="-25.4" visible="pin" length="middle"/>
@@ -1441,15 +1441,15 @@
 <pin name="14/A0" x="-22.86" y="-7.62" visible="pin" length="middle"/>
 <pin name="13/SCK/LED" x="-22.86" y="-5.08" visible="pin" length="middle"/>
 <pin name="PGM" x="22.86" y="12.7" visible="pin" length="middle" rot="R180"/>
-<pin name="26/A12/DAC" x="22.86" y="-22.86" visible="pin" length="middle" direction="pwr" rot="R180"/>
+<pin name="26/A12/DAC" x="22.86" y="-22.86" visible="pin" length="middle" rot="R180"/>
 <text x="-5.588" y="34.29" size="1.27" layer="95" font="vector" ratio="15">&gt;NAME</text>
 <text x="-2.794" y="-38.1" size="1.27" layer="96" font="vector" ratio="15">&gt;VALUE</text>
 <pin name="A10" x="22.86" y="-5.08" visible="pin" length="middle" rot="R180"/>
 <pin name="A11" x="22.86" y="-2.54" visible="pin" length="middle" rot="R180"/>
-<pin name="AREF" x="22.86" y="7.62" visible="pin" length="middle" direction="pwr" rot="R180"/>
-<pin name="VUSB" x="22.86" y="27.94" visible="pin" length="middle" direction="pwr" rot="R180"/>
+<pin name="AREF" x="22.86" y="7.62" visible="pin" length="middle" rot="R180"/>
+<pin name="VUSB" x="22.86" y="27.94" visible="pin" length="middle" rot="R180"/>
 <pin name="17_AT_VIN" x="22.86" y="-15.24" visible="pin" length="middle" rot="R180"/>
-<pin name="VIN" x="22.86" y="25.4" visible="pin" length="middle" direction="pwr" rot="R180"/>
+<pin name="VIN" x="22.86" y="25.4" visible="pin" length="middle" rot="R180"/>
 </symbol>
 <symbol name="TEENSY_LC_OUTER_ROW">
 <wire x1="-17.78" y1="-33.02" x2="17.78" y2="-33.02" width="0.254" layer="94"/>
@@ -2569,7 +2569,7 @@
 <connect gate="G$1" pin="22/A8/T/PWM/SCL1" pad="22/A8"/>
 <connect gate="G$1" pin="23/A9/T/PWM/SDA1" pad="23/A9"/>
 <connect gate="G$1" pin="26/A12/DAC" pad="RESET/DAC"/>
-<connect gate="G$1" pin="3.3V" pad="3.3V 3.3V1"/>
+<connect gate="G$1" pin="3.3V" pad="3.3V 3.3V1" route="any"/>
 <connect gate="G$1" pin="3/T/PWM" pad="3"/>
 <connect gate="G$1" pin="4/T/PWM" pad="4"/>
 <connect gate="G$1" pin="5" pad="5"/>
@@ -2580,7 +2580,7 @@
 <connect gate="G$1" pin="A10" pad="A10"/>
 <connect gate="G$1" pin="A11" pad="A11"/>
 <connect gate="G$1" pin="AREF" pad="AREF"/>
-<connect gate="G$1" pin="GND" pad="AGND GND GND1"/>
+<connect gate="G$1" pin="GND" pad="AGND GND GND1" route="any"/>
 <connect gate="G$1" pin="PGM" pad="PGM"/>
 <connect gate="G$1" pin="VIN" pad="VIN"/>
 <connect gate="G$1" pin="VUSB" pad="VUSB"/>
