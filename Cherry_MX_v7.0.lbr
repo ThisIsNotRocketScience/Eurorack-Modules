@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.05" unitdist="inch" unit="inch" style="lines" multiple="1" display="yes" altdistance="0.025" altunitdist="inch" altunit="inch"/>
+<grid distance="1" unitdist="mm" unit="mm" style="lines" multiple="1" display="yes" altdistance="0.025" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="no" active="yes"/>
 <layer number="2" name="Route2" color="1" fill="3" visible="no" active="yes"/>
@@ -151,8 +151,8 @@
 <layer number="248" name="Housing" color="7" fill="1" visible="no" active="yes"/>
 <layer number="249" name="Edge" color="7" fill="1" visible="no" active="yes"/>
 <layer number="250" name="Descript" color="7" fill="1" visible="no" active="yes"/>
-<layer number="251" name="SMDround" color="7" fill="1" visible="no" active="yes"/>
-<layer number="254" name="cooling" color="7" fill="1" visible="no" active="yes"/>
+<layer number="251" name="SMDround" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="254" name="cooling" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="255" name="Panel" color="61" fill="1" visible="yes" active="yes"/>
 </layers>
 <library>
@@ -365,26 +365,34 @@
 <wire x1="7.525" y1="9.525" x2="9.525" y2="7.525" width="0.127" layer="48" curve="-90"/>
 <wire x1="9.525" y1="7.525" x2="9.525" y2="-7.525" width="0.127" layer="48"/>
 <wire x1="9.525" y1="-7.525" x2="7.525" y2="-9.525" width="0.127" layer="48" curve="-90"/>
-<wire x1="-7" y1="7" x2="-7" y2="6" width="0.127" layer="255"/>
-<wire x1="-7" y1="2.5" x2="-7" y2="-2.5" width="0.127" layer="255"/>
-<wire x1="-7" y1="-6" x2="-7" y2="-7" width="0.127" layer="255"/>
-<wire x1="-7" y1="-7" x2="7" y2="-7" width="0.127" layer="255"/>
-<wire x1="7" y1="-7" x2="7" y2="-6" width="0.127" layer="255"/>
-<wire x1="7" y1="-2.5" x2="7" y2="2.5" width="0.127" layer="255"/>
-<wire x1="7" y1="6" x2="7" y2="7" width="0.127" layer="255"/>
-<wire x1="7" y1="7" x2="-7" y2="7" width="0.127" layer="255"/>
-<wire x1="-7.8" y1="2.5" x2="-7.8" y2="6" width="0.127" layer="255"/>
-<wire x1="-7" y1="6" x2="-7.8" y2="6" width="0.127" layer="255"/>
-<wire x1="-7.8" y1="2.5" x2="-7" y2="2.5" width="0.127" layer="255"/>
-<wire x1="7.8" y1="2.5" x2="7.8" y2="6" width="0.127" layer="255"/>
-<wire x1="7" y1="6" x2="7.8" y2="6" width="0.127" layer="255"/>
-<wire x1="7" y1="2.5" x2="7.8" y2="2.5" width="0.127" layer="255"/>
-<wire x1="7" y1="-2.5" x2="7.8" y2="-2.5" width="0.127" layer="255"/>
-<wire x1="7" y1="-6" x2="7.8" y2="-6" width="0.127" layer="255"/>
-<wire x1="7.8" y1="-6" x2="7.8" y2="-2.5" width="0.127" layer="255"/>
-<wire x1="-7.8" y1="-2.5" x2="-7" y2="-2.5" width="0.127" layer="255"/>
-<wire x1="-7" y1="-6" x2="-7.8" y2="-6" width="0.127" layer="255"/>
-<wire x1="-7.8" y1="-6" x2="-7.8" y2="-2.5" width="0.127" layer="255"/>
+<wire x1="-7" y1="7" x2="-7" y2="6" width="0.127" layer="254"/>
+<wire x1="-7" y1="2.5" x2="-7" y2="-2.5" width="0.127" layer="254"/>
+<wire x1="-7" y1="-6" x2="-7" y2="-7" width="0.127" layer="254"/>
+<wire x1="-7" y1="-7" x2="7" y2="-7" width="0.127" layer="254"/>
+<wire x1="7" y1="-7" x2="7" y2="-6" width="0.127" layer="254"/>
+<wire x1="7" y1="-2.5" x2="7" y2="2.5" width="0.127" layer="254"/>
+<wire x1="7" y1="6" x2="7" y2="7" width="0.127" layer="254"/>
+<wire x1="7" y1="7" x2="-7" y2="7" width="0.127" layer="254"/>
+<wire x1="-7.8" y1="2.5" x2="-7.8" y2="6" width="0.127" layer="254"/>
+<wire x1="-7" y1="6" x2="-7.8" y2="6" width="0.127" layer="254"/>
+<wire x1="-7.8" y1="2.5" x2="-7" y2="2.5" width="0.127" layer="254"/>
+<wire x1="7.8" y1="2.5" x2="7.8" y2="6" width="0.127" layer="254"/>
+<wire x1="7" y1="6" x2="7.8" y2="6" width="0.127" layer="254"/>
+<wire x1="7" y1="2.5" x2="7.8" y2="2.5" width="0.127" layer="254"/>
+<wire x1="7" y1="-2.5" x2="7.8" y2="-2.5" width="0.127" layer="254"/>
+<wire x1="7" y1="-6" x2="7.8" y2="-6" width="0.127" layer="254"/>
+<wire x1="7.8" y1="-6" x2="7.8" y2="-2.5" width="0.127" layer="254"/>
+<wire x1="-7.8" y1="-2.5" x2="-7" y2="-2.5" width="0.127" layer="254"/>
+<wire x1="-7" y1="-6" x2="-7.8" y2="-6" width="0.127" layer="254"/>
+<wire x1="-7.8" y1="-6" x2="-7.8" y2="-2.5" width="0.127" layer="254"/>
+<wire x1="8.5" y1="-9.5" x2="-8.5" y2="-9.5" width="0.127" layer="255"/>
+<wire x1="-8.5" y1="-9.5" x2="-9.5" y2="-8.5" width="0.127" layer="255" curve="-90"/>
+<wire x1="-9.5" y1="-8.5" x2="-9.5" y2="8.5" width="0.127" layer="255"/>
+<wire x1="-9.5" y1="8.5" x2="-8.5" y2="9.5" width="0.127" layer="255" curve="-90"/>
+<wire x1="-8.5" y1="9.5" x2="8.5" y2="9.5" width="0.127" layer="255"/>
+<wire x1="8.5" y1="9.5" x2="9.5" y2="8.5" width="0.127" layer="255" curve="-90"/>
+<wire x1="9.5" y1="8.5" x2="9.5" y2="-8.5" width="0.127" layer="255"/>
+<wire x1="9.5" y1="-8.5" x2="8.5" y2="-9.5" width="0.127" layer="255" curve="-90"/>
 </package>
 <package name="MX1A-XXNW_WITH_STABILIZER_2X">
 <wire x1="-6.8" y1="-7.8" x2="-4.8" y2="-7.8" width="0.15" layer="21"/>

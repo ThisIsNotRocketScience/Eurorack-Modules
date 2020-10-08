@@ -1,0 +1,211 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE eagle SYSTEM "eagle.dtd">
+<eagle version="7.7.0">
+<drawing>
+<settings>
+<setting alwaysvectorfont="no"/>
+<setting verticaltext="up"/>
+</settings>
+<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="yes" altdistance="0.01" altunitdist="inch" altunit="inch"/>
+<layers>
+<layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
+<layer number="2" name="Route2" color="1" fill="3" visible="no" active="yes"/>
+<layer number="3" name="Route3" color="4" fill="3" visible="no" active="yes"/>
+<layer number="4" name="Route4" color="1" fill="4" visible="no" active="yes"/>
+<layer number="5" name="Route5" color="4" fill="4" visible="no" active="yes"/>
+<layer number="6" name="Route6" color="1" fill="8" visible="no" active="yes"/>
+<layer number="7" name="Route7" color="4" fill="8" visible="no" active="yes"/>
+<layer number="8" name="Route8" color="1" fill="2" visible="no" active="yes"/>
+<layer number="9" name="Route9" color="4" fill="2" visible="no" active="yes"/>
+<layer number="10" name="Route10" color="1" fill="7" visible="no" active="yes"/>
+<layer number="11" name="Route11" color="4" fill="7" visible="no" active="yes"/>
+<layer number="12" name="Route12" color="1" fill="5" visible="no" active="yes"/>
+<layer number="13" name="Route13" color="4" fill="5" visible="no" active="yes"/>
+<layer number="14" name="Route14" color="1" fill="6" visible="no" active="yes"/>
+<layer number="15" name="Route15" color="4" fill="6" visible="no" active="yes"/>
+<layer number="16" name="Bottom" color="1" fill="1" visible="yes" active="yes"/>
+<layer number="17" name="Pads" color="2" fill="1" visible="yes" active="yes"/>
+<layer number="18" name="Vias" color="2" fill="1" visible="yes" active="yes"/>
+<layer number="19" name="Unrouted" color="6" fill="1" visible="yes" active="yes"/>
+<layer number="20" name="Dimension" color="15" fill="1" visible="yes" active="yes"/>
+<layer number="21" name="tPlace" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="22" name="bPlace" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="23" name="tOrigins" color="15" fill="1" visible="yes" active="yes"/>
+<layer number="24" name="bOrigins" color="15" fill="1" visible="yes" active="yes"/>
+<layer number="25" name="tNames" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="26" name="bNames" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="27" name="tValues" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="28" name="bValues" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="29" name="tStop" color="7" fill="3" visible="no" active="yes"/>
+<layer number="30" name="bStop" color="7" fill="6" visible="no" active="yes"/>
+<layer number="31" name="tCream" color="7" fill="4" visible="no" active="yes"/>
+<layer number="32" name="bCream" color="7" fill="5" visible="no" active="yes"/>
+<layer number="33" name="tFinish" color="6" fill="3" visible="no" active="yes"/>
+<layer number="34" name="bFinish" color="6" fill="6" visible="no" active="yes"/>
+<layer number="35" name="tGlue" color="7" fill="4" visible="no" active="yes"/>
+<layer number="36" name="bGlue" color="7" fill="5" visible="no" active="yes"/>
+<layer number="37" name="tTest" color="7" fill="1" visible="no" active="yes"/>
+<layer number="38" name="bTest" color="7" fill="1" visible="no" active="yes"/>
+<layer number="39" name="tKeepout" color="4" fill="11" visible="yes" active="yes"/>
+<layer number="40" name="bKeepout" color="1" fill="11" visible="yes" active="yes"/>
+<layer number="41" name="tRestrict" color="4" fill="10" visible="yes" active="yes"/>
+<layer number="42" name="bRestrict" color="1" fill="10" visible="yes" active="yes"/>
+<layer number="43" name="vRestrict" color="2" fill="10" visible="yes" active="yes"/>
+<layer number="44" name="Drills" color="7" fill="1" visible="no" active="yes"/>
+<layer number="45" name="Holes" color="7" fill="1" visible="no" active="yes"/>
+<layer number="46" name="Milling" color="3" fill="1" visible="no" active="yes"/>
+<layer number="47" name="Measures" color="7" fill="1" visible="no" active="yes"/>
+<layer number="48" name="Document" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="49" name="Reference" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="51" name="tDocu" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="52" name="bDocu" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="90" name="Modules" color="5" fill="1" visible="yes" active="yes"/>
+<layer number="91" name="Nets" color="2" fill="1" visible="yes" active="yes"/>
+<layer number="92" name="Busses" color="1" fill="1" visible="yes" active="yes"/>
+<layer number="93" name="Pins" color="2" fill="1" visible="yes" active="yes"/>
+<layer number="94" name="Symbols" color="4" fill="1" visible="yes" active="yes"/>
+<layer number="95" name="Names" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="96" name="Values" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="97" name="Info" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="98" name="Guide" color="6" fill="1" visible="yes" active="yes"/>
+</layers>
+<library>
+<packages>
+<package name="QFN32_4X4">
+<smd name="CENTER" x="0" y="0" dx="2.4" dy="2.4" layer="1"/>
+<smd name="21" x="1.9" y="0.2" dx="0.2" dy="0.8" layer="1" rot="R90"/>
+<smd name="20" x="1.9" y="-0.2" dx="0.2" dy="0.8" layer="1" rot="R90"/>
+<smd name="19" x="1.9" y="-0.6" dx="0.2" dy="0.8" layer="1" rot="R90"/>
+<smd name="18" x="1.9" y="-1" dx="0.2" dy="0.8" layer="1" rot="R90"/>
+<smd name="22" x="1.9" y="0.6" dx="0.2" dy="0.8" layer="1" rot="R90"/>
+<smd name="23" x="1.9" y="1" dx="0.2" dy="0.8" layer="1" rot="R90"/>
+<smd name="17" x="2.1" y="-1.4" dx="0.2" dy="0.8" layer="1" rot="R90"/>
+<smd name="24" x="2.1" y="1.4" dx="0.2" dy="0.8" layer="1" rot="R90"/>
+<smd name="25" x="1.4" y="2.1" dx="0.2" dy="0.8" layer="1" rot="R180"/>
+<smd name="26" x="1" y="1.9" dx="0.2" dy="0.8" layer="1" rot="R180"/>
+<smd name="27" x="0.6" y="1.9" dx="0.2" dy="0.8" layer="1" rot="R180"/>
+<smd name="28" x="0.2" y="1.9" dx="0.2" dy="0.8" layer="1" rot="R180"/>
+<smd name="29" x="-0.2" y="1.9" dx="0.2" dy="0.8" layer="1" rot="R180"/>
+<smd name="30" x="-0.6" y="1.9" dx="0.2" dy="0.8" layer="1" rot="R180"/>
+<smd name="31" x="-1" y="1.9" dx="0.2" dy="0.8" layer="1" rot="R180"/>
+<smd name="32" x="-1.4" y="2.1" dx="0.2" dy="0.8" layer="1" rot="R180"/>
+<smd name="1" x="-2.1" y="1.4" dx="0.2" dy="0.8" layer="1" rot="R270"/>
+<smd name="2" x="-1.9" y="1" dx="0.2" dy="0.8" layer="1" rot="R270"/>
+<smd name="3" x="-1.9" y="0.6" dx="0.2" dy="0.8" layer="1" rot="R270"/>
+<smd name="4" x="-1.9" y="0.2" dx="0.2" dy="0.8" layer="1" rot="R270"/>
+<smd name="5" x="-1.9" y="-0.2" dx="0.2" dy="0.8" layer="1" rot="R270"/>
+<smd name="6" x="-1.9" y="-0.6" dx="0.2" dy="0.8" layer="1" rot="R270"/>
+<smd name="7" x="-1.9" y="-1" dx="0.2" dy="0.8" layer="1" rot="R270"/>
+<smd name="8" x="-2.1" y="-1.4" dx="0.2" dy="0.8" layer="1" rot="R270"/>
+<smd name="9" x="-1.4" y="-2.1" dx="0.2" dy="0.8" layer="1"/>
+<smd name="10" x="-1" y="-1.9" dx="0.2" dy="0.8" layer="1"/>
+<smd name="11" x="-0.6" y="-1.9" dx="0.2" dy="0.8" layer="1"/>
+<smd name="12" x="-0.2" y="-1.9" dx="0.2" dy="0.8" layer="1"/>
+<smd name="13" x="0.2" y="-1.9" dx="0.2" dy="0.8" layer="1"/>
+<smd name="14" x="0.6" y="-1.9" dx="0.2" dy="0.8" layer="1"/>
+<smd name="15" x="1" y="-1.9" dx="0.2" dy="0.8" layer="1"/>
+<smd name="16" x="1.4" y="-2.1" dx="0.2" dy="0.8" layer="1"/>
+<rectangle x1="-2.5" y1="1.5" x2="-1.5" y2="2.5" layer="21"/>
+<wire x1="-2" y1="-1.6" x2="-2" y2="-2" width="0.2" layer="21"/>
+<wire x1="-2" y1="-2" x2="-1.6" y2="-2" width="0.2" layer="21"/>
+<wire x1="1.6" y1="-2" x2="2" y2="-2" width="0.2" layer="21"/>
+<wire x1="2" y1="-2" x2="2" y2="-1.6" width="0.2" layer="21"/>
+<wire x1="2" y1="1.6" x2="2" y2="2" width="0.2" layer="21"/>
+<wire x1="2" y1="2" x2="1.6" y2="2" width="0.2" layer="21"/>
+</package>
+</packages>
+<symbols>
+<symbol name="SSI2130">
+<pin name="TRI_OUT" x="12.7" y="7.62" length="short" rot="R180"/>
+<pin name="SINE_IN+" x="-22.86" y="17.78" length="short"/>
+<pin name="SINE_IN-" x="-22.86" y="15.24" length="short"/>
+<pin name="AUX1_IN" x="-22.86" y="2.54" length="short"/>
+<pin name="AUX2_IN" x="-22.86" y="0" length="short"/>
+<pin name="HF_TRACKING" x="-22.86" y="53.34" length="short"/>
+<pin name="EXPO_FREQ" x="-22.86" y="60.96" length="short"/>
+<pin name="V-" x="-22.86" y="-20.32" length="short"/>
+<pin name="TRI_MIX" x="-22.86" y="30.48" length="short"/>
+<pin name="SAW_MIX" x="-22.86" y="27.94" length="short"/>
+<pin name="PULSE_MIX" x="-22.86" y="33.02" length="short"/>
+<pin name="AUX1_MIX" x="-22.86" y="25.4" length="short"/>
+<pin name="AUX2_MIX" x="-22.86" y="22.86" length="short"/>
+<pin name="TCAP" x="-22.86" y="-25.4" length="short"/>
+<pin name="AGND" x="-22.86" y="-22.86" length="short"/>
+<pin name="DGND" x="-22.86" y="-27.94" length="short"/>
+<pin name="STROBE" x="-22.86" y="40.64" length="short"/>
+<pin name="TIME_REVERSE" x="-22.86" y="43.18" length="short"/>
+<pin name="SOFT_SYNC" x="-22.86" y="45.72" length="short"/>
+<pin name="HFT_BASE" x="-22.86" y="50.8" length="short"/>
+<pin name="LIN_FREQ" x="-22.86" y="55.88" length="short"/>
+<pin name="EXPO_SCALE" x="-22.86" y="58.42" length="short"/>
+<pin name="VREF" x="-22.86" y="-15.24" length="short"/>
+<pin name="SINE_OUT" x="12.7" y="2.54" length="short" rot="R180"/>
+<pin name="MIX_OUT" x="12.7" y="-5.08" length="short" rot="R180"/>
+<pin name="BW_CONTROL" x="-22.86" y="38.1" length="short"/>
+<pin name="V+" x="-22.86" y="-17.78" length="short"/>
+<pin name="SQUARE_OUT" x="12.7" y="10.16" length="short" rot="R180"/>
+<pin name="SAW_OUT" x="12.7" y="0" length="short" rot="R180"/>
+<pin name="PULSE_OUT" x="12.7" y="5.08" length="short" rot="R180"/>
+<pin name="PWM_IN-" x="-22.86" y="7.62" length="short"/>
+<pin name="PWM_IN+" x="-22.86" y="10.16" length="short"/>
+<text x="5.08" y="38.1" size="5.08" layer="94" rot="R90" align="center">SSI2130 VCO</text>
+<wire x1="-20.32" y1="63.5" x2="-20.32" y2="-30.48" width="0.254" layer="94"/>
+<wire x1="-20.32" y1="-30.48" x2="10.16" y2="-30.48" width="0.254" layer="94"/>
+<wire x1="10.16" y1="-30.48" x2="10.16" y2="63.5" width="0.254" layer="94"/>
+<wire x1="10.16" y1="63.5" x2="-20.32" y2="63.5" width="0.254" layer="94"/>
+<text x="9.525" y="62.865" size="1.27" layer="94" align="top-right">&gt;NAME</text>
+<pin name="CENTERPAD" x="0" y="-33.02" length="short" rot="R90"/>
+</symbol>
+</symbols>
+<devicesets>
+<deviceset name="SSI2130" prefix="OSC">
+<gates>
+<gate name="G$1" symbol="SSI2130" x="0" y="-17.78"/>
+</gates>
+<devices>
+<device name="" package="QFN32_4X4">
+<connects>
+<connect gate="G$1" pin="AGND" pad="16"/>
+<connect gate="G$1" pin="AUX1_IN" pad="4"/>
+<connect gate="G$1" pin="AUX1_MIX" pad="12"/>
+<connect gate="G$1" pin="AUX2_IN" pad="5"/>
+<connect gate="G$1" pin="AUX2_MIX" pad="13"/>
+<connect gate="G$1" pin="BW_CONTROL" pad="26"/>
+<connect gate="G$1" pin="CENTERPAD" pad="CENTER"/>
+<connect gate="G$1" pin="DGND" pad="15"/>
+<connect gate="G$1" pin="EXPO_FREQ" pad="7"/>
+<connect gate="G$1" pin="EXPO_SCALE" pad="22"/>
+<connect gate="G$1" pin="HFT_BASE" pad="20"/>
+<connect gate="G$1" pin="HF_TRACKING" pad="6"/>
+<connect gate="G$1" pin="LIN_FREQ" pad="21"/>
+<connect gate="G$1" pin="MIX_OUT" pad="25"/>
+<connect gate="G$1" pin="PULSE_MIX" pad="11"/>
+<connect gate="G$1" pin="PULSE_OUT" pad="30"/>
+<connect gate="G$1" pin="PWM_IN+" pad="32"/>
+<connect gate="G$1" pin="PWM_IN-" pad="31"/>
+<connect gate="G$1" pin="SAW_MIX" pad="10"/>
+<connect gate="G$1" pin="SAW_OUT" pad="29"/>
+<connect gate="G$1" pin="SINE_IN+" pad="2"/>
+<connect gate="G$1" pin="SINE_IN-" pad="3"/>
+<connect gate="G$1" pin="SINE_OUT" pad="24"/>
+<connect gate="G$1" pin="SOFT_SYNC" pad="19"/>
+<connect gate="G$1" pin="SQUARE_OUT" pad="28"/>
+<connect gate="G$1" pin="STROBE" pad="17"/>
+<connect gate="G$1" pin="TCAP" pad="14"/>
+<connect gate="G$1" pin="TIME_REVERSE" pad="18"/>
+<connect gate="G$1" pin="TRI_MIX" pad="9"/>
+<connect gate="G$1" pin="TRI_OUT" pad="1"/>
+<connect gate="G$1" pin="V+" pad="27"/>
+<connect gate="G$1" pin="V-" pad="8"/>
+<connect gate="G$1" pin="VREF" pad="23"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+</devicesets>
+</library>
+</drawing>
+</eagle>
