@@ -13192,15 +13192,7 @@ BF959 corrected 2008.03.06&lt;br&gt;</description>
 <attribute name="MPN" value="MC0603F104Z160CT"/>
 <attribute name="OC_FARNELL" value="1759017"/>
 </part>
-<part name="C7" library="OPL" deviceset="C*" device="-0603" value="100nF">
-<attribute name="MF" value="MULTICOMP"/>
-<attribute name="MPN" value="MC0603F104Z160CT"/>
-<attribute name="OC_FARNELL" value="1759017"/>
-</part>
-<part name="GND24" library="SparkFun-Aesthetics" deviceset="GND" device=""/>
 <part name="GND30" library="SparkFun-Aesthetics" deviceset="GND" device=""/>
-<part name="U$14" library="zephod-components" deviceset="12V" device=""/>
-<part name="U$16" library="zephod-components" deviceset="-12V" device=""/>
 <part name="R55" library="OPL" deviceset="R*" device="-0603" value="100k">
 <attribute name="MF" value=""/>
 <attribute name="MPN" value=""/>
@@ -13260,6 +13252,8 @@ BF959 corrected 2008.03.06&lt;br&gt;</description>
 <part name="GND32" library="SparkFun-Aesthetics" deviceset="GND" device=""/>
 <part name="SUPPLY2" library="SparkFun-Aesthetics" deviceset="3.3V" device=""/>
 <part name="U$17" library="FenixBase" deviceset="HEARTOFGOLD" device=""/>
+<part name="GND36" library="SparkFun-Aesthetics" deviceset="GND" device=""/>
+<part name="SUPPLY3" library="SparkFun-Aesthetics" deviceset="3.3V" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -13637,15 +13631,7 @@ BF959 corrected 2008.03.06&lt;br&gt;</description>
 <attribute name="MF" x="203.2" y="-351.79" size="1.778" layer="96" display="off"/>
 <attribute name="MPN" x="203.2" y="-351.79" size="1.778" layer="96" display="off"/>
 </instance>
-<instance part="C7" gate="C" x="203.2" y="-369.57" rot="R180">
-<attribute name="OC_FARNELL" x="203.2" y="-369.57" size="1.778" layer="96" display="off"/>
-<attribute name="MF" x="203.2" y="-369.57" size="1.778" layer="96" display="off"/>
-<attribute name="MPN" x="203.2" y="-369.57" size="1.778" layer="96" display="off"/>
-</instance>
-<instance part="GND24" gate="1" x="207.01" y="-372.11"/>
 <instance part="GND30" gate="1" x="209.55" y="-351.79" rot="R90"/>
-<instance part="U$14" gate="G$1" x="194.31" y="-351.79"/>
-<instance part="U$16" gate="G$1" x="194.31" y="-369.57"/>
 <instance part="R55" gate="R" x="270.51" y="-450.85" rot="R180">
 <attribute name="OC_FARNELL" x="270.51" y="-450.85" size="1.778" layer="96" display="off"/>
 <attribute name="MF" x="270.51" y="-450.85" size="1.778" layer="96" display="off"/>
@@ -13696,6 +13682,8 @@ BF959 corrected 2008.03.06&lt;br&gt;</description>
 <instance part="GND32" gate="1" x="205.74" y="-255.27" rot="R90"/>
 <instance part="SUPPLY2" gate="G$1" x="190.5" y="-255.27"/>
 <instance part="U$17" gate="G$1" x="-111.76" y="-279.4"/>
+<instance part="GND36" gate="1" x="194.31" y="-370.84"/>
+<instance part="SUPPLY3" gate="G$1" x="194.31" y="-351.79"/>
 </instances>
 <busses>
 </busses>
@@ -13885,10 +13873,6 @@ BF959 corrected 2008.03.06&lt;br&gt;</description>
 <pinref part="IC4" gate="N" pin="+IN"/>
 </segment>
 <segment>
-<pinref part="C7" gate="C" pin="1"/>
-<pinref part="GND24" gate="1" pin="GND"/>
-</segment>
-<segment>
 <pinref part="C6" gate="C" pin="1"/>
 <pinref part="GND30" gate="1" pin="GND"/>
 </segment>
@@ -13952,6 +13936,10 @@ BF959 corrected 2008.03.06&lt;br&gt;</description>
 <wire x1="20.32" y1="-144.78" x2="35.56" y2="-144.78" width="0.1524" layer="91"/>
 <label x="22.86" y="-144.78" size="1.778" layer="95"/>
 </segment>
+<segment>
+<pinref part="IC4" gate="O" pin="V-"/>
+<pinref part="GND36" gate="1" pin="GND"/>
+</segment>
 </net>
 <net name="12V" class="1">
 <segment>
@@ -14012,14 +14000,6 @@ BF959 corrected 2008.03.06&lt;br&gt;</description>
 <pinref part="IC3" gate="P" pin="V+"/>
 </segment>
 <segment>
-<wire x1="194.31" y1="-353.06" x2="194.31" y2="-351.79" width="0.1524" layer="91"/>
-<pinref part="C6" gate="C" pin="2"/>
-<pinref part="U$14" gate="G$1" pin="12V"/>
-<wire x1="194.31" y1="-351.79" x2="199.39" y2="-351.79" width="0.1524" layer="91"/>
-<junction x="194.31" y="-351.79"/>
-<pinref part="IC4" gate="O" pin="V+"/>
-</segment>
-<segment>
 <pinref part="J4" gate="G$1" pin="+12V"/>
 <wire x1="-17.78" y1="-389.89" x2="-6.35" y2="-389.89" width="0.1524" layer="91"/>
 <label x="-11.43" y="-389.89" size="1.778" layer="95"/>
@@ -14055,14 +14035,6 @@ BF959 corrected 2008.03.06&lt;br&gt;</description>
 <wire x1="304.8" y1="-342.9" x2="308.61" y2="-342.9" width="0.1524" layer="91"/>
 <junction x="304.8" y="-342.9"/>
 <pinref part="IC3" gate="P" pin="V-"/>
-</segment>
-<segment>
-<wire x1="194.31" y1="-368.3" x2="194.31" y2="-369.57" width="0.1524" layer="91"/>
-<pinref part="C7" gate="C" pin="2"/>
-<pinref part="U$16" gate="G$1" pin="-12V"/>
-<wire x1="194.31" y1="-369.57" x2="199.39" y2="-369.57" width="0.1524" layer="91"/>
-<junction x="194.31" y="-369.57"/>
-<pinref part="IC4" gate="O" pin="V-"/>
 </segment>
 <segment>
 <pinref part="J4" gate="G$1" pin="-12V"/>
@@ -14113,13 +14085,9 @@ BF959 corrected 2008.03.06&lt;br&gt;</description>
 <segment>
 <pinref part="U$4" gate="G$1" pin="5"/>
 <wire x1="-143.51" y1="-53.34" x2="-146.05" y2="-53.34" width="0.1524" layer="91"/>
-<wire x1="-146.05" y1="-50.8" x2="-146.05" y2="-53.34" width="0.1524" layer="91"/>
 <wire x1="-146.05" y1="-53.34" x2="-146.05" y2="-68.58" width="0.1524" layer="91"/>
 <wire x1="-146.05" y1="-68.58" x2="-100.33" y2="-68.58" width="0.1524" layer="91"/>
 <pinref part="L1" gate="L" pin="2"/>
-<pinref part="U$4" gate="G$1" pin="3"/>
-<junction x="-146.05" y="-50.8"/>
-<junction x="-146.05" y="-53.34"/>
 </segment>
 </net>
 <net name="N$7" class="0">
@@ -14767,6 +14735,14 @@ BF959 corrected 2008.03.06&lt;br&gt;</description>
 <wire x1="228.6" y1="-443.23" x2="242.57" y2="-443.23" width="0.1524" layer="91"/>
 <pinref part="JP4" gate="A" pin="3"/>
 <label x="236.22" y="-443.23" size="1.778" layer="95"/>
+</segment>
+<segment>
+<wire x1="194.31" y1="-353.06" x2="194.31" y2="-351.79" width="0.1524" layer="91"/>
+<pinref part="C6" gate="C" pin="2"/>
+<wire x1="194.31" y1="-351.79" x2="199.39" y2="-351.79" width="0.1524" layer="91"/>
+<pinref part="IC4" gate="O" pin="V+"/>
+<pinref part="SUPPLY3" gate="G$1" pin="3.3V"/>
+<junction x="194.31" y="-351.79"/>
 </segment>
 </net>
 <net name="N$24" class="0">
