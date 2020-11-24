@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.05" unitdist="inch" unit="inch" style="lines" multiple="1" display="yes" altdistance="0.025" altunitdist="inch" altunit="inch"/>
+<grid distance="0.01" unitdist="inch" unit="inch" style="lines" multiple="1" display="yes" altdistance="0.025" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="16" name="Bottom" color="1" fill="1" visible="yes" active="yes"/>
@@ -2043,10 +2043,14 @@ Source: RS Component / BUORNS</description>
 <rectangle x1="-0.3" y1="-0.4001" x2="0.3" y2="0.4001" layer="35"/>
 </package>
 <package name="L0805">
-<wire x1="1.651" y1="0.889" x2="1.651" y2="-0.889" width="0.127" layer="21"/>
-<wire x1="1.651" y1="-0.889" x2="-1.651" y2="-0.889" width="0.127" layer="21"/>
-<wire x1="-1.651" y1="-0.889" x2="-1.651" y2="0.889" width="0.127" layer="21"/>
-<wire x1="-1.651" y1="0.889" x2="1.651" y2="0.889" width="0.127" layer="21"/>
+<wire x1="-1.246421875" y1="0.889" x2="1.246421875" y2="0.889" width="0.127" layer="21"/>
+<wire x1="1.246421875" y1="0.889" x2="1.6002" y2="0.535221875" width="0.127" layer="21" curve="-90"/>
+<wire x1="1.6002" y1="0.535221875" x2="1.6002" y2="-0.535221875" width="0.127" layer="21"/>
+<wire x1="1.6002" y1="-0.535221875" x2="1.246421875" y2="-0.889" width="0.127" layer="21" curve="-90"/>
+<wire x1="1.246421875" y1="-0.889" x2="-1.246421875" y2="-0.889" width="0.127" layer="21"/>
+<wire x1="-1.246421875" y1="-0.889" x2="-1.6002" y2="-0.535221875" width="0.127" layer="21" curve="-90"/>
+<wire x1="-1.6002" y1="-0.535221875" x2="-1.6002" y2="0.535221875" width="0.127" layer="21"/>
+<wire x1="-1.6002" y1="0.535221875" x2="-1.246421875" y2="0.889" width="0.127" layer="21" curve="-90"/>
 <smd name="1" x="-0.889" y="0" dx="1.016" dy="1.397" layer="1" roundness="25"/>
 <smd name="2" x="0.889" y="0" dx="1.016" dy="1.397" layer="1" roundness="25"/>
 </package>
@@ -2066,6 +2070,20 @@ Source: RS Component / BUORNS</description>
 <wire x1="-2.032" y1="-0.889" x2="2.032" y2="-0.889" width="0.127" layer="21"/>
 <wire x1="2.032" y1="-0.889" x2="2.032" y2="0.889" width="0.127" layer="21"/>
 <wire x1="2.032" y1="0.889" x2="-2.032" y2="0.889" width="0.127" layer="21"/>
+<wire x1="-0.762" y1="0" x2="-0.254" y2="0" width="0.127" layer="21"/>
+<wire x1="-0.254" y1="0.381" x2="-0.254" y2="0" width="0.127" layer="21"/>
+<wire x1="-0.254" y1="0" x2="-0.254" y2="-0.381" width="0.127" layer="21"/>
+<wire x1="0.254" y1="0.381" x2="0.254" y2="0" width="0.127" layer="21"/>
+<wire x1="0.254" y1="0" x2="0.254" y2="-0.381" width="0.127" layer="21"/>
+<wire x1="0.254" y1="0" x2="0.762" y2="0" width="0.127" layer="21"/>
+</package>
+<package name="C3225">
+<smd name="P$1" x="-1.4478" y="0" dx="2.5002" dy="0.889" layer="1" rot="R90"/>
+<smd name="P$2" x="1.4478" y="0" dx="2.5002" dy="0.889" layer="1" rot="R90"/>
+<wire x1="-2.032" y1="1.339" x2="-2.032" y2="-1.339" width="0.127" layer="21"/>
+<wire x1="-2.032" y1="-1.339" x2="2.032" y2="-1.339" width="0.127" layer="21"/>
+<wire x1="2.032" y1="-1.339" x2="2.032" y2="1.339" width="0.127" layer="21"/>
+<wire x1="2.032" y1="1.339" x2="-2.032" y2="1.339" width="0.127" layer="21"/>
 <wire x1="-0.762" y1="0" x2="-0.254" y2="0" width="0.127" layer="21"/>
 <wire x1="-0.254" y1="0.381" x2="-0.254" y2="0" width="0.127" layer="21"/>
 <wire x1="-0.254" y1="0" x2="-0.254" y2="-0.381" width="0.127" layer="21"/>
@@ -3538,6 +3556,15 @@ Source: RS Component / BUORNS</description>
 </technologies>
 </device>
 <device name="-1206" package="C3216">
+<connects>
+<connect gate="C" pin="1" pad="P$1"/>
+<connect gate="C" pin="2" pad="P$2"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="-1210" package="C3225">
 <connects>
 <connect gate="C" pin="1" pad="P$1"/>
 <connect gate="C" pin="2" pad="P$2"/>

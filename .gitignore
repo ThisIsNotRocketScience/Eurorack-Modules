@@ -68,3 +68,9 @@ EuroForError/Gerbers/BigBus_Error/BigBus_Error.Assembly
 Eurorack Set 9/FrontPanels/RectangularThingExp-01-01.psd
 Eurorack Set 9/FrontPanels/a.jpg
 *.fpd
+*.SLICES
+adafruit.lbr
+dp_devices.lbr
+Teensy_3_and_LC_Series_Boards_v1.4.lbr
+Teensy_3_and_LC_Series_Boards_v1.4.lbr
+Teensy_3_and_LC_Series_Boards_v1.4.lbr
