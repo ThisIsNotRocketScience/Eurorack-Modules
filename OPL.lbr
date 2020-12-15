@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.01" unitdist="inch" unit="inch" style="lines" multiple="1" display="yes" altdistance="0.025" altunitdist="inch" altunit="inch"/>
+<grid distance="0.05" unitdist="inch" unit="inch" style="lines" multiple="1" display="yes" altdistance="0.025" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="16" name="Bottom" color="1" fill="1" visible="yes" active="yes"/>
@@ -1113,6 +1113,7 @@ TS-003</description>
 <vertex x="4.445" y="-1.4478"/>
 <vertex x="3.81" y="-1.4478"/>
 </polygon>
+<text x="-1.27" y="0" size="1.27" layer="21" align="center">&gt;DESC</text>
 </package>
 <package name="6P-2CH-2.54-9.1X3.5X3.2+2H">
 <wire x1="-4.55" y1="-1.75" x2="-4.55" y2="1.75" width="0.127" layer="21"/>
