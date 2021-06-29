@@ -8,7 +8,7 @@
 </settings>
 <grid distance="25" unitdist="mil" unit="mil" style="lines" multiple="1" display="yes" altdistance="0.025" altunitdist="inch" altunit="inch"/>
 <layers>
-<layer number="1" name="Top" color="4" fill="1" visible="no" active="yes"/>
+<layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="2" name="Route2" color="1" fill="3" visible="no" active="no"/>
 <layer number="3" name="Route3" color="4" fill="3" visible="no" active="no"/>
 <layer number="4" name="Route4" color="1" fill="4" visible="no" active="no"/>
@@ -23,17 +23,17 @@
 <layer number="13" name="Route13" color="4" fill="5" visible="no" active="no"/>
 <layer number="14" name="Route14" color="1" fill="6" visible="no" active="no"/>
 <layer number="15" name="Route15" color="4" fill="6" visible="no" active="no"/>
-<layer number="16" name="Bottom" color="1" fill="1" visible="no" active="yes"/>
-<layer number="17" name="Pads" color="2" fill="1" visible="no" active="yes"/>
-<layer number="18" name="Vias" color="2" fill="1" visible="no" active="yes"/>
-<layer number="19" name="Unrouted" color="6" fill="1" visible="no" active="yes"/>
-<layer number="20" name="Dimension" color="15" fill="1" visible="no" active="yes"/>
-<layer number="21" name="tPlace" color="7" fill="1" visible="no" active="yes"/>
-<layer number="22" name="bPlace" color="7" fill="1" visible="no" active="yes"/>
-<layer number="23" name="tOrigins" color="15" fill="1" visible="no" active="yes"/>
-<layer number="24" name="bOrigins" color="15" fill="1" visible="no" active="yes"/>
-<layer number="25" name="tNames" color="7" fill="1" visible="no" active="yes"/>
-<layer number="26" name="bNames" color="7" fill="1" visible="no" active="yes"/>
+<layer number="16" name="Bottom" color="1" fill="1" visible="yes" active="yes"/>
+<layer number="17" name="Pads" color="2" fill="1" visible="yes" active="yes"/>
+<layer number="18" name="Vias" color="2" fill="1" visible="yes" active="yes"/>
+<layer number="19" name="Unrouted" color="6" fill="1" visible="yes" active="yes"/>
+<layer number="20" name="Dimension" color="15" fill="1" visible="yes" active="yes"/>
+<layer number="21" name="tPlace" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="22" name="bPlace" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="23" name="tOrigins" color="15" fill="1" visible="yes" active="yes"/>
+<layer number="24" name="bOrigins" color="15" fill="1" visible="yes" active="yes"/>
+<layer number="25" name="tNames" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="26" name="bNames" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="27" name="tValues" color="7" fill="1" visible="no" active="yes"/>
 <layer number="28" name="bValues" color="7" fill="1" visible="no" active="yes"/>
 <layer number="29" name="tStop" color="7" fill="3" visible="no" active="yes"/>
@@ -819,26 +819,26 @@
 </autorouter>
 <elements>
 <element name="PCB1" library="EurorackModularParts" package="EURORACK6HPPCB" value="EURORACK_PCB6HP" x="0" y="0"/>
-<element name="J1" library="EurorackModularParts" package="3.5MM-JACK-SWITCH-13MM-NOHOLES" value="JACK" x="5.08" y="101.6" rot="R180">
-<attribute name="DESC" value="1 A" x="5.08" y="101.6" size="1.778" layer="27" rot="R180" display="off"/>
+<element name="J1" library="EurorackModularParts" package="3.5MM-JACK-SWITCH-13MM-NOHOLES" value="JACK" x="5.08" y="101.6" smashed="yes" rot="R180">
+<attribute name="DESC" value="1 A" x="5.08" y="101.6" size="1.27" layer="22" rot="SMR225" align="center" display="off"/>
 </element>
-<element name="J2" library="EurorackModularParts" package="3.5MM-JACK-SWITCH-13MM-NOHOLES" value="JACK" x="15.24" y="101.6" rot="R180">
-<attribute name="DESC" value="1 B" x="15.24" y="101.6" size="1.778" layer="27" rot="R180" display="off"/>
+<element name="J2" library="EurorackModularParts" package="3.5MM-JACK-SWITCH-13MM-NOHOLES" value="JACK" x="15.24" y="101.6" smashed="yes" rot="R180">
+<attribute name="DESC" value="1 B" x="15.24" y="101.6" size="1.27" layer="22" rot="SMR225" align="center" display="off"/>
 </element>
-<element name="J3" library="EurorackModularParts" package="3.5MM-JACK-SWITCH-13MM-NOHOLES" value="JACK" x="25.4" y="101.6" rot="R180">
-<attribute name="DESC" value="1 C" x="25.4" y="101.6" size="1.778" layer="27" rot="R180" display="off"/>
+<element name="J3" library="EurorackModularParts" package="3.5MM-JACK-SWITCH-13MM-NOHOLES" value="JACK" x="25.4" y="101.6" smashed="yes" rot="R180">
+<attribute name="DESC" value="1 C" x="25.4" y="101.6" size="1.27" layer="22" rot="SMR225" align="center" display="off"/>
 </element>
-<element name="J4" library="EurorackModularParts" package="3.5MM-JACK-SWITCH-13MM-NOHOLES" value="JACK" x="7.62" y="62.23">
-<attribute name="DESC" value="1" x="7.62" y="62.23" size="1.778" layer="27" display="off"/>
+<element name="J4" library="EurorackModularParts" package="3.5MM-JACK-SWITCH-13MM-NOHOLES" value="JACK" x="7.62" y="62.23" smashed="yes">
+<attribute name="DESC" value="1" x="7.62" y="62.23" size="1.27" layer="22" rot="SMR45" align="center" display="off"/>
 </element>
-<element name="J5" library="EurorackModularParts" package="3.5MM-JACK-SWITCH-13MM-NOHOLES" value="JACK" x="5.08" y="19.05" rot="R180">
-<attribute name="DESC" value="3 A" x="5.08" y="19.05" size="1.778" layer="27" rot="R180" display="off"/>
+<element name="J5" library="EurorackModularParts" package="3.5MM-JACK-SWITCH-13MM-NOHOLES" value="JACK" x="5.08" y="19.05" smashed="yes" rot="R180">
+<attribute name="DESC" value="3 A" x="5.08" y="19.05" size="1.27" layer="22" rot="SMR225" align="center" display="off"/>
 </element>
-<element name="J6" library="EurorackModularParts" package="3.5MM-JACK-SWITCH-13MM-NOHOLES" value="JACK" x="15.24" y="19.05" rot="R180">
-<attribute name="DESC" value="3 B" x="15.24" y="19.05" size="1.778" layer="27" rot="R180" display="off"/>
+<element name="J6" library="EurorackModularParts" package="3.5MM-JACK-SWITCH-13MM-NOHOLES" value="JACK" x="15.24" y="19.05" smashed="yes" rot="R180">
+<attribute name="DESC" value="3 B" x="15.24" y="19.05" size="1.27" layer="22" rot="SMR225" align="center" display="off"/>
 </element>
-<element name="J7" library="EurorackModularParts" package="3.5MM-JACK-SWITCH-13MM-NOHOLES" value="JACK" x="7.62" y="44.45">
-<attribute name="DESC" value="3" x="7.62" y="44.45" size="1.778" layer="27" display="off"/>
+<element name="J7" library="EurorackModularParts" package="3.5MM-JACK-SWITCH-13MM-NOHOLES" value="JACK" x="7.62" y="44.45" smashed="yes">
+<attribute name="DESC" value="3" x="7.62" y="44.45" size="1.27" layer="22" rot="SMR45" align="center" display="off"/>
 </element>
 <element name="U$2" library="FenixBase" package="TS-23E01" value="TS-23E01" x="15.24" y="74.93">
 <attribute name="DESC" value="Toggle" x="15.24" y="74.93" size="1.778" layer="27" display="off"/>
@@ -846,41 +846,41 @@
 <attribute name="UP" value="1" x="15.24" y="74.93" size="1.778" layer="27" display="off"/>
 <attribute name="MID" value="2" x="15.24" y="74.93" size="1.778" layer="27" display="off"/>
 </element>
-<element name="J8" library="EurorackModularParts" package="3.5MM-JACK-SWITCH-13MM-NOHOLES" value="JACK" x="22.86" y="62.23">
-<attribute name="DESC" value="2" x="22.86" y="62.23" size="1.778" layer="27" display="off"/>
+<element name="J8" library="EurorackModularParts" package="3.5MM-JACK-SWITCH-13MM-NOHOLES" value="JACK" x="22.86" y="62.23" smashed="yes">
+<attribute name="DESC" value="2" x="22.86" y="62.23" size="1.27" layer="22" rot="SMR45" align="center" display="off"/>
 </element>
-<element name="J9" library="EurorackModularParts" package="3.5MM-JACK-SWITCH-13MM-NOHOLES" value="JACK" x="5.08" y="87.63">
-<attribute name="DESC" value="2 A" x="5.08" y="87.63" size="1.778" layer="27" display="off"/>
+<element name="J9" library="EurorackModularParts" package="3.5MM-JACK-SWITCH-13MM-NOHOLES" value="JACK" x="5.08" y="87.63" smashed="yes">
+<attribute name="DESC" value="2 A" x="-5.715" y="90.805" size="1.27" layer="22" rot="SMR45" align="center" display="off"/>
 </element>
-<element name="J10" library="EurorackModularParts" package="3.5MM-JACK-SWITCH-13MM-NOHOLES" value="JACK" x="15.24" y="87.63">
-<attribute name="DESC" value="2 B" x="15.24" y="87.63" size="1.778" layer="27" display="off"/>
+<element name="J10" library="EurorackModularParts" package="3.5MM-JACK-SWITCH-13MM-NOHOLES" value="JACK" x="15.24" y="87.63" smashed="yes">
+<attribute name="DESC" value="2 B" x="15.24" y="87.63" size="1.27" layer="22" rot="SMR45" align="center" display="off"/>
 </element>
-<element name="J11" library="EurorackModularParts" package="3.5MM-JACK-SWITCH-13MM-NOHOLES" value="JACK" x="25.4" y="87.63">
-<attribute name="DESC" value="2 C" x="25.4" y="87.63" size="1.778" layer="27" display="off"/>
+<element name="J11" library="EurorackModularParts" package="3.5MM-JACK-SWITCH-13MM-NOHOLES" value="JACK" x="25.4" y="87.63" smashed="yes">
+<attribute name="DESC" value="2 C" x="25.4" y="87.63" size="1.27" layer="22" rot="SMR45" align="center" display="off"/>
 </element>
-<element name="J12" library="EurorackModularParts" package="3.5MM-JACK-SWITCH-13MM-NOHOLES" value="JACK" x="22.86" y="44.45">
-<attribute name="DESC" value="4" x="22.86" y="44.45" size="1.778" layer="27" display="off"/>
+<element name="J12" library="EurorackModularParts" package="3.5MM-JACK-SWITCH-13MM-NOHOLES" value="JACK" x="22.86" y="44.45" smashed="yes">
+<attribute name="DESC" value="4" x="22.86" y="44.45" size="1.27" layer="22" rot="SMR45" align="center" display="off"/>
 </element>
-<element name="J13" library="EurorackModularParts" package="3.5MM-JACK-SWITCH-13MM-NOHOLES" value="JACK" x="5.08" y="5.08">
-<attribute name="DESC" value="4 A" x="5.08" y="5.08" size="1.778" layer="27" display="off"/>
+<element name="J13" library="EurorackModularParts" package="3.5MM-JACK-SWITCH-13MM-NOHOLES" value="JACK" x="5.08" y="5.08" smashed="yes">
+<attribute name="DESC" value="4 A" x="5.08" y="5.08" size="1.27" layer="22" rot="SMR45" align="center" display="off"/>
 </element>
-<element name="J14" library="EurorackModularParts" package="3.5MM-JACK-SWITCH-13MM-NOHOLES" value="JACK" x="15.24" y="5.08">
-<attribute name="DESC" value="4 B" x="15.24" y="5.08" size="1.778" layer="27" display="off"/>
+<element name="J14" library="EurorackModularParts" package="3.5MM-JACK-SWITCH-13MM-NOHOLES" value="JACK" x="15.24" y="5.08" smashed="yes">
+<attribute name="DESC" value="4 B" x="15.24" y="5.08" size="1.27" layer="22" rot="SMR45" align="center" display="off"/>
 </element>
-<element name="U$4" library="EurorackModularParts" package="JUSTATINYROCKET_DATECODE" value="TINRS_ARTWORKTINYDATE" x="3.175" y="31.75" rot="MR270"/>
+<element name="U$4" library="EurorackModularParts" package="JUSTATINYROCKET_DATECODE" value="TINRS_ARTWORKTINYDATE" x="1.27" y="80.01"/>
 <element name="U$5" library="FenixBase" package="TS-23E01" value="TS-23E01" x="15.24" y="31.75">
 <attribute name="DESC" value="Toggle" x="15.24" y="31.75" size="1.778" layer="27" display="off"/>
 <attribute name="UP" value="1" x="15.24" y="31.75" size="1.778" layer="27" display="off"/>
 <attribute name="DOWN" value="3" x="15.24" y="31.75" size="1.778" layer="27" display="off"/>
 <attribute name="MID" value="2" x="15.24" y="31.75" size="1.778" layer="27" display="off"/>
 </element>
-<element name="J15" library="EurorackModularParts" package="3.5MM-JACK-SWITCH-13MM-NOHOLES" value="JACK" x="25.4" y="19.05" rot="R180">
-<attribute name="DESC" value="3 C" x="25.4" y="19.05" size="1.778" layer="27" rot="R180" display="off"/>
+<element name="J15" library="EurorackModularParts" package="3.5MM-JACK-SWITCH-13MM-NOHOLES" value="JACK" x="25.4" y="19.05" smashed="yes" rot="R180">
+<attribute name="DESC" value="3 C" x="25.4" y="19.05" size="1.27" layer="22" rot="SMR225" align="center" display="off"/>
 </element>
-<element name="J16" library="EurorackModularParts" package="3.5MM-JACK-SWITCH-13MM-NOHOLES" value="JACK" x="25.4" y="5.08">
-<attribute name="DESC" value="4 C" x="25.4" y="5.08" size="1.778" layer="27" display="off"/>
+<element name="J16" library="EurorackModularParts" package="3.5MM-JACK-SWITCH-13MM-NOHOLES" value="JACK" x="25.4" y="5.08" smashed="yes">
+<attribute name="DESC" value="4 C" x="25.4" y="5.08" size="1.27" layer="22" rot="SMR45" align="center" display="off"/>
 </element>
-<element name="J17" library="EurorackModularParts" package="POWER_16_SHROUDED_NOTEXT" value="POWER_SHROUDED_NOTEXT" x="15.24" y="53.34" rot="MR0"/>
+<element name="J17" library="EurorackModularParts" package="POWER_16_SHROUDED_NOTEXT" value="POWER_SHROUDED_NOTEXT" x="15.24" y="53.34" smashed="yes" rot="MR0"/>
 </elements>
 <signals>
 <signal name="GND">
