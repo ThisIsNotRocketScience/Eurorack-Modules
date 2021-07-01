@@ -13463,6 +13463,18 @@ BF959 corrected 2008.03.06&lt;br&gt;</description>
 <junction x="88.9" y="113.03"/>
 </segment>
 </net>
+<net name="N$11" class="0">
+<segment>
+<pinref part="U$29" gate="G$1" pin="EN"/>
+<pinref part="R15" gate="R" pin="1"/>
+</segment>
+</net>
+<net name="5V_NEWREG" class="0">
+<segment>
+<pinref part="L4" gate="L" pin="2"/>
+<wire x1="101.6" y1="113.03" x2="111.76" y2="113.03" width="0.1524" layer="91"/>
+</segment>
+</net>
 </nets>
 </sheet>
 <sheet>

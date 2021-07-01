@@ -4228,6 +4228,14 @@ Source: http://www.onsemi.co.jp .. LM137M-D.PDF</description>
 <wire x1="-97.663" y1="-67.945" x2="-78.283" y2="-66.167" width="0" layer="19" extent="1-1"/>
 <wire x1="-92.202" y1="-68.58" x2="-97.663" y2="-67.945" width="0" layer="19" extent="1-1"/>
 </signal>
+<signal name="N$11">
+<contactref element="U$29" pad="4"/>
+<contactref element="R15" pad="1"/>
+<wire x1="-78.7099" y1="-71.943" x2="-92.202" y2="-63.5" width="0" layer="19" extent="1-1"/>
+</signal>
+<signal name="5V_NEWREG">
+<contactref element="L4" pad="2"/>
+</signal>
 </signals>
 <errors>
 <approved hash="3,1,4abb5687598745bb"/>
