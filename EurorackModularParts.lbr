@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.05" unitdist="inch" unit="inch" style="lines" multiple="1" display="yes" altdistance="0.025" altunitdist="inch" altunit="inch"/>
+<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="2" name="Route2" color="1" fill="3" visible="yes" active="yes"/>
@@ -8607,10 +8607,10 @@ STANDOFFS</text>
 </deviceset>
 <deviceset name="MCP6004" prefix="IC">
 <gates>
-<gate name="K" symbol="OPAMP" x="-14.142" y="8.407"/>
-<gate name="L" symbol="OPAMP" x="24.136" y="9.471"/>
-<gate name="M" symbol="OPAMP" x="-14.567" y="-14.366"/>
-<gate name="N" symbol="OPAMP" x="23.924" y="-13.515"/>
+<gate name="K" symbol="OPAMP" x="-14.142" y="8.407" swaplevel="1"/>
+<gate name="L" symbol="OPAMP" x="24.136" y="9.471" swaplevel="1"/>
+<gate name="M" symbol="OPAMP" x="-14.567" y="-14.366" swaplevel="1"/>
+<gate name="N" symbol="OPAMP" x="23.924" y="-13.515" swaplevel="1"/>
 <gate name="O" symbol="PWR+-" x="48.911" y="-0.532"/>
 </gates>
 <devices>

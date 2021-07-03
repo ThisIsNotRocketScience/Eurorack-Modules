@@ -155,6 +155,7 @@
 <layer number="249" name="Edge" color="7" fill="1" visible="no" active="yes"/>
 <layer number="250" name="Descript" color="3" fill="1" visible="no" active="no"/>
 <layer number="251" name="SMDround" color="12" fill="11" visible="no" active="no"/>
+<layer number="253" name="panelhole" color="62" fill="1" visible="yes" active="yes"/>
 <layer number="254" name="Paneldesc" color="14" fill="1" visible="yes" active="yes"/>
 <layer number="255" name="Panel" color="14" fill="1" visible="yes" active="yes"/>
 </layers>
@@ -574,6 +575,7 @@ PCB width:
 <wire x1="0" y1="-5" x2="5" y2="0" width="0.127" layer="254" curve="90"/>
 <wire x1="5" y1="0" x2="0" y2="5" width="0.127" layer="254" curve="90"/>
 <wire x1="0" y1="5" x2="-5" y2="5" width="0.127" layer="254"/>
+<circle x="0" y="0" radius="4" width="0.0254" layer="253"/>
 </package>
 <package name="POWER_16">
 <pad name="1" x="-6.35" y="-1.27" drill="1.016" diameter="1.8796" shape="octagon"/>
@@ -1701,6 +1703,66 @@ PCB width:
 <rectangle x1="-13.97" y1="-4.445" x2="-10.16" y2="4.445" layer="21"/>
 <text x="0" y="0" size="2.54" layer="25" align="center">&gt;NAME</text>
 </package>
+<package name="3.5MM-JACK-SWITCH-13MM-NOHOLES-TESTPAD">
+<wire x1="-4.2" y1="-1.25" x2="-3.2" y2="-1.25" width="0" layer="46"/>
+<wire x1="-3.2" y1="-1.25" x2="-3.2" y2="1.25" width="0" layer="46"/>
+<wire x1="-3.2" y1="1.25" x2="-4.2" y2="1.25" width="0" layer="46"/>
+<wire x1="-4.2" y1="1.25" x2="-4.2" y2="-1.25" width="0" layer="46"/>
+<wire x1="3.2" y1="-1.25" x2="4.2" y2="-1.25" width="0" layer="46"/>
+<wire x1="4.2" y1="-1.25" x2="4.2" y2="1.25" width="0" layer="46"/>
+<wire x1="4.2" y1="1.25" x2="3.2" y2="1.25" width="0" layer="46"/>
+<wire x1="3.2" y1="1.25" x2="3.2" y2="-1.25" width="0" layer="46"/>
+<wire x1="1.25" y1="4" x2="1.25" y2="5" width="0" layer="46"/>
+<wire x1="1.25" y1="5" x2="-1.25" y2="5" width="0" layer="46"/>
+<wire x1="-1.25" y1="5" x2="-1.25" y2="4" width="0" layer="46"/>
+<wire x1="-1.25" y1="4" x2="1.25" y2="4" width="0" layer="46"/>
+<wire x1="1.25" y1="-4" x2="1.25" y2="-3" width="0" layer="46"/>
+<wire x1="1.25" y1="-3" x2="-1.25" y2="-3" width="0" layer="46"/>
+<wire x1="-1.25" y1="-3" x2="-1.25" y2="-4" width="0" layer="46"/>
+<wire x1="-1.25" y1="-4" x2="1.25" y2="-4" width="0" layer="46"/>
+<circle x="0" y="0" radius="4" width="0.0254" layer="255"/>
+<smd name="RING_T@3" x="-3.7" y="0" dx="3.85" dy="1.95" layer="1" roundness="100" rot="R90" cream="no"/>
+<smd name="SWITCH_T@3" x="3.7" y="0" dx="3.85" dy="1.95" layer="1" roundness="100" rot="R90" cream="no"/>
+<smd name="SECOND_T@3" x="0" y="-3.5" dx="3.85" dy="1.95" layer="1" roundness="100" rot="R180" cream="no"/>
+<smd name="TIP_T@3" x="0" y="4.5" dx="3.85" dy="1.95" layer="1" roundness="100" rot="R180" cream="no"/>
+<smd name="TIP_B@1" x="0" y="4.5" dx="3.85" dy="1.95" layer="16" roundness="100" cream="no"/>
+<smd name="RING_B@1" x="-3.7" y="0" dx="3.85" dy="1.95" layer="16" roundness="100" rot="R90" cream="no"/>
+<smd name="SWITCH_B@1" x="3.7" y="0" dx="3.85" dy="1.95" layer="16" roundness="100" rot="R90" cream="no"/>
+<smd name="SECOND_B@1" x="0" y="-3.5" dx="3.85" dy="1.95" layer="16" roundness="100" cream="no"/>
+<text x="0" y="0" size="1.27" layer="22" rot="SMR45" align="center">&gt;DESC</text>
+<wire x1="-4.25" y1="1.75" x2="-4.25" y2="5" width="0.127" layer="21"/>
+<wire x1="-4.25" y1="5" x2="-1.75" y2="5" width="0.127" layer="21"/>
+<wire x1="1.75" y1="5" x2="4.25" y2="5" width="0.127" layer="21"/>
+<wire x1="4.25" y1="5" x2="4.25" y2="1.75" width="0.127" layer="21"/>
+<wire x1="4.25" y1="-1.75" x2="4.25" y2="-4" width="0.127" layer="21"/>
+<wire x1="4.25" y1="-4" x2="1.75" y2="-4" width="0.127" layer="21"/>
+<wire x1="-1.75" y1="-4" x2="-4.25" y2="-4" width="0.127" layer="21"/>
+<wire x1="-4.25" y1="-4" x2="-4.25" y2="-1.75" width="0.127" layer="21"/>
+<text x="-5" y="6" size="1.27" layer="254" align="center-left">&gt;DESC</text>
+<circle x="0" y="0" radius="1.8" width="0.127" layer="254"/>
+<circle x="0" y="0" radius="3.9" width="0.1" layer="254"/>
+<wire x1="-5" y1="5" x2="-5" y2="0" width="0.127" layer="254"/>
+<wire x1="-5" y1="0" x2="0" y2="-5" width="0.127" layer="254" curve="90"/>
+<wire x1="0" y1="-5" x2="5" y2="0" width="0.127" layer="254" curve="90"/>
+<wire x1="5" y1="0" x2="0" y2="5" width="0.127" layer="254" curve="90"/>
+<wire x1="0" y1="5" x2="-5" y2="5" width="0.127" layer="254"/>
+<polygon width="0.127" layer="16">
+<vertex x="-0.762" y="3.81"/>
+<vertex x="-0.762" y="2.794" curve="90"/>
+<vertex x="-0.508" y="2.54"/>
+<vertex x="0.508" y="2.54" curve="90"/>
+<vertex x="0.762" y="2.794"/>
+<vertex x="0.762" y="3.81"/>
+</polygon>
+<polygon width="0.254" layer="30">
+<vertex x="-0.762" y="3.556"/>
+<vertex x="-0.762" y="2.794" curve="90"/>
+<vertex x="-0.508" y="2.54"/>
+<vertex x="0.508" y="2.54" curve="90"/>
+<vertex x="0.762" y="2.794"/>
+<vertex x="0.762" y="3.556"/>
+</polygon>
+</package>
 </packages>
 <symbols>
 <symbol name="EURORACK_PCB">
@@ -1874,7 +1936,7 @@ PCB width:
 </device>
 </devices>
 </deviceset>
-<deviceset name="AUDIO-JACK_SMALLSYMBOL" prefix="J" uservalue="yes">
+<deviceset name="AUDIO-JACK_SMALLSYMBOL" prefix="NODRILL_TESTPAD" uservalue="yes">
 <description>Switching Mono 3.5mm Audio Jack from Erthenvar.</description>
 <gates>
 <gate name="G$1" symbol="AUDIO-JACK-SMALL" x="-12.7" y="-2.54"/>
@@ -1891,6 +1953,17 @@ PCB width:
 <technology name="">
 <attribute name="VALUE" value="JACK" constant="no"/>
 </technology>
+</technologies>
+</device>
+<device name="" package="3.5MM-JACK-SWITCH-13MM-NOHOLES-TESTPAD">
+<connects>
+<connect gate="G$1" pin="RING" pad="RING_B@1 RING_T@3" route="any"/>
+<connect gate="G$1" pin="SECOND" pad="SECOND_B@1 SECOND_T@3" route="any"/>
+<connect gate="G$1" pin="SWITCH" pad="SWITCH_B@1 SWITCH_T@3" route="any"/>
+<connect gate="G$1" pin="TIP" pad="TIP_B@1 TIP_T@3" route="any"/>
+</connects>
+<technologies>
+<technology name=""/>
 </technologies>
 </device>
 </devices>
@@ -1998,10 +2071,10 @@ PCB width:
 <wire x1="11.5" y1="5.5" x2="11.5" y2="-5.5" width="0.127" layer="21"/>
 <wire x1="11.5" y1="-5.5" x2="-11.5" y2="-5.5" width="0.127" layer="21"/>
 <wire x1="-11.5" y1="-5.5" x2="-11.5" y2="5.5" width="0.127" layer="21"/>
-<pad name="P$9" x="-10" y="5.5" drill="1.3" diameter="2.2"/>
-<pad name="P$10" x="-10" y="-5.5" drill="1.3" diameter="2.2"/>
-<pad name="P$11" x="10" y="5.5" drill="1.3" diameter="2.2"/>
-<pad name="P$12" x="10" y="-5.5" drill="1.3" diameter="2.2"/>
+<pad name="P$9" x="-10" y="5" drill="1.3" diameter="2.2"/>
+<pad name="P$10" x="-10" y="-5" drill="1.3" diameter="2.2"/>
+<pad name="P$11" x="10" y="5" drill="1.3" diameter="2.2"/>
+<pad name="P$12" x="10" y="-5" drill="1.3" diameter="2.2"/>
 <wire x1="8.5" y1="2" x2="8.5" y2="-2" width="0.127" layer="21" curve="-180"/>
 <wire x1="0.5" y1="-2" x2="0.5" y2="2" width="0.127" layer="21" curve="-180"/>
 <wire x1="8.5" y1="-2" x2="8.5" y2="2" width="0.127" layer="21" curve="-180"/>
@@ -2026,6 +2099,12 @@ PCB width:
 <wire x1="6" y1="0" x2="3.5" y2="-2.5" width="0.127" layer="255" curve="-90"/>
 <wire x1="-3.5" y1="-2.5" x2="-6" y2="0" width="0.127" layer="255" curve="-90"/>
 <wire x1="-6" y1="0" x2="-3.5" y2="2.5" width="0.127" layer="255" curve="-90"/>
+<wire x1="-3.5" y1="2.5" x2="3.5" y2="2.5" width="0.127" layer="253"/>
+<wire x1="3.5" y1="-2.5" x2="-3.5" y2="-2.5" width="0.127" layer="253"/>
+<wire x1="3.5" y1="2.5" x2="6" y2="0" width="0.127" layer="253" curve="-90"/>
+<wire x1="6" y1="0" x2="3.5" y2="-2.5" width="0.127" layer="253" curve="-90"/>
+<wire x1="-3.5" y1="-2.5" x2="-6" y2="0" width="0.127" layer="253" curve="-90"/>
+<wire x1="-6" y1="0" x2="-3.5" y2="2.5" width="0.127" layer="253" curve="-90"/>
 </package>
 </packages>
 <symbols>
