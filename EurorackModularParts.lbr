@@ -9433,7 +9433,7 @@ or will meet your specific requirements.&lt;p&gt;
 </device>
 </devices>
 </deviceset>
-<deviceset name="AUDIO-JACK_SMALLSYMBOL" prefix="NODRILL_TESTPAD" uservalue="yes">
+<deviceset name="AUDIO-JACK_SMALLSYMBOL" prefix="JACK" uservalue="yes">
 <description>Switching Mono 3.5mm Audio Jack from Erthenvar.</description>
 <gates>
 <gate name="G$1" symbol="AUDIO-JACK-SMALL" x="-12.7" y="-2.54"/>
