@@ -172,7 +172,7 @@
 <smd name="1" x="-0.762" y="0" dx="0.889" dy="0.889" layer="1" roundness="25" cream="no"/>
 <smd name="2" x="0.762" y="0" dx="0.889" dy="0.889" layer="1" roundness="25" cream="no"/>
 <text x="0" y="0" size="0.508" layer="25" ratio="11" align="center">&gt;NAME</text>
-<text x="0" y="-0.9525" size="0.508" layer="27" ratio="10" align="top-center">&gt;VALUE</text>
+<text x="0" y="0" size="0.508" layer="27" ratio="10" align="center">&gt;VALUE</text>
 <rectangle x1="-1.397" y1="-0.635" x2="1.397" y2="0.635" layer="39"/>
 <polygon width="0.1" layer="31">
 <vertex x="-1.0922" y="0.3302"/>
@@ -3260,7 +3260,7 @@ PCB width:
 <smd name="RING_B@1" x="-3.7" y="0" dx="3.85" dy="1.95" layer="16" roundness="100" rot="R90" cream="no"/>
 <smd name="SWITCH_B@1" x="3.7" y="0" dx="3.85" dy="1.95" layer="16" roundness="100" rot="R90" cream="no"/>
 <smd name="SECOND_B@1" x="0" y="-3.5" dx="3.85" dy="1.95" layer="16" roundness="100" cream="no"/>
-<text x="0" y="0" size="1.27" layer="22" rot="SMR45" align="center">&gt;DESC</text>
+<text x="0" y="0" size="1.27" layer="22" rot="MR45" align="center">&gt;DESC</text>
 <wire x1="-4.25" y1="1.75" x2="-4.25" y2="5" width="0.127" layer="21"/>
 <wire x1="-4.25" y1="5" x2="-1.75" y2="5" width="0.127" layer="21"/>
 <wire x1="1.75" y1="5" x2="4.25" y2="5" width="0.127" layer="21"/>
@@ -4660,7 +4660,7 @@ NS Package M08A</description>
 </symbol>
 </symbols>
 <devicesets>
-<deviceset name="12V">
+<deviceset name="12V" prefix="PWR_">
 <gates>
 <gate name="G$1" symbol="12V" x="0" y="0"/>
 </gates>
@@ -4672,7 +4672,7 @@ NS Package M08A</description>
 </device>
 </devices>
 </deviceset>
-<deviceset name="-12V">
+<deviceset name="-12V" prefix="PWR_">
 <gates>
 <gate name="G$1" symbol="-12V" x="0" y="0"/>
 </gates>
@@ -11508,7 +11508,7 @@ Based on the following sources:
 <attribute name="MPN" value=""/>
 <attribute name="OC_FARNELL" value="unknown"/>
 </part>
-<part name="R15" library="resistor" deviceset="R-EU_" device="R0402" value="51k">
+<part name="R15" library="resistor" deviceset="R-EU_" device="R0402" value="100k">
 <attribute name="MF" value=""/>
 <attribute name="MPN" value=""/>
 <attribute name="OC_FARNELL" value="unknown"/>
@@ -11596,7 +11596,7 @@ Based on the following sources:
 <attribute name="MPN" value=""/>
 <attribute name="OC_FARNELL" value="unknown"/>
 </part>
-<part name="R28" library="resistor" deviceset="R-EU_" device="R0402" value="51k">
+<part name="R28" library="resistor" deviceset="R-EU_" device="R0402" value="100k">
 <attribute name="MF" value=""/>
 <attribute name="MPN" value=""/>
 <attribute name="OC_FARNELL" value="unknown"/>
@@ -11663,7 +11663,9 @@ Based on the following sources:
 <attribute name="OC_FARNELL" value="9551824"/>
 </part>
 <part name="SUPPLY2" library="SparkFun-Aesthetics" deviceset="3.3V" device=""/>
-<part name="D3" library="EurorackModularParts" deviceset="LED*" device="3MM" value="yellow"/>
+<part name="D3" library="EurorackModularParts" deviceset="LED*" device="3MM" value="yellow">
+<attribute name="DESC" value="Clock Out"/>
+</part>
 <part name="C14" library="resistor" deviceset="C-EU" device="C0402" value="100nF">
 <attribute name="MF" value="MULTICOMP"/>
 <attribute name="MPN" value="MC0603F104Z160CT"/>
@@ -11710,10 +11712,18 @@ Based on the following sources:
 <part name="SUPPLY21" library="SparkFun-Aesthetics" deviceset="3.3V" device=""/>
 <part name="GND74" library="SparkFun-Aesthetics" deviceset="GND" device=""/>
 <part name="GND75" library="SparkFun-Aesthetics" deviceset="GND" device=""/>
-<part name="D6" library="EurorackModularParts" deviceset="LED*" device="3MM" value="yellow"/>
-<part name="D7" library="EurorackModularParts" deviceset="LED*" device="3MM" value="yellow"/>
-<part name="D8" library="EurorackModularParts" deviceset="LED*" device="3MM" value="yellow"/>
-<part name="D9" library="EurorackModularParts" deviceset="LED*" device="3MM" value="yellow"/>
+<part name="D6" library="EurorackModularParts" deviceset="LED*" device="3MM" value="yellow">
+<attribute name="DESC" value="Reset"/>
+</part>
+<part name="D7" library="EurorackModularParts" deviceset="LED*" device="3MM" value="yellow">
+<attribute name="DESC" value="Rec 1"/>
+</part>
+<part name="D8" library="EurorackModularParts" deviceset="LED*" device="3MM" value="yellow">
+<attribute name="DESC" value="Rec 2"/>
+</part>
+<part name="D9" library="EurorackModularParts" deviceset="LED*" device="3MM" value="yellow">
+<attribute name="DESC" value="Clock"/>
+</part>
 <part name="C20" library="resistor" deviceset="C-EU" device="C0402" value="100nF">
 <attribute name="MF" value="MULTICOMP"/>
 <attribute name="MPN" value="MC0603F104Z160CT"/>
@@ -13053,59 +13063,6 @@ Based on the following sources:
 <label x="496.57" y="287.02" size="1.778" layer="95"/>
 </segment>
 </net>
-<net name="N$47" class="0">
-<segment>
-<pinref part="U$55" gate="G$1" pin="FC9_MOSI/RXD"/>
-<wire x1="483.87" y1="281.94" x2="495.3" y2="281.94" width="0.1524" layer="91"/>
-<label x="494.03" y="281.94" size="1.778" layer="95"/>
-</segment>
-</net>
-<net name="N$1" class="0">
-<segment>
-<pinref part="U$55" gate="G$1" pin="FC2_MOSI/RXD"/>
-<wire x1="483.87" y1="320.04" x2="497.84" y2="320.04" width="0.1524" layer="91"/>
-<label x="494.03" y="320.04" size="1.778" layer="95"/>
-</segment>
-</net>
-<net name="N$19" class="0">
-<segment>
-<pinref part="U$55" gate="G$1" pin="FC2_MISO/TXD"/>
-<wire x1="483.87" y1="317.5" x2="497.84" y2="317.5" width="0.1524" layer="91"/>
-<label x="494.03" y="317.5" size="1.778" layer="95"/>
-</segment>
-</net>
-<net name="N$26" class="0">
-<segment>
-<pinref part="U$55" gate="G$1" pin="FC2_SSEL"/>
-<wire x1="483.87" y1="312.42" x2="497.84" y2="312.42" width="0.1524" layer="91"/>
-<label x="494.03" y="312.42" size="1.778" layer="95"/>
-</segment>
-</net>
-<net name="N$41" class="0">
-<segment>
-<pinref part="U$55" gate="G$1" pin="FC5_SSEL"/>
-<wire x1="483.87" y1="299.72" x2="499.11" y2="299.72" width="0.1524" layer="91"/>
-<label x="494.03" y="299.72" size="1.778" layer="95"/>
-</segment>
-</net>
-<net name="N$53" class="0">
-<segment>
-<pinref part="U$55" gate="G$1" pin="FC9_MISO/TXD"/>
-<wire x1="483.87" y1="279.4" x2="499.11" y2="279.4" width="0.1524" layer="91"/>
-</segment>
-</net>
-<net name="N$54" class="0">
-<segment>
-<pinref part="U$55" gate="G$1" pin="FC9_SCLK"/>
-<wire x1="483.87" y1="276.86" x2="497.84" y2="276.86" width="0.1524" layer="91"/>
-</segment>
-</net>
-<net name="N$55" class="0">
-<segment>
-<pinref part="U$55" gate="G$1" pin="FC9_SSEL"/>
-<wire x1="483.87" y1="274.32" x2="499.11" y2="274.32" width="0.1524" layer="91"/>
-</segment>
-</net>
 <net name="INP_DAT" class="0">
 <segment>
 <pinref part="U$55" gate="G$1" pin="FC8_SCLK"/>
@@ -13190,10 +13147,18 @@ Based on the following sources:
 <instance part="SUPPLY21" gate="G$1" x="24.13" y="-87.63"/>
 <instance part="GND74" gate="1" x="26.67" y="-143.51"/>
 <instance part="GND75" gate="1" x="29.21" y="-147.32"/>
-<instance part="D6" gate="LED" x="13.97" y="-30.48"/>
-<instance part="D7" gate="LED" x="8.89" y="-33.02"/>
-<instance part="D8" gate="LED" x="13.97" y="-35.56"/>
-<instance part="D9" gate="LED" x="6.35" y="-48.26"/>
+<instance part="D6" gate="LED" x="13.97" y="-30.48">
+<attribute name="DESC" x="13.97" y="-30.48" size="1.778" layer="96" display="off"/>
+</instance>
+<instance part="D7" gate="LED" x="8.89" y="-33.02">
+<attribute name="DESC" x="8.89" y="-33.02" size="1.778" layer="96" display="off"/>
+</instance>
+<instance part="D8" gate="LED" x="13.97" y="-35.56">
+<attribute name="DESC" x="13.97" y="-35.56" size="1.778" layer="96" display="off"/>
+</instance>
+<instance part="D9" gate="LED" x="6.35" y="-48.26">
+<attribute name="DESC" x="6.35" y="-48.26" size="1.778" layer="96" display="off"/>
+</instance>
 <instance part="C7" gate="G$1" x="0" y="43.18" rot="R180">
 <attribute name="OC_FARNELL" x="0" y="43.18" size="1.778" layer="96" rot="R90" display="off"/>
 <attribute name="MF" x="0" y="43.18" size="1.778" layer="96" rot="R90" display="off"/>
@@ -13236,7 +13201,9 @@ Based on the following sources:
 <instance part="U$15" gate="G$1" x="168.91" y="-59.69"/>
 <instance part="GND81" gate="1" x="168.91" y="-87.63"/>
 <instance part="SUPPLY2" gate="G$1" x="147.32" y="-100.33" rot="R180"/>
-<instance part="D3" gate="LED" x="147.32" y="-92.71" rot="R90"/>
+<instance part="D3" gate="LED" x="147.32" y="-92.71" rot="R90">
+<attribute name="DESC" x="147.32" y="-92.71" size="1.778" layer="96" rot="R90" display="off"/>
+</instance>
 <instance part="U$28" gate="G$1" x="109.22" y="-146.05"/>
 <instance part="GND99" gate="1" x="110.49" y="-171.45"/>
 <instance part="GND122" gate="1" x="118.11" y="-158.75"/>
@@ -14425,9 +14392,9 @@ Based on the following sources:
 <junction x="10.16" y="-259.08"/>
 </segment>
 <segment>
-<pinref part="IC1" gate="A" pin="A"/>
-<wire x1="21.59" y1="-361.95" x2="10.16" y2="-361.95" width="0.1524" layer="91"/>
-<label x="8.89" y="-361.95" size="1.778" layer="95"/>
+<pinref part="IC1" gate="A" pin="D"/>
+<wire x1="21.59" y1="-369.57" x2="10.16" y2="-369.57" width="0.1524" layer="91"/>
+<label x="8.89" y="-369.57" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="1_1_LED" class="0">
@@ -14437,9 +14404,9 @@ Based on the following sources:
 <pinref part="R9" gate="G$1" pin="2"/>
 </segment>
 <segment>
-<pinref part="IC5" gate="A" pin="Q0"/>
-<wire x1="41.91" y1="55.88" x2="52.07" y2="55.88" width="0.1524" layer="91"/>
-<label x="44.45" y="55.88" size="1.778" layer="95"/>
+<pinref part="IC5" gate="A" pin="Q4"/>
+<wire x1="41.91" y1="45.72" x2="52.07" y2="45.72" width="0.1524" layer="91"/>
+<label x="44.45" y="45.72" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="2_1_BUT" class="0">
@@ -14569,9 +14536,9 @@ Based on the following sources:
 <junction x="69.85" y="-257.81"/>
 </segment>
 <segment>
-<pinref part="IC1" gate="A" pin="B"/>
-<wire x1="21.59" y1="-364.49" x2="10.16" y2="-364.49" width="0.1524" layer="91"/>
-<label x="8.89" y="-364.49" size="1.778" layer="95"/>
+<pinref part="IC1" gate="A" pin="C"/>
+<wire x1="21.59" y1="-367.03" x2="10.16" y2="-367.03" width="0.1524" layer="91"/>
+<label x="8.89" y="-367.03" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="1_2_LED" class="0">
@@ -14581,9 +14548,9 @@ Based on the following sources:
 <pinref part="R21" gate="G$1" pin="2"/>
 </segment>
 <segment>
-<pinref part="IC5" gate="A" pin="Q1"/>
-<wire x1="41.91" y1="53.34" x2="52.07" y2="53.34" width="0.1524" layer="91"/>
-<label x="44.45" y="53.34" size="1.778" layer="95"/>
+<pinref part="IC5" gate="A" pin="Q6"/>
+<wire x1="41.91" y1="40.64" x2="52.07" y2="40.64" width="0.1524" layer="91"/>
+<label x="44.45" y="40.64" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="2_2_BUT" class="0">
@@ -14629,9 +14596,9 @@ Based on the following sources:
 <junction x="132.08" y="-257.81"/>
 </segment>
 <segment>
-<pinref part="IC1" gate="A" pin="C"/>
-<wire x1="21.59" y1="-367.03" x2="10.16" y2="-367.03" width="0.1524" layer="91"/>
-<label x="8.89" y="-367.03" size="1.778" layer="95"/>
+<pinref part="IC1" gate="A" pin="B"/>
+<wire x1="21.59" y1="-364.49" x2="10.16" y2="-364.49" width="0.1524" layer="91"/>
+<label x="8.89" y="-364.49" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="1_3_LED" class="0">
@@ -14641,9 +14608,9 @@ Based on the following sources:
 <pinref part="R29" gate="G$1" pin="2"/>
 </segment>
 <segment>
-<pinref part="IC5" gate="A" pin="Q2"/>
-<wire x1="41.91" y1="50.8" x2="52.07" y2="50.8" width="0.1524" layer="91"/>
-<label x="44.45" y="50.8" size="1.778" layer="95"/>
+<pinref part="IC5" gate="A" pin="Q5"/>
+<wire x1="41.91" y1="43.18" x2="52.07" y2="43.18" width="0.1524" layer="91"/>
+<label x="44.45" y="43.18" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="2_3_BUT" class="0">
@@ -14689,9 +14656,9 @@ Based on the following sources:
 <junction x="191.77" y="-256.54"/>
 </segment>
 <segment>
-<pinref part="IC1" gate="A" pin="D"/>
-<wire x1="21.59" y1="-369.57" x2="10.16" y2="-369.57" width="0.1524" layer="91"/>
-<label x="8.89" y="-369.57" size="1.778" layer="95"/>
+<pinref part="IC1" gate="A" pin="A"/>
+<wire x1="21.59" y1="-361.95" x2="10.16" y2="-361.95" width="0.1524" layer="91"/>
+<label x="8.89" y="-361.95" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="1_4_LED" class="0">
@@ -14701,9 +14668,9 @@ Based on the following sources:
 <pinref part="R38" gate="G$1" pin="2"/>
 </segment>
 <segment>
-<pinref part="IC5" gate="A" pin="Q3"/>
-<wire x1="41.91" y1="48.26" x2="52.07" y2="48.26" width="0.1524" layer="91"/>
-<label x="44.45" y="48.26" size="1.778" layer="95"/>
+<pinref part="IC5" gate="A" pin="Q7"/>
+<wire x1="41.91" y1="38.1" x2="52.07" y2="38.1" width="0.1524" layer="91"/>
+<label x="44.45" y="38.1" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="2_4_BUT" class="0">
@@ -14761,9 +14728,9 @@ Based on the following sources:
 <pinref part="R45" gate="G$1" pin="2"/>
 </segment>
 <segment>
-<pinref part="IC5" gate="A" pin="Q4"/>
-<wire x1="41.91" y1="45.72" x2="52.07" y2="45.72" width="0.1524" layer="91"/>
-<label x="44.45" y="45.72" size="1.778" layer="95"/>
+<pinref part="IC5" gate="A" pin="Q0"/>
+<wire x1="41.91" y1="55.88" x2="52.07" y2="55.88" width="0.1524" layer="91"/>
+<label x="44.45" y="55.88" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="2_5_BUT" class="0">
@@ -14821,9 +14788,9 @@ Based on the following sources:
 <pinref part="R49" gate="G$1" pin="2"/>
 </segment>
 <segment>
-<pinref part="IC5" gate="A" pin="Q5"/>
-<wire x1="41.91" y1="43.18" x2="52.07" y2="43.18" width="0.1524" layer="91"/>
-<label x="44.45" y="43.18" size="1.778" layer="95"/>
+<pinref part="IC5" gate="A" pin="Q1"/>
+<wire x1="41.91" y1="53.34" x2="52.07" y2="53.34" width="0.1524" layer="91"/>
+<label x="44.45" y="53.34" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="2_6_BUT" class="0">
@@ -14881,9 +14848,9 @@ Based on the following sources:
 <pinref part="R54" gate="G$1" pin="2"/>
 </segment>
 <segment>
-<pinref part="IC5" gate="A" pin="Q6"/>
-<wire x1="41.91" y1="40.64" x2="52.07" y2="40.64" width="0.1524" layer="91"/>
-<label x="44.45" y="40.64" size="1.778" layer="95"/>
+<pinref part="IC5" gate="A" pin="Q2"/>
+<wire x1="41.91" y1="50.8" x2="52.07" y2="50.8" width="0.1524" layer="91"/>
+<label x="44.45" y="50.8" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="2_7_BUT" class="0">
@@ -14941,9 +14908,9 @@ Based on the following sources:
 <pinref part="R58" gate="G$1" pin="2"/>
 </segment>
 <segment>
-<pinref part="IC5" gate="A" pin="Q7"/>
-<wire x1="41.91" y1="38.1" x2="52.07" y2="38.1" width="0.1524" layer="91"/>
-<label x="44.45" y="38.1" size="1.778" layer="95"/>
+<pinref part="IC5" gate="A" pin="Q3"/>
+<wire x1="41.91" y1="48.26" x2="52.07" y2="48.26" width="0.1524" layer="91"/>
+<label x="44.45" y="48.26" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="2_8_BUT" class="0">
@@ -15092,7 +15059,7 @@ Based on the following sources:
 <attribute name="MPN" x="148.59" y="52.07" size="1.778" layer="96" rot="R270" display="off"/>
 </instance>
 <instance part="GND25" gate="1" x="148.59" y="44.45"/>
-<instance part="U$6" gate="G$1" x="165.1" y="45.72" rot="R270"/>
+<instance part="U$6" gate="G$1" x="160.02" y="44.45" rot="R270"/>
 <instance part="D1" gate="D" x="43.18" y="57.15">
 <attribute name="OC_FARNELL" x="43.18" y="57.15" size="1.778" layer="96" rot="R180" display="off"/>
 <attribute name="MF" x="43.18" y="57.15" size="1.778" layer="96" rot="R180" display="off"/>
@@ -15310,8 +15277,9 @@ Based on the following sources:
 <pinref part="R26" gate="G$1" pin="1"/>
 <pinref part="C5" gate="C" pin="2"/>
 <pinref part="U$6" gate="G$1" pin="-12V"/>
-<junction x="165.1" y="45.72"/>
-<wire x1="165.1" y1="45.72" x2="165.1" y2="44.45" width="0.1524" layer="91"/>
+<junction x="160.02" y="44.45"/>
+<wire x1="160.02" y1="44.45" x2="165.1" y2="44.45" width="0.1524" layer="91"/>
+<wire x1="160.02" y1="44.45" x2="165.1" y2="45.72" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="12V" class="1">

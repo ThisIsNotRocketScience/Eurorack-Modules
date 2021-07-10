@@ -2569,7 +2569,7 @@ new: Attribute TP_SIGNAL_NAME&lt;br&gt;
 <attribute name="MF" value="" x="34.25" y="-54.5" size="1.778" layer="27" rot="R90" display="off"/>
 <attribute name="MPN" value="" x="34.25" y="-54.5" size="1.778" layer="27" rot="R90" display="off"/>
 </element>
-<element name="R15" library="OPL" package="R0603" value="51k" x="37" y="-52.875" rot="R90">
+<element name="R15" library="OPL" package="R0603" value="100k" x="37" y="-52.875" rot="R90">
 <attribute name="OC_FARNELL" value="unknown" x="37" y="-52.875" size="1.778" layer="27" rot="R90" display="off"/>
 <attribute name="MF" value="" x="37" y="-52.875" size="1.778" layer="27" rot="R90" display="off"/>
 <attribute name="MPN" value="" x="37" y="-52.875" size="1.778" layer="27" rot="R90" display="off"/>
@@ -2589,7 +2589,7 @@ new: Attribute TP_SIGNAL_NAME&lt;br&gt;
 <attribute name="MF" value="" x="34.25" y="-48.25" size="1.778" layer="27" rot="R270" display="off"/>
 <attribute name="MPN" value="" x="34.25" y="-48.25" size="1.778" layer="27" rot="R270" display="off"/>
 </element>
-<element name="R3" library="OPL" package="R0603" value="51k" x="37" y="-49.875" rot="R270">
+<element name="R3" library="OPL" package="R0603" value="100k" x="37" y="-49.875" rot="R270">
 <attribute name="OC_FARNELL" value="unknown" x="37" y="-49.875" size="1.778" layer="27" rot="R270" display="off"/>
 <attribute name="MF" value="" x="37" y="-49.875" size="1.778" layer="27" rot="R270" display="off"/>
 <attribute name="MPN" value="" x="37" y="-49.875" size="1.778" layer="27" rot="R270" display="off"/>
@@ -2751,7 +2751,7 @@ new: Attribute TP_SIGNAL_NAME&lt;br&gt;
 <attribute name="MF" value="" x="24.375" y="-53.5" size="1.778" layer="27" rot="R90" display="off"/>
 <attribute name="MPN" value="" x="24.375" y="-53.5" size="1.778" layer="27" rot="R90" display="off"/>
 </element>
-<element name="R28" library="OPL" package="R0603" value="51k" x="21.625" y="-53.125" rot="R90">
+<element name="R28" library="OPL" package="R0603" value="100k" x="21.625" y="-53.125" rot="R90">
 <attribute name="OC_FARNELL" value="unknown" x="21.625" y="-53.125" size="1.778" layer="27" rot="R90" display="off"/>
 <attribute name="MF" value="" x="21.625" y="-53.125" size="1.778" layer="27" rot="R90" display="off"/>
 <attribute name="MPN" value="" x="21.625" y="-53.125" size="1.778" layer="27" rot="R90" display="off"/>
@@ -2844,7 +2844,7 @@ new: Attribute TP_SIGNAL_NAME&lt;br&gt;
 <attribute name="MF" value="" x="55.375" y="-31.5" size="1.778" layer="27" rot="R270" display="off"/>
 <attribute name="OC_FARNELL" value="unknown" x="55.375" y="-31.5" size="1.778" layer="27" rot="R270" display="off"/>
 </element>
-<element name="R41" library="OPL" package="R0603" value="51k" x="21.625" y="-50" rot="R270">
+<element name="R41" library="OPL" package="R0603" value="100k" x="21.625" y="-50" rot="R270">
 <attribute name="MPN" value="" x="48.125" y="-29.25" size="1.778" layer="27" rot="R270" display="off"/>
 <attribute name="MF" value="" x="48.125" y="-29.25" size="1.778" layer="27" rot="R270" display="off"/>
 <attribute name="OC_FARNELL" value="unknown" x="48.125" y="-29.25" size="1.778" layer="27" rot="R270" display="off"/>
