@@ -384,9 +384,9 @@ bool overdub;
 			switch (BeatLength)
 			{
 			case 1: Leds[LooperLed_1_1].Brigthness = 255; break;
-			case 2:Leds[LooperLed_2_2].Brigthness = 255; break;
-			case 4:Leds[LooperLed_3_4].Brigthness = 255; break;
-			case 8:Leds[LooperLed_4_8].Brigthness = 255; break;
+			case 2: Leds[LooperLed_2_2].Brigthness = 255; break;
+			case 4: Leds[LooperLed_3_4].Brigthness = 255; break;
+			case 8: Leds[LooperLed_4_8].Brigthness = 255; break;
 			case 16:Leds[LooperLed_5_16].Brigthness = 255; break;
 			case 32:Leds[LooperLed_6_32].Brigthness = 255; break;
 			}
@@ -402,7 +402,7 @@ bool overdub;
 				int pp = P & 0xff;
 				for (int i = 0; i < (P >> 8)+1; i++) Leds[i].Brigthness = 255;
 				//Leds[(P >> 8)].Brigthness = 255 - pp;
-				Leds[((P >> 8) + 1)%8].Brigthness = pp;
+				Leds[((P >> 8) )%8].Brigthness = pp;
 			}
 			else
 			{
@@ -481,13 +481,16 @@ bool overdub;
 		if (recording)
 		{
 			Buffers[recordingbuffer][recordpos++] = input;
-			if (RecordingTick >= BeatLength && ! faderec)
+			if (!faderec)
 			{
-				faderec = true;
-		//		printf("starting playback, still recording tail\n");
-				playing = true;
-				playbufferlength = recordpos;
-				playpos = 0;
+				if (RecordingTick >= BeatLength)
+				{
+					faderec = true;
+					//		printf("starting playback, still recording tail\n");
+					playing = true;
+					playbufferlength = recordpos;
+					playpos = 0;
+				}
 			}
 			else
 			{
