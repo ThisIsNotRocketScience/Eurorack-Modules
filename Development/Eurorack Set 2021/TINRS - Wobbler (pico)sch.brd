@@ -2731,10 +2731,10 @@ new: Attribute TP_SIGNAL_NAME&lt;br&gt;
 <attribute name="MF" value="NXP" x="31.631" y="-86.2875" size="1.778" layer="27" rot="R180" display="off"/>
 <attribute name="MPN" value="PMBT3904,215" x="31.631" y="-86.2875" size="1.778" layer="27" rot="R180" display="off"/>
 </element>
-<element name="R19" library="OPL" package="R0603" value="10k" x="30.875" y="-88.875" rot="R180">
-<attribute name="OC_FARNELL" value="unknown" x="30.875" y="-88.875" size="1.778" layer="27" rot="R180" display="off"/>
-<attribute name="MF" value="" x="30.875" y="-88.875" size="1.778" layer="27" rot="R180" display="off"/>
-<attribute name="MPN" value="" x="30.875" y="-88.875" size="1.778" layer="27" rot="R180" display="off"/>
+<element name="R19" library="OPL" package="R0603" value="10k" x="30" y="-90.5" rot="R270">
+<attribute name="OC_FARNELL" value="unknown" x="30" y="-90.5" size="1.778" layer="27" rot="R270" display="off"/>
+<attribute name="MF" value="" x="30" y="-90.5" size="1.778" layer="27" rot="R270" display="off"/>
+<attribute name="MPN" value="" x="30" y="-90.5" size="1.778" layer="27" rot="R270" display="off"/>
 </element>
 <element name="R21" library="OPL" package="R0603" value="100k" x="33" y="-82.625" rot="R270">
 <attribute name="OC_FARNELL" value="unknown" x="33" y="-82.625" size="1.778" layer="27" rot="R270" display="off"/>
@@ -3159,10 +3159,10 @@ new: Attribute TP_SIGNAL_NAME&lt;br&gt;
 <attribute name="MF" value="" x="-9.875" y="-6.5" size="1.778" layer="27" rot="R270" display="off"/>
 <attribute name="OC_FARNELL" value="unknown" x="-9.875" y="-6.5" size="1.778" layer="27" rot="R270" display="off"/>
 </element>
-<element name="C46" library="resistor" package="C0402" value="33p" x="-4.75" y="-5.625" rot="R180">
-<attribute name="MPN" value="MC0603F104Z160CT" x="4.25" y="2" size="1.778" layer="27" rot="R180" display="off"/>
-<attribute name="MF" value="MULTICOMP" x="4.25" y="2" size="1.778" layer="27" rot="R180" display="off"/>
-<attribute name="OC_FARNELL" value="1759017" x="4.25" y="2" size="1.778" layer="27" rot="R180" display="off"/>
+<element name="C46" library="resistor" package="C0402" value="33p" x="-5.625" y="-4.875" rot="R270">
+<attribute name="MPN" value="MC0603F104Z160CT" x="-13.25" y="4.125" size="1.778" layer="27" rot="R270" display="off"/>
+<attribute name="MF" value="MULTICOMP" x="-13.25" y="4.125" size="1.778" layer="27" rot="R270" display="off"/>
+<attribute name="OC_FARNELL" value="1759017" x="-13.25" y="4.125" size="1.778" layer="27" rot="R270" display="off"/>
 </element>
 <element name="L3" library="OPL" package="L0420" value="4.7uH" x="0.625" y="-9.75"/>
 <element name="L4" library="OPL" package="L0805" value="0.1uH C76737 " x="4.875" y="-7.375"/>
@@ -4525,9 +4525,7 @@ new: Attribute TP_SIGNAL_NAME&lt;br&gt;
 <wire x1="-1.25" y1="-36.5" x2="-1.25" y2="-36.625" width="0.3048" layer="1"/>
 <wire x1="-1.25" y1="-36.625" x2="-2" y2="-37.375" width="0.3048" layer="1"/>
 <wire x1="-2" y1="-37.375" x2="-6" y2="-37.375" width="0.3048" layer="1"/>
-<wire x1="30.113" y1="-88.875" x2="30.113" y2="-92.887" width="0.3048" layer="1"/>
-<wire x1="30.113" y1="-92.887" x2="27.625" y2="-95.375" width="0.3048" layer="1"/>
-<wire x1="27.625" y1="-95.375" x2="24.875" y2="-95.375" width="0.3048" layer="1"/>
+<wire x1="27.875" y1="-95.375" x2="24.875" y2="-95.375" width="0.3048" layer="1"/>
 <via x="24.875" y="-95.375" extent="1-16" drill="0.3048"/>
 <wire x1="24.875" y1="-95.375" x2="23.625" y2="-95.375" width="0.3048" layer="16"/>
 <wire x1="23.625" y1="-95.375" x2="22.875" y2="-96.125" width="0.3048" layer="16"/>
@@ -4580,6 +4578,8 @@ new: Attribute TP_SIGNAL_NAME&lt;br&gt;
 <wire x1="-6" y1="-36.014" x2="-4.264" y2="-36.014" width="0.3048" layer="1"/>
 <wire x1="-4.264" y1="-36.014" x2="-4.25" y2="-36" width="0.3048" layer="1"/>
 <via x="-4.25" y="-36" extent="1-16" drill="0.3048"/>
+<wire x1="27.875" y1="-95.375" x2="30" y2="-93.25" width="0.3048" layer="1"/>
+<wire x1="30" y1="-91.262" x2="30" y2="-93.25" width="0.3048" layer="1"/>
 </signal>
 <signal name="N$25">
 <contactref element="R21" pad="2"/>
@@ -4593,9 +4593,13 @@ new: Attribute TP_SIGNAL_NAME&lt;br&gt;
 <contactref element="JACK10" pad="TIP_B@1" route="any" routetag="G$1.TIP"/>
 <contactref element="JACK10" pad="TIP_T@3" route="any" routetag="G$1.TIP"/>
 <wire x1="31.631" y1="-87.3875" x2="31.637" y2="-87.3935" width="0.2032" layer="1"/>
-<wire x1="31.637" y1="-87.3935" x2="31.637" y2="-88.875" width="0.2032" layer="1"/>
 <wire x1="35.56" y1="-90.75" x2="33.512" y2="-90.75" width="0.2032" layer="1"/>
-<wire x1="33.512" y1="-90.75" x2="31.637" y2="-88.875" width="0.2032" layer="1"/>
+<wire x1="33.512" y1="-90.75" x2="33.512" y2="-89.2685" width="0.2032" layer="1"/>
+<wire x1="33.512" y1="-89.2685" x2="31.631" y2="-87.3875" width="0.2032" layer="1"/>
+<wire x1="30" y1="-89.738" x2="30" y2="-89.25" width="0.2032" layer="1"/>
+<wire x1="30" y1="-89.25" x2="31.25" y2="-88" width="0.2032" layer="1"/>
+<wire x1="31.25" y1="-88" x2="31.25" y2="-87.7685" width="0.2032" layer="1"/>
+<wire x1="31.25" y1="-87.7685" x2="31.631" y2="-87.3875" width="0.2032" layer="1"/>
 </signal>
 <signal name="CLOCK">
 <contactref element="IC6" pad="11"/>
@@ -6119,7 +6123,8 @@ new: Attribute TP_SIGNAL_NAME&lt;br&gt;
 <contactref element="R32" pad="1"/>
 <contactref element="R31" pad="2"/>
 <contactref element="C46" pad="2"/>
-<wire x1="-5.25" y1="-5.625" x2="-5.25" y2="-6.738" width="0.2032" layer="1"/>
+<wire x1="-5.625" y1="-5.375" x2="-5.25" y2="-5.375" width="0.2032" layer="1"/>
+<wire x1="-5.25" y1="-5.375" x2="-5.25" y2="-6.738" width="0.2032" layer="1"/>
 <wire x1="-5.25" y1="-6.738" x2="-5.387" y2="-6.875" width="0.2032" layer="1"/>
 <wire x1="-4.575" y1="-7.687" x2="-5.387" y2="-6.875" width="0.2032" layer="1"/>
 <wire x1="-6.125" y1="-8.738" x2="-4.8631" y2="-8.738" width="0.2032" layer="1"/>
@@ -6136,7 +6141,8 @@ new: Attribute TP_SIGNAL_NAME&lt;br&gt;
 <wire x1="3.625" y1="-9.75" x2="3.861" y2="-9.75" width="0.2032" layer="1"/>
 <wire x1="3.861" y1="-9.75" x2="3.986" y2="-9.625" width="0.2032" layer="1"/>
 <wire x1="-3.863" y1="-6.875" x2="-3.863" y2="-6.012" width="0.2032" layer="1"/>
-<wire x1="-3.863" y1="-6.012" x2="-4.25" y2="-5.625" width="0.2032" layer="1"/>
+<wire x1="-3.863" y1="-6.012" x2="-3.863" y2="-4.375" width="0.2032" layer="1"/>
+<wire x1="-3.863" y1="-4.375" x2="-5.625" y2="-4.375" width="0.2032" layer="1"/>
 <wire x1="2.225" y1="-9.75" x2="2.225" y2="-9.56823125" width="0.2032" layer="1"/>
 <wire x1="2.225" y1="-9.56823125" x2="2.225" y2="-7.35" width="0.2032" layer="1"/>
 <wire x1="2.225" y1="-7.35" x2="0.75" y2="-5.875" width="0.2032" layer="1"/>
