@@ -316,7 +316,9 @@ bool overdub;
 				}
 				else
 				{
+
 					playing = true;
+					JumpBeat = 0;
 
 				}
 
