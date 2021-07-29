@@ -562,7 +562,7 @@ public:
 		B.UpdateButtons(Shifted);
 	}
 
-	void FillBuffer(int32_t* inp, int32_t* outp, int len)
+	void FillBuffer(float * inp, float* outp, int len)
 	{
 		for (int i = 0; i < len; i++)
 		{
