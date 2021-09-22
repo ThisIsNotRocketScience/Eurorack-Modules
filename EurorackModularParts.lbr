@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.05" unitdist="inch" unit="inch" style="lines" multiple="1" display="yes" altdistance="0.025" altunitdist="inch" altunit="inch"/>
+<grid distance="0.7" unitdist="mm" unit="mm" style="lines" multiple="1" display="yes" altdistance="0.025" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="2" name="Route2" color="1" fill="3" visible="yes" active="yes"/>
@@ -53,7 +53,7 @@
 <layer number="43" name="vRestrict" color="2" fill="10" visible="no" active="yes"/>
 <layer number="44" name="Drills" color="7" fill="1" visible="no" active="yes"/>
 <layer number="45" name="Holes" color="7" fill="1" visible="no" active="yes"/>
-<layer number="46" name="Milling" color="3" fill="1" visible="no" active="yes"/>
+<layer number="46" name="Milling" color="3" fill="1" visible="yes" active="yes"/>
 <layer number="47" name="Measures" color="7" fill="1" visible="no" active="yes"/>
 <layer number="48" name="Document" color="7" fill="1" visible="no" active="yes"/>
 <layer number="49" name="Reference" color="7" fill="1" visible="no" active="yes"/>
@@ -2941,7 +2941,7 @@ or will meet your specific requirements.&lt;p&gt;
 <rectangle x1="-2" y1="4" x2="2" y2="6" layer="41"/>
 <rectangle x1="-2" y1="4" x2="2" y2="6" layer="21"/>
 <text x="0" y="0" size="2.032" layer="25" ratio="10" rot="SR0" align="center">&gt;NAME</text>
-<text x="0" y="-1.27" size="1.27" layer="21" ratio="10" align="center">&gt;VALUE</text>
+<text x="0" y="-2.67" size="1.27" layer="21" ratio="10" align="center">&gt;VALUE</text>
 <circle x="0" y="0" radius="6.5" width="0.127" layer="51"/>
 <wire x1="-5.65" y1="-0.7" x2="-5.65" y2="0.7" width="0" layer="46"/>
 <wire x1="-5.65" y1="0.7" x2="-3.85" y2="0.7" width="0" layer="46"/>
@@ -2955,8 +2955,8 @@ or will meet your specific requirements.&lt;p&gt;
 <smd name="P$5" x="4.75" y="0" dx="2.5" dy="2" layer="1" cream="no"/>
 <smd name="P$6" x="-4.75" y="0" dx="2.5" dy="2" layer="16" cream="no"/>
 <smd name="P$7" x="4.75" y="0" dx="2.5" dy="2" layer="16" cream="no"/>
-<text x="0" y="1.27" size="1.016" layer="21" rot="R180" align="center">&gt;DESC</text>
-<text x="0" y="-3.81" size="1.27" layer="21" ratio="10" align="center">&gt;NAME</text>
+<text x="0" y="1.97" size="1.016" layer="21" rot="R180" align="center">&gt;DESC</text>
+<text x="0" y="-4.51" size="1.27" layer="21" ratio="10" align="center">&gt;NAME</text>
 </package>
 <package name="FENIX_3U_84HP">
 <wire x1="0.54" y1="117.25" x2="0.54" y2="11.25" width="0.127" layer="20"/>
@@ -6036,40 +6036,39 @@ Inside size: 130x50mm</text>
 <pad name="P$4" x="83.7" y="3" drill="3.5" diameter="6" shape="square"/>
 </package>
 <package name="3.5MM-JACK-SWITCH-13MM-NOHOLES-TESTPAD">
-<wire x1="-4.2" y1="-1.25" x2="-3.2" y2="-1.25" width="0" layer="46"/>
-<wire x1="-3.2" y1="-1.25" x2="-3.2" y2="1.25" width="0" layer="46"/>
-<wire x1="-3.2" y1="1.25" x2="-4.2" y2="1.25" width="0" layer="46"/>
-<wire x1="-4.2" y1="1.25" x2="-4.2" y2="-1.25" width="0" layer="46"/>
-<wire x1="3.2" y1="-1.25" x2="4.2" y2="-1.25" width="0" layer="46"/>
-<wire x1="4.2" y1="-1.25" x2="4.2" y2="1.25" width="0" layer="46"/>
-<wire x1="4.2" y1="1.25" x2="3.2" y2="1.25" width="0" layer="46"/>
-<wire x1="3.2" y1="1.25" x2="3.2" y2="-1.25" width="0" layer="46"/>
-<wire x1="1.25" y1="4" x2="1.25" y2="5" width="0" layer="46"/>
-<wire x1="1.25" y1="5" x2="-1.25" y2="5" width="0" layer="46"/>
-<wire x1="-1.25" y1="5" x2="-1.25" y2="4" width="0" layer="46"/>
-<wire x1="-1.25" y1="4" x2="1.25" y2="4" width="0" layer="46"/>
-<wire x1="1.25" y1="-4" x2="1.25" y2="-3" width="0" layer="46"/>
-<wire x1="1.25" y1="-3" x2="-1.25" y2="-3" width="0" layer="46"/>
-<wire x1="-1.25" y1="-3" x2="-1.25" y2="-4" width="0" layer="46"/>
-<wire x1="-1.25" y1="-4" x2="1.25" y2="-4" width="0" layer="46"/>
+<wire x1="-4.2" y1="-1.95" x2="-3.2" y2="-1.95" width="0" layer="46"/>
+<wire x1="-3.2" y1="-1.95" x2="-3.2" y2="0.55" width="0" layer="46"/>
+<wire x1="-3.2" y1="0.55" x2="-4.2" y2="0.55" width="0" layer="46"/>
+<wire x1="-4.2" y1="0.55" x2="-4.2" y2="-1.95" width="0" layer="46"/>
+<wire x1="3.2" y1="-1.95" x2="4.2" y2="-1.95" width="0" layer="46"/>
+<wire x1="4.2" y1="-1.95" x2="4.2" y2="0.55" width="0" layer="46"/>
+<wire x1="4.2" y1="0.55" x2="3.2" y2="0.55" width="0" layer="46"/>
+<wire x1="3.2" y1="0.55" x2="3.2" y2="-1.95" width="0" layer="46"/>
+<wire x1="1.25" y1="3.3" x2="1.25" y2="4.3" width="0" layer="46"/>
+<wire x1="1.25" y1="4.3" x2="-1.25" y2="4.3" width="0" layer="46"/>
+<wire x1="-1.25" y1="4.3" x2="-1.25" y2="3.3" width="0" layer="46"/>
+<wire x1="-1.25" y1="3.3" x2="1.25" y2="3.3" width="0" layer="46"/>
+<wire x1="1.25" y1="-4.7" x2="1.25" y2="-3.7" width="0" layer="46"/>
+<wire x1="1.25" y1="-3.7" x2="-1.25" y2="-3.7" width="0" layer="46"/>
+<wire x1="-1.25" y1="-3.7" x2="-1.25" y2="-4.7" width="0" layer="46"/>
+<wire x1="-1.25" y1="-4.7" x2="1.25" y2="-4.7" width="0" layer="46"/>
 <circle x="0" y="0" radius="4" width="0.0254" layer="255"/>
-<smd name="RING_T@3" x="-3.7" y="0" dx="3.85" dy="1.95" layer="1" roundness="100" rot="R90" cream="no"/>
-<smd name="SWITCH_T@3" x="3.7" y="0" dx="3.85" dy="1.95" layer="1" roundness="100" rot="R90" cream="no"/>
-<smd name="SECOND_T@3" x="0" y="-3.5" dx="3.85" dy="1.95" layer="1" roundness="100" rot="R180" cream="no"/>
-<smd name="TIP_T@3" x="0" y="4.5" dx="3.85" dy="1.95" layer="1" roundness="100" rot="R180" cream="no"/>
-<smd name="TIP_B@1" x="0" y="4.5" dx="3.85" dy="1.95" layer="16" roundness="100" cream="no"/>
-<smd name="RING_B@1" x="-3.7" y="0" dx="3.85" dy="1.95" layer="16" roundness="100" rot="R90" cream="no"/>
-<smd name="SWITCH_B@1" x="3.7" y="0" dx="3.85" dy="1.95" layer="16" roundness="100" rot="R90" cream="no"/>
-<smd name="SECOND_B@1" x="0" y="-3.5" dx="3.85" dy="1.95" layer="16" roundness="100" cream="no"/>
-<text x="0" y="0" size="1.27" layer="22" rot="MR45" align="center">&gt;DESC</text>
-<wire x1="-4.25" y1="1.75" x2="-4.25" y2="5" width="0.127" layer="21"/>
-<wire x1="-4.25" y1="5" x2="-1.75" y2="5" width="0.127" layer="21"/>
-<wire x1="1.75" y1="5" x2="4.25" y2="5" width="0.127" layer="21"/>
-<wire x1="4.25" y1="5" x2="4.25" y2="1.75" width="0.127" layer="21"/>
-<wire x1="4.25" y1="-1.75" x2="4.25" y2="-4" width="0.127" layer="21"/>
-<wire x1="4.25" y1="-4" x2="1.75" y2="-4" width="0.127" layer="21"/>
-<wire x1="-1.75" y1="-4" x2="-4.25" y2="-4" width="0.127" layer="21"/>
-<wire x1="-4.25" y1="-4" x2="-4.25" y2="-1.75" width="0.127" layer="21"/>
+<smd name="RING_T@3" x="-3.7" y="-0.7" dx="3.85" dy="1.95" layer="1" roundness="100" rot="R90" cream="no"/>
+<smd name="SWITCH_T@3" x="3.7" y="-0.7" dx="3.85" dy="1.95" layer="1" roundness="100" rot="R90" cream="no"/>
+<smd name="SECOND_T@3" x="0" y="-4.2" dx="3.85" dy="1.95" layer="1" roundness="100" rot="R180" cream="no"/>
+<smd name="TIP_T@3" x="0" y="3.8" dx="3.85" dy="1.95" layer="1" roundness="100" rot="R180" cream="no"/>
+<smd name="TIP_B@1" x="0" y="3.8" dx="3.85" dy="1.95" layer="16" roundness="100" cream="no"/>
+<smd name="RING_B@1" x="-3.7" y="-0.7" dx="3.85" dy="1.95" layer="16" roundness="100" rot="R90" cream="no"/>
+<smd name="SWITCH_B@1" x="3.7" y="-0.7" dx="3.85" dy="1.95" layer="16" roundness="100" rot="R90" cream="no"/>
+<smd name="SECOND_B@1" x="0" y="-4.2" dx="3.85" dy="1.95" layer="16" roundness="100" cream="no"/>
+<text x="0" y="-0.7" size="1.27" layer="22" rot="MR45" align="center">&gt;DESC</text>
+<wire x1="-4.5" y1="1.05" x2="-4.5" y2="4.9" width="0.127" layer="21"/>
+<wire x1="-4.5" y1="4.9" x2="-1.75" y2="4.9" width="0.127" layer="21"/>
+<wire x1="1.75" y1="4.9" x2="4.5" y2="4.9" width="0.127" layer="21"/>
+<wire x1="4.5" y1="4.9" x2="4.5" y2="1.05" width="0.127" layer="21"/>
+<wire x1="4.5" y1="-2.45" x2="4.5" y2="-5.7" width="0.127" layer="21"/>
+<wire x1="4.5" y1="-5.7" x2="-4.5" y2="-5.7" width="0.127" layer="21"/>
+<wire x1="-4.5" y1="-5.7" x2="-4.5" y2="-2.45" width="0.127" layer="21"/>
 <text x="-5" y="6" size="1.27" layer="254" align="center-left">&gt;DESC</text>
 <circle x="0" y="0" radius="1.8" width="0.127" layer="254"/>
 <circle x="0" y="0" radius="3.9" width="0.1" layer="254"/>
@@ -6079,20 +6078,20 @@ Inside size: 130x50mm</text>
 <wire x1="5" y1="0" x2="0" y2="5" width="0.127" layer="254" curve="90"/>
 <wire x1="0" y1="5" x2="-5" y2="5" width="0.127" layer="254"/>
 <polygon width="0.127" layer="16">
-<vertex x="-0.762" y="3.81"/>
-<vertex x="-0.762" y="2.794" curve="90"/>
-<vertex x="-0.508" y="2.54"/>
-<vertex x="0.508" y="2.54" curve="90"/>
-<vertex x="0.762" y="2.794"/>
-<vertex x="0.762" y="3.81"/>
+<vertex x="-0.762" y="3.11"/>
+<vertex x="-0.762" y="2.094" curve="90"/>
+<vertex x="-0.508" y="1.84"/>
+<vertex x="0.508" y="1.84" curve="90"/>
+<vertex x="0.762" y="2.094"/>
+<vertex x="0.762" y="3.11"/>
 </polygon>
 <polygon width="0.254" layer="30">
-<vertex x="-0.762" y="3.556"/>
-<vertex x="-0.762" y="2.794" curve="90"/>
-<vertex x="-0.508" y="2.54"/>
-<vertex x="0.508" y="2.54" curve="90"/>
-<vertex x="0.762" y="2.794"/>
-<vertex x="0.762" y="3.556"/>
+<vertex x="-0.762" y="2.856"/>
+<vertex x="-0.762" y="2.094" curve="90"/>
+<vertex x="-0.508" y="1.84"/>
+<vertex x="0.508" y="1.84" curve="90"/>
+<vertex x="0.762" y="2.094"/>
+<vertex x="0.762" y="2.856"/>
 </polygon>
 </package>
 <package name="BIGBRICK">
