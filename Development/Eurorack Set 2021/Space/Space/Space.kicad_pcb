@@ -254,7 +254,7 @@
 
   (footprint "Capacitor_SMD:C_0402_1005Metric" (layer "F.Cu")
     (tedit 5F68FEEE) (tstamp 00e45092-24fa-4120-b2dc-5836648e33bd)
-    (at 63.5 81.28)
+    (at 40.5 97.5)
     (descr "Capacitor SMD 0402 (1005 Metric), square (rectangular) end terminal, IPC_7351 nominal, (Body size source: IPC-SM-782 page 76, https://www.pcb-3d.com/wordpress/wp-content/uploads/ipc-sm-782a_amendment_1_and_2.pdf), generated with kicad-footprint-generator")
     (tags "capacitor")
     (property "Sheetfile" "LEDs.kicad_sch")
@@ -547,7 +547,7 @@
 
   (footprint "LED_THT:LED_D3.0mm_FlatTop" (layer "F.Cu")
     (tedit 5880A862) (tstamp 085aac09-f75b-4035-812a-cf57d54c64d8)
-    (at 25.55 127.475 90)
+    (at 169.5 52.275 90)
     (descr "LED, Round, FlatTop, diameter 3.0mm, 2 pins, http://www.kingbright.com/attachments/file/psearch/000/00/00/L-47XEC(Ver.9A).pdf")
     (tags "LED Round FlatTop diameter 3.0mm 2 pins")
     (property "Sheetfile" "LEDs.kicad_sch")
@@ -1015,7 +1015,7 @@
 
   (footprint "LED_THT:LED_D3.0mm_FlatTop" (layer "F.Cu")
     (tedit 5880A862) (tstamp 1794d65b-27db-4dc1-beeb-66ab2c294d9e)
-    (at 20 115.675 90)
+    (at 91.5 141.775 90)
     (descr "LED, Round, FlatTop, diameter 3.0mm, 2 pins, http://www.kingbright.com/attachments/file/psearch/000/00/00/L-47XEC(Ver.9A).pdf")
     (tags "LED Round FlatTop diameter 3.0mm 2 pins")
     (property "Sheetfile" "LEDs.kicad_sch")
@@ -1140,7 +1140,7 @@
 
   (footprint "LED_THT:LED_D3.0mm_FlatTop" (layer "F.Cu")
     (tedit 5880A862) (tstamp 1a3c9798-0699-441b-92a5-b3c4f6498e17)
-    (at 31.1 124.425 90)
+    (at 171.5 57.775 90)
     (descr "LED, Round, FlatTop, diameter 3.0mm, 2 pins, http://www.kingbright.com/attachments/file/psearch/000/00/00/L-47XEC(Ver.9A).pdf")
     (tags "LED Round FlatTop diameter 3.0mm 2 pins")
     (property "Sheetfile" "LEDs.kicad_sch")
@@ -1181,7 +1181,7 @@
 
   (footprint "Potentiometer_THT:Potentiometer_Alps_RK09K_Single_Vertical" (layer "F.Cu")
     (tedit 5A3D4993) (tstamp 1aca4284-630f-49a6-9e0a-21cd6aeb14e1)
-    (at 118.11 49.53 90)
+    (at 111 50.05 90)
     (descr "Potentiometer, vertical, Alps RK09K Single, http://www.alps.com/prod/info/E/HTML/Potentiometer/RotaryPotentiometers/RK09K/RK09K_list.html")
     (tags "Potentiometer vertical Alps RK09K Single")
     (property "Sheetfile" "Knobs.kicad_sch")
@@ -1235,7 +1235,7 @@
 
   (footprint "teensy:Teensy40" (layer "F.Cu")
     (tedit 5E188217) (tstamp 1d6518e1-cfe9-4078-adc2-cf8e6477b5cb)
-    (at 103 186 90)
+    (at 93.5 185 90)
     (property "Sheetfile" "Space.kicad_sch")
     (property "Sheetname" "")
     (path "/2c46c594-bbb1-4c1f-9aed-a1afff84eba1")
@@ -1673,7 +1673,7 @@
 
   (footprint "Potentiometer_THT:Potentiometer_Alps_RK09K_Single_Vertical" (layer "F.Cu")
     (tedit 5A3D4993) (tstamp 29111a29-6524-47dd-8617-799f5a12dae6)
-    (at 135.89 82.55 90)
+    (at 123.9 108.5 90)
     (descr "Potentiometer, vertical, Alps RK09K Single, http://www.alps.com/prod/info/E/HTML/Potentiometer/RotaryPotentiometers/RK09K/RK09K_list.html")
     (tags "Potentiometer vertical Alps RK09K Single")
     (property "Sheetfile" "Knobs.kicad_sch")
@@ -1727,7 +1727,7 @@
 
   (footprint "Potentiometer_THT:Potentiometer_Alps_RK09K_Single_Vertical" (layer "F.Cu")
     (tedit 5A3D4993) (tstamp 293b86e0-170a-43a6-9e05-7cee6013ef80)
-    (at 101.3 49.57 90)
+    (at 75.5 116.55 90)
     (descr "Potentiometer, vertical, Alps RK09K Single, http://www.alps.com/prod/info/E/HTML/Potentiometer/RotaryPotentiometers/RK09K/RK09K_list.html")
     (tags "Potentiometer vertical Alps RK09K Single")
     (property "Sheetfile" "Knobs.kicad_sch")
@@ -1955,7 +1955,7 @@
 
   (footprint "Potentiometer_THT:Potentiometer_Alps_RK09K_Single_Vertical" (layer "F.Cu")
     (tedit 5A3D4993) (tstamp 2e5b47bc-926e-40db-9844-f11ae3b7d639)
-    (at 135.89 49.53 90)
+    (at 160 88.05 90)
     (descr "Potentiometer, vertical, Alps RK09K Single, http://www.alps.com/prod/info/E/HTML/Potentiometer/RotaryPotentiometers/RK09K/RK09K_list.html")
     (tags "Potentiometer vertical Alps RK09K Single")
     (property "Sheetfile" "Knobs.kicad_sch")
@@ -2130,7 +2130,7 @@
 
   (footprint "AudioJacks:Jack_3.5mm_QingPu_WQP-PJ3410_Vertical" (layer "F.Cu")
     (tedit 60570E6D) (tstamp 30d23e53-f79a-44b0-b268-376bc99635f5)
-    (at 10 60)
+    (at 155.5 44.5)
     (property "Sheetfile" "CVJacks.kicad_sch")
     (property "Sheetname" "CVJacks")
     (path "/dc21a6a0-1353-4f47-89c1-4db961cb5d89/17f241b1-7957-4dea-905a-021ad98cb93b")
@@ -2183,7 +2183,7 @@
 
   (footprint "Resistor_SMD:R_0402_1005Metric" (layer "F.Cu")
     (tedit 5F68FEEE) (tstamp 32e574d8-7b86-457c-a42f-0ab486725a62)
-    (at 175 77.99)
+    (at 207.59 68.5)
     (descr "Resistor SMD 0402 (1005 Metric), square (rectangular) end terminal, IPC_7351 nominal, (Body size source: IPC-SM-782 page 72, https://www.pcb-3d.com/wordpress/wp-content/uploads/ipc-sm-782a_amendment_1_and_2.pdf), generated with kicad-footprint-generator")
     (tags "resistor")
     (property "Sheetfile" "Space.kicad_sch")
@@ -2320,7 +2320,7 @@
 
   (footprint "LED_THT:LED_D3.0mm_FlatTop" (layer "F.Cu")
     (tedit 5880A862) (tstamp 3910c188-807a-4257-bbfd-a339b3c4cf57)
-    (at 25.55 133.375 90)
+    (at 167.5 130 90)
     (descr "LED, Round, FlatTop, diameter 3.0mm, 2 pins, http://www.kingbright.com/attachments/file/psearch/000/00/00/L-47XEC(Ver.9A).pdf")
     (tags "LED Round FlatTop diameter 3.0mm 2 pins")
     (property "Sheetfile" "LEDs.kicad_sch")
@@ -2457,7 +2457,7 @@
 
   (footprint "footprints:PB614_LED_SW_6pin" (layer "F.Cu")
     (tedit 5AC169AA) (tstamp 3ceb5b0e-1c94-4a65-8a5f-057051da049b)
-    (at 75 111)
+    (at 70.5 55)
     (property "Sheetfile" "Space.kicad_sch")
     (property "Sheetname" "")
     (path "/561f4613-552a-408a-867f-f45720c1aaf9")
@@ -2497,7 +2497,7 @@
 
   (footprint "AudioJacks:Jack_3.5mm_QingPu_WQP-PJ3410_Vertical" (layer "F.Cu")
     (tedit 60570E6D) (tstamp 3de21f57-0542-4e92-9d99-2dd969b1757f)
-    (at 54 60)
+    (at 71.5 43)
     (property "Sheetfile" "CVJacks.kicad_sch")
     (property "Sheetname" "CVJacks")
     (path "/dc21a6a0-1353-4f47-89c1-4db961cb5d89/e05ad1b7-3018-4eea-a516-07d0d93f75a3")
@@ -2640,7 +2640,7 @@
 
   (footprint "LED_THT:LED_D3.0mm_FlatTop" (layer "F.Cu")
     (tedit 5880A862) (tstamp 4223f4f4-22ac-4001-a0b1-0bf007511bb2)
-    (at 31.1 130.325 90)
+    (at 81.5 129.275 90)
     (descr "LED, Round, FlatTop, diameter 3.0mm, 2 pins, http://www.kingbright.com/attachments/file/psearch/000/00/00/L-47XEC(Ver.9A).pdf")
     (tags "LED Round FlatTop diameter 3.0mm 2 pins")
     (property "Sheetfile" "LEDs.kicad_sch")
@@ -2819,7 +2819,7 @@
 
   (footprint "Potentiometer_THT:Potentiometer_Alps_RK09K_Single_Vertical" (layer "F.Cu")
     (tedit 5A3D4993) (tstamp 4d59037e-3af6-4877-b9ff-b4bc086870f4)
-    (at 101.92 82.55 90)
+    (at 74.5 75.05 90)
     (descr "Potentiometer, vertical, Alps RK09K Single, http://www.alps.com/prod/info/E/HTML/Potentiometer/RotaryPotentiometers/RK09K/RK09K_list.html")
     (tags "Potentiometer vertical Alps RK09K Single")
     (property "Sheetfile" "Knobs.kicad_sch")
@@ -2999,7 +2999,7 @@
 
   (footprint "footprints:PB614_LED_SW_6pin" (layer "F.Cu")
     (tedit 5AC169AA) (tstamp 5654de1a-57a3-4ae2-a18c-d70c9196a7cb)
-    (at 185 68)
+    (at 124 139.5)
     (property "Sheetfile" "Space.kicad_sch")
     (property "Sheetname" "")
     (path "/e2cdb500-17a3-40a6-bf03-ae93855205f5")
@@ -3039,7 +3039,7 @@
 
   (footprint "Resistor_SMD:R_0402_1005Metric" (layer "F.Cu")
     (tedit 5F68FEEE) (tstamp 56b17c37-924a-45a4-adcb-f7993a18f7a8)
-    (at 101.97 119.38)
+    (at 52.5 123)
     (descr "Resistor SMD 0402 (1005 Metric), square (rectangular) end terminal, IPC_7351 nominal, (Body size source: IPC-SM-782 page 72, https://www.pcb-3d.com/wordpress/wp-content/uploads/ipc-sm-782a_amendment_1_and_2.pdf), generated with kicad-footprint-generator")
     (tags "resistor")
     (property "Sheetfile" "LEDs.kicad_sch")
@@ -3279,7 +3279,7 @@
 
   (footprint "AudioJacks:Jack_3.5mm_QingPu_WQP-PJ3410_Vertical" (layer "F.Cu")
     (tedit 60570E6D) (tstamp 5a1c05f0-c7b4-4c5c-b076-2a1214bc5f34)
-    (at 175.26 137.16)
+    (at 177.3 137.5)
     (property "Sheetfile" "Space.kicad_sch")
     (property "Sheetname" "")
     (path "/29bb3788-c681-4911-b2f4-19d94b705395")
@@ -3332,7 +3332,7 @@
 
   (footprint "Resistor_SMD:R_0402_1005Metric" (layer "F.Cu")
     (tedit 5F68FEEE) (tstamp 6273b4b0-7530-4dd1-ab22-22fa1cf31337)
-    (at 99.06 119.38)
+    (at 49.59 123)
     (descr "Resistor SMD 0402 (1005 Metric), square (rectangular) end terminal, IPC_7351 nominal, (Body size source: IPC-SM-782 page 72, https://www.pcb-3d.com/wordpress/wp-content/uploads/ipc-sm-782a_amendment_1_and_2.pdf), generated with kicad-footprint-generator")
     (tags "resistor")
     (property "Sheetfile" "LEDs.kicad_sch")
@@ -3705,7 +3705,7 @@
 
   (footprint "LED_THT:LED_D3.0mm_FlatTop" (layer "F.Cu")
     (tedit 5880A862) (tstamp 6e9ec475-610b-4a0a-8f1f-db6e8307680d)
-    (at 25.55 121.575 90)
+    (at 174.5 63 90)
     (descr "LED, Round, FlatTop, diameter 3.0mm, 2 pins, http://www.kingbright.com/attachments/file/psearch/000/00/00/L-47XEC(Ver.9A).pdf")
     (tags "LED Round FlatTop diameter 3.0mm 2 pins")
     (property "Sheetfile" "LEDs.kicad_sch")
@@ -3836,7 +3836,7 @@
 
   (footprint "AudioJacks:Jack_3.5mm_QingPu_WQP-PJ3410_Vertical" (layer "F.Cu")
     (tedit 60570E6D) (tstamp 75d29580-781f-432d-b450-943064487069)
-    (at 162.56 137.16)
+    (at 166 137.5)
     (property "Sheetfile" "Space.kicad_sch")
     (property "Sheetname" "")
     (path "/98f8be9d-2fa6-46a7-9eb5-0f46a8ccfdf3")
@@ -3938,7 +3938,7 @@
 
   (footprint "LED_THT:LED_D3.0mm_FlatTop" (layer "F.Cu")
     (tedit 5880A862) (tstamp 7c790824-ddd4-4bd4-b304-c09b5ff471bc)
-    (at 20 121.575 90)
+    (at 123 119.275 90)
     (descr "LED, Round, FlatTop, diameter 3.0mm, 2 pins, http://www.kingbright.com/attachments/file/psearch/000/00/00/L-47XEC(Ver.9A).pdf")
     (tags "LED Round FlatTop diameter 3.0mm 2 pins")
     (property "Sheetfile" "LEDs.kicad_sch")
@@ -4189,7 +4189,7 @@
 
   (footprint "AudioJacks:Jack_3.5mm_QingPu_WQP-PJ3410_Vertical" (layer "F.Cu")
     (tedit 60570E6D) (tstamp 85ee4bd7-abb3-4862-ad9b-7eaea6dca483)
-    (at 21 60)
+    (at 90.5 43)
     (property "Sheetfile" "CVJacks.kicad_sch")
     (property "Sheetname" "CVJacks")
     (path "/dc21a6a0-1353-4f47-89c1-4db961cb5d89/58a475df-f872-4c4a-ab7d-1b540e272f69")
@@ -4495,7 +4495,7 @@
 
   (footprint "AudioJacks:Jack_3.5mm_QingPu_WQP-PJ3410_Vertical" (layer "F.Cu")
     (tedit 60570E6D) (tstamp 8d1923a1-555c-4a78-a617-d31d66c14a36)
-    (at 10 76 180)
+    (at 174.2 113 180)
     (property "Sheetfile" "CVJacks.kicad_sch")
     (property "Sheetname" "CVJacks")
     (path "/dc21a6a0-1353-4f47-89c1-4db961cb5d89/865c5b50-b400-4687-a7c8-9de4a8b93b42")
@@ -4632,7 +4632,7 @@
 
   (footprint "LED_THT:LED_D3.0mm_FlatTop" (layer "F.Cu")
     (tedit 5880A862) (tstamp 8ec49db3-9aa4-4392-a3e1-70be6e0a69c5)
-    (at 20 109.775 90)
+    (at 123 127.775 90)
     (descr "LED, Round, FlatTop, diameter 3.0mm, 2 pins, http://www.kingbright.com/attachments/file/psearch/000/00/00/L-47XEC(Ver.9A).pdf")
     (tags "LED Round FlatTop diameter 3.0mm 2 pins")
     (property "Sheetfile" "LEDs.kicad_sch")
@@ -4673,7 +4673,7 @@
 
   (footprint "Potentiometer_THT:Potentiometer_Alps_RK09K_Single_Vertical" (layer "F.Cu")
     (tedit 5A3D4993) (tstamp 8f822d1a-bfa1-473c-ab5f-69011682cb66)
-    (at 135.89 67.31 90)
+    (at 158 112.55 90)
     (descr "Potentiometer, vertical, Alps RK09K Single, http://www.alps.com/prod/info/E/HTML/Potentiometer/RotaryPotentiometers/RK09K/RK09K_list.html")
     (tags "Potentiometer vertical Alps RK09K Single")
     (property "Sheetfile" "Knobs.kicad_sch")
@@ -4970,7 +4970,7 @@
 
   (footprint "Potentiometer_THT:Potentiometer_Alps_RK09K_Single_Vertical" (layer "F.Cu")
     (tedit 5A3D4993) (tstamp 9ca45473-66a2-4ee7-956f-2c5c24210e95)
-    (at 153.67 82.55 90)
+    (at 176.5 82.05 90)
     (descr "Potentiometer, vertical, Alps RK09K Single, http://www.alps.com/prod/info/E/HTML/Potentiometer/RotaryPotentiometers/RK09K/RK09K_list.html")
     (tags "Potentiometer vertical Alps RK09K Single")
     (property "Sheetfile" "Knobs.kicad_sch")
@@ -5024,7 +5024,7 @@
 
   (footprint "footprints:PB614_LED_SW_6pin" (layer "F.Cu")
     (tedit 5AC169AA) (tstamp 9d952063-ee2a-4964-a775-be40466d3b06)
-    (at 176.6 68)
+    (at 175.5 40)
     (property "Sheetfile" "Space.kicad_sch")
     (property "Sheetname" "")
     (path "/ac4c1f24-41a3-446e-a8fd-7a58fc9ba1bc")
@@ -5112,7 +5112,7 @@
 
   (footprint "Potentiometer_THT:Potentiometer_Alps_RK09K_Single_Vertical" (layer "F.Cu")
     (tedit 5A3D4993) (tstamp a1634fb4-fb77-4d6d-8748-76c69595beed)
-    (at 106.1 142 90)
+    (at 115.1 142 90)
     (descr "Potentiometer, vertical, Alps RK09K Single, http://www.alps.com/prod/info/E/HTML/Potentiometer/RotaryPotentiometers/RK09K/RK09K_list.html")
     (tags "Potentiometer vertical Alps RK09K Single")
     (property "Sheetfile" "Knobs.kicad_sch")
@@ -5166,7 +5166,7 @@
 
   (footprint "AudioJacks:Jack_3.5mm_QingPu_WQP-PJ3410_Vertical" (layer "F.Cu")
     (tedit 60570E6D) (tstamp a1a36a74-e5f0-482d-8091-50fbfd4a3cb8)
-    (at 22 91)
+    (at 174 94.5)
     (property "Sheetfile" "CVJacks.kicad_sch")
     (property "Sheetname" "CVJacks")
     (path "/dc21a6a0-1353-4f47-89c1-4db961cb5d89/7ac8f801-14d3-4b76-87f7-dab46d14db8d")
@@ -5725,7 +5725,7 @@
 
   (footprint "LED_THT:LED_D3.0mm_FlatTop" (layer "F.Cu")
     (tedit 5880A862) (tstamp b00d6948-18d6-4c65-a59e-b02a8d16ec4f)
-    (at 33.18 136.225 90)
+    (at 71.5 129.275 90)
     (descr "LED, Round, FlatTop, diameter 3.0mm, 2 pins, http://www.kingbright.com/attachments/file/psearch/000/00/00/L-47XEC(Ver.9A).pdf")
     (tags "LED Round FlatTop diameter 3.0mm 2 pins")
     (property "Sheetfile" "LEDs.kicad_sch")
@@ -5766,7 +5766,7 @@
 
   (footprint "LED_THT:LED_D3.0mm_FlatTop" (layer "F.Cu")
     (tedit 5880A862) (tstamp b1f055e5-95f2-481f-beea-70b77e730394)
-    (at 25.55 115.675 90)
+    (at 117 114 90)
     (descr "LED, Round, FlatTop, diameter 3.0mm, 2 pins, http://www.kingbright.com/attachments/file/psearch/000/00/00/L-47XEC(Ver.9A).pdf")
     (tags "LED Round FlatTop diameter 3.0mm 2 pins")
     (property "Sheetfile" "LEDs.kicad_sch")
@@ -5960,7 +5960,7 @@
 
   (footprint "LED_THT:LED_D3.0mm_FlatTop" (layer "F.Cu")
     (tedit 5880A862) (tstamp b512bb3a-89df-444f-a6c4-07e9501015db)
-    (at 20 133.375 90)
+    (at 177.5 130 90)
     (descr "LED, Round, FlatTop, diameter 3.0mm, 2 pins, http://www.kingbright.com/attachments/file/psearch/000/00/00/L-47XEC(Ver.9A).pdf")
     (tags "LED Round FlatTop diameter 3.0mm 2 pins")
     (property "Sheetfile" "LEDs.kicad_sch")
@@ -6001,7 +6001,7 @@
 
   (footprint "AudioJacks:Jack_3.5mm_QingPu_WQP-PJ3410_Vertical" (layer "F.Cu")
     (tedit 60570E6D) (tstamp b52917d6-f9b1-4ab1-aee7-f49f7b11bb62)
-    (at 32 60)
+    (at 99 137)
     (property "Sheetfile" "CVJacks.kicad_sch")
     (property "Sheetname" "CVJacks")
     (path "/dc21a6a0-1353-4f47-89c1-4db961cb5d89/dce8a00b-a7be-43d5-b8f7-01532b44ac3f")
@@ -6054,7 +6054,7 @@
 
   (footprint "Potentiometer_THT:Potentiometer_Alps_RK09K_Single_Vertical" (layer "F.Cu")
     (tedit 5A3D4993) (tstamp b5689cdf-fdf6-470e-92fe-3533cd155f64)
-    (at 118.11 82.55 90)
+    (at 102.5 73.05 90)
     (descr "Potentiometer, vertical, Alps RK09K Single, http://www.alps.com/prod/info/E/HTML/Potentiometer/RotaryPotentiometers/RK09K/RK09K_list.html")
     (tags "Potentiometer vertical Alps RK09K Single")
     (property "Sheetfile" "Knobs.kicad_sch")
@@ -6150,7 +6150,7 @@
 
   (footprint "LED_THT:LED_D3.0mm_FlatTop" (layer "F.Cu")
     (tedit 5880A862) (tstamp b7f4ad1b-a680-4520-89ca-212ca9ca83fa)
-    (at 20 127.475 90)
+    (at 172.5 130 90)
     (descr "LED, Round, FlatTop, diameter 3.0mm, 2 pins, http://www.kingbright.com/attachments/file/psearch/000/00/00/L-47XEC(Ver.9A).pdf")
     (tags "LED Round FlatTop diameter 3.0mm 2 pins")
     (property "Sheetfile" "LEDs.kicad_sch")
@@ -6281,7 +6281,7 @@
 
   (footprint "AudioJacks:Jack_3.5mm_QingPu_WQP-PJ3410_Vertical" (layer "F.Cu")
     (tedit 60570E6D) (tstamp bd2afad5-5b07-4493-827d-d49d58e2dc22)
-    (at 43 60)
+    (at 92 118.5)
     (property "Sheetfile" "CVJacks.kicad_sch")
     (property "Sheetname" "CVJacks")
     (path "/dc21a6a0-1353-4f47-89c1-4db961cb5d89/74801cc5-8458-47d2-9371-d01f0480f78e")
@@ -6334,7 +6334,7 @@
 
   (footprint "LED_THT:LED_D3.0mm_FlatTop" (layer "F.Cu")
     (tedit 5880A862) (tstamp bd61e84e-5b9f-4634-840d-153426f9685d)
-    (at 36.65 130.325 90)
+    (at 76.5 129.275 90)
     (descr "LED, Round, FlatTop, diameter 3.0mm, 2 pins, http://www.kingbright.com/attachments/file/psearch/000/00/00/L-47XEC(Ver.9A).pdf")
     (tags "LED Round FlatTop diameter 3.0mm 2 pins")
     (property "Sheetfile" "LEDs.kicad_sch")
@@ -6375,7 +6375,7 @@
 
   (footprint "Resistor_SMD:R_0402_1005Metric" (layer "F.Cu")
     (tedit 5F68FEEE) (tstamp c1529448-88a1-4109-bedf-6c1cf6719d9c)
-    (at 177.91 76)
+    (at 210.5 66.51)
     (descr "Resistor SMD 0402 (1005 Metric), square (rectangular) end terminal, IPC_7351 nominal, (Body size source: IPC-SM-782 page 72, https://www.pcb-3d.com/wordpress/wp-content/uploads/ipc-sm-782a_amendment_1_and_2.pdf), generated with kicad-footprint-generator")
     (tags "resistor")
     (property "Sheetfile" "Space.kicad_sch")
@@ -6570,7 +6570,7 @@
 
   (footprint "Potentiometer_THT:Potentiometer_Alps_RK09K_Single_Vertical" (layer "F.Cu")
     (tedit 5A3D4993) (tstamp c740f6ed-0d9b-42af-a301-806c7b32fecb)
-    (at 101.92 97.79 90)
+    (at 94.5 92.55 90)
     (descr "Potentiometer, vertical, Alps RK09K Single, http://www.alps.com/prod/info/E/HTML/Potentiometer/RotaryPotentiometers/RK09K/RK09K_list.html")
     (tags "Potentiometer vertical Alps RK09K Single")
     (property "Sheetfile" "Knobs.kicad_sch")
@@ -6814,7 +6814,7 @@
 
   (footprint "Potentiometer_THT:Potentiometer_Alps_RK09K_Single_Vertical" (layer "F.Cu")
     (tedit 5A3D4993) (tstamp d05cc730-1c91-4654-ab76-7bf269c61a54)
-    (at 118.11 97.79 90)
+    (at 120.5 90.55 90)
     (descr "Potentiometer, vertical, Alps RK09K Single, http://www.alps.com/prod/info/E/HTML/Potentiometer/RotaryPotentiometers/RK09K/RK09K_list.html")
     (tags "Potentiometer vertical Alps RK09K Single")
     (property "Sheetfile" "Knobs.kicad_sch")
@@ -6981,7 +6981,7 @@
 
   (footprint "LED_THT:LED_D3.0mm_FlatTop" (layer "F.Cu")
     (tedit 5880A862) (tstamp d37ce43d-d381-4a5c-aafb-da6a100e7980)
-    (at 33.18 142.125 90)
+    (at 168 46.775 90)
     (descr "LED, Round, FlatTop, diameter 3.0mm, 2 pins, http://www.kingbright.com/attachments/file/psearch/000/00/00/L-47XEC(Ver.9A).pdf")
     (tags "LED Round FlatTop diameter 3.0mm 2 pins")
     (property "Sheetfile" "LEDs.kicad_sch")
@@ -7022,7 +7022,7 @@
 
   (footprint "LED_THT:LED_D3.0mm_FlatTop" (layer "F.Cu")
     (tedit 5880A862) (tstamp d3d527e9-7ad4-4fa2-92dd-b28ae69d6a6d)
-    (at 96.52 114.3)
+    (at 116.725 122)
     (descr "LED, Round, FlatTop, diameter 3.0mm, 2 pins, http://www.kingbright.com/attachments/file/psearch/000/00/00/L-47XEC(Ver.9A).pdf")
     (tags "LED Round FlatTop diameter 3.0mm 2 pins")
     (property "Sheetfile" "LEDs.kicad_sch")
@@ -7063,7 +7063,7 @@
 
   (footprint "Potentiometer_THT:Potentiometer_Alps_RK09K_Single_Vertical" (layer "F.Cu")
     (tedit 5A3D4993) (tstamp d660693f-8f3f-43a7-af52-953e2805f3a9)
-    (at 118.11 67.31 90)
+    (at 93.5 110.55 90)
     (descr "Potentiometer, vertical, Alps RK09K Single, http://www.alps.com/prod/info/E/HTML/Potentiometer/RotaryPotentiometers/RK09K/RK09K_list.html")
     (tags "Potentiometer vertical Alps RK09K Single")
     (property "Sheetfile" "Knobs.kicad_sch")
@@ -7117,16 +7117,16 @@
 
   (footprint "AudioJacks:Jack_3.5mm_QingPu_WQP-PJ3410_Vertical" (layer "F.Cu")
     (tedit 60570E6D) (tstamp d761b3e9-8eba-4e5c-b4f6-f5b5f5b287d5)
-    (at 131 134 -90)
+    (at 134 137)
     (property "Sheetfile" "CVJacks.kicad_sch")
     (property "Sheetname" "CVJacks")
     (path "/dc21a6a0-1353-4f47-89c1-4db961cb5d89/1a53df60-5e90-464c-b08d-ce92cc1b81ca")
     (attr through_hole)
-    (fp_text reference "J8" (at -2.7 -6 90) (layer "F.SilkS")
+    (fp_text reference "J8" (at -2.7 -6) (layer "F.SilkS")
       (effects (font (size 1 1) (thickness 0.15)))
       (tstamp f2134044-3899-4cba-8e6a-472333f2636e)
     )
-    (fp_text value "AudioJack3_SwitchTR" (at 2.7 -6.1 90) (layer "F.Fab")
+    (fp_text value "AudioJack3_SwitchTR" (at 2.7 -6.1) (layer "F.Fab")
       (effects (font (size 1 1) (thickness 0.15)))
       (tstamp 0f65c6fd-48f2-4a96-b3bd-ae7ee3abfecd)
     )
@@ -7143,13 +7143,13 @@
     (fp_line (start -5 6) (end 5 6) (layer "F.CrtYd") (width 0.12) (tstamp 76c55351-7a65-4876-8a89-0c66ad3aba52))
     (fp_line (start -5 -5.5) (end -5 6) (layer "F.CrtYd") (width 0.12) (tstamp 9e0e6087-1dec-4c2c-9f77-46d03616abe0))
     (fp_line (start 5 6) (end 5 -5.5) (layer "F.CrtYd") (width 0.12) (tstamp e313718f-62ba-4168-a509-ee6dd8cb51ae))
-    (pad "R" thru_hole oval locked (at 0 -3.5) (size 2.3 4) (drill oval 0.8 2.5) (layers *.Cu *.Mask)
+    (pad "R" thru_hole oval locked (at 0 -3.5 90) (size 2.3 4) (drill oval 0.8 2.5) (layers *.Cu *.Mask)
       (net 132 "unconnected-(J8-PadR)") (pintype "passive") (tstamp d6acd78f-7fb3-46f2-b611-f426ecd25652))
-    (pad "S" thru_hole oval locked (at 3.7 0 270) (size 2.8 4.5) (drill oval 0.8 2.5) (layers *.Cu *.Mask)
+    (pad "S" thru_hole oval locked (at 3.7 0) (size 2.8 4.5) (drill oval 0.8 2.5) (layers *.Cu *.Mask)
       (net 11 "GND") (pintype "passive") (tstamp a04f2ebf-4fc3-4d88-bedb-f49d48703157))
-    (pad "T" thru_hole oval locked (at 0 4.5 180) (size 2.3 4) (drill oval 0.8 2.5) (layers *.Cu *.Mask)
+    (pad "T" thru_hole oval locked (at 0 4.5 270) (size 2.3 4) (drill oval 0.8 2.5) (layers *.Cu *.Mask)
       (net 133 "/CVJacks/CV2") (pintype "passive") (tstamp 85402473-fac8-4731-8af1-c3ab00aeff2c))
-    (pad "TN" thru_hole oval locked (at -3.7 0 270) (size 2.8 4.5) (drill oval 0.8 2.5) (layers *.Cu *.Mask)
+    (pad "TN" thru_hole oval locked (at -3.7 0) (size 2.8 4.5) (drill oval 0.8 2.5) (layers *.Cu *.Mask)
       (net 11 "GND") (pintype "passive") (tstamp df4dcba7-670a-4e1c-a502-4899f5933c10))
     (model "${KISYS3DMOD}/AudioJacks.3dshapes/PJ3410.step"
       (offset (xyz 0 0 0))
@@ -7170,7 +7170,7 @@
 
   (footprint "Potentiometer_THT:Potentiometer_Alps_RK09K_Single_Vertical" (layer "F.Cu")
     (tedit 5A3D4993) (tstamp d7958272-2774-412c-8297-af25f53fc79f)
-    (at 153.67 67.31 90)
+    (at 134 70.05 90)
     (descr "Potentiometer, vertical, Alps RK09K Single, http://www.alps.com/prod/info/E/HTML/Potentiometer/RotaryPotentiometers/RK09K/RK09K_list.html")
     (tags "Potentiometer vertical Alps RK09K Single")
     (property "Sheetfile" "Knobs.kicad_sch")
@@ -7595,7 +7595,7 @@
 
   (footprint "Potentiometer_THT:Potentiometer_Alps_RK09K_Single_Vertical" (layer "F.Cu")
     (tedit 5A3D4993) (tstamp e1833d7e-e5a2-438d-b465-87d447e8f0e8)
-    (at 153.67 49.53 90)
+    (at 143.1 49.5 90)
     (descr "Potentiometer, vertical, Alps RK09K Single, http://www.alps.com/prod/info/E/HTML/Potentiometer/RotaryPotentiometers/RK09K/RK09K_list.html")
     (tags "Potentiometer vertical Alps RK09K Single")
     (property "Sheetfile" "Knobs.kicad_sch")
@@ -7739,18 +7739,18 @@
 
   (footprint "LED_THT:LED_D3.0mm_FlatTop" (layer "F.Cu")
     (tedit 5880A862) (tstamp e3ad678a-0e83-4d41-b0e6-f10d8e5d0c88)
-    (at 96.52 124.46)
+    (at 100 122.5 90)
     (descr "LED, Round, FlatTop, diameter 3.0mm, 2 pins, http://www.kingbright.com/attachments/file/psearch/000/00/00/L-47XEC(Ver.9A).pdf")
     (tags "LED Round FlatTop diameter 3.0mm 2 pins")
     (property "Sheetfile" "LEDs.kicad_sch")
     (property "Sheetname" "LEDs")
     (path "/05d85602-f142-4aef-83fd-3bad46fba78c/e491f9c6-351b-4f79-ba56-a3d05b689428")
     (attr through_hole)
-    (fp_text reference "D4" (at 1.27 -2.96) (layer "F.SilkS")
+    (fp_text reference "D4" (at 1.27 -2.96 90) (layer "F.SilkS")
       (effects (font (size 1 1) (thickness 0.15)))
       (tstamp e5bf0ffb-1261-4572-91dd-7c3f3a23c7ab)
     )
-    (fp_text value "LED" (at 1.27 2.96) (layer "F.Fab")
+    (fp_text value "LED" (at 1.27 2.96 90) (layer "F.Fab")
       (effects (font (size 1 1) (thickness 0.15)))
       (tstamp 5d09005a-818e-4dd4-97c3-b4aa6c23ce08)
     )
@@ -7767,9 +7767,9 @@
     (fp_line (start -0.23 -1.16619) (end -0.23 1.16619) (layer "F.Fab") (width 0.1) (tstamp ccc504b8-db75-4e12-a5e7-d7fc3ab28d86))
     (fp_arc (start -0.23 -1.16619) (mid 3.17 0.000452) (end -0.230555 1.165476) (layer "F.Fab") (width 0.1) (tstamp f7687a2e-b84f-410b-b43d-8430fe578920))
     (fp_circle (center 1.27 0) (end 2.77 0) (layer "F.Fab") (width 0.1) (fill none) (tstamp 2668ae78-6d5e-416e-855d-1785bd36eaa6))
-    (pad "1" thru_hole rect locked (at 0 0) (size 1.8 1.8) (drill 0.9) (layers *.Cu *.Mask)
+    (pad "1" thru_hole rect locked (at 0 0 90) (size 1.8 1.8) (drill 0.9) (layers *.Cu *.Mask)
       (net 51 "Net-(D4-Pad1)") (pinfunction "K") (pintype "passive") (tstamp c5b53984-6d7f-44c7-85cc-5e794091d5a3))
-    (pad "2" thru_hole circle locked (at 2.54 0) (size 1.8 1.8) (drill 0.9) (layers *.Cu *.Mask)
+    (pad "2" thru_hole circle locked (at 2.54 0 90) (size 1.8 1.8) (drill 0.9) (layers *.Cu *.Mask)
       (net 76 "/LEDs/LED1") (pinfunction "A") (pintype "passive") (tstamp c89464ff-21e6-4876-b3fa-6ec0b5c531f1))
     (model "${KICAD6_3DMODEL_DIR}/LED_THT.3dshapes/LED_D3.0mm_FlatTop_yellow.wrl"
       (offset (xyz 0 0 0))
@@ -7780,7 +7780,7 @@
 
   (footprint "Potentiometer_THT:Potentiometer_Alps_RK09K_Single_Vertical" (layer "F.Cu")
     (tedit 5A3D4993) (tstamp e658a75c-a146-4ed4-9f98-ad275719c377)
-    (at 101.92 67.31 90)
+    (at 74.5 94.55 90)
     (descr "Potentiometer, vertical, Alps RK09K Single, http://www.alps.com/prod/info/E/HTML/Potentiometer/RotaryPotentiometers/RK09K/RK09K_list.html")
     (tags "Potentiometer vertical Alps RK09K Single")
     (property "Sheetfile" "Knobs.kicad_sch")
@@ -8020,7 +8020,7 @@
 
   (footprint "Resistor_SMD:R_0402_1005Metric" (layer "F.Cu")
     (tedit 5F68FEEE) (tstamp ee9090a1-ec3a-4ad4-a83b-c5822b50e88a)
-    (at 177.91 77.99)
+    (at 210.5 68.5)
     (descr "Resistor SMD 0402 (1005 Metric), square (rectangular) end terminal, IPC_7351 nominal, (Body size source: IPC-SM-782 page 72, https://www.pcb-3d.com/wordpress/wp-content/uploads/ipc-sm-782a_amendment_1_and_2.pdf), generated with kicad-footprint-generator")
     (tags "resistor")
     (property "Sheetfile" "Space.kicad_sch")
@@ -8237,7 +8237,7 @@
 
   (footprint "Resistor_SMD:R_0402_1005Metric" (layer "F.Cu")
     (tedit 5F68FEEE) (tstamp f2b14f70-8dd7-4bf1-a2c4-798e5a3b6ba5)
-    (at 175 76)
+    (at 207.59 66.51)
     (descr "Resistor SMD 0402 (1005 Metric), square (rectangular) end terminal, IPC_7351 nominal, (Body size source: IPC-SM-782 page 72, https://www.pcb-3d.com/wordpress/wp-content/uploads/ipc-sm-782a_amendment_1_and_2.pdf), generated with kicad-footprint-generator")
     (tags "resistor")
     (property "Sheetfile" "Space.kicad_sch")
