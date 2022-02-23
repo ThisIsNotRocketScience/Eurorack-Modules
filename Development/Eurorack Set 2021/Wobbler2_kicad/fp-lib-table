@@ -1,0 +1,3 @@
+(fp_lib_table
+  (lib (name "TINRS - Wobbler (pico)sch")(type "KiCad")(uri "$(KIPRJMOD)/TINRS - Wobbler (pico)sch.pretty")(options "")(descr ""))
+)
