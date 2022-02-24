@@ -55,28 +55,7 @@
           "width": 0.0
         }
       ],
-      "drc_exclusions": [
-        "clearance|125046100|111323600|7cf600ca-f4b1-4c81-a1df-45241f080050|f8b1c7c1-8b7a-449d-b8b2-07968838d415",
-        "clearance|125046100|149473600|8f0deebd-0cc2-47f0-9aab-4ce1e19bb4d3|44e85378-6258-4b5d-bfba-8d03984f52f5",
-        "clearance|125046100|97403600|aacfa115-d87d-41bb-93c4-7b09f7bc7183|a7d5b00d-e4f3-4c72-beb9-2e02fb245803",
-        "clearance|125746100|112623600|e2080b94-047f-4d28-81a1-ea2bccd35a31|f8b1c7c1-8b7a-449d-b8b2-07968838d415",
-        "clearance|125746100|150773600|4ff9b68b-e646-4990-b2e0-5bab13f74227|44e85378-6258-4b5d-bfba-8d03984f52f5",
-        "clearance|125746100|60323600|2367d3f3-160a-43b2-b2bd-14eb91750fc8|fc51a75a-9114-4f24-a474-39cb9e9f0315",
-        "clearance|125746100|98703600|c349804a-e6c0-43cb-ac1d-4a1bbbd44f36|a7d5b00d-e4f3-4c72-beb9-2e02fb245803",
-        "clearance|126446100|61623600|054ad6c7-2005-4038-9053-861ce1e3ad68|fc51a75a-9114-4f24-a474-39cb9e9f0315",
-        "clearance|135206100|149473600|33f0761c-613e-45b1-801a-ae58fbc3db6c|8be850bf-007e-49fd-bfb9-3a5a784f18ab",
-        "clearance|135906100|150773600|5cc76c6f-a686-4e60-8874-f0e17b8b55a6|8be850bf-007e-49fd-bfb9-3a5a784f18ab",
-        "clearance|160606100|149473600|67cad8b5-7f2d-4951-aee1-e636c32ac41f|08070824-728b-44b6-8df0-7529e682c8a6",
-        "clearance|161306100|150773600|a8e443fe-77ad-4acf-98b8-2556e1e777ba|08070824-728b-44b6-8df0-7529e682c8a6",
-        "clearance|170766100|111323600|3d953072-ddda-4d5f-989b-9fcf0c479555|6bcbdd23-8fae-44ff-a7da-df7e73008c34",
-        "clearance|170766100|149473600|a04e7af4-d12a-430f-98ed-32a7c2096900|55375ae9-4517-4748-b56b-4054ff01c3d4",
-        "clearance|170766100|97403600|c7f81e4a-c0df-490f-a86c-0c11995c9c55|9bdef9fa-38cf-4bcf-95c7-4068b43d75ee",
-        "clearance|171466100|112623600|592e1d36-f5d1-4697-97d7-6855190aa964|6bcbdd23-8fae-44ff-a7da-df7e73008c34",
-        "clearance|171466100|150773600|07a26cce-08bd-4f23-b9c6-a00160284fca|55375ae9-4517-4748-b56b-4054ff01c3d4",
-        "clearance|171466100|60323600|c6b7f2fb-f8e2-43e2-8199-d6f515e15138|8eeb5a32-6285-4a5d-8271-42f739edee37",
-        "clearance|171466100|98703600|7f65e008-439e-47d9-9382-74995ca568e9|9bdef9fa-38cf-4bcf-95c7-4068b43d75ee",
-        "clearance|172166100|61623600|f2be20d7-b19b-46aa-841e-7b5477e752a2|8eeb5a32-6285-4a5d-8271-42f739edee37"
-      ],
+      "drc_exclusions": [],
       "meta": {
         "filename": "board_design_settings.json",
         "version": 2
@@ -107,8 +86,8 @@
         "padstack": "error",
         "pth_inside_courtyard": "ignore",
         "shorting_items": "error",
-        "silk_over_copper": "ignore",
-        "silk_overlap": "ignore",
+        "silk_over_copper": "warning",
+        "silk_overlap": "warning",
         "skew_out_of_range": "error",
         "through_hole_pad_without_hole": "error",
         "too_many_vias": "error",
@@ -383,7 +362,7 @@
         "name": "Default",
         "pcb_color": "rgba(0, 0, 0, 0.000)",
         "schematic_color": "rgba(0, 0, 0, 0.000)",
-        "track_width": 0.1524,
+        "track_width": 0.25,
         "via_diameter": 0.8,
         "via_drill": 0.4,
         "wire_width": 6.0
@@ -398,7 +377,10 @@
         "microvia_diameter": 0.3,
         "microvia_drill": 0.1,
         "name": "groundplane",
-        "nets": [],
+        "nets": [
+          "USB_N",
+          "USB_P"
+        ],
         "pcb_color": "rgba(0, 0, 0, 0.000)",
         "schematic_color": "rgba(0, 0, 0, 0.000)",
         "track_width": 0.2032,
@@ -418,7 +400,12 @@
         "name": "heavypower",
         "nets": [
           "-12V",
-          "Net-(D1-Pad1)"
+          "12V",
+          "N$70",
+          "N$93",
+          "N$96",
+          "N$99",
+          "REF_-5V"
         ],
         "pcb_color": "rgba(0, 0, 0, 0.000)",
         "schematic_color": "rgba(0, 0, 0, 0.000)",
@@ -455,7 +442,10 @@
         "microvia_diameter": 0.3,
         "microvia_drill": 0.1,
         "name": "reallyheav",
-        "nets": [],
+        "nets": [
+          "N$13",
+          "N$64"
+        ],
         "pcb_color": "rgba(0, 0, 0, 0.000)",
         "schematic_color": "rgba(0, 0, 0, 0.000)",
         "track_width": 0.762,
@@ -485,14 +475,7 @@
     "meta": {
       "version": 2
     },
-    "net_colors": {
-      "+12V": "rgb(69, 153, 26)",
-      "+3V3": "rgb(255, 183, 39)",
-      "-12V": "rgb(126, 7, 97)",
-      "-5V": "rgb(30, 73, 112)",
-      "/MCU & Eeprom/COREVDD": "rgb(203, 255, 16)",
-      "GND": "rgb(135, 167, 255)"
-    }
+    "net_colors": null
   },
   "pcbnew": {
     "last_paths": {
@@ -549,24 +532,24 @@
       ""
     ],
     [
-      "460fc9a8-446e-45a7-9d6c-c272be997294",
-      "MCU & Eeprom"
-    ],
-    [
-      "d0f76ded-7177-48e4-8dce-95beac9c4481",
-      "Power"
-    ],
-    [
       "6af2f871-4187-4b2a-8b4a-33259b94106d",
       "DAC"
+    ],
+    [
+      "c13cb299-c112-4746-b939-055f3bcd5f66",
+      "Inputs & Knobs"
     ],
     [
       "0fb612b6-d118-463f-8273-72d16ac7c8f3",
       "LEDs & button"
     ],
     [
-      "c13cb299-c112-4746-b939-055f3bcd5f66",
-      "Inputs & Knobs"
+      "460fc9a8-446e-45a7-9d6c-c272be997294",
+      "MCU & Eeprom"
+    ],
+    [
+      "d0f76ded-7177-48e4-8dce-95beac9c4481",
+      "Power"
     ]
   ],
   "text_variables": {}

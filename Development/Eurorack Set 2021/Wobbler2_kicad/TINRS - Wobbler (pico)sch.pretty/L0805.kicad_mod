@@ -1,11 +1,11 @@
 (footprint "L0805" (version 20211014) (generator pcbnew)
   (layer "F.Cu")
-  (tedit 0)
-  (fp_text reference "REF**" (at 0 0) (layer "F.SilkS")
+  (tedit 6216515A)
+  (fp_text reference "REF**" (at 0 0) (layer "F.SilkS") hide
     (effects (font (size 1.27 1.27) (thickness 0.15)))
     (tstamp 098afe52-27f0-4ec0-bf39-4eb766d2a851)
   )
-  (fp_text value "" (at 0 0) (layer "F.SilkS")
+  (fp_text value "Val**" (at 0 0) (layer "F.SilkS") hide
     (effects (font (size 1.27 1.27) (thickness 0.15)))
     (tstamp 7cbc8c8d-fbc1-4902-ac93-6c241131aada)
   )
@@ -21,4 +21,9 @@
     (solder_mask_margin 0.0508) (tstamp cd1b9f49-f6c4-4c81-a715-14d19fd506d7))
   (pad "2" smd roundrect (at 0.889 0) (size 1.016 1.397) (layers "F.Cu" "F.Paste" "F.Mask") (roundrect_rratio 0.125)
     (solder_mask_margin 0.0508) (tstamp 30cf5573-2ac5-4d4b-8678-7fcebe2bcd36))
+  (model "${KICAD6_3DMODEL_DIR}/Inductor_SMD.3dshapes/L_0805_2012Metric.wrl"
+    (offset (xyz 0 0 0))
+    (scale (xyz 1 1 1))
+    (rotate (xyz 0 0 0))
+  )
 )

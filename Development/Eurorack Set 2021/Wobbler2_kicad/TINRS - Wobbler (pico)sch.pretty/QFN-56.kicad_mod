@@ -1,11 +1,11 @@
 (footprint "QFN-56" (version 20211014) (generator pcbnew)
   (layer "F.Cu")
-  (tedit 0)
-  (fp_text reference "REF**" (at 0 0) (layer "F.SilkS")
+  (tedit 6216544E)
+  (fp_text reference "REF**" (at 0 0) (layer "F.SilkS") hide
     (effects (font (size 1.27 1.27) (thickness 0.15)))
     (tstamp 3afae848-3ba1-40f3-a73d-cfa98c2ff8b2)
   )
-  (fp_text value "" (at 0 0) (layer "F.SilkS")
+  (fp_text value "Val**" (at 0 0) (layer "F.SilkS") hide
     (effects (font (size 1.27 1.27) (thickness 0.15)))
     (tstamp 97972d9a-c8ac-431f-b1f4-0da8477b5639)
   )
@@ -133,4 +133,9 @@
     (solder_mask_margin 0.0508) (tstamp 5fe5bd8d-5a86-4565-bd10-e08c6de9aa03))
   (pad "P$56" smd rect (at -2.6 -3.7 270) (size 1 0.18) (layers "F.Cu" "F.Paste" "F.Mask")
     (solder_mask_margin 0.0508) (tstamp 885a1129-9446-432d-8d93-f91d54873594))
+  (model "${KICAD6_3DMODEL_DIR}/Package_DFN_QFN.3dshapes/QFN-56-1EP_7x7mm_P0.4mm_EP5.7x5.7mm.wrl"
+    (offset (xyz 0 0 0))
+    (scale (xyz 1 1 1))
+    (rotate (xyz 0 0 0))
+  )
 )

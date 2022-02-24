@@ -1,11 +1,11 @@
 (footprint "R0402" (version 20211014) (generator pcbnew)
   (layer "F.Cu")
-  (tedit 0)
-  (fp_text reference "REF**" (at -1.27 -0.635) (layer "F.SilkS")
+  (tedit 62165101)
+  (fp_text reference "REF**" (at -1.27 -0.635) (layer "F.SilkS") hide
     (effects (font (size 0.5715 0.5715) (thickness 0.0635)) (justify left bottom))
     (tstamp 128a7556-cb3d-406d-b84d-6d9efc7f9ed8)
   )
-  (fp_text value ">VALUE" (at -1.27 1.27) (layer "F.Fab")
+  (fp_text value ">VALUE" (at -1.27 1.27) (layer "F.Fab") hide
     (effects (font (size 0.5715 0.5715) (thickness 0.0635)) (justify left bottom))
     (tstamp 86c73e16-9c05-4385-b59b-206056f7ac90)
   )
@@ -21,4 +21,9 @@
     (solder_mask_margin 0.0508) (tstamp 33ef82c8-b659-42b6-9429-5436a00e7b54))
   (pad "2" smd roundrect (at 0.4445 0) (size 0.635 0.635) (layers "F.Cu" "F.Paste" "F.Mask") (roundrect_rratio 0.25)
     (solder_mask_margin 0.0508) (tstamp bfff8af5-be9c-44df-80bd-23ee2cf9c437))
+  (model "${KICAD6_3DMODEL_DIR}/Resistor_SMD.3dshapes/R_0402_1005Metric.wrl"
+    (offset (xyz 0 0 0))
+    (scale (xyz 1 1 1))
+    (rotate (xyz 0 0 0))
+  )
 )

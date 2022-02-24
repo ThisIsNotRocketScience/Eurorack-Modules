@@ -1,11 +1,11 @@
 (footprint "QFN50P250X350X100-17N" (version 20211014) (generator pcbnew)
   (layer "F.Cu")
-  (tedit 0)
-  (fp_text reference "REF**" (at 0 -3.25) (layer "F.SilkS")
+  (tedit 6216438B)
+  (fp_text reference "REF**" (at 0 -3.25) (layer "F.SilkS") hide
     (effects (font (size 0.9 0.9) (thickness 0.1)) (justify bottom))
     (tstamp 6afdccaa-d9c7-4949-88e8-e04bfdac5efc)
   )
-  (fp_text value ">VALUE" (at 0 3.25) (layer "F.Fab")
+  (fp_text value ">VALUE" (at 0 3.25) (layer "F.Fab") hide
     (effects (font (size 0.9 0.9) (thickness 0.1)) (justify top))
     (tstamp d2683b99-bb18-4d41-a0c5-df26e16e4210)
   )
