@@ -727,9 +727,6 @@
     (path "/460fc9a8-446e-45a7-9d6c-c272be997294/a8f08e73-1b45-46c5-91e8-b6b4cc5df371"
       (reference "#GND0192") (unit 1) (value "GND") (footprint "")
     )
-    (path "/460fc9a8-446e-45a7-9d6c-c272be997294/939d2085-ca84-435b-8eaa-0232903653b7"
-      (reference "#GND0193") (unit 1) (value "GND") (footprint "")
-    )
     (path "/6af2f871-4187-4b2a-8b4a-33259b94106d/a23bfa5e-d765-4f85-819d-78c0611194d4"
       (reference "#PWR0101") (unit 1) (value "-5V") (footprint "")
     )
@@ -1213,9 +1210,6 @@
     (path "/0fb612b6-d118-463f-8273-72d16ac7c8f3/954a9830-ad6d-4d7c-92ee-21f7ecb42ef4"
       (reference "JACK10") (unit 1) (value "AUDIO-JACK_SMALLSYMBOL") (footprint "3.5MM-JACK-SWITCH-13MM-NOHOLES-TESTPAD")
     )
-    (path "/460fc9a8-446e-45a7-9d6c-c272be997294/8fde348d-fc67-4c49-92f7-b54064824a84"
-      (reference "K1") (unit 1) (value "BUTTON-4P-3100010P1") (footprint "TINRS - Wobbler (pico)sch:4P-SMD-6.0X6.0X5.0H")
-    )
     (path "/d0f76ded-7177-48e4-8dce-95beac9c4481/54dbd678-f489-46c9-8edd-a6ed82da6557"
       (reference "L1") (unit 1) (value "0.1uH C76737 ") (footprint "L0805")
     )
@@ -1477,20 +1471,14 @@
     (path "/0fb612b6-d118-463f-8273-72d16ac7c8f3/f8d6a90f-4a5d-4a03-88ca-27e1d4b3b125"
       (reference "RN9") (unit 4) (value "56") (footprint "TINRS - Wobbler (pico)sch:4X0402ARV341")
     )
+    (path "/460fc9a8-446e-45a7-9d6c-c272be997294/e566738a-9dd7-484c-a86a-78797f3f254d"
+      (reference "SW1") (unit 1) (value "SW_Push") (footprint "")
+    )
     (path "/460fc9a8-446e-45a7-9d6c-c272be997294/9d93e407-fc35-4e86-a215-c19eb08948f0"
       (reference "SWD2") (unit 1) (value "CORTEX_SWD") (footprint "TINRS - Wobbler (pico)sch:M50-3600542")
     )
     (path "/460fc9a8-446e-45a7-9d6c-c272be997294/f7a8d521-528d-4c3e-8f36-18a7d1e7b579"
       (reference "TP1") (unit 1) (value "PTR1B1,27") (footprint "TINRS - Wobbler (pico)sch:B1,27")
-    )
-    (path "/460fc9a8-446e-45a7-9d6c-c272be997294/f0dbed5f-c639-49b8-b226-86c5fea8ad3a"
-      (reference "TP2") (unit 1) (value "PTR1B1,27") (footprint "TINRS - Wobbler (pico)sch:B1,27")
-    )
-    (path "/460fc9a8-446e-45a7-9d6c-c272be997294/44effc68-1ba3-4d29-bfb4-844239496cee"
-      (reference "TP3") (unit 1) (value "PTR1B1,27") (footprint "TINRS - Wobbler (pico)sch:B1,27")
-    )
-    (path "/460fc9a8-446e-45a7-9d6c-c272be997294/456cd388-95f0-4163-bd52-a6c7f4e1aa1c"
-      (reference "TP4") (unit 1) (value "PTR1B1,27") (footprint "TINRS - Wobbler (pico)sch:B1,27")
     )
     (path "/0fb612b6-d118-463f-8273-72d16ac7c8f3/c445d4d4-e20d-4fa9-908c-9c57d83fcae4"
       (reference "U$1") (unit 1) (value "SWITCH_W_LED_PB6149L-X-102YELLOW") (footprint "TINRS - Wobbler (pico)sch:PB6149L")
