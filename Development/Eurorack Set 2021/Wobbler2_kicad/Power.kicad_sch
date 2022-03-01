@@ -1058,6 +1058,7 @@
     )
   )
 
+
   (junction (at 163.576 66.04) (diameter 0) (color 0 0 0 0)
     (uuid 0ccfba40-40fe-438f-ac31-c63d7ed46fbb)
   )
@@ -1106,6 +1107,8 @@
   (junction (at 201.93 60.96) (diameter 0) (color 0 0 0 0)
     (uuid fdf57f9c-3726-41e6-8494-25e23fc2c7ba)
   )
+
+  (no_connect (at 175.26 112.014) (uuid 3354cca0-2d39-4e40-845c-1d9f3539b24b))
 
   (wire (pts (xy 172.72 136.144) (xy 172.72 134.874))
     (stroke (width 0) (type default) (color 0 0 0 0))
