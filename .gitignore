@@ -43,7 +43,6 @@ eagle.epf
 *.GTS
 *.GTP
 *.GKO
-*.txt
 *.GML
 *.png
 *.pdf
@@ -75,15 +74,17 @@ Teensy_3_and_LC_Series_Boards_v1.4.lbr
 Teensy_3_and_LC_Series_Boards_v1.4.lbr
 Teensy_3_and_LC_Series_Boards_v1.4.lbr
 Development/Eurorack Set 2021/EurorackShared
-Development/Eurorack Set 2021/Wobbler2Code
 Development/Eurorack Set 2021/Factory
 Development/Eurorack Set 2021/Gerbers
+Development/Eurorack Set 2021/Wobbler2Code/build
+Development/Eurorack Set 2021/Wobbler2Code/build/*
+Development/Eurorack Set 2021/Wobbler2Code/simulator/build
 Development/Eurorack Set 2021/libfixmath
 Development/PJB-Box
 FrontPanels
 .DS_Store
-
 Development/Eurorack Set 2021/Factory/TiNRS-Ardabil/TiNRS-Ardabil_BOM.csv
 Development/Eurorack Set 2021/Factory/TiNRS-Ardabil/TiNRS-Ardabil_PNP.csv
 Development/Eurorack Set 2021/Wobbler2_kicad/#auto_saved_files#
 Development/Eurorack Set 2021/Wobbler2_kicad/_autosave-TINRS - Wobbler (pico)sch.kicad_pcb
+Gerbers/*/*.txt
