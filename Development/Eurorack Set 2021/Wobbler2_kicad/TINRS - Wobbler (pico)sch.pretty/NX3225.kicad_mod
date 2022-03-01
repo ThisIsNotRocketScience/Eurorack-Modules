@@ -1,11 +1,11 @@
 (footprint "NX3225" (version 20211014) (generator pcbnew)
   (layer "F.Cu")
-  (tedit 0)
-  (fp_text reference "REF**" (at 0 0) (layer "F.SilkS")
+  (tedit 621654C8)
+  (fp_text reference "REF**" (at 0 0) (layer "F.SilkS") hide
     (effects (font (size 1.27 1.27) (thickness 0.15)))
     (tstamp 471f517c-6d52-459f-9d7a-aedf176fc9e0)
   )
-  (fp_text value "" (at 0 0) (layer "F.SilkS")
+  (fp_text value "Val**" (at 0 0) (layer "F.SilkS") hide
     (effects (font (size 1.27 1.27) (thickness 0.15)))
     (tstamp bc007755-47dc-4b01-a9a3-8f34e8741895)
   )
@@ -29,4 +29,9 @@
     (solder_mask_margin 0.0508) (tstamp 00185541-0a55-4e62-91d8-99e7a7720d36))
   (pad "4" smd rect (at -1.1 -0.8 90) (size 1.2 1.4) (layers "F.Cu" "F.Paste" "F.Mask")
     (solder_mask_margin 0.0508) (tstamp b540f997-cabb-4061-85a0-370b4e9dd03a))
+  (model "${KICAD6_3DMODEL_DIR}/Crystal.3dshapes/Crystal_SMD_3225-4Pin_3.2x2.5mm.step"
+    (offset (xyz 0 0 0))
+    (scale (xyz 1 1 1))
+    (rotate (xyz 0 0 0))
+  )
 )

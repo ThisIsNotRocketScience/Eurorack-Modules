@@ -1,11 +1,12 @@
 (footprint "3MMLED" (version 20211014) (generator pcbnew)
   (layer "F.Cu")
-  (tedit 0)
-  (fp_text reference "REF**" (at 0 0 270) (layer "F.SilkS")
+  (tedit 62164FDF)
+  (attr through_hole)
+  (fp_text reference "REF**" (at 0 0 270) (layer "F.SilkS") hide
     (effects (font (size 0.6858 0.6858) (thickness 0.0762)))
     (tstamp ba3f68df-a80d-4363-9b28-2b49507e87bd)
   )
-  (fp_text value "" (at 0 0) (layer "F.SilkS")
+  (fp_text value "Val**" (at 0 -3) (layer "F.SilkS") hide
     (effects (font (size 1.27 1.27) (thickness 0.15)))
     (tstamp ee4527a8-96f7-423b-b0eb-5c3b1bed75f9)
   )
@@ -31,4 +32,9 @@
     (solder_mask_margin 0.0508) (tstamp 2a507df7-40c5-4523-b0fd-269cea55efb9))
   (pad "-" thru_hole circle (at 1.27 0) (size 1.308 1.308) (drill 0.8) (layers *.Cu *.Mask)
     (solder_mask_margin 0.0508) (tstamp 7d283b62-f314-41a0-b56b-d307f2ebfa85))
+  (model "${KICAD6_3DMODEL_DIR}/LED_THT.3dshapes/LED_D3.0mm_FlatTop.wrl"
+    (offset (xyz 1.2 0 0))
+    (scale (xyz 1 1 1))
+    (rotate (xyz 0 0 180))
+  )
 )

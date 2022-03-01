@@ -1,4 +1,4 @@
-19889293613939477
+20417265678926589
 AudioJacks
 Jack_3.5mm_Cliff_FCR1281_Horizontal
 
@@ -2148,6 +2148,69 @@ IP67 ultra-miniture horizontal
 0
 5
 3
+Button_Switch_THT
+SW_Push_2P1T_Toggle_CK_PVA1xxH1xxxxxxV2
+momentary / push-push button, h=17.5mm C&K PVA1 https://www.ckswitches.com/media/1343/pva.pdf
+tact sw push PVA1 DPST
+0
+4
+4
+Button_Switch_THT
+SW_Push_2P1T_Toggle_CK_PVA1xxH2xxxxxxV2
+momentary / push-push button, h=23mm C&K PVA1 https://www.ckswitches.com/media/1343/pva.pdf
+tact sw push PVA1 DPST
+0
+4
+4
+Button_Switch_THT
+SW_Push_2P1T_Toggle_CK_PVA1xxH3xxxxxxV2
+momentary / push-push button, h=20.5mm C&K PVA1 https://www.ckswitches.com/media/1343/pva.pdf
+tact sw push PVA1 DPST
+0
+4
+4
+Button_Switch_THT
+SW_Push_2P1T_Toggle_CK_PVA1xxH4xxxxxxV2
+momentary / push-push button, h=15mm C&K PVA1 https://www.ckswitches.com/media/1343/pva.pdf
+tact sw push PVA1 DPST
+0
+4
+4
+Button_Switch_THT
+SW_Push_2P2T_Toggle_CK_PVA2OAH5xxxxxxV2
+momentary / push-push button, h=13mm C&K PVA2 https://www.ckswitches.com/media/1343/pva.pdf
+tact sw push PVA2 DPDT
+0
+6
+6
+Button_Switch_THT
+SW_Push_2P2T_Toggle_CK_PVA2xxH1xxxxxxV2
+momentary / push-push button, h=17.5mm C&K PVA2 https://www.ckswitches.com/media/1343/pva.pdf
+tact sw push PVA2 DPDT
+0
+6
+6
+Button_Switch_THT
+SW_Push_2P2T_Toggle_CK_PVA2xxH2xxxxxxV2
+momentary / push-push button, h=23mm C&K PVA2 https://www.ckswitches.com/media/1343/pva.pdf
+tact sw push PVA2 DPDT
+0
+6
+6
+Button_Switch_THT
+SW_Push_2P2T_Toggle_CK_PVA2xxH3xxxxxxV2
+momentary / push-push button, h=20.5mm C&K PVA2 https://www.ckswitches.com/media/1343/pva.pdf
+tact sw push PVA2 DPDT
+0
+6
+6
+Button_Switch_THT
+SW_Push_2P2T_Toggle_CK_PVA2xxH4xxxxxxV2
+momentary / push-push button, h=15mm C&K PVA2 https://www.ckswitches.com/media/1343/pva.pdf
+tact sw push PVA2 DPDT
+0
+6
+6
 Button_Switch_THT
 SW_Push_2P2T_Vertical_E-Switch_800UDP8P1A1M6
  right angle DPDT push button https://www.e-switch.com/system/asset/product_line/data_sheet/210/800U.pdf
@@ -6566,6 +6629,13 @@ Connector Audio Switronic ST-005-G
 4
 3
 Connector_Audio
+Jack_3.5mm_Technik_TWP-3002_Horizontal
+3.5mm Horizontal Waterproof Stereo Headphones Jack, https://www.technik.com.hk/images/pdf_product/WP3002-PA66-A.pdf
+audio jack stereo horizontal waterproof
+0
+7
+4
+Connector_Audio
 Jack_6.35mm_Neutrik_NJ2FD-V_Vertical
 6.35mm (1/4 in) Vertical Jack, Non-switching mono jack (T/S), https://www.neutrik.com/en/product/nj2fd-v
 neutrik jack vertical
@@ -7952,8 +8022,15 @@ connector barrel jack
 3
 3
 Connector_Card
-CF-Card_3M_N7E50-7516PK-20-WF
-Compact Flash Card connector (https://multimedia.3m.com/mws/media/22365O/3mtm-cf-card-header-compactflashtm-type-i-sm-ts0662.pdf)
+CF-Card_3M_N7E50-A516xx-30
+Compact Flash Card connector, polarization inverse (https://multimedia.3m.com/mws/media/22424O/3mtm-cf-card-header-type-i-low-profile-surface-mount-ts0747.pdf)
+connector cf
+0
+54
+50
+Connector_Card
+CF-Card_3M_N7E50-E516xx-30
+Compact Flash Card connector, normal polarization (https://multimedia.3m.com/mws/media/22424O/3mtm-cf-card-header-type-i-low-profile-surface-mount-ts0747.pdf)
 connector cf
 0
 54
@@ -8109,6 +8186,13 @@ Connector_Coaxial
 MMCX_Molex_73415-1471_Vertical
 http://www.molex.com/pdm_docs/sd/734151471_sd.pdf
 Molex MMCX Coaxial Connector 50 ohms Female Jack Vertical THT
+0
+5
+2
+Connector_Coaxial
+SMA_Amphenol_901-143_Horizontal
+ Amphenol RF 901-143 https://www.amphenolrf.com/library/download/link/link_id/585682
+SMA THT Female Jack Horizontal
 0
 5
 2
@@ -17983,6 +18067,83 @@ connector Molex KK-254 vertical
 16
 16
 Connector_Molex
+Molex_KK-396_5273-02A_1x02_P3.96mm_Vertical
+Molex KK 396 Interconnect System, old/engineering part number: 5273-02A example for new part number: 09-65-2028, 2 Pins (https://www.molex.com/pdm_docs/sd/009652028_sd.pdf), generated with kicad-footprint-generator
+connector Molex KK-396 vertical
+0
+2
+2
+Connector_Molex
+Molex_KK-396_5273-03A_1x03_P3.96mm_Vertical
+Molex KK 396 Interconnect System, old/engineering part number: 5273-03A example for new part number: 09-65-2038, 3 Pins (https://www.molex.com/pdm_docs/sd/009652028_sd.pdf), generated with kicad-footprint-generator
+connector Molex KK-396 vertical
+0
+3
+3
+Connector_Molex
+Molex_KK-396_5273-04A_1x04_P3.96mm_Vertical
+Molex KK 396 Interconnect System, old/engineering part number: 5273-04A example for new part number: 09-65-2048, 4 Pins (https://www.molex.com/pdm_docs/sd/009652028_sd.pdf), generated with kicad-footprint-generator
+connector Molex KK-396 vertical
+0
+4
+4
+Connector_Molex
+Molex_KK-396_5273-05A_1x05_P3.96mm_Vertical
+Molex KK 396 Interconnect System, old/engineering part number: 5273-05A example for new part number: 09-65-2058, 5 Pins (https://www.molex.com/pdm_docs/sd/009652028_sd.pdf), generated with kicad-footprint-generator
+connector Molex KK-396 vertical
+0
+5
+5
+Connector_Molex
+Molex_KK-396_5273-06A_1x06_P3.96mm_Vertical
+Molex KK 396 Interconnect System, old/engineering part number: 5273-06A example for new part number: 09-65-2068, 6 Pins (https://www.molex.com/pdm_docs/sd/009652028_sd.pdf), generated with kicad-footprint-generator
+connector Molex KK-396 vertical
+0
+6
+6
+Connector_Molex
+Molex_KK-396_5273-07A_1x07_P3.96mm_Vertical
+Molex KK 396 Interconnect System, old/engineering part number: 5273-07A example for new part number: 09-65-2078, 7 Pins (https://www.molex.com/pdm_docs/sd/009652028_sd.pdf), generated with kicad-footprint-generator
+connector Molex KK-396 vertical
+0
+7
+7
+Connector_Molex
+Molex_KK-396_5273-08A_1x08_P3.96mm_Vertical
+Molex KK 396 Interconnect System, old/engineering part number: 5273-08A example for new part number: 09-65-2088, 8 Pins (https://www.molex.com/pdm_docs/sd/009652028_sd.pdf), generated with kicad-footprint-generator
+connector Molex KK-396 vertical
+0
+8
+8
+Connector_Molex
+Molex_KK-396_5273-09A_1x09_P3.96mm_Vertical
+Molex KK 396 Interconnect System, old/engineering part number: 5273-09A example for new part number: 09-65-2098, 9 Pins (https://www.molex.com/pdm_docs/sd/009652028_sd.pdf), generated with kicad-footprint-generator
+connector Molex KK-396 vertical
+0
+9
+9
+Connector_Molex
+Molex_KK-396_5273-10A_1x10_P3.96mm_Vertical
+Molex KK 396 Interconnect System, old/engineering part number: 5273-10A example for new part number: 09-65-2108, 10 Pins (https://www.molex.com/pdm_docs/sd/009652028_sd.pdf), generated with kicad-footprint-generator
+connector Molex KK-396 vertical
+0
+10
+10
+Connector_Molex
+Molex_KK-396_5273-11A_1x11_P3.96mm_Vertical
+Molex KK 396 Interconnect System, old/engineering part number: 5273-11A example for new part number: 09-65-2118, 11 Pins (https://www.molex.com/pdm_docs/sd/009652028_sd.pdf), generated with kicad-footprint-generator
+connector Molex KK-396 vertical
+0
+11
+11
+Connector_Molex
+Molex_KK-396_5273-12A_1x12_P3.96mm_Vertical
+Molex KK 396 Interconnect System, old/engineering part number: 5273-12A example for new part number: 09-65-2128, 12 Pins (https://www.molex.com/pdm_docs/sd/009652028_sd.pdf), generated with kicad-footprint-generator
+connector Molex KK-396 vertical
+0
+12
+12
+Connector_Molex
 Molex_KK-396_A-41791-0002_1x02_P3.96mm_Vertical
 Molex KK 396 Interconnect System, old/engineering part number: A-41791-0002 example for new part number: 26-60-4020, 2 Pins (https://www.molex.com/pdm_docs/sd/026604020_sd.pdf), generated with kicad-footprint-generator
 connector Molex KK-396 vertical
@@ -18098,6 +18259,125 @@ Connector_Molex
 Molex_KK-396_A-41791-0018_1x18_P3.96mm_Vertical
 Molex KK 396 Interconnect System, old/engineering part number: A-41791-0018 example for new part number: 26-60-4180, 18 Pins (https://www.molex.com/pdm_docs/sd/026604020_sd.pdf), generated with kicad-footprint-generator
 connector Molex KK-396 vertical
+0
+18
+18
+Connector_Molex
+Molex_KK-396_A-41792-0002_1x02_P3.96mm_Horizontal
+Molex KK 396 Interconnect System, old/engineering part number: A-41792-0002 example for new part number: 26-60-5020, 2 Pins (https://www.molex.com/pdm_docs/sd/026605050_sd.pdf), generated with kicad-footprint-generator
+connector Molex KK-396 horizontal
+0
+2
+2
+Connector_Molex
+Molex_KK-396_A-41792-0003_1x03_P3.96mm_Horizontal
+Molex KK 396 Interconnect System, old/engineering part number: A-41792-0003 example for new part number: 26-60-5030, 3 Pins (https://www.molex.com/pdm_docs/sd/026605050_sd.pdf), generated with kicad-footprint-generator
+connector Molex KK-396 horizontal
+0
+3
+3
+Connector_Molex
+Molex_KK-396_A-41792-0004_1x04_P3.96mm_Horizontal
+Molex KK 396 Interconnect System, old/engineering part number: A-41792-0004 example for new part number: 26-60-5040, 4 Pins (https://www.molex.com/pdm_docs/sd/026605050_sd.pdf), generated with kicad-footprint-generator
+connector Molex KK-396 horizontal
+0
+4
+4
+Connector_Molex
+Molex_KK-396_A-41792-0005_1x05_P3.96mm_Horizontal
+Molex KK 396 Interconnect System, old/engineering part number: A-41792-0005 example for new part number: 26-60-5050, 5 Pins (https://www.molex.com/pdm_docs/sd/026605050_sd.pdf), generated with kicad-footprint-generator
+connector Molex KK-396 horizontal
+0
+5
+5
+Connector_Molex
+Molex_KK-396_A-41792-0006_1x06_P3.96mm_Horizontal
+Molex KK 396 Interconnect System, old/engineering part number: A-41792-0006 example for new part number: 26-60-5060, 6 Pins (https://www.molex.com/pdm_docs/sd/026605050_sd.pdf), generated with kicad-footprint-generator
+connector Molex KK-396 horizontal
+0
+6
+6
+Connector_Molex
+Molex_KK-396_A-41792-0007_1x07_P3.96mm_Horizontal
+Molex KK 396 Interconnect System, old/engineering part number: A-41792-0007 example for new part number: 26-60-5070, 7 Pins (https://www.molex.com/pdm_docs/sd/026605050_sd.pdf), generated with kicad-footprint-generator
+connector Molex KK-396 horizontal
+0
+7
+7
+Connector_Molex
+Molex_KK-396_A-41792-0008_1x08_P3.96mm_Horizontal
+Molex KK 396 Interconnect System, old/engineering part number: A-41792-0008 example for new part number: 26-60-5080, 8 Pins (https://www.molex.com/pdm_docs/sd/026605050_sd.pdf), generated with kicad-footprint-generator
+connector Molex KK-396 horizontal
+0
+8
+8
+Connector_Molex
+Molex_KK-396_A-41792-0009_1x09_P3.96mm_Horizontal
+Molex KK 396 Interconnect System, old/engineering part number: A-41792-0009 example for new part number: 26-60-5090, 9 Pins (https://www.molex.com/pdm_docs/sd/026605050_sd.pdf), generated with kicad-footprint-generator
+connector Molex KK-396 horizontal
+0
+9
+9
+Connector_Molex
+Molex_KK-396_A-41792-0010_1x10_P3.96mm_Horizontal
+Molex KK 396 Interconnect System, old/engineering part number: A-41792-0010 example for new part number: 26-60-5100, 10 Pins (https://www.molex.com/pdm_docs/sd/026605050_sd.pdf), generated with kicad-footprint-generator
+connector Molex KK-396 horizontal
+0
+10
+10
+Connector_Molex
+Molex_KK-396_A-41792-0011_1x11_P3.96mm_Horizontal
+Molex KK 396 Interconnect System, old/engineering part number: A-41792-0011 example for new part number: 26-60-5110, 11 Pins (https://www.molex.com/pdm_docs/sd/026605050_sd.pdf), generated with kicad-footprint-generator
+connector Molex KK-396 horizontal
+0
+11
+11
+Connector_Molex
+Molex_KK-396_A-41792-0012_1x12_P3.96mm_Horizontal
+Molex KK 396 Interconnect System, old/engineering part number: A-41792-0012 example for new part number: 26-60-5120, 12 Pins (https://www.molex.com/pdm_docs/sd/026605050_sd.pdf), generated with kicad-footprint-generator
+connector Molex KK-396 horizontal
+0
+12
+12
+Connector_Molex
+Molex_KK-396_A-41792-0013_1x13_P3.96mm_Horizontal
+Molex KK 396 Interconnect System, old/engineering part number: A-41792-0013 example for new part number: 26-60-5130, 13 Pins (https://www.molex.com/pdm_docs/sd/026605050_sd.pdf), generated with kicad-footprint-generator
+connector Molex KK-396 horizontal
+0
+13
+13
+Connector_Molex
+Molex_KK-396_A-41792-0014_1x14_P3.96mm_Horizontal
+Molex KK 396 Interconnect System, old/engineering part number: A-41792-0014 example for new part number: 26-60-5140, 14 Pins (https://www.molex.com/pdm_docs/sd/026605050_sd.pdf), generated with kicad-footprint-generator
+connector Molex KK-396 horizontal
+0
+14
+14
+Connector_Molex
+Molex_KK-396_A-41792-0015_1x15_P3.96mm_Horizontal
+Molex KK 396 Interconnect System, old/engineering part number: A-41792-0015 example for new part number: 26-60-5150, 15 Pins (https://www.molex.com/pdm_docs/sd/026605050_sd.pdf), generated with kicad-footprint-generator
+connector Molex KK-396 horizontal
+0
+15
+15
+Connector_Molex
+Molex_KK-396_A-41792-0016_1x16_P3.96mm_Horizontal
+Molex KK 396 Interconnect System, old/engineering part number: A-41792-0016 example for new part number: 26-60-5160, 16 Pins (https://www.molex.com/pdm_docs/sd/026605050_sd.pdf), generated with kicad-footprint-generator
+connector Molex KK-396 horizontal
+0
+16
+16
+Connector_Molex
+Molex_KK-396_A-41792-0017_1x17_P3.96mm_Horizontal
+Molex KK 396 Interconnect System, old/engineering part number: A-41792-0017 example for new part number: 26-60-5170, 17 Pins (https://www.molex.com/pdm_docs/sd/026605050_sd.pdf), generated with kicad-footprint-generator
+connector Molex KK-396 horizontal
+0
+17
+17
+Connector_Molex
+Molex_KK-396_A-41792-0018_1x18_P3.96mm_Horizontal
+Molex KK 396 Interconnect System, old/engineering part number: A-41792-0018 example for new part number: 26-60-5180, 18 Pins (https://www.molex.com/pdm_docs/sd/026605050_sd.pdf), generated with kicad-footprint-generator
+connector Molex KK-396 horizontal
 0
 18
 18
@@ -18739,12 +19019,40 @@ connector Molex Micro-Fit_3.0 top entry
 2
 2
 Connector_Molex
+Molex_Micro-Fit_3.0_43650-0210_1x02-1MP_P3.00mm_Horizontal
+Molex Micro-Fit 3.0 Connector System, 43650-0210 (compatible alternatives: 43650-0211, 43650-0209), 2 Pins per row (https://www.molex.com/pdm_docs/sd/436500210_sd.pdf), generated with kicad-footprint-generator
+connector Molex Micro-Fit_3.0 horizontal
+0
+4
+3
+Connector_Molex
+Molex_Micro-Fit_3.0_43650-0210_1x02-1MP_P3.00mm_Horizontal_PnP
+Molex Micro-Fit 3.0 Connector System, 43650-0210 (compatible alternatives: 43650-0211, 43650-0209), 2 Pins per row (https://www.molex.com/pdm_docs/sd/436500210_sd.pdf), generated with kicad-footprint-generator
+connector Molex Micro-Fit_3.0 horizontal
+0
+4
+3
+Connector_Molex
 Molex_Micro-Fit_3.0_43650-0215_1x02_P3.00mm_Vertical
 Molex Micro-Fit 3.0 Connector System, 43650-0215 (compatible alternatives: 43650-0216, 43650-0217), 2 Pins per row (http://www.molex.com/pdm_docs/sd/436500215_sd.pdf), generated with kicad-footprint-generator
 connector Molex Micro-Fit_3.0 vertical
 0
 2
 2
+Connector_Molex
+Molex_Micro-Fit_3.0_43650-0221_1x02_P3.00mm_Vertical
+Molex Micro-Fit 3.0 Connector System, 43650-0221 (compatible alternatives: 43650-0222, 43650-0223), 2 Pins per row (https://www.molex.com/pdm_docs/sd/436500221_sd.pdf), generated with kicad-footprint-generator
+connector Molex Micro-Fit_3.0 vertical
+0
+2
+2
+Connector_Molex
+Molex_Micro-Fit_3.0_43650-0224_1x02-1MP_P3.00mm_Vertical
+Molex Micro-Fit 3.0 Connector System, 43650-0224 (compatible alternatives: 43650-0225, 43650-0226), 2 Pins per row (https://www.molex.com/pdm_docs/sd/436500224_sd.pdf), generated with kicad-footprint-generator
+connector Molex Micro-Fit_3.0 vertical
+0
+4
+3
 Connector_Molex
 Molex_Micro-Fit_3.0_43650-0300_1x03_P3.00mm_Horizontal
 Molex Micro-Fit 3.0 Connector System, 43650-0300 (compatible alternatives: 43650-0301, 43650-0302), 3 Pins per row (https://www.molex.com/pdm_docs/sd/436500300_sd.pdf), generated with kicad-footprint-generator
@@ -18753,12 +19061,40 @@ connector Molex Micro-Fit_3.0 top entry
 3
 3
 Connector_Molex
+Molex_Micro-Fit_3.0_43650-0310_1x03-1MP_P3.00mm_Horizontal
+Molex Micro-Fit 3.0 Connector System, 43650-0310 (compatible alternatives: 43650-0311, 43650-0309), 3 Pins per row (https://www.molex.com/pdm_docs/sd/436500210_sd.pdf), generated with kicad-footprint-generator
+connector Molex Micro-Fit_3.0 horizontal
+0
+5
+4
+Connector_Molex
+Molex_Micro-Fit_3.0_43650-0310_1x03-1MP_P3.00mm_Horizontal_PnP
+Molex Micro-Fit 3.0 Connector System, 43650-0310 (compatible alternatives: 43650-0311, 43650-0309), 3 Pins per row (https://www.molex.com/pdm_docs/sd/436500210_sd.pdf), generated with kicad-footprint-generator
+connector Molex Micro-Fit_3.0 horizontal
+0
+5
+4
+Connector_Molex
 Molex_Micro-Fit_3.0_43650-0315_1x03_P3.00mm_Vertical
 Molex Micro-Fit 3.0 Connector System, 43650-0315 (compatible alternatives: 43650-0316, 43650-0317), 3 Pins per row (http://www.molex.com/pdm_docs/sd/436500215_sd.pdf), generated with kicad-footprint-generator
 connector Molex Micro-Fit_3.0 vertical
 0
 3
 3
+Connector_Molex
+Molex_Micro-Fit_3.0_43650-0321_1x03_P3.00mm_Vertical
+Molex Micro-Fit 3.0 Connector System, 43650-0321 (compatible alternatives: 43650-0322, 43650-0323), 3 Pins per row (https://www.molex.com/pdm_docs/sd/436500221_sd.pdf), generated with kicad-footprint-generator
+connector Molex Micro-Fit_3.0 vertical
+0
+3
+3
+Connector_Molex
+Molex_Micro-Fit_3.0_43650-0324_1x03-1MP_P3.00mm_Vertical
+Molex Micro-Fit 3.0 Connector System, 43650-0324 (compatible alternatives: 43650-0325, 43650-0326), 3 Pins per row (https://www.molex.com/pdm_docs/sd/436500224_sd.pdf), generated with kicad-footprint-generator
+connector Molex Micro-Fit_3.0 vertical
+0
+5
+4
 Connector_Molex
 Molex_Micro-Fit_3.0_43650-0400_1x04_P3.00mm_Horizontal
 Molex Micro-Fit 3.0 Connector System, 43650-0400 (compatible alternatives: 43650-0401, 43650-0402), 4 Pins per row (https://www.molex.com/pdm_docs/sd/436500300_sd.pdf), generated with kicad-footprint-generator
@@ -18767,12 +19103,40 @@ connector Molex Micro-Fit_3.0 top entry
 4
 4
 Connector_Molex
+Molex_Micro-Fit_3.0_43650-0410_1x04-1MP_P3.00mm_Horizontal
+Molex Micro-Fit 3.0 Connector System, 43650-0410 (compatible alternatives: 43650-0411, 43650-0409), 4 Pins per row (https://www.molex.com/pdm_docs/sd/436500210_sd.pdf), generated with kicad-footprint-generator
+connector Molex Micro-Fit_3.0 horizontal
+0
+6
+5
+Connector_Molex
+Molex_Micro-Fit_3.0_43650-0410_1x04-1MP_P3.00mm_Horizontal_PnP
+Molex Micro-Fit 3.0 Connector System, 43650-0410 (compatible alternatives: 43650-0411, 43650-0409), 4 Pins per row (https://www.molex.com/pdm_docs/sd/436500210_sd.pdf), generated with kicad-footprint-generator
+connector Molex Micro-Fit_3.0 horizontal
+0
+6
+5
+Connector_Molex
 Molex_Micro-Fit_3.0_43650-0415_1x04_P3.00mm_Vertical
 Molex Micro-Fit 3.0 Connector System, 43650-0415 (compatible alternatives: 43650-0416, 43650-0417), 4 Pins per row (http://www.molex.com/pdm_docs/sd/436500215_sd.pdf), generated with kicad-footprint-generator
 connector Molex Micro-Fit_3.0 vertical
 0
 4
 4
+Connector_Molex
+Molex_Micro-Fit_3.0_43650-0421_1x04_P3.00mm_Vertical
+Molex Micro-Fit 3.0 Connector System, 43650-0421 (compatible alternatives: 43650-0422, 43650-0423), 4 Pins per row (https://www.molex.com/pdm_docs/sd/436500221_sd.pdf), generated with kicad-footprint-generator
+connector Molex Micro-Fit_3.0 vertical
+0
+4
+4
+Connector_Molex
+Molex_Micro-Fit_3.0_43650-0424_1x04-1MP_P3.00mm_Vertical
+Molex Micro-Fit 3.0 Connector System, 43650-0424 (compatible alternatives: 43650-0425, 43650-0426), 4 Pins per row (https://www.molex.com/pdm_docs/sd/436500224_sd.pdf), generated with kicad-footprint-generator
+connector Molex Micro-Fit_3.0 vertical
+0
+6
+5
 Connector_Molex
 Molex_Micro-Fit_3.0_43650-0500_1x05_P3.00mm_Horizontal
 Molex Micro-Fit 3.0 Connector System, 43650-0500 (compatible alternatives: 43650-0501, 43650-0502), 5 Pins per row (https://www.molex.com/pdm_docs/sd/436500300_sd.pdf), generated with kicad-footprint-generator
@@ -18781,12 +19145,40 @@ connector Molex Micro-Fit_3.0 top entry
 5
 5
 Connector_Molex
+Molex_Micro-Fit_3.0_43650-0510_1x05-1MP_P3.00mm_Horizontal
+Molex Micro-Fit 3.0 Connector System, 43650-0510 (compatible alternatives: 43650-0511, 43650-0509), 5 Pins per row (https://www.molex.com/pdm_docs/sd/436500210_sd.pdf), generated with kicad-footprint-generator
+connector Molex Micro-Fit_3.0 horizontal
+0
+7
+6
+Connector_Molex
+Molex_Micro-Fit_3.0_43650-0510_1x05-1MP_P3.00mm_Horizontal_PnP
+Molex Micro-Fit 3.0 Connector System, 43650-0510 (compatible alternatives: 43650-0511, 43650-0509), 5 Pins per row (https://www.molex.com/pdm_docs/sd/436500210_sd.pdf), generated with kicad-footprint-generator
+connector Molex Micro-Fit_3.0 horizontal
+0
+7
+6
+Connector_Molex
 Molex_Micro-Fit_3.0_43650-0515_1x05_P3.00mm_Vertical
 Molex Micro-Fit 3.0 Connector System, 43650-0515 (compatible alternatives: 43650-0516, 43650-0517), 5 Pins per row (http://www.molex.com/pdm_docs/sd/436500215_sd.pdf), generated with kicad-footprint-generator
 connector Molex Micro-Fit_3.0 vertical
 0
 5
 5
+Connector_Molex
+Molex_Micro-Fit_3.0_43650-0521_1x05_P3.00mm_Vertical
+Molex Micro-Fit 3.0 Connector System, 43650-0521 (compatible alternatives: 43650-0522, 43650-0523), 5 Pins per row (https://www.molex.com/pdm_docs/sd/436500221_sd.pdf), generated with kicad-footprint-generator
+connector Molex Micro-Fit_3.0 vertical
+0
+5
+5
+Connector_Molex
+Molex_Micro-Fit_3.0_43650-0524_1x05-1MP_P3.00mm_Vertical
+Molex Micro-Fit 3.0 Connector System, 43650-0524 (compatible alternatives: 43650-0525, 43650-0526), 5 Pins per row (https://www.molex.com/pdm_docs/sd/436500224_sd.pdf), generated with kicad-footprint-generator
+connector Molex Micro-Fit_3.0 vertical
+0
+7
+6
 Connector_Molex
 Molex_Micro-Fit_3.0_43650-0600_1x06_P3.00mm_Horizontal
 Molex Micro-Fit 3.0 Connector System, 43650-0600 (compatible alternatives: 43650-0601, 43650-0602), 6 Pins per row (https://www.molex.com/pdm_docs/sd/436500300_sd.pdf), generated with kicad-footprint-generator
@@ -18795,12 +19187,40 @@ connector Molex Micro-Fit_3.0 top entry
 6
 6
 Connector_Molex
+Molex_Micro-Fit_3.0_43650-0610_1x06-1MP_P3.00mm_Horizontal
+Molex Micro-Fit 3.0 Connector System, 43650-0610 (compatible alternatives: 43650-0611, 43650-0609), 6 Pins per row (https://www.molex.com/pdm_docs/sd/436500210_sd.pdf), generated with kicad-footprint-generator
+connector Molex Micro-Fit_3.0 horizontal
+0
+8
+7
+Connector_Molex
+Molex_Micro-Fit_3.0_43650-0610_1x06-1MP_P3.00mm_Horizontal_PnP
+Molex Micro-Fit 3.0 Connector System, 43650-0610 (compatible alternatives: 43650-0611, 43650-0609), 6 Pins per row (https://www.molex.com/pdm_docs/sd/436500210_sd.pdf), generated with kicad-footprint-generator
+connector Molex Micro-Fit_3.0 horizontal
+0
+8
+7
+Connector_Molex
 Molex_Micro-Fit_3.0_43650-0615_1x06_P3.00mm_Vertical
 Molex Micro-Fit 3.0 Connector System, 43650-0615 (compatible alternatives: 43650-0616, 43650-0617), 6 Pins per row (http://www.molex.com/pdm_docs/sd/436500215_sd.pdf), generated with kicad-footprint-generator
 connector Molex Micro-Fit_3.0 vertical
 0
 6
 6
+Connector_Molex
+Molex_Micro-Fit_3.0_43650-0621_1x06_P3.00mm_Vertical
+Molex Micro-Fit 3.0 Connector System, 43650-0621 (compatible alternatives: 43650-0622, 43650-0623), 6 Pins per row (https://www.molex.com/pdm_docs/sd/436500221_sd.pdf), generated with kicad-footprint-generator
+connector Molex Micro-Fit_3.0 vertical
+0
+6
+6
+Connector_Molex
+Molex_Micro-Fit_3.0_43650-0624_1x06-1MP_P3.00mm_Vertical
+Molex Micro-Fit 3.0 Connector System, 43650-0624 (compatible alternatives: 43650-0625, 43650-0626), 6 Pins per row (https://www.molex.com/pdm_docs/sd/436500224_sd.pdf), generated with kicad-footprint-generator
+connector Molex Micro-Fit_3.0 vertical
+0
+8
+7
 Connector_Molex
 Molex_Micro-Fit_3.0_43650-0700_1x07_P3.00mm_Horizontal
 Molex Micro-Fit 3.0 Connector System, 43650-0700 (compatible alternatives: 43650-0701, 43650-0702), 7 Pins per row (https://www.molex.com/pdm_docs/sd/436500300_sd.pdf), generated with kicad-footprint-generator
@@ -18809,12 +19229,40 @@ connector Molex Micro-Fit_3.0 top entry
 7
 7
 Connector_Molex
+Molex_Micro-Fit_3.0_43650-0710_1x07-1MP_P3.00mm_Horizontal
+Molex Micro-Fit 3.0 Connector System, 43650-0710 (compatible alternatives: 43650-0711, 43650-0709), 7 Pins per row (https://www.molex.com/pdm_docs/sd/436500210_sd.pdf), generated with kicad-footprint-generator
+connector Molex Micro-Fit_3.0 horizontal
+0
+9
+8
+Connector_Molex
+Molex_Micro-Fit_3.0_43650-0710_1x07-1MP_P3.00mm_Horizontal_PnP
+Molex Micro-Fit 3.0 Connector System, 43650-0710 (compatible alternatives: 43650-0711, 43650-0709), 7 Pins per row (https://www.molex.com/pdm_docs/sd/436500210_sd.pdf), generated with kicad-footprint-generator
+connector Molex Micro-Fit_3.0 horizontal
+0
+9
+8
+Connector_Molex
 Molex_Micro-Fit_3.0_43650-0715_1x07_P3.00mm_Vertical
 Molex Micro-Fit 3.0 Connector System, 43650-0715 (compatible alternatives: 43650-0716, 43650-0717), 7 Pins per row (http://www.molex.com/pdm_docs/sd/436500215_sd.pdf), generated with kicad-footprint-generator
 connector Molex Micro-Fit_3.0 vertical
 0
 7
 7
+Connector_Molex
+Molex_Micro-Fit_3.0_43650-0721_1x07_P3.00mm_Vertical
+Molex Micro-Fit 3.0 Connector System, 43650-0721 (compatible alternatives: 43650-0722, 43650-0723), 7 Pins per row (https://www.molex.com/pdm_docs/sd/436500221_sd.pdf), generated with kicad-footprint-generator
+connector Molex Micro-Fit_3.0 vertical
+0
+7
+7
+Connector_Molex
+Molex_Micro-Fit_3.0_43650-0724_1x07-1MP_P3.00mm_Vertical
+Molex Micro-Fit 3.0 Connector System, 43650-0724 (compatible alternatives: 43650-0725, 43650-0726), 7 Pins per row (https://www.molex.com/pdm_docs/sd/436500224_sd.pdf), generated with kicad-footprint-generator
+connector Molex Micro-Fit_3.0 vertical
+0
+9
+8
 Connector_Molex
 Molex_Micro-Fit_3.0_43650-0800_1x08_P3.00mm_Horizontal
 Molex Micro-Fit 3.0 Connector System, 43650-0800 (compatible alternatives: 43650-0801, 43650-0802), 8 Pins per row (https://www.molex.com/pdm_docs/sd/436500300_sd.pdf), generated with kicad-footprint-generator
@@ -18823,12 +19271,40 @@ connector Molex Micro-Fit_3.0 top entry
 8
 8
 Connector_Molex
+Molex_Micro-Fit_3.0_43650-0810_1x08-1MP_P3.00mm_Horizontal
+Molex Micro-Fit 3.0 Connector System, 43650-0810 (compatible alternatives: 43650-0811, 43650-0809), 8 Pins per row (https://www.molex.com/pdm_docs/sd/436500210_sd.pdf), generated with kicad-footprint-generator
+connector Molex Micro-Fit_3.0 horizontal
+0
+10
+9
+Connector_Molex
+Molex_Micro-Fit_3.0_43650-0810_1x08-1MP_P3.00mm_Horizontal_PnP
+Molex Micro-Fit 3.0 Connector System, 43650-0810 (compatible alternatives: 43650-0811, 43650-0809), 8 Pins per row (https://www.molex.com/pdm_docs/sd/436500210_sd.pdf), generated with kicad-footprint-generator
+connector Molex Micro-Fit_3.0 horizontal
+0
+10
+9
+Connector_Molex
 Molex_Micro-Fit_3.0_43650-0815_1x08_P3.00mm_Vertical
 Molex Micro-Fit 3.0 Connector System, 43650-0815 (compatible alternatives: 43650-0816, 43650-0817), 8 Pins per row (http://www.molex.com/pdm_docs/sd/436500215_sd.pdf), generated with kicad-footprint-generator
 connector Molex Micro-Fit_3.0 vertical
 0
 8
 8
+Connector_Molex
+Molex_Micro-Fit_3.0_43650-0821_1x08_P3.00mm_Vertical
+Molex Micro-Fit 3.0 Connector System, 43650-0821 (compatible alternatives: 43650-0822, 43650-0823), 8 Pins per row (https://www.molex.com/pdm_docs/sd/436500221_sd.pdf), generated with kicad-footprint-generator
+connector Molex Micro-Fit_3.0 vertical
+0
+8
+8
+Connector_Molex
+Molex_Micro-Fit_3.0_43650-0824_1x08-1MP_P3.00mm_Vertical
+Molex Micro-Fit 3.0 Connector System, 43650-0824 (compatible alternatives: 43650-0825, 43650-0826), 8 Pins per row (https://www.molex.com/pdm_docs/sd/436500224_sd.pdf), generated with kicad-footprint-generator
+connector Molex Micro-Fit_3.0 vertical
+0
+10
+9
 Connector_Molex
 Molex_Micro-Fit_3.0_43650-0900_1x09_P3.00mm_Horizontal
 Molex Micro-Fit 3.0 Connector System, 43650-0900 (compatible alternatives: 43650-0901, 43650-0902), 9 Pins per row (https://www.molex.com/pdm_docs/sd/436500300_sd.pdf), generated with kicad-footprint-generator
@@ -18837,12 +19313,40 @@ connector Molex Micro-Fit_3.0 top entry
 9
 9
 Connector_Molex
+Molex_Micro-Fit_3.0_43650-0910_1x09-1MP_P3.00mm_Horizontal
+Molex Micro-Fit 3.0 Connector System, 43650-0910 (compatible alternatives: 43650-0911, 43650-0909), 9 Pins per row (https://www.molex.com/pdm_docs/sd/436500210_sd.pdf), generated with kicad-footprint-generator
+connector Molex Micro-Fit_3.0 horizontal
+0
+11
+10
+Connector_Molex
+Molex_Micro-Fit_3.0_43650-0910_1x09-1MP_P3.00mm_Horizontal_PnP
+Molex Micro-Fit 3.0 Connector System, 43650-0910 (compatible alternatives: 43650-0911, 43650-0909), 9 Pins per row (https://www.molex.com/pdm_docs/sd/436500210_sd.pdf), generated with kicad-footprint-generator
+connector Molex Micro-Fit_3.0 horizontal
+0
+11
+10
+Connector_Molex
 Molex_Micro-Fit_3.0_43650-0915_1x09_P3.00mm_Vertical
 Molex Micro-Fit 3.0 Connector System, 43650-0915 (compatible alternatives: 43650-0916, 43650-0917), 9 Pins per row (http://www.molex.com/pdm_docs/sd/436500215_sd.pdf), generated with kicad-footprint-generator
 connector Molex Micro-Fit_3.0 vertical
 0
 9
 9
+Connector_Molex
+Molex_Micro-Fit_3.0_43650-0921_1x09_P3.00mm_Vertical
+Molex Micro-Fit 3.0 Connector System, 43650-0921 (compatible alternatives: 43650-0922, 43650-0923), 9 Pins per row (https://www.molex.com/pdm_docs/sd/436500221_sd.pdf), generated with kicad-footprint-generator
+connector Molex Micro-Fit_3.0 vertical
+0
+9
+9
+Connector_Molex
+Molex_Micro-Fit_3.0_43650-0924_1x09-1MP_P3.00mm_Vertical
+Molex Micro-Fit 3.0 Connector System, 43650-0924 (compatible alternatives: 43650-0925, 43650-0926), 9 Pins per row (https://www.molex.com/pdm_docs/sd/436500224_sd.pdf), generated with kicad-footprint-generator
+connector Molex Micro-Fit_3.0 vertical
+0
+11
+10
 Connector_Molex
 Molex_Micro-Fit_3.0_43650-1000_1x10_P3.00mm_Horizontal
 Molex Micro-Fit 3.0 Connector System, 43650-1000 (compatible alternatives: 43650-1001, 43650-1002), 10 Pins per row (https://www.molex.com/pdm_docs/sd/436500300_sd.pdf), generated with kicad-footprint-generator
@@ -18851,12 +19355,40 @@ connector Molex Micro-Fit_3.0 top entry
 10
 10
 Connector_Molex
+Molex_Micro-Fit_3.0_43650-1010_1x10-1MP_P3.00mm_Horizontal
+Molex Micro-Fit 3.0 Connector System, 43650-1010 (compatible alternatives: 43650-1011, 43650-1009), 10 Pins per row (https://www.molex.com/pdm_docs/sd/436500210_sd.pdf), generated with kicad-footprint-generator
+connector Molex Micro-Fit_3.0 horizontal
+0
+12
+11
+Connector_Molex
+Molex_Micro-Fit_3.0_43650-1010_1x10-1MP_P3.00mm_Horizontal_PnP
+Molex Micro-Fit 3.0 Connector System, 43650-1010 (compatible alternatives: 43650-1011, 43650-1009), 10 Pins per row (https://www.molex.com/pdm_docs/sd/436500210_sd.pdf), generated with kicad-footprint-generator
+connector Molex Micro-Fit_3.0 horizontal
+0
+12
+11
+Connector_Molex
 Molex_Micro-Fit_3.0_43650-1015_1x10_P3.00mm_Vertical
 Molex Micro-Fit 3.0 Connector System, 43650-1015 (compatible alternatives: 43650-1016, 43650-1017), 10 Pins per row (http://www.molex.com/pdm_docs/sd/436500215_sd.pdf), generated with kicad-footprint-generator
 connector Molex Micro-Fit_3.0 vertical
 0
 10
 10
+Connector_Molex
+Molex_Micro-Fit_3.0_43650-1021_1x10_P3.00mm_Vertical
+Molex Micro-Fit 3.0 Connector System, 43650-1021 (compatible alternatives: 43650-1022, 43650-1023), 10 Pins per row (https://www.molex.com/pdm_docs/sd/436500221_sd.pdf), generated with kicad-footprint-generator
+connector Molex Micro-Fit_3.0 vertical
+0
+10
+10
+Connector_Molex
+Molex_Micro-Fit_3.0_43650-1024_1x10-1MP_P3.00mm_Vertical
+Molex Micro-Fit 3.0 Connector System, 43650-1024 (compatible alternatives: 43650-1025, 43650-1026), 10 Pins per row (https://www.molex.com/pdm_docs/sd/436500224_sd.pdf), generated with kicad-footprint-generator
+connector Molex Micro-Fit_3.0 vertical
+0
+12
+11
 Connector_Molex
 Molex_Micro-Fit_3.0_43650-1100_1x11_P3.00mm_Horizontal
 Molex Micro-Fit 3.0 Connector System, 43650-1100 (compatible alternatives: 43650-1101, 43650-1102), 11 Pins per row (https://www.molex.com/pdm_docs/sd/436500300_sd.pdf), generated with kicad-footprint-generator
@@ -18865,12 +19397,40 @@ connector Molex Micro-Fit_3.0 top entry
 11
 11
 Connector_Molex
+Molex_Micro-Fit_3.0_43650-1110_1x11-1MP_P3.00mm_Horizontal
+Molex Micro-Fit 3.0 Connector System, 43650-1110 (compatible alternatives: 43650-1111, 43650-1109), 11 Pins per row (https://www.molex.com/pdm_docs/sd/436500210_sd.pdf), generated with kicad-footprint-generator
+connector Molex Micro-Fit_3.0 horizontal
+0
+13
+12
+Connector_Molex
+Molex_Micro-Fit_3.0_43650-1110_1x11-1MP_P3.00mm_Horizontal_PnP
+Molex Micro-Fit 3.0 Connector System, 43650-1110 (compatible alternatives: 43650-1111, 43650-1109), 11 Pins per row (https://www.molex.com/pdm_docs/sd/436500210_sd.pdf), generated with kicad-footprint-generator
+connector Molex Micro-Fit_3.0 horizontal
+0
+13
+12
+Connector_Molex
 Molex_Micro-Fit_3.0_43650-1115_1x11_P3.00mm_Vertical
 Molex Micro-Fit 3.0 Connector System, 43650-1115 (compatible alternatives: 43650-1116, 43650-1117), 11 Pins per row (http://www.molex.com/pdm_docs/sd/436500215_sd.pdf), generated with kicad-footprint-generator
 connector Molex Micro-Fit_3.0 vertical
 0
 11
 11
+Connector_Molex
+Molex_Micro-Fit_3.0_43650-1121_1x11_P3.00mm_Vertical
+Molex Micro-Fit 3.0 Connector System, 43650-1121 (compatible alternatives: 43650-1122, 43650-1123), 11 Pins per row (https://www.molex.com/pdm_docs/sd/436500221_sd.pdf), generated with kicad-footprint-generator
+connector Molex Micro-Fit_3.0 vertical
+0
+11
+11
+Connector_Molex
+Molex_Micro-Fit_3.0_43650-1124_1x11-1MP_P3.00mm_Vertical
+Molex Micro-Fit 3.0 Connector System, 43650-1124 (compatible alternatives: 43650-1125, 43650-1126), 11 Pins per row (https://www.molex.com/pdm_docs/sd/436500224_sd.pdf), generated with kicad-footprint-generator
+connector Molex Micro-Fit_3.0 vertical
+0
+13
+12
 Connector_Molex
 Molex_Micro-Fit_3.0_43650-1200_1x12_P3.00mm_Horizontal
 Molex Micro-Fit 3.0 Connector System, 43650-1200 (compatible alternatives: 43650-1201, 43650-1202), 12 Pins per row (https://www.molex.com/pdm_docs/sd/436500300_sd.pdf), generated with kicad-footprint-generator
@@ -18879,12 +19439,40 @@ connector Molex Micro-Fit_3.0 top entry
 12
 12
 Connector_Molex
+Molex_Micro-Fit_3.0_43650-1210_1x12-1MP_P3.00mm_Horizontal
+Molex Micro-Fit 3.0 Connector System, 43650-1210 (compatible alternatives: 43650-1211, 43650-1209), 12 Pins per row (https://www.molex.com/pdm_docs/sd/436500210_sd.pdf), generated with kicad-footprint-generator
+connector Molex Micro-Fit_3.0 horizontal
+0
+14
+13
+Connector_Molex
+Molex_Micro-Fit_3.0_43650-1210_1x12-1MP_P3.00mm_Horizontal_PnP
+Molex Micro-Fit 3.0 Connector System, 43650-1210 (compatible alternatives: 43650-1211, 43650-1209), 12 Pins per row (https://www.molex.com/pdm_docs/sd/436500210_sd.pdf), generated with kicad-footprint-generator
+connector Molex Micro-Fit_3.0 horizontal
+0
+14
+13
+Connector_Molex
 Molex_Micro-Fit_3.0_43650-1215_1x12_P3.00mm_Vertical
 Molex Micro-Fit 3.0 Connector System, 43650-1215 (compatible alternatives: 43650-1216, 43650-1217), 12 Pins per row (http://www.molex.com/pdm_docs/sd/436500215_sd.pdf), generated with kicad-footprint-generator
 connector Molex Micro-Fit_3.0 vertical
 0
 12
 12
+Connector_Molex
+Molex_Micro-Fit_3.0_43650-1221_1x12_P3.00mm_Vertical
+Molex Micro-Fit 3.0 Connector System, 43650-1221 (compatible alternatives: 43650-1222, 43650-1223), 12 Pins per row (https://www.molex.com/pdm_docs/sd/436500221_sd.pdf), generated with kicad-footprint-generator
+connector Molex Micro-Fit_3.0 vertical
+0
+12
+12
+Connector_Molex
+Molex_Micro-Fit_3.0_43650-1224_1x12-1MP_P3.00mm_Vertical
+Molex Micro-Fit 3.0 Connector System, 43650-1224 (compatible alternatives: 43650-1225, 43650-1226), 12 Pins per row (https://www.molex.com/pdm_docs/sd/436500224_sd.pdf), generated with kicad-footprint-generator
+connector Molex Micro-Fit_3.0 vertical
+0
+14
+13
 Connector_Molex
 Molex_Micro-Latch_53253-0270_1x02_P2.00mm_Vertical
 Molex Micro-Latch Wire-to-Board Connector System, 53253-0270 (compatible alternatives: 53253-0250), 2 Pins per row (http://www.molex.com/pdm_docs/sd/532530770_sd.pdf), generated with kicad-footprint-generator
@@ -51302,6 +51890,2085 @@ One digit LED 7 segment SA39-11 SC39-11 SA39-12 SC39-12
 0
 10
 10
+Eurocad
+Alpha9mmPot
+
+
+0
+5
+3
+Eurocad
+B3W9_1LED
+
+
+0
+6
+6
+Eurocad
+BA56_3DIG_7SEG
+
+
+0
+12
+12
+Eurocad
+DC_JACK
+
+
+0
+3
+3
+Eurocad
+LED3mm
+LED 3mm round vertical
+LED  3mm round vertical
+0
+2
+2
+Eurocad
+LP4OA1PBCT
+
+
+0
+8
+8
+Eurocad
+MIDI_DIN5
+Din 5 (MIDI), Pro Signal P/N PSG03463
+
+0
+5
+5
+Eurocad
+MOUSEBITE1mm
+
+
+0
+0
+0
+Eurocad
+PJ301M-12
+
+
+0
+3
+3
+Eurocad
+RGBLED10mm
+
+
+0
+4
+4
+Eurocad
+TL1105SPF250Q
+
+
+0
+4
+4
+Eurorack-Modules
+2X05_SMT_HEADER
+
+
+0
+10
+10
+Eurorack-Modules
+2X08_SMT_HEADER
+
+
+0
+16
+16
+Eurorack-Modules
+3.5MM-JACK-SWITCH-13MM-FENIXLABELS
+
+
+0
+4
+4
+Eurorack-Modules
+3.5MM-JACK-SWITCH-13MM-INPUT
+
+
+0
+4
+4
+Eurorack-Modules
+3.5MM-JACK-SWITCH-13MM-NOHOLES
+
+
+0
+8
+8
+Eurorack-Modules
+3.5MM-JACK-SWITCH-13MM-NOHOLES-TESTPAD
+
+
+0
+8
+8
+Eurorack-Modules
+3.5MM-JACK-SWITCH-13MM-OUTPUT
+
+
+0
+4
+4
+Eurorack-Modules
+3MMLED
+
+
+0
+2
+2
+Eurorack-Modules
+4PIN5MM
+
+
+0
+4
+4
+Eurorack-Modules
+16MHZXTAL
+
+
+0
+4
+4
+Eurorack-Modules
+28-SSOP
+
+
+0
+28
+28
+Eurorack-Modules
+3362U
+
+
+0
+3
+3
+Eurorack-Modules
+AI301G
+
+
+0
+2
+2
+Eurorack-Modules
+AK4558
+
+
+0
+0
+0
+Eurorack-Modules
+ALPHADUALGANG
+
+
+0
+6
+6
+Eurorack-Modules
+ALPHAPOT-24MM
+
+
+0
+3
+3
+Eurorack-Modules
+ALPS_POT
+
+
+0
+5
+5
+Eurorack-Modules
+ALPS_POT_SQUAREHOLES
+
+
+0
+7
+7
+Eurorack-Modules
+AMOEBIKAVOICE
+
+
+0
+9
+9
+Eurorack-Modules
+AUDIO-JACK-.25-INCH-HORIZ-PTH
+
+
+0
+6
+6
+Eurorack-Modules
+AVX-B
+
+
+0
+2
+2
+Eurorack-Modules
+AVX-C
+
+
+0
+2
+2
+Eurorack-Modules
+BANANABOX
+
+
+0
+0
+0
+Eurorack-Modules
+BANANAHOLE
+
+
+0
+1
+1
+Eurorack-Modules
+BIGBRICK
+
+
+0
+0
+0
+Eurorack-Modules
+BUBBLES
+
+
+0
+0
+0
+Eurorack-Modules
+BUBBLES_HALF
+
+
+0
+0
+0
+Eurorack-Modules
+BUBBLES_INV
+
+
+0
+0
+0
+Eurorack-Modules
+BUBBLES_ONE
+
+
+0
+0
+0
+Eurorack-Modules
+BYPASSBOARD
+
+
+0
+24
+24
+Eurorack-Modules
+CASE-A_3216
+
+
+0
+2
+2
+Eurorack-Modules
+CHERRY_RS_HOLE
+
+
+0
+0
+0
+Eurorack-Modules
+DIL08
+<b>Dual In Line Package</b>
+
+0
+8
+8
+Eurorack-Modules
+DIL14
+<b>Dual In Line Package</b>
+
+0
+14
+14
+Eurorack-Modules
+DIL16
+<b>Dual In Line Package</b>
+
+0
+16
+16
+Eurorack-Modules
+DIN-5-VERTICAL
+
+
+0
+6
+6
+Eurorack-Modules
+DIP-8
+
+
+0
+8
+8
+Eurorack-Modules
+ERRORLOGO
+
+
+0
+0
+0
+Eurorack-Modules
+ERRORLOGO_BIGGER
+
+
+0
+0
+0
+Eurorack-Modules
+ESP8266-ESP12E
+<b>ESP8266-12E with additional I/O and GPIO04/05 corrected</b><p>{return}The author cannot warrant that this library is free from error{return}or will meet your specific requirements.<p>{return}<author>Created by PuceBaboon.com. Komagane, Nagano, JAPAN</author>{return}
+
+0
+22
+22
+Eurorack-Modules
+EURORACK1HPPANEL
+
+
+0
+0
+0
+Eurorack-Modules
+EURORACK2HPPANEL
+
+
+0
+0
+0
+Eurorack-Modules
+EURORACK2HPPCB
+
+
+0
+0
+0
+Eurorack-Modules
+EURORACK4HPPANEL
+
+
+0
+0
+0
+Eurorack-Modules
+EURORACK4HPPCB
+
+
+0
+0
+0
+Eurorack-Modules
+EURORACK6HPPANEL
+
+
+0
+0
+0
+Eurorack-Modules
+EURORACK6HPPCB
+
+
+0
+0
+0
+Eurorack-Modules
+EURORACK6HPPCB_10CMTALL
+
+
+0
+0
+0
+Eurorack-Modules
+EURORACK8HPPCB
+
+
+0
+0
+0
+Eurorack-Modules
+EURORACK12HPPANEL
+
+
+0
+0
+0
+Eurorack-Modules
+EURORACK12HPPCB
+
+
+0
+0
+0
+Eurorack-Modules
+EURORACK14HPPANEL
+
+
+0
+0
+0
+Eurorack-Modules
+EURORACK18HPPCB
+
+
+0
+0
+0
+Eurorack-Modules
+EURORACK20HP_10X10CM
+
+
+0
+0
+0
+Eurorack-Modules
+EURORACK24HPPCB
+
+
+0
+0
+0
+Eurorack-Modules
+EURORACK24HP_10X10CM
+
+
+0
+0
+0
+Eurorack-Modules
+EURORACK36HP
+
+
+0
+0
+0
+Eurorack-Modules
+EURORACK36HP_5STOMP
+
+
+0
+0
+0
+Eurorack-Modules
+EURORACK36HP_HOLESFORMIXER
+
+
+0
+0
+0
+Eurorack-Modules
+EURORACK36HP_MOUNTHOLES
+
+
+0
+4
+4
+Eurorack-Modules
+EURORACK36HP_TALLERBOARD
+
+
+0
+0
+0
+Eurorack-Modules
+FAIRRITE_FERRITE
+
+
+0
+2
+2
+Eurorack-Modules
+FENIXPOWERBACKPACK
+
+
+0
+32
+32
+Eurorack-Modules
+FENIXPOWERBACKPACK_BOARD
+
+
+0
+0
+0
+Eurorack-Modules
+FENIXPOWERBACKPACK_MODULE
+
+
+0
+0
+0
+Eurorack-Modules
+FENIX_2U_84HP
+
+
+0
+0
+0
+Eurorack-Modules
+FENIX_3U_42HP
+
+
+0
+0
+0
+Eurorack-Modules
+FENIX_3U_84HP
+
+
+0
+0
+0
+Eurorack-Modules
+FENIX_5U_84HP
+
+
+0
+0
+0
+Eurorack-Modules
+FENIX_TEST_16PIN_SHROUD
+
+
+0
+20
+20
+Eurorack-Modules
+FERRITE_1812
+
+
+0
+2
+2
+Eurorack-Modules
+FILMCAP
+
+
+0
+2
+2
+Eurorack-Modules
+GOLDFISHSTANDOFFS
+
+
+0
+6
+6
+Eurorack-Modules
+HEADPHONEHOLE
+
+
+0
+0
+0
+Eurorack-Modules
+HEADPHONEHOLE_GAP
+
+
+0
+0
+0
+Eurorack-Modules
+INOUTBOARD
+
+
+0
+0
+0
+Eurorack-Modules
+JUSTATINYROCKET
+
+
+0
+0
+0
+Eurorack-Modules
+JUSTATINYROCKET_DATECODE
+
+
+0
+0
+0
+Eurorack-Modules
+LED0603
+
+
+0
+2
+2
+Eurorack-Modules
+LED3535
+
+
+0
+4
+4
+Eurorack-Modules
+LMZM33606
+
+
+0
+78
+78
+Eurorack-Modules
+MAX13330
+
+
+0
+0
+0
+Eurorack-Modules
+MCUBASEBOARD
+
+
+0
+36
+36
+Eurorack-Modules
+MEANWELL_DKA30
+
+
+0
+8
+8
+Eurorack-Modules
+MEANWELL_SKA15
+
+
+0
+5
+5
+Eurorack-Modules
+MK22_TQFP64
+
+
+0
+64
+64
+Eurorack-Modules
+MULTICOMP1MS-ONOFFON
+
+
+0
+3
+3
+Eurorack-Modules
+MULTICOMP1MS-ONOFFON_NOHOLES
+
+
+0
+6
+6
+Eurorack-Modules
+OG-POTS_ALPS_POT_VERTICAL
+
+
+0
+5
+5
+Eurorack-Modules
+OG-POTS_ALPS_POT_VERTICAL_WITHBIGKNOB
+
+
+0
+5
+5
+Eurorack-Modules
+POT_ALPHA_RV16AF-20
+Package for Alpha RV16AF-20 potentiometer
+
+0
+3
+3
+Eurorack-Modules
+POT_MAMMOTH
+
+
+0
+3
+3
+Eurorack-Modules
+POT_SMALLERHOLE
+
+
+0
+5
+5
+Eurorack-Modules
+POWER_10
+
+
+0
+10
+10
+Eurorack-Modules
+POWER_10_LABELSOTHERSIDE
+
+
+0
+10
+10
+Eurorack-Modules
+POWER_16
+
+
+0
+16
+16
+Eurorack-Modules
+POWER_16_SHROUDED
+
+
+0
+16
+16
+Eurorack-Modules
+POWER_16_SHROUDED_NOTEXT
+
+
+0
+16
+16
+Eurorack-Modules
+QFN28
+
+
+0
+29
+29
+Eurorack-Modules
+QFN32
+
+
+0
+0
+0
+Eurorack-Modules
+QFN32_4X4
+
+
+0
+33
+33
+Eurorack-Modules
+QFN50P250X350X100-17N
+
+
+0
+17
+17
+Eurorack-Modules
+QFN50P500X500X90-33N
+
+
+0
+33
+33
+Eurorack-Modules
+QSOP16
+
+
+0
+16
+16
+Eurorack-Modules
+R-78E5.0-1.0
+
+
+0
+3
+3
+Eurorack-Modules
+RESISTOR
+
+
+0
+0
+0
+Eurorack-Modules
+RK12
+
+
+0
+10
+10
+Eurorack-Modules
+S4B-PH
+
+
+0
+6
+6
+Eurorack-Modules
+SCWN06
+
+
+0
+8
+8
+Eurorack-Modules
+SO08
+<b>Small Outline Package 8</b><br>{return}NS Package M08A
+
+0
+8
+8
+Eurorack-Modules
+SO14
+<b>Small Outline Package 14</b>
+
+0
+14
+14
+Eurorack-Modules
+SO16
+
+
+0
+16
+16
+Eurorack-Modules
+SO20
+
+
+0
+20
+20
+Eurorack-Modules
+SOIC8
+<B>Wide Plastic Gull Wing Small Outline Package</B>
+
+0
+8
+8
+Eurorack-Modules
+SOP65P640X110-16N
+
+
+0
+16
+16
+Eurorack-Modules
+SOT-23-3$1
+
+
+0
+3
+3
+Eurorack-Modules
+SOT23-5
+<b>Small Outline Transistor</b>
+
+0
+5
+5
+Eurorack-Modules
+SOT23-6
+<b>Small Outline Transistor</b>
+
+0
+6
+6
+Eurorack-Modules
+SOT95P290X145-5N
+
+
+0
+5
+5
+Eurorack-Modules
+SWRB120XS
+
+
+0
+2
+2
+Eurorack-Modules
+SYMB_OPAMP
+
+
+0
+0
+0
+Eurorack-Modules
+TEENSY_4.0
+
+
+0
+33
+33
+Eurorack-Modules
+TINRSLOGO
+
+
+0
+0
+0
+Eurorack-Modules
+TINRS_ROCKET
+
+
+0
+0
+0
+Eurorack-Modules
+TINRS_ROCKET_DATEMARK
+
+
+0
+0
+0
+Eurorack-Modules
+TRIMPOT
+
+
+0
+3
+3
+Eurorack-Modules
+TRIM_POT
+
+
+0
+3
+3
+Eurorack-Modules
+TSSOP8
+
+
+0
+8
+8
+Eurorack-Modules
+TSSOP14
+
+
+0
+14
+14
+Eurorack-Modules
+TSSOP16
+
+
+0
+16
+16
+Eurorack-Modules
+TSSOP24
+<b>Thin Shrink Small Outline Plastic 24</b><p>{return}MAX3223-MAX3243.pdf
+
+0
+24
+24
+Eurorack-Modules
+USB-A-H
+<b>USB Series A Hole Mounted</b>
+
+0
+6
+6
+Eurorack-Modules
+USB-A-PCB
+
+
+0
+4
+4
+Eurorack-Modules
+USB-A-S
+<b>USB Series A Surface Mounted</b>
+
+0
+6
+6
+Eurorack-Modules
+USB-A_LC
+
+
+0
+4
+4
+Eurorack-Modules
+USB-B-PTH
+<b>USB Series B Hole Mounted</b>
+
+0
+6
+6
+Eurorack-Modules
+USB-B-PTH-VERTICAL
+<b>USB Series B Hole Mounted</b>
+
+0
+6
+6
+Eurorack-Modules
+USB-B-SMT
+USB Series B Surface Mounted
+
+0
+6
+6
+Eurorack-Modules
+USB-MB-H
+<b>USB Series Mini-B Hole Mounted</b>
+
+0
+7
+7
+Eurorack-Modules
+USB-MINIB
+<b>USB Series Mini-B Surface Mounted</b>
+
+0
+9
+9
+Eurorack-Modules
+USB-MINIB-OLD
+<b>USB Series Mini-B Surface Mounted</b>
+
+0
+9
+9
+Eurorack-Modules
+WS2812B
+
+
+0
+4
+4
+Eurorack-Modules
+WS2812B-NARROW
+
+
+0
+4
+4
+EurorackModularParts
+2X05_SMT_HEADER
+
+
+0
+10
+10
+EurorackModularParts
+2X08_SMT_HEADER
+
+
+0
+16
+16
+EurorackModularParts
+3.5MM-JACK-SWITCH-13MM-FENIXLABELS
+
+
+0
+4
+4
+EurorackModularParts
+3.5MM-JACK-SWITCH-13MM-INPUT
+
+
+0
+4
+4
+EurorackModularParts
+3.5MM-JACK-SWITCH-13MM-NOHOLES
+
+
+0
+8
+8
+EurorackModularParts
+3.5MM-JACK-SWITCH-13MM-NOHOLES-TESTPAD
+
+
+0
+8
+8
+EurorackModularParts
+3.5MM-JACK-SWITCH-13MM-OUTPUT
+
+
+0
+4
+4
+EurorackModularParts
+3MMLED
+
+
+0
+2
+2
+EurorackModularParts
+4PIN5MM
+
+
+0
+4
+4
+EurorackModularParts
+16MHZXTAL
+
+
+0
+4
+4
+EurorackModularParts
+28-SSOP
+
+
+0
+28
+28
+EurorackModularParts
+3362U
+
+
+0
+3
+3
+EurorackModularParts
+AI301G
+
+
+0
+2
+2
+EurorackModularParts
+AK4558
+
+
+0
+0
+0
+EurorackModularParts
+ALPHADUALGANG
+
+
+0
+6
+6
+EurorackModularParts
+ALPHAPOT-24MM
+
+
+0
+3
+3
+EurorackModularParts
+ALPS_POT
+
+
+0
+5
+5
+EurorackModularParts
+ALPS_POT_SQUAREHOLES
+
+
+0
+7
+7
+EurorackModularParts
+AMOEBIKAVOICE
+
+
+0
+9
+9
+EurorackModularParts
+AUDIO-JACK-.25-INCH-HORIZ-PTH
+
+
+0
+6
+6
+EurorackModularParts
+AVX-B
+
+
+0
+2
+2
+EurorackModularParts
+AVX-C
+
+
+0
+2
+2
+EurorackModularParts
+BANANABOX
+
+
+0
+0
+0
+EurorackModularParts
+BANANAHOLE
+
+
+0
+1
+1
+EurorackModularParts
+BIGBRICK
+
+
+0
+0
+0
+EurorackModularParts
+BUBBLES
+
+
+0
+0
+0
+EurorackModularParts
+BUBBLES_HALF
+
+
+0
+0
+0
+EurorackModularParts
+BUBBLES_INV
+
+
+0
+0
+0
+EurorackModularParts
+BUBBLES_ONE
+
+
+0
+0
+0
+EurorackModularParts
+BYPASSBOARD
+
+
+0
+24
+24
+EurorackModularParts
+CASE-A_3216
+
+
+0
+2
+2
+EurorackModularParts
+CHERRY_RS_HOLE
+
+
+0
+0
+0
+EurorackModularParts
+DIL08
+<b>Dual In Line Package</b>
+
+0
+8
+8
+EurorackModularParts
+DIL14
+<b>Dual In Line Package</b>
+
+0
+14
+14
+EurorackModularParts
+DIL16
+<b>Dual In Line Package</b>
+
+0
+16
+16
+EurorackModularParts
+DIN-5-VERTICAL
+
+
+0
+6
+6
+EurorackModularParts
+DIP-8
+
+
+0
+8
+8
+EurorackModularParts
+ERRORLOGO
+
+
+0
+0
+0
+EurorackModularParts
+ERRORLOGO_BIGGER
+
+
+0
+0
+0
+EurorackModularParts
+ESP8266-ESP12E
+<b>ESP8266-12E with additional I/O and GPIO04/05 corrected</b><p>{return}The author cannot warrant that this library is free from error{return}or will meet your specific requirements.<p>{return}<author>Created by PuceBaboon.com. Komagane, Nagano, JAPAN</author>{return}
+
+0
+22
+22
+EurorackModularParts
+EURORACK1HPPANEL
+
+
+0
+0
+0
+EurorackModularParts
+EURORACK2HPPANEL
+
+
+0
+0
+0
+EurorackModularParts
+EURORACK2HPPCB
+
+
+0
+0
+0
+EurorackModularParts
+EURORACK4HPPANEL
+
+
+0
+0
+0
+EurorackModularParts
+EURORACK4HPPCB
+
+
+0
+0
+0
+EurorackModularParts
+EURORACK6HPPANEL
+
+
+0
+0
+0
+EurorackModularParts
+EURORACK6HPPCB
+
+
+0
+0
+0
+EurorackModularParts
+EURORACK6HPPCB_10CMTALL
+
+
+0
+0
+0
+EurorackModularParts
+EURORACK8HPPCB
+
+
+0
+0
+0
+EurorackModularParts
+EURORACK12HPPANEL
+
+
+0
+0
+0
+EurorackModularParts
+EURORACK12HPPCB
+
+
+0
+0
+0
+EurorackModularParts
+EURORACK14HPPANEL
+
+
+0
+0
+0
+EurorackModularParts
+EURORACK18HPPCB
+
+
+0
+0
+0
+EurorackModularParts
+EURORACK20HP_10X10CM
+
+
+0
+0
+0
+EurorackModularParts
+EURORACK24HPPCB
+
+
+0
+0
+0
+EurorackModularParts
+EURORACK24HP_10X10CM
+
+
+0
+0
+0
+EurorackModularParts
+EURORACK36HP
+
+
+0
+0
+0
+EurorackModularParts
+EURORACK36HP_5STOMP
+
+
+0
+0
+0
+EurorackModularParts
+EURORACK36HP_HOLESFORMIXER
+
+
+0
+0
+0
+EurorackModularParts
+EURORACK36HP_MOUNTHOLES
+
+
+0
+4
+4
+EurorackModularParts
+EURORACK36HP_TALLERBOARD
+
+
+0
+0
+0
+EurorackModularParts
+FAIRRITE_FERRITE
+
+
+0
+2
+2
+EurorackModularParts
+FENIXPOWERBACKPACK
+
+
+0
+32
+32
+EurorackModularParts
+FENIXPOWERBACKPACK_BOARD
+
+
+0
+0
+0
+EurorackModularParts
+FENIXPOWERBACKPACK_MODULE
+
+
+0
+0
+0
+EurorackModularParts
+FENIX_2U_84HP
+
+
+0
+0
+0
+EurorackModularParts
+FENIX_3U_42HP
+
+
+0
+0
+0
+EurorackModularParts
+FENIX_3U_84HP
+
+
+0
+0
+0
+EurorackModularParts
+FENIX_5U_84HP
+
+
+0
+0
+0
+EurorackModularParts
+FENIX_TEST_16PIN_SHROUD
+
+
+0
+20
+20
+EurorackModularParts
+FERRITE_1812
+
+
+0
+2
+2
+EurorackModularParts
+FILMCAP
+
+
+0
+2
+2
+EurorackModularParts
+GOLDFISHSTANDOFFS
+
+
+0
+6
+6
+EurorackModularParts
+HEADPHONEHOLE
+
+
+0
+0
+0
+EurorackModularParts
+HEADPHONEHOLE_GAP
+
+
+0
+0
+0
+EurorackModularParts
+INOUTBOARD
+
+
+0
+0
+0
+EurorackModularParts
+JUSTATINYROCKET
+
+
+0
+0
+0
+EurorackModularParts
+JUSTATINYROCKET_DATECODE
+
+
+0
+0
+0
+EurorackModularParts
+LED0603
+
+
+0
+2
+2
+EurorackModularParts
+LED3535
+
+
+0
+4
+4
+EurorackModularParts
+LMZM33606
+
+
+0
+78
+78
+EurorackModularParts
+MAX13330
+
+
+0
+0
+0
+EurorackModularParts
+MCUBASEBOARD
+
+
+0
+36
+36
+EurorackModularParts
+MEANWELL_DKA30
+
+
+0
+8
+8
+EurorackModularParts
+MEANWELL_SKA15
+
+
+0
+5
+5
+EurorackModularParts
+MK22_TQFP64
+
+
+0
+64
+64
+EurorackModularParts
+MULTICOMP1MS-ONOFFON
+
+
+0
+3
+3
+EurorackModularParts
+MULTICOMP1MS-ONOFFON_NOHOLES
+
+
+0
+6
+6
+EurorackModularParts
+OG-POTS_ALPS_POT_VERTICAL
+
+
+0
+5
+5
+EurorackModularParts
+OG-POTS_ALPS_POT_VERTICAL_WITHBIGKNOB
+
+
+0
+5
+5
+EurorackModularParts
+POT_ALPHA_RV16AF-20
+Package for Alpha RV16AF-20 potentiometer
+
+0
+3
+3
+EurorackModularParts
+POT_MAMMOTH
+
+
+0
+3
+3
+EurorackModularParts
+POT_SMALLERHOLE
+
+
+0
+5
+5
+EurorackModularParts
+POWER_10
+
+
+0
+10
+10
+EurorackModularParts
+POWER_10_LABELSOTHERSIDE
+
+
+0
+10
+10
+EurorackModularParts
+POWER_16
+
+
+0
+16
+16
+EurorackModularParts
+POWER_16_SHROUDED
+
+
+0
+16
+16
+EurorackModularParts
+POWER_16_SHROUDED_NOTEXT
+
+
+0
+16
+16
+EurorackModularParts
+QFN28
+
+
+0
+29
+29
+EurorackModularParts
+QFN32
+
+
+0
+0
+0
+EurorackModularParts
+QFN32_4X4
+
+
+0
+33
+33
+EurorackModularParts
+QFN50P250X350X100-17N
+
+
+0
+17
+17
+EurorackModularParts
+QFN50P500X500X90-33N
+
+
+0
+33
+33
+EurorackModularParts
+QSOP16
+
+
+0
+16
+16
+EurorackModularParts
+R-78E5.0-1.0
+
+
+0
+3
+3
+EurorackModularParts
+RESISTOR
+
+
+0
+0
+0
+EurorackModularParts
+RK12
+
+
+0
+10
+10
+EurorackModularParts
+S4B-PH
+
+
+0
+6
+6
+EurorackModularParts
+SCWN06
+
+
+0
+8
+8
+EurorackModularParts
+SO08
+<b>Small Outline Package 8</b><br>{return}NS Package M08A
+
+0
+8
+8
+EurorackModularParts
+SO14
+<b>Small Outline Package 14</b>
+
+0
+14
+14
+EurorackModularParts
+SO16
+
+
+0
+16
+16
+EurorackModularParts
+SO20
+
+
+0
+20
+20
+EurorackModularParts
+SOIC8
+<B>Wide Plastic Gull Wing Small Outline Package</B>
+
+0
+8
+8
+EurorackModularParts
+SOP65P640X110-16N
+
+
+0
+16
+16
+EurorackModularParts
+SOT-23-3$1
+
+
+0
+3
+3
+EurorackModularParts
+SOT23-5
+<b>Small Outline Transistor</b>
+
+0
+5
+5
+EurorackModularParts
+SOT23-6
+<b>Small Outline Transistor</b>
+
+0
+6
+6
+EurorackModularParts
+SOT95P290X145-5N
+
+
+0
+5
+5
+EurorackModularParts
+SWRB120XS
+
+
+0
+2
+2
+EurorackModularParts
+SYMB_OPAMP
+
+
+0
+0
+0
+EurorackModularParts
+TEENSY_4.0
+
+
+0
+33
+33
+EurorackModularParts
+TINRSLOGO
+
+
+0
+0
+0
+EurorackModularParts
+TINRS_ROCKET
+
+
+0
+0
+0
+EurorackModularParts
+TINRS_ROCKET_DATEMARK
+
+
+0
+0
+0
+EurorackModularParts
+TRIMPOT
+
+
+0
+3
+3
+EurorackModularParts
+TRIM_POT
+
+
+0
+3
+3
+EurorackModularParts
+TSSOP8
+
+
+0
+8
+8
+EurorackModularParts
+TSSOP14
+
+
+0
+14
+14
+EurorackModularParts
+TSSOP16
+
+
+0
+16
+16
+EurorackModularParts
+TSSOP24
+<b>Thin Shrink Small Outline Plastic 24</b><p>{return}MAX3223-MAX3243.pdf
+
+0
+24
+24
+EurorackModularParts
+USB-A-H
+<b>USB Series A Hole Mounted</b>
+
+0
+6
+6
+EurorackModularParts
+USB-A-PCB
+
+
+0
+4
+4
+EurorackModularParts
+USB-A-S
+<b>USB Series A Surface Mounted</b>
+
+0
+6
+6
+EurorackModularParts
+USB-A_LC
+
+
+0
+4
+4
+EurorackModularParts
+USB-B-PTH
+<b>USB Series B Hole Mounted</b>
+
+0
+6
+6
+EurorackModularParts
+USB-B-PTH-VERTICAL
+<b>USB Series B Hole Mounted</b>
+
+0
+6
+6
+EurorackModularParts
+USB-B-SMT
+USB Series B Surface Mounted
+
+0
+6
+6
+EurorackModularParts
+USB-MB-H
+<b>USB Series Mini-B Hole Mounted</b>
+
+0
+7
+7
+EurorackModularParts
+USB-MINIB
+<b>USB Series Mini-B Surface Mounted</b>
+
+0
+9
+9
+EurorackModularParts
+USB-MINIB-OLD
+<b>USB Series Mini-B Surface Mounted</b>
+
+0
+9
+9
+EurorackModularParts
+WS2812B
+
+
+0
+4
+4
+EurorackModularParts
+WS2812B-NARROW
+
+
+0
+4
+4
 Ferrite_THT
 LairdTech_28C0236-0JW-10
 Ferrite, vertical, LairdTech 28C0236-0JW-10, https://assets.lairdtech.com/home/brandworld/files/28C0236-0JW-10.pdf, JW Miller core https://www.bourns.com/products/magnetic-products/j.w.-miller-through-hole-ferrite-beads-emi-filters
@@ -51491,6 +54158,13 @@ emi filter
 0
 5
 5
+Fish
+Fish
+
+
+0
+0
+0
 Fuse
 Fuse_0402_1005Metric
 Fuse SMD 0402 (1005 Metric), square (rectangular) end terminal, IPC_7351 nominal, (Body size source: http://www.tortai-tech.com/upload/download/2011102023233369053.pdf), generated with kicad-footprint-generator
@@ -52206,7 +54880,21 @@ Heatsink AAVID TO-263 D2 Pak
 2
 1
 Heatsink
-Heatsink_Aavid-TV5G_TO220_Horizontal
+Heatsink_AAVID_576802B03900G
+Heatsink, 14.48x12.7x19.05mm, TO-220/ TO-262, https://www.boydcorp.com/aavid-datasheets/Board-Level-Cooling-Plug-In-5768.pdf
+heatsink
+0
+1
+1
+Heatsink
+Heatsink_AAVID_590302B03600G
+Heatsink, 25.4x25.4x42.54mm, TO-220, https://www.boydcorp.com/aavid-datasheets/Board-Level-Cooling-Channel-5903.pdf
+heatsink
+0
+2
+2
+Heatsink
+Heatsink_AAVID_TV5G_TO220_Horizontal
 Heatsink TV5G TO-220 Horizontal, https://www.shopaavid.com/Product/TV-5G
 Heatsink TV5G TO-220 Horizontal 
 0
@@ -52496,6 +55184,13 @@ Inductor_SMD
 L_2512_6332Metric_Pad1.52x3.35mm_HandSolder
 Inductor SMD 2512 (6332 Metric), square (rectangular) end terminal, IPC_7351 nominal with elongated pad for handsoldering. (Body size source: http://www.tortai-tech.com/upload/download/2011102023233369053.pdf), generated with kicad-footprint-generator
 inductor handsolder
+0
+2
+2
+Inductor_SMD
+L_AVX_LMLP07A7
+Inductor, AVX Kyocera, LMLP Series, style D, 6.6mmx7.3mm, 3.0mm height. (Script generated with StandardBox.py) (https://datasheets.avx.com/LMLPD.pdf)
+Inductor LMLP
 0
 2
 2
@@ -53464,6 +56159,27 @@ Inductor, Vishay, Vishay_IHSM-7832, http://www.vishay.com/docs/34021/ihsm7832.pd
 inductor vishay icsm smd
 0
 2
+2
+Inductor_SMD
+L_Wuerth_HCF-2013
+7443630070, http://katalog.we-online.de/pbs/datasheet/7443630070.pdf
+inductor shielded wuerth hcf
+0
+3
+2
+Inductor_SMD
+L_Wuerth_HCF-2815
+74436410150, http://katalog.we-online.de/pbs/datasheet/74436410150.pdf
+inductor shielded wuerth hcf
+0
+3
+2
+Inductor_SMD
+L_Wuerth_HCF-2818
+7443640330, http://katalog.we-online.de/pbs/datasheet/7443640330.pdf
+inductor shielded wuerth hcf
+0
+3
 2
 Inductor_SMD
 L_Wuerth_HCI-1030
@@ -56104,6 +58820,13 @@ LED RGB PLCC-6 CLP6C-FBK
 0
 6
 6
+LED_SMD
+LED_RGB_Everlight_EASV3015RGBA0_Horizontal
+LED, RGB, right-angle, clear, https://everlightamericas.com/index.php?controller=attachment&id_attachment=3220
+LED RGB right-angle
+0
+4
+4
 LED_SMD
 LED_RGB_Getian_GT-P6PRGB4303
 https://www.gme.sk/img/cache/doc/518/177/vykonova-led-getian-gt-p6prgb4303-datasheet-1.pdf
@@ -59408,6 +62131,1091 @@ net tie
 0
 4
 4
+OPL_Capacitor
+AVX-A(1206)
+
+
+0
+2
+2
+OPL_Capacitor
+AVX-B(1210)
+
+
+0
+2
+2
+OPL_Capacitor
+AVX-C(2312)
+
+
+0
+2
+2
+OPL_Capacitor
+AVX-D(2917)
+
+
+0
+2
+2
+OPL_Capacitor
+C0402
+0402
+Capcitor 0402
+0
+2
+2
+OPL_Capacitor
+C0603
+0603
+Capacitor 0603
+0
+2
+2
+OPL_Capacitor
+C0805
+0805
+Capacitor 0805
+0
+2
+2
+OPL_Capacitor
+C1206
+
+
+0
+2
+2
+OPL_Capacitor
+CERAMIC-2.54
+
+
+0
+2
+2
+OPL_Capacitor
+CP-D5x7MM
+
+
+0
+2
+2
+OPL_Capacitor
+ELECTRO-SMD-C-6MM
+ALUMINIUM ELECTROLYTIC CAPACITOR PACKAGE B
+ALUMINIUM ELECTROLYTIC CAPACITOR PACKAGE B
+0
+2
+2
+OPL_Circuit_Protection
+D0603
+
+
+0
+2
+2
+OPL_Circuit_Protection
+F1206
+
+
+0
+2
+2
+OPL_Circuit_Protection
+F1812
+HTTP://WWW.FUSE-CHINA.COM/1812SMDFUSES.HTM
+HTTP://WWW.FUSE-CHINA.COM/1812SMDFUSES.HTM
+0
+2
+2
+OPL_Circuit_Protection
+SOD-123
+DIODE
+DIODE
+0
+2
+2
+OPL_Circuit_Protection
+SOT-23
+SOT23
+SOT23
+0
+3
+3
+OPL_Connector
+AUDIO6P-SMD-3.5-14.0X6.4X5.0MM
+
+
+0
+6
+6
+OPL_Connector
+AUDIO8P-SMD-3.5-14.5X6X5MM
+
+
+0
+8
+8
+OPL_Connector
+BAT2P-13.5-CR1220
+
+
+0
+3
+3
+OPL_Connector
+DCJ3P-11.6X9.6X7.0MM
+
+
+0
+3
+3
+OPL_Connector
+DCJ3P-14.2X11.0X9.0MM
+
+
+0
+3
+3
+OPL_Connector
+H2-2.0-6X4.5MM
+
+
+0
+2
+2
+OPL_Connector
+H2-2.0-90D
+
+
+0
+2
+2
+OPL_Connector
+H2-2.54
+
+
+0
+2
+2
+OPL_Connector
+H2-3.5-7.0X7.0MM
+
+
+0
+2
+2
+OPL_Connector
+H2-5.0-10.5X8.0MM
+
+
+0
+2
+2
+OPL_Connector
+H2X3-2.54
+
+
+0
+6
+6
+OPL_Connector
+H2X4-2.54
+
+
+0
+8
+8
+OPL_Connector
+H3-2.54
+
+
+0
+3
+3
+OPL_Connector
+H3-2.54-90D-MALE
+
+
+0
+3
+3
+OPL_Connector
+H3-5.0-15.5X8.0MM
+
+
+0
+3
+3
+OPL_Connector
+H4-2.54
+
+
+0
+4
+4
+OPL_Connector
+H6-2.54
+
+
+0
+6
+6
+OPL_Connector
+H6-2.54-90D-MALE
+
+
+0
+6
+6
+OPL_Connector
+H8-2.54
+
+
+0
+8
+8
+OPL_Connector
+H10-2.0
+
+
+0
+10
+10
+OPL_Connector
+H10-2.54
+
+
+0
+10
+10
+OPL_Connector
+H16-2.54
+
+
+0
+16
+16
+OPL_Connector
+H40-2.54
+
+
+0
+40
+40
+OPL_Connector
+HW2-SMD-1.0-90D
+
+
+0
+4
+4
+OPL_Connector
+HW2-SMD-2.0-90D
+
+
+0
+4
+4
+OPL_Connector
+HW4-2.0
+
+
+0
+4
+4
+OPL_Connector
+HW4-2.0-90D
+
+
+0
+4
+4
+OPL_Connector
+HW4-SMD-2.0
+
+
+0
+6
+6
+OPL_Connector
+HW4-SMD-2.0-90D
+
+
+0
+6
+6
+OPL_Connector
+HW10-2.0
+
+
+0
+10
+10
+OPL_Connector
+MICRO-SD9+4P-SMD-16.1X14.5X1.85MM
+
+
+0
+13
+13
+OPL_Connector
+MICRO-USB5+4P-SMD-0.65-B
+
+
+0
+9
+9
+OPL_Connector
+MICRO-USB5+6P-SMD-0.65-AB
+
+
+0
+9
+9
+OPL_Connector
+MICRO-USB5+6P-SMD-0.65-B
+
+
+0
+11
+11
+OPL_Connector
+MINIUSB5+4P-0.8-90D
+
+
+0
+9
+6
+OPL_Connector
+RJ45-12+2P-16.3X15.4X11.5MM-IN
+
+
+0
+14
+14
+OPL_Connector
+SCK28-2.54-35.6X10MM
+
+
+0
+28
+28
+OPL_Connector
+U-FL3P-SMD-2.6X2.6X1.0MM
+
+
+0
+3
+3
+OPL_Connector
+USB4+2P-2.0-90D
+USB CONNECTOR
+USB CONNECTOR
+0
+6
+5
+OPL_Crystal_Oscillator
+HC49US
+CRYSTAL
+CRYSTAL
+0
+2
+2
+OPL_Crystal_Oscillator
+L0402
+
+
+0
+2
+2
+OPL_Crystal_Oscillator
+L0805
+
+
+0
+2
+2
+OPL_Crystal_Oscillator
+X2-SMD-3.2X1.5X0.55MM
+
+
+0
+2
+2
+OPL_Crystal_Oscillator
+X2-SMD-5.0X3.2X1.3MM
+3.2MM*5MM DIMENSION
+3.2MM*5MM DIMENSION
+0
+2
+2
+OPL_Crystal_Oscillator
+X2-SMD-L2.0X1.2X0.55MM
+
+
+0
+2
+2
+OPL_Crystal_Oscillator
+X3-SMD-3.6X1.3X0.8MM
+
+
+0
+3
+3
+OPL_Discrete_Semiconductor
+DO-41
+
+
+0
+2
+2
+OPL_Discrete_Semiconductor
+DO-214AA
+
+
+0
+2
+2
+OPL_Discrete_Semiconductor
+DO-214AC
+HTTP://WWW.SYCELECTRONICA.COM.AR/SEMICONDUCTORES/1N4007-SMD.PDF
+HTTP://WWW.SYCELECTRONICA.COM.AR/SEMICONDUCTORES/1N4007-SMD.PDF
+0
+2
+2
+OPL_Discrete_Semiconductor
+LED-1206
+
+
+0
+2
+2
+OPL_Discrete_Semiconductor
+LL-34
+
+
+0
+2
+2
+OPL_Discrete_Semiconductor
+SOD-123
+DIODE
+DIODE
+0
+2
+2
+OPL_Discrete_Semiconductor
+SOT-23
+SOT23
+SOT23
+0
+3
+3
+OPL_Discrete_Semiconductor
+TO-220
+
+
+0
+4
+4
+OPL_Filters_and_Magnetic_Beads
+L0603
+
+
+0
+2
+2
+OPL_Filters_and_Magnetic_Beads
+L0806
+DATASHEET:
+DATASHEET:
+0
+2
+2
+OPL_Inductor
+L0402
+
+
+0
+2
+2
+OPL_Inductor
+L0805
+
+
+0
+2
+2
+OPL_Inductor
+L0806
+DATASHEET:
+DATASHEET:
+0
+2
+2
+OPL_Inductor
+SMD-2P-L6.0XW6.0XH3.0MM
+06 FOR WIDTH 6.0MM ,30 FOR HEIGHT 3.0MM
+06 FOR WIDTH 6.0MM ,30 FOR HEIGHT 3.0MM
+0
+2
+2
+OPL_Integrated_Circuit
+DFN6-0.5-1.5X1.0X0.72MM
+
+
+0
+6
+6
+OPL_Integrated_Circuit
+DFN8G-0.5-2X2MM
+
+
+0
+9
+9
+OPL_Integrated_Circuit
+DFN8G-0.5-3X3MM
+
+
+0
+9
+9
+OPL_Integrated_Circuit
+DIP14-2.54-17.24X6.35MM
+
+
+0
+14
+14
+OPL_Integrated_Circuit
+DIP28-2.54-34.7X7.62MM
+
+
+0
+28
+28
+OPL_Integrated_Circuit
+MSOP8-0.65-3X3MM
+8M, 8-LEAD, 0.118" WIDE, MINIATURE SMALL OUTLINE PACKAGE
+8M, 8-LEAD, 0.118" WIDE, MINIATURE SMALL OUTLINE PACKAGE
+0
+8
+8
+OPL_Integrated_Circuit
+MSOP8G-0.65-3X3MM
+
+
+0
+9
+9
+OPL_Integrated_Circuit
+QFN32G-0.5-5X5MM
+
+
+0
+33
+33
+OPL_Integrated_Circuit
+QFN44G-0.5-7X7MM
+
+
+0
+45
+45
+OPL_Integrated_Circuit
+QFN48G-0.4-6X6MM
+
+
+0
+49
+49
+OPL_Integrated_Circuit
+SOIC8-1.27-5X4MM
+
+
+0
+8
+8
+OPL_Integrated_Circuit
+SOIC20G-1.27-16X11MM
+
+
+0
+21
+21
+OPL_Integrated_Circuit
+SOP20-1.27-12.7X7.65MM
+
+
+0
+20
+20
+OPL_Integrated_Circuit
+SOT-23
+SOT23
+SOT23
+0
+3
+3
+OPL_Integrated_Circuit
+SOT-23-5
+SMALL OUTLINE TRANSISTOR
+SMALL OUTLINE TRANSISTOR
+0
+5
+5
+OPL_Integrated_Circuit
+SOT-23-6
+
+
+0
+6
+6
+OPL_Integrated_Circuit
+SOT-23-8
+
+
+0
+8
+8
+OPL_Integrated_Circuit
+SOT-89
+SOT98 EMITTER COLLECTOR BASIS
+SOT98 EMITTER COLLECTOR BASIS
+0
+4
+4
+OPL_Integrated_Circuit
+SOT-223
+SMALL OUTLINE TRANSISTOR
+SMALL OUTLINE TRANSISTOR
+0
+4
+4
+OPL_Integrated_Circuit
+SSOP16-0.635-5X4MM
+
+
+0
+16
+16
+OPL_Integrated_Circuit
+SSOP20-0.65-7.6X5.2MM
+SHRINK SMALL OUTLINE PACKAGE
+SHRINK SMALL OUTLINE PACKAGE
+0
+20
+20
+OPL_Integrated_Circuit
+SSOP24-0.65-8.9X5.3MM
+
+
+0
+24
+24
+OPL_Integrated_Circuit
+SSOP28-0.65-10.2X5.2MM
+SHRINK SMALL OUTLINE PACKAGE SSOP-28
+SHRINK SMALL OUTLINE PACKAGE SSOP-28
+0
+28
+28
+OPL_Integrated_Circuit
+TO-92
+
+
+0
+3
+3
+OPL_Integrated_Circuit
+TO-220
+
+
+0
+4
+4
+OPL_Integrated_Circuit
+TO-252
+SMALL OUTLINE TRANSISTOR
+SMALL OUTLINE TRANSISTOR
+0
+3
+3
+OPL_Integrated_Circuit
+TQFP32-0.8-7X7MM
+THIN PLASIC QUAD FLAT PACKAGE GRID 0.8 MM
+THIN PLASIC QUAD FLAT PACKAGE GRID 0.8 MM
+0
+32
+32
+OPL_Integrated_Circuit
+TQFP44-0.8-9.6X9.6MM
+THIN PLASIC QUAD FLAT PACKAGE
+THIN PLASIC QUAD FLAT PACKAGE
+0
+44
+44
+OPL_Integrated_Circuit
+TQFP100-0.5-14X14MM
+100-LEAD THIN QUAD FLAT PACK PACKAGE OUTLINE
+100-LEAD THIN QUAD FLAT PACK PACKAGE OUTLINE
+0
+100
+100
+OPL_Integrated_Circuit
+TSSOP14-0.65-5X4.4MM
+
+
+0
+14
+14
+OPL_Integrated_Circuit
+TSSOP20-0.65-6.5X4.4MM
+
+
+0
+20
+20
+OPL_Integrated_Circuit
+TSSOP24-0.65-7.8X4.4MM
+
+
+0
+24
+24
+OPL_Optoelectronics
+LCD12-2.54-30.0X14.0X7.3MM
+
+
+0
+12
+12
+OPL_Optoelectronics
+LED-10X2P-2.54-25.5X10.1X8.4MM
+
+
+0
+20
+20
+OPL_Optoelectronics
+LED-0402
+
+
+0
+2
+2
+OPL_Optoelectronics
+LED-0603
+
+
+0
+2
+2
+OPL_Optoelectronics
+LED-0805
+
+
+0
+2
+2
+OPL_Optoelectronics
+LED2-2.54-D3.0MM
+LED
+LED
+0
+2
+2
+OPL_Optoelectronics
+LED2-2.54-D5.0MM
+
+
+0
+2
+2
+OPL_Optoelectronics
+LED4-2.0-D8.0MM
+
+
+0
+4
+4
+OPL_Optoelectronics
+LED4-SMD-5050
+
+
+0
+4
+4
+OPL_Relay
+REY5-19.0X15.0X15.0MM
+
+
+0
+5
+5
+OPL_Resistor
+ADJR2+3P-11.0X9.8X12.0MM
+
+
+0
+5
+5
+OPL_Resistor
+ADJR3-7.0X7.0X5.0MM
+
+
+0
+3
+3
+OPL_Resistor
+ADJR3-9.5X9.5X10.5MM
+
+
+0
+3
+3
+OPL_Resistor
+PR-D1.8_L3.3MM
+RESISTOR
+RESISTOR
+0
+2
+2
+OPL_Resistor
+PR-D2.3XL6.5MM
+RESISTOR
+RESISTOR
+0
+2
+2
+OPL_Resistor
+R0402
+
+
+0
+2
+2
+OPL_Resistor
+R0603
+
+
+0
+2
+2
+OPL_Resistor
+R0805
+
+
+0
+2
+2
+OPL_Resistor
+R1206
+
+
+0
+2
+2
+OPL_Resistor
+RA1206-8
+BOURNS CHIP RESISTOR ARRAY
+BOURNS CHIP RESISTOR ARRAY
+0
+8
+8
+OPL_Resistor
+SNR2-2.5-6.5X4.0MM
+
+
+0
+2
+2
+OPL_Sensor-Transducer
+DFN10-0.5-3.0X3.0MM
+
+
+0
+12
+12
+OPL_Sensor-Transducer
+LGA14-0.8-5.0X3.0MM
+
+
+0
+14
+14
+OPL_Sensor-Transducer
+PLCC16-0.5-3X3MM
+
+
+0
+16
+16
+OPL_Sensor-Transducer
+QFN24G-0.4-3X3MM
+
+
+0
+25
+25
+OPL_Sensor-Transducer
+SMD3528
+
+
+0
+2
+2
+OPL_Sensor-Transducer
+SNR2-3.0
+
+
+0
+2
+2
+OPL_Sensor-Transducer
+SNR2-5.1-25.0X13.0X1.0MM
+
+
+0
+2
+2
+OPL_Sensor-Transducer
+SNR3-D8.1XH4.2MM
+
+
+0
+3
+3
+OPL_Sensor-Transducer
+SNR4-2.54-8.7X4.5X5.8MM
+
+
+0
+4
+4
+OPL_Sensor-Transducer
+SNR4-2.54-15.5X12.0X5.5MM
+
+
+0
+4
+4
+OPL_Sensor-Transducer
+SNR4-2.54-25.0X15.0X7.0MM
+
+
+0
+4
+4
+OPL_Sensor-Transducer
+SOP16-1.27-10.0X5.0MM
+
+
+0
+16
+16
+OPL_Sensor-Transducer
+TO-92-3
+
+
+0
+3
+3
+OPL_Switch
+SW2-2.6-3.0X2.5X1.2+0.4MM
+
+
+0
+2
+2
+OPL_Switch
+SW2-5.0-6.0X3.0X4.3MM
+
+
+0
+2
+2
+OPL_Switch
+SW2-12.7-12.0X3.6X3.6MM
+
+
+0
+2
+2
+OPL_Switch
+SW4-6.0X6.0X5.0MM
+
+
+0
+4
+4
+OPL_Switch
+SW4-SMD-4.2X3.2X2.5MM
+
+
+0
+4
+4
+OPL_Switch
+SW4-SMD-5.2X5.2X1.5MM
+
+
+0
+4
+4
+OPL_Switch
+SW4-SMD-6.0X6.0X5.0MM
+
+
+0
+4
+4
+OPL_Switch
+SW4-SMD-7.0X3.5X3.5MM-90D
+
+
+0
+4
+4
+OPL_Switch
+SW5-2.0-8.8X4.4X4.7MM-90D
+
+
+0
+5
+5
+OPL_Switch
+SW6-2.54-9.0X3.5X3.2+2.0MM
+
+
+0
+6
+6
+OPL_Switch
+SW6-2.54-9.0X3.5X3.2MM-90D
+
+
+0
+6
+6
+OPL_Switch
+SW6-2.54-SMD-7.0X3.5X1.5MM
+
+
+0
+6
+6
+OPL_Switch
+SW7-SMD-L6.7X2.7X3.2MM
+
+
+0
+7
+7
 OptoDevice
 ADNS-9800
 Laser Gaming Sensor ADNS-9800
@@ -59527,6 +63335,13 @@ Hamamatsu SiPM
 0
 2
 2
+OptoDevice
+Kingbright_KPS-3227
+3.2mmx2.7mm, light sensor, https://www.kingbright.com/attachments/file/psearch/000/00/00/KPS-3227SP1C(Ver.16).pdf
+KPS-3227 Ambient Light Photo Sensor
+0
+4
+4
 OptoDevice
 Kingbright_KPS-5130
 http://www.kingbright.com/attachments/file/psearch/000/00/00/KPS-5130PD7C(Ver.14).pdf
@@ -60318,6 +64133,13 @@ SMD SMT crystal oscillator hand-soldering
 0
 4
 4
+Oscillator
+Oscillator_SMD_SiTime_SiT9121-6Pin_3.2x2.5mm
+3.2x2.5mm, 1-220MHz High Performance Differential Oscillator SiTime SiT9121 https://www.sitime.com/datasheet/SiT9121
+SMD SMT crystal oscillator
+0
+6
+6
 Oscillator
 Oscillator_SMD_Silicon_Labs_LGA-6_2.5x3.2mm_P1.25mm
 Silicon_Labs  LGA, 6 Pin (https://www.silabs.com/documents/public/data-sheets/si512-13.pdf), generated with kicad-footprint-generator ipc_noLead_generator.py
@@ -61957,6 +65779,13 @@ CSP 16 0.35
 16
 16
 Package_CSP
+WLCSP-16_2.225x2.17mm_P0.5mm
+WLCSP-16 2.225x2.17mm, 2.17x2.225mm, 16 Ball, 4x4 Layout, 0.5mm Pitch, https://ww1.microchip.com/downloads/en/DeviceDoc/16B_WLCSP_CS_C04-06036c.pdf
+CSP 16 0.5
+0
+16
+16
+Package_CSP
 WLCSP-16_4x4_B2.17x2.32mm_P0.5mm
 WLCSP-16, http://www.nxp.com/documents/data_sheet/LPC1102_1104.pdf, http://www.nxp.com/assets/documents/data/en/application-notes/AN3846.pdf
 WLCSP-16 NXP
@@ -62032,6 +65861,13 @@ UFD Package, 4-Lead Plastic QFN (2mm x 2mm), http://ams.com/eng/content/download
 QFN 0.95
 0
 6
+5
+Package_DFN_QFN
+AO_DFN-8-1EP_5.55x5.2mm_P1.27mm_EP4.12x4.6mm
+DD Package; 8-Lead Plastic DFN (5.55mm x 5.2mm), Pin 5-8 connected to EP (http://www.aosmd.com/res/packaging_information/DFN5x6_8L_EP1_P.pdf)
+dfn 
+0
+25
 5
 Package_DFN_QFN
 Cypress_QFN-56-1EP_8x8mm_P0.5mm_EP6.22x6.22mm_ThermalVias
@@ -65267,6 +69103,20 @@ DFN 0.5
 0
 11
 9
+Package_DFN_QFN
+VQFN-16-1EP_3x3mm_P0.5mm_EP1.1x1.1mm
+VQFN, 16 Pin (https://ww1.microchip.com/downloads/en/DeviceDoc/16L_VQFN-WFS_3x3mm_4MX_C04-00508a.pdf), generated with kicad-footprint-generator ipc_noLead_generator.py
+VQFN NoLead
+0
+18
+17
+Package_DFN_QFN
+VQFN-16-1EP_3x3mm_P0.5mm_EP1.1x1.1mm_ThermalVias
+VQFN, 16 Pin (https://ww1.microchip.com/downloads/en/DeviceDoc/16L_VQFN-WFS_3x3mm_4MX_C04-00508a.pdf), generated with kicad-footprint-generator ipc_noLead_generator.py
+VQFN NoLead
+0
+23
+17
 Package_DFN_QFN
 VQFN-16-1EP_3x3mm_P0.5mm_EP1.6x1.6mm
 VQFN, 16 Pin (http://www.ti.com/lit/ds/symlink/cdclvp1102.pdf#page=28), generated with kicad-footprint-generator ipc_noLead_generator.py
@@ -68677,6 +72527,13 @@ HSOP 11.0 x 15.9mm Pitch 1.27mm
 20
 20
 Package_SO
+HSOP-32-1EP_7.5x11mm_P0.65mm_EP4.7x4.7mm
+HSOP, 32 Pin (https://www.nxp.com/docs/en/package-information/SOT1746-3.pdf), generated with kicad-footprint-generator ipc_gullwing_generator.py
+HSOP SO
+0
+37
+33
+Package_SO
 HSOP-36-1EP_11.0x15.9mm_P0.65mm_SlugDown
 HSOP 11.0x15.9mm Pitch 0.65mm Slug Down (PowerSO-36) [JEDEC MO-166] (http://www.st.com/resource/en/datasheet/vn808cm-32-e.pdf, http://www.st.com/resource/en/application_note/cd00003801.pdf)
 HSOP 11.0 x 15.9mm Pitch 0.65mm
@@ -68697,6 +72554,13 @@ HSOP 11.0 x 15.9mm Pitch 0.65mm
 0
 36
 36
+Package_SO
+HSOP-54-1EP_7.5x17.9mm_P0.65mm_EP4.6x4.6mm
+HSOP, 54 Pin (https://www.nxp.com/docs/en/package-information/98ASA10506D.pdf), generated with kicad-footprint-generator ipc_gullwing_generator.py
+HSOP SO
+0
+59
+55
 Package_SO
 HTSOP-8-1EP_3.9x4.9mm_P1.27mm_EP2.4x3.2mm
 HTSOP, 8 Pin (https://media.digikey.com/pdf/Data%20Sheets/Rohm%20PDFs/BD9G341EFJ.pdf), generated with kicad-footprint-generator ipc_gullwing_generator.py
@@ -69713,6 +73577,13 @@ SOIC SO
 20
 20
 Package_SO
+SOIC-20W_7.5x15.4mm_P1.27mm
+SOIC, 20 Pin (JEDEC MS-013AD, https://www.analog.com/media/en/package-pcb-resources/package/pkg_pdf/soic_wide-rw/RI_20_1.pdf), generated with kicad-footprint-generator ipc_gullwing_generator.py
+SOIC SO
+0
+20
+20
+Package_SO
 SOIC-24W_7.5x15.4mm_P1.27mm
 SOIC, 24 Pin (JEDEC MS-013AD, https://www.analog.com/media/en/package-pcb-resources/package/pkg_pdf/soic_wide-rw/RW_24.pdf), generated with kicad-footprint-generator ipc_gullwing_generator.py
 SOIC SO
@@ -70140,6 +74011,34 @@ Jedec MO-193C TSOP-6L
 6
 6
 Package_SO
+TSOP-I-24_12.4x6mm_P0.5mm
+TSOP-I, 24 Pin (https://www.jedec.org/standards-documents/docs/mo-142-d variation AA), generated with kicad-footprint-generator ipc_gullwing_generator.py
+TSOP-I SO
+0
+24
+24
+Package_SO
+TSOP-I-24_14.4x6mm_P0.5mm
+TSOP-I, 24 Pin (https://www.jedec.org/standards-documents/docs/mo-142-d variation AB), generated with kicad-footprint-generator ipc_gullwing_generator.py
+TSOP-I SO
+0
+24
+24
+Package_SO
+TSOP-I-24_16.4x6mm_P0.5mm
+TSOP-I, 24 Pin (https://www.jedec.org/standards-documents/docs/mo-142-d variation AC), generated with kicad-footprint-generator ipc_gullwing_generator.py
+TSOP-I SO
+0
+24
+24
+Package_SO
+TSOP-I-24_18.4x6mm_P0.5mm
+TSOP-I, 24 Pin (https://www.jedec.org/standards-documents/docs/mo-142-d variation AD), generated with kicad-footprint-generator ipc_gullwing_generator.py
+TSOP-I SO
+0
+24
+24
+Package_SO
 TSOP-I-28_11.8x8mm_P0.55mm
 TSOP I, 28 pins, 18.8x8mm body, 0.55mm pitch, IPC-calculated pads (http://ww1.microchip.com/downloads/en/devicedoc/doc0807.pdf)
 TSOP I 28 pins
@@ -70149,6 +74048,27 @@ TSOP I 28 pins
 Package_SO
 TSOP-I-32_11.8x8mm_P0.5mm
 TSOP-I, 32 Pin (http://www.issi.com/WW/pdf/61-64C5128AL.pdf), generated with kicad-footprint-generator ipc_gullwing_generator.py
+TSOP-I SO
+0
+32
+32
+Package_SO
+TSOP-I-32_12.4x8mm_P0.5mm
+TSOP-I, 32 Pin (https://www.jedec.org/standards-documents/docs/mo-142-d variation BA), generated with kicad-footprint-generator ipc_gullwing_generator.py
+TSOP-I SO
+0
+32
+32
+Package_SO
+TSOP-I-32_14.4x8mm_P0.5mm
+TSOP-I, 32 Pin (https://www.jedec.org/standards-documents/docs/mo-142-d variation BB), generated with kicad-footprint-generator ipc_gullwing_generator.py
+TSOP-I SO
+0
+32
+32
+Package_SO
+TSOP-I-32_16.4x8mm_P0.5mm
+TSOP-I, 32 Pin (https://www.jedec.org/standards-documents/docs/mo-142-d variation BC), generated with kicad-footprint-generator ipc_gullwing_generator.py
 TSOP-I SO
 0
 32
@@ -70168,12 +74088,75 @@ TSOP I 32 reverse
 32
 32
 Package_SO
+TSOP-I-40_12.4x10mm_P0.5mm
+TSOP-I, 40 Pin (https://www.jedec.org/standards-documents/docs/mo-142-d variation CA), generated with kicad-footprint-generator ipc_gullwing_generator.py
+TSOP-I SO
+0
+40
+40
+Package_SO
+TSOP-I-40_14.4x10mm_P0.5mm
+TSOP-I, 40 Pin (https://www.jedec.org/standards-documents/docs/mo-142-d variation CB), generated with kicad-footprint-generator ipc_gullwing_generator.py
+TSOP-I SO
+0
+40
+40
+Package_SO
+TSOP-I-40_16.4x10mm_P0.5mm
+TSOP-I, 40 Pin (https://www.jedec.org/standards-documents/docs/mo-142-d variation CC), generated with kicad-footprint-generator ipc_gullwing_generator.py
+TSOP-I SO
+0
+40
+40
+Package_SO
+TSOP-I-40_18.4x10mm_P0.5mm
+TSOP-I, 40 Pin (https://www.jedec.org/standards-documents/docs/mo-142-d variation CD), generated with kicad-footprint-generator ipc_gullwing_generator.py
+TSOP-I SO
+0
+40
+40
+Package_SO
+TSOP-I-48_12.4x12mm_P0.5mm
+TSOP-I, 48 Pin (https://www.jedec.org/standards-documents/docs/mo-142-d variation DA), generated with kicad-footprint-generator ipc_gullwing_generator.py
+TSOP-I SO
+0
+48
+48
+Package_SO
+TSOP-I-48_14.4x12mm_P0.5mm
+TSOP-I, 48 Pin (https://www.jedec.org/standards-documents/docs/mo-142-d variation DB), generated with kicad-footprint-generator ipc_gullwing_generator.py
+TSOP-I SO
+0
+48
+48
+Package_SO
+TSOP-I-48_16.4x12mm_P0.5mm
+TSOP-I, 48 Pin (https://www.jedec.org/standards-documents/docs/mo-142-d variation DC), generated with kicad-footprint-generator ipc_gullwing_generator.py
+TSOP-I SO
+0
+48
+48
+Package_SO
 TSOP-I-48_18.4x12mm_P0.5mm
 TSOP I, 32 pins, 18.4x8mm body (https://www.micron.com/~/media/documents/products/technical-note/nor-flash/tn1225_land_pad_design.pdf)
 TSOP I 32
 0
 48
 48
+Package_SO
+TSOP-I-56_14.4x14mm_P0.5mm
+TSOP-I, 56 Pin (https://www.jedec.org/standards-documents/docs/mo-142-d variation EA), generated with kicad-footprint-generator ipc_gullwing_generator.py
+TSOP-I SO
+0
+56
+56
+Package_SO
+TSOP-I-56_16.4x14mm_P0.5mm
+TSOP-I, 56 Pin (https://www.jedec.org/standards-documents/docs/mo-142-d variation EB), generated with kicad-footprint-generator ipc_gullwing_generator.py
+TSOP-I SO
+0
+56
+56
 Package_SO
 TSOP-I-56_18.4x14mm_P0.5mm
 TSOP I, 32 pins, 18.4x8mm body (https://www.micron.com/~/media/documents/products/technical-note/nor-flash/tn1225_land_pad_design.pdf)
@@ -71576,28 +75559,28 @@ SOT-89-5
 5
 Package_TO_SOT_SMD
 SOT-143
-SOT-143
+SOT-143 https://www.nxp.com/docs/en/package-information/SOT143B.pdf
 SOT-143
 0
 4
 4
 Package_TO_SOT_SMD
-SOT-143R_Reverse
-SOT-143R Reverse
+SOT-143R
+SOT-143R, reverse pinning, https://www.nxp.com/docs/en/package-information/SOT143R.pdf
 SOT-143R Reverse
 0
 4
 4
 Package_TO_SOT_SMD
-SOT-143R_Reverse_Handsoldering
-SOT-143R Reverse Handsoldering
+SOT-143R_Handsoldering
+SOT-143R, reverse pinning, Handsoldering, https://www.nxp.com/docs/en/package-information/SOT143R.pdf
 SOT-143 Reverse Handsoldering
 0
 4
 4
 Package_TO_SOT_SMD
 SOT-143_Handsoldering
-SOT-143 Handsoldering
+SOT-143 Handsoldering https://www.nxp.com/docs/en/package-information/SOT143B.pdf
 SOT-143 Handsoldering
 0
 4
@@ -74158,6 +78141,13 @@ Potentiometer horizontal Alps RK097 Dual
 6
 6
 Potentiometer_THT
+Potentiometer_Alps_RK097_Dual_Horizontal_Switch
+1221-5R1211, Dual Pot, Horizontal, Switch, Alps RK097 Dual, https://tech.alpsalpine.com/prod/e/pdf/potentiometer/rotarypotentiometers/rk097/rk097.pdf
+pot horizontal alps rk097 dual switch
+0
+8
+8
+Potentiometer_THT
 Potentiometer_Alps_RK097_Single_Horizontal
 Potentiometer, horizontal, Alps RK097 Single, http://www.alps.com/prod/info/E/HTML/Potentiometer/RotaryPotentiometers/RK097/RK097_list.html
 Potentiometer horizontal Alps RK097 Single
@@ -74621,7 +78611,7 @@ Potentiometer Trimmer RM-063
 3
 Potentiometer_THT
 Potentiometer_Runtron_RM-065_Vertical
-Potentiometer, vertical, Trimmer, RM-065 http://www.runtron.com/down/PDF%20Datasheet/Carbon%20Film%20Potentiometer/RM065%20RM063.pdf
+Potentiometer, vertical, Trimmer, RM-065 https://components101.com/sites/default/files/component_datasheet/Preset%20Potentiometer%20%28Trimpot%29.pdf
 Potentiometer Trimmer RM-065
 0
 3
@@ -74838,7 +78828,7 @@ http://www.susumu-usa.com/pdf/Foot_Print_38.pdf, https://www.susumu.co.jp/common
 3
 RF_GPS
 Linx_RXM-GPS
-GPS Module, Linx
+GPS Module, Linx (https://linxtechnologies.com/wp/wp-content/uploads/rxm-gps-rm.pdf)
 gps linx
 0
 22
@@ -75201,7 +79191,7 @@ Bluetooth Module
 30
 30
 RF_Module
-BM78SPPS5XC2
+BM78SPPS5xC2
 Bluetooth Dual-mode module with integral chip antenna (http://ww1.microchip.com/downloads/en/DeviceDoc/60001380C.pdf)
 Bluetooth BR/EDR BLE
 0
@@ -75401,7 +79391,7 @@ RFDigital_RFD77101
 RFDigital RFD77101 Simblee
 RFDigital RFD77101 Simblee
 0
-48
+45
 45
 RF_Module
 RN42
@@ -77616,6 +81606,13 @@ Temperature and humidity module
 4
 4
 Sensor
+Avago_ADPS-9960
+Digital Proximity, Ambient Light, RGB and Gesture Sensor (https://docs.broadcom.com/doc/AV02-4191EN)
+DFN Sensor optical IR
+0
+8
+8
+Sensor
 MQ-6
 Gas Sensor, 6 pin, https://www.winsen-sensor.com/d/files/semiconductor/mq-6.pdf
 gas sensor
@@ -79069,8 +83066,8 @@ TINRS - Wobbler (pico)sch
 
 
 0
-8
-8
+5
+4
 TINRS - Wobbler (pico)sch
 3MMLED
 
@@ -79097,8 +83094,8 @@ ALPS_POT_SQUAREHOLES
 
 
 0
-7
-7
+5
+5
 TINRS - Wobbler (pico)sch
 B1,27
 <b>TEST PAD</b>
@@ -84769,108 +88766,185 @@ varistor SIOV
 0
 2
 2
-footprints
-6_35mm_audio_jack_socket
-http://www.cliffuk.co.uk/products/jacksockets/S4.pdf
-Cliff, audio, 1/4", quarter inch, jack, guitar, socket, stereo, mono
+ZephJLC
+15FB-20NL
+15FB-20NL footprint
+15FB-20NL footprint
+0
+24
+24
+ZephJLC
+H5007NLT
+H5007NLT footprint
+H5007NLT footprint
+0
+24
+24
+ZephJLC
+HR911105A
+HR911105A footprint
+HR911105A footprint
+0
+14
+14
+ZephJLC
+MPU-6050
+MPU-6050 footprint
+MPU-6050 footprint
+0
+25
+25
+ZephJLC
+STM32L431CCU6
+STM32L431CCU6 footprint
+STM32L431CCU6 footprint
+0
+49
+49
+ZephJLC
+TTP233D-HA6
+TTP233D-HA6 footprint
+TTP233D-HA6 footprint
 0
 6
 6
-footprints
-PB614_LED_SW_6pin
+ZephJLC
+XL1509-5.0E1
+XL1509-5.0E1 footprint
+XL1509-5.0E1 footprint
+0
+8
+8
+ZephJLC
+XL1509-ADJE1
+XL1509-ADJE1 footprint
+XL1509-ADJE1 footprint
+0
+8
+8
+ZephKicad
+CirkelBoardHoles
 
 
 0
-6
-6
-footprints
-thonkiconn_fuzzySi
+0
+0
+ZephKicad
+FenixPowerPack
 
 
+0
+32
+7
+custom
+PinHeader_1x02_P2.54mm_Vertical_no-silk
+Through hole straight pin header, 1x02, 2.54mm pitch, single row
+Through hole pin header THT 1x02 2.54mm single row
+0
+2
+2
+custom
+PinHeader_1x03_P2.54mm_Vertical_no-silk
+Through hole straight pin header, 1x03, 2.54mm pitch, single row
+Through hole pin header THT 1x03 2.54mm single row
 0
 3
 3
-teensy
-Teensy1.0
-11
-
+custom
+PinHeader_1x18_P2.54mm_Vertical_no-silk
+Through hole straight pin header, 1x18, 2.54mm pitch, single row
+Through hole pin header THT 1x18 2.54mm single row
 0
-27
-27
-teensy
-Teensy1.0++
+18
+18
+custom
+PinHeader_1x20_P2.54mm_Vertical_no-silk
+Through hole straight pin header, 1x20, 2.54mm pitch, single row
+Through hole pin header THT 1x20 2.54mm single row
+0
 20
-
-0
-51
-51
-teensy
-Teensy2.0
-11
-
-0
-31
-31
-teensy
-Teensy2.0++
 20
-
+footprint
+15FB-20NL
+15FB-20NL footprint
+15FB-20NL footprint
 0
-52
-52
-teensy
-Teensy30_31_32_All_Pins
-Teensy 3.0/3.1/3.2 All Pins
-
+24
+24
+footprint
+H5007NLT
+H5007NLT footprint
+H5007NLT footprint
 0
-54
-54
-teensy
-Teensy30_31_32_LC
-
-
+24
+24
+footprint
+HR911105A
+HR911105A footprint
+HR911105A footprint
 0
-39
-38
-teensy
-Teensy35_36
-
-
+14
+14
+footprint
+MPU-6050
+MPU-6050 footprint
+MPU-6050 footprint
 0
-62
-62
-teensy
-Teensy35_36_All_Pins
-
-
+25
+25
+footprint
+STM32L431CCU6
+STM32L431CCU6 footprint
+STM32L431CCU6 footprint
 0
-88
-88
-teensy
-Teensy40
-
-
+49
+49
+footprint
+TTP233D-HA6
+TTP233D-HA6 footprint
+TTP233D-HA6 footprint
 0
-44
-44
-teensy
-Teensy40_SMT
-
-
+6
+6
+footprint
+XL1509-ADJE1
+XL1509-ADJE1 footprint
+XL1509-ADJE1 footprint
 0
-54
-54
-teensy
-Teensy41
-
-
-0
-67
-67
-teensy
-Teensy_LC
+8
+8
+footprintsb
+AP2112K-3.3TRG1
 
 
 0
-39
-39
+5
+5
+footprintsc
+MBR120VLSFT1G
+
+
+0
+2
+2
+footprintsd
+PTS810 SJK 250 SMTR LFS
+
+
+0
+4
+4
+footprintse
+ABLS7M2-16.000MHZ-D-2Y-T
+
+
+0
+2
+2
+rp2040
+RP2040
+
+
+0
+57
+57

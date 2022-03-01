@@ -1,12 +1,12 @@
 (footprint "C0603" (version 20211014) (generator pcbnew)
   (layer "F.Cu")
-  (tedit 0)
+  (tedit 6216503D)
   (descr "<b>0603<b><p>")
-  (fp_text reference "REF**" (at 0 0) (layer "F.SilkS")
+  (fp_text reference "REF**" (at 0 0) (layer "F.SilkS") hide
     (effects (font (size 0.45212 0.45212) (thickness 0.05588)))
     (tstamp 978f967d-6cc0-4f07-b852-e2800feefa07)
   )
-  (fp_text value ">VALUE" (at 0 0) (layer "F.Fab")
+  (fp_text value ">VALUE" (at 0 0) (layer "F.Fab") hide
     (effects (font (size 0.4572 0.4572) (thickness 0.0508)))
     (tstamp 914ccec4-572a-4ec0-b281-596368eea274)
   )
@@ -38,4 +38,9 @@
     (solder_mask_margin 0.0508) (tstamp 7e509ce7-bdc7-45fb-b2d0-c14a958a5480))
   (pad "2" smd roundrect (at 0.762 0) (size 0.889 0.889) (layers "F.Cu" "F.Mask") (roundrect_rratio 0.125)
     (solder_mask_margin 0.0508) (tstamp ac99d2b9-3592-44c3-94eb-e556103750a4))
+  (model "${KICAD6_3DMODEL_DIR}/Capacitor_SMD.3dshapes/C_0603_1608Metric.wrl"
+    (offset (xyz 0 0 0))
+    (scale (xyz 1 1 1))
+    (rotate (xyz 0 0 0))
+  )
 )

@@ -1,11 +1,12 @@
 (footprint "PB6149L" (version 20211014) (generator pcbnew)
   (layer "F.Cu")
-  (tedit 0)
-  (fp_text reference "REF**" (at 0 0) (layer "F.SilkS")
+  (tedit 6216CD97)
+  (attr through_hole)
+  (fp_text reference "REF**" (at 0 0) (layer "F.SilkS") hide
     (effects (font (size 1.1684 1.1684) (thickness 0.1016)))
     (tstamp 96cc7009-e5c2-4181-9848-d145b9196cc4)
   )
-  (fp_text value "" (at 0 0) (layer "F.SilkS")
+  (fp_text value "Val**" (at 0 0) (layer "F.SilkS") hide
     (effects (font (size 1.27 1.27) (thickness 0.15)))
     (tstamp e208ea3a-d990-4992-b395-c95b18b77f83)
   )

@@ -1,12 +1,12 @@
 (footprint "4X0402ARV341" (version 20211014) (generator pcbnew)
   (layer "F.Cu")
-  (tedit 0)
+  (tedit 621643A2)
   (descr "<b>Array chip resistor</b> size 4 × 0402<p>\nSource: http://docs-europe.electrocomponents.com/webdocs/0114/0900766b80114d99.pdf")
-  (fp_text reference "REF**" (at -2 2) (layer "F.SilkS")
+  (fp_text reference "REF**" (at -2 2) (layer "F.SilkS") hide
     (effects (font (size 1.143 1.143) (thickness 0.127)) (justify left bottom))
     (tstamp e44b0081-5f25-4984-8fb5-ea876fb2fc1c)
   )
-  (fp_text value ">VALUE" (at -2 -0.75) (layer "F.Fab")
+  (fp_text value ">VALUE" (at -2 -0.75) (layer "F.Fab") hide
     (effects (font (size 1.143 1.143) (thickness 0.127)) (justify left bottom))
     (tstamp a0400e61-7ec0-4cc7-a41d-d7c451e758fe)
   )
