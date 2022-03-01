@@ -79,7 +79,7 @@ int main() {
 
         ImGui::SFML::Update(window, deltaClock.restart());
 
-
+        ImGui::Button("hah!");
         window.clear();
         ImGui::SFML::Render(window);
         window.display();

@@ -1,6 +1,6 @@
 cmake_minimum_required(VERSION 3.12)
 
-add_subdirectory(./simulator ${CMAKE_CURRENT_SOURCE}/./simulator/build)
+add_subdirectory(simulator)
 
 include($ENV{PICO_SDK_PATH}/external/pico_sdk_import.cmake)
 project(wobbler2 C CXX ASM)
