@@ -19,6 +19,7 @@ if(WIN32)
           $<TARGET_FILE:ImGui-SFML::ImGui-SFML>
           $<TARGET_FILE:sfml-graphics>
           $<TARGET_FILE:sfml-window>
+          $<TARGET_FILE:sfml-audio>
           $<TARGET_FILE:sfml-system>
           $<TARGET_FILE_DIR:Wobbler2Simulator>)
   endif()

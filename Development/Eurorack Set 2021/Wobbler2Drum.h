@@ -8,7 +8,6 @@
 #include "EurorackShared/EurorackShared.h"
 #include "Wobbler2Code/Wobbler2.h"
 
-
 extern const uint32_t Cmapping[];
 
 typedef struct
@@ -17,7 +16,6 @@ typedef struct
 	int32_t mid;
 	int32_t hi;
 } intsvg_t;
-
 
 const unsigned short tblDecayTime[] = {
 	0x0002, 0x0003, 0x0003, 0x0004, 0x0005, 0x0005, 0x0006, 0x0007, 0x0007, 0x0008, 0x0009, 0x000A, 0x000B, 0x000C, 0x000C, 0x000D,
@@ -41,7 +39,6 @@ const unsigned long tblNoteTable[] = {
 	0x1E9DA1A3, 0x206FAE64, 0x225D719D, 0x24689129, 0x2692CBFA, 0x28DDFB96, 0x2B4C15AA, 0x2DDF2DB9, 0x309976DF, 0x337D45B6, 0x368D1251, 0x39CB7A58, 0x3D3B4347, 0x40DF5CC9, 0x44BAE33A, 0x48D12252
 };
 
-
 enum
 {
 	RATTLEENV_STOP,
@@ -51,6 +48,7 @@ enum
 	RATTLEENV_REST,
 	RATTLEENV_ATTACK,
 };
+
 enum
 {
 	DECAYENV_STOP,
