@@ -73,13 +73,12 @@ dp_devices.lbr
 Teensy_3_and_LC_Series_Boards_v1.4.lbr
 Teensy_3_and_LC_Series_Boards_v1.4.lbr
 Teensy_3_and_LC_Series_Boards_v1.4.lbr
-Development/Eurorack Set 2021/EurorackShared
 Development/Eurorack Set 2021/Factory
 Development/Eurorack Set 2021/Gerbers
 Development/Eurorack Set 2021/Wobbler2Code/build
 Development/Eurorack Set 2021/Wobbler2Code/build/*
 Development/Eurorack Set 2021/Wobbler2Code/simulator/build
-Development/Eurorack Set 2021/libfixmath
+Development/Eurorack Set 2021/libfixmath_o
 Development/PJB-Box
 FrontPanels
 .DS_Store
