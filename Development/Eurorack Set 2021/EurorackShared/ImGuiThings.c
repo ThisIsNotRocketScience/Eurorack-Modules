@@ -1,6 +1,7 @@
 ImFont* pFont;
 ImFont* pFontBold;
 #include <math.h>
+#include <stdio.h>
 
 bool Knob(const char* label, float* value_p, float minv, float maxv)
 {
@@ -13,8 +14,8 @@ bool Knob(const char* label, float* value_p, float minv, float maxv)
     ImVec2 center = ImVec2(p.x + radius, p.y + radius + line_height);
     float val1 = (value_p[0] - minv) / (maxv - minv);
     char textval[32];
-    sprintf_s(textval, 32, "%04.1f", value_p[0]);
-
+//    sprintf_s(textval, 32, "%04.1f", value_p[0]);
+    snprintf(textval, 32, "%04.1f", value_p[0]) ;
     ImVec2 textpos = p;
 
     float gamma = (float)(3.1415f) / 4.0f;//0 value in knob
@@ -60,7 +61,7 @@ bool Knob(const char* label, float* value_p, float minv, float maxv)
     return touched;
 }
 
-void SetupTheme()
+void SetupTheme(float scaling)
 {
 
     ImGuiIO& io = ImGui::GetIO(); (void)io;
@@ -68,9 +69,10 @@ void SetupTheme()
         // Setup style
     ImGui::StyleColorsLight();
 
+    pFont = io.Fonts->AddFontFromFileTTF("Dosis-Medium.ttf", 12.0f * scaling);
+    pFontBold = io.Fonts->AddFontFromFileTTF("Dosis-Bold.ttf", 12.0f*scaling);
 
-//    pFont = io.Fonts->AddFontFromFileTTF("Fontfabric - Panton.otf", 12.0f);
-  //  pFontBold = io.Fonts->AddFontFromFileTTF("Fontfabric - Panton ExtraBold.otf", 12.0f);
+    ImGui::SFML::UpdateFontTexture(); 
 
     ImGui::GetStyle().ItemInnerSpacing = ImVec2(5, 5);;
     ImGui::GetStyle().ItemSpacing = ImVec2(5, 5);

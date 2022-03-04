@@ -1,3 +1,6 @@
 [submodule "Development/Eurorack Set 2021/libfixmath"]
 	path = Development/Eurorack Set 2021/libfixmath
 	url = https://github.com/PetteriAimonen/libfixmath
+[submodule "Development/Eurorack Set 2021/Wobbler2Code/simulator/DosisFont"]
+	path = Development/Eurorack Set 2021/Wobbler2Code/simulator/DosisFont
+	url = https://github.com/impallari/Dosis.git
