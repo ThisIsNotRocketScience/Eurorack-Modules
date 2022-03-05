@@ -5,11 +5,11 @@ LANGUAGES CXX
 VERSION 1.0
 )
 
-
 add_subdirectory(dependencies)
 
-add_executable(Wobbler2Simulator wobbler2_simulator_main.cpp)
+add_executable(Wobbler2Simulator wobbler2_simulator_main.cpp implot/implot_items.cpp implot/implot.cpp)
 target_link_libraries(Wobbler2Simulator PRIVATE ImGui-SFML::ImGui-SFML  sfml-audio)
+set_property(TARGET Wobbler2Simulator PROPERTY CXX_STANDARD 11)
 
 # Copy DLLs needed for runtime on Windows
 if(WIN32)
@@ -21,6 +21,8 @@ if(WIN32)
           $<TARGET_FILE:sfml-window>
           $<TARGET_FILE:sfml-audio>
           $<TARGET_FILE:sfml-system>
+          "DosisFont/fonts/v1007 Fontlab - Original/TTF/Dosis-Bold.ttf"
           $<TARGET_FILE_DIR:Wobbler2Simulator>)
+      
   endif()
 endif()

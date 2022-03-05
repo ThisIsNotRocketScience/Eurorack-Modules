@@ -5,8 +5,8 @@
 #include <stdio.h>
 #include <math.h>
 
-#include "EurorackShared/EurorackShared.h"
-#include "Wobbler2Code/Wobbler2.h"
+#include "../EurorackShared/EurorackShared.h"
+#include "Wobbler2.h"
 
 extern const uint32_t Cmapping[];
 
@@ -163,14 +163,14 @@ public:
 	unsigned short pShape;
 	unsigned short pDecay;
 
-	void SetParam(unsigned short shape, unsigned short decay)
+	void SetParam(unsigned short shape, unsigned short decay, int decaymult)
 	{
 		pShape = shape;
 		pDecay = decay;
 		int idx = decay >> 9;
 		int v = decay & 0x1ff;
 		int iv = 0x1ff - v;
-		DecayTime = (tblDecayTime[idx] * v + tblDecayTime[idx + 1] * iv) <<1;
+		DecayTime = (tblDecayTime[idx] * v + tblDecayTime[idx + 1] * iv) * decaymult;
 	}
 
 	int32_t Get()
@@ -259,13 +259,13 @@ public:
 		int idx = decay >> 9;
 		int v = decay & 0x1ff;
 		int iv = 0x1ff - v;
-		DecayTime = (tblDecayTime[idx] * v + tblDecayTime[idx + 1] * iv) >> 6;
+		DecayTime = (tblDecayTime[idx] * v + tblDecayTime[idx + 1] * iv) >> 4;
 
 		idx = spacing >> 9;
 		v = spacing & 0x1ff;
 		iv = 0x1ff - v;
 
-		RestTime = (tblDecayTime[idx] * v + tblDecayTime[idx + 1] * iv) >> 6;
+		RestTime = (tblDecayTime[idx] * v + tblDecayTime[idx + 1] * iv) >> 4;
 	}
 
 	int32_t Get()
@@ -362,9 +362,9 @@ public:
 		{
 			sintab[i] = (int)(sinf((i * 6.283f) /(float)WOBTABLEN) * 32767.0f);
 		}
-		SnareNoiseAmp.SetParam(70, 4);
-		BdDecay.SetParam(70, 74);
-		PDecay.SetParam(70, 40);
+		SnareNoiseAmp.SetParam(70, 4,1);
+		BdDecay.SetParam(70, 74,8);
+		PDecay.SetParam(70, 40,4);
 	}
 	int32_t AmpEnv;
 	uint32_t DAmpEnv;

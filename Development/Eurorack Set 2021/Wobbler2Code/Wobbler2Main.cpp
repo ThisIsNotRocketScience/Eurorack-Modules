@@ -2,7 +2,7 @@
 #include "hardware/pio.h"
 #include "hardware/adc.h"
 #include "../EurorackShared/Math.c"
-#include "../Wobbler2Drum.h"
+#include "Wobbler2Drum.h"
 #define DAC_SCK 0
 #define DAC_CS 1
 #define DAC_DAT 2
