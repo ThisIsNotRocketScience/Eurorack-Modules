@@ -64,36 +64,64 @@ public:
     }
 };
 
+void ShowStepped(SteppedResult_t *st)
+{
+    ImGui::Text("%d %.0f%%", st->index, (st->fractional * 100.0f / 255.0f));
+};
+
+
+
 class DecayEnvTester
 {
 public:
-    DecayEnv DE;
-    std::vector<float> results;
+    
+    std::vector<float> results_ClapRattle;
+    std::vector<float> results_BdDecay;
+    std::vector<float> results_PDecay;
+    std::vector<float> results_SnareNoiseAmp;
+
+    RattleEnv ClapRattle;
+	DecayEnv SnareNoiseAmp;
+	DecayEnv BdDecay; 
+	DecayEnv PDecay;
+
     std::vector<float> indices;
     Ranger EnvelopeRange;
 
     void ShowMenu()
     {
-        ImGui::Begin("Decay Envelope Test", NULL, ImGuiWindowFlags_AlwaysAutoResize);
+        ImGui::Begin("Envelopes", NULL, 0);
         if (ImGui::Button("retrigger"))
         {
-            DE.Trigger();
-            results.clear();
+            SnareNoiseAmp.Trigger();
+            PDecay.Trigger();
+            BdDecay.Trigger();
+            ClapRattle.Trigger();
+
+            results_ClapRattle.clear();
+            results_BdDecay.clear();
+            results_PDecay.clear();
+            results_SnareNoiseAmp.clear();
             indices.clear();
             for (int i = 0; i < 10000; i++)
             {
                 indices.push_back(i);
-                float R = DE.Get();
-                EnvelopeRange.Add(R);
-                results.push_back(R);
+                EnvelopeRange.Add(ClapRattle.EnvCurrent);
+                results_SnareNoiseAmp.push_back(SnareNoiseAmp.Get());
+                results_ClapRattle.push_back(ClapRattle.Get());
+                results_PDecay.push_back(PDecay.Get());
+                results_BdDecay.push_back(BdDecay.Get());
             }
         }
         EnvelopeRange.Show();
-        //ImPlot::PushStyleVar(ImPlotst)
-            ImPlot::SetNextAxesToFit(); 
+        // ImPlot::PushStyleVar(ImPlotst)
+        ImPlot::SetNextAxesToFit();
         if (ImPlot::BeginPlot("Envelope"))
         {
-            ImPlot::PlotLine("Data 1", &indices[0], &results[0], results.size());
+            ImPlot::PlotLine("PDecay", &indices[0], &results_PDecay[0], indices.size());
+            ImPlot::PlotLine("BdDecay", &indices[0], &results_BdDecay[0], indices.size());
+            ImPlot::PlotLine("Clap", &indices[0], &results_ClapRattle[0], indices.size());
+            ImPlot::PlotLine("SnareNoise", &indices[0], &results_SnareNoiseAmp[0], indices.size());
             ImPlot::EndPlot();
         }
 
@@ -145,6 +173,8 @@ public:
 
             Knob("Freq", &fFreq, 0, 1);
             Knob("Shape", &fShape, 0, 1);
+            ShowStepped(&TheDrum.ShapeStepped);
+            ShowShapeButtons();
             Knob("NormalAmt", &fNormalAmt, 0, 1);
             ImGui::SameLine();
             Knob("PhasedAmt", &fPhasedAmt, 0, 1);
@@ -160,6 +190,9 @@ public:
 
             ImGui::SliderFloat("Freq", &fFreq, 0, 1);
             ImGui::SliderFloat("Shape", &fShape, 0, 1);
+            ShowStepped(&TheDrum.ShapeStepped);
+            ShowShapeButtons();
+
             ImGui::SliderFloat("NormalAmt", &fNormalAmt, 0, 1);
             ImGui::SliderFloat("PhasedAmt", &fPhasedAmt, 0, 1);
 
@@ -167,7 +200,48 @@ public:
             ;
             ImGui::SliderFloat("Pan", &Panning, 0, 1);
         }
+
         ImGui::PopStyleVar();
+    }
+
+    void ShowShapeButtons()
+    {
+
+        if (ImGui::Button("Kick"))
+        {
+            fShape = 0;
+        }
+        ImGui::SameLine();
+        if (ImGui::Button("Tom"))
+        {
+            fShape = 1 / 6.0f;
+        }
+        ImGui::SameLine();
+        if (ImGui::Button("Block"))
+        {
+            fShape = 2 / 6.0f;
+        }
+        ImGui::SameLine();
+        if (ImGui::Button("Ploink"))
+        {
+            fShape = 3 / 6.0f;
+        }
+        ImGui::SameLine();
+        if (ImGui::Button("Snare"))
+        {
+            fShape = 4 / 6.0f;
+        }
+        ImGui::SameLine();
+        if (ImGui::Button("Hihat"))
+        {
+            fShape = 5 / 6.0f;
+        }
+        ImGui::SameLine();
+
+        if (ImGui::Button("Clap"))
+        {
+            fShape = 1.0f;
+        }
     }
     void SetParam()
     {
@@ -192,31 +266,52 @@ void WriteFloat(FILE *o, float f)
     fwrite(&f, sizeof(float), 1, o);
 }
 
+void WriteBool(FILE *o, bool b)
+{
+    if (b)
+    {
+        WriteFloat(o, 1.0f);
+    }
+    else
+    {
+        WriteFloat(o, 0.0f);
+    }
+}
+
 void ReadFloat(FILE *o, float *f)
 {
     fread(f, sizeof(float), 1, o);
 }
 
+bool ReadBool(FILE *o)
+{
+    float F = 0;
+    ReadFloat(o, &F);
+    if (F > 0.0f)
+        return true;
+    return false;
+}
 void Save()
 {
     FILE *o = fopen("save.dat", "wb+");
-    if(o == NULL) return;
-    for(int j =0 ;j<4;j++)
+    if (o == NULL)
+        return;
+    for (int j = 0; j < 4; j++)
     {
         WriteFloat(o, Inst[j].VolumeLevel);
         WriteFloat(o, Inst[j].Panning);
-       
+
         WriteFloat(o, Inst[j].fFreq);
         WriteFloat(o, Inst[j].fMod);
         WriteFloat(o, Inst[j].fPhase);
         WriteFloat(o, Inst[j].fShape);
         WriteFloat(o, Inst[j].fPhasedAmt);
         WriteFloat(o, Inst[j].fNormalAmt);
-       
+        WriteBool(o, Inst[j].Output);
 
-        for(int i =0 ;i<16;i++)
+        for (int i = 0; i < 16; i++)
         {
-            WriteFloat(o, Pattern[j][i]?1.0: 0.0);
+            WriteBool(o, Pattern[j][i] ? 1.0 : 0.0);
         }
     }
     fclose(o);
@@ -225,25 +320,24 @@ void Save()
 void Load()
 {
     FILE *o = fopen("save.dat", "rb+");
-    if (o == NULL) return;
-    for(int j =0 ;j<4;j++)
+    if (o == NULL)
+        return;
+    for (int j = 0; j < 4; j++)
     {
         ReadFloat(o, &Inst[j].VolumeLevel);
         ReadFloat(o, &Inst[j].Panning);
-       
+
         ReadFloat(o, &Inst[j].fFreq);
         ReadFloat(o, &Inst[j].fMod);
         ReadFloat(o, &Inst[j].fPhase);
         ReadFloat(o, &Inst[j].fShape);
         ReadFloat(o, &Inst[j].fPhasedAmt);
         ReadFloat(o, &Inst[j].fNormalAmt);
-       
 
-        for(int i =0 ;i<16;i++)
+        Inst[j].Output = ReadBool(o);
+        for (int i = 0; i < 16; i++)
         {
-            float R = 0;
-            ReadFloat(o, &R);
-            if (R>0.0f) Pattern[j][i] = true; else Pattern[j][i] = false;
+            Pattern[j][i] = ReadBool(o);
         }
     }
     fclose(o);
@@ -325,7 +419,7 @@ private:
                 m_samples[i] += L * Inst[j].VolumeLevel * (0.1 * 32767.0f / 2048.0f);
                 m_samples[i + 1] += R * Inst[j].VolumeLevel * (0.1 * 32767.0f / 2048.0f);
                 SampleRange.Add(m_samples[i]);
-                SampleRange.Add(m_samples[i+1]);
+                SampleRange.Add(m_samples[i + 1]);
             }
         }
 
@@ -358,7 +452,7 @@ int main()
 
     ImPlot::CreateContext();
 
-    ImPlotStyle& ImPlot_Style = ImPlot::GetStyle();
+    ImPlotStyle &ImPlot_Style = ImPlot::GetStyle();
     ImPlot_Style.UseLocalTime = true;
     ImPlot_Style.AntiAliasedLines = true;
 
@@ -395,7 +489,6 @@ int main()
             {
                 Load();
             }
-            
 
             ImGui::EndMenu();
         }
@@ -417,7 +510,9 @@ int main()
         ImGui::SameLine();
         if (ImGui::RadioButton("4##inst4", CurrentInstance == 3))
             CurrentInstance = 3;
+        ImGui::BeginGroup();
         Inst[CurrentInstance].Menu();
+        ImGui::EndGroup();
         ImGui::End();
         DecayTest.ShowMenu();
         ImGui::Begin("Statistics", NULL, ImGuiWindowFlags_AlwaysAutoResize);

@@ -341,6 +341,9 @@ public:
 	
 	int M1;
 	int M2;
+
+	SteppedResult_t ShapeStepped;
+		
 #define TABBITS 11
 #define TABSHIFT (32-TABBITS)
 #define WOBTABLEN (1 << TABBITS)
@@ -435,7 +438,6 @@ public:
 		DR[6] = (noise * (ClapEnv>>8))>>8; // clap
 
 
-		SteppedResult_t ShapeStepped;
 		Wobbler2_GetSteppedResult(Shape, 6, &ShapeStepped);
 
 
