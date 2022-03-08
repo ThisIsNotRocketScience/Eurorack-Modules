@@ -22,6 +22,7 @@ if(WIN32)
           $<TARGET_FILE:sfml-audio>
           $<TARGET_FILE:sfml-system>
           "DosisFont/fonts/v1007 Fontlab - Original/TTF/Dosis-Bold.ttf"
+          "DosisFont/fonts/v1007 Fontlab - Original/TTF/Dosis-Medium.ttf"
           $<TARGET_FILE_DIR:Wobbler2Simulator>)
       
   endif()

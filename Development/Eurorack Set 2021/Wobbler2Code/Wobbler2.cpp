@@ -527,6 +527,18 @@ int32_t Wobbler_SpeedRatioSet[WOBBLER_SPEEDRATIOCOUNT] = { SpeedRatio(1,8),Speed
 		return ((table[inp->index] / 256) * IF) + ((table[inp->index + 1] / 256) * F);
 	}
 
+	int32_t WobGetInterpolatedResultIntNew(int32_t *table, SteppedResult_t *inp)
+	{
+		unsigned char F = inp->fractional;
+		if (F == 0) return table[inp->index];
+		unsigned char IF = ~inp->fractional;
+		int64_t R = table[inp->index] * IF;
+		R+= table[inp->index + 1] *F;
+		R/=256;
+		return (int32_t) R;
+//		return ((table[inp->index] / 256) * IF) + ((table[inp->index + 1] / 256) * F);
+	}
+
 	void Wobbler2_GetSteppedResult(uint16_t param, uint8_t steps, SteppedResult_t *out)
 	{
 		//max(floor(x + 0.25), (x + 0.25 - floor(x + 0.25)) * 2 + floor(x + 0.25) - 1)

@@ -69,67 +69,6 @@ void ShowStepped(SteppedResult_t *st)
     ImGui::Text("%d %.0f%%", st->index, (st->fractional * 100.0f / 255.0f));
 };
 
-
-
-class DecayEnvTester
-{
-public:
-    
-    std::vector<float> results_ClapRattle;
-    std::vector<float> results_BdDecay;
-    std::vector<float> results_PDecay;
-    std::vector<float> results_SnareNoiseAmp;
-
-    RattleEnv ClapRattle;
-	DecayEnv SnareNoiseAmp;
-	DecayEnv BdDecay; 
-	DecayEnv PDecay;
-
-    std::vector<float> indices;
-    Ranger EnvelopeRange;
-
-    void ShowMenu()
-    {
-        ImGui::Begin("Envelopes", NULL, 0);
-        if (ImGui::Button("retrigger"))
-        {
-            SnareNoiseAmp.Trigger();
-            PDecay.Trigger();
-            BdDecay.Trigger();
-            ClapRattle.Trigger();
-
-            results_ClapRattle.clear();
-            results_BdDecay.clear();
-            results_PDecay.clear();
-            results_SnareNoiseAmp.clear();
-            indices.clear();
-            for (int i = 0; i < 10000; i++)
-            {
-                indices.push_back(i);
-                EnvelopeRange.Add(ClapRattle.EnvCurrent);
-                results_SnareNoiseAmp.push_back(SnareNoiseAmp.Get());
-                results_ClapRattle.push_back(ClapRattle.Get());
-                results_PDecay.push_back(PDecay.Get());
-                results_BdDecay.push_back(BdDecay.Get());
-            }
-        }
-        EnvelopeRange.Show();
-        // ImPlot::PushStyleVar(ImPlotst)
-        ImPlot::SetNextAxesToFit();
-        if (ImPlot::BeginPlot("Envelope"))
-        {
-            ImPlot::PlotLine("PDecay", &indices[0], &results_PDecay[0], indices.size());
-            ImPlot::PlotLine("BdDecay", &indices[0], &results_BdDecay[0], indices.size());
-            ImPlot::PlotLine("Clap", &indices[0], &results_ClapRattle[0], indices.size());
-            ImPlot::PlotLine("SnareNoise", &indices[0], &results_SnareNoiseAmp[0], indices.size());
-            ImPlot::EndPlot();
-        }
-
-        ImGui::End();
-    }
-};
-DecayEnvTester DecayTest;
-
 class Wobbler2Instance
 {
 public:
@@ -343,6 +282,69 @@ void Load()
     fclose(o);
 }
 
+class DecayEnvTester
+{
+public:
+    std::vector<float> results_ClapRattle;
+    std::vector<float> results_BdDecay;
+    std::vector<float> results_PDecay;
+    std::vector<float> results_SnareNoiseAmp;
+
+    RattleEnv ClapRattle;
+    DecayEnv SnareNoiseAmp;
+    DecayEnv BdDecay;
+    DecayEnv PDecay;
+
+    std::vector<float> indices;
+    Ranger EnvelopeRange;
+
+    void ShowMenu()
+    {
+        ImGui::Begin("Envelopes", NULL, 0);
+        if (ImGui::Button("retrigger"))
+        {
+            SnareNoiseAmp.Trigger();
+            BdDecay.CopyFrom(&Inst[0].TheDrum.BdDecay);
+            PDecay.CopyFrom(&Inst[0].TheDrum.PDecay);
+            ClapRattle.CopyFrom(&Inst[0].TheDrum.ClapRattle);
+            SnareNoiseAmp.CopyFrom(&Inst[0].TheDrum.SnareNoiseAmp);
+            PDecay.Trigger();
+            BdDecay.Trigger();
+
+            ClapRattle.Trigger();
+
+            results_ClapRattle.clear();
+            results_BdDecay.clear();
+            results_PDecay.clear();
+            results_SnareNoiseAmp.clear();
+            indices.clear();
+            for (int i = 0; i < 10000; i++)
+            {
+                indices.push_back(i);
+                EnvelopeRange.Add(ClapRattle.EnvCurrent);
+                results_SnareNoiseAmp.push_back(SnareNoiseAmp.Get());
+                results_ClapRattle.push_back(ClapRattle.Get());
+                results_PDecay.push_back(PDecay.Get());
+                results_BdDecay.push_back(BdDecay.Get());
+            }
+        }
+        EnvelopeRange.Show();
+        // ImPlot::PushStyleVar(ImPlotst)
+        ImPlot::SetNextAxesToFit();
+        if (ImPlot::BeginPlot("Envelope"))
+        {
+            ImPlot::PlotLine("PDecay", &indices[0], &results_PDecay[0], indices.size());
+            ImPlot::PlotLine("BdDecay", &indices[0], &results_BdDecay[0], indices.size());
+            ImPlot::PlotLine("Clap", &indices[0], &results_ClapRattle[0], indices.size());
+            ImPlot::PlotLine("SnareNoise", &indices[0], &results_SnareNoiseAmp[0], indices.size());
+            ImPlot::EndPlot();
+        }
+
+        ImGui::End();
+    }
+};
+DecayEnvTester DecayTest;
+
 class AudioStream : public sf::SoundStream
 {
 public:
@@ -523,6 +525,14 @@ int main()
         // ImGui::PushStyleVar(ImGuiStyleVar_ChildBorderSize, ImVec2(4,4));
         for (int j = 0; j < 4; j++)
         {
+            char txt[40];
+            sprintf(txt, "##r%d", j + 1, j + 1);
+
+            if (ImGui::RadioButton(txt, CurrentInstance == j))
+            {
+                CurrentInstance = j;
+            }
+            ImGui::SameLine();
 
             for (int i = 0; i < 16; i++)
             {
@@ -534,9 +544,12 @@ int main()
                 {
                     ImGui::PushStyleColor(ImGuiCol_FrameBg, ImVec4(0.6, 0.6, 0.6, 1.0));
                 }
-                char txt[40];
+
                 sprintf(txt, "##%d_%d", i, j);
-                ImGui::Checkbox(txt, &Pattern[j][i]);
+                if(ImGui::Checkbox(txt, &Pattern[j][i]))
+                {
+                    CurrentInstance = j;
+                }
                 ImGui::PopStyleColor();
                 if (i < 15)
                 {

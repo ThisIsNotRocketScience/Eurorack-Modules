@@ -74,6 +74,7 @@ typedef struct Wobbler2_LFO_SNH_t
 
 //float GetInterpolatedResultFloat(float *table, SteppedResult_t *inp);
 int32_t WobGetInterpolatedResultInt(int32_t *table, SteppedResult_t *inp);
+int32_t WobGetInterpolatedResultIntNew(int32_t *table, SteppedResult_t *inp); // uses int64 intermediate (should not be needed.. but ok)
 
 enum
 {

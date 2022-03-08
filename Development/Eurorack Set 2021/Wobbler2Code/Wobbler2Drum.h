@@ -86,6 +86,7 @@ public:
 	void SetCut(int val) // val is midi range! 0-127
 	{
 		unsigned long nC = Cmapping[val];
+		
 		if (nC > C)
 		{
 			dC = (nC - C) / 80;
@@ -93,9 +94,12 @@ public:
 		}
 		else
 		{
-			dC = (C - nC) / 80;
-			dC = -dC;
-			finertiacount = 80;
+			if (nC<C)
+			{
+				dC = (C - nC) / 80;
+				dC = -dC;
+				finertiacount = 80;
+			}
 		}
 	}
 	void SetRes(int val) // val is midi range! 0-127
@@ -142,6 +146,14 @@ public:
 	int DecayTime;
 	int HoldTime;
 
+	void CopyFrom(DecayEnv *D)
+	{
+		EnvTime = D->EnvTime;
+		DecayTime = D->DecayTime;
+		HoldTime = D->HoldTime;
+		pShape = D->pShape;
+		pDecay = D->pDecay;
+	}
 
 	DecayEnv()
 	{
@@ -220,7 +232,13 @@ public:
 
 	int RattleCount;
 
-
+	void CopyFrom(RattleEnv *R)
+	{
+		DecayTime = R->DecayTime;
+		RestTime = R->RestTime;
+		RattleCount = R->RattleCount;
+		EnvTime = R->EnvTime;
+	}
 	int EnvTime;
 	int EnvState;
 	int RattleLeft;
@@ -231,6 +249,11 @@ public:
 	int RestTime;
 	int LastDecayMultiplier;
 
+	void SetDecayAndRestSymmetrical(int T)
+	{
+		DecayTime = RestTime = T;
+	};
+
 	RattleEnv()
 	{
 		EnvCurrent = 0;
@@ -239,8 +262,8 @@ public:
 		RattleLeft = 0;
 		EnvTime = 0;
 		HoldTime =20;
-		DecayTime = 300;
-		RestTime = 200;
+		DecayTime = 500;
+		RestTime = 500;
 		LastDecayMultiplier = 8;
 		EnvState = RATTLEENV_STOP;
 	}
@@ -251,7 +274,6 @@ public:
 		EnvTime = 5;
 		EnvDelta = ((1 << 24) - EnvCurrent) / EnvTime;
 		RattleLeft = RattleCount;
-
 	}
 
 	void SetParam(unsigned short spacing, unsigned short decay)
@@ -357,7 +379,7 @@ public:
 	Wobbler2Drum()
 	{
 		Filt.SetCut(24);
-		Filt.SetRes(50);
+		Filt.SetRes(10);
 
 		AmpEnv = 0;
 		DAmpEnv = 0;
@@ -365,9 +387,11 @@ public:
 		{
 			sintab[i] = (int)(sinf((i * 6.283f) /(float)WOBTABLEN) * 32767.0f);
 		}
-		SnareNoiseAmp.SetParam(70, 4,1);
-		BdDecay.SetParam(70, 74,8);
-		PDecay.SetParam(70, 40,4);
+		SnareNoiseAmp.SetParam(70<<9, 12<<9,1);
+		BdDecay.SetParam(70<<9, 30<<9,1);
+		BdDecay.HoldTime = 1000;
+
+		PDecay.SetParam(70<<9, 12<<9,1);
 	}
 	int32_t AmpEnv;
 	uint32_t DAmpEnv;
@@ -401,22 +425,40 @@ public:
 			DAmpEnv = 0;
 			AmpEnv = 0;
 		}
-		
+		Filt.SetCut(Freq>>9);
 		DPhase = tblNoteTable[Freq >> 9];
 
 		int32_t DR[7] = { 0 };
 		
-		OscPhase += DPhase + (((PDecay.Get()>>9) * Mod) >> 8);
+		int P;
+		
+		if (Mod > 0x8000)
+		{
+			P = Mod - 32768;
+			P *= P;
+		}
+		else
+		{
+			P = Mod - 32768;
+			P *= -P;
+		}
+
+		P /= 32768;
+		int PDec = PDecay.Get() >> 9;
+
+		//printf("%d\n", P);
+
+		OscPhase  +=  DPhase + (PDec * P)<<1;
 		OscPhase2 += (DPhase * 16) / 10;
 		OscPhase3 += (DPhase * 227) / 50;
 		OscPhase4 += (DPhase * 454) / 50;
 
 		// x2.27   x4.54
-		//  f1 = 500 Hz, f2 = 220 Hz, f3 = 1000Hz.
-
+		// f1 = 500 Hz, f2 = 220 Hz, f3 = 1000Hz.
 
 		int ClapEnv = ClapRattle.Get()>>8;
-		int noise = (rand() % 65536)-32767;
+		//uint16_t N = (uint16_t)rand(); 
+		int noise = Filt.GetBP( rand()) >> 16;
 		int snareenv = SnareNoiseAmp.Get();
 		int tombdenv = BdDecay.Get();
 		int idx = OscPhase >> TABSHIFT;
@@ -425,10 +467,12 @@ public:
 		int idx4 = OscPhase4 >> TABSHIFT;
 		int idxdbl = (OscPhase >> (TABSHIFT - 1)) & WOBTABMASK;
 
+		if (ShapeStepped.index >= 5) ClapRattle.SetDecayAndRestSymmetrical(300); else ClapRattle.SetDecayAndRestSymmetrical(800);
+		Wobbler2_GetSteppedResult(Shape, 6, &ShapeStepped);
+
 		DR[0] = (sintab[idx] * (tombdenv >> 10)) >> 16;
 		DR[1] = (sintab[idxdbl] * (tombdenv >> 10)) >> 16;;
 		DR[2] = (((sintab[idx4] + sintab[idx3] + sintab[idxdbl]) * (tombdenv >> 10)) >> 16);
-
 		
 		int ClapSqrEnv = ClapEnv >> 13;
 		ClapSqrEnv *= ClapEnv >> 12;
@@ -436,17 +480,13 @@ public:
 		DR[4] = (((sintab[idx2] + sintab[idx]) * (tombdenv>>10))>>16 ) +((noise * (snareenv>>10)) >> 16);; // snare
 		DR[5] = ((noise * (snareenv >> 10)) >> 16);;; // hat
 		DR[6] = (noise * (ClapEnv>>8))>>8; // clap
+		
+// interpolate between al the shapes
 
-
-		Wobbler2_GetSteppedResult(Shape, 6, &ShapeStepped);
-
-
-		// interpolate between al the shapes
-
-		uint32_t O1 = WobGetInterpolatedResultInt(DR, &ShapeStepped);// / (0xffff * 4);
+		uint32_t O1 = WobGetInterpolatedResultIntNew(DR, &ShapeStepped);// / (0xffff * 4);
 		L = O1;
 		R = O1;
 //		L = ( O1*65535) ;
-	//	R = ( O1 * 65535) / 65536;
+//		R = ( O1 * 65535) / 65536;
 	}
 };
