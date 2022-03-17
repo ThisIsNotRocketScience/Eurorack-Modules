@@ -15,10 +15,10 @@
 #include "implot/implot.h"
 
 bool Pattern[4][16] = {false};
-float BPM = 130;
+float BPM = 150;
 bool patternplaying = false;
 int tick = 0;
-;
+
 int samplesleftintick = 0;
 int sampleRate = 44100;
 int numChannel = 2;
@@ -64,9 +64,9 @@ public:
     }
 };
 
-void ShowStepped(SteppedResult_t *st)
+void ShowStepped(uint16_t original, SteppedResult_t *st)
 {
-    ImGui::Text("%d %.0f%%", st->index, (st->fractional * 100.0f / 255.0f));
+    ImGui::Text("%d(%04x) -> %d %.0f%%", (int)original, original, st->index, (st->fractional * 100.0f / 255.0f));
 };
 
 class Wobbler2Instance
@@ -87,10 +87,9 @@ public:
     float VolumeLevel = 0.8;
     float Panning = 0.5;
     bool Output = false;
-
+    bool change = false;
     void Menu()
     {
-
         ImGui::PushStyleVar(ImGuiStyleVar_ItemSpacing, ImVec2(4, 4));
         ImGui::PushStyleVar(ImGuiStyleVar_FramePadding, ImVec2(10, 10));
         if (ImGui::Button("Trigger"))
@@ -102,50 +101,67 @@ public:
         //{
         //   Trigger = true;
         // }
-
         if (UseKnobs)
         {
 
-            Knob("Phase", &fPhase, 0, 1);
+            if (Knob("Phase", &fPhase, 0, 1))
+                change = true;
             ImGui::SameLine();
-            Knob("Mod", &fMod, 0, 1);
+            if (Knob("Mod", &fMod, 0, 1))
+                change = true;
 
-            Knob("Freq", &fFreq, 0, 1);
-            Knob("Shape", &fShape, 0, 1);
-            ShowStepped(&TheDrum.ShapeStepped);
-            ShowShapeButtons();
-            Knob("NormalAmt", &fNormalAmt, 0, 1);
+            if (Knob("Freq", &fFreq, 0, 1))
+                change = true;
+            if (Knob("Shape", &fShape, 0, 1))
+                change = true;
+            ShowStepped(TheDrum.Shape, &TheDrum.ShapeStepped);
+            if (ShowShapeButtons())
+                change = true;
+            if (Knob("NormalAmt", &fNormalAmt, 0, 1))
+                change = true;
             ImGui::SameLine();
-            Knob("PhasedAmt", &fPhasedAmt, 0, 1);
+            if (Knob("PhasedAmt", &fPhasedAmt, 0, 1))
+                change = true;
 
-            Knob("Vol", &VolumeLevel, 0, 1);
+            if (Knob("Vol", &VolumeLevel, 0, 1))
+                change = true;
             ImGui::SameLine();
-            Knob("Pan", &Panning, 0, 1);
+            if (Knob("Pan", &Panning, 0, 1))
+                change = true;
         }
         else
         {
-            ImGui::SliderFloat("Phase", &fPhase, 0, 1);
-            ImGui::SliderFloat("Mod", &fMod, 0, 1);
+            if (ImGui::SliderFloat("Phase", &fPhase, 0, 1))
+                change = true;
+            if (ImGui::SliderFloat("Mod", &fMod, 0, 1))
+                change = true;
 
-            ImGui::SliderFloat("Freq", &fFreq, 0, 1);
-            ImGui::SliderFloat("Shape", &fShape, 0, 1);
-            ShowStepped(&TheDrum.ShapeStepped);
-            ShowShapeButtons();
+            if (ImGui::SliderFloat("Freq", &fFreq, 0, 1))
+                change = true;
+            if (ImGui::SliderFloat("Shape", &fShape, 0, 1))
+                change = true;
+            ShowStepped(TheDrum.Shape, &TheDrum.ShapeStepped);
+            if (ShowShapeButtons())
+                change = true;
 
-            ImGui::SliderFloat("NormalAmt", &fNormalAmt, 0, 1);
-            ImGui::SliderFloat("PhasedAmt", &fPhasedAmt, 0, 1);
+            if (ImGui::SliderFloat("NormalAmt", &fNormalAmt, 0, 1))
+                change = true;
+            if (ImGui::SliderFloat("PhasedAmt", &fPhasedAmt, 0, 1))
+                change = true;
 
-            ImGui::SliderFloat("Vol", &VolumeLevel, 0, 1);
+            if (ImGui::SliderFloat("Vol", &VolumeLevel, 0, 1))
+                change = true;
             ;
-            ImGui::SliderFloat("Pan", &Panning, 0, 1);
+            if (ImGui::SliderFloat("Pan", &Panning, 0, 1))
+                change = true;
         }
 
         ImGui::PopStyleVar();
     }
 
-    void ShowShapeButtons()
+    bool ShowShapeButtons()
     {
-
+        float fshapestart = fShape;
         if (ImGui::Button("Kick"))
         {
             fShape = 0;
@@ -181,6 +197,10 @@ public:
         {
             fShape = 1.0f;
         }
+
+        if (fshapestart != fShape)
+            return true;
+        return false;
     }
     void SetParam()
     {
@@ -297,12 +317,13 @@ public:
 
     std::vector<float> indices;
     Ranger EnvelopeRange;
-
+    bool recalcenvelopes = true;
     void ShowMenu()
     {
         ImGui::Begin("Envelopes", NULL, 0);
-        if (ImGui::Button("retrigger"))
+        if (ImGui::Button("retrigger") || recalcenvelopes)
         {
+            recalcenvelopes = false;
             SnareNoiseAmp.Trigger();
             BdDecay.CopyFrom(&Inst[0].TheDrum.BdDecay);
             PDecay.CopyFrom(&Inst[0].TheDrum.PDecay);
@@ -310,6 +331,7 @@ public:
             SnareNoiseAmp.CopyFrom(&Inst[0].TheDrum.SnareNoiseAmp);
             PDecay.Trigger();
             BdDecay.Trigger();
+            SnareNoiseAmp.Trigger();
 
             ClapRattle.Trigger();
 
@@ -318,7 +340,7 @@ public:
             results_PDecay.clear();
             results_SnareNoiseAmp.clear();
             indices.clear();
-            for (int i = 0; i < 10000; i++)
+            for (int i = 0; i < 3000; i++)
             {
                 indices.push_back(i);
                 EnvelopeRange.Add(ClapRattle.EnvCurrent);
@@ -328,18 +350,29 @@ public:
                 results_BdDecay.push_back(BdDecay.Get());
             }
         }
-        EnvelopeRange.Show();
-        // ImPlot::PushStyleVar(ImPlotst)
-        ImPlot::SetNextAxesToFit();
-        if (ImPlot::BeginPlot("Envelope"))
-        {
-            ImPlot::PlotLine("PDecay", &indices[0], &results_PDecay[0], indices.size());
-            ImPlot::PlotLine("BdDecay", &indices[0], &results_BdDecay[0], indices.size());
-            ImPlot::PlotLine("Clap", &indices[0], &results_ClapRattle[0], indices.size());
-            ImPlot::PlotLine("SnareNoise", &indices[0], &results_SnareNoiseAmp[0], indices.size());
-            ImPlot::EndPlot();
-        }
 
+        EnvelopeRange.Show();
+
+        // ImPlot::PushStyleVar(ImPlotst)
+        if (ImGui::CollapsingHeader("PitchEnv"))
+        {
+            ImPlot::SetNextAxesToFit();
+            if (ImPlot::BeginPlot("Pitch Mod Envelope"))
+            {
+                ImPlot::PlotLine("PDecay", &indices[0], &results_PDecay[0], indices.size());
+                ImPlot::EndPlot();
+            }
+        }
+        if (ImGui::CollapsingHeader("Bd & Tom Decay Env"))
+        {
+
+            ImPlot::SetNextAxesToFit();
+            if (ImPlot::BeginPlot("BdDecay"))
+            {
+                ImPlot::PlotLine("BdDecay", &indices[0], &results_BdDecay[0], indices.size());
+                ImPlot::EndPlot();
+            }
+        }
         ImGui::End();
     }
 };
@@ -448,7 +481,7 @@ int main()
     stream.play();
 
     Load();
-    sf::RenderWindow window(sf::VideoMode(1280, 720), "TiNRS Wobbler2 Simulator");
+    sf::RenderWindow window(sf::VideoMode(1680, 1020), "TiNRS Wobbler2 Simulator");
     window.setFramerateLimit(60);
     ImGui::SFML::Init(window);
 
@@ -500,7 +533,7 @@ int main()
         ImGui::PushFont(pFontBold);
 
         ImGui::Begin("Wobbler2", NULL, ImGuiWindowFlags_AlwaysAutoResize);
-
+        int lastinstance = CurrentInstance;
         if (ImGui::RadioButton("1##inst1", CurrentInstance == 0))
             CurrentInstance = 0;
         ImGui::SameLine();
@@ -512,16 +545,34 @@ int main()
         ImGui::SameLine();
         if (ImGui::RadioButton("4##inst4", CurrentInstance == 3))
             CurrentInstance = 3;
+
+        if (lastinstance != CurrentInstance)
+            DecayTest.recalcenvelopes = true;
         ImGui::BeginGroup();
         Inst[CurrentInstance].Menu();
+
         ImGui::EndGroup();
         ImGui::End();
+        if (Inst[CurrentInstance].change)
+        {
+            printf("recalc env display!\n");
+            Inst[CurrentInstance].change = false;
+            DecayTest.recalcenvelopes = true;
+        }
         DecayTest.ShowMenu();
         ImGui::Begin("Statistics", NULL, ImGuiWindowFlags_AlwaysAutoResize);
         SampleRange.Show();
         ImGui::End();
         ImGui::Begin("Sequencer", NULL, ImGuiWindowFlags_AlwaysAutoResize);
-        ImGui::Checkbox("Play!", &patternplaying);
+        if(ImGui::Checkbox("Play!", &patternplaying))
+        {
+            tick = -1;
+            samplesleftintick = -1;
+        }
+        ImGui::SameLine();
+
+        ImGui::SliderFloat("BPM", &BPM, 20, 240);
+
         // ImGui::PushStyleVar(ImGuiStyleVar_ChildBorderSize, ImVec2(4,4));
         for (int j = 0; j < 4; j++)
         {
@@ -546,7 +597,7 @@ int main()
                 }
 
                 sprintf(txt, "##%d_%d", i, j);
-                if(ImGui::Checkbox(txt, &Pattern[j][i]))
+                if (ImGui::Checkbox(txt, &Pattern[j][i]))
                 {
                     CurrentInstance = j;
                 }
