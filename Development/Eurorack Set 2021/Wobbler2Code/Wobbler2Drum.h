@@ -172,7 +172,7 @@ public:
 	unsigned short pDecay;
 	void SetAttack(uint8_t attacktime) // 7bit midi time
 	{
-		AttackTime =  5 + (tblDecayTime[attacktime]);
+		AttackTime =  5 + (tblDecayTime[attacktime])*64;
 	}
 	void SetParam(unsigned short shape, unsigned short decay, int decaymult)
 	{
@@ -245,7 +245,7 @@ public:
 	int HoldTime;
 	int RestTime;
 	int LastDecayMultiplier;
-
+	bool InfiniRattle = false;
 	void SetDecayAndRestSymmetrical(int T)
 	{
 		DecayTime = RestTime = T;
@@ -306,14 +306,16 @@ public:
 			case RATTLEENV_HOLD:
 
 				EnvState = RATTLEENV_DECAY;
-				if (--RattleLeft == 0)
+				if (InfiniRattle || RattleLeft > 0)
 				{
-					EnvTime = DecayTime * LastDecayMultiplier;
+					EnvTime = DecayTime;
+					if (RattleLeft >0) RattleLeft--;
 				}
 				else
 				{
-					EnvTime = DecayTime;
+					EnvTime = DecayTime * LastDecayMultiplier;
 				}
+				
 				EnvDelta = -1 * ((1 << 24) / EnvTime);
 
 				break;
@@ -324,7 +326,7 @@ public:
 				EnvTime = RestTime;
 				break;
 			case RATTLEENV_REST:
-				if (RattleLeft > 0)
+				if (RattleLeft > 0 || InfiniRattle)
 				{
 					EnvState = RATTLEENV_ATTACK;
 					EnvTime = 5;
@@ -351,11 +353,11 @@ class Wobbler2Drum
 
 public:
 	Filter Filt;
-	int Phase;
+	int Phase = -1;
 
-	int Shape;
-	int Freq;
-	int Mod;
+	int Shape =-1 ;
+	int Freq =-1;
+	int Mod = -1;
 
 	int M1;
 	int M2;
@@ -382,7 +384,7 @@ public:
 			sintab[i] = (int)(sinf((i * 6.283f) / (float)WOBTABLEN) * 32767.0f);
 		}
 		SnareNoiseAmp.SetParam(70 << 9, 12 << 9, 1);
-		BdDecay.SetParam(70 << 9, 30 << 9, 1);
+		BdDecay.SetParam(70 << 9, 30 << 9, 2);
 		BdDecay.HoldTime = 1000;
 
 		PDecay.SetParam(70 << 9, 12 << 9, 1);
@@ -393,8 +395,11 @@ public:
 	uint32_t OscPhase4;
 	uint32_t OscPhase1;
 	int32_t DPhase;
+	bool GateActive = false;
 	void Trigger(bool ON = true)
 	{
+		GateActive = ON;
+		
 		if (ON)
 		{
 
@@ -402,6 +407,7 @@ public:
 			// DPhase = F ;
 			Mod = 0x1fffff;
 			ClapRattle.Trigger();
+			
 			SnareNoiseAmp.Trigger();
 			BdDecay.Trigger();
 			PDecay.Trigger();
@@ -428,6 +434,7 @@ public:
 	}
 	void SetFreq(uint16_t newfreq)
 	{
+		Freq = newfreq;
 		Filt.SetCut(Freq >> 9);
 		BaseDPhase = tblNoteTable[Freq >> 9] << 1;
 	}
@@ -436,10 +443,11 @@ public:
 
 	void SetShape(uint16_t newshape)
 	{
-
 		// shape dependent parameters
-
+		if (Shape==newshape) return;
+		
 		Shape = newshape;
+
 		Wobbler2_GetSteppedResult(Shape, 6, &ShapeStepped);
 
 		if (ShapeStepped.index >= 5)
@@ -449,6 +457,7 @@ public:
 		if (Shape < 0x500)
 		{
 			int Idx = ((0x500-Shape) * 127) / 0x500;
+			printf("attack idx: %d\n", Idx);
 			PDecay.SetAttack(Idx);
 			BdDecay.SetAttack(Idx);
 		}
@@ -458,11 +467,12 @@ public:
 			BdDecay.SetAttack(0);
 		}
 	}
+
 	void Get(int32_t &L, int32_t &R)
 	{
-		SetFreq(Freq);
-		SetMod(Mod);
-		SetShape(Shape);
+		//SetFreq(Freq);
+		//SetMod(Mod);
+		//SetShape(Shape);
 
 		DPhase = BaseDPhase;
 
@@ -471,7 +481,7 @@ public:
 		int PDec = PDecay.Get()>>9;
 
 		int32_t neutral = 0x10000;
-		neutral += (PitchMul * PDec) >> 12;
+		neutral += (PitchMul * PDec) >> 10;
 		OscPhase1 += (DPhase>>16)*neutral;
 		OscPhase2 += (DPhase * 16) / 10;
 		OscPhase3 += (DPhase * 227) / 50;
@@ -499,7 +509,6 @@ public:
 
 		DR[0] = (sinidx1 * (tombdenv >> 10)) >> 16;
 		DR[1] = (sinidxdbl * (tombdenv >> 10)) >> 16;
-		;
 		DR[2] = (((sinidx4 + sinidx3 + sinidxdbl) * (tombdenv >> 10)) >> 16);
 
 		int ClapSqrEnv = ClapEnv >> 13;

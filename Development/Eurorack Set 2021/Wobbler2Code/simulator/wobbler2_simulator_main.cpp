@@ -73,6 +73,7 @@ class Wobbler2Instance
 {
 public:
     bool Trigger = false;
+    bool UnTrigger = false;
 
     float fFreq = 0.0f;
     float fMod = 0.0f;
@@ -95,6 +96,10 @@ public:
         if (ImGui::Button("Trigger"))
         {
             Trigger = true;
+        }
+        if (ImGui::Button("Stop"))
+        {
+            UnTrigger = true;
         }
         ImGui::PopStyleVar();
         // if (ImGui::Button("BangOn"))
@@ -210,9 +215,9 @@ public:
         uint16_t uPhasedAmt = (int)(fPhasedAmt * 0xffff);
         uint16_t uShape = (int)(fShape * 0xffff);
         uint16_t uNormalAmt = (int)(fNormalAmt * 0xffff);
-        TheDrum.Freq = uFreq;
-        TheDrum.Shape = uShape;
-        TheDrum.Mod = uMod;
+        TheDrum.SetFreq(uFreq);
+        TheDrum.SetShape(uShape);
+        TheDrum.SetMod(uMod);
         TheDrum.Phase = uPhase;
     }
 };
@@ -400,10 +405,17 @@ private:
         {
             if (Inst[j].Trigger)
             {
-                Inst[j].TheDrum.Trigger();
+                Inst[j].TheDrum.Trigger(true);
                 Inst[j].Trigger = false;
             }
+
+            if (Inst[j].UnTrigger)
+            {
+                Inst[j].TheDrum.Trigger(false);
+                Inst[j].UnTrigger = false; 
+            }
         }
+        
         int len = m_samples.size();
 
         for (int i = 0; i < len; ++i)
