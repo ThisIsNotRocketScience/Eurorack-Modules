@@ -8,6 +8,7 @@
 #define DAC_DAT 2
 
 #define FASTMODE_BUT 5
+
 #define SR_2_DAT 9
 #define SR_2_CLK 10
 #define SR_2_LATCH 11
@@ -291,7 +292,9 @@ void ShiftOut()
     ShiftBytes(SR_1_CLK, SR_1_DAT, SR_1_LATCH, LEDS, 24, pwm);
     ShiftBytes(SR_2_CLK, SR_2_DAT, SR_2_LATCH, LEDS + 24, 16, pwm);
 }
+
 int runner = 0;
+
 void doTimer()
 {
 
