@@ -87,3 +87,16 @@ Development/Eurorack Set 2021/Factory/TiNRS-Ardabil/TiNRS-Ardabil_PNP.csv
 Development/Eurorack Set 2021/Wobbler2_kicad/#auto_saved_files#
 Development/Eurorack Set 2021/Wobbler2_kicad/_autosave-TINRS - Wobbler (pico)sch.kicad_pcb
 Gerbers/*/*.txt
+Development/Eurorack Set 12/Gerbers
+Development/Eurorack Set 13/Gerbers/ASuitable Number Of Microphones_MERGED/ASuitable Number Of Microphones.TXT
+Development/Eurorack Set 13/Gerbers/ASuitable Number Of Microphones/ASuitable Number Of Microphones.TXT
+Development/Graphical Toy/WobblerCircles/bin
+Development/Graphical Toy/WobblerCircles/obj
+Development/Gerbers/AncientFilter-euro/AncientFilter-euro.TXT
+Development/Gerbers/AncientFilter-euro_MERGED/AncientFilter-euro.TXT
+Development/Gerbers/SWDIsolator/SWDIsolator.TXT
+Development/Gerbers/
+Development/Factory
+*.afdesign
+Production/Gerbers
+Development/AncientFilter-euro_front.afdesign

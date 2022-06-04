@@ -69,8 +69,16 @@ void SetupTheme(float scaling)
         // Setup style
     ImGui::StyleColorsLight();
 
-    pFont = io.Fonts->AddFontFromFileTTF("Dosis-Medium.ttf", 12.0f * scaling);
-    pFontBold = io.Fonts->AddFontFromFileTTF("Dosis-Bold.ttf", 12.0f*scaling);
+printf("loading Medium font \n");
+FILE *F = fopen("Roboto-Medium.ttf", "rb+");
+if (F) 
+{
+    printf("font found!");
+    fclose(F);
+}
+    pFont = io.Fonts->AddFontFromFileTTF("Roboto-Medium.ttf", 12.0f * scaling);
+printf("loading Bold font \n");
+    pFontBold = io.Fonts->AddFontFromFileTTF("Roboto-Bold.ttf", 12.0f*scaling);
 
     ImGui::SFML::UpdateFontTexture(); 
 

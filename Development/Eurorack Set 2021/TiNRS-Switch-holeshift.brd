@@ -6,9 +6,9 @@
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="25" unitdist="mil" unit="mil" style="lines" multiple="1" display="yes" altdistance="0.025" altunitdist="inch" altunit="inch"/>
+<grid distance="0.7" unitdist="mm" unit="mm" style="lines" multiple="1" display="yes" altdistance="0.025" altunitdist="inch" altunit="inch"/>
 <layers>
-<layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
+<layer number="1" name="Top" color="4" fill="1" visible="no" active="yes"/>
 <layer number="2" name="Route2" color="1" fill="3" visible="no" active="no"/>
 <layer number="3" name="Route3" color="4" fill="3" visible="no" active="no"/>
 <layer number="4" name="Route4" color="1" fill="4" visible="no" active="no"/>
@@ -23,17 +23,17 @@
 <layer number="13" name="Route13" color="4" fill="5" visible="no" active="no"/>
 <layer number="14" name="Route14" color="1" fill="6" visible="no" active="no"/>
 <layer number="15" name="Route15" color="4" fill="6" visible="no" active="no"/>
-<layer number="16" name="Bottom" color="1" fill="1" visible="yes" active="yes"/>
-<layer number="17" name="Pads" color="2" fill="1" visible="yes" active="yes"/>
-<layer number="18" name="Vias" color="2" fill="1" visible="yes" active="yes"/>
-<layer number="19" name="Unrouted" color="6" fill="1" visible="yes" active="yes"/>
-<layer number="20" name="Dimension" color="15" fill="1" visible="yes" active="yes"/>
-<layer number="21" name="tPlace" color="7" fill="1" visible="yes" active="yes"/>
-<layer number="22" name="bPlace" color="7" fill="1" visible="yes" active="yes"/>
-<layer number="23" name="tOrigins" color="15" fill="1" visible="yes" active="yes"/>
-<layer number="24" name="bOrigins" color="15" fill="1" visible="yes" active="yes"/>
-<layer number="25" name="tNames" color="7" fill="1" visible="yes" active="yes"/>
-<layer number="26" name="bNames" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="16" name="Bottom" color="1" fill="1" visible="no" active="yes"/>
+<layer number="17" name="Pads" color="2" fill="1" visible="no" active="yes"/>
+<layer number="18" name="Vias" color="2" fill="1" visible="no" active="yes"/>
+<layer number="19" name="Unrouted" color="6" fill="1" visible="no" active="yes"/>
+<layer number="20" name="Dimension" color="15" fill="1" visible="no" active="yes"/>
+<layer number="21" name="tPlace" color="7" fill="1" visible="no" active="yes"/>
+<layer number="22" name="bPlace" color="7" fill="1" visible="no" active="yes"/>
+<layer number="23" name="tOrigins" color="15" fill="1" visible="no" active="yes"/>
+<layer number="24" name="bOrigins" color="15" fill="1" visible="no" active="yes"/>
+<layer number="25" name="tNames" color="7" fill="1" visible="no" active="yes"/>
+<layer number="26" name="bNames" color="7" fill="1" visible="no" active="yes"/>
 <layer number="27" name="tValues" color="7" fill="1" visible="no" active="yes"/>
 <layer number="28" name="bValues" color="7" fill="1" visible="no" active="yes"/>
 <layer number="29" name="tStop" color="7" fill="3" visible="no" active="yes"/>
@@ -157,7 +157,7 @@
 <layer number="251" name="SMDround" color="12" fill="11" visible="no" active="no"/>
 <layer number="253" name="PanelHole" color="62" fill="1" visible="yes" active="yes"/>
 <layer number="254" name="Paneldesc" color="14" fill="1" visible="no" active="yes"/>
-<layer number="255" name="Panel" color="14" fill="1" visible="no" active="yes"/>
+<layer number="255" name="Panel" color="14" fill="1" visible="yes" active="yes"/>
 </layers>
 <board>
 <plain>
@@ -827,26 +827,26 @@
 </autorouter>
 <elements>
 <element name="PCB1" library="EurorackModularParts" package="EURORACK6HPPCB" value="EURORACK_PCB6HP" x="0" y="0"/>
-<element name="J1" library="EurorackModularParts" package="3.5MM-JACK-SWITCH-13MM-NOHOLES" value="JACK" x="5.08" y="101.6" smashed="yes" rot="R180">
-<attribute name="DESC" value="1 A" x="5.08" y="101.6" size="1.27" layer="22" rot="SMR225" align="center" display="off"/>
+<element name="J1" library="EurorackModularParts" package="3.5MM-JACK-SWITCH-13MM-NOHOLES" value="JACK" x="5.08" y="100.9" smashed="yes" rot="R180">
+<attribute name="DESC" value="1 A" x="5.08" y="100.9" size="1.27" layer="22" rot="SMR225" align="center" display="off"/>
 </element>
-<element name="J2" library="EurorackModularParts" package="3.5MM-JACK-SWITCH-13MM-NOHOLES" value="JACK" x="15.24" y="101.6" smashed="yes" rot="R180">
-<attribute name="DESC" value="1 B" x="15.24" y="101.6" size="1.27" layer="22" rot="SMR225" align="center" display="off"/>
+<element name="J2" library="EurorackModularParts" package="3.5MM-JACK-SWITCH-13MM-NOHOLES" value="JACK" x="15.24" y="100.9" smashed="yes" rot="R180">
+<attribute name="DESC" value="1 B" x="15.24" y="100.9" size="1.27" layer="22" rot="SMR225" align="center" display="off"/>
 </element>
-<element name="J3" library="EurorackModularParts" package="3.5MM-JACK-SWITCH-13MM-NOHOLES" value="JACK" x="25.4" y="101.6" smashed="yes" rot="R180">
-<attribute name="DESC" value="1 C" x="25.4" y="101.6" size="1.27" layer="22" rot="SMR225" align="center" display="off"/>
+<element name="J3" library="EurorackModularParts" package="3.5MM-JACK-SWITCH-13MM-NOHOLES" value="JACK" x="25.4" y="100.9" smashed="yes" rot="R180">
+<attribute name="DESC" value="1 C" x="25.4" y="100.9" size="1.27" layer="22" rot="SMR225" align="center" display="off"/>
 </element>
-<element name="J4" library="EurorackModularParts" package="3.5MM-JACK-SWITCH-13MM-NOHOLES" value="JACK" x="7.62" y="62.23" smashed="yes">
-<attribute name="DESC" value="1" x="7.62" y="62.23" size="1.27" layer="22" rot="SMR45" align="center" display="off"/>
+<element name="J4" library="EurorackModularParts" package="3.5MM-JACK-SWITCH-13MM-NOHOLES" value="JACK" x="7.62" y="62.93" smashed="yes">
+<attribute name="DESC" value="1" x="7.62" y="62.93" size="1.27" layer="22" rot="SMR45" align="center" display="off"/>
 </element>
-<element name="J5" library="EurorackModularParts" package="3.5MM-JACK-SWITCH-13MM-NOHOLES" value="JACK" x="5.08" y="19.05" smashed="yes" rot="R180">
-<attribute name="DESC" value="3 A" x="5.08" y="19.05" size="1.27" layer="22" rot="SMR225" align="center" display="off"/>
+<element name="J5" library="EurorackModularParts" package="3.5MM-JACK-SWITCH-13MM-NOHOLES" value="JACK" x="5.08" y="18.35" smashed="yes" rot="R180">
+<attribute name="DESC" value="3 A" x="5.08" y="18.35" size="1.27" layer="22" rot="SMR225" align="center" display="off"/>
 </element>
-<element name="J6" library="EurorackModularParts" package="3.5MM-JACK-SWITCH-13MM-NOHOLES" value="JACK" x="15.24" y="19.05" smashed="yes" rot="R180">
-<attribute name="DESC" value="3 B" x="15.24" y="19.05" size="1.27" layer="22" rot="SMR225" align="center" display="off"/>
+<element name="J6" library="EurorackModularParts" package="3.5MM-JACK-SWITCH-13MM-NOHOLES" value="JACK" x="15.24" y="18.35" smashed="yes" rot="R180">
+<attribute name="DESC" value="3 B" x="15.24" y="18.35" size="1.27" layer="22" rot="SMR225" align="center" display="off"/>
 </element>
-<element name="J7" library="EurorackModularParts" package="3.5MM-JACK-SWITCH-13MM-NOHOLES" value="JACK" x="7.62" y="44.45" smashed="yes" rot="R180">
-<attribute name="DESC" value="3" x="7.62" y="44.45" size="1.27" layer="22" rot="SMR225" align="center" display="off"/>
+<element name="J7" library="EurorackModularParts" package="3.5MM-JACK-SWITCH-13MM-NOHOLES" value="JACK" x="7.62" y="43.75" smashed="yes" rot="R180">
+<attribute name="DESC" value="3" x="7.62" y="43.75" size="1.27" layer="22" rot="SMR225" align="center" display="off"/>
 </element>
 <element name="U$2" library="FenixBase" package="TS-23E01" value="TS-23E01" x="15.24" y="74.93">
 <attribute name="DESC" value="Toggle" x="15.24" y="74.93" size="1.778" layer="27" display="off"/>
@@ -854,26 +854,26 @@
 <attribute name="UP" value="1" x="15.24" y="74.93" size="1.778" layer="27" display="off"/>
 <attribute name="MID" value="2" x="15.24" y="74.93" size="1.778" layer="27" display="off"/>
 </element>
-<element name="J8" library="EurorackModularParts" package="3.5MM-JACK-SWITCH-13MM-NOHOLES" value="JACK" x="22.86" y="62.23" smashed="yes">
-<attribute name="DESC" value="2" x="22.86" y="62.23" size="1.27" layer="22" rot="SMR45" align="center" display="off"/>
+<element name="J8" library="EurorackModularParts" package="3.5MM-JACK-SWITCH-13MM-NOHOLES" value="JACK" x="22.86" y="62.93" smashed="yes">
+<attribute name="DESC" value="2" x="22.86" y="62.93" size="1.27" layer="22" rot="SMR45" align="center" display="off"/>
 </element>
-<element name="J9" library="EurorackModularParts" package="3.5MM-JACK-SWITCH-13MM-NOHOLES" value="JACK" x="5.08" y="87.63" smashed="yes">
-<attribute name="DESC" value="2 A" x="-5.715" y="90.805" size="1.27" layer="22" rot="SMR45" align="center" display="off"/>
+<element name="J9" library="EurorackModularParts" package="3.5MM-JACK-SWITCH-13MM-NOHOLES" value="JACK" x="5.08" y="88.33" smashed="yes">
+<attribute name="DESC" value="2 A" x="-5.715" y="91.505" size="1.27" layer="22" rot="SMR45" align="center" display="off"/>
 </element>
-<element name="J10" library="EurorackModularParts" package="3.5MM-JACK-SWITCH-13MM-NOHOLES" value="JACK" x="15.24" y="87.63" smashed="yes">
-<attribute name="DESC" value="2 B" x="15.24" y="87.63" size="1.27" layer="22" rot="SMR45" align="center" display="off"/>
+<element name="J10" library="EurorackModularParts" package="3.5MM-JACK-SWITCH-13MM-NOHOLES" value="JACK" x="15.24" y="88.33" smashed="yes">
+<attribute name="DESC" value="2 B" x="15.24" y="88.33" size="1.27" layer="22" rot="SMR45" align="center" display="off"/>
 </element>
-<element name="J11" library="EurorackModularParts" package="3.5MM-JACK-SWITCH-13MM-NOHOLES" value="JACK" x="25.4" y="87.63" smashed="yes">
-<attribute name="DESC" value="2 C" x="25.4" y="87.63" size="1.27" layer="22" rot="SMR45" align="center" display="off"/>
+<element name="J11" library="EurorackModularParts" package="3.5MM-JACK-SWITCH-13MM-NOHOLES" value="JACK" x="25.4" y="88.33" smashed="yes">
+<attribute name="DESC" value="2 C" x="25.4" y="88.33" size="1.27" layer="22" rot="SMR45" align="center" display="off"/>
 </element>
-<element name="J12" library="EurorackModularParts" package="3.5MM-JACK-SWITCH-13MM-NOHOLES" value="JACK" x="22.86" y="44.45" smashed="yes" rot="R180">
-<attribute name="DESC" value="4" x="22.86" y="44.45" size="1.27" layer="22" rot="SMR225" align="center" display="off"/>
+<element name="J12" library="EurorackModularParts" package="3.5MM-JACK-SWITCH-13MM-NOHOLES" value="JACK" x="22.86" y="43.75" smashed="yes" rot="R180">
+<attribute name="DESC" value="4" x="22.86" y="43.75" size="1.27" layer="22" rot="SMR225" align="center" display="off"/>
 </element>
-<element name="J13" library="EurorackModularParts" package="3.5MM-JACK-SWITCH-13MM-NOHOLES" value="JACK" x="5.08" y="5.08" smashed="yes">
-<attribute name="DESC" value="4 A" x="5.08" y="5.08" size="1.27" layer="22" rot="SMR45" align="center" display="off"/>
+<element name="J13" library="EurorackModularParts" package="3.5MM-JACK-SWITCH-13MM-NOHOLES" value="JACK" x="5.08" y="5.78" smashed="yes">
+<attribute name="DESC" value="4 A" x="5.08" y="5.78" size="1.27" layer="22" rot="SMR45" align="center" display="off"/>
 </element>
-<element name="J14" library="EurorackModularParts" package="3.5MM-JACK-SWITCH-13MM-NOHOLES" value="JACK" x="15.24" y="5.08" smashed="yes">
-<attribute name="DESC" value="4 B" x="15.24" y="5.08" size="1.27" layer="22" rot="SMR45" align="center" display="off"/>
+<element name="J14" library="EurorackModularParts" package="3.5MM-JACK-SWITCH-13MM-NOHOLES" value="JACK" x="15.24" y="5.78" smashed="yes">
+<attribute name="DESC" value="4 B" x="15.24" y="5.78" size="1.27" layer="22" rot="SMR45" align="center" display="off"/>
 </element>
 <element name="U$4" library="EurorackModularParts" package="JUSTATINYROCKET_DATECODE" value="TINRS_ARTWORKTINYDATE" x="1.27" y="80.01"/>
 <element name="U$5" library="FenixBase" package="TS-23E01" value="TS-23E01" x="15.24" y="31.75">
@@ -882,11 +882,11 @@
 <attribute name="DOWN" value="3" x="15.24" y="31.75" size="1.778" layer="27" display="off"/>
 <attribute name="MID" value="2" x="15.24" y="31.75" size="1.778" layer="27" display="off"/>
 </element>
-<element name="J15" library="EurorackModularParts" package="3.5MM-JACK-SWITCH-13MM-NOHOLES" value="JACK" x="25.4" y="19.05" smashed="yes" rot="R180">
-<attribute name="DESC" value="3 C" x="25.4" y="19.05" size="1.27" layer="22" rot="SMR225" align="center" display="off"/>
+<element name="J15" library="EurorackModularParts" package="3.5MM-JACK-SWITCH-13MM-NOHOLES" value="JACK" x="25.4" y="18.35" smashed="yes" rot="R180">
+<attribute name="DESC" value="3 C" x="25.4" y="18.35" size="1.27" layer="22" rot="SMR225" align="center" display="off"/>
 </element>
-<element name="J16" library="EurorackModularParts" package="3.5MM-JACK-SWITCH-13MM-NOHOLES" value="JACK" x="25.4" y="5.08" smashed="yes">
-<attribute name="DESC" value="4 C" x="25.4" y="5.08" size="1.27" layer="22" rot="SMR45" align="center" display="off"/>
+<element name="J16" library="EurorackModularParts" package="3.5MM-JACK-SWITCH-13MM-NOHOLES" value="JACK" x="25.4" y="5.78" smashed="yes">
+<attribute name="DESC" value="4 C" x="25.4" y="5.78" size="1.27" layer="22" rot="SMR45" align="center" display="off"/>
 </element>
 <element name="J17" library="EurorackModularParts" package="POWER_16_SHROUDED_NOTEXT" value="POWER_SHROUDED_NOTEXT" x="15.24" y="53.34" smashed="yes" rot="MR0"/>
 </elements>
@@ -952,13 +952,13 @@
 <wire x1="15.24" y1="77.47" x2="15.24" y2="75.565" width="0.381" layer="1"/>
 <wire x1="15.24" y1="75.565" x2="13.335" y2="73.66" width="0.381" layer="1"/>
 <wire x1="13.335" y1="73.66" x2="13.335" y2="72.445" width="0.381" layer="1"/>
-<wire x1="13.335" y1="72.445" x2="7.62" y2="66.73" width="0.381" layer="1"/>
+<wire x1="13.335" y1="72.445" x2="7.62" y2="67.43" width="0.381" layer="1"/>
 </signal>
 <signal name="N$2">
 <contactref element="U$2" pad="S2_SRC"/>
 <contactref element="J8" pad="TIP_T@3" route="any" routetag="G$1.TIP"/>
 <contactref element="J8" pad="TIP_B@1" route="any" routetag="G$1.TIP"/>
-<wire x1="22.86" y1="66.73" x2="18.995" y2="66.73" width="0.381" layer="1"/>
+<wire x1="22.86" y1="67.43" x2="18.995" y2="66.73" width="0.381" layer="1"/>
 <wire x1="18.995" y1="66.73" x2="15.24" y2="70.485" width="0.381" layer="1"/>
 <wire x1="15.24" y1="70.485" x2="15.24" y2="72.39" width="0.381" layer="1"/>
 </signal>
@@ -966,7 +966,7 @@
 <contactref element="J1" pad="TIP_T@3" route="any" routetag="G$1.TIP"/>
 <contactref element="J1" pad="TIP_B@1" route="any" routetag="G$1.TIP"/>
 <contactref element="U$2" pad="S1_UP"/>
-<wire x1="5.08" y1="97.1" x2="5.08" y2="96.52" width="0.381" layer="1"/>
+<wire x1="5.08" y1="96.4" x2="5.08" y2="96.52" width="0.381" layer="1"/>
 <wire x1="5.08" y1="96.52" x2="8.255" y2="93.345" width="0.381" layer="1"/>
 <wire x1="20.32" y1="77.47" x2="20.32" y2="78.74" width="0.381" layer="1"/>
 <wire x1="20.32" y1="78.74" x2="19.05" y2="80.01" width="0.381" layer="1"/>
@@ -983,7 +983,7 @@
 <contactref element="J2" pad="TIP_T@3" route="any" routetag="G$1.TIP"/>
 <contactref element="J2" pad="TIP_B@1" route="any" routetag="G$1.TIP"/>
 <contactref element="U$2" pad="S1_MID"/>
-<wire x1="15.24" y1="97.1" x2="15.24" y2="96.52" width="0.381" layer="1"/>
+<wire x1="15.24" y1="96.4" x2="15.24" y2="96.52" width="0.381" layer="1"/>
 <wire x1="15.24" y1="96.52" x2="12.065" y2="93.345" width="0.381" layer="1"/>
 <wire x1="12.065" y1="93.345" x2="12.065" y2="91.44" width="0.381" layer="1"/>
 <wire x1="17.78" y1="77.47" x2="17.78" y2="81.28" width="0.381" layer="1"/>
@@ -995,7 +995,7 @@
 <contactref element="J3" pad="TIP_T@3" route="any" routetag="G$1.TIP"/>
 <contactref element="J3" pad="TIP_B@1" route="any" routetag="G$1.TIP"/>
 <contactref element="U$2" pad="S1_DOWN"/>
-<wire x1="25.4" y1="97.1" x2="25.4" y2="96.52" width="0.381" layer="1"/>
+<wire x1="25.4" y1="96.4" x2="25.4" y2="96.52" width="0.381" layer="1"/>
 <wire x1="25.4" y1="96.52" x2="28.575" y2="93.345" width="0.381" layer="1"/>
 <wire x1="28.575" y1="93.345" x2="28.575" y2="90.805" width="0.381" layer="1"/>
 <wire x1="28.575" y1="90.805" x2="21.59" y2="83.82" width="0.381" layer="1"/>
@@ -1013,7 +1013,7 @@
 <contactref element="J9" pad="TIP_T@3" route="any" routetag="G$1.TIP"/>
 <contactref element="J9" pad="TIP_B@1" route="any" routetag="G$1.TIP"/>
 <contactref element="U$2" pad="S2_UP"/>
-<wire x1="5.08" y1="92.13" x2="5.08" y2="87.63" width="0.381" layer="1"/>
+<wire x1="5.08" y1="92.83" x2="5.08" y2="87.63" width="0.381" layer="1"/>
 <wire x1="5.08" y1="87.63" x2="2.54" y2="85.09" width="0.381" layer="1"/>
 <wire x1="2.54" y1="85.09" x2="2.54" y2="77.47" width="0.381" layer="1"/>
 <wire x1="2.54" y1="77.47" x2="5.715" y2="74.295" width="0.381" layer="1"/>
@@ -1029,7 +1029,7 @@
 <contactref element="U$2" pad="S2_MID"/>
 <wire x1="17.78" y1="72.39" x2="16.51" y2="73.66" width="0.381" layer="1"/>
 <wire x1="16.51" y1="73.66" x2="16.51" y2="81.28" width="0.381" layer="1"/>
-<wire x1="15.24" y1="92.13" x2="15.24" y2="90.17" width="0.381" layer="1"/>
+<wire x1="15.24" y1="92.83" x2="15.24" y2="90.17" width="0.381" layer="1"/>
 <via x="15.24" y="90.17" extent="1-16" drill="0.3048"/>
 <wire x1="15.24" y1="90.17" x2="15.24" y2="89.535" width="0.381" layer="16"/>
 <wire x1="15.24" y1="89.535" x2="13.97" y2="88.265" width="0.381" layer="16"/>
@@ -1048,7 +1048,7 @@
 <wire x1="13.335" y1="80.645" x2="12.065" y2="81.915" width="0.381" layer="1"/>
 <wire x1="12.065" y1="81.915" x2="12.065" y2="84.455" width="0.381" layer="1"/>
 <wire x1="12.065" y1="84.455" x2="13.97" y2="86.36" width="0.381" layer="1"/>
-<wire x1="25.4" y1="92.13" x2="19.74" y2="92.13" width="0.381" layer="1"/>
+<wire x1="25.4" y1="92.83" x2="19.74" y2="92.13" width="0.381" layer="1"/>
 <wire x1="19.74" y1="92.13" x2="16.51" y2="88.9" width="0.381" layer="1"/>
 <via x="16.51" y="88.9" extent="1-16" drill="0.3048"/>
 <wire x1="16.51" y1="88.9" x2="13.97" y2="86.36" width="0.381" layer="16"/>
@@ -1064,7 +1064,7 @@
 <via x="12.7" y="36.83" extent="1-16" drill="0.3048"/>
 <wire x1="12.7" y1="36.83" x2="10.16" y2="36.83" width="0.381" layer="1"/>
 <wire x1="10.16" y1="36.83" x2="7.62" y2="34.29" width="0.381" layer="1"/>
-<wire x1="5.08" y1="14.55" x2="5.08" y2="19.05" width="0.381" layer="1"/>
+<wire x1="5.08" y1="13.85" x2="5.08" y2="19.05" width="0.381" layer="1"/>
 <wire x1="5.08" y1="19.05" x2="8.89" y2="22.86" width="0.381" layer="1"/>
 <wire x1="8.89" y1="22.86" x2="8.89" y2="26.67" width="0.381" layer="1"/>
 <wire x1="8.89" y1="26.67" x2="7.62" y2="27.94" width="0.381" layer="1"/>
@@ -1074,7 +1074,7 @@
 <contactref element="J7" pad="TIP_T@3" route="any" routetag="G$1.TIP"/>
 <contactref element="J7" pad="TIP_B@1" route="any" routetag="G$1.TIP"/>
 <contactref element="U$5" pad="S1_SRC"/>
-<wire x1="7.62" y1="39.95" x2="13.39" y2="39.95" width="0.381" layer="1"/>
+<wire x1="7.62" y1="39.25" x2="13.39" y2="39.95" width="0.381" layer="1"/>
 <wire x1="13.39" y1="39.95" x2="15.24" y2="38.1" width="0.381" layer="1"/>
 <wire x1="15.24" y1="38.1" x2="15.24" y2="34.29" width="0.381" layer="1"/>
 </signal>
@@ -1087,13 +1087,13 @@
 <wire x1="15.24" y1="31.75" x2="15.24" y2="29.21" width="0.381" layer="1"/>
 <wire x1="16.51" y1="38.735" x2="17.78" y2="40.005" width="0.381" layer="1"/>
 <wire x1="17.78" y1="40.005" x2="22.805" y2="40.005" width="0.381" layer="1"/>
-<wire x1="22.805" y1="40.005" x2="22.86" y2="39.95" width="0.381" layer="1"/>
+<wire x1="22.805" y1="40.005" x2="22.86" y2="39.25" width="0.381" layer="1"/>
 </signal>
 <signal name="N$13">
 <contactref element="J13" pad="TIP_T@3" route="any" routetag="G$1.TIP"/>
 <contactref element="J13" pad="TIP_B@1" route="any" routetag="G$1.TIP"/>
 <contactref element="U$5" pad="S2_UP"/>
-<wire x1="5.08" y1="9.58" x2="4.39" y2="9.58" width="0.381" layer="1"/>
+<wire x1="5.08" y1="10.28" x2="4.39" y2="9.58" width="0.381" layer="1"/>
 <wire x1="4.39" y1="9.58" x2="1.27" y2="12.7" width="0.381" layer="1"/>
 <wire x1="1.27" y1="12.7" x2="1.27" y2="15.24" width="0.381" layer="1"/>
 <wire x1="1.27" y1="15.24" x2="3.81" y2="17.78" width="0.381" layer="1"/>
@@ -1121,7 +1121,7 @@
 <wire x1="16.51" y1="25.4" x2="16.51" y2="26.67" width="0.381" layer="16"/>
 <via x="16.51" y="26.67" extent="1-16" drill="0.3048"/>
 <wire x1="16.51" y1="26.67" x2="16.51" y2="30.48" width="0.381" layer="1"/>
-<wire x1="15.24" y1="14.55" x2="15.24" y2="19.685" width="0.381" layer="1"/>
+<wire x1="15.24" y1="13.85" x2="15.24" y2="19.685" width="0.381" layer="1"/>
 <wire x1="15.24" y1="19.685" x2="12.7" y2="22.225" width="0.381" layer="1"/>
 <wire x1="12.7" y1="22.225" x2="12.7" y2="24.13" width="0.381" layer="1"/>
 <wire x1="12.7" y1="24.13" x2="13.97" y2="25.4" width="0.381" layer="1"/>
@@ -1147,13 +1147,13 @@
 <wire x1="16.51" y1="12.065" x2="19.685" y2="12.065" width="0.381" layer="16"/>
 <via x="19.685" y="12.065" extent="1-16" drill="0.3048"/>
 <wire x1="19.685" y1="12.065" x2="22.915" y2="12.065" width="0.381" layer="1"/>
-<wire x1="22.915" y1="12.065" x2="25.4" y2="14.55" width="0.381" layer="1"/>
+<wire x1="22.915" y1="12.065" x2="25.4" y2="13.85" width="0.381" layer="1"/>
 </signal>
 <signal name="N$15">
 <contactref element="U$5" pad="S2_MID"/>
 <contactref element="J14" pad="TIP_T@3" route="any" routetag="G$1.TIP"/>
 <contactref element="J14" pad="TIP_B@1" route="any" routetag="G$1.TIP"/>
-<wire x1="15.24" y1="9.58" x2="15.93" y2="9.58" width="0.381" layer="1"/>
+<wire x1="15.24" y1="10.28" x2="15.93" y2="9.58" width="0.381" layer="1"/>
 <wire x1="15.93" y1="9.58" x2="19.05" y2="12.7" width="0.381" layer="1"/>
 <wire x1="19.05" y1="12.7" x2="19.05" y2="15.24" width="0.381" layer="1"/>
 <wire x1="19.05" y1="15.24" x2="16.51" y2="17.78" width="0.381" layer="1"/>
@@ -1170,7 +1170,7 @@
 <contactref element="U$5" pad="S2_DOWN"/>
 <contactref element="J16" pad="TIP_T@3" route="any" routetag="G$1.TIP"/>
 <contactref element="J16" pad="TIP_B@1" route="any" routetag="G$1.TIP"/>
-<wire x1="25.4" y1="9.58" x2="26.09" y2="9.58" width="0.381" layer="1"/>
+<wire x1="25.4" y1="10.28" x2="26.09" y2="9.58" width="0.381" layer="1"/>
 <wire x1="26.09" y1="9.58" x2="29.21" y2="12.7" width="0.381" layer="1"/>
 <wire x1="29.21" y1="12.7" x2="29.21" y2="15.24" width="0.381" layer="1"/>
 <wire x1="10.16" y1="27.94" x2="10.16" y2="29.21" width="0.381" layer="1"/>
