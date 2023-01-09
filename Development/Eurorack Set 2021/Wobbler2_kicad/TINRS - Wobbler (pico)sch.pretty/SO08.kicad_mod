@@ -2,11 +2,11 @@
   (layer "F.Cu")
   (tedit 0)
   (descr "<b>Small Outline Package 8</b><br>\nNS Package M08A")
-  (fp_text reference "REF**" (at 0 0) (layer "F.SilkS")
+  (fp_text reference "REF**" (at 0 0) (layer "F.SilkS") hide
     (effects (font (size 0.93472 0.93472) (thickness 0.08128)))
     (tstamp 95376300-f16d-43b2-b149-df8f49eb2782)
   )
-  (fp_text value ">VALUE" (at 3.937 1.905 90) (layer "F.Fab")
+  (fp_text value ">VALUE" (at 3.937 1.905 90) (layer "F.Fab") hide
     (effects (font (size 1.1684 1.1684) (thickness 0.1016)) (justify left bottom))
     (tstamp 3662e68b-207e-47a3-930c-038dfd8202b6)
   )

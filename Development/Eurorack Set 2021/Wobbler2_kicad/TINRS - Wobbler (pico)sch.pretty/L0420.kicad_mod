@@ -1,7 +1,7 @@
 (footprint "L0420" (version 20211014) (generator pcbnew)
   (layer "F.Cu")
   (tedit 0)
-  (fp_text reference "REF**" (at -1.905 -2.54) (layer "F.SilkS")
+  (fp_text reference "REF**" (at -1.905 -2.54) (layer "F.SilkS") hide
     (effects (font (size 0.79121 0.79121) (thickness 0.09779)) (justify left bottom))
     (tstamp 1aaf34a3-282e-4633-82fa-9d6cdf32efbb)
   )
@@ -24,4 +24,9 @@
     (solder_mask_margin 0.0508) (tstamp 8e247c2e-b63e-4a70-8c32-64933e91ced0))
   (pad "2" smd rect (at 1.6 0 90) (size 4.2 1.5) (layers "F.Cu" "F.Paste" "F.Mask")
     (solder_mask_margin 0.0508) (tstamp 5b29962f-685a-409c-915c-9c4a92ed442a))
+  (model "${KICAD6_3DMODEL_DIR}/Inductor_SMD.3dshapes/L_Bourns_SRR1260.wrl"
+    (offset (xyz 0 0 0))
+    (scale (xyz 0.3 0.3 0.3))
+    (rotate (xyz 0 0 0))
+  )
 )

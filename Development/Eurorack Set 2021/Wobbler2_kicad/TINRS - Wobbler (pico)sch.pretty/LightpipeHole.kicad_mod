@@ -1,0 +1,19 @@
+(footprint "LightpipeHole" (version 20211014) (generator pcbnew)
+  (layer "F.Cu")
+  (tedit 0)
+  (attr through_hole)
+  (fp_text reference "REF**" (at 0 -2.54 unlocked) (layer "F.SilkS") hide
+    (effects (font (size 1 1) (thickness 0.15)))
+    (tstamp e3eab4f3-5165-43d0-9b07-61ff249dc3bd)
+  )
+  (fp_text value "LightpipeHole" (at 0 1 unlocked) (layer "F.Fab") hide
+    (effects (font (size 1 1) (thickness 0.15)))
+    (tstamp 1bb9fa27-1a1c-4f48-9211-917a5d7ade82)
+  )
+  (fp_text user "${REFERENCE}" (at 0 2.5 unlocked) (layer "F.Fab") hide
+    (effects (font (size 1 1) (thickness 0.15)))
+    (tstamp ad06c76b-4688-44d4-8c87-da2f7df47969)
+  )
+  (pad "1" thru_hole circle (at 0 0 90) (size 2 2) (drill 1) (layers *.Cu *.Mask)
+    (solder_mask_margin 0.0508) (tstamp 3f0e21f8-45d5-428c-8206-5cf19e82821d))
+)

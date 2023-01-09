@@ -3990,7 +3990,7 @@
     (property "Reference" "C12" (id 0) (at 64.516 17.399 0)
       (effects (font (size 1.778 1.5113)) (justify left bottom))
     )
-    (property "Value" "100n" (id 1) (at 64.516 12.319 0)
+    (property "Value" "100nF" (id 1) (at 64.516 12.319 0)
       (effects (font (size 1.778 1.5113)) (justify left bottom))
     )
     (property "Footprint" "C0402" (id 2) (at 66.04 17.018 0)

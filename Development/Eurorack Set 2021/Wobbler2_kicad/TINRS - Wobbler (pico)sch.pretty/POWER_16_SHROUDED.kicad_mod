@@ -1,11 +1,11 @@
 (footprint "POWER_16_SHROUDED" (version 20211014) (generator pcbnew)
   (layer "F.Cu")
   (tedit 0)
-  (fp_text reference "REF**" (at 0 0) (layer "F.SilkS")
+  (fp_text reference "REF**" (at 0 0) (layer "F.SilkS") hide
     (effects (font (size 1.27 1.27) (thickness 0.15)))
     (tstamp cad44c02-7fd2-4e9a-b93a-e1b73d6a3ee6)
   )
-  (fp_text value "" (at 0 0) (layer "F.SilkS")
+  (fp_text value "Val**" (at 0 0) (layer "F.SilkS") hide
     (effects (font (size 1.27 1.27) (thickness 0.15)))
     (tstamp 1a9f0d73-6986-450b-8da5-dca8d718cd0d)
   )
@@ -153,4 +153,9 @@
     (solder_mask_margin 0.0508) (tstamp d40f18db-c543-4c22-a8b0-72b9c9e5ae8b))
   (pad "16" thru_hole circle (at 8.89 -1.27) (size 1.8796 1.8796) (drill 1.016) (layers *.Cu *.Mask)
     (solder_mask_margin 0.0508) (tstamp 88e4f832-79d6-4c54-9ce3-4328dcb9d5b5))
+  (model "${KICAD6_3DMODEL_DIR}/Connector_IDC.3dshapes/IDC-Header_2x08_P2.54mm_Vertical.step"
+    (offset (xyz -8.9 -1.24 0))
+    (scale (xyz 1 1 1))
+    (rotate (xyz 0 0 -90))
+  )
 )

@@ -1,0 +1,17 @@
+01-07 14:59:15 com_github_MitjaNemec_ReplicateLayout.action_replicate_layout 303:Plugin executed on: 'win32'
+01-07 14:59:15 com_github_MitjaNemec_ReplicateLayout.action_replicate_layout 304:Plugin executed with python version: '3.9.14 (main, Dec 23 2022, 23:36:19) [MSC v.1934 64 bit (AMD64)]'
+01-07 14:59:15 com_github_MitjaNemec_ReplicateLayout.action_replicate_layout 305:KiCad build version: (6.99.0-5337-gc57e6db79a)
+01-07 14:59:15 com_github_MitjaNemec_ReplicateLayout.action_replicate_layout 306:Plugin version: 1.2.1
+01-07 14:59:15 com_github_MitjaNemec_ReplicateLayout.action_replicate_layout 307:Frame repr: <wx._core.Frame object at 0x000002DB2B14F4C0>
+01-07 14:59:15 com_github_MitjaNemec_ReplicateLayout.action_replicate_layout 331:Preparing replicator with U$7 as a reference
+01-07 14:59:15 com_github_MitjaNemec_ReplicateLayout.replicate_layout 106:getting a list of all footprints on board
+01-07 14:59:15 com_github_MitjaNemec_ReplicateLayout.action_replicate_layout 359:source anchor footprint is 'U$7'
+Located on: ['DelaySelect', 'LedButton5']
+With filenames: ['Select3.kicad_sch', 'LedButton.kicad_sch']
+With sheet_id:['DelaySelect', 'LedButton5']
+01-07 14:59:15 com_github_MitjaNemec_ReplicateLayout.action_replicate_layout 366:Corresponding footprints are 
+[('U$5', ['PitchPointButton']), ('U$6', ['SendButton']), ('U$8', ['PitchSelect', 'LedButton5']), ('U$9', ['TailSelect', 'LedButton5']), ('U$4', ['FreezeButton']), ('U$3', ['TapButton']), ('U$7', ['DelaySelect', 'LedButton5'])]
+01-07 14:59:15 com_github_MitjaNemec_ReplicateLayout.action_replicate_layout 378:Showing dialog
+01-07 14:59:15 com_github_MitjaNemec_ReplicateLayout.replicate_layout 344:constructing a list of sheets suitable for replication on level:'LedButton5', file:'LedButton.kicad_sch'
+01-07 14:59:15 com_github_MitjaNemec_ReplicateLayout.replicate_layout 381:suitable sheets are:[['FreezeButton'], ['PitchPointButton'], ['PitchSelect', 'LedButton5'], ['SendButton'], ['TailSelect', 'LedButton5'], ['TapButton']]
+01-07 14:59:15 com_github_MitjaNemec_ReplicateLayout.replicate_layout 1112:Level selected: ['DelaySelect', 'LedButton5']

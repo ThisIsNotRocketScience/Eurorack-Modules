@@ -1,7 +1,7 @@
 (footprint "DO-214AC" (version 20211014) (generator pcbnew)
   (layer "F.Cu")
   (tedit 0)
-  (fp_text reference "REF**" (at 0 0) (layer "F.SilkS")
+  (fp_text reference "REF**" (at 0 -2) (layer "F.SilkS") hide
     (effects (font (size 0.67818 0.67818) (thickness 0.08382)))
     (tstamp fc329e60-968a-4f61-ba77-53d29ff8c1c7)
   )

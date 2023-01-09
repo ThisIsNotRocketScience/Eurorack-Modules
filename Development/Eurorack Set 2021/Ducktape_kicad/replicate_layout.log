@@ -1,0 +1,55 @@
+12-05 03:33:10 com_github_MitjaNemec_ReplicateLayout.action_replicate_layout 303:Plugin executed on: 'win32'
+12-05 03:33:10 com_github_MitjaNemec_ReplicateLayout.action_replicate_layout 304:Plugin executed with python version: '3.9.10 (main, Jul 19 2022, 05:36:50) [MSC v.1932 64 bit (AMD64)]'
+12-05 03:33:10 com_github_MitjaNemec_ReplicateLayout.action_replicate_layout 305:KiCad build version: (6.0.7)
+12-05 03:33:10 com_github_MitjaNemec_ReplicateLayout.action_replicate_layout 306:Plugin version: 1.2.1
+12-05 03:33:10 com_github_MitjaNemec_ReplicateLayout.action_replicate_layout 307:Frame repr: <wx._core.Frame object at 0x000001F50E41C670>
+12-05 03:33:10 com_github_MitjaNemec_ReplicateLayout.action_replicate_layout 331:Preparing replicator with D16 as a reference
+12-05 03:33:10 com_github_MitjaNemec_ReplicateLayout.replicate_layout 106:getting a list of all footprints on board
+12-05 03:33:10 com_github_MitjaNemec_ReplicateLayout.action_replicate_layout 359:source anchor footprint is 'D16'
+Located on: ['VUBarCircle1']
+With filenames: ['VuBarCircle.kicad_sch']
+With sheet_id:['VUBarCircle1']
+12-05 03:33:10 com_github_MitjaNemec_ReplicateLayout.action_replicate_layout 366:Corresponding footprints are 
+[('D31', ['VUBarCircle3']), ('D26', ['VUBarCircle']), ('D21', ['VUBarCircle2']), ('D16', ['VUBarCircle1'])]
+12-05 03:33:10 com_github_MitjaNemec_ReplicateLayout.action_replicate_layout 378:Showing dialog
+12-05 03:33:10 com_github_MitjaNemec_ReplicateLayout.replicate_layout 344:constructing a list of sheets suitable for replication on level:'VUBarCircle1', file:'VuBarCircle.kicad_sch'
+12-05 03:33:10 com_github_MitjaNemec_ReplicateLayout.replicate_layout 381:suitable sheets are:[['VUBarCircle'], ['VUBarCircle2'], ['VUBarCircle3']]
+12-05 03:33:11 com_github_MitjaNemec_ReplicateLayout.replicate_layout 1112:Level selected: ['VUBarCircle1']
+12-05 03:33:11 com_github_MitjaNemec_ReplicateLayout.action_replicate_layout 384:Toolbar position: wx.Point(5913, 137)
+12-05 03:33:11 com_github_MitjaNemec_ReplicateLayout.action_replicate_layout 390:Dialog position: wx.Point(5549, 137)
+12-05 03:33:13 com_github_MitjaNemec_ReplicateLayout.replicate_layout 344:constructing a list of sheets suitable for replication on level:'VUBarCircle1', file:'VuBarCircle.kicad_sch'
+12-05 03:33:13 com_github_MitjaNemec_ReplicateLayout.replicate_layout 381:suitable sheets are:[['VUBarCircle'], ['VUBarCircle2'], ['VUBarCircle3']]
+12-05 03:33:14 com_github_MitjaNemec_ReplicateLayout.replicate_layout 1112:Level selected: ['VUBarCircle1']
+12-05 03:33:15 com_github_MitjaNemec_ReplicateLayout.replicate_layout 344:constructing a list of sheets suitable for replication on level:'VUBarCircle1', file:'VuBarCircle.kicad_sch'
+12-05 03:33:15 com_github_MitjaNemec_ReplicateLayout.replicate_layout 381:suitable sheets are:[['VUBarCircle'], ['VUBarCircle2'], ['VUBarCircle3']]
+12-05 03:33:15 com_github_MitjaNemec_ReplicateLayout.replicate_layout 1112:Level selected: ['VUBarCircle1']
+12-05 03:33:16 com_github_MitjaNemec_ReplicateLayout.replicate_layout 344:constructing a list of sheets suitable for replication on level:'VUBarCircle1', file:'VuBarCircle.kicad_sch'
+12-05 03:33:16 com_github_MitjaNemec_ReplicateLayout.replicate_layout 381:suitable sheets are:[['VUBarCircle'], ['VUBarCircle2'], ['VUBarCircle3']]
+12-05 03:33:17 com_github_MitjaNemec_ReplicateLayout.replicate_layout 1112:Level selected: ['VUBarCircle1']
+12-05 03:33:18 com_github_MitjaNemec_ReplicateLayout.replicate_layout 344:constructing a list of sheets suitable for replication on level:'VUBarCircle1', file:'VuBarCircle.kicad_sch'
+12-05 03:33:18 com_github_MitjaNemec_ReplicateLayout.replicate_layout 381:suitable sheets are:[['VUBarCircle'], ['VUBarCircle2'], ['VUBarCircle3']]
+12-05 03:33:18 com_github_MitjaNemec_ReplicateLayout.replicate_layout 1112:Level selected: ['VUBarCircle1']
+12-05 03:33:21 com_github_MitjaNemec_ReplicateLayout.replicate_layout 344:constructing a list of sheets suitable for replication on level:'VUBarCircle1', file:'VuBarCircle.kicad_sch'
+12-05 03:33:21 com_github_MitjaNemec_ReplicateLayout.replicate_layout 381:suitable sheets are:[['VUBarCircle'], ['VUBarCircle2'], ['VUBarCircle3']]
+12-05 03:33:21 com_github_MitjaNemec_ReplicateLayout.action_replicate_layout 157:Replicating layout
+12-05 03:33:21 com_github_MitjaNemec_ReplicateLayout.replicate_layout 154:Starting replication of sheets: [['VUBarCircle'], ['VUBarCircle2'], ['VUBarCircle3']]
+on level: ['VUBarCircle1']
+with tracks=False, zone=False, text=False, text=False, containing=True, remove=False, locked footprints=False, by_group=False
+12-05 03:33:21 root 243:updating GUI message: 'Preparing for replication'
+12-05 03:33:21 root 248:updating GUI with: 0
+12-05 03:33:21 com_github_MitjaNemec_ReplicateLayout.replicate_layout 224:Getting the list of source footprints
+12-05 03:33:21 root 248:updating GUI with: 0
+12-05 03:33:21 com_github_MitjaNemec_ReplicateLayout.replicate_layout 239:Getting the list of all the remaining footprints
+12-05 03:33:21 com_github_MitjaNemec_ReplicateLayout.replicate_layout 244:Getting nets local to source footprints
+12-05 03:33:21 com_github_MitjaNemec_ReplicateLayout.replicate_layout 247:Getting source bounding box
+12-05 03:33:21 com_github_MitjaNemec_ReplicateLayout.replicate_layout 251:Getting source tracks
+12-05 03:33:21 com_github_MitjaNemec_ReplicateLayout.replicate_layout 266:Getting source zones
+12-05 03:33:21 root 248:updating GUI with: 62
+12-05 03:33:21 com_github_MitjaNemec_ReplicateLayout.replicate_layout 275:Getting source text items
+12-05 03:33:21 com_github_MitjaNemec_ReplicateLayout.replicate_layout 284:Getting source drawing items
+12-05 03:33:21 root 243:updating GUI message: 'Replicating footprints'
+12-05 03:33:21 com_github_MitjaNemec_ReplicateLayout.replicate_layout 678:Replicating footprints
+12-05 03:33:21 com_github_MitjaNemec_ReplicateLayout.replicate_layout 684:Replicating footprints on sheet ['VUBarCircle']
+12-05 03:33:21 com_github_MitjaNemec_ReplicateLayout.replicate_layout 684:Replicating footprints on sheet ['VUBarCircle2']
+12-05 03:33:21 com_github_MitjaNemec_ReplicateLayout.replicate_layout 684:Replicating footprints on sheet ['VUBarCircle3']
+12-05 03:33:22 com_github_MitjaNemec_ReplicateLayout.action_replicate_layout 177:Replication complete

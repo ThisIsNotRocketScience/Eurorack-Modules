@@ -438,7 +438,7 @@ public class SVGWriter
                     }
                     else
                     {
-                        string setup = String.Format("<path fill=\"none\" stroke=\"{2}\" stroke-width=\"{0}\" stroke-linecap=\"round\" stroke-linejoin=\"round\" d=\"{1}\"/>", N(strokewidth, unit), commands, colorstring);
+                        string setup = String.Format("<path fill=\"none\" stroke=\"{2}\" stroke-width=\"{0}\" stroke-linecap=\"round\" stroke-linejoin=\"round\" d=\"{1}\"/>", N(a.StrokeWidth>0?a.StrokeWidth:strokewidth, unit), commands, colorstring);
                         groups[(int)a.ordering].Add(setup);
 
                     }

@@ -2,11 +2,11 @@
   (layer "F.Cu")
   (tedit 0)
   (descr "<b>Small Outline Transistor</b>")
-  (fp_text reference "REF**" (at -1.905 -1.905) (layer "F.SilkS")
+  (fp_text reference "REF**" (at -1.905 -1.905) (layer "F.SilkS") hide
     (effects (font (size 1.1684 1.1684) (thickness 0.1016)) (justify left bottom))
     (tstamp 07838c19-bdee-4759-9a7b-a62a5deb9737)
   )
-  (fp_text value ">VALUE" (at -1.905 3.175) (layer "F.Fab")
+  (fp_text value ">VALUE" (at -1.905 3.175) (layer "F.Fab") hide
     (effects (font (size 1.1684 1.1684) (thickness 0.1016)) (justify left bottom))
     (tstamp a6d1221a-1077-412d-8a73-7025f9b4ca20)
   )
@@ -20,6 +20,7 @@
   (fp_line (start 0.5224 0.8104) (end 0.4276 0.8104) (layer "F.SilkS") (width 0.1524) (tstamp b90997e2-4c7f-4479-862f-ab35dfea4f77))
   (fp_line (start -0.4276 0.8104) (end -0.5224 0.8104) (layer "F.SilkS") (width 0.1524) (tstamp c6e8924b-3698-49bc-af6d-d7a327eada39))
   (fp_line (start -1.4224 -0.8104) (end -1.3276 -0.8104) (layer "F.SilkS") (width 0.1524) (tstamp dc2e4d69-ab4d-4864-999d-7aa340dd63c7))
+  (fp_rect (start -1.4224 0.8104) (end -0.5 2.3) (layer "F.SilkS") (width 0.12) (fill solid) (tstamp 901503a5-e76f-40aa-9a55-961b71123e32))
   (fp_line (start 1.4224 0.8104) (end -1.4224 0.8104) (layer "F.Fab") (width 0.1524) (tstamp 18ee575f-d41e-4a26-ac0a-b229112d8877))
   (fp_line (start -1.4224 -0.8104) (end 1.4224 -0.8104) (layer "F.Fab") (width 0.1524) (tstamp 4fe15866-5386-4410-a27b-4fc15182a4f3))
   (fp_poly (pts
@@ -64,4 +65,9 @@
     (solder_mask_margin 0.0508) (tstamp fe0a8ab1-7b25-4d9a-9a3b-f8c5e10b289a))
   (pad "6" smd rect (at -0.95 -1.3001) (size 0.55 1.2) (layers "F.Cu" "F.Paste" "F.Mask")
     (solder_mask_margin 0.0508) (tstamp cdf69da0-bf1d-48b6-92e4-7b762bd4454d))
+  (model "${KICAD6_3DMODEL_DIR}/Package_TO_SOT_SMD.3dshapes/SOT-23-6.step"
+    (offset (xyz 0 0 0))
+    (scale (xyz 1 1 1))
+    (rotate (xyz 0 0 90))
+  )
 )

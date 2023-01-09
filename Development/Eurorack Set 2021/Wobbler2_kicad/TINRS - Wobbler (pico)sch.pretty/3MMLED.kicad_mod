@@ -28,10 +28,10 @@
       (xy -1.4465 -1.477612)
     ) (layer "F.SilkS") (width 0) (fill solid) (tstamp f0d5ae26-c535-4a37-9220-b3d08bfeda2f))
   (fp_circle (center 0 0) (end 1.525 0) (layer "User.3") (width 0.01) (fill none) (tstamp 845f389f-ac5c-4af4-aa4f-3b1355707a5f))
-  (pad "+" thru_hole circle (at -1.27 0) (size 1.308 1.308) (drill 0.8) (layers *.Cu *.Mask)
-    (solder_mask_margin 0.0508) (tstamp 2a507df7-40c5-4523-b0fd-269cea55efb9))
-  (pad "-" thru_hole circle (at 1.27 0) (size 1.308 1.308) (drill 0.8) (layers *.Cu *.Mask)
+  (pad "1" thru_hole circle (at 1.27 0) (size 1.308 1.308) (drill 0.8) (layers *.Cu *.Mask)
     (solder_mask_margin 0.0508) (tstamp 7d283b62-f314-41a0-b56b-d307f2ebfa85))
+  (pad "2" thru_hole circle (at -1.27 0) (size 1.308 1.308) (drill 0.8) (layers *.Cu *.Mask)
+    (solder_mask_margin 0.0508) (tstamp 2a507df7-40c5-4523-b0fd-269cea55efb9))
   (model "${KICAD6_3DMODEL_DIR}/LED_THT.3dshapes/LED_D3.0mm_FlatTop.wrl"
     (offset (xyz 1.2 0 0))
     (scale (xyz 1 1 1))
