@@ -1,0 +1,48 @@
+(kicad_sch (version 20221206) (generator eeschema)
+
+  (uuid c58960d9-4cac-4036-ad2e-1aef26946dae)
+
+  (paper "A4")
+
+  (lib_symbols
+  )
+
+
+  (sheet (at 16.764 33.02) (size 27.178 84.582) (fields_autoplaced)
+    (stroke (width 0) (type solid))
+    (fill (color 0 0 0 0.0000))
+    (uuid 460fc9a8-446e-45a7-9d6c-c272be997294)
+    (property "Sheetname" "MCU & Eeprom" (at 16.764 32.3084 0)
+      (effects (font (size 1.27 1.27)) (justify left bottom))
+    )
+    (property "Sheetfile" "MCU_&_Eeprom.kicad_sch" (at 16.764 118.1866 0)
+      (effects (font (size 1.27 1.27)) (justify left top) hide)
+    )
+    (instances
+      (project "WhiteRabbit"
+        (path "/c58960d9-4cac-4036-ad2e-1aef26946dae" (page "#"))
+      )
+    )
+  )
+
+  (sheet (at 17.78 22.606) (size 12.7 3.81) (fields_autoplaced)
+    (stroke (width 0) (type solid))
+    (fill (color 0 0 0 0.0000))
+    (uuid d0f76ded-7177-48e4-8dce-95beac9c4481)
+    (property "Sheetname" "Power" (at 17.78 21.8944 0)
+      (effects (font (size 1.27 1.27)) (justify left bottom))
+    )
+    (property "Sheetfile" "Power.kicad_sch" (at 17.78 27.0006 0)
+      (effects (font (size 1.27 1.27)) (justify left top) hide)
+    )
+    (instances
+      (project "WhiteRabbit"
+        (path "/c58960d9-4cac-4036-ad2e-1aef26946dae" (page "#"))
+      )
+    )
+  )
+
+  (sheet_instances
+    (path "/" (page "#"))
+  )
+)

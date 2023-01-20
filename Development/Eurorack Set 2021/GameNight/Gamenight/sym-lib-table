@@ -1,0 +1,4 @@
+(sym_lib_table
+  (lib (name "TiNRS_Eagle")(type "KiCad")(uri "${KICAD_USER_DIR}/TiNRS_Eagle.kicad_sym")(options "")(descr ""))
+  (lib (name "TiNRS")(type "KiCad")(uri "${KICAD_USER_DIR}/TiNRS.kicad_sym")(options "")(descr ""))
+)

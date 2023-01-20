@@ -1,3 +1,4 @@
 (fp_lib_table
   (lib (name "Espressif")(type "KiCad")(uri "${KICAD_USER_DIR}/espressif/footprints/Espressif.pretty")(options "")(descr ""))
+  (lib (name "TiNRS_Eagle_Footprints")(type "KiCad")(uri "${KICAD_USER_DIR}/TiNRS_Eagle_Footprints.pretty")(options "")(descr ""))
 )

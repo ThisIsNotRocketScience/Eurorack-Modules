@@ -1,0 +1,8 @@
+(version 1)
+(rule "class 0:0"
+  (condition "A.NetClass == 'default' && B.NetClass == 'Default'")
+  (constraint clearance (min 0.1778mm)))
+
+(rule "class 3:3"
+  (condition "A.NetClass == 'groundplane' && B.NetClass == 'groundplane'")
+  (constraint clearance (min 0.2032mm)))
